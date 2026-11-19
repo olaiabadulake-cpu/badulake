@@ -32,7 +32,7 @@ Nos encanta que mires el código y opines. Abre un *issue* con sugerencias, duda
 
 ## Estado
 
-🟡 Día 1 (19 de noviembre de 2026): primera versión publicada en [badulake.vercel.app](https://badulake.vercel.app), una portada en euskera y castellano. La lista de espera se abrirá cuando haya base de datos.
+🟡 Día 1 (19 de noviembre de 2026): primera versión publicada en [badulake.vercel.app](https://badulake.vercel.app), una portada en euskera y castellano. Ya hay base de datos (Supabase, UE), lista de espera y cuentas (crear cuenta, entrar y salir, solo para mayores de 18). La lista de espera y las cuentas se abrirán al público cuando esté el aviso de privacidad (D-018 y D-019); mientras, las cuentas solo funcionan en el Mac.
 
 ## Arrancar la app en tu ordenador
 
@@ -45,3 +45,5 @@ npm run dev
 ```
 
 Y abre http://localhost:3000.
+
+Para probar la lista de espera y las cuentas hace falta un archivo `app/.env.local` con `SUPABASE_URL` y `SUPABASE_PUBLISHABLE_KEY` (nunca se suben a GitHub). Las cuentas solo se activan si además pones `CUENTAS_ABIERTAS=1`.

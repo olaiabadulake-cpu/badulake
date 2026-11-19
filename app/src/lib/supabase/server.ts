@@ -1,0 +1,51 @@
+import "server-only";
+import { cookies } from "next/headers";
+import { createServerClient } from "@supabase/ssr";
+
+// Las claves vienen de variables de entorno (nunca del código ni NEXT_PUBLIC_*).
+const url = process.env.SUPABASE_URL;
+const key = process.env.SUPABASE_PUBLISHABLE_KEY;
+
+// Las cuentas solo se abren con CUENTAS_ABIERTAS=1 (hoy, solo en el Mac: app/.env.local).
+// En producción está apagado hasta que exista el aviso de privacidad definitivo (D-019).
+export const accountsOpen = Boolean(url && key) && process.env.CUENTAS_ABIERTAS === "1";
+
+// Cliente de Supabase con la sesión de la persona (guardada en cookies).
+// Hay que crear uno nuevo en cada petición.
+export async function createSupabase() {
+  if (!url || !key) throw new Error("Supabase no está configurado.");
+  const store = await cookies();
+
+  return createServerClient(url, key, {
+    cookies: {
+      getAll: () => store.getAll(),
+      setAll(list) {
+        try {
+          list.forEach(({ name, value, options }) => store.set(name, value, options));
+        } catch {
+          // Desde una página no se pueden escribir cookies; ya lo hace proxy.ts.
+        }
+      },
+    },
+  });
+}
+
+export type CurrentUser = { id: string; email: string; language: string };
+
+// Devuelve la persona que ha iniciado sesión (o null). getUser() pregunta a Supabase,
+// así que una sesión falsificada o cerrada no pasa.
+export async function getCurrentUser(): Promise<CurrentUser | null> {
+  if (!accountsOpen) return null;
+  const supabase = await createSupabase();
+  const { data } = await supabase.auth.getUser();
+  if (!data.user) return null;
+
+  // RLS: con esta sesión solo se puede leer la fila propia de `perfiles`.
+  const { data: profile } = await supabase
+    .from("perfiles")
+    .select("idioma")
+    .eq("id", data.user.id)
+    .maybeSingle();
+
+  return { id: data.user.id, email: data.user.email ?? "", language: profile?.idioma ?? "es" };
+}

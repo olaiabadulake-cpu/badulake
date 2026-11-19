@@ -1,5 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { waitlistOpen } from "@/lib/waitlist";
+import { accountsOpen } from "@/lib/supabase/server";
+import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/languages";
 import { WaitlistForm } from "./waitlist-form";
 
@@ -41,6 +43,14 @@ export default async function Home() {
           </div>
         )}
       </section>
+
+      {/* Cuentas: solo en el Mac hasta que exista el aviso de privacidad (D-019). */}
+      {accountsOpen && (
+        <nav className="flex gap-4 text-lg font-medium">
+          <Link href="/entrar" className="underline underline-offset-4">{t("signIn")}</Link>
+          <Link href="/registro" className="underline underline-offset-4">{t("signUp")}</Link>
+        </nav>
+      )}
     </div>
   );
 }

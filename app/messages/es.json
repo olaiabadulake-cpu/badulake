@@ -9,7 +9,9 @@
     "point2": "Lleva lo que ya no usas y llévate lo que te guste.",
     "point3": "Libera el armario y pásalo bien.",
     "coming": "Badulake llega a principios de 2027. Apúntate y te avisamos.",
-    "comingSoon": "Badulake llega a principios de 2027. Muy pronto podrás apuntarte a la lista de espera."
+    "comingSoon": "Badulake llega a principios de 2027. Muy pronto podrás apuntarte a la lista de espera.",
+    "signIn": "Entrar",
+    "signUp": "Crear cuenta"
   },
   "Waitlist": {
     "title": "Lista de espera",
@@ -38,5 +40,41 @@
     "project": "Un proyecto de EITB",
     "language": "Idioma",
     "machine": "Traducción automática del castellano, pendiente de revisión."
+  },
+  "Account": {
+    "signUpTitle": "Crear cuenta",
+    "signUpIntro": "Para usar Badulake necesitas una cuenta. Es gratis y solo para mayores de 18 años.",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "passwordHint": "Mínimo 8 caracteres.",
+    "birthdate": "Fecha de nacimiento",
+    "birthdateHint": "Solo la usamos para comprobar que tienes 18 años o más. No la guardamos.",
+    "signUpSubmit": "Crear cuenta",
+    "pending": "Enviando…",
+    "checkEmail": "Te hemos enviado un correo. Abre el enlace que contiene para activar tu cuenta.",
+    "haveAccount": "¿Ya tienes cuenta?",
+    "signInLink": "Entra",
+    "signInTitle": "Entrar",
+    "signInSubmit": "Entrar",
+    "noAccount": "¿Aún no tienes cuenta?",
+    "signUpLink": "Créala aquí",
+    "accountTitle": "Tu cuenta",
+    "loading": "Cargando…",
+    "signedInAs": "Has entrado como {email}.",
+    "signOut": "Salir",
+    "errors": {
+      "email": "Revisa el correo: no parece válido.",
+      "password": "La contraseña debe tener al menos 8 caracteres.",
+      "birthdate": "Revisa la fecha de nacimiento.",
+      "underage": "Lo sentimos: Badulake es solo para mayores de 18 años.",
+      "credentials": "El correo o la contraseña no son correctos.",
+      "unconfirmed": "Aún no has activado tu cuenta. Abre el enlace del correo que te enviamos.",
+      "generic": "Algo ha fallado. Inténtalo de nuevo en un rato."
+    },
+    "notices": {
+      "salida": "Has salido de tu cuenta.",
+      "enlace": "El enlace no es válido o ha caducado. Prueba a entrar o vuelve a crear la cuenta.",
+      "verificada": "Tu correo está verificado. Ya puedes entrar."
+    }
   }
 }

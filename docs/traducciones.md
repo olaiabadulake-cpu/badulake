@@ -34,3 +34,7 @@ No se ha usado el traductor de Google. Para cada lengua, Claude buscó el mejor 
 ## Para revisar o cambiar una traducción
 
 Cada lengua tiene su archivo en `app/messages/<código>.json`. Basta con cambiar el texto entre comillas y no tocar lo que va a la izquierda de los dos puntos. Si cambia un texto en castellano, hay que actualizar las 43 lenguas.
+
+## Textos nuevos aún sin traducir
+
+Si a una lengua le falta un texto, la web enseña el texto en castellano en vez de un error (`app/src/i18n/request.ts`). Así está hoy todo lo de las cuentas (crear cuenta, entrar, salir): escrito en castellano y euskera; las otras 42 lenguas se traducirán con los mismos traductores antes de abrir las cuentas al público.

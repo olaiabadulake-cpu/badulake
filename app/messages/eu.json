@@ -9,7 +9,9 @@
     "point2": "Ekarri jada erabiltzen ez duzuna eta eraman gustatzen zaizuna.",
     "point3": "Askatu armairua eta ondo pasa.",
     "coming": "Badulake 2027. urtearen hasieran helduko da. Eman izena eta abisatuko dizugu.",
-    "comingSoon": "Badulake 2027. urtearen hasieran helduko da. Laster eman ahal izango duzu izena itxaron-zerrendan."
+    "comingSoon": "Badulake 2027. urtearen hasieran helduko da. Laster eman ahal izango duzu izena itxaron-zerrendan.",
+    "signIn": "Sartu",
+    "signUp": "Sortu kontua"
   },
   "Waitlist": {
     "title": "Itxaron-zerrenda",
@@ -38,5 +40,41 @@
     "project": "EITBren proiektu bat",
     "language": "Hizkuntza",
     "machine": "Gaztelaniatik automatikoki itzulia; oraindik berrikusi gabe."
+  },
+  "Account": {
+    "signUpTitle": "Sortu kontua",
+    "signUpIntro": "Badulake erabiltzeko kontu bat behar duzu. Doakoa da, eta 18 urtetik gorakoentzat bakarrik.",
+    "email": "Posta elektronikoa",
+    "password": "Pasahitza",
+    "passwordHint": "Gutxienez 8 karaktere.",
+    "birthdate": "Jaiotze-data",
+    "birthdateHint": "18 urte edo gehiago dituzula egiaztatzeko bakarrik erabiltzen dugu. Ez dugu gordetzen.",
+    "signUpSubmit": "Sortu kontua",
+    "pending": "Bidaltzen…",
+    "checkEmail": "Mezu bat bidali dizugu. Ireki bertako esteka zure kontua aktibatzeko.",
+    "haveAccount": "Baduzu konturik?",
+    "signInLink": "Sartu",
+    "signInTitle": "Sartu",
+    "signInSubmit": "Sartu",
+    "noAccount": "Oraindik ez duzu konturik?",
+    "signUpLink": "Sortu hemen",
+    "accountTitle": "Zure kontua",
+    "loading": "Kargatzen…",
+    "signedInAs": "{email} helbidearekin sartu zara.",
+    "signOut": "Irten",
+    "errors": {
+      "email": "Berrikusi posta elektronikoa: ez dirudi baliozkoa.",
+      "password": "Pasahitzak gutxienez 8 karaktere izan behar ditu.",
+      "birthdate": "Berrikusi jaiotze-data.",
+      "underage": "Sentitzen dugu: Badulake 18 urtetik gorakoentzat da bakarrik.",
+      "credentials": "Posta elektronikoa edo pasahitza ez dira zuzenak.",
+      "unconfirmed": "Oraindik ez duzu kontua aktibatu. Ireki bidali dizugun mezuko esteka.",
+      "generic": "Zerbaitek huts egin du. Saiatu berriro tarte baten buruan."
+    },
+    "notices": {
+      "salida": "Kontutik irten zara.",
+      "enlace": "Esteka ez da baliozkoa edo iraungita dago. Saiatu sartzen edo sortu berriro kontua.",
+      "verificada": "Zure posta elektronikoa egiaztatuta dago. Orain sar zaitezke."
+    }
   }
 }
