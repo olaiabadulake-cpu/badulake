@@ -44,12 +44,12 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Por qué:** Publicar un formulario que recoge correos sin guardarlos bien ni explicar qué se hace con ellos sería engañar a quien se apunta.
 - **Propuso:** Claude · **Decidió:** pendiente de validar por OlaIA
 
-### D-007 · Idioma por defecto: castellano o euskera
+### D-007 · Idioma por defecto: castellano
 - **Fecha:** 19/11/2026
 - **Contexto:** La web elige el idioma según el navegador. Si el navegador no está ni en euskera ni en castellano (por ejemplo, en inglés), usa el idioma por defecto. Hoy es el castellano.
 - **Alternativas:** castellano (la mayoría de navegadores de Euskadi están en castellano); euskera (proyecto de EITB, que da prioridad al euskera).
-- **Decisión:** pendiente. Lo deciden EITB y Jon Telletxea, antes de grabar el episodio 2. Cambiarlo es una palabra en `app/src/i18n/routing.ts`.
-- **Propuso:** Claude · **Decide:** EITB
+- **Decisión:** se queda el castellano. Si en el futuro se quiere cambiar, es una palabra en `app/src/i18n/routing.ts`.
+- **Propuso:** Claude · **Decidió:** OlaIA
 
 ### D-008 · Recordar el idioma elegido durante un año
 - **Fecha:** 19/11/2026
