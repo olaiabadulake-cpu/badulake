@@ -1,0 +1,42 @@
+import type { Metadata } from "next";
+import { Raleway, Roboto } from "next/font/google";
+import { notFound } from "next/navigation";
+import { locale as rootLocale } from "next/root-params";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+import { LanguageSwitch } from "./language-switch";
+import "../globals.css";
+
+const roboto = Roboto({ variable: "--font-roboto", subsets: ["latin"] });
+const raleway = Raleway({ variable: "--font-raleway", subsets: ["latin"] });
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Meta");
+  return { title: t("title"), description: t("description") };
+}
+
+export default async function RootLayout({ children }: LayoutProps<"/[locale]">) {
+  const locale = await rootLocale();
+  if (!hasLocale(routing.locales, locale)) notFound();
+
+  const t = await getTranslations("Footer");
+
+  return (
+    <html lang={locale} className={`${roboto.variable} ${raleway.variable} h-full antialiased`}>
+      <body className="flex min-h-full flex-col font-sans">
+        <NextIntlClientProvider>
+          <main className="flex-1">{children}</main>
+          <footer className="flex flex-wrap items-center justify-between gap-2 border-t border-noche/15 px-4 py-4 text-sm sm:px-8">
+            <span>{t("project")}</span>
+            <LanguageSwitch label={t("switchLanguage")} />
+          </footer>
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  );
+}

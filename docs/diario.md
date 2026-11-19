@@ -26,3 +26,14 @@ Cada entrada indica quién hizo cada cosa: **Claude** (la IA), **OlaIA** (dirige
 **Primera línea de código: «Hola mundo».** OlaIA pide una app que de momento solo diga «Hola mundo». Claude escribe una página web sencilla en `app/index.html` y la sube a GitHub.
 
 **Publicada en Vercel.** Claude propone publicarla con GitHub Pages, pero OlaIA prefiere Vercel. Claude crea la cuenta de Vercel con el GitHub de OlaIA, conecta solo este repositorio y publica la carpeta `app`. OlaIA pone la verificación por SMS y los códigos que llegan por email. Resultado: **[badulake.vercel.app](https://badulake.vercel.app)**. A partir de ahora, cada cambio que Claude suba a GitHub se publica solo.
+
+**Herramientas para programar.** Claude instala en el Mac Node.js 26 (versión LTS) con fnm, un gestor de versiones de Node que no necesita la contraseña del ordenador, y la herramienta de GitHub para el Terminal (`gh`), descargada de la página oficial y comprobada con su firma (checksum). OlaIA inicia sesión en GitHub desde el Terminal con el código de verificación. Git firma los commits como «OlaIA».
+
+**De «Hola mundo» a la primera página de verdad.** OlaIA pide crear la aplicación en este repositorio, publicada en Vercel. Claude lee los requisitos técnicos v2 y monta la base que proponen: Next.js con TypeScript, en euskera y castellano desde el primer día. La carpeta `app/` deja de ser un HTML suelto y pasa a ser la aplicación:
+- Portada en `/eu` y `/es` (el navegador elige el idioma; se puede cambiar abajo).
+- Formulario de lista de espera (correo, zona e idioma de los avisos) con validación en el servidor.
+- Colores y tipografías provisionales de la marca existente (amarillo y azul noche), hasta que llegue la identidad definitiva.
+
+**Un error por el camino.** La primera vez que Claude arranca la app en el Mac falla al procesar los estilos: el servidor de pruebas no encontraba Node.js porque fnm solo se activa en el Terminal. Claude lo arregla indicándole dónde está Node, pero el error se queda guardado en la caché y hay que borrarla para que desaparezca.
+
+**Lo que aún no está.** El formulario funciona en el Mac, pero en la web publicada no se enseña todavía: falta la base de datos donde guardar los correos y el aviso de privacidad de la Asesoría Jurídica. Hasta entonces, la web dice que muy pronto se podrá apuntar.

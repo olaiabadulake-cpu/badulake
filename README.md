@@ -24,7 +24,7 @@ Todo se graba y se documenta aquí: el código, cada decisión, las herramientas
 | Decisiones y por qué se tomaron | [docs/decisiones.md](docs/decisiones.md) |
 | Herramientas que usamos | [docs/herramientas.md](docs/herramientas.md) |
 | La app publicada | [badulake.vercel.app](https://badulake.vercel.app) |
-| El código de la app | carpeta [`app/`](app/) |
+| El código de la app (Next.js) | carpeta [`app/`](app/) |
 
 ## ¿Eres programador o programadora?
 
@@ -32,4 +32,16 @@ Nos encanta que mires el código y opines. Abre un *issue* con sugerencias, duda
 
 ## Estado
 
-🟡 Día 1 (19 de noviembre de 2026): primera versión publicada, una página que dice «Hola mundo» en [badulake.vercel.app](https://badulake.vercel.app).
+🟡 Día 1 (19 de noviembre de 2026): primera versión publicada en [badulake.vercel.app](https://badulake.vercel.app), una portada en euskera y castellano. La lista de espera se abrirá cuando haya base de datos.
+
+## Arrancar la app en tu ordenador
+
+Necesitas Node.js 20 o posterior.
+
+```bash
+cd app
+npm install
+npm run dev
+```
+
+Y abre http://localhost:3000.

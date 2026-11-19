@@ -30,3 +30,16 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Decisión:** Vercel, plan gratuito Hobby. Publica la carpeta `app/` cada vez que cambia algo en GitHub.
 - **Por qué:** Preferencia de OlaIA. Vercel está pensado para aplicaciones web y nos servirá cuando Badulake tenga más partes. El plan Hobby vale para proyectos personales y prototipos; si Badulake pasa a ser comercial habrá que pasar al plan Pro.
 - **Propuso:** OlaIA · **Configuró:** Claude
+
+### D-005 · Next.js con TypeScript, en euskera y castellano
+- **Fecha:** 19/11/2026
+- **Alternativas:** seguir con páginas HTML sueltas; otros frameworks web.
+- **Decisión:** La app se construye con Next.js y TypeScript como web que se instala en el móvil, con next-intl para los idiomas (euskera y castellano desde el primer día) y Tailwind para los estilos. Todos los textos están en `app/messages/`, nunca escritos a mano en las pantallas.
+- **Por qué:** Es la base que proponen los requisitos técnicos v2. Es muy conocida y la IA la maneja bien, y Vercel la publica sin configurar nada.
+- **Propuso:** requisitos técnicos v2 · **Montó:** Claude · **Pendiente:** que Adrián cierre el stack.
+
+### D-006 · El formulario de lista de espera no se publica sin base de datos
+- **Fecha:** 19/11/2026
+- **Decisión:** En el Mac las altas se guardan en un archivo local (que no se sube a GitHub). En la web publicada el formulario se oculta hasta que haya base de datos y aviso de privacidad.
+- **Por qué:** Publicar un formulario que recoge correos sin guardarlos bien ni explicar qué se hace con ellos sería engañar a quien se apunta.
+- **Propuso:** Claude · **Decidió:** pendiente de validar por OlaIA

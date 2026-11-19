@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Dirurik gabe trukatzeko topaketak",
+    "description": "Erabiltzen ez dituzun arropa eta gauzak trukatzeko topaketak. Dirurik gabe. Eman izena itxaron-zerrendan."
+  },
+  "Home": {
+    "tagline": "Erabiltzen ez dituzun arropa eta gauzak trukatzeko topaketak. Dirurik gabe.",
+    "point1": "Elkartu 5 eta 10 pertsona artean zure inguruko lokal batean.",
+    "point2": "Eraman erabiltzen ez duzuna eta ekarri gustuko duzuna.",
+    "point3": "Arindu armairua eta ondo pasa.",
+    "coming": "Badulake 2027aren hasieran iritsiko da. Eman izena eta abisatuko dizugu.",
+    "comingSoon": "Badulake 2027aren hasieran iritsiko da. Laster eman ahal izango duzu izena itxaron-zerrendan."
+  },
+  "Waitlist": {
+    "title": "Itxaron-zerrenda",
+    "email": "Helbide elektronikoa",
+    "zone": "Zure eremua edo auzoa",
+    "zonePlaceholder": "Adib.: Deustu, Bilbo",
+    "language": "Zein hizkuntzatan nahi dituzu abisuak?",
+    "eu": "Euskara",
+    "es": "Gaztelania",
+    "consent": "Onartzen dut Badulakek (EITB) datu hauek gordetzea, abian jartzen denean abisatzeko. Informazio gehiago <link>pribatutasun-oharrean</link>.",
+    "submit": "Izena eman",
+    "pending": "Bidaltzen…",
+    "success": "Eginda! Abisatuko dizugu Badulake prest dagoenean.",
+    "errors": {
+      "email": "Begiratu helbidea: ez dirudi zuzena.",
+      "zone": "Esan zure eremua edo auzoa.",
+      "consent": "Zure baimena behar dugu datuak gordetzeko.",
+      "generic": "Zerbaitek huts egin du. Saiatu berriro geroago."
+    }
+  },
+  "Privacy": {
+    "title": "Pribatutasun-oharra",
+    "pending": "EITBko Aholkularitza Juridikoa pribatutasun-oharra idazten ari da, eta hemen agertuko da abian jarri aurretik.",
+    "back": "Itzuli"
+  },
+  "Footer": {
+    "project": "EITBren proiektu bat",
+    "switchLanguage": "En castellano"
+  }
+}

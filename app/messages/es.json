@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Quedadas para intercambiar sin dinero",
+    "description": "Quedadas para intercambiar ropa y cosas que ya no usas. Sin dinero. Apúntate a la lista de espera."
+  },
+  "Home": {
+    "tagline": "Quedadas para intercambiar ropa y cosas que ya no usas. Sin dinero.",
+    "point1": "Juntaos de 5 a 10 personas en un local de tu zona.",
+    "point2": "Lleva lo que ya no usas y llévate lo que te guste.",
+    "point3": "Libera el armario y pásalo bien.",
+    "coming": "Badulake llega a principios de 2027. Apúntate y te avisamos.",
+    "comingSoon": "Badulake llega a principios de 2027. Muy pronto podrás apuntarte a la lista de espera."
+  },
+  "Waitlist": {
+    "title": "Lista de espera",
+    "email": "Correo electrónico",
+    "zone": "Tu zona o barrio",
+    "zonePlaceholder": "Ej.: Deusto, Bilbao",
+    "language": "¿En qué idioma quieres los avisos?",
+    "eu": "Euskera",
+    "es": "Castellano",
+    "consent": "Acepto que Badulake (EITB) guarde estos datos para avisarme del lanzamiento. Más información en el <link>aviso de privacidad</link>.",
+    "submit": "Apuntarme",
+    "pending": "Enviando…",
+    "success": "¡Hecho! Te avisaremos cuando Badulake esté listo.",
+    "errors": {
+      "email": "Revisa el correo: no parece válido.",
+      "zone": "Dinos tu zona o barrio.",
+      "consent": "Necesitamos tu permiso para guardar tus datos.",
+      "generic": "Algo ha fallado. Inténtalo de nuevo en un rato."
+    }
+  },
+  "Privacy": {
+    "title": "Aviso de privacidad",
+    "pending": "El aviso de privacidad lo está redactando la Asesoría Jurídica de EITB y aparecerá aquí antes del lanzamiento.",
+    "back": "Volver"
+  },
+  "Footer": {
+    "project": "Un proyecto de EITB",
+    "switchLanguage": "Euskaraz"
+  }
+}

@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Colores de la marca existente (badulake.org). Provisionales hasta que
+   LIN3S entregue la identidad y Miren Sanz (EITB) le dé el visto bueno. */
+@theme inline {
+  --color-amarillo: #fedb75;
+  --color-amarillo-claro: #fff6dc;
+  --color-noche: #161944;
+  --color-error: #a3141d;
+  --font-sans: var(--font-roboto);
+  --font-display: var(--font-raleway);
+}
+
+body {
+  background: var(--color-amarillo-claro);
+  color: var(--color-noche);
+}
