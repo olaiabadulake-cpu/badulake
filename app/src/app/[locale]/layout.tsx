@@ -10,6 +10,8 @@ import { routing } from "@/i18n/routing";
 import { Analytics } from "@vercel/analytics/next";
 import { Suspense } from "react";
 import { InstallHint } from "./install-hint";
+import { PruebasAviso } from "./pruebas-aviso";
+import { copiaDePruebas } from "@/lib/pruebas";
 import { RegisterSW } from "./register-sw";
 import { SiteHeader } from "./site-header";
 import "../globals.css";
@@ -36,6 +38,8 @@ export async function generateMetadata(): Promise<Metadata> {
     title: t("title"),
     description: t("description"),
     // App instalable (Tarea 16, D-030): manifiesto del idioma, icono de iPhone y nombre al añadir a la pantalla de inicio.
+    // La copia de pruebas nunca sale en buscadores (Tarea 22, D-035).
+    ...(copiaDePruebas ? { robots: { index: false, follow: false } } : {}),
     manifest: `/${locale}/manifest.webmanifest`,
     icons: { apple: "/iconos/apple-touch-icon.png" },
     appleWebApp: { capable: true, title: "Badulake", statusBarStyle: "default" },
@@ -55,6 +59,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
   return (
     <html lang={locale} className={`${roboto.variable} ${raleway.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
+        <PruebasAviso />
         <NextIntlClientProvider>
           <a
             href="#contenido"
@@ -83,7 +88,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
         </NextIntlClientProvider>
         <RegisterSW />
         {/* Visitas sin cookies ni seguimiento entre webs (Tarea 15, D-029). Solo existe en producción. */}
-        <Suspense fallback={null}><Analytics /></Suspense>
+        {!copiaDePruebas && <Suspense fallback={null}><Analytics /></Suspense>}
       </body>
     </html>
   );

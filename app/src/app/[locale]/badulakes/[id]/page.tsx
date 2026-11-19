@@ -10,6 +10,8 @@ import type { DiaMiTurno } from "@/lib/dia";
 import {
   cancelBadulake, joinBadulake, leaveBadulake, leaveWaitlist, publishBadulake, reportBadulake,
 } from "../actions";
+import { fallos } from "@/lib/pruebas";
+import { ApuntarseConfuso, AsistentesAlaVista } from "./pruebas-fallos";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Badulake");
@@ -35,7 +37,7 @@ async function Details({
   searchParams,
 }: Pick<PageProps<"/[locale]/badulakes/[id]">, "params" | "searchParams">) {
   const { id } = await params;
-  const { aviso } = await searchParams;
+  const { aviso, paso } = await searchParams;
   const locale = await getLocale();
   const user = await getCurrentUser();
   if (!user) redirect({ href: "/entrar?aviso=cuenta", locale });
@@ -148,6 +150,7 @@ async function Details({
           </div>
         ))}
       </dl>
+      {joined && <AsistentesAlaVista id={b.id} />}
       {isOrganizer && !cancelled && <p className="ayuda">{t("addressPrivate")}</p>}
       {isOrganizer && dayOn === true && (
         <Link href={`/badulakes/${b.id}/dia`} className="boton sm:self-start">{t("dayMode")}</Link>
@@ -201,7 +204,7 @@ async function Details({
               type="submit"
               className="boton-2"
             >
-              {t("leave")}
+              {fallos.botonesConfusos ? "Aceptar" : t("leave")}
             </button>
           </form>
         </>
@@ -221,11 +224,15 @@ async function Details({
         free > 0 ? (
           <>
             <p className="ayuda">{t("addressAfterJoin")}</p>
-            <form action={joinBadulake}>
-              <input type="hidden" name="locale" value={locale} />
-              <input type="hidden" name="id" value={b.id} />
-              <button type="submit" className={button}>{t("join")}</button>
-            </form>
+            {fallos.botonesConfusos ? (
+              <ApuntarseConfuso id={b.id} locale={locale} paso={typeof paso === "string" ? paso : undefined} />
+            ) : (
+              <form action={joinBadulake}>
+                <input type="hidden" name="locale" value={locale} />
+                <input type="hidden" name="id" value={b.id} />
+                <button type="submit" className={button}>{t("join")}</button>
+              </form>
+            )}
           </>
         ) : (
           <>

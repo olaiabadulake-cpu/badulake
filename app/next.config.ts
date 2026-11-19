@@ -34,6 +34,11 @@ const securityHeaders = [
   { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), browsing-topics=()" },
 ];
 
+// Copia de pruebas (Tarea 22, D-035): además de la etiqueta, la cabecera pide a los buscadores que la ignoren.
+const isTestCopy =
+  process.env.PRUEBAS_COPIA === "1" && Boolean(process.env.PRUEBAS_SUPABASE_REF);
+if (isTestCopy) securityHeaders.push({ key: "X-Robots-Tag", value: "noindex, nofollow" });
+
 const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,

@@ -301,6 +301,16 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Pendiente:** el correo de recuperación solo llega a quien sea del equipo hasta tener correo propio (Tarea 10). La Asesoría debe confirmar la base legal de la huella.
 - **Cerrado en producción:** todo sigue con `CUENTAS_ABIERTAS` (D-019): las páginas nuevas dan 404 en la web publicada.
 
+### D-035 · Copia de pruebas con datos inventados para grabar los fallos del guion
+- **Fecha:** 20/11/2026
+- **Alternativas:** grabar los fallos en la app real con cuentas inventadas; un ordenador con la base de datos en local; un proyecto de pago.
+- **Decisión** (Tarea 22; [copia-pruebas.md](copia-pruebas.md)):
+  - La copia es **otro proyecto de Supabase gratuito** (`badulake-pruebas`, Frankfurt) y **otro proyecto de Vercel** (`badulake-pruebas`, rama `pruebas`), con el mismo esquema (`supabase/*.sql`) y datos inventados que se pueden volver a cargar (`supabase/pruebas/02-datos.sql`). Todas las páginas llevan una franja roja «COPIA DE PRUEBAS — DATOS INVENTADOS», `noindex` y sin analítica.
+  - **Tres fallos del guion, solo en la copia:** (1) correo sin verificar: el ajuste «Confirm email» de Supabase de la copia (no es variable, porque sin correo propio Supabase no puede enviar a direcciones inventadas); (2) datos de las demás personas a la vista al apuntarse: `PRUEBAS_DATOS_A_LA_VISTA=1` y una función que solo existe en la base de la copia; (3) botones confusos y pasos de más: `PRUEBAS_BOTONES_CONFUSOS=1`.
+  - **Producción no puede activarlos:** el código solo los enciende con `PRUEBAS_COPIA=1` **y** `PRUEBAS_SUPABASE_REF` igual a la referencia de `SUPABASE_URL` **y** el interruptor propio. Nada de eso existe en el Vercel real; y aunque se pusiera por error, la base real no coincide. `app/scripts/comprobar-pruebas.mjs` lo comprueba (7 casos).
+  - Las claves de la copia solo en Vercel y en `app/.env.pruebas` (ignorado por Git). Coste: 0 €.
+- **Propuso:** Claude · **Decidió:** OlaIA · **Hizo:** Claude (OlaIA puso la contraseña de la base de datos)
+
 ### D-036 · Herramientas del día del badulake: sorteo del orden, contador de objetos, cola de turnos y «lo que sobra»
 - **Fecha:** 20/11/2026
 - **Alternativas:** hacerlo en papel o en una hoja de cálculo; guardar el nombre de cada persona en su cuenta (hoy las cuentas no tienen nombre); sortear en el móvil de la organizadora (se podría repetir hasta que salga el orden que conviene); contar con «+1» sueltos (si falla la señal y se reenvía, cuenta doble); que cada apuntada vea toda la cola.
