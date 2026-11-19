@@ -5,6 +5,7 @@
 
 ## Dudas para la Asesoría
 
+- **Analítica (Tarea 15):** Vercel Web Analytics se usa sin cookies, sin guardar IP ni datos personales (según Vercel). ¿Confirmáis que, así, no hace falta consentimiento ni banner, y que basta decirlo en esta política y en la de cookies (interés legítimo en medir el uso)? Si Vercel cambiase y empezase a guardar identificadores, habría que pedir consentimiento.
 - Datos del responsable, del delegado de protección de datos (DPD) y correo para ejercer derechos.
 - ¿Confirmáis las bases legales? Consentimiento (lista de espera), contrato o petición de la persona (cuenta, badulakes, inscripciones) e interés legítimo (comprobar la mayoría de edad y proteger a la comunidad). Ver apartado 3.
 - Supabase y Vercel son empresas de EE. UU. aunque los datos estén en Frankfurt: ¿bastan sus acuerdos de tratamiento y el Marco de Privacidad UE-EE. UU. o las cláusulas tipo? ¿Valen los planes gratuitos para un servicio de EITB, o hace falta contrato firmado? (Decisión D-014 prevé pasar Vercel a un plan de pago.)
@@ -67,7 +68,7 @@ Para dar el servicio usamos estas empresas, que tratan los datos por encargo de 
 
 Aunque los datos estén en la UE, Supabase y Vercel son empresas estadounidenses, por lo que podría haber acceso desde fuera de la UE (transferencia internacional). Se apoyan en las garantías previstas por el RGPD: **[A CONFIRMAR POR ASESORÍA: Marco de Privacidad UE-EE. UU. y/o cláusulas contractuales tipo]**.
 
-No hay ninguna otra empresa ni script externo en la web: ni analítica, ni publicidad, ni redes sociales, ni mapas. Las letras de la web se sirven desde la propia web.
+Para saber cuánta gente visita la web y de dónde viene (por ejemplo, desde Instagram o Facebook), Vercel mide las visitas con su herramienta **Vercel Web Analytics**, **sin cookies** y sin seguirte por otras webs. Guarda qué página se visita, desde qué web o red social llega, el país, y el tipo de dispositivo, navegador y sistema; no guarda tu dirección IP ni te identifica (según Vercel, distingue visitas con un código que cambia cada día). No hay más empresas ni scripts externos: ni publicidad, ni píxeles de redes sociales, ni mapas. Las letras de la web se sirven desde la propia web.
 
 Cuando Badulake envíe correos propios (por ejemplo, para verificar tu cuenta), se añadirá aquí el proveedor de envío. **[PENDIENTE: Tarea 10]**
 
@@ -116,7 +117,7 @@ Aplicamos medidas técnicas para proteger tus datos: la base de datos solo permi
 
 ## 11. Cookies
 
-Solo usamos cookies técnicas, que no necesitan tu permiso. Están explicadas en la [Política de cookies](politica-cookies.md).
+Solo usamos cookies técnicas, que no necesitan tu permiso. La medida de visitas (Vercel Web Analytics) no usa cookies. Están explicadas en la [Política de cookies](politica-cookies.md).
 
 ## 12. Cambios en esta política
 

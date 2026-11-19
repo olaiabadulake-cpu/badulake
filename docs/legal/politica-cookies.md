@@ -6,7 +6,7 @@
 ## Dudas para la Asesoría
 
 - ¿Confirmáis que ambas cookies están exentas de consentimiento como «técnicas estrictamente necesarias» (artículo 22.2 LSSI y guía de la AEPD)? En particular, la de idioma: guarda una preferencia que la persona elige a propósito (decisión D-008).
-- Si algún día se añade analítica (Tarea 15) o cualquier otra cookie, habrá que poner un banner con consentimiento previo y actualizar esta política.
+- Desde la Tarea 15 se mide la audiencia con Vercel Web Analytics, que según Vercel no usa cookies ni guarda la IP. ¿Confirmáis que no requiere banner? Si se añadiera cualquier herramienta con cookies o seguimiento entre webs (por ejemplo, el píxel de Meta), habría que poner un banner con consentimiento previo y actualizar esta política.
 - Titular y correo de contacto: ver Aviso legal **[A COMPLETAR POR ASESORÍA]**.
 
 ## 1. Qué son las cookies
@@ -23,18 +23,22 @@ Solo **cookies técnicas**, imprescindibles para que la web funcione y para algo
 ## 3. Qué cookies NO usa
 
 - No usa cookies de **publicidad**.
-- No usa cookies de **analítica o medición** de visitas.
+- No usa cookies de **analítica o medición** de visitas: las visitas se miden **sin cookies** (ver el apartado siguiente).
 - No usa cookies de **redes sociales** ni contenido de **otras empresas** (mapas, vídeos, fuentes…).
 - No hace **perfiles** de nadie.
 
-## 4. Por qué no hay banner de cookies
+## 4. Cómo medimos las visitas (sin cookies)
 
-La ley (artículo 22.2 de la LSSI) solo exige pedir permiso para las cookies que no son imprescindibles. Las que usamos son necesarias para prestar el servicio o para recordar una elección tuya, así que **no necesitamos preguntarte** y no hay un banner que moleste. Si algún día añadimos otras (por ejemplo, para medir visitas), te lo preguntaremos antes de usarlas.
+Para saber cuánta gente visita la web y de dónde llega (Instagram, Facebook, un enlace de campaña…), usamos **Vercel Web Analytics** (Vercel Inc.). No usa cookies ni guarda nada en tu navegador, no te sigue por otras webs y no guarda tu dirección IP. Registra solo la página visitada, la web de la que vienes, el país y el tipo de dispositivo, navegador y sistema. Más detalle en la [Política de privacidad](politica-privacidad.md).
 
-## 5. Cómo borrarlas o bloquearlas
+## 5. Por qué no hay banner de cookies
+
+La ley (artículo 22.2 de la LSSI) solo exige pedir permiso para las cookies que no son imprescindibles. Las que usamos son necesarias para prestar el servicio o para recordar una elección tuya, así que **no necesitamos preguntarte** y no hay un banner que moleste. La medida de visitas no usa cookies. Si algún día añadimos otras cookies o herramientas que te sigan, te lo preguntaremos antes de usarlas.
+
+## 6. Cómo borrarlas o bloquearlas
 
 Puedes borrar o bloquear las cookies desde la configuración de tu navegador (Chrome, Safari, Firefox, Edge…). Si bloqueas las técnicas, la web funcionará pero **no recordará tu idioma** y **no podrás mantener la sesión abierta**.
 
-## 6. Más información y cambios
+## 7. Más información y cambios
 
 Más información sobre cómo tratamos tus datos en la [Política de privacidad](politica-privacidad.md). Si cambiamos las cookies que usa Badulake, actualizaremos esta página. Fecha de esta versión: **[A COMPLETAR POR ASESORÍA]**.

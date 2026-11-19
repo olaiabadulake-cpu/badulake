@@ -113,3 +113,7 @@ Cada entrada indica quién hizo cada cosa: **Claude** (la IA), **OlaIA** (dirige
 - **Comprobado en el Mac** con `CUENTAS_ABIERTAS=1` y dos cuentas inventadas (`prueba-diseno1` y `2`, del dominio badulake.app, creadas por SQL con permiso de OlaIA, D-011) y dos badulakes de prueba: entrar, lista, detalle, apuntarse, crear, tu cuenta y panel del equipo (404 con marca para quien no es del equipo). Cuentas, perfiles, badulakes, direcciones e inscripciones borrados al acabar: todo a 0.
 - **Queda:** que LIN3S y Miren Sanz validen o cambien la identidad; revisar la frase en euskera de la 404; pruebas con personas reales y lectores de pantalla (tarea 11); fotos (fuera de esta tarea); icono instalable (tarea 16).
 
+
+**Contador y analítica (tarea 15).** Claude añade al panel `/equipo` un contador con cuentas creadas, usuarias activas (últimos 30 días), badulakes publicados, inscripciones y lista de espera, calculado en la base de datos con una función que solo el equipo puede llamar y que no da ningún dato personal. Añade **Vercel Web Analytics** para ver visitas y de dónde vienen, sin cookies y sin tocar la CSP (D-029); actualiza `docs/privacidad.md`, las políticas de privacidad y cookies y las páginas `/privacidad` y `/cookies`.
+- **Comprobado por SQL con dos cuentas inventadas** (deshechas solas al acabar): el equipo ve 2 cuentas y 1 activa; quien no es del equipo y la clave pública reciben error.
+- **Coste:** Hobby gratis (50.000 eventos al mes, 1 mes de datos, sin utm); utm de campaña = complemento Plus, 10 $/mes (decide OlaIA).

@@ -7,6 +7,8 @@ import { getTranslations } from "next-intl/server";
 import { contentLang } from "@/i18n/content-lang";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import { Analytics } from "@vercel/analytics/next";
+import { Suspense } from "react";
 import { SiteHeader } from "./site-header";
 import "../globals.css";
 
@@ -66,6 +68,8 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
             </div>
           </footer>
         </NextIntlClientProvider>
+        {/* Visitas sin cookies ni seguimiento entre webs (Tarea 15, D-029). Solo existe en producción. */}
+        <Suspense fallback={null}><Analytics /></Suspense>
       </body>
     </html>
   );

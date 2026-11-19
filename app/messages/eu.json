@@ -254,6 +254,16 @@
       "suspender": "Kontua esekita: ezin da sartu eta bere badulakeak ezkutatuta daude.",
       "resolver": "Salaketa ebatzita.",
       "error": "Zerbait huts egin du. Saiatu berriro."
+    },
+    "reportsTitle": "Salaketak",
+    "stats": {
+      "title": "Kontagailua",
+      "accounts": "Sortutako kontuak",
+      "active": "Erabiltzaile aktiboak (azken 30 egunak)",
+      "badulakes": "Argitaratutako badulakeak",
+      "signups": "Izen-emateak",
+      "waitlist": "Itxaron-zerrenda",
+      "note": "Zenbakiak bakarrik; ez da ikusten nor den bakoitza. «Aktibo»: azken 30 egunetan sartu den pertsona."
     }
   },
   "NotFound": {

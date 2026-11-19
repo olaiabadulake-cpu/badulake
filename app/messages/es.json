@@ -49,7 +49,7 @@
       },
       "s05": {
         "title": "5. Quién más interviene (encargados del tratamiento) y transferencias",
-        "body": "Para dar el servicio usamos estas empresas, que tratan los datos por encargo de EITB y con contrato de encargo (acuerdo de tratamiento de datos):\n- **Supabase** (Supabase Inc., EE. UU.): base de datos y cuentas. Los datos están en **Frankfurt (Alemania, Unión Europea)**.\n- **Vercel** (Vercel Inc., EE. UU.): publica la web y ejecuta la parte del servidor (formularios, sesiones), configurada para trabajar en **Frankfurt**. La red que sirve las páginas está repartida por el mundo y atiende desde el punto más cercano a ti, pero sin guardar tus datos personales.\n- **GitHub** (Microsoft): guarda el código de la app. **No guarda datos de personas.**\nAunque los datos estén en la UE, Supabase y Vercel son empresas estadounidenses, por lo que podría haber acceso desde fuera de la UE (transferencia internacional). Se apoyan en las garantías previstas por el RGPD: **[A CONFIRMAR POR ASESORÍA: Marco de Privacidad UE-EE. UU. y/o cláusulas contractuales tipo]**.\nNo hay ninguna otra empresa ni script externo en la web: ni analítica, ni publicidad, ni redes sociales, ni mapas. Las letras de la web se sirven desde la propia web.\nCuando Badulake envíe correos propios (por ejemplo, para verificar tu cuenta), se añadirá aquí el proveedor de envío. **[PENDIENTE: Tarea 10]**\nSolo comunicaremos datos a autoridades, jueces y fuerzas de seguridad cuando una ley nos obligue."
+        "body": "Para dar el servicio usamos estas empresas, que tratan los datos por encargo de EITB y con contrato de encargo (acuerdo de tratamiento de datos):\n- **Supabase** (Supabase Inc., EE. UU.): base de datos y cuentas. Los datos están en **Frankfurt (Alemania, Unión Europea)**.\n- **Vercel** (Vercel Inc., EE. UU.): publica la web y ejecuta la parte del servidor (formularios, sesiones), configurada para trabajar en **Frankfurt**. La red que sirve las páginas está repartida por el mundo y atiende desde el punto más cercano a ti, pero sin guardar tus datos personales.\n- **GitHub** (Microsoft): guarda el código de la app. **No guarda datos de personas.**\nAunque los datos estén en la UE, Supabase y Vercel son empresas estadounidenses, por lo que podría haber acceso desde fuera de la UE (transferencia internacional). Se apoyan en las garantías previstas por el RGPD: **[A CONFIRMAR POR ASESORÍA: Marco de Privacidad UE-EE. UU. y/o cláusulas contractuales tipo]**.\nPara saber cuánta gente visita la web y de dónde viene (por ejemplo, desde Instagram o Facebook), Vercel mide las visitas con su herramienta **Vercel Web Analytics**, **sin cookies** y sin seguirte por otras webs. Guarda qué página se visita, desde qué web o red social llega, el país, y el tipo de dispositivo, navegador y sistema; no guarda tu dirección IP ni te identifica (según Vercel, distingue visitas con un código que cambia cada día). No hay más empresas ni scripts externos: ni publicidad, ni píxeles de redes sociales, ni mapas. Las letras de la web se sirven desde la propia web.\nCuando Badulake envíe correos propios (por ejemplo, para verificar tu cuenta), se añadirá aquí el proveedor de envío. **[PENDIENTE: Tarea 10]**\nSolo comunicaremos datos a autoridades, jueces y fuerzas de seguridad cuando una ley nos obligue."
       },
       "s06": {
         "title": "6. Cuánto tiempo guardamos tus datos",
@@ -73,7 +73,7 @@
       },
       "s11": {
         "title": "11. Cookies",
-        "body": "Solo usamos cookies técnicas, que no necesitan tu permiso. Están explicadas en la Política de cookies."
+        "body": "Solo usamos cookies técnicas, que no necesitan tu permiso. La medida de visitas (Vercel Web Analytics) no usa cookies. Están explicadas en la Política de cookies."
       },
       "s12": {
         "title": "12. Cambios en esta política",
@@ -328,18 +328,22 @@
         },
         "s03": {
           "title": "3. Qué cookies NO usa",
-          "body": "- No usa cookies de **publicidad**.\n- No usa cookies de **analítica o medición** de visitas.\n- No usa cookies de **redes sociales** ni contenido de **otras empresas** (mapas, vídeos, fuentes…).\n- No hace **perfiles** de nadie."
+          "body": "- No usa cookies de **publicidad**.\n- No usa cookies de **analítica o medición** de visitas: las visitas se miden **sin cookies** (ver el apartado siguiente).\n- No usa cookies de **redes sociales** ni contenido de **otras empresas** (mapas, vídeos, fuentes…).\n- No hace **perfiles** de nadie."
         },
         "s04": {
-          "title": "4. Por qué no hay banner de cookies",
-          "body": "La ley (artículo 22.2 de la LSSI) solo exige pedir permiso para las cookies que no son imprescindibles. Las que usamos son necesarias para prestar el servicio o para recordar una elección tuya, así que **no necesitamos preguntarte** y no hay un banner que moleste. Si algún día añadimos otras (por ejemplo, para medir visitas), te lo preguntaremos antes de usarlas."
+          "title": "4. Cómo medimos las visitas (sin cookies)",
+          "body": "Para saber cuánta gente visita la web y de dónde llega (Instagram, Facebook, un enlace de campaña…), usamos **Vercel Web Analytics** (Vercel Inc.). No usa cookies ni guarda nada en tu navegador, no te sigue por otras webs y no guarda tu dirección IP. Registra solo la página visitada, la web de la que vienes, el país y el tipo de dispositivo, navegador y sistema. Más detalle en la Política de privacidad."
         },
         "s05": {
-          "title": "5. Cómo borrarlas o bloquearlas",
-          "body": "Puedes borrar o bloquear las cookies desde la configuración de tu navegador (Chrome, Safari, Firefox, Edge…). Si bloqueas las técnicas, la web funcionará pero **no recordará tu idioma** y **no podrás mantener la sesión abierta**."
+          "title": "5. Por qué no hay banner de cookies",
+          "body": "La ley (artículo 22.2 de la LSSI) solo exige pedir permiso para las cookies que no son imprescindibles. Las que usamos son necesarias para prestar el servicio o para recordar una elección tuya, así que **no necesitamos preguntarte** y no hay un banner que moleste. La medida de visitas no usa cookies. Si algún día añadimos otras cookies o herramientas que te sigan, te lo preguntaremos antes de usarlas."
         },
         "s06": {
-          "title": "6. Más información y cambios",
+          "title": "6. Cómo borrarlas o bloquearlas",
+          "body": "Puedes borrar o bloquear las cookies desde la configuración de tu navegador (Chrome, Safari, Firefox, Edge…). Si bloqueas las técnicas, la web funcionará pero **no recordará tu idioma** y **no podrás mantener la sesión abierta**."
+        },
+        "s07": {
+          "title": "7. Más información y cambios",
           "body": "Más información sobre cómo tratamos tus datos en la Política de privacidad. Si cambiamos las cookies que usa Badulake, actualizaremos esta página. Fecha de esta versión: **[A COMPLETAR POR ASESORÍA]**."
         }
       }
@@ -384,6 +388,16 @@
       "suspender": "Cuenta suspendida: no puede entrar y sus badulakes están ocultos.",
       "resolver": "Denuncia resuelta.",
       "error": "Algo ha fallado. Inténtalo de nuevo."
+    },
+    "reportsTitle": "Denuncias",
+    "stats": {
+      "title": "Contador",
+      "accounts": "Cuentas creadas",
+      "active": "Usuarias activas (últimos 30 días)",
+      "badulakes": "Badulakes publicados",
+      "signups": "Inscripciones",
+      "waitlist": "Lista de espera",
+      "note": "Solo números; no se ve quién es cada persona. «Activa» es quien ha entrado en los últimos 30 días."
     }
   },
   "NotFound": {

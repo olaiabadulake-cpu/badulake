@@ -78,6 +78,7 @@ Ficha hecha el 19/11/2026 (Tarea 9 del plan maestro, decisión D-024). Es el **b
 |---|---|---|---|
 | **Supabase** (Supabase Inc., EE. UU.) | Base de datos y cuentas | **Frankfurt** (`eu-central-1`, UE) | Plan gratuito. Empresa de EE. UU.: revisar su acuerdo de tratamiento (DPA) y garantías (cláusulas tipo / Marco de Privacidad UE-EE. UU.). |
 | **Vercel** (Vercel Inc., EE. UU.) | Publica la web y ejecuta la parte del servidor (formularios, sesiones) | **Frankfurt** (`fra1`) desde esta tarea; la red que sirve las páginas está repartida por el mundo y atiende desde el punto más cercano | Plan gratuito (Hobby). Antes de esta tarea la parte del servidor se ejecutaba en Washington (EE. UU.); corregido en `app/vercel.json`. Revisar su DPA y si el plan gratuito es adecuado para un servicio de EITB. |
+| **Vercel Web Analytics** (misma empresa) | Mide visitas y de dónde vienen, sin cookies | Red global de Vercel | Incluido en Hobby (50.000 eventos/mes). Sin cookies ni IP guardada (según Vercel): confirmar con la Asesoría que no hace falta banner. |
 | **GitHub** (Microsoft) | Guarda el código | — | **No guarda datos de personas.** El repositorio es público y no contiene claves ni datos. |
 
 **No intervienen:** analítica, publicidad, redes sociales, mapas, fuentes ni scripts de otras empresas. Las letras (Google Fonts) se descargan al compilar y se sirven desde la propia web: el navegador de la persona no contacta con Google.
@@ -115,7 +116,7 @@ Comprobado con un badulake inventado: a los 2 días ya no tenía dirección y a 
 
 ## 6. Cookies
 
-Solo **cookies técnicas**, exentas de consentimiento (art. 22.2 LSSI). Comprobado en la web publicada y en el Mac con sesión abierta: no hay ninguna más ni ningún script de otra empresa.
+Solo **cookies técnicas**, exentas de consentimiento (art. 22.2 LSSI). Comprobado en la web publicada y en el Mac con sesión abierta: no hay ninguna más. Desde la Tarea 15 hay un único script de terceros: **Vercel Web Analytics** (servido desde la propia web, `/_vercel/insights/`), **sin cookies**; registra página, web de origen, país y tipo de dispositivo/navegador, sin IP guardada ni identificador persistente (D-029). Plan Hobby: 50.000 eventos al mes, 1 mes de datos, sin parámetros utm (para verlos hace falta el complemento Web Analytics Plus, 10 $/mes).
 
 | Cookie | Para qué | Cuánto dura |
 |---|---|---|

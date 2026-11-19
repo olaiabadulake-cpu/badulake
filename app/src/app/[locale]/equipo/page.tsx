@@ -22,9 +22,56 @@ export default async function TeamPage({ searchParams }: PageProps<"/[locale]/eq
     <div lang={await contentLang()} className="pagina">
       <h1 className="titulo-1">{t("title")}</h1>
       <Suspense fallback={<p>{t("loading")}</p>}>
-        <Reports searchParams={searchParams} />
+        <Panel searchParams={searchParams} />
       </Suspense>
     </div>
+  );
+}
+
+async function Panel({ searchParams }: Pick<PageProps<"/[locale]/equipo">, "searchParams">) {
+  const t = await getTranslations("Team");
+  return (
+    <>
+      <Counter />
+      <h2 className="titulo-2">{t("reportsTitle")}</h2>
+      <Suspense fallback={<p>{t("loading")}</p>}>
+        <Reports searchParams={searchParams} />
+      </Suspense>
+    </>
+  );
+}
+
+// Números agregados, sin datos personales (equipo_contador, D-029). Si no eres del equipo,
+// Reports ya responde 404; aquí solo se pinta nada.
+async function Counter() {
+  const supabase = await createSupabase();
+  const t = await getTranslations("Team");
+  const { data, error } = await supabase.rpc("equipo_contador");
+  if (error) return null;
+  const c = (Array.isArray(data) ? data[0] : data) as
+    | { cuentas: number; activas_30d: number; badulakes_publicados: number; inscripciones: number; lista_espera: number }
+    | undefined;
+  if (!c) return null;
+  const items: [string, number][] = [
+    [t("stats.accounts"), c.cuentas],
+    [t("stats.active"), c.activas_30d],
+    [t("stats.badulakes"), c.badulakes_publicados],
+    [t("stats.signups"), c.inscripciones],
+    [t("stats.waitlist"), c.lista_espera],
+  ];
+  return (
+    <section aria-labelledby="contador" className="flex flex-col gap-3">
+      <h2 id="contador" className="titulo-2">{t("stats.title")}</h2>
+      <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+        {items.map(([label, n]) => (
+          <div key={label} className="tarjeta gap-1">
+            <dt className="ayuda font-medium">{label}</dt>
+            <dd className="font-display text-3xl font-bold">{n}</dd>
+          </div>
+        ))}
+      </dl>
+      <p className="ayuda">{t("stats.note")}</p>
+    </section>
   );
 }
 

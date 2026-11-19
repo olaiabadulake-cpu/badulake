@@ -231,3 +231,13 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Provisional:** es una base hasta que LIN3S entregue la identidad y Miren Sanz (EITB) la valide; para cambiarla basta con tocar `globals.css` y `logo.tsx`.
 - **Propuso y aplicó:** Claude (tarea 14 del plan maestro) · **Decidió:** OlaIA
 
+
+### D-029 · Contador para el equipo y analítica de visitas sin cookies (Vercel Web Analytics)
+- **Fecha:** 19/11/2026
+- **Alternativas:** Google Analytics o píxel de Meta (cookies, seguimiento entre webs, banner obligatorio); Plausible o Umami (otra empresa más, de pago o con servidor propio); no medir nada.
+- **Decisión:**
+  - **Contador** (`supabase/contador.sql`): la función `equipo_contador()` devuelve cuentas creadas, usuarias activas (han entrado o usado su sesión en los últimos 30 días), badulakes publicados (no ocultos), inscripciones y personas en la lista de espera. Solo números; comprueba `soy_equipo()` (a quien no es del equipo y a la clave pública les da error). Se ve arriba del panel `/equipo`. No hay contador público (si OlaIA lo quiere, se pregunta).
+  - **Analítica:** **Vercel Web Analytics** (`@vercel/analytics`), sin cookies, sin guardar IP y sin seguirte entre webs (según Vercel). Mide página, web de origen (Instagram, Facebook…), país y tipo de dispositivo. El script y los avisos salen del mismo dominio (`/_vercel/insights/`), así que **la política de seguridad (CSP) no cambia** (D-023). Sigue sin hacer falta banner de cookies; los textos de `/privacidad` y `/cookies` y las políticas para la Asesoría lo explican.
+  - **Coste (precios oficiales, comprobados 19/11/2026):** plan Hobby, gratis: 50.000 eventos al mes, datos de 1 mes, **sin parámetros utm**. El complemento «Web Analytics Plus» (10 $/mes) añade utm y 24 meses. Las visitas desde Instagram y Facebook se distinguen por la web de origen sin pagar; para separar campañas por `utm_campaign` hace falta Plus (decide OlaIA antes de las campañas). Los precios de Vercel Pro que publica su documentación no coinciden entre sus páginas: revisar antes de contratar.
+- **No entra:** píxel de Meta ni nada con cookies (si se quisiera, habría que añadir banner con consentimiento previo y cambiar CSP, privacidad y cookies).
+- **Propuso y hizo:** Claude (tarea 15 del plan maestro) · **Decidió:** Claude, por ser técnica; OlaIA puede cambiarla.
