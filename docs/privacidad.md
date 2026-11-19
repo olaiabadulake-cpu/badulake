@@ -116,7 +116,7 @@ Comprobado con un badulake inventado: a los 2 días ya no tenía dirección y a 
 
 ## 6. Cookies
 
-Solo **cookies técnicas**, exentas de consentimiento (art. 22.2 LSSI). Comprobado en la web publicada y en el Mac con sesión abierta: no hay ninguna más. Desde la Tarea 15 hay un único script de terceros: **Vercel Web Analytics** (servido desde la propia web, `/_vercel/insights/`), **sin cookies**; registra página, web de origen, país y tipo de dispositivo/navegador, sin IP guardada ni identificador persistente (D-029). Plan Hobby: 50.000 eventos al mes, 1 mes de datos, sin parámetros utm (para verlos hace falta el complemento Web Analytics Plus, 10 $/mes).
+Solo **cookies técnicas**, exentas de consentimiento (art. 22.2 LSSI). Comprobado en la web publicada y en el Mac con sesión abierta: no hay ninguna más. Desde la Tarea 15 hay un único script de terceros: **Vercel Web Analytics** (servido desde la propia web, una ruta propia del mismo dominio), **sin cookies**; registra página, web de origen, país y tipo de dispositivo/navegador, sin IP guardada ni identificador persistente (D-029). Plan Hobby: 50.000 eventos al mes, 1 mes de datos, sin parámetros utm (para verlos hace falta el complemento Web Analytics Plus, 10 $/mes).
 
 | Cookie | Para qué | Cuánto dura |
 |---|---|---|
