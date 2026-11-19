@@ -23,7 +23,8 @@ Coste: **0 €** (Supabase Free permite 2 proyectos activos por organización; V
 
 - Supabase `badulake-pruebas`: creado (Frankfurt, gratis), esquema y datos cargados, «Confirm email» **desactivado** (fallo 1 encendido).
 - Probado en el Mac contra la copia con `app/.env.pruebas` (ignorado por Git): copiar `app/.env.local`-style con las variables de abajo y arrancar con `set -a; . ./.env.pruebas; set +a; npm run dev`.
-- Vercel `badulake-pruebas`: ver el diario.
+- Vercel `badulake-pruebas`: publicado en https://badulake-pruebas.vercel.app (desde `main`), con las variables de abajo y los dos interruptores de variable en `0`. Probado: franja roja, `noindex` y entrar con una cuenta inventada. La web real sigue sin franja, sin `noindex` y con las cuentas cerradas.
+- Hay que **redesplegar** (Vercel → Deployments → Redeploy) después de cambiar una variable.
 
 ## Montar la copia desde cero
 

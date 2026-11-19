@@ -2,6 +2,8 @@
 
 Resumen para la escena de monetizar (Tarea 17, D-030). Los datos salen de la pestaña **Costes** de la hoja «Badulake · Costes y cuentas» y de los precios oficiales anotados allí (revisados 19/11/2026). Todo en dólares (USD), tal como cobran los proveedores; el importe en euros lo confirma la factura.
 
+**La copia de pruebas (Tarea 22, D-035)** usa un segundo proyecto gratuito de Supabase y de Vercel: 0 USD. Con los 2 proyectos de Supabase Free ya no cabe un tercero sin pausar uno.
+
 **Lo que no cuesta nada ni se cobra:** Badulake no cobra a nadie (D-012). Los costes los paga el proyecto, no las usuarias.
 
 ## Qué paga la app al mes
