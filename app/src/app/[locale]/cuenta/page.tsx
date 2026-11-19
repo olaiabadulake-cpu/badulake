@@ -7,6 +7,7 @@ import { redirect } from "@/i18n/navigation";
 import { accountsOpen, getCurrentUser } from "@/lib/supabase/server";
 import { signOut } from "./actions";
 import { Interest } from "./interest";
+import { Avisos } from "./avisos";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Account");
@@ -38,6 +39,7 @@ async function Account() {
   return (
     <>
       <p className="text-lg">{t("signedInAs", { email: user!.email })}</p>
+      <Avisos />
       <form action={signOut}>
         <input type="hidden" name="locale" value={locale} />
         <button

@@ -122,7 +122,11 @@
     "baducoinsText": "Badulakeen artean trukatzeko txanponak. Gaur ez daude eta ezin dira erosi.",
     "interestOn": "Interesatzen zait",
     "interestOff": "Ez zait interesatzen",
-    "interestError": "Ezin izan da gorde. Saiatu berriro une batean."
+    "interestError": "Ezin izan da gorde. Saiatu berriro une batean.",
+    "noticesTitle": "Oharrak",
+    "noticeFromWaitlist": "itxaron-zerrendatik sartu zara.",
+    "noticeCancelled": "badulake hau bertan behera geratu da.",
+    "noticeWaiting": "itxaron-zerrendan zaude ({position}.a)."
   },
   "Badulake": {
     "newTitle": "Badulake bat sortu",
@@ -137,7 +141,7 @@
     "hints": {
       "title": "3 eta 80 letra artean.",
       "description": "Zer trukatuko duzuen eta nola. Gehienez 500 letra.",
-      "date": "Madrilgo ordua. Etorkizunean izan behar du.",
+      "date": "Madrilgo ordua. Gaurtik gutxienez 2 egunera, 5 lagun biltzeko denbora izan dadin.",
       "zone": "Publikoki ikusiko da. Adib.: Deustu, Bilbo.",
       "address": "Zuk bakarrik ikusiko duzu; izena ematen duenari erakutsiko diogu.",
       "seats": "5 eta 10 lagun artean."
@@ -151,7 +155,7 @@
     "errors": {
       "title": "Izenburuak 3 eta 80 letra artean izan behar ditu.",
       "description": "Kontatu zerbait badulakeari buruz (gehienez 500 letra).",
-      "date": "Aukeratu oraindik igaro ez den data eta ordua.",
+      "date": "Aukeratu gaurtik gutxienez 2 egunerako data eta ordua.",
       "zone": "Esan zein eremu edo auzo den.",
       "address": "Idatzi helbide zehatza.",
       "seats": "Plazak 5 eta 10 artean izan behar dira.",
@@ -176,12 +180,33 @@
       "borrada": "Badulake honetatik izena kendu duzu.",
       "denunciado": "Salaketa bidalita. Eskerrik asko: taldeak berrikusiko du.",
       "denuncia_repetida": "Dagoeneko salatu zenuen badulake hau. Taldea berrikusten ari da.",
-      "denuncia_error": "Ezin izan da salaketa bidali. Aukeratu arrazoi bat eta saiatu berriro geroago."
+      "denuncia_error": "Ezin izan da salaketa bidali. Aukeratu arrazoi bat eta saiatu berriro geroago.",
+      "en_espera": "Ez zegoen plazarik: itxaron-zerrendan jarri zara.",
+      "espera_salida": "Itxaron-zerrendatik atera zara.",
+      "cancelado": "Badulakea bertan behera utzi duzu. Ez du izen-emate gehiago onartzen.",
+      "no_publicable": "Ezin da argitaratu: gutxienez 2 egun falta behar dira, 5 lagun biltzeko denbora izan dadin."
     },
     "back": "Itzuli badulakeetara",
     "mine": "Zuk antolatzen duzu",
     "draft": "Zirriborroa",
-    "joinedTag": "Izena emanda"
+    "joinedTag": "Izena emanda",
+    "statusConfirmed": "Baieztatuta: 5 lagunek edo gehiagok eman dute izena.",
+    "statusNeeds": "{count} lagun falta dira baieztatzeko. 24 ordu lehenago 5 ez badaude, bertan behera geratuko da.",
+    "statusCancelled": "Badulake hau bertan behera geratu da.",
+    "cancelledAuto": "24 ordu lehenago ez zen 5 lagunera iritsi, eta bertan behera geratu zen.",
+    "cancelledByOrganizer": "Antolatzaileak bertan behera utzi du.",
+    "confirmedTag": "Baieztatuta",
+    "cancelledTag": "Bertan behera",
+    "waitingTag": "Itxaron-zerrendan ({position}.a)",
+    "joinWaitlist": "Jarri itxaron-zerrendan",
+    "waitlistExplain": "Norbaitek izena kentzen badu, automatikoki sartuko zara iritsiera-ordenaren arabera, eta helbide zehatza ikusiko duzu.",
+    "waitingPosition": "Itxaron-zerrendan zaude: {position}.a zara.",
+    "leaveWaitlist": "Atera itxaron-zerrendatik",
+    "fromWaitlist": "Itxaron-zerrendatik sartu zara. Plaza duzu eta helbide zehatza ikus dezakezu.",
+    "cancelSummary": "Bertan behera utzi badulake hau",
+    "cancelExplain": "Izena emandako eta itxaron-zerrendako guztientzat geratuko da bertan behera, eta helbide zehatza ezabatuko da. Ezin da desegin.",
+    "cancelConfirm": "Bai, bertan behera utzi",
+    "cancelledByYou": "Zuk utzi duzu bertan behera."
   },
   "Nav": {
     "label": "Menu nagusia",

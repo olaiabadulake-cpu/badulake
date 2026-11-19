@@ -48,7 +48,7 @@ Ficha hecha el 19/11/2026 (Tarea 9 del plan maestro, decisión D-024). Es el **b
 | **Para qué** | Que otras personas encuentren el badulake y puedan ir. |
 | **Base legal propuesta** | Ejecución del servicio (6.1.b). |
 | **Quién lo ve** | Un badulake publicado lo ven las personas con cuenta, **sin dirección y sin saber quién lo organiza** (corregido en esta tarea: antes se podía leer el identificador de la organizadora). Los borradores, solo la organizadora. La **dirección**, solo la organizadora y las personas apuntadas. |
-| **Cuánto tiempo** | La **dirección se borra al día siguiente** del badulake. El **badulake, 30 días después** (margen para quejas o denuncias). |
+| **Cuánto tiempo** | La **dirección se borra al día siguiente** del badulake, o **en el momento en que se cancela** (Tarea 20). El **badulake, 30 días después** (margen para quejas o denuncias). |
 | **Aviso para la Asesoría** | La dirección suele ser la de una casa: es el dato más delicado de la app. La descripción es texto libre: la organizadora podría escribir datos personales (lo explicarán las condiciones de uso, Tarea 12). |
 
 ### 2.4 Inscripciones (apuntarse a un badulake)
@@ -60,6 +60,18 @@ Ficha hecha el 19/11/2026 (Tarea 9 del plan maestro, decisión D-024). Es el **b
 | **Base legal propuesta** | Ejecución del servicio (6.1.b). |
 | **Quién lo ve** | Solo la propia persona. La **organizadora ve cuántas personas hay, no quiénes**. |
 | **Cuánto tiempo** | Se borran con el badulake, **30 días después** de celebrarse. Si la persona se borra antes, desaparece en el momento. |
+
+### 2.4.1 Lista de espera de un badulake (Tarea 20, D-032)
+
+No confundir con la lista de espera del lanzamiento (2.1), que guarda correos: esta no guarda ningún dato nuevo de la persona.
+
+| | |
+|---|---|
+| **Datos** | Qué persona espera plaza en qué badulake y desde cuándo (tabla `espera`). En `inscripciones`, si alguien entró desde la lista (`desde_espera`, para enseñarle el aviso). En el badulake, si se canceló, cuándo y si fue solo o lo canceló la organizadora. |
+| **Para qué** | Dar la plaza que se libera a la primera de la lista, por orden de llegada, y avisarla dentro de la app. |
+| **Base legal propuesta** | Ejecución del servicio (6.1.b). |
+| **Quién lo ve** | Solo la propia persona ve que está en la lista y su puesto («eres la 2.ª»). Nadie más ve quién espera: ni la organizadora ni las demás. **Quien está en lista de espera no ve la dirección exacta**: solo la ve cuando entra. |
+| **Cuánto tiempo** | Se borra **en cuanto empieza el badulake** (ya no sirve), al salir de la lista o al entrar. Si el badulake se cancela, se guarda para enseñar el aviso y se borra con el badulake, 30 días después de la fecha. |
 
 ### 2.5 Denuncias (Tarea 13, D-027)
 
@@ -114,7 +126,9 @@ Se aplican **solos cada noche a las 03:15 (hora UTC)** con una tarea programada 
 | Dato | Se borra |
 |---|---|
 | Dirección exacta de un badulake | 1 día después de celebrarse |
-| Badulake e inscripciones | 30 días después de celebrarse |
+| Dirección exacta de un badulake cancelado | En el momento de cancelarse |
+| Badulake e inscripciones (también los cancelados) | 30 días después de la fecha |
+| Lista de espera de un badulake | Al empezar el badulake (o al salir de ella o entrar) |
 | Lista de espera | Al avisar del lanzamiento y, como mucho, a los 12 meses del alta |
 | Sesiones abandonadas | A los 90 días sin usarse |
 | Registro de accesos de Supabase Auth | A los 30 días |

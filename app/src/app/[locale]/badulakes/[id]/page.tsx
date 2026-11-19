@@ -6,7 +6,9 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { Link, redirect } from "@/i18n/navigation";
 import { accountsOpen, createSupabase, getCurrentUser, idsOf } from "@/lib/supabase/server";
 import { reportReasons } from "@/lib/report";
-import { joinBadulake, leaveBadulake, publishBadulake, reportBadulake } from "../actions";
+import {
+  cancelBadulake, joinBadulake, leaveBadulake, leaveWaitlist, publishBadulake, reportBadulake,
+} from "../actions";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Badulake");
@@ -45,7 +47,7 @@ async function Details({
   const [{ data: b }, { data: ownIds }] = await Promise.all([
     supabase
       .from("badulakes")
-      .select("id, titulo, descripcion, fecha_hora, zona, plazas, estado, oculto")
+      .select("id, titulo, descripcion, fecha_hora, zona, plazas, estado, oculto, cancelado_por")
       .eq("id", id)
       .maybeSingle(),
     supabase.rpc("mis_badulakes"),
@@ -53,15 +55,21 @@ async function Details({
   if (!b) notFound();
   const isOrganizer = idsOf(ownIds).includes(b.id);
 
-  const [{ data: a }, { data: mine }, { data: count }] = await Promise.all([
+  const [{ data: a }, { data: mine }, { data: count }, { data: wait }] = await Promise.all([
     supabase.from("badulakes_direccion").select("direccion").eq("badulake_id", id).maybeSingle(),
-    supabase.from("inscripciones").select("badulake_id").eq("badulake_id", id).maybeSingle(),
+    supabase.from("inscripciones").select("badulake_id, desde_espera").eq("badulake_id", id).maybeSingle(),
     supabase.rpc("plazas_ocupadas", { p_ids: [id] }).maybeSingle<{ ocupadas: number }>(),
+    // Mi puesto en la lista de espera (solo el mío, Tarea 20).
+    supabase.rpc("mi_espera", { p_ids: [id] }).maybeSingle<{ puesto: number }>(),
   ]);
   const joined = Boolean(mine);
+  const position = wait?.puesto ?? null;
   const taken = count?.ocupadas ?? 0;
   const free = Math.max(0, b.plazas - taken);
   const upcoming = new Date(b.fecha_hora) > new Date();
+  const cancelled = b.estado === "cancelado";
+  // «Confirmado» no se guarda: es publicado con 5 apuntadas o más (D-032).
+  const confirmed = b.estado === "publicado" && taken >= 5;
 
   const t = await getTranslations("Badulake");
   const when = new Intl.DateTimeFormat(await contentLang(), {
@@ -71,11 +79,15 @@ async function Details({
     [t("date"), when],
     [t("zone"), b.zona],
     ...(a ? ([[t("address"), a.direccion]] as [string, string][]) : []),
-    [t("seats"), isOrganizer ? t("seatsTaken", { taken, total: b.plazas }) : t("freeSeats", { count: free })],
+    ...(cancelled ? [] : ([[t("seats"), isOrganizer ? t("seatsTaken", { taken, total: b.plazas }) : t("freeSeats", { count: free })]] as [string, string][])),
   ];
-  const notices = ["apuntada", "borrada", "lleno", "error", "no_disponible", "denunciado", "denuncia_repetida", "denuncia_error"] as const;
+  const notices = [
+    "apuntada", "borrada", "lleno", "error", "no_disponible", "denunciado", "denuncia_repetida",
+    "denuncia_error", "en_espera", "espera_salida", "cancelado", "no_publicable",
+  ] as const;
   const notice = notices.find((n) => n === aviso) ?? null;
-  const good = notice === "apuntada" || notice === "borrada" || notice === "denunciado";
+  const good = (["apuntada", "borrada", "denunciado", "en_espera", "espera_salida", "cancelado"] as const)
+    .some((n) => n === notice);
   const tr = await getTranslations("Report");
   const button = "boton sm:self-start";
 
@@ -87,9 +99,11 @@ async function Details({
       <h1 className="titulo-1">{isOrganizer ? t("yourTitle") : b.titulo}</h1>
       {isOrganizer && (
         <>
-          <p role="status" className="aviso">
-            {b.estado === "publicado" ? t("statusPublished") : t("statusDraft")}
-          </p>
+          {!cancelled && (
+            <p role="status" className="aviso">
+              {b.estado === "publicado" ? t("statusPublished") : t("statusDraft")}
+            </p>
+          )}
           <h2 className="titulo-2">{b.titulo}</h2>
         </>
       )}
@@ -106,6 +120,17 @@ async function Details({
           {t(`notices.${notice}`)}
         </p>
       )}
+      {cancelled && (
+        <div role="status" className="aviso-error">
+          <p className="font-semibold">{t("statusCancelled")}</p>
+          <p>{b.cancelado_por === "automatica" ? t("cancelledAuto") : isOrganizer ? t("cancelledByYou") : t("cancelledByOrganizer")}</p>
+        </div>
+      )}
+      {!cancelled && b.estado === "publicado" && upcoming && (
+        <p className={confirmed ? "aviso" : "ayuda"}>
+          {confirmed ? t("statusConfirmed") : t("statusNeeds", { count: 5 - taken })}
+        </p>
+      )}
       <p className="whitespace-pre-line text-lg">{b.descripcion}</p>
       <dl className="flex flex-col gap-3">
         {rows.map(([k, v]) => (
@@ -115,7 +140,7 @@ async function Details({
           </div>
         ))}
       </dl>
-      {isOrganizer && <p className="ayuda">{t("addressPrivate")}</p>}
+      {isOrganizer && !cancelled && <p className="ayuda">{t("addressPrivate")}</p>}
       {isOrganizer && b.estado === "borrador" && (
         <form action={publishBadulake}>
           <input type="hidden" name="locale" value={locale} />
@@ -123,10 +148,23 @@ async function Details({
           <button type="submit" className={button}>{t("publish")}</button>
         </form>
       )}
-      {!isOrganizer && joined && (
+      {isOrganizer && b.estado === "publicado" && upcoming && (
+        <details className="tarjeta">
+          <summary className="cursor-pointer font-semibold">{t("cancelSummary")}</summary>
+          <form action={cancelBadulake} className="mt-4 flex flex-col gap-4">
+            <input type="hidden" name="locale" value={locale} />
+            <input type="hidden" name="id" value={b.id} />
+            <p>{t("cancelExplain")}</p>
+            <button type="submit" className="boton-2 sm:self-start">{t("cancelConfirm")}</button>
+          </form>
+        </details>
+      )}
+      {!isOrganizer && joined && !cancelled && (
         <>
           {notice !== "apuntada" && (
-            <p role="status" className="aviso">{t("youAreIn")}</p>
+            <p role="status" className="aviso">
+              {mine?.desde_espera ? t("fromWaitlist") : t("youAreIn")}
+            </p>
           )}
           <a href={`/api/badulakes/${b.id}/calendario`} download className={button}>
             {t("addToCalendar")}
@@ -143,7 +181,18 @@ async function Details({
           </form>
         </>
       )}
-      {!isOrganizer && !joined && b.estado === "publicado" && upcoming && (
+      {!isOrganizer && position !== null && !cancelled && (
+        <>
+          <p role="status" className="aviso">{t("waitingPosition", { position })}</p>
+          <p className="ayuda">{t("waitlistExplain")}</p>
+          <form action={leaveWaitlist}>
+            <input type="hidden" name="locale" value={locale} />
+            <input type="hidden" name="id" value={b.id} />
+            <button type="submit" className="boton-2">{t("leaveWaitlist")}</button>
+          </form>
+        </>
+      )}
+      {!isOrganizer && !joined && position === null && b.estado === "publicado" && upcoming && (
         free > 0 ? (
           <>
             <p className="ayuda">{t("addressAfterJoin")}</p>
@@ -154,7 +203,15 @@ async function Details({
             </form>
           </>
         ) : (
-          <p role="status" className="aviso">{t("full")}</p>
+          <>
+            <p className="aviso">{t("full")}</p>
+            <p className="ayuda">{t("waitlistExplain")}</p>
+            <form action={joinBadulake}>
+              <input type="hidden" name="locale" value={locale} />
+              <input type="hidden" name="id" value={b.id} />
+              <button type="submit" className={button}>{t("joinWaitlist")}</button>
+            </form>
+          </>
         )
       )}
       {!isOrganizer && (

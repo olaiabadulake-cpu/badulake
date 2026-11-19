@@ -43,30 +43,33 @@ Esto aparece en la portada y en su propia página, «Qué es un badulake», enla
 
 ### Recorrido D · Ver badulakes, entrar en uno y apuntarme
 
-1. En «Badulakes» veo los próximos, ordenados por fecha: título, día y hora, zona y plazas libres.
+1. En «Badulakes» veo los próximos, ordenados por fecha: título, día y hora, zona y plazas libres. Los que ya tienen 5 personas o más llevan la etiqueta «Confirmado». Los cancelados solo los veo si eran míos o estaba apuntada o en lista de espera, con la etiqueta «Cancelado».
 2. Si no hay ninguno: «Todavía no hay badulakes. Vuelve pronto o crea uno tú», con el botón «Crear un badulake».
 3. En la lista también veo marcados los míos: los que organizo (aunque sean borradores) y en los que estoy apuntada.
-4. Pulso uno. Veo la descripción, el día y la hora, la zona y las plazas libres. Me dice que la dirección exacta la veré al apuntarme.
+4. Pulso uno. Veo si está confirmado o cuántas personas le faltan («Faltan 2 personas para confirmarse. Si 24 horas antes no hay 5, se cancela solo»), la descripción, el día y la hora, la zona y las plazas libres. Me dice que la dirección exacta la veré al apuntarme.
 5. Pulso «Apuntarme».
    - Bien: «¡Te has apuntado!», ya veo la dirección exacta y el botón «Añadir al calendario».
-   - Sin plazas: «Lo sentimos: ya no quedan plazas».
-   - Ya pasado o retirado: «Este badulake ya no admite inscripciones».
+   - Sin plazas: en vez de «Apuntarme» el botón es **«Ponerme en lista de espera»**. Al pulsarlo: «No quedaban plazas: te has puesto en la lista de espera» y «Estás en la lista de espera: eres la 2.ª». No veo la dirección. Puedo «Salir de la lista de espera».
+   - Si alguien se borra, entro sola por orden de llegada: en el badulake y en «Tu cuenta» veo «Has entrado desde la lista de espera» y ya veo la dirección.
+   - Ya pasado, cancelado o retirado: «Este badulake ya no admite inscripciones».
+   - Si se cancela: «Este badulake se ha cancelado» y por qué (no llegó a 5 personas 24 horas antes, o lo canceló quien lo organizaba), en el badulake y en «Tu cuenta». La dirección deja de verse.
    - Fallo: «Algo ha fallado. Inténtalo de nuevo en un rato».
-6. Si cambio de idea, pulso «Borrarme» y me confirma «Te has borrado de este badulake».
+6. Si cambio de idea, pulso «Borrarme» y me confirma «Te has borrado de este badulake». Si había lista de espera, mi plaza pasa en el acto a la primera.
 7. Desde cualquier sitio puedo volver con «Badulakes» en el menú, o con el enlace «Volver a los badulakes».
 
 ### Recorrido E · Organizar un badulake
 
 1. Pulso «Crear un badulake» (en el menú o en la lista).
-2. Relleno título, descripción, fecha y hora, zona, dirección exacta y plazas (de 5 a 10). Cada campo explica qué poner; los errores salen junto al campo y no se pierde nada.
+2. Relleno título, descripción, fecha y hora (al menos 2 días después de hoy, para que dé tiempo a juntar a 5 personas), zona, dirección exacta y plazas (de 5 a 10). Cada campo explica qué poner; los errores salen junto al campo y no se pierde nada.
 3. **Pulso «Publicar»** y queda publicado de una vez (antes había que guardar borrador y luego publicar: un paso de más). Si aún no lo quiero publicar, pulso «Guardar como borrador».
 4. Veo «Tu badulake» con un aviso claro: publicado («Ya lo pueden ver las personas con cuenta») o borrador («De momento solo lo ves tú», con el botón «Publicar»).
 5. Veo cuántas plazas están ocupadas, y que la dirección exacta solo la ven quienes se apunten.
 6. Lo encuentro después en la lista de badulakes, marcado como mío.
+7. Si 24 horas antes no hay 5 personas apuntadas, se cancela solo y me sale el aviso en «Tu cuenta». Si quiero cancelarlo yo, abro «Cancelar este badulake», leo qué pasará (se cancela para todas y se borra la dirección; no se puede deshacer) y pulso «Sí, cancelarlo».
 
 ### Recorrido F · Mi cuenta y salir
 
-1. En «Tu cuenta» veo con qué correo he entrado y el botón «Salir».
+1. En «Tu cuenta» veo con qué correo he entrado, mis **avisos** (he entrado desde la lista de espera, mi puesto en una lista, un badulake cancelado; cada uno lleva al badulake) y el botón «Salir».
 2. Al salir vuelvo a la portada con el aviso «Has salido de tu cuenta».
 
 ## 3. Árbol del menú
@@ -85,10 +88,11 @@ Con sesión
 ├── badulakë (logo) ............ Portada
 ├── Badulakes .................. lista
 │   └── (un badulake) .......... Apuntarme / Borrarme / Añadir al calendario
-│                                 Si es mío: Publicar (si es borrador)
+│                                 Si está lleno: Ponerme en / Salir de la lista de espera
+│                                 Si es mío: Publicar (si es borrador) / Cancelar este badulake
 ├── Crear un badulake
 ├── Qué es un badulake
-├── Tu cuenta .................. correo y Salir
+├── Tu cuenta .................. correo, avisos y Salir
 └── Idioma
 ```
 
@@ -104,6 +108,8 @@ En la web pública, mientras las cuentas sigan cerradas (hasta el aviso de priva
 | Badulakes | «Ver badulakes», «Listado» |
 | Crear un badulake | «Nuevo», «Organizar» |
 | Apuntarme / Borrarme | «Me borro», «Inscribirse» |
+| Lista de espera | «Cola», «Reserva» |
+| Cancelar | «Anular», «Suspender» (suspender es lo que hace el equipo con una cuenta) |
 | Tu cuenta | «Perfil», «Mi cuenta» |
 
 ## 5. Qué queda fuera

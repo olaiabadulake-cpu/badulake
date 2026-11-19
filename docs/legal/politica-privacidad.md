@@ -31,7 +31,8 @@ Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni 
 - **Tu cuenta.** Tu correo y tu contraseña (cifrada: nadie puede leerla), tu idioma y la fecha en que se comprobó que eres mayor de edad. Para que puedas entrar y usar la app. Nuestro proveedor de cuentas guarda además las sesiones abiertas, con la dirección IP y el navegador, solo para mantener tu sesión y proteger tu cuenta.
 - **Tu fecha de nacimiento.** Solo se usa en el momento de crear la cuenta para comprobar que tienes 18 años o más. La base de datos la borra antes de guardar la cuenta: **no queda guardada**.
 - **Los badulakes que organizas.** Título, descripción, fecha y hora, zona o barrio, número de plazas, estado (borrador o publicado) y la dirección exacta. Para que otras personas lo encuentren y puedan ir.
-- **Los badulakes a los que te apuntas.** Cuál y cuándo. Para reservarte la plaza, no pasarnos del cupo y enseñarte la dirección.
+- **Los badulakes a los que te apuntas.** Cuál y cuándo, y si entraste desde la lista de espera. Para reservarte la plaza, no pasarnos del cupo, enseñarte la dirección y avisarte.
+- **Las listas de espera de los badulakes.** Si un badulake está completo, en qué lista estás y desde cuándo. Para darte la plaza que se libere, por orden de llegada, y decirte qué puesto tienes.
 - **Datos técnicos de seguridad.** Un contador de intentos (entrar, crear cuenta, apuntarse) que usa solo una huella cifrada de tu conexión y vive unos minutos en la memoria del servidor; y los registros técnicos del servidor, que solo guardan códigos de error, nunca correos ni direcciones.
 - **Denuncias y suspensiones.** Si denuncias un badulake, guardamos qué badulake, el motivo que elijas, el texto opcional de hasta 300 letras que escribas y quién denuncia (un código de tu cuenta, no tu nombre). Si una cuenta incumple las condiciones y se suspende, guardamos que está suspendida y desde cuándo. Es para atender quejas, ocultar badulakes y proteger a la comunidad. No escribas datos personales de nadie en el texto de una denuncia.
 - **Lo que escribas tú.** El título y la descripción de un badulake son texto libre. **No escribas datos personales tuyos ni de otras personas** (teléfonos, apellidos, datos de salud…): se verían por las demás personas con cuenta.
@@ -56,7 +57,8 @@ Si no nos das los datos necesarios (por ejemplo, tu correo), no podemos crear tu
 
 - **Nadie más ve tu correo ni tu perfil.** Ni otras personas usuarias ni quien organiza un badulake.
 - Un badulake publicado lo ven las personas con cuenta, **sin la dirección exacta y sin saber quién lo organiza**.
-- La **dirección exacta** solo la ven quien organiza y las personas apuntadas. Si te borras, dejas de verla.
+- La **dirección exacta** solo la ven quien organiza y las personas apuntadas. Si te borras, dejas de verla. Si estás en la lista de espera, no la ves hasta que entras.
+- Que estás en una **lista de espera**, y tu puesto, solo lo ves tú: ni quien organiza ni las demás personas saben quién espera.
 - Quien organiza ve **cuántas** personas se han apuntado, pero **no quiénes**.
 - Las **denuncias** solo las ve el equipo de Badulake, desde un panel que no enseña quién denuncia, quién organiza, ni correos ni la dirección exacta. Ni la persona denunciada ni las demás personas usuarias ven quién ha denunciado.
 - Tampoco vemos tus datos de forma rutinaria: el equipo de Badulake solo accede a ellos, con acceso restringido, para atender una petición tuya, resolver una denuncia o cumplir la ley.
@@ -82,10 +84,11 @@ Solo comunicaremos datos a autoridades, jueces y fuerzas de seguridad cuando una
 
 Muchos se borran solos cada noche con una tarea programada:
 
-- **Dirección exacta de un badulake:** al día siguiente de celebrarse.
-- **El badulake y quién se apuntó:** 30 días después de celebrarse (margen para quejas o denuncias).
+- **Dirección exacta de un badulake:** al día siguiente de celebrarse, o en el momento en que se cancela.
+- **El badulake y quién se apuntó:** 30 días después de su fecha, también si se canceló (margen para quejas o denuncias).
+- **Lista de espera de un badulake:** cuando empieza el badulake, cuando sales de ella o cuando entras.
 - **Denuncias:** se borran con el badulake denunciado, 30 días después de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se levante la suspensión o se borre la cuenta. Si borras tu cuenta, tus denuncias siguen, pero sin el código que te identificaba.
-- **Lista de espera:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.
+- **Lista de espera del lanzamiento:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.
 - **Cuenta:** hasta que pidas borrarla. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.
 - **Registro de accesos de la cuenta** (con IP): 30 días.
 - **Contador de intentos:** no se guarda; vive unos minutos en la memoria del servidor.

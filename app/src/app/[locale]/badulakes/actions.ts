@@ -48,7 +48,8 @@ export async function createBadulake(
   const match = DATETIME.exec(date);
   const asUtc = match ? Date.UTC(+match[1], +match[2] - 1, +match[3], +match[4], +match[5]) : NaN;
   // La hora es de Madrid; esto es una comprobación aproximada, la exacta la hace la base de datos.
-  if (Number.isNaN(asUtc) || asUtc < Date.now() - 2 * 3600_000) errors.date = true;
+  // Al menos 48 horas de margen para juntar a 5 personas (Tarea 20, D-032).
+  if (Number.isNaN(asUtc) || asUtc < Date.now() + 46 * 3600_000) errors.date = true;
   if (Object.keys(errors).length > 0) return { status: "error", errors, values };
 
   const supabase = await createSupabase();
@@ -86,14 +87,18 @@ export async function createBadulake(
 export async function publishBadulake(formData: FormData): Promise<void> {
   const locale = readLocale(formData);
   const id = text(formData, "id");
+  let aviso = "";
   if (accountsOpen && /^[0-9a-f-]{36}$/.test(id)) {
     const supabase = await createSupabase();
-    await supabase.from("badulakes").update({ estado: "publicado" }).eq("id", id);
+    // Si falta menos de 48 horas, la base de datos no lo publica (D-032): se avisa.
+    const { data } = await supabase.from("badulakes").update({ estado: "publicado" }).eq("id", id).select("id");
+    if (!data?.length) aviso = "?aviso=no_publicable";
   }
-  redirect({ href: `/badulakes/${id}`, locale });
+  redirect({ href: `/badulakes/${id}${aviso}`, locale });
 }
 
-// Apuntarme: la base de datos comprueba plazas, fecha y que no seas la organizadora.
+// Apuntarme: la base de datos comprueba plazas, fecha y que no seas la organizadora. Si no quedan
+// plazas, te pone en la lista de espera ('en_espera').
 export async function joinBadulake(formData: FormData): Promise<void> {
   const locale = readLocale(formData);
   const id = text(formData, "id");
@@ -109,7 +114,37 @@ export async function joinBadulake(formData: FormData): Promise<void> {
   redirect({ href: `/badulakes/${id}${aviso}`, locale });
 }
 
-// Borrarme: RLS solo deja borrar mis propias inscripciones.
+// Salir de la lista de espera (Tarea 20): RLS solo deja borrar mis propias filas.
+export async function leaveWaitlist(formData: FormData): Promise<void> {
+  const locale = readLocale(formData);
+  const id = text(formData, "id");
+  let aviso = "";
+  if (accountsOpen && /^[0-9a-f-]{36}$/.test(id)) {
+    const supabase = await createSupabase();
+    const { error } = await supabase.from("espera").delete().eq("badulake_id", id);
+    if (error) console.error("[salir de la espera]", error.code, error.message);
+    aviso = `?aviso=${error ? "error" : "espera_salida"}`;
+  }
+  redirect({ href: `/badulakes/${id}${aviso}`, locale });
+}
+
+// Cancelar mi badulake (Tarea 20): la base de datos comprueba que soy la organizadora y que no ha
+// empezado, y borra la dirección exacta.
+export async function cancelBadulake(formData: FormData): Promise<void> {
+  const locale = readLocale(formData);
+  const id = text(formData, "id");
+  let aviso = "";
+  if (accountsOpen && /^[0-9a-f-]{36}$/.test(id)) {
+    const supabase = await createSupabase();
+    const { data, error } = await supabase.rpc("cancelar_mi_badulake", { p_badulake: id });
+    if (error) console.error("[cancelar]", error.code, error.message);
+    aviso = `?aviso=${error ? "error" : data === "ok" ? "cancelado" : "no_disponible"}`;
+  }
+  redirect({ href: `/badulakes/${id}${aviso}`, locale });
+}
+
+// Borrarme: RLS solo deja borrar mis propias inscripciones. Si hay lista de espera, la base de
+// datos hace entrar a la primera en la misma operación (supabase/cupo.sql).
 export async function leaveBadulake(formData: FormData): Promise<void> {
   const locale = readLocale(formData);
   const id = text(formData, "id");

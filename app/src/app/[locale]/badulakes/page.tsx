@@ -57,6 +57,16 @@ async function List() {
     ? await supabase.from("inscripciones").select("badulake_id").in("badulake_id", ids)
     : { data: [] };
   const joined = new Set((mine ?? []).map((m) => m.badulake_id));
+  // Mi puesto en las listas de espera (solo los míos, Tarea 20).
+  type Wait = { badulake_id: string; puesto: number };
+  const waits: Wait[] = ids.length
+    ? ((await supabase.rpc("mi_espera", { p_ids: ids })).data as Wait[] | null) ?? []
+    : [];
+  const waiting = new Map(waits.map((w) => [w.badulake_id, w.puesto]));
+  // Los cancelados solo se enseñan a quien tenía que ver con ellos (para que vea el aviso).
+  const visible = (rows ?? []).filter(
+    (b) => b.estado !== "cancelado" || own.has(b.id) || joined.has(b.id) || waiting.has(b.id),
+  );
   const fmt = new Intl.DateTimeFormat(await contentLang(), {
     dateStyle: "full", timeStyle: "short", timeZone: "Europe/Madrid",
   });
@@ -70,7 +80,7 @@ async function List() {
     </Link>
   );
 
-  if (!rows || rows.length === 0) {
+  if (visible.length === 0) {
     return (
       <>
         <p role="status" className="text-lg">{t("listEmpty")}</p>
@@ -83,8 +93,12 @@ async function List() {
     <>
     {create}
     <ul className="flex flex-col gap-4">
-      {rows.map((b) => {
-        const free = Math.max(0, b.plazas - (taken.get(b.id) ?? 0));
+      {visible.map((b) => {
+        const count = taken.get(b.id) ?? 0;
+        const free = Math.max(0, b.plazas - count);
+        const cancelled = b.estado === "cancelado";
+        const confirmed = b.estado === "publicado" && count >= 5;
+        const position = waiting.get(b.id);
         return (
           <li key={b.id}>
             <Link
@@ -92,17 +106,22 @@ async function List() {
               className="tarjeta"
             >
               <span className="titulo-3">{b.titulo}</span>
-              {(own.has(b.id) || joined.has(b.id)) && (
+              {(own.has(b.id) || joined.has(b.id) || position || cancelled || confirmed) && (
                 <span className="flex flex-wrap gap-2">
+                  {cancelled && <span className="etiqueta-pildora contorno">{t("cancelledTag")}</span>}
+                  {confirmed && <span className="etiqueta-pildora">{t("confirmedTag")}</span>}
                   {own.has(b.id) && <span className="etiqueta-pildora">{t("mine")}</span>}
                   {b.estado === "borrador" && <span className="etiqueta-pildora contorno">{t("draft")}</span>}
-                  {joined.has(b.id) && <span className="etiqueta-pildora">{t("joinedTag")}</span>}
+                  {joined.has(b.id) && !cancelled && <span className="etiqueta-pildora">{t("joinedTag")}</span>}
+                  {position && !cancelled && (
+                    <span className="etiqueta-pildora contorno">{t("waitingTag", { position })}</span>
+                  )}
                 </span>
               )}
               <span>{fmt.format(new Date(b.fecha_hora))}</span>
               <span>{b.zona}</span>
               <span className="etiqueta">
-                {free === 0 ? t("full") : t("freeSeats", { count: free })}
+                {cancelled ? t("statusCancelled") : free === 0 ? t("full") : t("freeSeats", { count: free })}
               </span>
             </Link>
           </li>
