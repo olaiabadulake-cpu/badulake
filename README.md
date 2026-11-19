@@ -23,7 +23,8 @@ Todo se graba y se documenta aquí: el código, cada decisión, las herramientas
 | Diario del proyecto, día a día | [docs/diario.md](docs/diario.md) |
 | Decisiones y por qué se tomaron | [docs/decisiones.md](docs/decisiones.md) |
 | Herramientas que usamos | [docs/herramientas.md](docs/herramientas.md) |
-| El código de la app | carpeta `app/` (todavía vacía) |
+| La app publicada | [badulake.vercel.app](https://badulake.vercel.app) |
+| El código de la app | carpeta [`app/`](app/) |
 
 ## ¿Eres programador o programadora?
 
@@ -31,4 +32,4 @@ Nos encanta que mires el código y opines. Abre un *issue* con sugerencias, duda
 
 ## Estado
 
-🟡 Día 1 (19 de noviembre de 2026): preparando herramientas y documentación. Todavía no hay código.
+🟡 Día 1 (19 de noviembre de 2026): primera versión publicada, una página que dice «Hola mundo» en [badulake.vercel.app](https://badulake.vercel.app).

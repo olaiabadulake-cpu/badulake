@@ -23,3 +23,10 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Decisión:** Las claves se guardan en un gestor de contraseñas. La documentación interna solo registra qué cuenta existe y dónde está su clave. En este repositorio nunca habrá claves.
 - **Por qué:** Un repositorio público es visible para cualquiera, y los documentos se comparten y se copian.
 - **Propuso:** Claude · **Decidió:** OlaIA
+
+### D-004 · Publicar la app en Vercel
+- **Fecha:** 19/11/2026
+- **Alternativas:** GitHub Pages (gratis, en el mismo GitHub).
+- **Decisión:** Vercel, plan gratuito Hobby. Publica la carpeta `app/` cada vez que cambia algo en GitHub.
+- **Por qué:** Preferencia de OlaIA. Vercel está pensado para aplicaciones web y nos servirá cuando Badulake tenga más partes. El plan Hobby vale para proyectos personales y prototipos; si Badulake pasa a ser comercial habrá que pasar al plan Pro.
+- **Propuso:** OlaIA · **Configuró:** Claude
