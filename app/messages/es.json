@@ -422,5 +422,18 @@
     "iosStep1": "Toca el botón Compartir (el cuadrado con una flecha hacia arriba), abajo o arriba en Safari.",
     "iosStep2": "Baja y toca «Añadir a pantalla de inicio».",
     "iosStep3": "Toca «Añadir». Badulake aparecerá como una app más."
+  },
+  "Hola": {
+    "title": "Bienvenida a Badulake",
+    "intro": "Un badulake es una quedada en persona de 5 a 10 personas para intercambiar ropa y cosas que ya no usáis. Gratis y sin dinero. Solo para mayores de 18 años.",
+    "step1": "Apúntate a un badulake de tu zona.",
+    "step2": "Ve con lo que ya no usas.",
+    "step3": "Intercambia: llévate lo que te guste.",
+    "rules": "Nadie paga ni cobra nada, y la dirección exacta solo la ves cuando te apuntas.",
+    "accounts": "Crea tu cuenta, es gratis y solo lleva un minuto.",
+    "signUp": "Crear cuenta",
+    "waitlist": "Badulake llega a principios de 2027. Apúntate y te avisamos.",
+    "soon": "Badulake llega a principios de 2027. Muy pronto podrás apuntarte a la lista de espera.",
+    "more": "Saber más: qué es un badulake"
   }
 }

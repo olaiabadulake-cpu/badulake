@@ -288,5 +288,18 @@
     "iosStep1": "Sakatu Partekatu botoia (gezi bat gorantz duen koadroa), Safariren behealdean edo goialdean.",
     "iosStep2": "Jaitsi eta sakatu «Gehitu hasierako pantailara».",
     "iosStep3": "Sakatu «Gehitu». Badulake beste aplikazio bat bezala agertuko da."
+  },
+  "Hola": {
+    "title": "Ongi etorri Badulakera",
+    "intro": "Badulake bat 5 eta 10 pertsona arteko topaketa bat da, aurrez aurre, jada erabiltzen ez dituzuen arropa eta gauzak trukatzeko. Doan eta dirurik gabe. 18 urtetik gorakoentzat bakarrik.",
+    "step1": "Eman izena zure inguruko badulake batean.",
+    "step2": "Joan jada erabiltzen ez duzunarekin.",
+    "step3": "Trukatu: eraman gustatzen zaizuna.",
+    "rules": "Inork ez du ezer ordaintzen, ezta kobratzen ere, eta helbide zehatza izena ematean bakarrik ikusiko duzu.",
+    "accounts": "Sortu zure kontua: doakoa da, eta minutu bat baino ez du behar.",
+    "signUp": "Sortu kontua",
+    "waitlist": "Badulake 2027. urtearen hasieran helduko da. Eman izena eta abisatuko dizugu.",
+    "soon": "Badulake 2027. urtearen hasieran helduko da. Laster eman ahal izango duzu izena itxaron-zerrendan.",
+    "more": "Gehiago jakin: zer da badulake bat"
   }
 }

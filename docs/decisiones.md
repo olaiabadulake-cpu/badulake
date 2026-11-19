@@ -262,3 +262,14 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - **CSP: no cambia** (D-023): el service worker y el manifiesto salen del mismo dominio (`script-src`/`default-src 'self'`).
 - **No entra:** notificaciones push, tiendas, usar datos sin conexión.
 - **Propuso y hizo:** Claude (tarea 16 del plan maestro) · **Decidió:** Claude, por ser técnica; OlaIA puede cambiarla.
+
+### D-033 · QR de Sant Boi, página de llegada `/hola` y prueba de carga sin tocar la web publicada
+- **Fecha:** 19/11/2026
+- **Alternativas:** que el QR abra la portada (más texto, menos directo); un QR de colores con el logo (se lee peor); prueba de carga fuerte contra badulake.vercel.app (las condiciones de Vercel la limitan a planes de empresa o con aviso previo, y pueden bloquear la conexión de quien prueba); una sola lengua de QR.
+- **Decisión** (Tarea 18 del plan maestro):
+  - **Página de llegada** `/<idioma>/hola`: pública, corta, sin imágenes ni datos de nadie (se sirve ya preparada, no consulta la base de datos). Explica qué es un badulake en tres pasos y enseña «Crear cuenta» si las cuentas están abiertas, el formulario de la lista de espera si lo está, o «muy pronto». Enlace a «Qué es un badulake». No sale en buscadores (`noindex`). Textos propios en castellano, euskera y catalán (D-025: el resto de lenguas lo ve en castellano).
+  - **QR** en `docs/qr/` (SVG y PNG de 3000 px) en castellano, euskera y catalán: negro sobre blanco, margen de 4 módulos y corrección de errores nivel Q. Apuntan a `badulake.vercel.app/<idioma>/hola?utm_source=qr&utm_campaign=santboi`. **Hay que regenerarlos si badulake.app ya funciona** (`node scripts/qr.mjs https://badulake.app`; apartado 8 de `seguridad.md`). Generador: `app/scripts/qr.mjs`.
+  - **Medir:** la analítica gratuita (D-029) no separa utm, pero `/es/hola`, `/eu/hola` y `/ca/hola` solo se abren desde los carteles, así que se ven aparte.
+  - **Carga:** prueba con autocannon, **en el Mac y con la versión idéntica a la publicada** (200 visitantes a la vez, unas 2.500 visitas por segundo, 0 errores); en la web publicada solo una comprobación suave. La prueba de apuntarse a la vez a escala queda pendiente hasta que la Tarea 20 termine (`docs/carga.md`).
+- **No entra:** abrir cuentas, correos, dominio, herramientas del día del badulake.
+- **Propuso y hizo:** Claude (tarea 18 del plan maestro) · **Decidió:** Claude, por ser técnica; OlaIA puede cambiarla.

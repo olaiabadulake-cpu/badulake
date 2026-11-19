@@ -36,5 +36,18 @@
     "project": "Un projecte d'EITB",
     "language": "Llengua",
     "machine": "Traducció automàtica del castellà, pendent de revisió."
+  },
+  "Hola": {
+    "title": "Et donem la benvinguda a Badulake",
+    "intro": "Un badulake és una trobada en persona de 5 a 10 persones per intercanviar roba i coses que ja no feu servir. Gratis i sense diners. Només per a majors de 18 anys.",
+    "step1": "Apunta't a un badulake de la teva zona.",
+    "step2": "Porta el que ja no fas servir.",
+    "step3": "Intercanvia: emporta't el que t'agradi.",
+    "rules": "Ningú paga ni cobra res, i l'adreça exacta només la veus quan t'apuntes.",
+    "accounts": "Crea el teu compte, és gratis i només porta un minut.",
+    "signUp": "Crear compte",
+    "waitlist": "Badulake arriba a principis del 2027. Apunta't i t'avisarem.",
+    "soon": "Badulake arriba a principis del 2027. Molt aviat et podràs apuntar a la llista d'espera.",
+    "more": "Saber-ne més: què és un badulake"
   }
 }
