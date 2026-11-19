@@ -12,6 +12,7 @@ const input =
 
 export function SignUpForm() {
   const t = useTranslations("Account");
+  const privacy = useTranslations("Privacy");
   const locale = useLocale();
   const [state, action, pending] = useActionState(signUp, initial);
 
@@ -66,6 +67,13 @@ export function SignUpForm() {
         )}
       </div>
 
+      <p className="text-sm text-noche/70">
+        {privacy.rich("signUpNotice", {
+          link: (chunks) => (
+            <Link href="/privacidad" className="underline underline-offset-2">{chunks}</Link>
+          ),
+        })}
+      </p>
       {err.generic && <p role="alert" className="font-medium text-error">{t("errors.generic")}</p>}
       {err.tooMany && <p role="alert" className="font-medium text-error">{t("errors.tooMany")}</p>}
 

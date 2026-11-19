@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link, redirect } from "@/i18n/navigation";
-import { accountsOpen, createSupabase, getCurrentUser } from "@/lib/supabase/server";
+import { accountsOpen, createSupabase, getCurrentUser, idsOf } from "@/lib/supabase/server";
 import { joinBadulake, leaveBadulake, publishBadulake } from "../actions";
 
 export default async function BadulakePage({ params, searchParams }: PageProps<"/[locale]/badulakes/[id]">) {
@@ -33,13 +33,17 @@ async function Details({
   // RLS: cualquier persona con sesión ve los publicados; los borradores solo su organizadora.
   // La dirección exacta solo la organizadora y quien esté apuntada.
   const supabase = await createSupabase();
-  const { data: b } = await supabase
-    .from("badulakes")
-    .select("id, organizadora, titulo, descripcion, fecha_hora, zona, plazas, estado")
-    .eq("id", id)
-    .maybeSingle();
+  // Quién organiza no se puede leer (D-024): mis_badulakes() solo da los míos.
+  const [{ data: b }, { data: ownIds }] = await Promise.all([
+    supabase
+      .from("badulakes")
+      .select("id, titulo, descripcion, fecha_hora, zona, plazas, estado")
+      .eq("id", id)
+      .maybeSingle(),
+    supabase.rpc("mis_badulakes"),
+  ]);
   if (!b) notFound();
-  const isOrganizer = b.organizadora === user!.id;
+  const isOrganizer = idsOf(ownIds).includes(b.id);
 
   const [{ data: a }, { data: mine }, { data: count }] = await Promise.all([
     supabase.from("badulakes_direccion").select("direccion").eq("badulake_id", id).maybeSingle(),

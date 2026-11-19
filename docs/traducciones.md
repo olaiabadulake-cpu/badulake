@@ -41,4 +41,6 @@ Si a una lengua le falta un texto, la web enseña el texto en castellano en vez 
 
 **Recorridos y «Qué es un badulake» (tarea 7):** los textos nuevos (`Nav`, `WhatIs` y los avisos nuevos de `Account` y `Badulake`) están escritos en castellano y euskera; las otras 42 lenguas los ven en castellano hasta que se traduzcan. Ojo: como «Qué es un badulake» ya se ve en la portada pública, en esas 42 lenguas esa sección sale hoy en castellano. Los textos que ya no se usan (`Home.point1–3`, `Home.signIn`…) siguen en esos archivos y no molestan.
 
+**Aviso de privacidad (tarea 9):** el borrador provisional (`Privacy`) está en castellano y euskera; las otras 42 lenguas lo ven en castellano (solo conservan su título y «Volver»). Se quitó de esos archivos el texto viejo que decía que había una sola cookie, porque con las cuentas ya no es cierto. No merece la pena traducir el borrador: se traducirá el texto definitivo de la Asesoría Jurídica.
+
 **Crear un badulake (tarea 5):** los textos nuevos (`Badulake` y `Account.newBadulake`) están escritos en castellano y euskera; las otras 42 lenguas ven el castellano hasta que se traduzcan, antes de abrir las cuentas al público.

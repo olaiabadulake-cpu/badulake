@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { locale as rootLocale } from "next/root-params";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { SiteHeader } from "./site-header";
 import "../globals.css";
@@ -34,6 +35,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
 
   const t = await getTranslations("Footer");
   const nav = await getTranslations("Nav");
+  const privacy = await getTranslations("Privacy");
 
   return (
     <html lang={locale} className={`${roboto.variable} ${raleway.variable} h-full antialiased`}>
@@ -48,7 +50,10 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
           <SiteHeader />
           <main id="contenido" className="flex-1">{children}</main>
           <footer className="flex flex-col gap-1 border-t border-noche/15 px-4 py-4 text-sm sm:px-8">
-            <p>{t("project")}</p>
+            <p>
+              {t("project")} ·{" "}
+              <Link href="/privacidad" className="underline underline-offset-2">{privacy("footerLink")}</Link>
+            </p>
             {/* Todo se escribe en castellano; las demás lenguas son traducciones pendientes de revisar. */}
             {locale !== "es" && <p className="text-noche/70">{t("machine")}</p>}
           </footer>

@@ -30,8 +30,6 @@
   },
   "Privacy": {
     "title": "Adatvédelmi tájékoztató",
-    "pending": "Az EITB jogi osztálya most készíti az adatvédelmi tájékoztatót. Az indulás előtt itt fog megjelenni.",
-    "cookie": "Ez az oldal egyetlen sütit tárol, a NEXT_LOCALE-t, hogy megjegyezze a választott nyelvet. Egy évig érvényes, és semmi másra nem használjuk.",
     "back": "Vissza"
   },
   "Footer": {

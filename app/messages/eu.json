@@ -28,8 +28,44 @@
   },
   "Privacy": {
     "title": "Pribatutasun-oharra",
-    "pending": "EITBko Aholkularitza Juridikoa pribatutasun-oharra idazten ari da, eta hemen agertuko da Badulake abian jarri aurretik.",
-    "cookie": "Webgune honek cookie bakarra gordetzen du, NEXT_LOCALE izenekoa, aukeratzen duzun hizkuntza gogoratzeko. Urtebete irauten du, eta ez da beste ezertarako erabiltzen.",
+    "draftBadge": "Behin-behineko zirriborroa",
+    "draftNote": "Testu hau hizkera argian idatzitako zirriborro bat da. EITBko Aholkularitza Juridikoa behin betiko oharra idazten ari da, eta honen ordez jarriko da inor izena eman edo kontua sortu ahal izan baino lehen. Bitartean, aplikazioa itxita dago eta ez du inoren daturik gordetzen.",
+    "sections": {
+      "who": {
+        "title": "Nor da arduraduna",
+        "body": "EITB (Euskal Irrati Telebista) da Badulaken zure datuen arduraduna. Harremanetarako datu osoak Aholkularitza Juridikoak gehituko ditu."
+      },
+      "what": {
+        "title": "Zer datu gordetzen ditugun eta zertarako",
+        "body": "- Itxaron-zerrenda: zure helbide elektronikoa, zure eremua, abisua zein hizkuntzatan nahi duzun eta noiz eman zenuen baimena. Badulake irekitzen denean abisatzeko bakarrik.\n- Zure kontua: zure helbide elektronikoa, zure pasahitza (zifratuta: inork ezin du irakurri), zure hizkuntza eta adin nagusikoa zarela egiaztatu genuen data. Sartu eta aplikazioa erabili ahal izateko.\n- Zure jaiotze-data: kontua sortzeko unean bakarrik erabiltzen da, 18 urte edo gehiago dituzula egiaztatzeko. Ez da gordetzen.\n- Antolatzen dituzun badulakeak: izenburua, deskribapena, data, eremua, plaza kopurua eta helbide zehatza. Beste pertsona batzuek aurkitu eta iritsi ahal izateko.\n- Izena ematen duzun badulakeak: zein eta noiz. Plaza gordetzeko eta helbidea erakusteko."
+      },
+      "legal": {
+        "title": "Zergatik erabil ditzakegun",
+        "body": "- Itxaron-zerrenda: zuk baimena ematen diguzulako. Nahi duzunean kendu dezakezu.\n- Kontua, badulakeak eta izen-emateak: aplikazioa erabiltzean eskatzen duzun zerbitzua emateko behar ditugulako.\n(Proposamena, Aholkularitza Juridikoak berretsi gabe.)"
+      },
+      "access": {
+        "title": "Nork ikusten ditu zure datuak",
+        "body": "- Beste inork ez ditu ikusten zure helbide elektronikoa eta zure profila.\n- Argitaratutako badulake bat kontua duten pertsonek ikusten dute, baina helbide zehatzik gabe eta nork antolatzen duen jakin gabe.\n- Helbide zehatza antolatzaileak eta izena emandako pertsonek bakarrik ikusten dute. Izena kentzen baduzu, ez duzu gehiago ikusiko.\n- Antolatzaileak ikusten du zenbat pertsonak eman duten izena, baina ez nortzuk.\n- Ez ditugu zure datuak inori saltzen edo lagatzen."
+      },
+      "where": {
+        "title": "Non gordetzen diren",
+        "body": "- Datu-basea Supabasen dago, Frankfurten (Alemania, Europar Batasuna).\n- Webgunea Vercelekin argitaratzen da, eta haren zerbitzariek ere Frankfurten egiten dute lan.\n- Supabase eta Vercel Estatu Batuetako enpresak dira; Aholkularitza Juridikoak berretsiko ditu haien kontratuetako bermeak."
+      },
+      "time": {
+        "title": "Zenbat denboran",
+        "body": "- Badulake baten helbide zehatza berez ezabatzen da egin eta hurrengo egunean.\n- Badulakea eta izena eman zutenen zerrenda berez ezabatzen dira 30 egun geroago.\n- Itxaron-zerrenda abiaraztearen berri ematean ezabatzen da, eta gehienez 12 hilabetera.\n- Zure kontua gordeko da hura ezabatzeko eskatu arte. 90 egunean erabiltzen ez baduzu, zure saioa itxiko da.\n- Erregistro teknikoak (adibidez, zure konexioaren helbidea) gehienez 30 egunean ezabatzen dira."
+      },
+      "rights": {
+        "title": "Zure eskubideak",
+        "body": "Zure datuak ikusteko, zuzentzeko, ezabatzeko, eramateko edo erabiltzeari uzteko eska dezakezu. Oraingoz, idatzi EITBren datuen babeserako helbide elektronikora (Aholkularitza Juridikoak gehituko du). Laster, zure kontua aplikaziotik bertatik ezabatu ahal izango duzu. Ados ez bazaude, datuak babesteko agintaritzaren aurrean erreklamatu dezakezu."
+      },
+      "cookies": {
+        "title": "Cookieak",
+        "body": "Badulakek cookie teknikoak bakarrik erabiltzen ditu, webguneak funtziona dezan ezinbestekoak:\n- NEXT_LOCALE: aukeratzen duzun hizkuntza gogoratzen du. Urtebete irauten du.\n- Saioko cookieak («sb-» hasiera dutenak): zure kontuan sartzen bazara bakarrik, orrialde bakoitzean berriro sartu behar ez izateko. Irtetean ezabatzen dira.\nEz dago publizitate- edo analisi-cookierik, ez beste enpresen edukirik. Horregatik ez dizugu baimenik eskatzen cookie-ohar batekin."
+      }
+    },
+    "signUpNotice": "Kontua sortzean ezinbestekoa baino ez dugu gordetzen. Informazio gehiago <link>pribatutasun-oharrean</link>.",
+    "footerLink": "Pribatutasuna",
     "back": "Itzuli"
   },
   "Footer": {

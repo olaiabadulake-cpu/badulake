@@ -53,3 +53,12 @@ export async function getCurrentUser(): Promise<CurrentUser | null> {
 
   return { id: data.user.id, email: data.user.email ?? "", language: profile?.idioma ?? "es" };
 }
+
+// Lo que devuelve mis_badulakes() (los identificadores de mis propios badulakes, D-024).
+// Supabase da una lista de valores sueltos; se aceptan también filas por si cambia el formato.
+export function idsOf(data: unknown): string[] {
+  if (!Array.isArray(data)) return [];
+  return data
+    .map((x) => (typeof x === "string" ? x : (x as Record<string, unknown>)?.mis_badulakes))
+    .filter((x): x is string => typeof x === "string");
+}

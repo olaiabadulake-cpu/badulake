@@ -177,3 +177,17 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Altas en Supabase apagadas hasta el lanzamiento:** OlaIA apagó «Allow new users to sign up» el 19/11/2026; se vuelve a encender el día del lanzamiento junto con `CUENTAS_ABIERTAS` (lista en [seguridad.md](seguridad.md)). El fallo de compilación con `CUENTAS_ABIERTAS=1` quedó arreglado en la Tarea 8.1.
 - **Por qué:** La app guarda direcciones de casas y datos de personas: tiene que ser segura antes de que entre nadie, y el guion anticipa que el experto buscará fallos.
 - **Propuso:** Claude · **Decidió:** OlaIA (tarea 8 del plan maestro) · **Hizo:** Claude (OlaIA autorizó los cambios en Supabase)
+
+### D-024 · Privacidad por diseño: nadie ve quién organiza, los datos se borran solos y todo se procesa en Frankfurt
+- **Fecha:** 19/11/2026
+- **Alternativas:** esperar al texto de la Asesoría Jurídica para tocar nada; guardar los badulakes pasados sin límite; borrar a mano; plazos de 7 o de 90 días; dejar la parte del servidor de la web en EE. UU. (opción por defecto de Vercel).
+- **Decisión:** Se revisa la app con el RGPD y se deja escrito en [privacidad.md](privacidad.md) (borrador del registro de actividades y ficha para la Asesoría):
+  - **Minimización** (`supabase/privacidad.sql`): nadie más puede leer quién organiza un badulake ni a quién pertenece una dirección (la web usa la función `mis_badulakes()` para saber cuáles son tuyos). El límite de intentos ya no tiene en memoria la IP ni el correo tal cual, solo una huella cifrada.
+  - **Plazos de conservación**, decididos por OlaIA y aplicados solos cada noche con Supabase Cron (función `borrar_datos_caducados()`): dirección exacta, 1 día después del badulake; badulake e inscripciones, 30 días después; lista de espera, 12 meses como máximo; sesiones sin usar, 90 días; registro de accesos de Supabase Auth, 30 días.
+  - **Frankfurt:** la parte del servidor de la web pasa de Washington a Frankfurt (`"regions": ["fra1"]` en `app/vercel.json`), junto a la base de datos.
+  - **Cookies:** solo técnicas (idioma y sesión); sin banner. Comprobado que no hay otras ni scripts de terceros.
+  - **Página `/privacidad`:** borrador provisional en lenguaje llano, marcado como tal (castellano y euskera), con qué se guarda, para qué, quién lo ve, dónde, cuánto tiempo, derechos y cookies. Enlace en el pie de todas las páginas y en «Crear cuenta».
+  - **Derechos:** por correo a EITB (dirección pendiente de la Asesoría); el botón de borrar la cuenta es la Tarea 21.
+- **Cerrado en producción:** `PRIVACY_NOTICE_READY` y `CUENTAS_ABIERTAS` siguen apagados (D-018, D-019).
+- **Por qué:** El RGPD exige privacidad desde el diseño y guardar los datos solo el tiempo necesario. La dirección de una casa no sirve de nada después del badulake. Saber qué badulakes organiza la misma persona podría revelar dónde vive y cuándo está en casa.
+- **Propuso:** Claude · **Decidió:** OlaIA (tarea 9 del plan maestro; plazos y correo de derechos) · **Hizo:** Claude

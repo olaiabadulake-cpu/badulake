@@ -30,8 +30,6 @@
   },
   "Privacy": {
     "title": "Aithris prìobhaideachd",
-    "pending": "Tha Roinn Laghail EITB a' sgrìobhadh na h-aithris prìobhaideachd. Nochdaidh i an seo ron chur air bhog.",
-    "cookie": "Cha ghlèidh an làrach-lìn seo ach aon bhriosgaid, NEXT_LOCALE, airson cuimhneachadh air a' chànan a thaghas tu. Mairidh i bliadhna agus cha chleachdar i airson dad sam bith eile.",
     "back": "Air ais"
   },
   "Footer": {

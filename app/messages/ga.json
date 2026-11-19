@@ -30,8 +30,6 @@
   },
   "Privacy": {
     "title": "Fógra príobháideachais",
-    "pending": "Tá Roinn Dlí EITB ag dréachtú an fhógra príobháideachais. Beidh sé anseo roimh an seoladh.",
-    "cookie": "Ní stórálann an suíomh seo ach fianán amháin, NEXT_LOCALE, chun cuimhneamh ar an teanga a roghnaíonn tú. Maireann sé bliain agus ní úsáidtear é le haghaidh aon rud eile.",
     "back": "Ar ais"
   },
   "Footer": {

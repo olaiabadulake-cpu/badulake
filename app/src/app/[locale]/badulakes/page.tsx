@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link, redirect } from "@/i18n/navigation";
-import { accountsOpen, createSupabase, getCurrentUser } from "@/lib/supabase/server";
+import { accountsOpen, createSupabase, getCurrentUser, idsOf } from "@/lib/supabase/server";
 
 export default async function BadulakesList() {
   // Cerrado en producción hasta que exista el aviso de privacidad (D-019, D-021).
@@ -27,14 +27,17 @@ async function List() {
   const t = await getTranslations("Badulake");
   const nav = await getTranslations("Nav");
   const supabase = await createSupabase();
-  // RLS: se ven los publicados y mis borradores. Salen los publicados y, además, los míos
-  // aunque sean borradores, para poder encontrarlos (docs/recorridos.md).
-  const { data: rows } = await supabase
-    .from("badulakes")
-    .select("id, organizadora, titulo, fecha_hora, zona, plazas, estado")
-    .or(`estado.eq.publicado,organizadora.eq.${user!.id}`)
-    .gt("fecha_hora", new Date().toISOString())
-    .order("fecha_hora", { ascending: true });
+  // RLS: se ven los publicados y mis borradores (para poder encontrarlos, docs/recorridos.md).
+  // Quién organiza cada uno no se puede leer (D-024): solo sé cuáles son míos.
+  const [{ data: rows }, { data: ownIds }] = await Promise.all([
+    supabase
+      .from("badulakes")
+      .select("id, titulo, fecha_hora, zona, plazas, estado")
+      .gt("fecha_hora", new Date().toISOString())
+      .order("fecha_hora", { ascending: true }),
+    supabase.rpc("mis_badulakes"),
+  ]);
+  const own = new Set(idsOf(ownIds));
   const ids = (rows ?? []).map((r) => r.id);
   // Solo el número de plazas ocupadas de cada badulake (supabase/seguridad.sql).
   type Count = { badulake_id: string; ocupadas: number };
@@ -82,9 +85,9 @@ async function List() {
               className="flex flex-col gap-1 rounded-2xl border-2 border-noche/30 p-4 hover:border-noche focus-visible:border-noche"
             >
               <span className="font-display text-xl font-bold">{b.titulo}</span>
-              {(b.organizadora === user!.id || joined.has(b.id)) && (
+              {(own.has(b.id) || joined.has(b.id)) && (
                 <span className="flex flex-wrap gap-2 text-sm font-semibold">
-                  {b.organizadora === user!.id && <span className="rounded-full bg-amarillo px-3 py-0.5">{t("mine")}</span>}
+                  {own.has(b.id) && <span className="rounded-full bg-amarillo px-3 py-0.5">{t("mine")}</span>}
                   {b.estado === "borrador" && <span className="rounded-full border-2 border-noche px-3 py-0.5">{t("draft")}</span>}
                   {joined.has(b.id) && <span className="rounded-full bg-amarillo px-3 py-0.5">{t("joinedTag")}</span>}
                 </span>

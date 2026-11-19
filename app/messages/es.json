@@ -28,8 +28,44 @@
   },
   "Privacy": {
     "title": "Aviso de privacidad",
-    "pending": "El aviso de privacidad lo está redactando la Asesoría Jurídica de EITB y aparecerá aquí antes del lanzamiento.",
-    "cookie": "Esta web guarda una sola cookie, llamada NEXT_LOCALE, para recordar el idioma que eliges. Dura un año y no se usa para nada más.",
+    "draftBadge": "Borrador provisional",
+    "draftNote": "Este texto es un borrador en lenguaje llano. La Asesoría Jurídica de EITB está redactando el aviso definitivo, que sustituirá a este antes de que nadie pueda apuntarse o crear una cuenta. Mientras tanto, la app está cerrada y no guarda datos de nadie.",
+    "sections": {
+      "who": {
+        "title": "Quién es responsable",
+        "body": "EITB (Euskal Irrati Telebista) es la responsable de tus datos en Badulake. Los datos de contacto completos los añadirá la Asesoría Jurídica."
+      },
+      "what": {
+        "title": "Qué datos guardamos y para qué",
+        "body": "- Lista de espera: tu correo, tu zona, el idioma en que quieres el aviso y cuándo diste tu permiso. Solo para avisarte cuando Badulake abra.\n- Tu cuenta: tu correo, tu contraseña (cifrada: nadie puede leerla), tu idioma y la fecha en que comprobamos que eres mayor de edad. Para que puedas entrar y usar la app.\n- Tu fecha de nacimiento: solo se usa en el momento de crear la cuenta para comprobar que tienes 18 años o más. No se guarda.\n- Los badulakes que organizas: título, descripción, fecha, zona, número de plazas y la dirección exacta. Para que otras personas puedan encontrarlo y llegar.\n- Los badulakes a los que te apuntas: a cuál y cuándo. Para reservarte la plaza y enseñarte la dirección."
+      },
+      "legal": {
+        "title": "Por qué podemos usarlos",
+        "body": "- Lista de espera: porque nos das tu permiso. Puedes retirarlo cuando quieras.\n- Cuenta, badulakes e inscripciones: porque los necesitamos para darte el servicio que pides al usar la app.\n(Propuesta pendiente de confirmar por la Asesoría Jurídica.)"
+      },
+      "access": {
+        "title": "Quién ve tus datos",
+        "body": "- Nadie más ve tu correo ni tu perfil.\n- Un badulake publicado lo ven las personas con cuenta, pero sin la dirección exacta y sin saber quién lo organiza.\n- La dirección exacta solo la ven quien organiza y las personas apuntadas. Si te borras, dejas de verla.\n- Quien organiza ve cuántas personas se han apuntado, pero no quiénes.\n- No vendemos ni cedemos tus datos a nadie."
+      },
+      "where": {
+        "title": "Dónde se guardan",
+        "body": "- La base de datos está en Supabase, en Frankfurt (Alemania, Unión Europea).\n- La web se publica con Vercel y sus servidores trabajan también en Frankfurt.\n- Supabase y Vercel son empresas de Estados Unidos; la Asesoría Jurídica confirmará las garantías de sus contratos."
+      },
+      "time": {
+        "title": "Cuánto tiempo",
+        "body": "- La dirección exacta de un badulake se borra sola al día siguiente de celebrarse.\n- El badulake y la lista de quién se apuntó se borran solos 30 días después.\n- La lista de espera se borra al avisar del lanzamiento y, como mucho, a los 12 meses.\n- Tu cuenta se guarda hasta que pidas borrarla. Si no la usas en 90 días, se cierra tu sesión.\n- Los registros técnicos (por ejemplo, la dirección de tu conexión) se borran en 30 días como mucho."
+      },
+      "rights": {
+        "title": "Tus derechos",
+        "body": "Puedes pedir ver tus datos, corregirlos, borrarlos, llevártelos o que dejemos de usarlos. Por ahora, escribe a la dirección de correo de protección de datos de EITB (la añadirá la Asesoría Jurídica). Pronto podrás borrar tu cuenta desde la propia app. Si no quedas conforme, puedes reclamar ante la autoridad de protección de datos."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "body": "Badulake solo usa cookies técnicas, imprescindibles para que la web funcione:\n- NEXT_LOCALE: recuerda el idioma que eliges. Dura un año.\n- Cookies de sesión (empiezan por «sb-»): solo si entras en tu cuenta, para que no tengas que entrar en cada página. Se borran al salir.\nNo hay cookies de publicidad ni de análisis, ni contenido de otras empresas. Por eso no te pedimos permiso con un aviso de cookies."
+      }
+    },
+    "signUpNotice": "Al crear la cuenta guardamos solo lo imprescindible. Más información en el <link>aviso de privacidad</link>.",
+    "footerLink": "Privacidad",
     "back": "Volver"
   },
   "Footer": {

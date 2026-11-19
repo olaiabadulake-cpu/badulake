@@ -30,8 +30,6 @@
   },
   "Privacy": {
     "title": "Tietosuojailmoitus",
-    "pending": "EITB:n lakiosasto laatii parhaillaan tietosuojailmoitusta. Se julkaistaan täällä ennen palvelun avaamista.",
-    "cookie": "Tämä sivusto tallentaa vain yhden evästeen, NEXT_LOCALE, muistaakseen valitsemasi kielen. Se säilyy vuoden eikä sitä käytetä mihinkään muuhun.",
     "back": "Takaisin"
   },
   "Footer": {
