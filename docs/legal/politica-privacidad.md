@@ -11,7 +11,7 @@
 - Plazos de conservación (apartado 6): ¿os parecen bien? Falta decidir qué hacer con cuentas que nunca se usan (idea: borrarlas a los 2 años avisando antes).
 - ¿Hace falta una evaluación de impacto (EIPD)? Se guardan direcciones de casas particulares, aunque se borran al día siguiente del badulake.
 - Autoridad de control: se cita la AEPD; ¿corresponde también o en su lugar la Agencia Vasca de Protección de Datos, por ser EITB un ente público vasco?
-- La Tarea 13 añadirá las denuncias y la suspensión de cuentas: habrá que añadir esa finalidad, su base legal (interés legítimo / obligación legal) y su plazo. La Tarea 10 añadirá el correo propio y un proveedor de envío (previsto Resend, servidores en la UE): habrá que sumarlo en el apartado 5.
+- Denuncias y suspensión de cuentas (Tarea 13, D-027): ya están en los apartados 2, 3, 4 y 6. ¿Confirmáis la base legal y los plazos (denuncias: 30 días tras el badulake; suspensiones: hasta que se levanten o se borre la cuenta)? ¿Debe la persona suspendida poder saber el motivo y reclamar? Hoy no recibe el motivo ni hay un procedimiento o botón: solo puede escribir al correo de contacto. ¿Se le debe contar qué se le reprocha, sin revelar quién denunció? La Tarea 10 añadirá el correo propio y un proveedor de envío (previsto Resend, servidores en la UE): habrá que sumarlo en el apartado 5.
 - Si EITB graba badulakes para la docuserie, hará falta un aviso de grabación y cesión de imagen aparte; no está contemplado aquí.
 
 ## 1. Quién es el responsable de tus datos
@@ -32,6 +32,7 @@ Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni 
 - **Los badulakes que organizas.** Título, descripción, fecha y hora, zona o barrio, número de plazas, estado (borrador o publicado) y la dirección exacta. Para que otras personas lo encuentren y puedan ir.
 - **Los badulakes a los que te apuntas.** Cuál y cuándo. Para reservarte la plaza, no pasarnos del cupo y enseñarte la dirección.
 - **Datos técnicos de seguridad.** Un contador de intentos (entrar, crear cuenta, apuntarse) que usa solo una huella cifrada de tu conexión y vive unos minutos en la memoria del servidor; y los registros técnicos del servidor, que solo guardan códigos de error, nunca correos ni direcciones.
+- **Denuncias y suspensiones.** Si denuncias un badulake, guardamos qué badulake, el motivo que elijas, el texto opcional de hasta 300 letras que escribas y quién denuncia (un código de tu cuenta, no tu nombre). Si una cuenta incumple las condiciones y se suspende, guardamos que está suspendida y desde cuándo. Es para atender quejas, ocultar badulakes y proteger a la comunidad. No escribas datos personales de nadie en el texto de una denuncia.
 - **Lo que escribas tú.** El título y la descripción de un badulake son texto libre. **No escribas datos personales tuyos ni de otras personas** (teléfonos, apellidos, datos de salud…): se verían por las demás personas con cuenta.
 
 No usamos analítica, publicidad ni perfiles, ni tomamos decisiones automáticas sobre ti.
@@ -41,6 +42,7 @@ No usamos analítica, publicidad ni perfiles, ni tomamos decisiones automáticas
 - **Lista de espera:** tu consentimiento (artículo 6.1.a del RGPD). Marcas una casilla, sin marcar de antemano, y puedes retirarlo cuando quieras sin que afecte a lo anterior.
 - **Cuenta, badulakes e inscripciones:** son necesarios para darte el servicio que pides al usar la app (artículo 6.1.b).
 - **Comprobar que eres mayor de edad y proteger a la comunidad** (seguridad, límite de intentos, evitar abusos): nuestro interés legítimo en que solo usen la app personas adultas y en que sea segura (artículo 6.1.f).
+- **Denuncias y suspensiones:** nuestro interés legítimo en la seguridad de la comunidad (artículo 6.1.f) y, en parte, el servicio que ofrecemos (artículo 6.1.b).
 - Propuesta pendiente de confirmar por la Asesoría Jurídica.
 
 Si no nos das los datos necesarios (por ejemplo, tu correo), no podemos crear tu cuenta.
@@ -51,6 +53,7 @@ Si no nos das los datos necesarios (por ejemplo, tu correo), no podemos crear tu
 - Un badulake publicado lo ven las personas con cuenta, **sin la dirección exacta y sin saber quién lo organiza**.
 - La **dirección exacta** solo la ven quien organiza y las personas apuntadas. Si te borras, dejas de verla.
 - Quien organiza ve **cuántas** personas se han apuntado, pero **no quiénes**.
+- Las **denuncias** solo las ve el equipo de Badulake, desde un panel que no enseña quién denuncia, quién organiza, ni correos ni la dirección exacta. Ni la persona denunciada ni las demás personas usuarias ven quién ha denunciado.
 - Tampoco vemos tus datos de forma rutinaria: el equipo de Badulake solo accede a ellos, con acceso restringido, para atender una petición tuya, resolver una denuncia o cumplir la ley.
 - **No vendemos ni cedemos tus datos** con fines comerciales.
 
@@ -76,6 +79,7 @@ Muchos se borran solos cada noche con una tarea programada:
 
 - **Dirección exacta de un badulake:** al día siguiente de celebrarse.
 - **El badulake y quién se apuntó:** 30 días después de celebrarse (margen para quejas o denuncias).
+- **Denuncias:** se borran con el badulake denunciado, 30 días después de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se levante la suspensión o se borre la cuenta. Si borras tu cuenta, tus denuncias siguen, pero sin el código que te identificaba.
 - **Lista de espera:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.
 - **Cuenta:** hasta que pidas borrarla. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.
 - **Registro de accesos de la cuenta** (con IP): 30 días.
