@@ -6,7 +6,7 @@ Tarea 22 del plan maestro, decisión D-035 (apoya a D-011). Aquí se graban los 
 
 | | App real | Copia de pruebas |
 |---|---|---|
-| Web | badulake.vercel.app (rama `main`) | proyecto de Vercel `badulake-pruebas` (rama `pruebas`) |
+| Web | badulake.vercel.app (rama `main`) | badulake-pruebas.vercel.app (otro proyecto de Vercel, `badulake-pruebas`, también desde `main`) |
 | Base de datos | Supabase `badulake` (Frankfurt) | Supabase `badulake-pruebas` (Frankfurt, otro proyecto gratuito) |
 | Datos | personas reales (cuando abra) | solo inventados (`supabase/pruebas/02-datos.sql`) |
 | Aviso | ninguno | franja roja «COPIA DE PRUEBAS — DATOS INVENTADOS» en todas las páginas, `noindex` y sin analítica |
@@ -16,7 +16,7 @@ Coste: **0 €** (Supabase Free permite 2 proyectos activos por organización; V
 ## Reglas
 
 - Las claves de la copia (`SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`) viven **solo** en Vercel (proyecto `badulake-pruebas`) y, si se prueba en el Mac, en `app/.env.pruebas` (ignorado por Git). Nunca en el repositorio y nunca las de producción.
-- La copia es siempre el código de `main` más sus interruptores. La rama `pruebas` se actualiza con `git checkout pruebas && git merge main` (o se apunta Vercel a `main` si se prefiere; los interruptores no hacen nada sin sus variables).
+- La copia es siempre el código de `main`: cada cambio que se sube a `main` se publica en las dos webs a la vez, y los interruptores no hacen nada sin sus variables. (El plan hablaba de una rama `pruebas`; se descartó para no tener que mantener dos ramas al día.)
 - Todas las cuentas son inventadas: `nombre.demo@pruebas.badulake.app`, contraseña `Pruebas-Badulake-1` (no es de nadie). Cuenta del equipo: `equipo.demo@…`.
 
 ## Estado (20/11/2026)
@@ -31,7 +31,7 @@ Coste: **0 €** (Supabase Free permite 2 proyectos activos por organización; V
 2. **Esquema:** `LC_ALL=en_US.UTF-8 sh supabase/pruebas/juntar-esquema.sh | pbcopy` y pegar en *SQL Editor → Run* (confirmar el aviso de «operaciones destructivas»). Junta los `supabase/*.sql` en su orden, más `hora_actual` (tarea 2) y una `rls_auto_enable` vacía que en el proyecto real creó Supabase. Si aparecen letras raras (`√∫`), faltó `LC_ALL`.
 3. **Marca de copia y fallo de datos:** pegar y ejecutar `supabase/pruebas/01-fallos.sql`.
 4. **Datos inventados:** pegar y ejecutar `supabase/pruebas/02-datos.sql`. Se puede **volver a ejecutar las veces que haga falta**: borra todo y lo deja como al principio. Se niega a correr si no existe la marca del paso 3.
-5. **Vercel:** proyecto nuevo `badulake-pruebas` desde este repositorio, carpeta raíz `app`, rama de producción `pruebas`. Variables de entorno (todas solo ahí):
+5. **Vercel:** proyecto nuevo `badulake-pruebas` desde este repositorio (*Import* con GitHub), carpeta raíz `app`, rama `main`. Variables de entorno (todas solo ahí):
 
 | Variable | Valor |
 |---|---|
@@ -41,7 +41,8 @@ Coste: **0 €** (Supabase Free permite 2 proyectos activos por organización; V
 | `PRIVACY_NOTICE_READY` | `true` |
 | `PRUEBAS_COPIA` | `1` |
 | `PRUEBAS_SUPABASE_REF` | la referencia del proyecto de la copia (la parte de la URL antes de `.supabase.co`) |
-| `SITE_URL` | la dirección de la copia |
+| `PRUEBAS_DATOS_A_LA_VISTA` | `0` (apagado) o `1` (encendido) |
+| `PRUEBAS_BOTONES_CONFUSOS` | `0` (apagado) o `1` (encendido) |
 
 6. **Supabase → Authentication → Sign In / Providers → Email:** ajustar «Confirm email» y «Authentication → URL Configuration» con la dirección de la copia (ver el interruptor 1).
 
