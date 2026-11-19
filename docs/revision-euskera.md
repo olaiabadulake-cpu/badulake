@@ -44,3 +44,42 @@ Textos en euskera de la web de Badulake, para que los revise una persona euskald
 | 28 | Traducción automática del castellano, pendiente de revisión. | Gaztelaniatik automatikoki itzulia; oraindik berrikusi gabe. | |
 
 _Lista generada a partir de `app/messages/es.json` y `app/messages/eu.json` el 19/11/2026. Si cambian los textos, Claude la vuelve a generar._
+
+## Tarea 20 · Lista de espera, confirmado y cancelado (20/11/2026)
+
+Textos nuevos escritos por Claude y repasados por Claude (no por una persona euskaldun). `{count}` y `{position}` son números que pone la app; «#» también es el número. En «Tu cuenta», cada aviso va detrás del título del badulake («Mi badulake: has entrado desde la lista de espera.»).
+
+**Dudas concretas:**
+- «Bertan behera» para «cancelado»: ¿suena natural como etiqueta?
+- Puesto en la lista: «Itxaron-zerrendan zaude, 2. postuan». ¿Mejor «2.a zara» u otra fórmula?
+- «Baieztatuta» para un badulake que ya tiene 5 personas: ¿se entiende?
+
+| # | Castellano | Euskera actual | Corrección |
+|---|---|---|---|
+| 1 | Confirmado: ya hay 5 personas apuntadas o más. | Baieztatuta: dagoeneko 5 lagunek edo gehiagok eman dute izena. | |
+| 2 | {count, plural, one {Falta # persona para confirmarse} other {Faltan # personas para confirmarse}}. Si 24 horas antes no hay 5, se cancela solo. | {count, plural, one {Lagun bat falta da baieztatzeko} other {# lagun falta dira baieztatzeko}}. 24 ordu lehenago 5 lagun ez badaude, automatikoki bertan behera geratuko da. | |
+| 3 | Este badulake se ha cancelado. | Badulake hau bertan behera geratu da. | |
+| 4 | No llegó a 5 personas 24 horas antes, así que se canceló solo. | 24 ordu lehenago ez zen 5 lagunera iritsi, eta automatikoki bertan behera geratu zen. | |
+| 5 | Lo ha cancelado quien lo organizaba. | Antolatzaileak bertan behera utzi du. | |
+| 6 | Lo has cancelado tú. | Zuk utzi duzu bertan behera. | |
+| 7 | Confirmado | Baieztatuta | |
+| 8 | Cancelado | Bertan behera | |
+| 9 | En lista de espera ({position}.ª) | Itxaron-zerrendan ({position}. postua) | |
+| 10 | Ponerme en lista de espera | Eman izena itxaron-zerrendan | |
+| 11 | Si alguien se borra, entrarás automáticamente por orden de llegada y verás la dirección exacta. | Norbaitek izena kentzen badu, automatikoki sartuko zara iritsiera-ordenaren arabera, eta helbide zehatza ikusiko duzu. | |
+| 12 | Estás en la lista de espera: eres la {position}.ª. | Itxaron-zerrendan zaude, {position}. postuan. | |
+| 13 | Salir de la lista de espera | Atera itxaron-zerrendatik | |
+| 14 | Has entrado desde la lista de espera. Ya tienes plaza y puedes ver la dirección exacta. | Itxaron-zerrendatik sartu zara. Baduzu plaza, eta helbide zehatza ikus dezakezu. | |
+| 15 | Cancelar este badulake | Bertan behera utzi badulake hau | |
+| 16 | Se cancelará para todas las personas apuntadas y en lista de espera, y se borrará la dirección exacta. No se puede deshacer. | Izena emandako eta itxaron-zerrendako guztientzat geratuko da bertan behera, eta helbide zehatza ezabatuko da. Ezin da desegin. | |
+| 17 | Sí, cancelarlo | Bai, bertan behera utzi | |
+| 18 | Hora de Madrid. Al menos 2 días después de hoy, para que dé tiempo a juntar a 5 personas. | Madrilgo ordua. Gaurtik gutxienez 2 egunera, 5 lagun biltzeko denbora izan dadin. | |
+| 19 | Elige una fecha y hora al menos 2 días después de hoy. | Aukeratu gaurtik gutxienez 2 egunerako data eta ordua. | |
+| 20 | No quedaban plazas: te has puesto en la lista de espera. | Ez zegoen plazarik: orain itxaron-zerrendan zaude. | |
+| 21 | Has salido de la lista de espera. | Itxaron-zerrendatik atera zara. | |
+| 22 | Has cancelado el badulake. Ya no admite inscripciones. | Badulakea bertan behera utzi duzu. Ez du izen-emate gehiago onartzen. | |
+| 23 | No se puede publicar: tiene que faltar al menos 2 días para que dé tiempo a juntar a 5 personas. | Ezin da argitaratu: gutxienez 2 egun geratu behar dira, 5 lagun biltzeko denbora izan dadin. | |
+| 24 | Avisos | Abisuak | |
+| 25 | has entrado desde la lista de espera. | itxaron-zerrendatik sartu zara. | |
+| 26 | este badulake se ha cancelado. | badulake hau bertan behera geratu da. | |
+| 27 | estás en la lista de espera ({position}.ª). | itxaron-zerrendan zaude, {position}. postuan. | |
