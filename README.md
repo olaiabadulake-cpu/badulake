@@ -1,10 +1,10 @@
 # Badulake
 
-**Una app de intercambio de ropa entre mujeres, construida por alguien que no sabe programar.**
+**Una app para organizar quedadas de intercambio de ropa y cosas, pensada para mujeres y abierta a todas las personas mayores de 18 años, construida por alguien que no sabe programar.**
 
 Badulake es a la vez dos cosas:
 
-1. **Una aplicación**: un sitio donde mujeres intercambian ropa entre ellas.
+1. **Una aplicación**: organiza badulakes, quedadas en persona para intercambiar ropa y objetos sin dinero. Está pensada para mujeres y abierta a cualquier persona mayor de 18 años (decisión [D-008](docs/decisiones.md)).
 2. **Un experimento en abierto**: OlaIA, sin ningún conocimiento de programación, construye la app dirigiendo a una IA (Claude, de Anthropic), con la supervisión de Adrián, programador y mentor. Queremos ver hasta dónde llega la IA sola cuando la dirige alguien que no programa.
 
 Todo se graba y se documenta aquí: el código, cada decisión, las herramientas y los errores.

@@ -42,7 +42,7 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Fecha:** 19/11/2026
 - **Decisión:** En el Mac las altas se guardan en un archivo local (que no se sube a GitHub). En la web publicada el formulario se oculta hasta que haya base de datos y aviso de privacidad.
 - **Por qué:** Publicar un formulario que recoge correos sin guardarlos bien ni explicar qué se hace con ellos sería engañar a quien se apunta.
-- **Propuso:** Claude · **Decidió:** pendiente de validar por OlaIA
+- **Propuso:** Claude · **Decidió:** OlaIA (validado el 19/11/2026; el siguiente paso es añadir la base de datos)
 
 ### D-007 · Idioma por defecto: castellano
 - **Fecha:** 19/11/2026
@@ -90,3 +90,6 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Fecha:** 19/11/2026
 - **Decisión:** Se desarrolla primero lo mínimo para que Badulake funcione de verdad (registro, crear y apuntarse a badulakes, aforo, seguridad, privacidad, accesibilidad, avisos y el día del badulake básico). Grupos, notificaciones en el móvil, filtros, mapa, valoraciones, puntos de generosidad, badulake online y pagos quedan para cuando la comunidad lo pida o haya tiempo.
 - **Decidió:** OlaIA
+- **Ajuste (19/11/2026):** el objetivo de la lista de espera para empezar es de 10 personas.
+- **Revisión del euskera:** la hará Iñako antes de publicar.
+- **Infraestructura:** Supabase y Resend (correo) con servidores en la UE; Vercel pasa a un plan de pago.
