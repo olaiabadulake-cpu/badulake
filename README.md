@@ -32,7 +32,7 @@ Nos encanta que mires el código y opines. Abre un *issue* con sugerencias, duda
 
 ## Estado
 
-🟡 Día 1 (19 de noviembre de 2026): primera versión publicada en [badulake.vercel.app](https://badulake.vercel.app), una portada en euskera y castellano. Ya hay base de datos (Supabase, UE), lista de espera y cuentas (crear cuenta, entrar y salir, solo para mayores de 18). La lista de espera y las cuentas se abrirán al público cuando esté el aviso de privacidad (D-018 y D-019); mientras, las cuentas solo funcionan en el Mac.
+🟡 Día 1 (19 de noviembre de 2026): primera versión publicada en [badulake.vercel.app](https://badulake.vercel.app), una portada en euskera y castellano. Ya hay base de datos (Supabase, UE), lista de espera y cuentas (crear cuenta, entrar y salir, solo para mayores de 18) y crear un badulake (borrador y publicar). La lista de espera y las cuentas se abrirán al público cuando esté el aviso de privacidad (D-018 y D-019); mientras, las cuentas y crear badulakes solo funcionan en el Mac.
 
 ## Arrancar la app en tu ordenador
 

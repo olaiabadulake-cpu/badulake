@@ -75,6 +75,41 @@
       "salida": "Kontutik irten zara.",
       "enlace": "Esteka ez da baliozkoa edo iraungita dago. Saiatu sartzen edo sortu berriro kontua.",
       "verificada": "Zure posta elektronikoa egiaztatuta dago. Orain sar zaitezke."
+    },
+    "newBadulake": "Badulake bat sortu"
+  },
+  "Badulake": {
+    "newTitle": "Badulake bat sortu",
+    "yourTitle": "Zure badulakea",
+    "loading": "Kargatzen…",
+    "title": "Izenburua",
+    "description": "Azalpen laburra",
+    "date": "Data eta ordua",
+    "zone": "Eremua edo auzoa",
+    "address": "Helbide zehatza",
+    "seats": "Plazak",
+    "hints": {
+      "title": "3 eta 80 letra artean.",
+      "description": "Zer trukatuko duzuen eta nola. Gehienez 500 letra.",
+      "date": "Madrilgo ordua. Etorkizunean izan behar du.",
+      "zone": "Publikoki ikusiko da. Adib.: Deustu, Bilbo.",
+      "address": "Zuk bakarrik ikusiko duzu; izena ematen duenari erakutsiko diogu.",
+      "seats": "5 eta 10 lagun artean."
+    },
+    "save": "Zirriborroa gorde",
+    "pending": "Gordetzen…",
+    "publish": "Argitaratu",
+    "statusDraft": "Zirriborroa da: oraingoz zuk bakarrik ikusten duzu.",
+    "statusPublished": "Argitaratuta: kontua duten pertsonek ikus dezakete.",
+    "addressPrivate": "Helbide zehatza pribatua da: zuk bakarrik ikusten duzu.",
+    "errors": {
+      "title": "Izenburuak 3 eta 80 letra artean izan behar ditu.",
+      "description": "Kontatu zerbait badulakeari buruz (gehienez 500 letra).",
+      "date": "Aukeratu oraindik igaro ez den data eta ordua.",
+      "zone": "Esan zein eremu edo auzo den.",
+      "address": "Idatzi helbide zehatza.",
+      "seats": "Plazak 5 eta 10 artean izan behar dira.",
+      "generic": "Zerbait gaizki atera da. Saiatu berriro apur bat geroago."
     }
   }
 }

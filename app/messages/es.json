@@ -75,6 +75,41 @@
       "salida": "Has salido de tu cuenta.",
       "enlace": "El enlace no es válido o ha caducado. Prueba a entrar o vuelve a crear la cuenta.",
       "verificada": "Tu correo está verificado. Ya puedes entrar."
+    },
+    "newBadulake": "Crear un badulake"
+  },
+  "Badulake": {
+    "newTitle": "Crear un badulake",
+    "yourTitle": "Tu badulake",
+    "loading": "Cargando…",
+    "title": "Título",
+    "description": "Descripción corta",
+    "date": "Fecha y hora",
+    "zone": "Zona o barrio",
+    "address": "Dirección exacta",
+    "seats": "Plazas",
+    "hints": {
+      "title": "Entre 3 y 80 letras.",
+      "description": "Qué vais a intercambiar y cómo. Máximo 500 letras.",
+      "date": "Hora de Madrid. Tiene que ser en el futuro.",
+      "zone": "Se verá en público. Ej.: Deusto, Bilbao.",
+      "address": "Solo la verás tú; se la enseñaremos a quien se apunte.",
+      "seats": "Entre 5 y 10 personas."
+    },
+    "save": "Guardar borrador",
+    "pending": "Guardando…",
+    "publish": "Publicar",
+    "statusDraft": "Es un borrador: de momento solo lo ves tú.",
+    "statusPublished": "Publicado: ya pueden verlo las personas con cuenta.",
+    "addressPrivate": "La dirección exacta es privada: solo la ves tú.",
+    "errors": {
+      "title": "El título debe tener entre 3 y 80 letras.",
+      "description": "Cuéntanos algo del badulake (máximo 500 letras).",
+      "date": "Elige una fecha y hora que todavía no hayan pasado.",
+      "zone": "Dinos la zona o el barrio.",
+      "address": "Escribe la dirección exacta.",
+      "seats": "Las plazas deben ser entre 5 y 10.",
+      "generic": "Algo ha fallado. Inténtalo de nuevo en un rato."
     }
   }
 }

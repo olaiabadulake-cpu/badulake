@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
-import { redirect } from "@/i18n/navigation";
+import { Link, redirect } from "@/i18n/navigation";
 import { accountsOpen, getCurrentUser } from "@/lib/supabase/server";
 import { signOut } from "./actions";
 
@@ -30,6 +30,12 @@ async function Account() {
   return (
     <>
       <p className="text-lg">{t("signedInAs", { email: user!.email })}</p>
+      <Link
+        href="/badulakes/nuevo"
+        className="rounded-full bg-noche px-6 py-3 text-center text-lg font-semibold text-white hover:bg-noche/90 sm:self-start"
+      >
+        {t("newBadulake")}
+      </Link>
       <form action={signOut}>
         <input type="hidden" name="locale" value={locale} />
         <button

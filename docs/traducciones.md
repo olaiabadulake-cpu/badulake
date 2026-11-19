@@ -38,3 +38,5 @@ Cada lengua tiene su archivo en `app/messages/<código>.json`. Basta con cambiar
 ## Textos nuevos aún sin traducir
 
 Si a una lengua le falta un texto, la web enseña el texto en castellano en vez de un error (`app/src/i18n/request.ts`). Así está hoy todo lo de las cuentas (crear cuenta, entrar, salir): escrito en castellano y euskera; las otras 42 lenguas se traducirán con los mismos traductores antes de abrir las cuentas al público.
+
+**Crear un badulake (tarea 5):** los textos nuevos (`Badulake` y `Account.newBadulake`) están escritos en castellano y euskera; las otras 42 lenguas ven el castellano hasta que se traduzcan, antes de abrir las cuentas al público.
