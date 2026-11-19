@@ -17,8 +17,6 @@
     "zone": "Zure eremua edo auzoa",
     "zonePlaceholder": "Adib.: Deustu, Bilbo",
     "language": "Zein hizkuntzatan nahi dituzu abisuak?",
-    "eu": "Euskara",
-    "es": "Gaztelania",
     "consent": "Onartzen dut Badulakek (EITB) datu hauek gordetzea, abian jartzen denean abisatzeko. Informazio gehiago <link>pribatutasun-oharrean</link>.",
     "submit": "Eman izena",
     "pending": "Bidaltzen…",
@@ -38,6 +36,7 @@
   },
   "Footer": {
     "project": "EITBren proiektu bat",
-    "language": "Hizkuntza"
+    "language": "Hizkuntza",
+    "machine": "Gaztelaniatik automatikoki itzulia; oraindik berrikusi gabe."
   }
 }

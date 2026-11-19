@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Întâlniri de schimb, fără bani",
+    "description": "Întâlniri în care schimbi haine și lucruri pe care nu le mai folosești. Fără bani. Înscrie-te pe lista de așteptare."
+  },
+  "Home": {
+    "tagline": "Întâlniri în care schimbi haine și lucruri pe care nu le mai folosești. Fără bani.",
+    "point1": "Adunați-vă 5–10 persoane într-un spațiu din zona voastră.",
+    "point2": "Adu ce nu mai folosești și ia acasă ce-ți place.",
+    "point3": "Fă loc în dulap și distrează-te.",
+    "coming": "Badulake vine la începutul lui 2027. Înscrie-te și te anunțăm.",
+    "comingSoon": "Badulake vine la începutul lui 2027. Foarte curând te vei putea înscrie pe lista de așteptare."
+  },
+  "Waitlist": {
+    "title": "Listă de așteptare",
+    "email": "Adresă de e-mail",
+    "zone": "Zona sau cartierul tău",
+    "zonePlaceholder": "Ex.: Deusto, Bilbao",
+    "language": "În ce limbă vrei să primești mesajele noastre?",
+    "consent": "Sunt de acord ca Badulake (EITB) să păstreze aceste date ca să mă anunțe de lansare. Mai multe informații în <link>nota de confidențialitate</link>.",
+    "submit": "Înscrie-mă",
+    "pending": "Se trimite…",
+    "success": "Gata! Te anunțăm când Badulake e gata.",
+    "errors": {
+      "email": "Verifică adresa de e-mail: nu pare validă.",
+      "zone": "Spune-ne zona sau cartierul tău.",
+      "consent": "Avem nevoie de permisiunea ta ca să-ți păstrăm datele.",
+      "generic": "Ceva n-a mers. Încearcă din nou puțin mai târziu."
+    }
+  },
+  "Privacy": {
+    "title": "Notă de confidențialitate",
+    "pending": "Departamentul juridic al EITB redactează nota de confidențialitate. Va apărea aici înainte de lansare.",
+    "cookie": "Acest site salvează un singur cookie, NEXT_LOCALE, ca să-și amintească limba pe care o alegi. Durează un an și nu e folosit pentru nimic altceva.",
+    "back": "Înapoi"
+  },
+  "Footer": {
+    "project": "Un proiect EITB",
+    "language": "Limbă",
+    "machine": "Traducere automată din spaniolă, încă nerevizuită."
+  }
+}

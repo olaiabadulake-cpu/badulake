@@ -61,8 +61,4 @@ En España, CIRCOM incluye a todos los de FORTA más **RTVCyL** (Castilla y Leó
 
 ## Qué supone para la app
 
-- **Lo que ya está listo:** añadir una lengua es añadirla en `app/src/i18n/routing.ts` y crear su archivo en `app/messages/`.
-- **Selector:** con más de dos o tres lenguas, el selector EU | ES tendría que pasar a ser un menú desplegable.
-- **Alfabetos:** las letras de la web (Roboto y Raleway) solo cargan el alfabeto latino. El búlgaro, el macedonio, el serbio, el ucraniano y el montenegrino usan alfabeto cirílico, y el griego tiene el suyo propio. Para esas lenguas habría que cargar esos alfabetos o cambiar de tipografía.
-- **Dirección del texto:** ninguna de estas lenguas se escribe de derecha a izquierda, así que no hace falta adaptar el diseño.
-- **Lenguas con varias formas:** el noruego (bokmål y nynorsk) y el catalán/valenciano pueden necesitar dos versiones según quién lo use.
+Hecho el 19/11/2026: la web ya está en todas estas lenguas, minoritarias incluidas. Se elige en un menú, y las letras cargan el alfabeto latino ampliado, el cirílico y el griego. Qué traductor se ha usado para cada lengua está en [traducciones.md](traducciones.md).

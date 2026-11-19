@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Coinneamhan iomlaid gun airgead",
+    "description": "Coinneamhan airson aodach is rudan nach eil thu a' cleachdadh tuilleadh iomlaid. Gun airgead. Cuir d' ainm ris an liosta-feitheimh."
+  },
+  "Home": {
+    "tagline": "Coinneamhan airson aodach is rudan nach eil thu a' cleachdadh tuilleadh iomlaid. Gun airgead.",
+    "point1": "Thigibh còmhla, 5 gu 10 daoine, ann an àite faisg oirbh.",
+    "point2": "Thoir leat na rudan nach eil thu a' cleachdadh tuilleadh agus thoir dhachaigh na tha a' còrdadh riut.",
+    "point3": "Dèan àite sa phreas-aodaich agus gabh tlachd dheth.",
+    "coming": "Thig Badulake tràth ann an 2027. Clàraich agus innsidh sinn dhut.",
+    "comingSoon": "Thig Badulake tràth ann an 2027. Gu h-aithghearr, bidh e comasach dhut d' ainm a chur ris an liosta-feitheimh."
+  },
+  "Waitlist": {
+    "title": "Liosta-feitheimh",
+    "email": "Seòladh puist-d",
+    "zone": "D' sgìre no do nàbachd",
+    "zonePlaceholder": "M.e. Deusto, Bilbao",
+    "language": "Dè an cànan anns am bu toil leat ar teachdaireachdan fhaighinn?",
+    "consent": "Tha mi ag aontachadh gun glèidh Badulake (EITB) an dàta seo airson innse dhomh mun chur air bhog. Tuilleadh fiosrachaidh san <link>aithris prìobhaideachd</link>.",
+    "submit": "Clàraich mi",
+    "pending": "Ga chur…",
+    "success": "Dèanta! Innsidh sinn dhut nuair a bhios Badulake deiseil.",
+    "errors": {
+      "email": "Thoir sùil air an t-seòladh puist-d: chan eil e coltach gu bheil e dligheach.",
+      "zone": "Innis dhuinn dè an sgìre no an nàbachd agad.",
+      "consent": "Feumaidh sinn do chead airson do dhàta a ghlèidheadh.",
+      "generic": "Chaidh rudeigin ceàrr. Feuch a-rithist an ceann greis."
+    }
+  },
+  "Privacy": {
+    "title": "Aithris prìobhaideachd",
+    "pending": "Tha Roinn Laghail EITB a' sgrìobhadh na h-aithris prìobhaideachd. Nochdaidh i an seo ron chur air bhog.",
+    "cookie": "Cha ghlèidh an làrach-lìn seo ach aon bhriosgaid, NEXT_LOCALE, airson cuimhneachadh air a' chànan a thaghas tu. Mairidh i bliadhna agus cha chleachdar i airson dad sam bith eile.",
+    "back": "Air ais"
+  },
+  "Footer": {
+    "project": "Pròiseact le EITB",
+    "language": "Cànan",
+    "machine": "Eadar-theangachadh fèin-obrachail on Spàinntis, gun ath-sgrùdadh fhathast."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Quedaes pa intercambiar ensin perres",
+    "description": "Quedaes pa intercambiar ropa y coses que yá nun uses. Ensin perres. Apúntate na llista d'espera."
+  },
+  "Home": {
+    "tagline": "Quedaes pa intercambiar ropa y coses que yá nun uses. Ensin perres.",
+    "point1": "Axuntaivos ente 5 y 10 persones nun llocal de la vuesa zona.",
+    "point2": "Lleva lo que yá nun uses y llévate lo que te preste.",
+    "point3": "Llibera l'armariu y pásalo bien.",
+    "coming": "Badulake llega a principios de 2027. Apúntate y avisámoste.",
+    "comingSoon": "Badulake llega a principios de 2027. Mui ceo vas poder apuntate na llista d'espera."
+  },
+  "Waitlist": {
+    "title": "Llista d'espera",
+    "email": "Corréu electrónicu",
+    "zone": "La to zona o barriu",
+    "zonePlaceholder": "Ex.: Deusto, Bilbao",
+    "language": "¿En qué llingua quies los avisos?",
+    "consent": "Aceuto que Badulake (EITB) guarde estos datos p'avisame del llanzamientu. Más información nel <link>avisu de privacidá</link>.",
+    "submit": "Apuntame",
+    "pending": "Unviando…",
+    "success": "¡Fecho! Avisarémoste cuando Badulake tea preparáu.",
+    "errors": {
+      "email": "Revisa'l corréu: nun paez válidu.",
+      "zone": "Dinos la to zona o barriu.",
+      "consent": "Precisamos el to permisu pa guardar los tos datos.",
+      "generic": "Daqué falló. Téntalo de nueves dientro d'un ratu."
+    }
+  },
+  "Privacy": {
+    "title": "Avisu de privacidá",
+    "pending": "L'Asesoría Xurídica d'EITB ta redactando l'avisu de privacidá, que va apaecer equí enantes del llanzamientu.",
+    "cookie": "Esta web guarda una sola cookie, llamada NEXT_LOCALE, pa recordar la llingua qu'escueyes. Dura un añu y nun s'usa pa nada más.",
+    "back": "Volver"
+  },
+  "Footer": {
+    "project": "Un proyeutu d'EITB",
+    "language": "Llingua",
+    "machine": "Traducción automática del castellanu, pendiente de revisión."
+  }
+}

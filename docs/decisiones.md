@@ -93,3 +93,10 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Ajuste (19/11/2026):** el objetivo de la lista de espera para empezar es de 10 personas.
 - **Revisión del euskera:** la hará Iñako antes de publicar.
 - **Infraestructura:** Supabase y Resend (correo) con servidores en la UE; Vercel pasa a un plan de pago.
+
+### D-013 · Badulake en todas las lenguas de FORTA y CIRCOM
+- **Fecha:** 19/11/2026
+- **Alternativas:** solo las lenguas principales (unas 31); solo las de FORTA y el inglés.
+- **Decisión:** 44 lenguas, también las minoritarias (sami, frisón, bretón, corso, ladino, rusino…). Cada persona elige la suya en un menú, y cada lengua aparece escrita en su propio idioma. Se publican ya, con un aviso de que son traducciones automáticas pendientes de revisar. Nunca se usa el traductor de Google: para cada lengua se usa el mejor traductor neuronal disponible, y Claude lo pule para que suene natural (detalle en `docs/traducciones.md`).
+- **Por qué:** Que cualquier persona pueda usar la app en su lengua, como piden FORTA y CIRCOM.
+- **Propuso:** OlaIA · **Hizo:** Claude · **Pendiente:** revisión por personas nativas.

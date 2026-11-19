@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Ruilmeetups zonder geld",
+    "description": "Meetups om kleding en spullen te ruilen die je niet meer gebruikt. Zonder geld. Zet je op de wachtlijst."
+  },
+  "Home": {
+    "tagline": "Meetups om kleding en spullen te ruilen die je niet meer gebruikt. Zonder geld.",
+    "point1": "Kom met 5 tot 10 mensen samen op een plek bij jou in de buurt.",
+    "point2": "Neem mee wat je niet meer gebruikt en neem mee naar huis wat je leuk vindt.",
+    "point3": "Maak ruimte in je kast en heb plezier.",
+    "coming": "Badulake komt begin 2027. Schrijf je in, dan laten we het je weten.",
+    "comingSoon": "Badulake komt begin 2027. Binnenkort kun je je op de wachtlijst zetten."
+  },
+  "Waitlist": {
+    "title": "Wachtlijst",
+    "email": "E-mailadres",
+    "zone": "Jouw regio of wijk",
+    "zonePlaceholder": "Bijv. Deusto, Bilbao",
+    "language": "In welke taal wil je onze berichten ontvangen?",
+    "consent": "Ik ga ermee akkoord dat Badulake (EITB) deze gegevens bewaart om mij te laten weten wanneer het van start gaat. Meer informatie in de <link>privacyverklaring</link>.",
+    "submit": "Zet me op de lijst",
+    "pending": "Bezig met verzenden…",
+    "success": "Gelukt! We laten het je weten zodra Badulake klaar is.",
+    "errors": {
+      "email": "Controleer je e-mailadres: het lijkt niet geldig.",
+      "zone": "Vertel ons je regio of wijk.",
+      "consent": "We hebben je toestemming nodig om je gegevens te bewaren.",
+      "generic": "Er ging iets mis. Probeer het zo nog eens."
+    }
+  },
+  "Privacy": {
+    "title": "Privacyverklaring",
+    "pending": "De juridische afdeling van EITB schrijft momenteel de privacyverklaring. Die verschijnt hier vóór de lancering.",
+    "cookie": "Deze website slaat maar één cookie op, NEXT_LOCALE, om te onthouden welke taal je kiest. Die blijft een jaar bewaard en wordt nergens anders voor gebruikt.",
+    "back": "Terug"
+  },
+  "Footer": {
+    "project": "Een project van EITB",
+    "language": "Taal",
+    "machine": "Automatisch vertaald uit het Spaans, nog niet nagekeken."
+  }
+}

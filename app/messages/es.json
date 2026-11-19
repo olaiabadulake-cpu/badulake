@@ -17,8 +17,6 @@
     "zone": "Tu zona o barrio",
     "zonePlaceholder": "Ej.: Deusto, Bilbao",
     "language": "¿En qué idioma quieres los avisos?",
-    "eu": "Euskera",
-    "es": "Castellano",
     "consent": "Acepto que Badulake (EITB) guarde estos datos para avisarme del lanzamiento. Más información en el <link>aviso de privacidad</link>.",
     "submit": "Apuntarme",
     "pending": "Enviando…",
@@ -38,6 +36,7 @@
   },
   "Footer": {
     "project": "Un proyecto de EITB",
-    "language": "Idioma"
+    "language": "Idioma",
+    "machine": "Traducción automática del castellano, pendiente de revisión."
   }
 }

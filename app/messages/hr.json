@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Susreti za razmjenu bez novca",
+    "description": "Susreti za razmjenu odjeće i stvari koje više ne koristite. Bez novca. Prijavite se na listu čekanja."
+  },
+  "Home": {
+    "tagline": "Susreti za razmjenu odjeće i stvari koje više ne koristite. Bez novca.",
+    "point1": "Okupite se, 5 do 10 ljudi, u prostoru u svojem kraju.",
+    "point2": "Donesite ono što više ne koristite i odnesite ono što vam se sviđa.",
+    "point3": "Oslobodite ormar i dobro se zabavite.",
+    "coming": "Badulake stiže početkom 2027. Prijavite se i javit ćemo vam.",
+    "comingSoon": "Badulake stiže početkom 2027. Uskoro ćete se moći prijaviti na listu čekanja."
+  },
+  "Waitlist": {
+    "title": "Lista čekanja",
+    "email": "Adresa e-pošte",
+    "zone": "Vaš kraj ili kvart",
+    "zonePlaceholder": "Npr. Deusto, Bilbao",
+    "language": "Na kojem jeziku želite primati naše obavijesti?",
+    "consent": "Pristajem da Badulake (EITB) čuva ove podatke kako bi me obavijestio o pokretanju. Više informacija u <link>obavijesti o privatnosti</link>.",
+    "submit": "Prijavi me",
+    "pending": "Šaljem…",
+    "success": "Gotovo! Javit ćemo vam kad Badulake bude spreman.",
+    "errors": {
+      "email": "Provjerite adresu e-pošte: čini se da nije ispravna.",
+      "zone": "Recite nam svoj kraj ili kvart.",
+      "consent": "Trebamo vaše dopuštenje da bismo spremili vaše podatke.",
+      "generic": "Nešto je pošlo po zlu. Pokušajte ponovno malo kasnije."
+    }
+  },
+  "Privacy": {
+    "title": "Obavijest o privatnosti",
+    "pending": "Pravna služba EITB-a priprema obavijest o privatnosti. Ovdje će biti objavljena prije pokretanja.",
+    "cookie": "Ova stranica sprema samo jedan kolačić, NEXT_LOCALE, kako bi zapamtila jezik koji odaberete. Traje godinu dana i ne služi ni za što drugo.",
+    "back": "Natrag"
+  },
+  "Footer": {
+    "project": "Projekt EITB-a",
+    "language": "Jezik",
+    "machine": "Strojni prijevod sa španjolskog, još nije provjeren."
+  }
+}

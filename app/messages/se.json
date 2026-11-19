@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Lonohallandeaivvadeamit ruđaid haga",
+    "description": "Deaivvadeamit gos lonohallat biktasiid ja diŋggaid maid it šat geavat. Ruđaid haga. Čálit iežat vuordinlistui."
+  },
+  "Home": {
+    "tagline": "Deaivvadeamit gos lonohallat biktasiid ja diŋggaid maid it šat geavat. Ruđaid haga.",
+    "point1": "Čoahkkanehket, 5–10 olbmo, lanjas din guovllus.",
+    "point2": "Váldde mielde dan maid it šat geavat, ja váldde ruoktot dan mii dutnje liiko.",
+    "point3": "Raddje biktasskáhpe ja návddaš.",
+    "coming": "Badulake boahtá 2027 álggus. Čálit iežat, de mii dieđihit dutnje.",
+    "comingSoon": "Badulake boahtá 2027 álggus. Fargga sáhtát čálihit iežat vuordinlistui."
+  },
+  "Waitlist": {
+    "title": "Vuordinlistu",
+    "email": "E-poastačujuhus",
+    "zone": "Du guovlu dahje gávpotoassi",
+    "zonePlaceholder": "Omd. Deusto, Bilbao",
+    "language": "Man gillii háliidat oažžut min dieđáhusaid?",
+    "consent": "Mun dohkkehan ahte Badulake (EITB) vurke dáid dieđuid vai sáhttá dieđihit munnje álggaheami birra. Loga eambbo <link>persovdnasuodjalusdieđáhusas</link>.",
+    "submit": "Čálit mu",
+    "pending": "Sáddemin…",
+    "success": "Gárvvis! Mii dieđihit dutnje go Badulake lea gárvvis.",
+    "errors": {
+      "email": "Dárkkis e-poastačujuhusa: dat ii oro leamen gustovaš.",
+      "zone": "Muital midjiide du guovllu dahje gávpotoasi.",
+      "consent": "Mii dárbbašit du lobi vai sáhttit vurket du dieđuid.",
+      "generic": "Juoga manai boastut. Geahččal fas veaháš maŋŋil."
+    }
+  },
+  "Privacy": {
+    "title": "Persovdnasuodjalusdieđáhus",
+    "pending": "EITB juridihkalaš ossodat čállá persovdnasuodjalusdieđáhusa, ja dat almmuhuvvo dáppe ovdal álggaheami.",
+    "cookie": "Dát neahttabáiki vurke dušše ovtta cookie, NEXT_LOCALE, vai muitá guđe giela don válljet. Dat bistá jagi iige geavahuvvo masage eará.",
+    "back": "Máhcát"
+  },
+  "Footer": {
+    "project": "EITB prošeakta",
+    "language": "Giella",
+    "machine": "Mášenjorgalus spánskkagielas, ii leat vel dárkkistuvvon."
+  }
+}

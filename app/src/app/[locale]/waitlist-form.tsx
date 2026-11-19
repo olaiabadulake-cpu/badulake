@@ -3,6 +3,7 @@
 import { useActionState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { languages, locales, type Locale } from "@/i18n/languages";
 import { joinWaitlist, type WaitlistState } from "./actions";
 
 const initial: WaitlistState = { status: "idle" };
@@ -10,7 +11,7 @@ const initial: WaitlistState = { status: "idle" };
 const input =
   "w-full rounded-lg border-2 border-noche/30 bg-white px-3 py-2.5 text-base focus:border-noche focus:outline-none aria-invalid:border-error";
 
-export function WaitlistForm({ defaultLanguage }: { defaultLanguage: "eu" | "es" }) {
+export function WaitlistForm({ defaultLanguage }: { defaultLanguage: Locale }) {
   const t = useTranslations("Waitlist");
   const [state, action, pending] = useActionState(joinWaitlist, initial);
 
@@ -48,20 +49,14 @@ export function WaitlistForm({ defaultLanguage }: { defaultLanguage: "eu" | "es"
         {err.zone && <p id="zone-error" className="text-sm font-medium text-error">{t("errors.zone")}</p>}
       </div>
 
-      <fieldset className="flex flex-col gap-1.5">
-        <legend className="mb-1.5 font-medium">{t("language")}</legend>
-        <div className="flex gap-6">
-          {(["eu", "es"] as const).map((lang) => (
-            <label key={lang} className="flex items-center gap-2">
-              <input
-                type="radio" name="language" value={lang} defaultChecked={lang === defaultLanguage}
-                className="size-5 accent-noche"
-              />
-              {t(lang)}
-            </label>
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="language" className="font-medium">{t("language")}</label>
+        <select id="language" name="language" defaultValue={defaultLanguage} className={input}>
+          {locales.map((locale) => (
+            <option key={locale} value={locale} lang={locale}>{languages[locale]}</option>
           ))}
-        </div>
-      </fieldset>
+        </select>
+      </div>
 
       <div className="flex flex-col gap-1.5">
         <label className="flex items-start gap-3">

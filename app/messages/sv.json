@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Bytesträffar helt utan pengar",
+    "description": "Träffar där ni byter kläder och saker som ni inte längre använder. Helt utan pengar. Skriv upp dig på väntelistan."
+  },
+  "Home": {
+    "tagline": "Träffar där ni byter kläder och saker som ni inte längre använder. Helt utan pengar.",
+    "point1": "Träffas 5 till 10 personer i en lokal nära dig.",
+    "point2": "Ta med det du inte längre använder och ta hem det du gillar.",
+    "point3": "Rensa garderoben och ha kul.",
+    "coming": "Badulake kommer i början av 2027. Anmäl dig så hör vi av oss.",
+    "comingSoon": "Badulake kommer i början av 2027. Snart kan du skriva upp dig på väntelistan."
+  },
+  "Waitlist": {
+    "title": "Väntelista",
+    "email": "E-postadress",
+    "zone": "Ditt område eller din stadsdel",
+    "zonePlaceholder": "T.ex. Deusto, Bilbao",
+    "language": "På vilket språk vill du få våra meddelanden?",
+    "consent": "Jag godkänner att Badulake (EITB) sparar de här uppgifterna för att meddela mig om lanseringen. Läs mer i <link>integritetsmeddelandet</link>.",
+    "submit": "Skriv upp mig",
+    "pending": "Skickar…",
+    "success": "Klart! Vi hör av oss när Badulake är redo.",
+    "errors": {
+      "email": "Kontrollera din e-postadress: den verkar inte vara giltig.",
+      "zone": "Berätta vilket område eller vilken stadsdel du bor i.",
+      "consent": "Vi behöver ditt tillstånd för att spara dina uppgifter.",
+      "generic": "Något gick fel. Försök igen om en stund."
+    }
+  },
+  "Privacy": {
+    "title": "Integritetsmeddelande",
+    "pending": "EITB:s juridiska avdelning håller på att skriva integritetsmeddelandet. Det kommer att finnas här före lanseringen.",
+    "cookie": "Den här webbplatsen sparar bara en cookie, NEXT_LOCALE, för att komma ihåg vilket språk du väljer. Den gäller i ett år och används inte till något annat.",
+    "back": "Tillbaka"
+  },
+  "Footer": {
+    "project": "Ett projekt från EITB",
+    "language": "Språk",
+    "machine": "Maskinöversatt från spanska, ännu inte granskat."
+  }
+}

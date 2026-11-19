@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Rescontres per escambiar sens argent",
+    "description": "Rescontres per escambiar de vestits e de causas que utilizas pas pus. Sens argent. Inscriu-te sus la lista d'espèra."
+  },
+  "Home": {
+    "tagline": "Rescontres per escambiar de vestits e de causas que utilizas pas pus. Sens argent.",
+    "point1": "Amassatz-vos de 5 a 10 personas dins un local de vòstre canton.",
+    "point2": "Pòrta çò qu'utilizas pas pus e emporta çò que t'agrada.",
+    "point3": "Fai de plaça dins ton armari e passa un bon moment.",
+    "coming": "Badulake arriba a la debuta de 2027. Inscriu-te e te tendrem al fial.",
+    "comingSoon": "Badulake arriba a la debuta de 2027. Lèu poiràs t'inscriure sus la lista d'espèra."
+  },
+  "Waitlist": {
+    "title": "Lista d'espèra",
+    "email": "Adreça electronica",
+    "zone": "Ta zòna o ton quartièr",
+    "zonePlaceholder": "Ex. : Deusto, Bilbao",
+    "language": "En quina lenga vòles recebre los avises ?",
+    "consent": "Accèpti que Badulake (EITB) garde aquestas donadas per m'avisar de l'aviada. Mai d'informacions dins l'<link>avís de confidencialitat</link>.",
+    "submit": "M'inscriure",
+    "pending": "Mandadís…",
+    "success": "Fach ! T'avisarem quand Badulake serà prèst.",
+    "errors": {
+      "email": "Verifica ton adreça electronica : sembla pas valida.",
+      "zone": "Digas-nos ta zòna o ton quartièr.",
+      "consent": "Avèm besonh de ton permés per gardar tas donadas.",
+      "generic": "Quicòm a pas foncionat. Ensaja tornamai d'aquí un momenton."
+    }
+  },
+  "Privacy": {
+    "title": "Avís de confidencialitat",
+    "pending": "Lo Servici Juridic d'EITB redigís l'avís de confidencialitat, que pareisserà aicí abans l'aviada.",
+    "cookie": "Aqueste site garda un sol cookie, nomenat NEXT_LOCALE, per se remembrar la lenga que causisses. Dura un an e servís pas a res mai.",
+    "back": "Tornar"
+  },
+  "Footer": {
+    "project": "Un projècte d'EITB",
+    "language": "Lenga",
+    "machine": "Traduccion automatica del castelhan, en espèra de revision."
+  }
+}

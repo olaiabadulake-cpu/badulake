@@ -27,21 +27,20 @@ Textos en euskera de la web de Badulake, para que los revise una persona euskald
 | 11 | Tu zona o barrio | Zure eremua edo auzoa | |
 | 12 | Ej.: Deusto, Bilbao | Adib.: Deustu, Bilbo | |
 | 13 | ¿En qué idioma quieres los avisos? | Zein hizkuntzatan nahi dituzu abisuak? | |
-| 14 | Euskera | Euskara | |
-| 15 | Castellano | Gaztelania | |
-| 16 | Acepto que Badulake (EITB) guarde estos datos para avisarme del lanzamiento. Más información en el aviso de privacidad. | Onartzen dut Badulakek (EITB) datu hauek gordetzea, abian jartzen denean abisatzeko. Informazio gehiago pribatutasun-oharrean. | |
-| 17 | Apuntarme | Eman izena | |
-| 18 | Enviando… | Bidaltzen… | |
-| 19 | ¡Hecho! Te avisaremos cuando Badulake esté listo. | Eginda! Badulake prest dagoenean abisatuko dizugu. | |
-| 20 | Revisa el correo: no parece válido. | Berrikusi posta elektronikoa: ez dirudi baliozkoa. | |
-| 21 | Dinos tu zona o barrio. | Esaiguzu zure eremua edo auzoa. | |
-| 22 | Necesitamos tu permiso para guardar tus datos. | Zure baimena behar dugu zure datuak gordetzeko. | |
-| 23 | Algo ha fallado. Inténtalo de nuevo en un rato. | Zerbaitek huts egin du. Saiatu berriro tarte baten buruan. | |
-| 24 | Aviso de privacidad | Pribatutasun-oharra | |
-| 25 | El aviso de privacidad lo está redactando la Asesoría Jurídica de EITB y aparecerá aquí antes del lanzamiento. | EITBko Aholkularitza Juridikoa pribatutasun-oharra idazten ari da, eta hemen agertuko da Badulake abian jarri aurretik. | |
-| 26 | Esta web guarda una sola cookie, llamada NEXT_LOCALE, para recordar el idioma que eliges. Dura un año y no se usa para nada más. | Webgune honek cookie bakarra gordetzen du, NEXT_LOCALE izenekoa, aukeratzen duzun hizkuntza gogoratzeko. Urtebete irauten du, eta ez da beste ezertarako erabiltzen. | |
-| 27 | Volver | Itzuli | |
-| 28 | Un proyecto de EITB | EITBren proiektu bat | |
-| 29 | Idioma | Hizkuntza | |
+| 14 | Acepto que Badulake (EITB) guarde estos datos para avisarme del lanzamiento. Más información en el aviso de privacidad. | Onartzen dut Badulakek (EITB) datu hauek gordetzea, abian jartzen denean abisatzeko. Informazio gehiago pribatutasun-oharrean. | |
+| 15 | Apuntarme | Eman izena | |
+| 16 | Enviando… | Bidaltzen… | |
+| 17 | ¡Hecho! Te avisaremos cuando Badulake esté listo. | Eginda! Badulake prest dagoenean abisatuko dizugu. | |
+| 18 | Revisa el correo: no parece válido. | Berrikusi posta elektronikoa: ez dirudi baliozkoa. | |
+| 19 | Dinos tu zona o barrio. | Esaiguzu zure eremua edo auzoa. | |
+| 20 | Necesitamos tu permiso para guardar tus datos. | Zure baimena behar dugu zure datuak gordetzeko. | |
+| 21 | Algo ha fallado. Inténtalo de nuevo en un rato. | Zerbaitek huts egin du. Saiatu berriro tarte baten buruan. | |
+| 22 | Aviso de privacidad | Pribatutasun-oharra | |
+| 23 | El aviso de privacidad lo está redactando la Asesoría Jurídica de EITB y aparecerá aquí antes del lanzamiento. | EITBko Aholkularitza Juridikoa pribatutasun-oharra idazten ari da, eta hemen agertuko da Badulake abian jarri aurretik. | |
+| 24 | Esta web guarda una sola cookie, llamada NEXT_LOCALE, para recordar el idioma que eliges. Dura un año y no se usa para nada más. | Webgune honek cookie bakarra gordetzen du, NEXT_LOCALE izenekoa, aukeratzen duzun hizkuntza gogoratzeko. Urtebete irauten du, eta ez da beste ezertarako erabiltzen. | |
+| 25 | Volver | Itzuli | |
+| 26 | Un proyecto de EITB | EITBren proiektu bat | |
+| 27 | Idioma | Hizkuntza | |
+| 28 | Traducción automática del castellano, pendiente de revisión. | Gaztelaniatik automatikoki itzulia; oraindik berrikusi gabe. | |
 
 _Lista generada a partir de `app/messages/es.json` y `app/messages/eu.json` el 19/11/2026. Si cambian los textos, Claude la vuelve a generar._

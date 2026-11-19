@@ -1,5 +1,6 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { waitlistOpen } from "@/lib/waitlist";
+import type { Locale } from "@/i18n/languages";
 import { WaitlistForm } from "./waitlist-form";
 
 export default async function Home() {
@@ -36,7 +37,7 @@ export default async function Home() {
         <p className="text-lg font-medium">{waitlistOpen ? t("coming") : t("comingSoon")}</p>
         {waitlistOpen && (
           <div className="mt-6">
-            <WaitlistForm defaultLanguage={locale === "eu" ? "eu" : "es"} />
+            <WaitlistForm defaultLanguage={locale as Locale} />
           </div>
         )}
       </section>

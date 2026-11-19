@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Incuntades por baraté zënza scioldi",
+    "description": "Incuntades por baraté guant y patüc che te n'adores nia plü. Zënza scioldi. Scrite ite ala lista d'aspeta."
+  },
+  "Home": {
+    "tagline": "Incuntades por baraté guant y patüc che te n'adores nia plü. Zënza scioldi.",
+    "point1": "Incuntede-se te 5-10 porsones te n local de osc raiun.",
+    "point2": "Porta ci che te n'adores nia plü y tol ci che te plej.",
+    "point3": "Fá lerch tl armé y devertëscete.",
+    "coming": "Badulake vëgn al scomenciamënt dl 2027. Scrite ite y i te lasciun savëi.",
+    "comingSoon": "Badulake vëgn al scomenciamënt dl 2027. Tosc podaraste te scrí ite ala lista d'aspeta."
+  },
+  "Waitlist": {
+    "title": "Lista d'aspeta",
+    "email": "Email",
+    "zone": "To raiun o to cuartier",
+    "zonePlaceholder": "Por ejëmpl: Deusto, Bilbao",
+    "language": "Te ci lingaz ôste ciafé nüsc avisc?",
+    "consent": "I sun a öna che Badulake (EITB) tëgnes sö chisc dac por me lascé savëi dl scomenciamënt. Deplü informaziuns tles <link>informaziuns sön la privacy</link>.",
+    "submit": "Scrí me ite",
+    "pending": "Mandan…",
+    "success": "Fat! I te lasciun savëi canche Badulake sará pront.",
+    "errors": {
+      "email": "Controlëia tüa email: ara ne pé nia valida.",
+      "zone": "Dime to raiun o to cuartier.",
+      "consent": "I adorun tüa autorisaziun por memorisé tü dac.",
+      "generic": "Valch n'á nia funzioné. Proa ciamó n iade dedô n püch."
+    }
+  },
+  "Privacy": {
+    "title": "Informaziuns sön la privacy",
+    "pending": "L'Ofize legal dl'EITB é tl laur da scrí les informaziuns sön la privacy, che gnará publicades chiló dan le scomenciamënt.",
+    "cookie": "Chësc sit memorisëia ma n cookie, tlamé NEXT_LOCALE, por se recordé le lingaz che te chirs fora. Al döra n ann y ne vëgn adoré por nia d'ater.",
+    "back": "Zoruch"
+  },
+  "Footer": {
+    "project": "N proiet dl EITB",
+    "language": "Lingaz",
+    "machine": "Traslaté automaticamënter dal spagnol, ciamó da revëder."
+  }
+}

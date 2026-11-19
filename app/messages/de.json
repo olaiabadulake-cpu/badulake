@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Treffen zum Tauschen – ganz ohne Geld",
+    "description": "Treffen zum Tauschen von Kleidung und Dingen, die du nicht mehr brauchst. Ganz ohne Geld. Trag dich in die Warteliste ein."
+  },
+  "Home": {
+    "tagline": "Treffen zum Tauschen von Kleidung und Dingen, die du nicht mehr brauchst. Ganz ohne Geld.",
+    "point1": "Trefft euch zu fünft bis zu zehnt in einem Raum in eurer Nähe.",
+    "point2": "Bring mit, was du nicht mehr brauchst, und nimm mit, was dir gefällt.",
+    "point3": "Schaff Platz im Kleiderschrank und hab Spaß dabei.",
+    "coming": "Badulake startet Anfang 2027. Trag dich ein und wir sagen dir Bescheid.",
+    "comingSoon": "Badulake startet Anfang 2027. Schon bald kannst du dich in die Warteliste eintragen."
+  },
+  "Waitlist": {
+    "title": "Warteliste",
+    "email": "E-Mail-Adresse",
+    "zone": "Deine Gegend oder dein Viertel",
+    "zonePlaceholder": "Z. B. Deusto, Bilbao",
+    "language": "In welcher Sprache möchtest du unsere Nachrichten bekommen?",
+    "consent": "Ich bin einverstanden, dass Badulake (EITB) diese Daten speichert, um mich über den Start zu informieren. Mehr dazu in der <link>Datenschutzerklärung</link>.",
+    "submit": "Eintragen",
+    "pending": "Wird gesendet…",
+    "success": "Geschafft! Wir sagen dir Bescheid, sobald Badulake bereit ist.",
+    "errors": {
+      "email": "Prüf deine E-Mail-Adresse: Sie scheint nicht gültig zu sein.",
+      "zone": "Sag uns deine Gegend oder dein Viertel.",
+      "consent": "Wir brauchen deine Zustimmung, um deine Daten zu speichern.",
+      "generic": "Da ist etwas schiefgelaufen. Versuch es gleich noch einmal."
+    }
+  },
+  "Privacy": {
+    "title": "Datenschutzerklärung",
+    "pending": "Die Rechtsabteilung von EITB arbeitet gerade an der Datenschutzerklärung. Sie erscheint hier vor dem Start.",
+    "cookie": "Diese Website speichert nur ein einziges Cookie namens NEXT_LOCALE, um sich die Sprache zu merken, die du wählst. Es gilt ein Jahr und wird für nichts anderes verwendet.",
+    "back": "Zurück"
+  },
+  "Footer": {
+    "project": "Ein Projekt von EITB",
+    "language": "Sprache",
+    "machine": "Maschinell aus dem Spanischen übersetzt, noch nicht geprüft."
+  }
+}

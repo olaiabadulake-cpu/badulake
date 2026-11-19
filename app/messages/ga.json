@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Cruinnithe malartaithe gan airgead",
+    "description": "Cruinnithe chun éadaí agus rudaí nach n-úsáideann tú níos mó a mhalartú. Gan airgead. Cláraigh ar an liosta feithimh."
+  },
+  "Home": {
+    "tagline": "Cruinnithe chun éadaí agus rudaí nach n-úsáideann tú níos mó a mhalartú. Gan airgead.",
+    "point1": "Tagaigí le chéile, 5 go 10 duine, in ionad i do cheantar.",
+    "point2": "Tabhair leat a bhfuil tú réidh leis agus tabhair abhaile a dtaitníonn leat.",
+    "point3": "Glan amach do vardrús agus bain sult as.",
+    "coming": "Beidh Badulake ag teacht go luath in 2027. Cláraigh agus cuirfimid in iúl duit.",
+    "comingSoon": "Beidh Badulake ag teacht go luath in 2027. Go han-luath beidh tú in ann clárú ar an liosta feithimh."
+  },
+  "Waitlist": {
+    "title": "Liosta feithimh",
+    "email": "Seoladh ríomhphoist",
+    "zone": "Do cheantar nó do chomharsanacht",
+    "zonePlaceholder": "M.sh. Deusto, Bilbao",
+    "language": "Cén teanga ar mhaith leat ár dteachtaireachtaí a fháil inti?",
+    "consent": "Aontaím go gcoimeádfaidh Badulake (EITB) na sonraí seo chun scéala a chur chugam faoin seoladh. Tuilleadh eolais sa <link>bhfógra príobháideachais</link>.",
+    "submit": "Cláraigh mé",
+    "pending": "Á sheoladh…",
+    "success": "Déanta! Cuirfimid in iúl duit nuair a bheidh Badulake réidh.",
+    "errors": {
+      "email": "Seiceáil do sheoladh ríomhphoist: ní cosúil go bhfuil sé bailí.",
+      "zone": "Inis dúinn do cheantar nó do chomharsanacht.",
+      "consent": "Teastaíonn do chead uainn chun do shonraí a choinneáil.",
+      "generic": "Chuaigh rud éigin amú. Bain triail eile as i gceann tamaillín."
+    }
+  },
+  "Privacy": {
+    "title": "Fógra príobháideachais",
+    "pending": "Tá Roinn Dlí EITB ag dréachtú an fhógra príobháideachais. Beidh sé anseo roimh an seoladh.",
+    "cookie": "Ní stórálann an suíomh seo ach fianán amháin, NEXT_LOCALE, chun cuimhneamh ar an teanga a roghnaíonn tú. Maireann sé bliain agus ní úsáidtear é le haghaidh aon rud eile.",
+    "back": "Ar ais"
+  },
+  "Footer": {
+    "project": "Tionscadal de chuid EITB",
+    "language": "Teanga",
+    "machine": "Aistriúchán uathoibríoch ón Spáinnis, gan athbhreithniú fós."
+  }
+}

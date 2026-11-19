@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Cseretalálkozók pénz nélkül",
+    "description": "Találkozók, ahol elcserélheted a ruháidat és azokat a holmikat, amelyeket már nem használsz. Pénz nélkül. Iratkozz fel a várólistára!"
+  },
+  "Home": {
+    "tagline": "Találkozók, ahol elcserélheted a ruháidat és azokat a holmikat, amelyeket már nem használsz. Pénz nélkül.",
+    "point1": "Gyűljetek össze 5–10 fővel egy helyiségben a környéketeken.",
+    "point2": "Hozd el, amit már nem használsz, és vidd haza, ami tetszik.",
+    "point3": "Szabadítsd fel a szekrényedet, és érezd jól magad!",
+    "coming": "A Badulake 2027 elején indul. Iratkozz fel, és szólunk!",
+    "comingSoon": "A Badulake 2027 elején indul. Hamarosan feliratkozhatsz a várólistára."
+  },
+  "Waitlist": {
+    "title": "Várólista",
+    "email": "E-mail-cím",
+    "zone": "A környéked vagy városrészed",
+    "zonePlaceholder": "Pl. Deusto, Bilbao",
+    "language": "Milyen nyelven szeretnéd megkapni az üzeneteinket?",
+    "consent": "Hozzájárulok, hogy a Badulake (EITB) megőrizze ezeket az adatokat, és értesítsen az indulásról. További információ az <link>adatvédelmi tájékoztatóban</link>.",
+    "submit": "Feliratkozom",
+    "pending": "Küldés…",
+    "success": "Kész! Szólunk, amikor a Badulake elkészül.",
+    "errors": {
+      "email": "Ellenőrizd az e-mail-címet: úgy tűnik, nem érvényes.",
+      "zone": "Add meg a környékedet vagy városrészedet.",
+      "consent": "Az engedélyedre van szükségünk, hogy megőrizhessük az adataidat.",
+      "generic": "Valami hiba történt. Próbáld újra kicsit később."
+    }
+  },
+  "Privacy": {
+    "title": "Adatvédelmi tájékoztató",
+    "pending": "Az EITB jogi osztálya most készíti az adatvédelmi tájékoztatót. Az indulás előtt itt fog megjelenni.",
+    "cookie": "Ez az oldal egyetlen sütit tárol, a NEXT_LOCALE-t, hogy megjegyezze a választott nyelvet. Egy évig érvényes, és semmi másra nem használjuk.",
+    "back": "Vissza"
+  },
+  "Footer": {
+    "project": "Az EITB projektje",
+    "language": "Nyelv",
+    "machine": "Gépi fordítás spanyolból, még nincs ellenőrizve."
+  }
+}

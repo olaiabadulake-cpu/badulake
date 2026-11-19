@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Susreti za razmjenu bez novca",
+    "description": "Susreti za razmjenu odjeće i stvari koje više ne koristite. Bez novca. Prijavite se na listu čekanja."
+  },
+  "Home": {
+    "tagline": "Susreti za razmjenu odjeće i stvari koje više ne koristite. Bez novca.",
+    "point1": "Okupite se, 5 do 10 osoba, u prostoru u svom kraju.",
+    "point2": "Donesite ono što više ne koristite i ponesite ono što vam se đopada.",
+    "point3": "Oslobodite ormar i dobro se zabavite.",
+    "coming": "Badulake stiže početkom 2027. godine. Prijavite se i javićemo vam.",
+    "comingSoon": "Badulake stiže početkom 2027. godine. Uskoro ćete moći da se prijavite na listu čekanja."
+  },
+  "Waitlist": {
+    "title": "Lista čekanja",
+    "email": "Imejl adresa",
+    "zone": "Vaš kraj ili naselje",
+    "zonePlaceholder": "Npr. Deusto, Bilbao",
+    "language": "Na kojem jeziku želite da primate naša obavještenja?",
+    "consent": "Saglasan sam da Badulake (EITB) čuva ove podatke kako bi me obavijestio o pokretanju. Više informacija u <link>obavještenju o privatnosti</link>.",
+    "submit": "Prijavi me",
+    "pending": "Šalje se…",
+    "success": "Gotovo! Javićemo vam kad Badulake bude spreman.",
+    "errors": {
+      "email": "Provjerite imejl adresu: izgleda da nije ispravna.",
+      "zone": "Recite nam svoj kraj ili naselje.",
+      "consent": "Treba nam vaša dozvola da sačuvamo vaše podatke.",
+      "generic": "Nešto nije u redu. Pokušajte ponovo malo kasnije."
+    }
+  },
+  "Privacy": {
+    "title": "Obavještenje o privatnosti",
+    "pending": "Pravna služba EITB-a priprema obavještenje o privatnosti. Ovđe će biti objavljeno prije pokretanja.",
+    "cookie": "Ova stranica čuva samo jedan kolačić, NEXT_LOCALE, da bi zapamtila jezik koji odaberete. Traje godinu dana i ne služi ni za šta drugo.",
+    "back": "Nazad"
+  },
+  "Footer": {
+    "project": "Projekat EITB-a",
+    "language": "Jezik",
+    "machine": "Mašinski prevod sa španskog, još nije provjeren."
+  }
+}

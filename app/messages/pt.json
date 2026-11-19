@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Encontros para trocar sem dinheiro",
+    "description": "Encontros para trocar roupa e coisas que já não usas. Sem dinheiro. Inscreve-te na lista de espera."
+  },
+  "Home": {
+    "tagline": "Encontros para trocar roupa e coisas que já não usas. Sem dinheiro.",
+    "point1": "Juntem-se 5 a 10 pessoas num espaço da vossa zona.",
+    "point2": "Traz o que já não usas e leva o que gostares.",
+    "point3": "Liberta o armário e diverte-te.",
+    "coming": "O Badulake chega no início de 2027. Inscreve-te e nós avisamos-te.",
+    "comingSoon": "O Badulake chega no início de 2027. Muito em breve vais poder inscrever-te na lista de espera."
+  },
+  "Waitlist": {
+    "title": "Lista de espera",
+    "email": "E-mail",
+    "zone": "A tua zona ou bairro",
+    "zonePlaceholder": "Ex.: Deusto, Bilbau",
+    "language": "Em que língua queres receber os avisos?",
+    "consent": "Aceito que o Badulake (EITB) guarde estes dados para me avisar do lançamento. Mais informações no <link>aviso de privacidade</link>.",
+    "submit": "Inscrever-me",
+    "pending": "A enviar…",
+    "success": "Feito! Avisamos-te quando o Badulake estiver pronto.",
+    "errors": {
+      "email": "Verifica o e-mail: não parece válido.",
+      "zone": "Diz-nos a tua zona ou bairro.",
+      "consent": "Precisamos da tua autorização para guardar os teus dados.",
+      "generic": "Algo correu mal. Tenta outra vez daqui a pouco."
+    }
+  },
+  "Privacy": {
+    "title": "Aviso de privacidade",
+    "pending": "O aviso de privacidade está a ser redigido pelo Serviço Jurídico da EITB e vai aparecer aqui antes do lançamento.",
+    "cookie": "Este site guarda um único cookie, chamado NEXT_LOCALE, para se lembrar da língua que escolhes. Dura um ano e não serve para mais nada.",
+    "back": "Voltar"
+  },
+  "Footer": {
+    "project": "Um projeto da EITB",
+    "language": "Língua",
+    "machine": "Tradução automática do espanhol, por rever."
+  }
+}

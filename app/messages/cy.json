@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Cyfarfodydd cyfnewid heb arian",
+    "description": "Cyfarfodydd i gyfnewid dillad a phethau nad wyt ti'n eu defnyddio mwyach. Heb arian. Ymuna â'r rhestr aros."
+  },
+  "Home": {
+    "tagline": "Cyfarfodydd i gyfnewid dillad a phethau nad wyt ti'n eu defnyddio mwyach. Heb arian.",
+    "point1": "Dewch at eich gilydd, 5 i 10 o bobl, mewn lleoliad yn eich ardal.",
+    "point2": "Tyrd â'r hyn nad wyt ti'n ei ddefnyddio mwyach a chymer adref beth bynnag rwyt ti'n ei hoffi.",
+    "point3": "Cliria dy gwpwrdd dillad a mwynha.",
+    "coming": "Mae Badulake yn dod ddechrau 2027. Cofrestra a byddwn ni'n rhoi gwybod i ti.",
+    "comingSoon": "Mae Badulake yn dod ddechrau 2027. Cyn bo hir byddi di'n gallu ymuno â'r rhestr aros."
+  },
+  "Waitlist": {
+    "title": "Rhestr aros",
+    "email": "Cyfeiriad e-bost",
+    "zone": "Dy ardal neu dy gymdogaeth",
+    "zonePlaceholder": "E.e. Deusto, Bilbao",
+    "language": "Ym mha iaith hoffet ti gael ein negeseuon?",
+    "consent": "Rwy'n cytuno y caiff Badulake (EITB) gadw'r data hyn er mwyn rhoi gwybod i mi am y lansiad. Rhagor o wybodaeth yn yr <link>hysbysiad preifatrwydd</link>.",
+    "submit": "Cofrestra fi",
+    "pending": "Yn anfon…",
+    "success": "Dyna ni! Byddwn ni'n rhoi gwybod i ti pan fydd Badulake yn barod.",
+    "errors": {
+      "email": "Gwiria dy gyfeiriad e-bost: dydy e ddim yn edrych yn ddilys.",
+      "zone": "Dywed wrthon ni beth yw dy ardal neu dy gymdogaeth.",
+      "consent": "Mae angen dy ganiatâd arnon ni i gadw dy ddata.",
+      "generic": "Aeth rhywbeth o'i le. Rho gynnig arall arni ymhen ychydig."
+    }
+  },
+  "Privacy": {
+    "title": "Hysbysiad preifatrwydd",
+    "pending": "Mae Adran Gyfreithiol EITB yn paratoi'r hysbysiad preifatrwydd. Bydd yn ymddangos yma cyn y lansiad.",
+    "cookie": "Dim ond un cwci mae'r wefan hon yn ei gadw, NEXT_LOCALE, er mwyn cofio'r iaith rwyt ti'n ei dewis. Mae'n para blwyddyn a dydy e ddim yn cael ei ddefnyddio i ddim byd arall.",
+    "back": "Yn ôl"
+  },
+  "Footer": {
+    "project": "Prosiect gan EITB",
+    "language": "Iaith",
+    "machine": "Cyfieithiad peirianyddol o'r Sbaeneg, heb ei adolygu eto."
+  }
+}

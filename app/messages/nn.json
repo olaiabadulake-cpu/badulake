@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Byttetreff heilt utan pengar",
+    "description": "Treff der de byter klede og ting de ikkje brukar lenger. Heilt utan pengar. Set deg på ventelista."
+  },
+  "Home": {
+    "tagline": "Treff der de byter klede og ting de ikkje brukar lenger. Heilt utan pengar.",
+    "point1": "Møt opp, 5 til 10 personar, i eit lokale i nærleiken av deg.",
+    "point2": "Ta med det du ikkje brukar lenger, og ta med deg heim det du likar.",
+    "point3": "Rydd i klesskåpet og ha det gøy.",
+    "coming": "Badulake kjem i starten av 2027. Meld deg på, så gir vi deg beskjed.",
+    "comingSoon": "Badulake kjem i starten av 2027. Snart kan du setje deg på ventelista."
+  },
+  "Waitlist": {
+    "title": "Venteliste",
+    "email": "E-postadresse",
+    "zone": "Området eller bydelen din",
+    "zonePlaceholder": "T.d. Deusto, Bilbao",
+    "language": "Kva språk vil du ha meldingane våre på?",
+    "consent": "Eg godtek at Badulake (EITB) lagrar desse opplysningane for å gi meg beskjed om lanseringa. Les meir i <link>personvernerklæringa</link>.",
+    "submit": "Meld meg på",
+    "pending": "Sender …",
+    "success": "Sånn! Vi gir deg beskjed når Badulake er klart.",
+    "errors": {
+      "email": "Sjekk e-postadressa di: Ho ser ikkje ut til å vere gyldig.",
+      "zone": "Fortel oss kva område eller bydel du bur i.",
+      "consent": "Vi treng løyvet ditt for å lagre opplysningane dine.",
+      "generic": "Noko gjekk gale. Prøv igjen om litt."
+    }
+  },
+  "Privacy": {
+    "title": "Personvernerklæring",
+    "pending": "Den juridiske avdelinga i EITB skriv personvernerklæringa, og ho kjem her før lanseringa.",
+    "cookie": "Denne nettstaden lagrar berre éin informasjonskapsel, NEXT_LOCALE, for å hugse kva språk du vel. Han varer i eitt år og blir ikkje brukt til noko anna.",
+    "back": "Tilbake"
+  },
+  "Footer": {
+    "project": "Eit prosjekt frå EITB",
+    "language": "Språk",
+    "machine": "Maskinomsett frå spansk, ikkje gjennomgått enno."
+  }
+}

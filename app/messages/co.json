@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Scontri per scambià senza soldi",
+    "description": "Scontri per scambià panni è robba chì ùn ai più adopri. Senza soldi. Scrivite nant'à a lista d'attesa."
+  },
+  "Home": {
+    "tagline": "Scontri per scambià panni è robba chì ùn ai più adopri. Senza soldi.",
+    "point1": "Ritruvatevi da 5 à 10 persone in un locu di a vostra zona.",
+    "point2": "Porta ciò chì ùn adopri più è pigliati ciò chì ti piace.",
+    "point3": "Fà piazza in l'armadiu è diverteti.",
+    "coming": "Badulake ghjunghje à u principiu di u 2027. Scrivite è ti avvisemu.",
+    "comingSoon": "Badulake ghjunghje à u principiu di u 2027. Prestu prestu ti puderai scrive nant'à a lista d'attesa."
+  },
+  "Waitlist": {
+    "title": "Lista d'attesa",
+    "email": "Indirizzu e-mail",
+    "zone": "A to zona o u to quartieru",
+    "zonePlaceholder": "Per esempiu: Deusto, Bilbao",
+    "language": "In chì lingua voli riceve i nostri avisi?",
+    "consent": "Accettu chì Badulake (EITB) cunservi sti dati per avvisammi di u lanciu. Più infurmazioni in l'<link>avisu di cunfidenzialità</link>.",
+    "submit": "Scrivimi",
+    "pending": "Mandata in corsu…",
+    "success": "Fattu! Ti avviseremu quandu Badulake serà prontu.",
+    "errors": {
+      "email": "Verifica l'indirizzu e-mail: ùn pare micca validu.",
+      "zone": "Dicci a to zona o u to quartieru.",
+      "consent": "Avemu bisognu di u to permessu per cunservà i to dati.",
+      "generic": "Qualcosa hè andatu male. Prova torna da quì à pocu."
+    }
+  },
+  "Privacy": {
+    "title": "Avisu di cunfidenzialità",
+    "pending": "U Serviziu ghjuridicu di l'EITB stà scrivendu l'avisu di cunfidenzialità, chì sarà publicatu quì nanzu à u lanciu.",
+    "cookie": "Stu situ cunserva un solu cookie, chjamatu NEXT_LOCALE, per ramintassi a lingua chì tù sceglii. Dura un annu è ùn serve à nunda d'altru.",
+    "back": "Ritornu"
+  },
+  "Footer": {
+    "project": "Un prughjettu di l'EITB",
+    "language": "Lingua",
+    "machine": "Traduzzione autumatica da u spagnolu, da rivede."
+  }
+}

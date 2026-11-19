@@ -8,8 +8,16 @@ import { routing } from "@/i18n/routing";
 import { LanguageSwitch } from "./language-switch";
 import "../globals.css";
 
-const roboto = Roboto({ variable: "--font-roboto", subsets: ["latin"] });
-const raleway = Raleway({ variable: "--font-raleway", subsets: ["latin"] });
+// Alfabetos: latino ampliado (č, ő, ș…), cirílico (búlgaro, serbio, ucraniano…) y griego.
+// Raleway no tiene griego: los títulos en griego usan la letra del sistema.
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext", "greek"],
+});
+const raleway = Raleway({
+  variable: "--font-raleway",
+  subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext"],
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -34,8 +42,10 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
             <LanguageSwitch label={t("language")} />
           </div>
           <main className="flex-1">{children}</main>
-          <footer className="border-t border-noche/15 px-4 py-4 text-sm sm:px-8">
-            {t("project")}
+          <footer className="flex flex-col gap-1 border-t border-noche/15 px-4 py-4 text-sm sm:px-8">
+            <p>{t("project")}</p>
+            {/* Todo se escribe en castellano; las demás lenguas son traducciones pendientes de revisar. */}
+            {locale !== "es" && <p className="text-noche/70">{t("machine")}</p>}
           </footer>
         </NextIntlClientProvider>
       </body>

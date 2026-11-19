@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Setkání na výměnu bez peněz",
+    "description": "Setkání, kde si vyměníš oblečení a věci, které už nepoužíváš. Bez peněz. Zapiš se na čekací listinu."
+  },
+  "Home": {
+    "tagline": "Setkání, kde si vyměníš oblečení a věci, které už nepoužíváš. Bez peněz.",
+    "point1": "Sejděte se v 5 až 10 lidech v nějakém prostoru ve vašem okolí.",
+    "point2": "Přines, co už nepoužíváš, a odnes si, co se ti líbí.",
+    "point3": "Uvolni místo ve skříni a užij si to.",
+    "coming": "Badulake startuje začátkem roku 2027. Zapiš se a dáme ti vědět.",
+    "comingSoon": "Badulake startuje začátkem roku 2027. Už brzy se budeš moct zapsat na čekací listinu."
+  },
+  "Waitlist": {
+    "title": "Čekací listina",
+    "email": "E-mail",
+    "zone": "Tvoje oblast nebo čtvrť",
+    "zonePlaceholder": "Např. Deusto, Bilbao",
+    "language": "V jakém jazyce chceš dostávat naše zprávy?",
+    "consent": "Souhlasím, aby Badulake (EITB) uchovávalo tyto údaje a dalo mi vědět o spuštění. Více informací v <link>oznámení o ochraně soukromí</link>.",
+    "submit": "Zapsat se",
+    "pending": "Odesílám…",
+    "success": "Hotovo! Dáme ti vědět, až bude Badulake připravené.",
+    "errors": {
+      "email": "Zkontroluj e-mail: nevypadá platně.",
+      "zone": "Napiš nám svou oblast nebo čtvrť.",
+      "consent": "Potřebujeme tvůj souhlas, abychom mohli uložit tvoje údaje.",
+      "generic": "Něco se pokazilo. Zkus to za chvíli znovu."
+    }
+  },
+  "Privacy": {
+    "title": "Oznámení o ochraně soukromí",
+    "pending": "Právní oddělení EITB oznámení o ochraně soukromí právě připravuje. Objeví se tady ještě před spuštěním.",
+    "cookie": "Tento web ukládá jen jedno cookie, NEXT_LOCALE, aby si zapamatoval jazyk, který si zvolíš. Platí jeden rok a k ničemu jinému se nepoužívá.",
+    "back": "Zpět"
+  },
+  "Footer": {
+    "project": "Projekt EITB",
+    "language": "Jazyk",
+    "machine": "Strojový překlad ze španělštiny, zatím nezkontrolováno."
+  }
+}

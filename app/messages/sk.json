@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Stretnutia na výmenu bez peňazí",
+    "description": "Stretnutia, kde si vymeníš oblečenie a veci, ktoré už nepoužívaš. Bez peňazí. Zapíš sa do poradovníka."
+  },
+  "Home": {
+    "tagline": "Stretnutia, kde si vymeníš oblečenie a veci, ktoré už nepoužívaš. Bez peňazí.",
+    "point1": "Stretnite sa v 5 až 10 ľuďoch v nejakom priestore vo vašom okolí.",
+    "point2": "Prines, čo už nepoužívaš, a odnes si, čo sa ti páči.",
+    "point3": "Urob miesto v skrini a uži si to.",
+    "coming": "Badulake štartuje začiatkom roka 2027. Zapíš sa a dáme ti vedieť.",
+    "comingSoon": "Badulake štartuje začiatkom roka 2027. Už čoskoro sa budeš môcť zapísať do poradovníka."
+  },
+  "Waitlist": {
+    "title": "Poradovník",
+    "email": "E-mail",
+    "zone": "Tvoja oblasť alebo štvrť",
+    "zonePlaceholder": "Napr. Deusto, Bilbao",
+    "language": "V akom jazyku chceš dostávať naše správy?",
+    "consent": "Súhlasím, aby Badulake (EITB) uchovávalo tieto údaje a dalo mi vedieť o spustení. Viac informácií v <link>oznámení o ochrane súkromia</link>.",
+    "submit": "Zapísať sa",
+    "pending": "Odosiela sa…",
+    "success": "Hotovo! Dáme ti vedieť, keď bude Badulake pripravené.",
+    "errors": {
+      "email": "Skontroluj e-mail: nevyzerá platne.",
+      "zone": "Napíš nám svoju oblasť alebo štvrť.",
+      "consent": "Potrebujeme tvoj súhlas, aby sme mohli uložiť tvoje údaje.",
+      "generic": "Niečo sa pokazilo. Skús to o chvíľu znova."
+    }
+  },
+  "Privacy": {
+    "title": "Oznámenie o ochrane súkromia",
+    "pending": "Právne oddelenie EITB práve pripravuje oznámenie o ochrane súkromia. Objaví sa tu ešte pred spustením.",
+    "cookie": "Tento web ukladá iba jeden súbor cookie, NEXT_LOCALE, aby si zapamätal jazyk, ktorý si zvolíš. Platí jeden rok a na nič iné sa nepoužíva.",
+    "back": "Späť"
+  },
+  "Footer": {
+    "project": "Projekt EITB",
+    "language": "Jazyk",
+    "machine": "Strojový preklad zo španielčiny, zatiaľ neskontrolovaný."
+  }
+}

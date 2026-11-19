@@ -1,11 +1,12 @@
 import "server-only";
 import { appendFile, mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
+import type { Locale } from "@/i18n/languages";
 
 export type WaitlistEntry = {
   email: string;
   zone: string;
-  language: "eu" | "es";
+  language: Locale;
   consentAt: string;
 };
 

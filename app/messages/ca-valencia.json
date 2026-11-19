@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Quedades per a intercanviar sense diners",
+    "description": "Quedades per a intercanviar roba i coses que ja no uses. Sense diners. Apunta't a la llista d'espera."
+  },
+  "Home": {
+    "tagline": "Quedades per a intercanviar roba i coses que ja no uses. Sense diners.",
+    "point1": "Ajunteu-vos entre 5 i 10 persones en un local de la vostra zona.",
+    "point2": "Porta el que ja no uses i emporta't el que t'agrade.",
+    "point3": "Allibera l'armari i passa-ho bé.",
+    "coming": "Badulake arriba a principis de 2027. Apunta't i t'avisarem.",
+    "comingSoon": "Badulake arriba a principis de 2027. Molt prompte podràs apuntar-te a la llista d'espera."
+  },
+  "Waitlist": {
+    "title": "Llista d'espera",
+    "email": "Correu electrònic",
+    "zone": "La teua zona o barri",
+    "zonePlaceholder": "P. ex.: Deusto, Bilbao",
+    "language": "En quina llengua vols rebre els avisos?",
+    "consent": "Accepte que Badulake (EITB) guarde estes dades per a avisar-me del llançament. Més informació en l'<link>avís de privacitat</link>.",
+    "submit": "Apunta-m'hi",
+    "pending": "S'està enviant…",
+    "success": "Fet! T'avisarem quan Badulake estiga preparat.",
+    "errors": {
+      "email": "Revisa el correu: no pareix vàlid.",
+      "zone": "Digues-nos la teua zona o barri.",
+      "consent": "Necessitem el teu permís per a guardar les teues dades.",
+      "generic": "Alguna cosa ha fallat. Torna-ho a intentar d'ací a una estona."
+    }
+  },
+  "Privacy": {
+    "title": "Avís de privacitat",
+    "pending": "L'Assessoria Jurídica d'EITB està redactant l'avís de privacitat, que apareixerà ací abans del llançament.",
+    "cookie": "Este web guarda una sola galeta, anomenada NEXT_LOCALE, per a recordar la llengua que tries. Dura un any i no servix per a res més.",
+    "back": "Tornar"
+  },
+  "Footer": {
+    "project": "Un projecte d'EITB",
+    "language": "Llengua",
+    "machine": "Traducció automàtica del castellà, pendent de revisió."
+  }
+}

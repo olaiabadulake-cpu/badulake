@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Meet-ups to swap things, no money involved",
+    "description": "Meet-ups to swap clothes and things you no longer use. No money involved. Join the waiting list."
+  },
+  "Home": {
+    "tagline": "Meet-ups to swap clothes and things you no longer use. No money involved.",
+    "point1": "Get together, 5 to 10 people, at a venue near you.",
+    "point2": "Bring what you no longer use and take home what you like.",
+    "point3": "Clear out your wardrobe and have fun.",
+    "coming": "Badulake is coming in early 2027. Sign up and we'll let you know.",
+    "comingSoon": "Badulake is coming in early 2027. You'll be able to join the waiting list very soon."
+  },
+  "Waitlist": {
+    "title": "Waiting list",
+    "email": "Email address",
+    "zone": "Your area or neighbourhood",
+    "zonePlaceholder": "E.g. Deusto, Bilbao",
+    "language": "Which language would you like your updates in?",
+    "consent": "I agree that Badulake (EITB) may keep this data to let me know about the launch. More information in the <link>privacy notice</link>.",
+    "submit": "Sign me up",
+    "pending": "Sending…",
+    "success": "Done! We'll let you know when Badulake is ready.",
+    "errors": {
+      "email": "Check your email address: it doesn't look valid.",
+      "zone": "Tell us your area or neighbourhood.",
+      "consent": "We need your permission to keep your data.",
+      "generic": "Something went wrong. Please try again in a little while."
+    }
+  },
+  "Privacy": {
+    "title": "Privacy notice",
+    "pending": "EITB's Legal Department is drafting the privacy notice, and it will appear here before the launch.",
+    "cookie": "This website stores a single cookie, called NEXT_LOCALE, to remember the language you choose. It lasts one year and is used for nothing else.",
+    "back": "Back"
+  },
+  "Footer": {
+    "project": "An EITB project",
+    "language": "Language",
+    "machine": "Machine-translated from Spanish, pending review."
+  }
+}

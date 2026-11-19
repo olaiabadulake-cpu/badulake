@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Takime për shkëmbim pa para",
+    "description": "Takime për të shkëmbyer rroba dhe sende që nuk i përdorni më. Pa para. Regjistrohuni në listën e pritjes."
+  },
+  "Home": {
+    "tagline": "Takime për të shkëmbyer rroba dhe sende që nuk i përdorni më. Pa para.",
+    "point1": "Mblidhuni 5 deri në 10 veta në një ambient në zonën tuaj.",
+    "point2": "Sillni atë që nuk e përdorni më dhe merrni me vete atë që ju pëlqen.",
+    "point3": "Lironi dollapin dhe kalojeni mirë.",
+    "coming": "Badulake vjen në fillim të vitit 2027. Regjistrohuni dhe do t'ju lajmërojmë.",
+    "comingSoon": "Badulake vjen në fillim të vitit 2027. Shumë shpejt do të mund të regjistroheni në listën e pritjes."
+  },
+  "Waitlist": {
+    "title": "Lista e pritjes",
+    "email": "Adresa e email-it",
+    "zone": "Zona ose lagjja juaj",
+    "zonePlaceholder": "P.sh. Deusto, Bilbao",
+    "language": "Në cilën gjuhë dëshironi t'i merrni njoftimet tona?",
+    "consent": "Pranoj që Badulake (EITB) t'i ruajë këto të dhëna për të më njoftuar për nisjen. Më shumë informacion në <link>njoftimin e privatësisë</link>.",
+    "submit": "Më regjistro",
+    "pending": "Po dërgohet…",
+    "success": "U krye! Do t'ju lajmërojmë kur Badulake të jetë gati.",
+    "errors": {
+      "email": "Kontrolloni email-in: nuk duket i vlefshëm.",
+      "zone": "Na tregoni zonën ose lagjen tuaj.",
+      "consent": "Na duhet leja juaj për të ruajtur të dhënat tuaja.",
+      "generic": "Diçka shkoi keq. Provoni sërish pas pak."
+    }
+  },
+  "Privacy": {
+    "title": "Njoftimi i privatësisë",
+    "pending": "Departamenti Ligjor i EITB-së po e harton njoftimin e privatësisë. Do të shfaqet këtu para nisjes.",
+    "cookie": "Ky sajt ruan vetëm një cookie, NEXT_LOCALE, për të mbajtur mend gjuhën që zgjidhni. Zgjat një vit dhe nuk përdoret për asgjë tjetër.",
+    "back": "Kthehu"
+  },
+  "Footer": {
+    "project": "Një projekt i EITB-së",
+    "language": "Gjuha",
+    "machine": "Përkthim automatik nga spanjishtja, ende pa u rishikuar."
+  }
+}

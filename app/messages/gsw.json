@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Tüschtreff ohne Gald",
+    "description": "Treffe, wo m'r Kleider un Sàche tüscht, wo d'nimm bruchsch. Ohne Gald. Trag di in d'Warteliss ïn."
+  },
+  "Home": {
+    "tagline": "Treffe, wo m'r Kleider un Sàche tüscht, wo d'nimm bruchsch. Ohne Gald.",
+    "point1": "Treffe euch, 5 bis 10 Litt, in-ma Lokàl in eijerer Gegend.",
+    "point2": "Bring mit, wàs de nimm bruchsch, un nimm mit, wàs dr gfàllt.",
+    "point3": "Màch Plàtz im Kleiderkàschte un hàb Spàss.",
+    "coming": "Badulake kummt Ànfàng 2027. Trag di ïn, no saaje mr dr Bschaid.",
+    "comingSoon": "Badulake kummt Ànfàng 2027. Bàll kànnsch di in d'Warteliss ïntraaje."
+  },
+  "Waitlist": {
+    "title": "Warteliss",
+    "email": "E-Mail-Àdress",
+    "zone": "Dini Gegend oder di Viertel",
+    "zonePlaceholder": "Z. B. Deusto, Bilbao",
+    "language": "In wellere Sproch witt unseri Nàchrichte bekumme?",
+    "consent": "Ich bin ïnverstànde, dàss Badulake (EITB) die Date bhàlt, fer mr Bschaid ze gan, wenn's los geht. Meh drìwwer in dr <link>Dateschutzerklärung</link>.",
+    "submit": "Trag mi ïn",
+    "pending": "Wird gschickt…",
+    "success": "Fertig! Mr saaje dr Bschaid, sobàll Badulake parat isch.",
+    "errors": {
+      "email": "Lüej dini E-Mail-Àdress nàch: Sie sieht nit güeltig üs.",
+      "zone": "Saa uns dini Gegend oder di Viertel.",
+      "consent": "Mr bruche dini Erlaüwnis, fer dini Date ze spichere.",
+      "generic": "Ebbis isch schief gànge. Prowier's glïch nochemol."
+    }
+  },
+  "Privacy": {
+    "title": "Dateschutzerklärung",
+    "pending": "D'Rachtsàbteilung vun EITB schrïbt grad d'Dateschutzerklärung. Sie kummt do ànne, bevor's los geht.",
+    "cookie": "Die Websïtt spichert numme ei Cookie, NEXT_LOCALE, fer sich d'Sproch ze merike, wo dü üssüechsch. 'S hebt ei Johr un wird fer nix ànders brücht.",
+    "back": "Zruck"
+  },
+  "Footer": {
+    "project": "E Projekt vun EITB",
+    "language": "Sproch",
+    "machine": "Màschinell üs-em Spànische ìwwersetzt, noch nit nàchglüejt."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Vaihtotapaamisia ilman rahaa",
+    "description": "Tapaamisia, joissa vaihdetaan vaatteita ja tavaroita, joita et enää käytä. Ilman rahaa. Liity odotuslistalle."
+  },
+  "Home": {
+    "tagline": "Tapaamisia, joissa vaihdetaan vaatteita ja tavaroita, joita et enää käytä. Ilman rahaa.",
+    "point1": "Kokoontukaa 5–10 hengen porukalla tilaan omalla alueellanne.",
+    "point2": "Tuo, mitä et enää käytä, ja vie kotiin, mikä miellyttää.",
+    "point3": "Raivaa vaatekaappia ja pidä hauskaa.",
+    "coming": "Badulake saapuu alkuvuodesta 2027. Liity listalle, niin kerromme sinulle.",
+    "comingSoon": "Badulake saapuu alkuvuodesta 2027. Pian voit liittyä odotuslistalle."
+  },
+  "Waitlist": {
+    "title": "Odotuslista",
+    "email": "Sähköpostiosoite",
+    "zone": "Alueesi tai kaupunginosasi",
+    "zonePlaceholder": "Esim. Deusto, Bilbao",
+    "language": "Millä kielellä haluat saada viestimme?",
+    "consent": "Hyväksyn, että Badulake (EITB) säilyttää nämä tiedot kertoakseen minulle julkaisusta. Lisätietoja <link>tietosuojailmoituksessa</link>.",
+    "submit": "Liity listalle",
+    "pending": "Lähetetään…",
+    "success": "Valmista! Kerromme sinulle, kun Badulake on valmis.",
+    "errors": {
+      "email": "Tarkista sähköpostiosoite: se ei näytä kelvolliselta.",
+      "zone": "Kerro meille alueesi tai kaupunginosasi.",
+      "consent": "Tarvitsemme lupasi tietojesi tallentamiseen.",
+      "generic": "Jokin meni pieleen. Yritä hetken päästä uudelleen."
+    }
+  },
+  "Privacy": {
+    "title": "Tietosuojailmoitus",
+    "pending": "EITB:n lakiosasto laatii parhaillaan tietosuojailmoitusta. Se julkaistaan täällä ennen palvelun avaamista.",
+    "cookie": "Tämä sivusto tallentaa vain yhden evästeen, NEXT_LOCALE, muistaakseen valitsemasi kielen. Se säilyy vuoden eikä sitä käytetä mihinkään muuhun.",
+    "back": "Takaisin"
+  },
+  "Footer": {
+    "project": "EITB:n projekti",
+    "language": "Kieli",
+    "machine": "Konekäännetty espanjasta, tarkistamatta."
+  }
+}

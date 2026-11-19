@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Emgavioù eskemm hep arc'hant",
+    "description": "Emgavioù evit eskemm dilhad ha traoù na implijit ket ken. Hep arc'hant. En em enskrivit war ar roll gortoz."
+  },
+  "Home": {
+    "tagline": "Emgavioù evit eskemm dilhad ha traoù na implijit ket ken. Hep arc'hant.",
+    "point1": "En em vodit, 5 betek 10 den, en ul lec'h e-kichen ar gêr.",
+    "point2": "Degasit ar pezh na implijit ket ken ha kasit ganeoc'h ar pezh a blij deoc'h.",
+    "point3": "Goullonderit ho kwiskaoueg ha plijadur deoc'h.",
+    "coming": "Badulake a erruo e deroù 2027. En em enskrivit hag e roimp keloù deoc'h.",
+    "comingSoon": "Badulake a erruo e deroù 2027. A-benn nebeut e c'hallot en em enskrivañ war ar roll gortoz."
+  },
+  "Waitlist": {
+    "title": "Roll gortoz",
+    "email": "Chomlec'h postel",
+    "zone": "Ho korn-bro pe ho karter",
+    "zonePlaceholder": "Sk.: Deusto, Bilbao",
+    "language": "E pe yezh e fell deoc'h resev hor c'hemennadennoù?",
+    "consent": "A-du emaon ma viro Badulake (EITB) ar roadennoù-mañ evit rein keloù din eus al loc'hañ. Muioc'h a ditouroù er <link>gemenn prevezded</link>.",
+    "submit": "Ma enskrivañ",
+    "pending": "O kas…",
+    "success": "Graet eo! Keloù a roimp deoc'h pa vo prest Badulake.",
+    "errors": {
+      "email": "Gwiriit ho chomlec'h postel: ne seblant ket bezañ reizh.",
+      "zone": "Lavarit deomp ho korn-bro pe ho karter.",
+      "consent": "Ezhomm hon eus eus hoc'h aotre evit mirout ho roadennoù.",
+      "generic": "Un dra bennak a zo aet a-dreuz. Klaskit en-dro a-benn ur pennadig."
+    }
+  },
+  "Privacy": {
+    "title": "Kemenn prevezded",
+    "pending": "Servij gwir EITB a zo o skrivañ ar c'hemenn prevezded. Embannet e vo amañ a-raok al loc'hañ.",
+    "cookie": "Al lec'hienn-mañ a vir ur c'hwistell hepken, NEXT_LOCALE, evit derc'hel soñj eus ar yezh a zibabit. Padout a ra ur bloaz ha ne servij da netra all.",
+    "back": "Distreiñ"
+  },
+  "Footer": {
+    "project": "Ur raktres gant EITB",
+    "language": "Yezh",
+    "machine": "Troidigezh emgefre diwar ar spagnoleg, n'eo ket bet adlennet c'hoazh."
+  }
+}

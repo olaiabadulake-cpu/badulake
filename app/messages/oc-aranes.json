@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Trobades entà escambiar sense sòs",
+    "description": "Trobades entà escambiar ròba e causes que ja non utilizes. Sense sòs. Inscriu-te ena lista d'espèra."
+  },
+  "Home": {
+    "tagline": "Trobades entà escambiar ròba e causes que ja non utilizes. Sense sòs.",
+    "point1": "Amassatz-vos de 5 a 10 persones en un locau dera vòsta zòna.",
+    "point2": "Pòrta çò que ja non utilizes e emporta-te çò que t'agrade.",
+    "point3": "Hè lòc en armari e passa-te-la ben.",
+    "coming": "Badulake arribe a començaments de 2027. Inscriu-te e t'avisaram.",
+    "comingSoon": "Badulake arribe a començaments de 2027. Lèu poderàs inscríuer-te ena lista d'espèra."
+  },
+  "Waitlist": {
+    "title": "Lista d'espèra",
+    "email": "Corrèu electronic",
+    "zone": "Era tua zòna o barri",
+    "zonePlaceholder": "Ex.: Deusto, Bilbao",
+    "language": "En quina lengua vòs recéber es avisi?",
+    "consent": "Accèpti que Badulake (EITB) guarde aguestes dades entà avisar-me deth lançament. Mès informacion en <link>avís de privacitat</link>.",
+    "submit": "Inscriu-me",
+    "pending": "S'envie…",
+    "success": "Hèt! T'avisaram quan Badulake sigue prèst.",
+    "errors": {
+      "email": "Revisa eth corrèu: non semble valid.",
+      "zone": "Digues-mos era tua zòna o barri.",
+      "consent": "Mos cau eth tòn permís entà guardar es tues dades.",
+      "generic": "Quauquarren a fallat. Torna-ac a ensajar d'aciu a un moment."
+    }
+  },
+  "Privacy": {
+    "title": "Avís de privacitat",
+    "pending": "Era Assessoria Juridica d'EITB ei redigint er avís de privacitat, que apareisherà aciu abans deth lançament.",
+    "cookie": "Aguest web guarde ua soleta galeta, aperada NEXT_LOCALE, entà brembar era lengua que causisses. Dure un an e non servís entà arren mès.",
+    "back": "Tornar"
+  },
+  "Footer": {
+    "project": "Un projècte d'EITB",
+    "language": "Lengua",
+    "machine": "Traduccion automatica deth castelhan, pendenta de revision."
+  }
+}

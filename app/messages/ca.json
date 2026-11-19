@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Trobades per intercanviar sense diners",
+    "description": "Trobades per intercanviar roba i coses que ja no fas servir. Sense diners. Apunta't a la llista d'espera."
+  },
+  "Home": {
+    "tagline": "Trobades per intercanviar roba i coses que ja no fas servir. Sense diners.",
+    "point1": "Trobeu-vos entre 5 i 10 persones en un local de la vostra zona.",
+    "point2": "Porta el que ja no fas servir i emporta't el que t'agradi.",
+    "point3": "Allibera l'armari i passa-t'ho bé.",
+    "coming": "Badulake arriba a principis del 2027. Apunta't i t'avisarem.",
+    "comingSoon": "Badulake arriba a principis del 2027. Molt aviat et podràs apuntar a la llista d'espera."
+  },
+  "Waitlist": {
+    "title": "Llista d'espera",
+    "email": "Correu electrònic",
+    "zone": "La teva zona o barri",
+    "zonePlaceholder": "P. ex.: Deusto, Bilbao",
+    "language": "En quina llengua vols rebre els avisos?",
+    "consent": "Accepto que Badulake (EITB) guardi aquestes dades per avisar-me del llançament. Més informació a l'<link>avís de privadesa</link>.",
+    "submit": "Apunta-m'hi",
+    "pending": "S'està enviant…",
+    "success": "Fet! T'avisarem quan Badulake estigui a punt.",
+    "errors": {
+      "email": "Revisa el correu: no sembla vàlid.",
+      "zone": "Digues-nos la teva zona o barri.",
+      "consent": "Necessitem el teu permís per guardar les teves dades.",
+      "generic": "Alguna cosa ha fallat. Torna-ho a provar d'aquí a una estona."
+    }
+  },
+  "Privacy": {
+    "title": "Avís de privadesa",
+    "pending": "L'Assessoria Jurídica d'EITB està redactant l'avís de privadesa, que apareixerà aquí abans del llançament.",
+    "cookie": "Aquest web desa una sola galeta, anomenada NEXT_LOCALE, per recordar la llengua que tries. Dura un any i no serveix per a res més.",
+    "back": "Tornar"
+  },
+  "Footer": {
+    "project": "Un projecte d'EITB",
+    "language": "Llengua",
+    "machine": "Traducció automàtica del castellà, pendent de revisió."
+  }
+}

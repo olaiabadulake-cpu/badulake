@@ -1,5 +1,6 @@
 "use server";
 
+import { languages, type Locale } from "@/i18n/languages";
 import { saveWaitlistEntry } from "@/lib/waitlist";
 
 export type WaitlistState = {
@@ -16,7 +17,8 @@ export async function joinWaitlist(
 ): Promise<WaitlistState> {
   const email = String(formData.get("email") ?? "").trim().toLowerCase();
   const zone = String(formData.get("zone") ?? "").trim();
-  const language = formData.get("language") === "eu" ? "eu" : "es";
+  const requested = String(formData.get("language") ?? "");
+  const language: Locale = requested in languages ? (requested as Locale) : "es";
   const consent = formData.get("consent") === "on";
 
   const errors: WaitlistState["errors"] = {};

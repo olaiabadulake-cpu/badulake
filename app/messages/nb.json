@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Byttetreff helt uten penger",
+    "description": "Treff der dere bytter klær og ting dere ikke bruker lenger. Helt uten penger. Sett deg på ventelisten."
+  },
+  "Home": {
+    "tagline": "Treff der dere bytter klær og ting dere ikke bruker lenger. Helt uten penger.",
+    "point1": "Møt opp, 5 til 10 personer, i et lokale i nærheten av deg.",
+    "point2": "Ta med det du ikke bruker lenger, og ta med deg hjem det du liker.",
+    "point3": "Rydd i klesskapet og ha det gøy.",
+    "coming": "Badulake kommer i starten av 2027. Meld deg på, så gir vi deg beskjed.",
+    "comingSoon": "Badulake kommer i starten av 2027. Snart kan du sette deg på ventelisten."
+  },
+  "Waitlist": {
+    "title": "Venteliste",
+    "email": "E-postadresse",
+    "zone": "Området eller bydelen din",
+    "zonePlaceholder": "F.eks. Deusto, Bilbao",
+    "language": "Hvilket språk vil du ha meldingene våre på?",
+    "consent": "Jeg godtar at Badulake (EITB) lagrer disse opplysningene for å gi meg beskjed om lanseringen. Les mer i <link>personvernerklæringen</link>.",
+    "submit": "Meld meg på",
+    "pending": "Sender…",
+    "success": "Sånn! Vi gir deg beskjed når Badulake er klart.",
+    "errors": {
+      "email": "Sjekk e-postadressen din: Den ser ikke ut til å være gyldig.",
+      "zone": "Fortell oss hvilket område eller hvilken bydel du bor i.",
+      "consent": "Vi trenger tillatelsen din for å lagre opplysningene dine.",
+      "generic": "Noe gikk galt. Prøv igjen om litt."
+    }
+  },
+  "Privacy": {
+    "title": "Personvernerklæring",
+    "pending": "EITBs juridiske avdeling skriver personvernerklæringen, og den kommer her før lanseringen.",
+    "cookie": "Dette nettstedet lagrer bare én informasjonskapsel, NEXT_LOCALE, for å huske hvilket språk du velger. Den varer i ett år og brukes ikke til noe annet.",
+    "back": "Tilbake"
+  },
+  "Footer": {
+    "project": "Et prosjekt fra EITB",
+    "language": "Språk",
+    "machine": "Maskinoversatt fra spansk, ikke gjennomgått ennå."
+  }
+}

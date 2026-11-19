@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Des rencontres pour échanger sans argent",
+    "description": "Des rencontres pour échanger les vêtements et les objets dont vous ne vous servez plus. Sans argent. Inscrivez-vous sur la liste d'attente."
+  },
+  "Home": {
+    "tagline": "Des rencontres pour échanger les vêtements et les objets dont vous ne vous servez plus. Sans argent.",
+    "point1": "Retrouvez-vous à 5 ou 10 dans un local près de chez vous.",
+    "point2": "Apportez ce que vous n'utilisez plus et repartez avec ce qui vous plaît.",
+    "point3": "Faites de la place dans vos placards et amusez-vous.",
+    "coming": "Badulake arrive début 2027. Inscrivez-vous et on vous prévient.",
+    "comingSoon": "Badulake arrive début 2027. Vous pourrez très bientôt vous inscrire sur la liste d'attente."
+  },
+  "Waitlist": {
+    "title": "Liste d'attente",
+    "email": "Adresse e-mail",
+    "zone": "Votre ville ou votre quartier",
+    "zonePlaceholder": "Ex. : Deusto, Bilbao",
+    "language": "Dans quelle langue voulez-vous recevoir nos messages ?",
+    "consent": "J'accepte que Badulake (EITB) conserve ces données pour me prévenir du lancement. Plus d'informations dans la <link>politique de confidentialité</link>.",
+    "submit": "Je m'inscris",
+    "pending": "Envoi en cours…",
+    "success": "C'est fait ! On vous prévient dès que Badulake est prêt.",
+    "errors": {
+      "email": "Vérifiez votre adresse e-mail : elle ne semble pas valide.",
+      "zone": "Indiquez-nous votre ville ou votre quartier.",
+      "consent": "Nous avons besoin de votre accord pour conserver vos données.",
+      "generic": "Un problème est survenu. Réessayez dans un moment."
+    }
+  },
+  "Privacy": {
+    "title": "Politique de confidentialité",
+    "pending": "Le service juridique d'EITB rédige actuellement la politique de confidentialité. Elle sera publiée ici avant le lancement.",
+    "cookie": "Ce site n'enregistre qu'un seul cookie, NEXT_LOCALE, pour se souvenir de la langue que vous choisissez. Il dure un an et ne sert à rien d'autre.",
+    "back": "Retour"
+  },
+  "Footer": {
+    "project": "Un projet d'EITB",
+    "language": "Langue",
+    "machine": "Traduit automatiquement de l'espagnol, en attente de relecture."
+  }
+}

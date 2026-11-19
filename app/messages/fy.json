@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Ruilmoetings sûnder jild",
+    "description": "Moetings om klean en guod te ruiljen datst net mear brûkst. Sûnder jild. Set dy op 'e wachtlist."
+  },
+  "Home": {
+    "tagline": "Moetings om klean en guod te ruiljen datst net mear brûkst. Sûnder jild.",
+    "point1": "Kom mei 5 oant 10 minsken byinoar op in plak by dy yn 'e buert.",
+    "point2": "Nim mei watst net mear brûkst en nim mei nei hûs watst moai fynst.",
+    "point3": "Meitsje romte yn dyn kast en ha wille.",
+    "coming": "Badulake komt begjin 2027. Skriuw dy yn, dan litte wy it dy witte.",
+    "comingSoon": "Badulake komt begjin 2027. Meikoarten kinst dy op 'e wachtlist sette."
+  },
+  "Waitlist": {
+    "title": "Wachtlist",
+    "email": "E-mailadres",
+    "zone": "Dyn regio of wyk",
+    "zonePlaceholder": "Bgl. Deusto, Bilbao",
+    "language": "Yn hokker taal wolst ús berjochten ûntfange?",
+    "consent": "Ik gean dermei akkoart dat Badulake (EITB) dizze gegevens bewarret om my witte te litten wannear't it begjint. Mear ynformaasje yn 'e <link>privacyferklearring</link>.",
+    "submit": "Set my op 'e list",
+    "pending": "Dwaande mei ferstjoeren…",
+    "success": "Slagge! Wy litte it dy witte sa gau't Badulake klear is.",
+    "errors": {
+      "email": "Kontrolearje dyn e-mailadres: it liket net jildich.",
+      "zone": "Fertel ús dyn regio of wyk.",
+      "consent": "Wy hawwe dyn tastimming nedich om dyn gegevens te bewarjen.",
+      "generic": "Der gie wat mis. Besykje it sa nochris."
+    }
+  },
+  "Privacy": {
+    "title": "Privacyferklearring",
+    "pending": "De juridyske ôfdieling fan EITB skriuwt op it stuit de privacyferklearring. Dy ferskynt hjir foar de lansearring.",
+    "cookie": "Dizze website slacht mar ien cookie op, NEXT_LOCALE, om te ûnthâlden hokker taal oftst kiest. Dy bliuwt in jier bewarre en wurdt nearne oars foar brûkt.",
+    "back": "Werom"
+  },
+  "Footer": {
+    "project": "In projekt fan EITB",
+    "language": "Taal",
+    "machine": "Automatysk oerset út it Spaansk, noch net neisjoen."
+  }
+}

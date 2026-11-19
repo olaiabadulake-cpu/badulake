@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Srečanja za izmenjavo brez denarja",
+    "description": "Srečanja, kjer izmenjaš oblačila in stvari, ki jih ne uporabljaš več. Brez denarja. Vpiši se na čakalni seznam."
+  },
+  "Home": {
+    "tagline": "Srečanja, kjer izmenjaš oblačila in stvari, ki jih ne uporabljaš več. Brez denarja.",
+    "point1": "Zberite se v skupini od 5 do 10 ljudi v prostoru v vaši bližini.",
+    "point2": "Prinesi, česar ne uporabljaš več, in odnesi, kar ti je všeč.",
+    "point3": "Naredi prostor v omari in se zabavaj.",
+    "coming": "Badulake prihaja v začetku leta 2027. Vpiši se in obvestili te bomo.",
+    "comingSoon": "Badulake prihaja v začetku leta 2027. Kmalu se boš lahko vpisal na čakalni seznam."
+  },
+  "Waitlist": {
+    "title": "Čakalni seznam",
+    "email": "E-pošta",
+    "zone": "Tvoje območje ali soseska",
+    "zonePlaceholder": "Npr. Deusto, Bilbao",
+    "language": "V katerem jeziku želiš prejemati naša obvestila?",
+    "consent": "Strinjam se, da Badulake (EITB) hrani te podatke, da me obvesti o začetku. Več informacij v <link>obvestilu o zasebnosti</link>.",
+    "submit": "Vpiši me",
+    "pending": "Pošiljanje …",
+    "success": "Opravljeno! Obvestili te bomo, ko bo Badulake pripravljen.",
+    "errors": {
+      "email": "Preveri e-pošto: naslov ni videti veljaven.",
+      "zone": "Povej nam svoje območje ali sosesko.",
+      "consent": "Potrebujemo tvoje dovoljenje, da shranimo tvoje podatke.",
+      "generic": "Nekaj je šlo narobe. Poskusi znova čez nekaj trenutkov."
+    }
+  },
+  "Privacy": {
+    "title": "Obvestilo o zasebnosti",
+    "pending": "Pravna služba EITB pripravlja obvestilo o zasebnosti. Tukaj bo objavljeno pred začetkom.",
+    "cookie": "Ta spletna stran shrani samo en piškotek, NEXT_LOCALE, da si zapomni jezik, ki ga izbereš. Velja eno leto in se ne uporablja za nič drugega.",
+    "back": "Nazaj"
+  },
+  "Footer": {
+    "project": "Projekt EITB",
+    "language": "Jezik",
+    "machine": "Strojni prevod iz španščine, še ni pregledan."
+  }
+}

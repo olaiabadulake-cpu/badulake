@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Byttemøder helt uden penge",
+    "description": "Møder, hvor I bytter tøj og ting, I ikke længere bruger. Helt uden penge. Skriv dig på ventelisten."
+  },
+  "Home": {
+    "tagline": "Møder, hvor I bytter tøj og ting, I ikke længere bruger. Helt uden penge.",
+    "point1": "Mød op, 5 til 10 personer, et sted i dit lokalområde.",
+    "point2": "Tag det med, du ikke bruger mere, og tag det med hjem, du kan lide.",
+    "point3": "Ryd op i klædeskabet, og hav det sjovt.",
+    "coming": "Badulake kommer i starten af 2027. Skriv dig op, så giver vi dig besked.",
+    "comingSoon": "Badulake kommer i starten af 2027. Snart kan du skrive dig på ventelisten."
+  },
+  "Waitlist": {
+    "title": "Venteliste",
+    "email": "E-mailadresse",
+    "zone": "Dit område eller kvarter",
+    "zonePlaceholder": "F.eks. Deusto, Bilbao",
+    "language": "Hvilket sprog vil du have vores beskeder på?",
+    "consent": "Jeg accepterer, at Badulake (EITB) gemmer disse oplysninger for at give mig besked om lanceringen. Læs mere i <link>privatlivserklæringen</link>.",
+    "submit": "Skriv mig op",
+    "pending": "Sender…",
+    "success": "Sådan! Vi giver dig besked, når Badulake er klar.",
+    "errors": {
+      "email": "Tjek din e-mailadresse: Den ser ikke ud til at være gyldig.",
+      "zone": "Fortæl os dit område eller kvarter.",
+      "consent": "Vi skal have din tilladelse til at gemme dine oplysninger.",
+      "generic": "Noget gik galt. Prøv igen om lidt."
+    }
+  },
+  "Privacy": {
+    "title": "Privatlivserklæring",
+    "pending": "EITB's juridiske afdeling er ved at skrive privatlivserklæringen, og den kommer her inden lanceringen.",
+    "cookie": "Denne hjemmeside gemmer kun én cookie, NEXT_LOCALE, for at huske det sprog, du vælger. Den varer et år og bruges ikke til andet.",
+    "back": "Tilbage"
+  },
+  "Footer": {
+    "project": "Et projekt fra EITB",
+    "language": "Sprog",
+    "machine": "Maskinoversat fra spansk, endnu ikke gennemlæst."
+  }
+}

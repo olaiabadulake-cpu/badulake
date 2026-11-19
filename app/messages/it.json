@@ -1,0 +1,42 @@
+{
+  "Meta": {
+    "title": "Badulake · Incontri per scambiare senza soldi",
+    "description": "Incontri per scambiare vestiti e oggetti che non usi più. Senza soldi. Iscriviti alla lista d'attesa."
+  },
+  "Home": {
+    "tagline": "Incontri per scambiare vestiti e oggetti che non usi più. Senza soldi.",
+    "point1": "Ritrovatevi in 5-10 persone in un locale della vostra zona.",
+    "point2": "Porta quello che non usi più e prendi quello che ti piace.",
+    "point3": "Fai spazio nell'armadio e divertiti.",
+    "coming": "Badulake arriva all'inizio del 2027. Iscriviti e ti avviseremo.",
+    "comingSoon": "Badulake arriva all'inizio del 2027. Presto potrai iscriverti alla lista d'attesa."
+  },
+  "Waitlist": {
+    "title": "Lista d'attesa",
+    "email": "Email",
+    "zone": "La tua zona o il tuo quartiere",
+    "zonePlaceholder": "Es.: Deusto, Bilbao",
+    "language": "In che lingua vuoi ricevere gli avvisi?",
+    "consent": "Accetto che Badulake (EITB) conservi questi dati per avvisarmi del lancio. Maggiori informazioni nell'<link>informativa sulla privacy</link>.",
+    "submit": "Iscrivimi",
+    "pending": "Invio in corso…",
+    "success": "Fatto! Ti avviseremo quando Badulake sarà pronto.",
+    "errors": {
+      "email": "Controlla l'email: non sembra valida.",
+      "zone": "Dicci la tua zona o il tuo quartiere.",
+      "consent": "Ci serve il tuo permesso per conservare i tuoi dati.",
+      "generic": "Qualcosa è andato storto. Riprova tra poco."
+    }
+  },
+  "Privacy": {
+    "title": "Informativa sulla privacy",
+    "pending": "L'Ufficio legale di EITB sta redigendo l'informativa sulla privacy, che sarà pubblicata qui prima del lancio.",
+    "cookie": "Questo sito salva un solo cookie, chiamato NEXT_LOCALE, per ricordare la lingua che scegli. Dura un anno e non serve a nient'altro.",
+    "back": "Indietro"
+  },
+  "Footer": {
+    "project": "Un progetto di EITB",
+    "language": "Lingua",
+    "machine": "Tradotto automaticamente dallo spagnolo, in attesa di revisione."
+  }
+}
