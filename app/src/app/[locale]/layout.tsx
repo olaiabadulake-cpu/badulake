@@ -44,24 +44,26 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
         <NextIntlClientProvider>
           <a
             href="#contenido"
-            className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-10 focus:rounded focus:bg-white focus:p-3 focus:font-semibold"
+            className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-10 focus:rounded focus:bg-papel focus:p-3 focus:font-semibold"
           >
             {nav("skip")}
           </a>
           <SiteHeader />
           <main id="contenido" tabIndex={-1} className="flex-1 focus:outline-none">{children}</main>
-          <footer className="flex flex-col gap-1 border-t border-noche/15 px-4 py-4 text-sm sm:px-8">
-            <p>{t("project")}</p>
+          <footer className="sobre-noche bg-noche text-white">
+            <div className="mx-auto flex max-w-2xl flex-col gap-2 px-4 py-6 text-[0.9375rem] sm:px-8">
+            <p className="font-display font-bold">{t("project")}</p>
             <nav aria-label={t("legalNav")} lang={await contentLang()}>
               <ul className="flex flex-wrap gap-x-4 gap-y-1">
-                <li><Link href="/aviso-legal" className="underline underline-offset-2">{t("legalLink")}</Link></li>
-                <li><Link href="/privacidad" className="underline underline-offset-2">{privacy("footerLink")}</Link></li>
-                <li><Link href="/condiciones" className="underline underline-offset-2">{t("termsLink")}</Link></li>
-                <li><Link href="/cookies" className="underline underline-offset-2">{t("cookiesLink")}</Link></li>
+                <li><Link href="/aviso-legal" className="enlace !font-normal">{t("legalLink")}</Link></li>
+                <li><Link href="/privacidad" className="enlace !font-normal">{privacy("footerLink")}</Link></li>
+                <li><Link href="/condiciones" className="enlace !font-normal">{t("termsLink")}</Link></li>
+                <li><Link href="/cookies" className="enlace !font-normal">{t("cookiesLink")}</Link></li>
               </ul>
             </nav>
             {/* Todo se escribe en castellano; las demás lenguas son traducciones pendientes de revisar. */}
-            {locale !== "es" && <p className="text-noche/70">{t("machine")}</p>}
+            {locale !== "es" && <p>{t("machine")}</p>}
+            </div>
           </footer>
         </NextIntlClientProvider>
       </body>

@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function WhatIsPage() {
   return (
-    <div lang={await contentLang()} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
+    <div lang={await contentLang()} className="pagina">
       <WhatIs asPage />
     </div>
   );

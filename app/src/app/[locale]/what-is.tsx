@@ -11,17 +11,17 @@ export async function WhatIs({ asPage = false }: { asPage?: boolean }) {
 
   return (
     <section lang={await contentLang()} aria-labelledby="que-es" className="flex flex-col gap-5">
-      <Title id="que-es" className="font-display text-3xl font-bold">{t("title")}</Title>
+      <Title id="que-es" className="titulo-1">{t("title")}</Title>
       <p className="text-lg">{t("intro")}</p>
 
-      <Sub className="font-display text-xl font-bold">{t("factsTitle")}</Sub>
+      <Sub className="titulo-3">{t("factsTitle")}</Sub>
       <ul className="flex flex-wrap gap-2">
         {facts.map((k) => (
-          <li key={k} className="rounded-full bg-amarillo px-4 py-1.5 font-semibold">{t(k)}</li>
+          <li key={k} className="etiqueta-pildora !px-4 !py-1.5 !text-base">{t(k)}</li>
         ))}
       </ul>
 
-      <Sub className="font-display text-xl font-bold">{t("howTitle")}</Sub>
+      <Sub className="titulo-3">{t("howTitle")}</Sub>
       <ol className="flex flex-col gap-3 text-lg">
         {steps.map((k, i) => (
           <li key={k} className="flex gap-3">

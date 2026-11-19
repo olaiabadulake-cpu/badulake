@@ -13,9 +13,9 @@ export async function LegalPage({ ns }: { ns: "Privacy" | "Legal.aviso" | "Legal
   const id = ns.replace(".", "-").toLowerCase();
 
   return (
-    <div lang={lang} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
-      <h1 className="font-display text-3xl font-bold">{t("title")}</h1>
-      <div role="note" className="rounded-lg border-2 border-noche bg-amarillo p-4">
+    <div lang={lang} className="pagina">
+      <h1 className="titulo-1">{t("title")}</h1>
+      <div role="note" className="aviso border-2 border-noche">
         <p className="font-semibold uppercase tracking-wide">{legal("draftBadge")}</p>
         <p className="mt-1">{legal("draftNote")}</p>
         {legal.has("pendingTranslation") && <p className="mt-2">{legal("pendingTranslation")}</p>}
@@ -23,14 +23,14 @@ export async function LegalPage({ ns }: { ns: "Privacy" | "Legal.aviso" | "Legal
       <div lang="es" className="flex flex-col gap-6">
         {sections.map((key) => (
           <section key={key} aria-labelledby={`${id}-${key}`} className="flex flex-col gap-2">
-            <h2 id={`${id}-${key}`} className="font-display text-xl font-bold">
+            <h2 id={`${id}-${key}`} className="titulo-3">
               {t(`sections.${key}.title`)}
             </h2>
             <Body text={t(`sections.${key}.body`)} />
           </section>
         ))}
       </div>
-      <Link href="/" className="font-medium underline underline-offset-4">{legal("back")}</Link>
+      <Link href="/" className="enlace">{legal("back")}</Link>
     </div>
   );
 }

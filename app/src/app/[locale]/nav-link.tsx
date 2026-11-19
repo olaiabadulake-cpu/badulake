@@ -23,4 +23,4 @@ export function PlainNavLink({ href, children }: { href: string; children: React
 }
 
 const linkClass =
-  "rounded underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-noche";
+  "rounded py-1 underline-offset-4 hover:underline hover:decoration-2";

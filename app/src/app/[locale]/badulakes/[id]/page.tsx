@@ -19,7 +19,7 @@ export default async function BadulakePage({ params, searchParams }: PageProps<"
   const t = await getTranslations("Badulake");
 
   return (
-    <div lang={await contentLang()} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
+    <div lang={await contentLang()} className="pagina">
       <Suspense fallback={<p>{t("loading")}</p>}>
         <Details params={params} searchParams={searchParams} />
       </Suspense>
@@ -77,32 +77,31 @@ async function Details({
   const notice = notices.find((n) => n === aviso) ?? null;
   const good = notice === "apuntada" || notice === "borrada" || notice === "denunciado";
   const tr = await getTranslations("Report");
-  const button =
-    "rounded-full bg-noche px-6 py-3 text-center text-lg font-semibold text-white hover:bg-noche/90 sm:self-start";
+  const button = "boton sm:self-start";
 
   return (
     <>
-      <Link href="/badulakes" className="font-medium underline underline-offset-4 sm:self-start">
+      <Link href="/badulakes" className="enlace sm:self-start">
         ← {t("back")}
       </Link>
-      <h1 className="font-display text-3xl font-bold">{isOrganizer ? t("yourTitle") : b.titulo}</h1>
+      <h1 className="titulo-1">{isOrganizer ? t("yourTitle") : b.titulo}</h1>
       {isOrganizer && (
         <>
-          <p role="status" className="rounded-lg bg-amarillo p-4 font-medium">
+          <p role="status" className="aviso">
             {b.estado === "publicado" ? t("statusPublished") : t("statusDraft")}
           </p>
-          <h2 className="font-display text-2xl font-bold">{b.titulo}</h2>
+          <h2 className="titulo-2">{b.titulo}</h2>
         </>
       )}
       {isOrganizer && b.oculto && (
-        <p role="status" className="rounded-lg border-2 border-error bg-white p-4 font-medium text-error">
+        <p role="status" className="aviso-error">
           {tr("hiddenByTeam")}
         </p>
       )}
       {notice && (
         <p
           role={good ? "status" : "alert"}
-          className={`rounded-lg p-4 font-medium ${good ? "bg-amarillo" : "border-2 border-error bg-white text-error"}`}
+          className={good ? "aviso" : "aviso-error"}
         >
           {t(`notices.${notice}`)}
         </p>
@@ -111,12 +110,12 @@ async function Details({
       <dl className="flex flex-col gap-3">
         {rows.map(([k, v]) => (
           <div key={k}>
-            <dt className="text-sm font-medium text-noche/70">{k}</dt>
+            <dt className="ayuda font-medium">{k}</dt>
             <dd className="text-lg">{v}</dd>
           </div>
         ))}
       </dl>
-      {isOrganizer && <p className="text-sm text-noche/70">{t("addressPrivate")}</p>}
+      {isOrganizer && <p className="ayuda">{t("addressPrivate")}</p>}
       {isOrganizer && b.estado === "borrador" && (
         <form action={publishBadulake}>
           <input type="hidden" name="locale" value={locale} />
@@ -127,7 +126,7 @@ async function Details({
       {!isOrganizer && joined && (
         <>
           {notice !== "apuntada" && (
-            <p role="status" className="rounded-lg bg-amarillo p-4 font-medium">{t("youAreIn")}</p>
+            <p role="status" className="aviso">{t("youAreIn")}</p>
           )}
           <a href={`/api/badulakes/${b.id}/calendario`} download className={button}>
             {t("addToCalendar")}
@@ -137,7 +136,7 @@ async function Details({
             <input type="hidden" name="id" value={b.id} />
             <button
               type="submit"
-              className="rounded-full border-2 border-noche px-6 py-2.5 font-semibold hover:bg-noche/5"
+              className="boton-2"
             >
               {t("leave")}
             </button>
@@ -147,7 +146,7 @@ async function Details({
       {!isOrganizer && !joined && b.estado === "publicado" && upcoming && (
         free > 0 ? (
           <>
-            <p className="text-sm text-noche/70">{t("addressAfterJoin")}</p>
+            <p className="ayuda">{t("addressAfterJoin")}</p>
             <form action={joinBadulake}>
               <input type="hidden" name="locale" value={locale} />
               <input type="hidden" name="id" value={b.id} />
@@ -155,11 +154,11 @@ async function Details({
             </form>
           </>
         ) : (
-          <p role="status" className="font-medium">{t("full")}</p>
+          <p role="status" className="aviso">{t("full")}</p>
         )
       )}
       {!isOrganizer && (
-        <details className="rounded-lg border-2 border-noche/30 p-4">
+        <details className="tarjeta">
           <summary className="cursor-pointer font-semibold">{tr("button")}</summary>
           <form action={reportBadulake} className="mt-4 flex flex-col gap-4">
             <input type="hidden" name="locale" value={locale} />
@@ -174,16 +173,16 @@ async function Details({
               ))}
             </fieldset>
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="note" className="font-medium">{tr("noteLabel")}</label>
+              <label htmlFor="note" className="etiqueta">{tr("noteLabel")}</label>
               <textarea
                 id="note" name="note" rows={3} maxLength={300} aria-describedby="note-hint"
-                className="w-full rounded-lg border-2 border-noche/60 bg-white px-3 py-2.5 text-base focus:border-noche"
+                className="campo"
               />
-              <p id="note-hint" className="text-sm text-noche/70">{tr("noteHint")}</p>
+              <p id="note-hint" className="ayuda">{tr("noteHint")}</p>
             </div>
             <button
               type="submit"
-              className="rounded-full border-2 border-noche px-6 py-2.5 font-semibold hover:bg-noche/5 sm:self-start"
+              className="boton-2 sm:self-start"
             >
               {tr("send")}
             </button>

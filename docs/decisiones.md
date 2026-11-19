@@ -223,3 +223,11 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Cerrado en producción:** con `CUENTAS_ABIERTAS`, como el resto. Día del lanzamiento: dar de alta al equipo (ver [seguridad.md](seguridad.md)).
 - **Por qué:** Una app que pone en contacto a desconocidos en casas necesita una forma de denunciar y de actuar rápido, sin que el equipo tenga que ver más datos personales de los imprescindibles.
 - **Propuso:** Claude · **Decidió:** OlaIA (motivos y equipo: la propuesta de Claude; solo su cuenta por ahora) · **Hizo:** Claude (tarea 13 del plan maestro; OlaIA autorizó los cambios en Supabase)
+
+### D-028 · Diseño visual «Luz de barrio»: un pequeño sistema de estilos sobre la marca que ya existe
+- **Fecha:** 19/11/2026
+- **Alternativas:** B «Armario compartido» (terracota, lila y berenjena, títulos con serifa Fraunces y texto Nunito): más nueva, pero se aleja de la marca actual; esperar a LIN3S sin tocar nada.
+- **Decisión:** OlaIA elige la dirección A «Luz de barrio»: se conservan el amarillo (#FEDB75) y el azul noche (#161944) de badulake.org, con Raleway en los títulos y Roboto en el texto, ya cargadas, así que no hay recursos nuevos ni costes. Cabecera amarilla, pie azul noche, fondo crema, tarjetas de badulake blancas con borde azul y sombra amarilla «de pegatina», botones redondeados de 44 px de alto como mínimo. Todo sale de un solo sitio, `app/src/app/globals.css` (colores, letras y piezas `pagina`, `titulo-1/2/3`, `boton`, `boton-2`, `campo`, `etiqueta`, `ayuda`, `aviso`, `aviso-error`, `tarjeta`, `etiqueta-pildora`), descrito en [diseno.md](diseno.md). Logotipo en texto y SVG (`logo.tsx`: símbolo «ë» en círculo y «badulakë» con la «a» subrayada) e icono de la app `icon.svg` (para la Tarea 16). Página 404 con marca, también para direcciones que no existen en ninguna lengua. No cambian recorridos ni textos, salvo los tres de la 404.
+- **Provisional:** es una base hasta que LIN3S entregue la identidad y Miren Sanz (EITB) la valide; para cambiarla basta con tocar `globals.css` y `logo.tsx`.
+- **Propuso y aplicó:** Claude (tarea 14 del plan maestro) · **Decidió:** OlaIA
+

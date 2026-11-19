@@ -255,5 +255,10 @@
       "resolver": "Salaketa ebatzita.",
       "error": "Zerbait huts egin du. Saiatu berriro."
     }
+  },
+  "NotFound": {
+    "title": "Orrialde hau ez dago",
+    "text": "Agian esteka gaizki dago idatzita, edo orrialdea oraindik ez dago irekita.",
+    "home": "Itzuli azalera"
   }
 }

@@ -1,12 +1,18 @@
 @import "tailwindcss";
 
-/* Colores de la marca existente (badulake.org). Provisionales hasta que
-   LIN3S entregue la identidad y Miren Sanz (EITB) le dé el visto bueno. */
+/* Sistema de estilos «Luz de barrio» (Tarea 14, D-028, docs/diseno.md).
+   Parte de la marca que ya existe (badulake.org): amarillo y azul noche, Raleway y Roboto.
+   Provisional hasta que LIN3S entregue la identidad y Miren Sanz (EITB) le dé el visto bueno:
+   para cambiarla basta con tocar los valores de este archivo. */
 @theme inline {
-  --color-amarillo: #fedb75;
-  --color-amarillo-claro: #fff6dc;
-  --color-noche: #161944;
-  --color-error: #a3141d;
+  /* Colores */
+  --color-amarillo: #fedb75;       /* acento: marca, avisos buenos, etiquetas, cabecera */
+  --color-amarillo-claro: #fff6dc; /* fondo de las páginas (crema) */
+  --color-noche: #161944;          /* texto, botones, bordes */
+  --color-suave: #4a4d73;          /* texto secundario (ayudas, etiquetas pequeñas): 7,6 a 1 sobre el crema */
+  --color-papel: #ffffff;          /* campos y tarjetas */
+  --color-error: #a3141d;          /* errores */
+  /* Letras */
   --font-sans: var(--font-roboto);
   --font-display: var(--font-raleway);
 }
@@ -14,18 +20,103 @@
 body {
   background: var(--color-amarillo-claro);
   color: var(--color-noche);
+  font-size: 1.0625rem; /* 17 px: un punto más cómodo que el estándar */
+  line-height: 1.55;
 }
 
-/* Accesibilidad (tarea 11): el foco del teclado se ve siempre, con el mismo trazo en toda la web. */
+/* Foco del teclado: siempre visible y con el mismo trazo (accesibilidad, Tarea 11). */
 :focus-visible {
   outline: 3px solid var(--color-noche);
   outline-offset: 2px;
 }
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-  outline: 3px solid var(--color-noche);
-  outline-offset: 2px;
+/* Sobre fondos oscuros (pie de página, botones) el trazo es amarillo. */
+.sobre-noche :focus-visible {
+  outline-color: var(--color-amarillo);
+}
+
+/* Piezas reutilizables. Todo el aspecto de la web sale de aquí. */
+@layer components {
+  /* Página: columna centrada, con el mismo margen en todas. */
+  .pagina {
+    margin-inline: auto;
+    display: flex;
+    max-width: 42rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem 3rem;
+  }
+  @media (min-width: 40rem) {
+    .pagina { padding-inline: 2rem; }
+  }
+
+  /* Títulos */
+  .titulo-1 { font-family: var(--font-display); font-size: 2rem; line-height: 1.15; font-weight: 800; letter-spacing: -0.01em; }
+  .titulo-2 { font-family: var(--font-display); font-size: 1.5rem; line-height: 1.2; font-weight: 700; }
+  .titulo-3 { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.25; font-weight: 700; }
+  @media (min-width: 40rem) {
+    .titulo-1 { font-size: 2.5rem; }
+  }
+
+  /* Botones: principal (azul noche), secundario (con borde) y de enlace. Mínimo 44 px de alto. */
+  .boton,
+  .boton-2 {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    border: 2px solid var(--color-noche);
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+  }
+  .boton { background: var(--color-noche); color: #fff; font-size: 1.125rem; }
+  .boton:hover { background: var(--color-amarillo); color: var(--color-noche); }
+  .boton-2 { background: transparent; color: var(--color-noche); }
+  .boton-2:hover { background: var(--color-amarillo); }
+  .boton:disabled,
+  .boton-2:disabled { opacity: 0.6; cursor: default; }
+  .enlace { font-weight: 500; text-decoration: underline; text-underline-offset: 4px; border-radius: 0.25rem; }
+  .enlace:hover { text-decoration-thickness: 3px; }
+
+  /* Campos de formulario */
+  .campo {
+    width: 100%;
+    min-height: 2.75rem;
+    border-radius: 0.75rem;
+    border: 2px solid var(--color-noche);
+    background: var(--color-papel);
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+  }
+  .campo[aria-invalid="true"] { border-color: var(--color-error); }
+  .etiqueta { font-weight: 700; }
+  .ayuda { font-size: 0.9375rem; color: var(--color-suave); }
+  .error-texto { font-size: 0.9375rem; font-weight: 600; color: var(--color-error); }
+
+  /* Avisos: amarillo (bueno o informativo) y rojo (error). Siempre con texto, nunca solo color. */
+  .aviso { border-radius: 0.75rem; background: var(--color-amarillo); padding: 1rem; font-weight: 500; }
+  .aviso-error { border-radius: 0.75rem; border: 2px solid var(--color-error); background: var(--color-papel); padding: 1rem; font-weight: 600; color: var(--color-error); }
+
+  /* Tarjeta de badulake: papel blanco, borde azul noche y sombra amarilla «de pegatina». */
+  .tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border-radius: 1.25rem;
+    border: 2px solid var(--color-noche);
+    background: var(--color-papel);
+    padding: 1rem;
+    box-shadow: 4px 4px 0 var(--color-amarillo);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  a.tarjeta:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--color-amarillo); }
+
+  /* Etiquetas pequeñas (plazas, «tuyo», «borrador»…) */
+  .etiqueta-pildora { display: inline-block; border-radius: 9999px; background: var(--color-amarillo); padding: 0.125rem 0.75rem; font-size: 0.9375rem; font-weight: 700; }
+  .etiqueta-pildora.contorno { background: transparent; border: 2px solid var(--color-noche); }
 }
 
 /* «Reducir movimiento»: sin animaciones ni desplazamientos suaves. */
@@ -38,4 +129,5 @@ textarea:focus-visible {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  a.tarjeta:hover { transform: none; }
 }

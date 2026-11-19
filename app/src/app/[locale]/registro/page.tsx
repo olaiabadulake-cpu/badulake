@@ -16,8 +16,8 @@ export default async function SignUp() {
   const t = await getTranslations("Account");
 
   return (
-    <div lang={await contentLang()} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
-      <h1 className="font-display text-3xl font-bold">{t("signUpTitle")}</h1>
+    <div lang={await contentLang()} className="pagina">
+      <h1 className="titulo-1">{t("signUpTitle")}</h1>
       <p className="text-lg">{t("signUpIntro")}</p>
       <SignUpForm />
     </div>

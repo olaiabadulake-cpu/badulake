@@ -19,8 +19,8 @@ export default async function SignIn({ searchParams }: PageProps<"/[locale]/entr
   const t = await getTranslations("Account");
 
   return (
-    <div lang={await contentLang()} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
-      <h1 className="font-display text-3xl font-bold">{t("signInTitle")}</h1>
+    <div lang={await contentLang()} className="pagina">
+      <h1 className="titulo-1">{t("signInTitle")}</h1>
       <Suspense>
         <Notice searchParams={searchParams} />
       </Suspense>
@@ -35,5 +35,5 @@ async function Notice({ searchParams }: Pick<PageProps<"/[locale]/entrar">, "sea
   const notice = notices.find((n) => n === aviso);
   if (!notice) return null;
   const t = await getTranslations("Account.notices");
-  return <p role="status" className="rounded-lg bg-amarillo p-4 font-medium">{t(notice)}</p>;
+  return <p role="status" className="aviso">{t(notice)}</p>;
 }

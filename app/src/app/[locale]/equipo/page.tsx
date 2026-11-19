@@ -19,8 +19,8 @@ export default async function TeamPage({ searchParams }: PageProps<"/[locale]/eq
   if (!accountsOpen) notFound();
   const t = await getTranslations("Team");
   return (
-    <div lang={await contentLang()} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
-      <h1 className="font-display text-3xl font-bold">{t("title")}</h1>
+    <div lang={await contentLang()} className="pagina">
+      <h1 className="titulo-1">{t("title")}</h1>
       <Suspense fallback={<p>{t("loading")}</p>}>
         <Reports searchParams={searchParams} />
       </Suspense>
@@ -54,9 +54,9 @@ async function Reports({ searchParams }: Pick<PageProps<"/[locale]/equipo">, "se
   const date = new Intl.DateTimeFormat(await contentLang(), {
     dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Madrid",
   });
-  const solid = "rounded-full bg-noche px-5 py-2.5 font-semibold text-white hover:bg-noche/90";
-  const outline = "rounded-full border-2 border-noche px-5 py-2 font-semibold hover:bg-noche/5";
-  const danger = "rounded-full border-2 border-error px-5 py-2 font-semibold text-error hover:bg-error/5";
+  const solid = "boton !text-base";
+  const outline = "boton-2 !text-base";
+  const danger = "boton-2 !border-error !text-base !text-error";
 
   const button = (r: Report, kind: string, label: string, cls: string) => (
     <form action={teamAction}>
@@ -69,11 +69,11 @@ async function Reports({ searchParams }: Pick<PageProps<"/[locale]/equipo">, "se
 
   return (
     <>
-      <p className="text-noche/70">{t("intro")}</p>
+      <p className="ayuda">{t("intro")}</p>
       {notice && (
         <p
           role={notice === "error" ? "alert" : "status"}
-          className={`rounded-lg p-4 font-medium ${notice === "error" ? "border-2 border-error bg-white text-error" : "bg-amarillo"}`}
+          className={notice === "error" ? "aviso-error" : "aviso"}
         >
           {t(`notices.${notice}`)}
         </p>
@@ -82,38 +82,38 @@ async function Reports({ searchParams }: Pick<PageProps<"/[locale]/equipo">, "se
         <p className="text-lg">{t("empty")}</p>
       ) : (
         <>
-          <p className="font-medium">{t("count", { count: reports.length })}</p>
+          <p className="etiqueta">{t("count", { count: reports.length })}</p>
           <ul className="flex flex-col gap-5">
             {reports.map((r) => {
               const reason = (reportReasons as readonly string[]).includes(r.motivo) ? r.motivo : "otro";
               return (
-                <li key={r.id} className="flex flex-col gap-3 rounded-xl border-2 border-noche/30 p-4">
-                  <h2 className="font-display text-xl font-bold">{r.titulo}</h2>
-                  <p role="group" className="flex flex-wrap gap-2 text-sm font-medium">
-                    {r.oculto && <span className="rounded-full bg-amarillo px-3 py-1">{t("hidden")}</span>}
-                    {r.suspendida && <span className="rounded-full bg-amarillo px-3 py-1">{t("suspended")}</span>}
+                <li key={r.id} className="tarjeta gap-3">
+                  <h2 className="titulo-3">{r.titulo}</h2>
+                  <p role="group" className="flex flex-wrap gap-2">
+                    {r.oculto && <span className="etiqueta-pildora">{t("hidden")}</span>}
+                    {r.suspendida && <span className="etiqueta-pildora">{t("suspended")}</span>}
                   </p>
                   <dl className="flex flex-col gap-2">
                     <div>
-                      <dt className="text-sm font-medium text-noche/70">{t("reason")}</dt>
+                      <dt className="ayuda font-medium">{t("reason")}</dt>
                       <dd>{tr(`reasons.${reason}`)}</dd>
                     </div>
                     {r.texto && (
                       <div>
-                        <dt className="text-sm font-medium text-noche/70">{t("note")}</dt>
+                        <dt className="ayuda font-medium">{t("note")}</dt>
                         <dd className="whitespace-pre-line">{r.texto}</dd>
                       </div>
                     )}
                     <div>
-                      <dt className="text-sm font-medium text-noche/70">{t("reportedOn")}</dt>
+                      <dt className="ayuda font-medium">{t("reportedOn")}</dt>
                       <dd>
                         {date.format(new Date(r.creada_en))} · {t("reportsOfThis", { count: r.denuncias_del_badulake })}
                       </dd>
                     </div>
                     <div>
-                      <dt className="text-sm font-medium text-noche/70">{t("badulake")}</dt>
+                      <dt className="ayuda font-medium">{t("badulake")}</dt>
                       <dd className="whitespace-pre-line">{r.descripcion}</dd>
-                      <dd className="text-noche/70">
+                      <dd className="ayuda">
                         {r.zona} · {date.format(new Date(r.fecha_hora))}
                       </dd>
                     </div>

@@ -17,8 +17,8 @@ export default async function BadulakesList() {
   const t = await getTranslations("Badulake");
 
   return (
-    <div lang={await contentLang()} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
-      <h1 className="font-display text-3xl font-bold">{t("listTitle")}</h1>
+    <div lang={await contentLang()} className="pagina">
+      <h1 className="titulo-1">{t("listTitle")}</h1>
       <Suspense fallback={<p>{t("loading")}</p>}>
         <List />
       </Suspense>
@@ -64,7 +64,7 @@ async function List() {
   const create = (
     <Link
       href="/badulakes/nuevo"
-      className="rounded-full bg-noche px-6 py-3 text-center text-lg font-semibold text-white hover:bg-noche/90 sm:self-start"
+      className="boton sm:self-start"
     >
       {nav("create")}
     </Link>
@@ -89,19 +89,19 @@ async function List() {
           <li key={b.id}>
             <Link
               href={`/badulakes/${b.id}`}
-              className="flex flex-col gap-1 rounded-2xl border-2 border-noche/30 p-4 hover:border-noche focus-visible:border-noche"
+              className="tarjeta"
             >
-              <span className="font-display text-xl font-bold">{b.titulo}</span>
+              <span className="titulo-3">{b.titulo}</span>
               {(own.has(b.id) || joined.has(b.id)) && (
-                <span className="flex flex-wrap gap-2 text-sm font-semibold">
-                  {own.has(b.id) && <span className="rounded-full bg-amarillo px-3 py-0.5">{t("mine")}</span>}
-                  {b.estado === "borrador" && <span className="rounded-full border-2 border-noche px-3 py-0.5">{t("draft")}</span>}
-                  {joined.has(b.id) && <span className="rounded-full bg-amarillo px-3 py-0.5">{t("joinedTag")}</span>}
+                <span className="flex flex-wrap gap-2">
+                  {own.has(b.id) && <span className="etiqueta-pildora">{t("mine")}</span>}
+                  {b.estado === "borrador" && <span className="etiqueta-pildora contorno">{t("draft")}</span>}
+                  {joined.has(b.id) && <span className="etiqueta-pildora">{t("joinedTag")}</span>}
                 </span>
               )}
               <span>{fmt.format(new Date(b.fecha_hora))}</span>
               <span>{b.zona}</span>
-              <span className="font-medium">
+              <span className="etiqueta">
                 {free === 0 ? t("full") : t("freeSeats", { count: free })}
               </span>
             </Link>

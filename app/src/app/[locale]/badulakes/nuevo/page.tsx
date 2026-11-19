@@ -18,8 +18,8 @@ export default async function NewBadulake() {
   const t = await getTranslations("Badulake");
 
   return (
-    <div lang={await contentLang()} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
-      <h1 className="font-display text-3xl font-bold">{t("newTitle")}</h1>
+    <div lang={await contentLang()} className="pagina">
+      <h1 className="titulo-1">{t("newTitle")}</h1>
       <Suspense fallback={<p>{t("loading")}</p>}>
         <Form />
       </Suspense>

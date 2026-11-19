@@ -52,7 +52,7 @@ function LanguageSelect({
         value={current}
         disabled={disabled}
         onChange={(event) => onChange?.(event.target.value as Locale)}
-        className="min-w-0 max-w-full rounded-full border-2 border-noche bg-white py-1.5 pr-8 pl-3 font-semibold text-noche"
+        className="min-w-0 max-w-full rounded-full border-2 border-noche bg-papel py-1.5 pr-8 pl-3 font-semibold text-noche"
       >
         {locales.map((locale) => (
           <option key={locale} value={locale} lang={locale}>

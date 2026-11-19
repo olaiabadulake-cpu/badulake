@@ -9,7 +9,7 @@ import { signIn, type SignInState } from "../cuenta/actions";
 const initial: SignInState = { status: "idle" };
 
 const input =
-  "w-full rounded-lg border-2 border-noche/60 bg-white px-3 py-2.5 text-base focus:border-noche aria-invalid:border-error";
+  "campo";
 
 export function SignInForm() {
   const t = useTranslations("Account");
@@ -25,7 +25,7 @@ export function SignInForm() {
       <input type="hidden" name="locale" value={locale} />
 
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="email" className="font-medium">{t("email")}</label>
+        <label htmlFor="email" className="etiqueta">{t("email")}</label>
         <input
           id="email" name="email" type="email" autoComplete="email" required
           aria-invalid={Boolean(message)} aria-describedby={message ? "signin-error" : undefined}
@@ -34,7 +34,7 @@ export function SignInForm() {
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="password" className="font-medium">{t("password")}</label>
+        <label htmlFor="password" className="etiqueta">{t("password")}</label>
         <input
           id="password" name="password" type="password" autoComplete="current-password" required
           aria-invalid={Boolean(message)} aria-describedby={message ? "signin-error" : undefined}
@@ -43,19 +43,19 @@ export function SignInForm() {
       </div>
 
       {message && (
-        <p id="signin-error" role="alert" className="font-medium text-error">{t(`errors.${message}`)}</p>
+        <p id="signin-error" role="alert" className="error-texto">{t(`errors.${message}`)}</p>
       )}
 
       <button
         type="submit" disabled={pending}
-        className="rounded-full bg-noche px-6 py-3 text-lg font-semibold text-white hover:bg-noche/90 disabled:opacity-60 sm:self-start"
+        className="boton sm:self-start"
       >
         {pending ? t("pending") : t("signInSubmit")}
       </button>
 
       <p>
         {t("noAccount")}{" "}
-        <Link href="/registro" className="font-medium underline underline-offset-4">{t("signUpLink")}</Link>
+        <Link href="/registro" className="enlace">{t("signUpLink")}</Link>
       </p>
     </form>
   );

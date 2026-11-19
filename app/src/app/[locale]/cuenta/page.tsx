@@ -18,8 +18,8 @@ export default async function AccountPage() {
   const t = await getTranslations("Account");
 
   return (
-    <div lang={await contentLang()} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
-      <h1 className="font-display text-3xl font-bold">{t("accountTitle")}</h1>
+    <div lang={await contentLang()} className="pagina">
+      <h1 className="titulo-1">{t("accountTitle")}</h1>
       <Suspense fallback={<p>{t("loading")}</p>}>
         <Account />
       </Suspense>
@@ -41,7 +41,7 @@ async function Account() {
         <input type="hidden" name="locale" value={locale} />
         <button
           type="submit"
-          className="rounded-full border-2 border-noche px-6 py-2.5 font-semibold hover:bg-noche/5"
+          className="boton-2"
         >
           {t("signOut")}
         </button>

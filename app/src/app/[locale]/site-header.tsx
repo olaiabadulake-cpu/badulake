@@ -4,6 +4,7 @@ import { contentLang } from "@/i18n/content-lang";
 import { Link } from "@/i18n/navigation";
 import { accountsOpen, getCurrentUser } from "@/lib/supabase/server";
 import { LanguageSwitch, LanguageSwitchFallback } from "./language-switch";
+import { Logo } from "./logo";
 import { NavLink, PlainNavLink } from "./nav-link";
 
 // El mismo menú en todas las páginas (docs/recorridos.md). Solo cambia según haya o no sesión.
@@ -16,17 +17,17 @@ export async function SiteHeader() {
   const whatIsPlain = <li key="que-es"><PlainNavLink href="/que-es">{t("whatIs")}</PlainNavLink></li>;
 
   return (
-    <header lang={await contentLang()} className="border-b border-noche/15">
+    <header lang={await contentLang()} className="border-b-2 border-noche bg-amarillo">
       <div className="mx-auto flex max-w-2xl flex-wrap items-center gap-x-6 gap-y-3 px-4 py-3 sm:px-8">
         <Link
           href="/"
           aria-label={t("home")}
-          className="rounded font-display text-xl font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-noche"
+          className="rounded text-xl"
         >
-          badulakë
+          <Logo symbolClass="size-9" />
         </Link>
         <nav aria-label={t("label")} className="flex-1">
-          <ul className="flex flex-wrap gap-x-4 gap-y-2 font-medium">
+          <ul className="flex flex-wrap gap-x-5 gap-y-1 font-semibold">
             <Suspense fallback={whatIsPlain}>
               {accountsOpen ? <SessionLinks whatIs={whatIs} /> : whatIs}
             </Suspense>
