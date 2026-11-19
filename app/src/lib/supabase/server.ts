@@ -1,5 +1,6 @@
 import "server-only";
 import { cookies } from "next/headers";
+import { connection } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 
 // Las claves vienen de variables de entorno (nunca del código ni NEXT_PUBLIC_*).
@@ -14,6 +15,9 @@ export const accountsOpen = Boolean(url && key) && process.env.CUENTAS_ABIERTAS 
 // Hay que crear uno nuevo en cada petición.
 export async function createSupabase() {
   if (!url || !key) throw new Error("Supabase no está configurado.");
+  // Lo que depende de la sesión se calcula siempre en el momento de la visita, nunca al
+  // preparar la página de antemano (Supabase mira la hora para saber si la sesión ha caducado).
+  await connection();
   const store = await cookies();
 
   return createServerClient(url, key, {

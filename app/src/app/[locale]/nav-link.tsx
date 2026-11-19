@@ -10,12 +10,17 @@ export function NavLink({ href, children }: { href: string; children: React.Reac
     pathname === href ||
     (href === "/badulakes" && pathname.startsWith("/badulakes/") && pathname !== "/badulakes/nuevo");
   return (
-    <Link
-      href={href}
-      aria-current={current ? "page" : undefined}
-      className={`rounded underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-noche ${current ? "underline decoration-2" : ""}`}
-    >
+    <Link href={href} aria-current={current ? "page" : undefined} className={`${linkClass} ${current ? "underline decoration-2" : ""}`}>
       {children}
     </Link>
   );
 }
+
+// El mismo enlace sin marcar la página actual. Se enseña un instante mientras se prepara la página
+// en las que dependen de la dirección (p. ej. cada badulake), que no se pueden preparar de antemano.
+export function PlainNavLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return <Link href={href} className={linkClass}>{children}</Link>;
+}
+
+const linkClass =
+  "rounded underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-noche";

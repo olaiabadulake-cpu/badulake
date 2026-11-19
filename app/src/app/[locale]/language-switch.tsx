@@ -13,6 +13,33 @@ export function LanguageSwitch({ label }: { label: string }) {
   const [pending, startTransition] = useTransition();
 
   return (
+    <LanguageSelect
+      label={label}
+      current={current}
+      disabled={pending}
+      onChange={(locale) => startTransition(() => router.replace(pathname, { locale }))}
+    />
+  );
+}
+
+// El mismo menú, quieto, mientras se prepara la página (en las que dependen de la dirección).
+export function LanguageSwitchFallback({ label }: { label: string }) {
+  const current = useLocale() as Locale;
+  return <LanguageSelect label={label} current={current} disabled />;
+}
+
+function LanguageSelect({
+  label,
+  current,
+  disabled,
+  onChange,
+}: {
+  label: string;
+  current: Locale;
+  disabled: boolean;
+  onChange?: (locale: Locale) => void;
+}) {
+  return (
     <label className="flex items-center gap-2 text-sm font-semibold">
       {/* El globo se entiende en cualquier lengua; el texto queda para lectores de pantalla. */}
       <svg aria-hidden viewBox="0 0 24 24" className="size-6 text-noche" fill="none" stroke="currentColor" strokeWidth="2">
@@ -22,11 +49,8 @@ export function LanguageSwitch({ label }: { label: string }) {
       <span className="sr-only">{label}</span>
       <select
         value={current}
-        disabled={pending}
-        onChange={(event) => {
-          const locale = event.target.value as Locale;
-          startTransition(() => router.replace(pathname, { locale }));
-        }}
+        disabled={disabled}
+        onChange={(event) => onChange?.(event.target.value as Locale)}
         className="rounded-full border-2 border-noche bg-white py-1.5 pr-8 pl-3 font-semibold text-noche focus:outline-2 focus:outline-offset-2 focus:outline-noche"
       >
         {locales.map((locale) => (

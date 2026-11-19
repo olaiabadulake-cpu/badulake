@@ -2,8 +2,8 @@ import { Suspense } from "react";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { accountsOpen, getCurrentUser } from "@/lib/supabase/server";
-import { LanguageSwitch } from "./language-switch";
-import { NavLink } from "./nav-link";
+import { LanguageSwitch, LanguageSwitchFallback } from "./language-switch";
+import { NavLink, PlainNavLink } from "./nav-link";
 
 // El mismo menú en todas las páginas (docs/recorridos.md). Solo cambia según haya o no sesión.
 // Mientras las cuentas estén cerradas en producción, solo enseña «Qué es un badulake» (D-019).
@@ -11,6 +11,8 @@ export async function SiteHeader() {
   const t = await getTranslations("Nav");
   const f = await getTranslations("Footer");
   const whatIs = <li key="que-es"><NavLink href="/que-es">{t("whatIs")}</NavLink></li>;
+  // Mientras se prepara la página: el mismo enlace, sin marcar en qué página estás.
+  const whatIsPlain = <li key="que-es"><PlainNavLink href="/que-es">{t("whatIs")}</PlainNavLink></li>;
 
   return (
     <header className="border-b border-noche/15">
@@ -24,16 +26,14 @@ export async function SiteHeader() {
         </Link>
         <nav aria-label={t("label")} className="flex-1">
           <ul className="flex flex-wrap gap-x-4 gap-y-2 font-medium">
-            {accountsOpen ? (
-              <Suspense fallback={whatIs}>
-                <SessionLinks whatIs={whatIs} />
-              </Suspense>
-            ) : (
-              whatIs
-            )}
+            <Suspense fallback={whatIsPlain}>
+              {accountsOpen ? <SessionLinks whatIs={whatIs} /> : whatIs}
+            </Suspense>
           </ul>
         </nav>
-        <LanguageSwitch label={f("language")} />
+        <Suspense fallback={<LanguageSwitchFallback label={f("language")} />}>
+          <LanguageSwitch label={f("language")} />
+        </Suspense>
       </div>
     </header>
   );

@@ -99,7 +99,7 @@ Al pasarse sale «Demasiados intentos. Espera unos minutos y vuelve a probar». 
 
 ## 7. Lo que queda
 
-- **Abrir las cuentas en producción:** con `CUENTAS_ABIERTAS=1`, la compilación falla hoy en la página de cada badulake (el selector de idioma necesita esperar a la página; viene de las Tareas 6 y 7). Hay que arreglarlo antes de abrir.
+- ~~**Abrir las cuentas en producción:** con `CUENTAS_ABIERTAS=1`, la compilación fallaba en la página de cada badulake.~~ **Arreglado en la Tarea 8.1:** el menú y el selector de idioma esperan a la página, y lo que depende de la sesión se calcula siempre en el momento de la visita.
 - **Quien tenga la clave pública** podría llamar a Supabase sin pasar por la web, por ejemplo para crear una cuenta aunque `CUENTAS_ABIERTAS` esté apagado. La clave no está publicada en ningún sitio y la base de datos sigue exigiendo los 18 años, la verificación de correo y todas las reglas. Antes de abrir se podría apagar «Allow new users to sign up» en Supabase hasta el día del lanzamiento.
 - **Contraseñas filtradas:** solo con el plan Pro de Supabase.
 - **Correo propio** (Tarea 10), **privacidad** (Tarea 9) y **denuncias** (Tarea 13).
