@@ -107,3 +107,11 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Decisión:** La base de datos de Badulake es un proyecto de Supabase en Frankfurt (`eu-central-1`), con seguridad por filas (RLS) activada en las tablas nuevas. Plan gratuito para empezar.
 - **Por qué:** Los datos de las personas se guardan en la UE (RGPD), Supabase tiene plan gratuito y encaja con Next.js. Las claves nunca van en el repositorio: solo en `app/.env.local` y en las variables de entorno de Vercel. En la app solo se usa la clave pública (publishable); la clave secreta no se usa.
 - **Propuso:** Claude · **Decidió:** OlaIA · **Hizo:** OlaIA (cuenta y contraseña) y Claude (proyecto, función y claves)
+
+### D-017 · Lista de espera guardada en Supabase, solo con permiso de alta
+- **Fecha:** 19/11/2026
+- **Alternativas:** usar la clave secreta (`service_role`) desde el servidor; guardar en un archivo.
+- **Decisión:** Los correos se guardan en la tabla `lista_espera` de Supabase (Frankfurt) con RLS activada y una única política: la clave pública solo puede insertar. Leer la lista se hace solo desde el panel de Supabase. No se usa la clave secreta. Un correo repetido se ignora sin avisar.
+- **Por qué:** Es lo mínimo necesario (RGPD: solo correo, zona, idioma y fecha del consentimiento) y, aunque alguien consiguiera la clave pública, no podría leer los correos de nadie.
+- **Pendiente:** el aviso de privacidad definitivo de la Asesoría Jurídica debe estar publicado **antes de abrir la web al público**; la página `/privacidad` es provisional.
+- **Propuso:** Claude · **Decidió:** OlaIA · **Hizo:** Claude
