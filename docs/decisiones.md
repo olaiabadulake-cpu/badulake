@@ -43,3 +43,17 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Decisión:** En el Mac las altas se guardan en un archivo local (que no se sube a GitHub). En la web publicada el formulario se oculta hasta que haya base de datos y aviso de privacidad.
 - **Por qué:** Publicar un formulario que recoge correos sin guardarlos bien ni explicar qué se hace con ellos sería engañar a quien se apunta.
 - **Propuso:** Claude · **Decidió:** pendiente de validar por OlaIA
+
+### D-007 · Idioma por defecto: castellano o euskera
+- **Fecha:** 19/11/2026
+- **Contexto:** La web elige el idioma según el navegador. Si el navegador no está ni en euskera ni en castellano (por ejemplo, en inglés), usa el idioma por defecto. Hoy es el castellano.
+- **Alternativas:** castellano (la mayoría de navegadores de Euskadi están en castellano); euskera (proyecto de EITB, que da prioridad al euskera).
+- **Decisión:** pendiente. Lo deciden EITB y Jon Telletxea, antes de grabar el episodio 2. Cambiarlo es una palabra en `app/src/i18n/routing.ts`.
+- **Propuso:** Claude · **Decide:** EITB
+
+### D-008 · Recordar el idioma elegido durante un año
+- **Fecha:** 19/11/2026
+- **Decisión:** Cuando alguien cambia de idioma, la web lo guarda en una cookie (`NEXT_LOCALE`) que dura un año. Antes se borraba al cerrar el navegador, y el navegador volvía a elegir por la persona. La página de privacidad lo explica.
+- **Por qué:** Quien elige euskera con el navegador en castellano tiene que poder volver otro día y seguir en euskera. Es una cookie técnica: solo guarda «eu» o «es».
+- **Propuso:** Claude · **Decidió:** OlaIA
+- **Más lenguas (FORTA, CIRCOM):** la app ya está preparada. Añadir una lengua es añadirla en `routing.ts` y crear su archivo en `app/messages/`. Solo habrá que ampliar el selector EU | ES cuando llegue la tercera lengua; no se hace antes.

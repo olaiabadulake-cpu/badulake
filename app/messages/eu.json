@@ -33,6 +33,7 @@
   "Privacy": {
     "title": "Pribatutasun-oharra",
     "pending": "EITBko Aholkularitza Juridikoa pribatutasun-oharra idazten ari da, eta hemen agertuko da Badulake abian jarri aurretik.",
+    "cookie": "Webgune honek cookie bakarra gordetzen du, NEXT_LOCALE izenekoa, aukeratzen duzun hizkuntza gogoratzeko. Urtebete irauten du, eta ez da beste ezertarako erabiltzen.",
     "back": "Itzuli"
   },
   "Footer": {

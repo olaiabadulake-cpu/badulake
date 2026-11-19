@@ -33,6 +33,7 @@
   "Privacy": {
     "title": "Aviso de privacidad",
     "pending": "El aviso de privacidad lo está redactando la Asesoría Jurídica de EITB y aparecerá aquí antes del lanzamiento.",
+    "cookie": "Esta web guarda una sola cookie, llamada NEXT_LOCALE, para recordar el idioma que eliges. Dura un año y no se usa para nada más.",
     "back": "Volver"
   },
   "Footer": {
