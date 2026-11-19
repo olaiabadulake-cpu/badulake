@@ -39,7 +39,7 @@ La Tarea 6 comprobó 6 personas a la vez por 5 plazas; la Tarea 20 (D-032) añad
 
 Traducido: aunque 120 personas pulsen en el mismo segundo, entran justo las plazas, el resto queda en la lista en orden y nadie recibe un error. Las peticiones se ponen en cola dentro de la base de datos (bloqueo del badulake), por eso la última espera algo más de un segundo, pero ninguna falla.
 
-- **Límite de Supabase al probar:** las entradas de cuenta (iniciar sesión) están limitadas por conexión (unas 10 cada 2 minutos tras las primeras 30), así que preparar las 120 sesiones tardó unos 5 minutos. **Es un límite de la prueba, no de apuntarse:** el día de Sant Boi la gente entra poco a poco. Para registrarse a la vez (crear cuentas) rige además el límite de correos de Supabase hasta tener el correo propio (Tarea 10).
+- **Límite de Supabase al probar:** las entradas de cuenta (iniciar sesión) están limitadas por conexión (tras las primeras 30, unas 10 más cada 20 segundos), así que preparar las 120 sesiones tardó unos 5 minutos. **Es un límite de la prueba, no de apuntarse:** el día de Sant Boi la gente entra poco a poco. Para registrarse a la vez (crear cuentas) rige además el límite de correos de Supabase hasta tener el correo propio (Tarea 10).
 - **Borrado:** al acabar se borraron las cuentas, el badulake y todo lo demás. Comprobado: cuentas, perfiles, badulakes, direcciones, inscripciones y lista de espera **a 0**.
 - **No se probó** la salida a la vez de varias personas con otras entrando (la Tarea 20 ya lo comprobó con 3 bajas a la vez y 15 cuentas).
 
