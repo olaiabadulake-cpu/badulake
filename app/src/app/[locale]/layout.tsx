@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { locale as rootLocale } from "next/root-params";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { contentLang } from "@/i18n/content-lang";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { SiteHeader } from "./site-header";
@@ -48,11 +49,11 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
             {nav("skip")}
           </a>
           <SiteHeader />
-          <main id="contenido" className="flex-1">{children}</main>
+          <main id="contenido" tabIndex={-1} className="flex-1 focus:outline-none">{children}</main>
           <footer className="flex flex-col gap-1 border-t border-noche/15 px-4 py-4 text-sm sm:px-8">
             <p>
               {t("project")} ·{" "}
-              <Link href="/privacidad" className="underline underline-offset-2">{privacy("footerLink")}</Link>
+              <Link href="/privacidad" lang={await contentLang()} className="underline underline-offset-2">{privacy("footerLink")}</Link>
             </p>
             {/* Todo se escribe en castellano; las demás lenguas son traducciones pendientes de revisar. */}
             {locale !== "es" && <p className="text-noche/70">{t("machine")}</p>}

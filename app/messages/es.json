@@ -145,6 +145,7 @@
       "generic": "Algo ha fallado. Inténtalo de nuevo en un rato."
     },
     "listTitle": "Próximos badulakes",
+    "detailTitle": "Un badulake",
     "listEmpty": "Todavía no hay badulakes. Vuelve pronto o crea uno tú.",
     "freeSeats": "{count, plural, one {# plaza libre} other {# plazas libres}}",
     "full": "Completo: no quedan plazas",

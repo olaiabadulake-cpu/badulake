@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { getTranslations } from "next-intl/server";
+import { contentLang } from "@/i18n/content-lang";
 import { Link } from "@/i18n/navigation";
 import { accountsOpen, getCurrentUser } from "@/lib/supabase/server";
 import { LanguageSwitch, LanguageSwitchFallback } from "./language-switch";
@@ -15,7 +16,7 @@ export async function SiteHeader() {
   const whatIsPlain = <li key="que-es"><PlainNavLink href="/que-es">{t("whatIs")}</PlainNavLink></li>;
 
   return (
-    <header className="border-b border-noche/15">
+    <header lang={await contentLang()} className="border-b border-noche/15">
       <div className="mx-auto flex max-w-2xl flex-wrap items-center gap-x-6 gap-y-3 px-4 py-3 sm:px-8">
         <Link
           href="/"

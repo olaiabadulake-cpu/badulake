@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
+import { contentLang } from "@/i18n/content-lang";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link, redirect } from "@/i18n/navigation";
 import { accountsOpen, createSupabase, getCurrentUser, idsOf } from "@/lib/supabase/server";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Badulake");
+  return { title: `${t("listTitle")} · Badulake` };
+}
 
 export default async function BadulakesList() {
   // Cerrado en producción hasta que exista el aviso de privacidad (D-019, D-021).
@@ -10,7 +17,7 @@ export default async function BadulakesList() {
   const t = await getTranslations("Badulake");
 
   return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
+    <div lang={await contentLang()} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
       <h1 className="font-display text-3xl font-bold">{t("listTitle")}</h1>
       <Suspense fallback={<p>{t("loading")}</p>}>
         <List />
@@ -50,7 +57,7 @@ async function List() {
     ? await supabase.from("inscripciones").select("badulake_id").in("badulake_id", ids)
     : { data: [] };
   const joined = new Set((mine ?? []).map((m) => m.badulake_id));
-  const fmt = new Intl.DateTimeFormat(locale, {
+  const fmt = new Intl.DateTimeFormat(await contentLang(), {
     dateStyle: "full", timeStyle: "short", timeZone: "Europe/Madrid",
   });
 

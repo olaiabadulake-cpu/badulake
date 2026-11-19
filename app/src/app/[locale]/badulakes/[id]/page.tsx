@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { contentLang } from "@/i18n/content-lang";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -5,13 +7,18 @@ import { Link, redirect } from "@/i18n/navigation";
 import { accountsOpen, createSupabase, getCurrentUser, idsOf } from "@/lib/supabase/server";
 import { joinBadulake, leaveBadulake, publishBadulake } from "../actions";
 
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Badulake");
+  return { title: `${t("detailTitle")} · Badulake` };
+}
+
 export default async function BadulakePage({ params, searchParams }: PageProps<"/[locale]/badulakes/[id]">) {
   // Cerrado en producción hasta que exista el aviso de privacidad (D-019, D-020).
   if (!accountsOpen) notFound();
   const t = await getTranslations("Badulake");
 
   return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
+    <div lang={await contentLang()} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
       <Suspense fallback={<p>{t("loading")}</p>}>
         <Details params={params} searchParams={searchParams} />
       </Suspense>
@@ -56,7 +63,7 @@ async function Details({
   const upcoming = new Date(b.fecha_hora) > new Date();
 
   const t = await getTranslations("Badulake");
-  const when = new Intl.DateTimeFormat(locale, {
+  const when = new Intl.DateTimeFormat(await contentLang(), {
     dateStyle: "full", timeStyle: "short", timeZone: "Europe/Madrid",
   }).format(new Date(b.fecha_hora));
   const rows: [string, string][] = [

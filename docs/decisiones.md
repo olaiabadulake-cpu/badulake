@@ -191,3 +191,11 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Cerrado en producción:** `PRIVACY_NOTICE_READY` y `CUENTAS_ABIERTAS` siguen apagados (D-018, D-019).
 - **Por qué:** El RGPD exige privacidad desde el diseño y guardar los datos solo el tiempo necesario. La dirección de una casa no sirve de nada después del badulake. Saber qué badulakes organiza la misma persona podría revelar dónde vive y cuándo está en casa.
 - **Propuso:** Claude · **Decidió:** OlaIA (tarea 9 del plan maestro; plazos y correo de derechos) · **Hizo:** Claude
+
+### D-025 · Accesibilidad nivel AA: lo que aún no está traducido se marca con su idioma verdadero
+- **Fecha:** 19/11/2026
+- **Alternativas:** dejar `lang` de la página tal cual (lectores de pantalla leen castellano con acento extranjero); no dejar elegir lenguas sin traducir; marcar cada texto suelto.
+- **Decisión:** El nivel de accesibilidad es **WCAG 2.2 AA** (detalle en [accesibilidad.md](accesibilidad.md)). Como solo el castellano y el euskera tienen todos los textos, en las demás lenguas el selector y la portada siguen con su lengua, pero el menú, el contenido de cada página, el enlace de privacidad y las fechas llevan `lang="es"` (`app/src/i18n/content-lang.ts`). Al completar una lengua hay que añadirla a la lista `complete` de ese archivo.
+- **Por qué:** `lang` mal puesto hace que el lector de pantalla pronuncie mal y es un fallo de WCAG (3.1.1 y 3.1.2). Es la corrección más pequeña que no cambia el diseño ni obliga a esperar a las traducciones.
+- **Propuso y hizo:** Claude (tarea 11 del plan maestro) · **Decidió:** Claude, por ser técnica; OlaIA puede cambiarla.
+

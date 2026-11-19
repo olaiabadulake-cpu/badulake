@@ -1,6 +1,7 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useRef } from "react";
+import { useFocusFirstError } from "../focus-first-error";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { signIn, type SignInState } from "../cuenta/actions";
@@ -8,17 +9,19 @@ import { signIn, type SignInState } from "../cuenta/actions";
 const initial: SignInState = { status: "idle" };
 
 const input =
-  "w-full rounded-lg border-2 border-noche/30 bg-white px-3 py-2.5 text-base focus:border-noche focus:outline-none aria-invalid:border-error";
+  "w-full rounded-lg border-2 border-noche/60 bg-white px-3 py-2.5 text-base focus:border-noche aria-invalid:border-error";
 
 export function SignInForm() {
   const t = useTranslations("Account");
   const locale = useLocale();
   const [state, action, pending] = useActionState(signIn, initial);
+  const formRef = useRef<HTMLFormElement>(null);
+  useFocusFirstError(formRef, state);
   const err = state.errors ?? {};
   const message = err.credentials ? "credentials" : err.unconfirmed ? "unconfirmed" : err.tooMany ? "tooMany" : err.generic ? "generic" : null;
 
   return (
-    <form action={action} noValidate className="flex flex-col gap-5">
+    <form ref={formRef} action={action} noValidate className="flex flex-col gap-5">
       <input type="hidden" name="locale" value={locale} />
 
       <div className="flex flex-col gap-1.5">

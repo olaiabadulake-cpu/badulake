@@ -40,18 +40,19 @@ function LanguageSelect({
   onChange?: (locale: Locale) => void;
 }) {
   return (
-    <label className="flex items-center gap-2 text-sm font-semibold">
+    <div className="flex max-w-full items-center gap-2 text-sm font-semibold">
       {/* El globo se entiende en cualquier lengua; el texto queda para lectores de pantalla. */}
-      <svg aria-hidden viewBox="0 0 24 24" className="size-6 text-noche" fill="none" stroke="currentColor" strokeWidth="2">
+      <svg aria-hidden viewBox="0 0 24 24" className="size-6 shrink-0 text-noche" fill="none" stroke="currentColor" strokeWidth="2">
         <circle cx="12" cy="12" r="10" />
         <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20" />
       </svg>
-      <span className="sr-only">{label}</span>
+      <label htmlFor="idioma" lang={current} className="sr-only">{label}</label>
       <select
+        id="idioma"
         value={current}
         disabled={disabled}
         onChange={(event) => onChange?.(event.target.value as Locale)}
-        className="rounded-full border-2 border-noche bg-white py-1.5 pr-8 pl-3 font-semibold text-noche focus:outline-2 focus:outline-offset-2 focus:outline-noche"
+        className="min-w-0 max-w-full rounded-full border-2 border-noche bg-white py-1.5 pr-8 pl-3 font-semibold text-noche"
       >
         {locales.map((locale) => (
           <option key={locale} value={locale} lang={locale}>
@@ -59,6 +60,6 @@ function LanguageSelect({
           </option>
         ))}
       </select>
-    </label>
+    </div>
   );
 }

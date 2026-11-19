@@ -1,6 +1,7 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useRef } from "react";
+import { useFocusFirstError } from "./focus-first-error";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { languages, locales, type Locale } from "@/i18n/languages";
@@ -9,11 +10,13 @@ import { joinWaitlist, type WaitlistState } from "./actions";
 const initial: WaitlistState = { status: "idle" };
 
 const input =
-  "w-full rounded-lg border-2 border-noche/30 bg-white px-3 py-2.5 text-base focus:border-noche focus:outline-none aria-invalid:border-error";
+  "w-full rounded-lg border-2 border-noche/60 bg-white px-3 py-2.5 text-base focus:border-noche aria-invalid:border-error";
 
 export function WaitlistForm({ defaultLanguage }: { defaultLanguage: Locale }) {
   const t = useTranslations("Waitlist");
   const [state, action, pending] = useActionState(joinWaitlist, initial);
+  const formRef = useRef<HTMLFormElement>(null);
+  useFocusFirstError(formRef, state);
 
   if (state.status === "success") {
     return (
@@ -26,7 +29,7 @@ export function WaitlistForm({ defaultLanguage }: { defaultLanguage: Locale }) {
   const err = state.errors ?? {};
 
   return (
-    <form action={action} noValidate className="flex flex-col gap-5">
+    <form ref={formRef} action={action} noValidate className="flex flex-col gap-5">
       <h2 className="font-display text-xl font-bold">{t("title")}</h2>
 
       <div className="flex flex-col gap-1.5">
@@ -36,7 +39,7 @@ export function WaitlistForm({ defaultLanguage }: { defaultLanguage: Locale }) {
           aria-invalid={err.email} aria-describedby={err.email ? "email-error" : undefined}
           className={input}
         />
-        {err.email && <p id="email-error" className="text-sm font-medium text-error">{t("errors.email")}</p>}
+        {err.email && <p id="email-error" role="alert" className="text-sm font-medium text-error">{t("errors.email")}</p>}
       </div>
 
       <div className="flex flex-col gap-1.5">
@@ -46,7 +49,7 @@ export function WaitlistForm({ defaultLanguage }: { defaultLanguage: Locale }) {
           aria-invalid={err.zone} aria-describedby={err.zone ? "zone-error" : undefined}
           className={input}
         />
-        {err.zone && <p id="zone-error" className="text-sm font-medium text-error">{t("errors.zone")}</p>}
+        {err.zone && <p id="zone-error" role="alert" className="text-sm font-medium text-error">{t("errors.zone")}</p>}
       </div>
 
       <div className="flex flex-col gap-1.5">
@@ -73,7 +76,7 @@ export function WaitlistForm({ defaultLanguage }: { defaultLanguage: Locale }) {
             })}
           </span>
         </label>
-        {err.consent && <p id="consent-error" className="text-sm font-medium text-error">{t("errors.consent")}</p>}
+        {err.consent && <p id="consent-error" role="alert" className="text-sm font-medium text-error">{t("errors.consent")}</p>}
       </div>
 
       {err.generic && <p role="alert" className="font-medium text-error">{t("errors.generic")}</p>}

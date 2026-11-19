@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { contentLang } from "@/i18n/content-lang";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
@@ -6,11 +8,16 @@ import { Link } from "@/i18n/navigation";
 // sustituirá antes de abrir (PRIVACY_NOTICE_READY y CUENTAS_ABIERTAS siguen apagados).
 const SECTIONS = ["who", "what", "legal", "access", "where", "time", "rights", "cookies"] as const;
 
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Privacy");
+  return { title: `${t("title")} · Badulake` };
+}
+
 export default async function Privacy() {
   const t = await getTranslations("Privacy");
 
   return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
+    <div lang={await contentLang()} className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
       <h1 className="font-display text-3xl font-bold">{t("title")}</h1>
       <div role="note" className="rounded-lg border-2 border-noche bg-amarillo p-4">
         <p className="font-semibold uppercase tracking-wide">{t("draftBadge")}</p>

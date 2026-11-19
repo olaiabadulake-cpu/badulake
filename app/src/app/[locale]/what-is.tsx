@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { contentLang } from "@/i18n/content-lang";
 
 // «Qué es un badulake»: en la portada (como sección) y en /que-es (como página).
 export async function WhatIs({ asPage = false }: { asPage?: boolean }) {
@@ -9,7 +10,7 @@ export async function WhatIs({ asPage = false }: { asPage?: boolean }) {
   const facts = ["free", "noMoney", "people", "adults"] as const;
 
   return (
-    <section aria-labelledby="que-es" className="flex flex-col gap-5">
+    <section lang={await contentLang()} aria-labelledby="que-es" className="flex flex-col gap-5">
       <Title id="que-es" className="font-display text-3xl font-bold">{t("title")}</Title>
       <p className="text-lg">{t("intro")}</p>
 

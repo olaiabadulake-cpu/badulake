@@ -2,6 +2,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { waitlistOpen } from "@/lib/waitlist";
 import { Suspense } from "react";
 import { accountsOpen, getCurrentUser } from "@/lib/supabase/server";
+import { contentLang } from "@/i18n/content-lang";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/languages";
 import { WaitlistForm } from "./waitlist-form";
@@ -63,7 +64,7 @@ async function Notice({ searchParams }: Pick<PageProps<"/[locale]">, "searchPara
   const { aviso } = await searchParams;
   if (aviso !== "salida") return null;
   const t = await getTranslations("Account.notices");
-  return <p role="status" className="rounded-lg bg-amarillo p-4 font-medium">{t("salida")}</p>;
+  return <p role="status" lang={await contentLang()} className="rounded-lg bg-amarillo p-4 font-medium">{t("salida")}</p>;
 }
 
 // Botón principal: sin sesión, crear cuenta; con sesión, ir a los badulakes.
