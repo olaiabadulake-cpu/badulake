@@ -27,9 +27,9 @@
     }
   },
   "Privacy": {
-    "title": "Pribatutasun-oharra",
+    "title": "Pribatutasun-politika",
     "draftBadge": "Behin-behineko zirriborroa",
-    "draftNote": "Testu hau hizkera argian idatzitako zirriborro bat da. EITBko Aholkularitza Juridikoa behin betiko oharra idazten ari da, eta honen ordez jarriko da inor izena eman edo kontua sortu ahal izan baino lehen. Bitartean, aplikazioa itxita dago eta ez du inoren daturik gordetzen.",
+    "draftNote": "Testu hau EITBko Aholkularitza Juridikoak berrikusteko ZIRRIBORRO bat da: ez da behin betikoa eta aldatu daiteke. [A COMPLETAR POR ASESORÍA] markatutako hutsuneak Aholkularitzak beteko ditu. Bitartean, aplikazioa itxita dago eta ez du inoren daturik gordetzen.",
     "sections": {
       "who": {
         "title": "Nor da arduraduna",
@@ -71,7 +71,11 @@
   "Footer": {
     "project": "EITBren proiektu bat",
     "language": "Hizkuntza",
-    "machine": "Gaztelaniatik automatikoki itzulia; oraindik berrikusi gabe."
+    "machine": "Gaztelaniatik automatikoki itzulia; oraindik berrikusi gabe.",
+    "legalLink": "Lege-oharra",
+    "termsLink": "Baldintzak",
+    "cookiesLink": "Cookieak",
+    "legalNav": "Lege-testuak"
   },
   "Account": {
     "signUpTitle": "Sortu kontua",
@@ -160,7 +164,10 @@
       "error": "Zerbait gaizki atera da. Saiatu berriro apur bat geroago.",
       "no_disponible": "Badulake honek ez du izen-emate gehiago onartzen.",
       "apuntada": "Izena eman duzu! Orain helbide zehatza ikus dezakezu.",
-      "borrada": "Badulake honetatik izena kendu duzu."
+      "borrada": "Badulake honetatik izena kendu duzu.",
+      "denunciado": "Salaketa bidalita. Eskerrik asko: taldeak berrikusiko du.",
+      "denuncia_repetida": "Dagoeneko salatu zenuen badulake hau. Taldea berrikusten ari da.",
+      "denuncia_error": "Ezin izan da salaketa bidali. Aukeratu arrazoi bat eta saiatu berriro geroago."
     },
     "back": "Itzuli badulakeetara",
     "mine": "Zuk antolatzen duzu",
@@ -192,5 +199,61 @@
     "noMoney": "Dirurik gabe",
     "people": "5 eta 10 pertsona artean",
     "adults": "18 urtetik gorakoentzat bakarrik"
+  },
+  "Legal": {
+    "draftBadge": "Behin-behineko zirriborroa",
+    "draftNote": "Testu hau EITBko Aholkularitza Juridikoak berrikusteko ZIRRIBORRO bat da: ez da behin betikoa eta aldatu daiteke. [A COMPLETAR POR ASESORÍA] markatutako hutsuneak Aholkularitzak beteko ditu. Bitartean, aplikazioa itxita dago eta ez du inoren daturik gordetzen.",
+    "pendingTranslation": "Testuaren gorputza gaztelaniaz dago, itzulpenaren zain.",
+    "back": "Itzuli",
+    "aviso": {
+      "title": "Lege-oharra"
+    },
+    "condiciones": {
+      "title": "Erabilera-baldintzak"
+    },
+    "cookies": {
+      "title": "Cookien politika"
+    }
+  },
+  "Report": {
+    "button": "Badulake hau salatu",
+    "reasonLegend": "Zergatik salatzen duzu?",
+    "reasons": {
+      "estafa": "Iruzurra dirudi edo dirua eskatzen dute",
+      "ofensivo": "Eduki iraingarria edo diskriminatzailea",
+      "datos": "Norbaiten datu pertsonalak erakusten ditu",
+      "peligroso": "Legez kanpoko edo arriskutsuko zerbait",
+      "spam": "Spama da edo errepikatuta dago",
+      "otro": "Beste arrazoi bat"
+    },
+    "noteLabel": "Kontatu gehiago (aukerakoa)",
+    "noteHint": "Gehienez 300 letra. Ez idatzi inoren daturik. Badulakeko taldeak bakarrik irakurriko du, eta ez daki nor zaren.",
+    "send": "Salaketa bidali",
+    "hiddenByTeam": "Badulakeko taldeak ezkutatu egin du badulake hau: beste inork ez du ikusten."
+  },
+  "Team": {
+    "title": "Taldearen panela",
+    "loading": "Kargatzen…",
+    "intro": "Taldeak bakarrik ikusten du orri hau. Hemen ez da ikusten nork salatzen duen, nork antolatzen duen ez eta helbide zehatza ere.",
+    "empty": "Ez dago salaketa irekirik.",
+    "count": "{count, plural, one {Salaketa ireki #} other {# salaketa ireki}}",
+    "hidden": "Ezkutatuta",
+    "suspended": "Kontua esekita",
+    "reason": "Arrazoia",
+    "note": "Idatzi duena",
+    "reportedOn": "Salatua",
+    "reportsOfThis": "{count, plural, one {Salaketa ireki 1} other {# salaketa ireki}} badulake honetan",
+    "badulake": "Badulakea",
+    "hide": "Badulakea ezkutatu",
+    "show": "Berriro erakutsi",
+    "suspend": "Antolatzailea esekitu",
+    "resolve": "Ebatzitzat markatu",
+    "notices": {
+      "ocultar": "Badulakea ezkutatuta.",
+      "mostrar": "Badulakea berriro ikusgai.",
+      "suspender": "Kontua esekita: ezin da sartu eta bere badulakeak ezkutatuta daude.",
+      "resolver": "Salaketa ebatzita.",
+      "error": "Zerbait huts egin du. Saiatu berriro."
+    }
   }
 }

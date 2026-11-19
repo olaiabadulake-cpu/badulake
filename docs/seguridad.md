@@ -114,7 +114,7 @@ Para abrir las cuentas, todo a la vez:
 1. En Supabase (Authentication → Sign In / Providers), volver a encender **«Allow new users to sign up»**.
 2. En Vercel, poner **`CUENTAS_ABIERTAS=1`** (y `PRIVACY_NOTICE_READY=true` para la lista de espera) y volver a publicar.
 3. Añadir la dirección de la web a las direcciones permitidas de Supabase (URL Configuration) y comprobar que el correo propio (Tarea 10) envía el enlace de verificación.
-4. Que estén publicados el aviso de privacidad (Tareas 9 y 12): sustituir el borrador provisional de `/privacidad` (clave `Privacy` de `app/messages/*.json`) por el texto definitivo de la Asesoría Jurídica, con el correo para ejercer los derechos, y quitar el recuadro «Borrador provisional».
+4. Que estén publicados los textos legales (Tareas 9 y 12: privacidad, aviso legal, condiciones y cookies, borradores en [legal/](legal/README.md)): sustituir el borrador provisional de `/privacidad` (clave `Privacy` de `app/messages/*.json`) por el texto definitivo de la Asesoría Jurídica, con el correo para ejercer los derechos, y quitar el recuadro «Borrador provisional».
 5. Comprobar en Supabase (Integrations → Cron) que la tarea `borrar-datos-caducados` sigue activa y se ha ejecutado bien la última noche.
 6. Comprobar que la parte del servidor sigue en Frankfurt: la cabecera `x-vercel-id` de `/api/hora` debe contener `fra1`.
 7. Si la Tarea 10 añade un proveedor de correo, sumarlo a [privacidad.md](privacidad.md) (apartado 3) y al aviso.

@@ -24,6 +24,7 @@ Todo se graba y se documenta aquí: el código, cada decisión, las herramientas
 | Decisiones y por qué se tomaron | [docs/decisiones.md](docs/decisiones.md) |
 | Herramientas que usamos | [docs/herramientas.md](docs/herramientas.md) |
 | Recorridos de la app y menú | [docs/recorridos.md](docs/recorridos.md) |
+| Borradores de textos legales (para la Asesoría Jurídica) | [docs/legal/](docs/legal/README.md) |
 | La app publicada | [badulake.vercel.app](https://badulake.vercel.app) |
 | El código de la app (Next.js) | carpeta [`app/`](app/) |
 

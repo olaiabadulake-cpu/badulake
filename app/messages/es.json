@@ -27,41 +27,57 @@
     }
   },
   "Privacy": {
-    "title": "Aviso de privacidad",
+    "title": "Política de privacidad",
     "draftBadge": "Borrador provisional",
-    "draftNote": "Este texto es un borrador en lenguaje llano. La Asesoría Jurídica de EITB está redactando el aviso definitivo, que sustituirá a este antes de que nadie pueda apuntarse o crear una cuenta. Mientras tanto, la app está cerrada y no guarda datos de nadie.",
+    "draftNote": "Este texto es un BORRADOR para revisión de la Asesoría Jurídica de EITB: no es definitivo y puede cambiar. Los huecos marcados [A COMPLETAR POR ASESORÍA] los rellenará la Asesoría. Mientras tanto, la app está cerrada y no guarda datos de nadie.",
     "sections": {
-      "who": {
-        "title": "Quién es responsable",
-        "body": "EITB (Euskal Irrati Telebista) es la responsable de tus datos en Badulake. Los datos de contacto completos los añadirá la Asesoría Jurídica."
+      "s01": {
+        "title": "1. Quién es el responsable de tus datos",
+        "body": "- Responsable: **EITB (Euskal Irrati Telebista)** — razón social, NIF y domicilio: **[A COMPLETAR POR ASESORÍA]**\n- Correo para asuntos de privacidad y para ejercer tus derechos: **[A COMPLETAR POR ASESORÍA]**\n- Delegado de protección de datos: **[A COMPLETAR POR ASESORÍA]**\nCumplimos el Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD)."
       },
-      "what": {
-        "title": "Qué datos guardamos y para qué",
-        "body": "- Lista de espera: tu correo, tu zona, el idioma en que quieres el aviso y cuándo diste tu permiso. Solo para avisarte cuando Badulake abra.\n- Tu cuenta: tu correo, tu contraseña (cifrada: nadie puede leerla), tu idioma y la fecha en que comprobamos que eres mayor de edad. Para que puedas entrar y usar la app.\n- Tu fecha de nacimiento: solo se usa en el momento de crear la cuenta para comprobar que tienes 18 años o más. No se guarda.\n- Los badulakes que organizas: título, descripción, fecha, zona, número de plazas y la dirección exacta. Para que otras personas puedan encontrarlo y llegar.\n- Los badulakes a los que te apuntas: a cuál y cuándo. Para reservarte la plaza y enseñarte la dirección."
+      "s02": {
+        "title": "2. Qué datos guardamos y para qué",
+        "body": "Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni fecha de nacimiento.\n- **Lista de espera.** Tu correo, tu zona o barrio, el idioma en que quieres el aviso, y cuándo diste tu permiso y cuándo te apuntaste. Para avisarte del lanzamiento de Badulake.\n- **Tu cuenta.** Tu correo y tu contraseña (cifrada: nadie puede leerla), tu idioma y la fecha en que se comprobó que eres mayor de edad. Para que puedas entrar y usar la app. Nuestro proveedor de cuentas guarda además las sesiones abiertas, con la dirección IP y el navegador, solo para mantener tu sesión y proteger tu cuenta.\n- **Tu fecha de nacimiento.** Solo se usa en el momento de crear la cuenta para comprobar que tienes 18 años o más. La base de datos la borra antes de guardar la cuenta: **no queda guardada**.\n- **Los badulakes que organizas.** Título, descripción, fecha y hora, zona o barrio, número de plazas, estado (borrador o publicado) y la dirección exacta. Para que otras personas lo encuentren y puedan ir.\n- **Los badulakes a los que te apuntas.** Cuál y cuándo. Para reservarte la plaza, no pasarnos del cupo y enseñarte la dirección.\n- **Datos técnicos de seguridad.** Un contador de intentos (entrar, crear cuenta, apuntarse) que usa solo una huella cifrada de tu conexión y vive unos minutos en la memoria del servidor; y los registros técnicos del servidor, que solo guardan códigos de error, nunca correos ni direcciones.\n- **Lo que escribas tú.** El título y la descripción de un badulake son texto libre. **No escribas datos personales tuyos ni de otras personas** (teléfonos, apellidos, datos de salud…): se verían por las demás personas con cuenta.\nNo usamos analítica, publicidad ni perfiles, ni tomamos decisiones automáticas sobre ti."
       },
-      "legal": {
-        "title": "Por qué podemos usarlos",
-        "body": "- Lista de espera: porque nos das tu permiso. Puedes retirarlo cuando quieras.\n- Cuenta, badulakes e inscripciones: porque los necesitamos para darte el servicio que pides al usar la app.\n(Propuesta pendiente de confirmar por la Asesoría Jurídica.)"
+      "s03": {
+        "title": "3. Por qué podemos usar tus datos (bases legales)",
+        "body": "- **Lista de espera:** tu consentimiento (artículo 6.1.a del RGPD). Marcas una casilla, sin marcar de antemano, y puedes retirarlo cuando quieras sin que afecte a lo anterior.\n- **Cuenta, badulakes e inscripciones:** son necesarios para darte el servicio que pides al usar la app (artículo 6.1.b).\n- **Comprobar que eres mayor de edad y proteger a la comunidad** (seguridad, límite de intentos, evitar abusos): nuestro interés legítimo en que solo usen la app personas adultas y en que sea segura (artículo 6.1.f).\n- Propuesta pendiente de confirmar por la Asesoría Jurídica.\nSi no nos das los datos necesarios (por ejemplo, tu correo), no podemos crear tu cuenta."
       },
-      "access": {
-        "title": "Quién ve tus datos",
-        "body": "- Nadie más ve tu correo ni tu perfil.\n- Un badulake publicado lo ven las personas con cuenta, pero sin la dirección exacta y sin saber quién lo organiza.\n- La dirección exacta solo la ven quien organiza y las personas apuntadas. Si te borras, dejas de verla.\n- Quien organiza ve cuántas personas se han apuntado, pero no quiénes.\n- No vendemos ni cedemos tus datos a nadie."
+      "s04": {
+        "title": "4. Quién ve tus datos",
+        "body": "- **Nadie más ve tu correo ni tu perfil.** Ni otras personas usuarias ni quien organiza un badulake.\n- Un badulake publicado lo ven las personas con cuenta, **sin la dirección exacta y sin saber quién lo organiza**.\n- La **dirección exacta** solo la ven quien organiza y las personas apuntadas. Si te borras, dejas de verla.\n- Quien organiza ve **cuántas** personas se han apuntado, pero **no quiénes**.\n- Tampoco vemos tus datos de forma rutinaria: el equipo de Badulake solo accede a ellos, con acceso restringido, para atender una petición tuya, resolver una denuncia o cumplir la ley.\n- **No vendemos ni cedemos tus datos** con fines comerciales."
       },
-      "where": {
-        "title": "Dónde se guardan",
-        "body": "- La base de datos está en Supabase, en Frankfurt (Alemania, Unión Europea).\n- La web se publica con Vercel y sus servidores trabajan también en Frankfurt.\n- Supabase y Vercel son empresas de Estados Unidos; la Asesoría Jurídica confirmará las garantías de sus contratos."
+      "s05": {
+        "title": "5. Quién más interviene (encargados del tratamiento) y transferencias",
+        "body": "Para dar el servicio usamos estas empresas, que tratan los datos por encargo de EITB y con contrato de encargo (acuerdo de tratamiento de datos):\n- **Supabase** (Supabase Inc., EE. UU.): base de datos y cuentas. Los datos están en **Frankfurt (Alemania, Unión Europea)**.\n- **Vercel** (Vercel Inc., EE. UU.): publica la web y ejecuta la parte del servidor (formularios, sesiones), configurada para trabajar en **Frankfurt**. La red que sirve las páginas está repartida por el mundo y atiende desde el punto más cercano a ti, pero sin guardar tus datos personales.\n- **GitHub** (Microsoft): guarda el código de la app. **No guarda datos de personas.**\nAunque los datos estén en la UE, Supabase y Vercel son empresas estadounidenses, por lo que podría haber acceso desde fuera de la UE (transferencia internacional). Se apoyan en las garantías previstas por el RGPD: **[A CONFIRMAR POR ASESORÍA: Marco de Privacidad UE-EE. UU. y/o cláusulas contractuales tipo]**.\nNo hay ninguna otra empresa ni script externo en la web: ni analítica, ni publicidad, ni redes sociales, ni mapas. Las letras de la web se sirven desde la propia web.\nCuando Badulake envíe correos propios (por ejemplo, para verificar tu cuenta), se añadirá aquí el proveedor de envío. **[PENDIENTE: Tarea 10]**\nSolo comunicaremos datos a autoridades, jueces y fuerzas de seguridad cuando una ley nos obligue."
       },
-      "time": {
-        "title": "Cuánto tiempo",
-        "body": "- La dirección exacta de un badulake se borra sola al día siguiente de celebrarse.\n- El badulake y la lista de quién se apuntó se borran solos 30 días después.\n- La lista de espera se borra al avisar del lanzamiento y, como mucho, a los 12 meses.\n- Tu cuenta se guarda hasta que pidas borrarla. Si no la usas en 90 días, se cierra tu sesión.\n- Los registros técnicos (por ejemplo, la dirección de tu conexión) se borran en 30 días como mucho."
+      "s06": {
+        "title": "6. Cuánto tiempo guardamos tus datos",
+        "body": "Muchos se borran solos cada noche con una tarea programada:\n- **Dirección exacta de un badulake:** al día siguiente de celebrarse.\n- **El badulake y quién se apuntó:** 30 días después de celebrarse (margen para quejas o denuncias).\n- **Lista de espera:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.\n- **Cuenta:** hasta que pidas borrarla. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.\n- **Registro de accesos de la cuenta** (con IP): 30 días.\n- **Contador de intentos:** no se guarda; vive unos minutos en la memoria del servidor.\n- Después, los datos se mantienen bloqueados solo el tiempo que la ley exija para posibles responsabilidades. **[A CONFIRMAR POR ASESORÍA]**"
       },
-      "rights": {
-        "title": "Tus derechos",
-        "body": "Puedes pedir ver tus datos, corregirlos, borrarlos, llevártelos o que dejemos de usarlos. Por ahora, escribe a la dirección de correo de protección de datos de EITB (la añadirá la Asesoría Jurídica). Pronto podrás borrar tu cuenta desde la propia app. Si no quedas conforme, puedes reclamar ante la autoridad de protección de datos."
+      "s07": {
+        "title": "7. Tus derechos y cómo ejercerlos",
+        "body": "Puedes pedirnos:\n- **Acceso:** saber qué datos tuyos tenemos.\n- **Rectificación:** corregir datos incorrectos.\n- **Supresión:** que borremos tus datos.\n- **Oposición:** que dejemos de usarlos por nuestro interés legítimo.\n- **Limitación:** que los congelemos mientras se aclara una duda.\n- **Portabilidad:** llevarte los que nos diste en un formato legible.\n- **Retirar tu consentimiento** (lista de espera) en cualquier momento.\n**Cómo:** escribe a **[A COMPLETAR POR ASESORÍA: correo]**, indicando qué quieres y con qué correo te registraste. Si hace falta, te pediremos que confirmes que eres tú. Responderemos en **un mes** como máximo (ampliable por la ley en casos complejos). Es gratis.\nMuy pronto podrás **borrar tu cuenta tú misma desde la propia app**. Mientras tanto, si lo pides por correo, borramos tu cuenta y, con ella, tu perfil, tus badulakes, sus direcciones y tus inscripciones."
       },
-      "cookies": {
-        "title": "Cookies",
-        "body": "Badulake solo usa cookies técnicas, imprescindibles para que la web funcione:\n- NEXT_LOCALE: recuerda el idioma que eliges. Dura un año.\n- Cookies de sesión (empiezan por «sb-»): solo si entras en tu cuenta, para que no tengas que entrar en cada página. Se borran al salir.\nNo hay cookies de publicidad ni de análisis, ni contenido de otras empresas. Por eso no te pedimos permiso con un aviso de cookies."
+      "s08": {
+        "title": "8. Si no estás conforme",
+        "body": "Si crees que no hemos respetado tus derechos, puedes reclamar ante la **Agencia Española de Protección de Datos** (www.aepd.es) **[A CONFIRMAR POR ASESORÍA: o ante la Agencia Vasca de Protección de Datos]**. Antes, nos encantará que nos escribas para solucionarlo."
+      },
+      "s09": {
+        "title": "9. Menores de edad",
+        "body": "Badulake es **solo para personas mayores de 18 años**. Para crear una cuenta hay que declarar la fecha de nacimiento y, si no tienes 18, no se crea. Si descubrimos que una cuenta es de una persona menor, la cerraremos y borraremos sus datos. Si sabes de alguien menor usando la app, avísanos."
+      },
+      "s10": {
+        "title": "10. Seguridad",
+        "body": "Aplicamos medidas técnicas para proteger tus datos: la base de datos solo permite a cada persona ver lo suyo (reglas por filas en todas las tablas, comprobadas con pruebas de ataque), las contraseñas se guardan cifradas, la conexión va cifrada (https), la web tiene cabeceras de seguridad y hay un límite de intentos contra abusos."
+      },
+      "s11": {
+        "title": "11. Cookies",
+        "body": "Solo usamos cookies técnicas, que no necesitan tu permiso. Están explicadas en la Política de cookies."
+      },
+      "s12": {
+        "title": "12. Cambios en esta política",
+        "body": "Si cambia algo importante, lo avisaremos en la web y, si hace falta, te pediremos de nuevo tu permiso. Siempre estará publicada la versión vigente. Fecha de esta versión: **[A COMPLETAR POR ASESORÍA]**."
       }
     },
     "signUpNotice": "Al crear la cuenta guardamos solo lo imprescindible. Más información en el <link>aviso de privacidad</link>.",
@@ -71,7 +87,11 @@
   "Footer": {
     "project": "Un proyecto de EITB",
     "language": "Idioma",
-    "machine": "Traducción automática del castellano, pendiente de revisión."
+    "machine": "Traducción automática del castellano, pendiente de revisión.",
+    "legalLink": "Aviso legal",
+    "termsLink": "Condiciones",
+    "cookiesLink": "Cookies",
+    "legalNav": "Textos legales"
   },
   "Account": {
     "signUpTitle": "Crear cuenta",
@@ -160,7 +180,10 @@
       "error": "Algo ha fallado. Inténtalo de nuevo en un rato.",
       "no_disponible": "Este badulake ya no admite inscripciones.",
       "apuntada": "¡Te has apuntado! Ya puedes ver la dirección exacta.",
-      "borrada": "Te has borrado de este badulake."
+      "borrada": "Te has borrado de este badulake.",
+      "denunciado": "Denuncia enviada. Gracias: el equipo la revisará.",
+      "denuncia_repetida": "Ya habías denunciado este badulake. El equipo lo está revisando.",
+      "denuncia_error": "No se ha podido enviar la denuncia. Elige un motivo e inténtalo de nuevo en un rato."
     },
     "back": "Volver a los badulakes",
     "mine": "Lo organizas tú",
@@ -192,5 +215,174 @@
     "noMoney": "Sin dinero",
     "people": "De 5 a 10 personas",
     "adults": "Solo mayores de 18 años"
+  },
+  "Legal": {
+    "draftBadge": "Borrador provisional",
+    "draftNote": "Este texto es un BORRADOR para revisión de la Asesoría Jurídica de EITB: no es definitivo y puede cambiar. Los huecos marcados [A COMPLETAR POR ASESORÍA] los rellenará la Asesoría. Mientras tanto, la app está cerrada y no guarda datos de nadie.",
+    "back": "Volver",
+    "aviso": {
+      "title": "Aviso legal",
+      "sections": {
+        "s01": {
+          "title": "1. Quién es el titular de esta web",
+          "body": "Esta web y esta aplicación, llamada **Badulake**, pertenecen a:\n- Titular: **EITB (Euskal Irrati Telebista)** — razón social completa: **[A COMPLETAR POR ASESORÍA]**\n- NIF: **[A COMPLETAR POR ASESORÍA]**\n- Domicilio: **[A COMPLETAR POR ASESORÍA]**\n- Inscripción en el registro correspondiente: **[A COMPLETAR POR ASESORÍA]**\n- Correo electrónico de contacto: **[A COMPLETAR POR ASESORÍA]**\n- Teléfono: **[A COMPLETAR POR ASESORÍA]**\n- Dirección de la web: badulake.app\nEste aviso se publica para cumplir la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI)."
+        },
+        "s02": {
+          "title": "2. Qué es Badulake",
+          "body": "Badulake es una aplicación web, gratuita, para organizar y apuntarse a «badulakes»: quedadas presenciales de entre 5 y 10 personas para intercambiar ropa y objetos, sin dinero de por medio. Está pensada para mujeres y está abierta a cualquier persona mayor de 18 años.\nBadulake solo pone en contacto a las personas y les da una herramienta para organizarse. **No participa en los intercambios**: no compra, no vende y no entrega nada. El detalle de cómo funciona y de las normas está en las Condiciones de uso."
+        },
+        "s03": {
+          "title": "3. Cómo se puede usar la web",
+          "body": "- Navegar por la parte pública (portada y «Qué es un badulake») es libre y no necesita cuenta.\n- Para organizar un badulake o apuntarse hace falta crear una cuenta, y solo pueden hacerlo personas **mayores de 18 años**.\n- Quien usa Badulake se compromete a hacerlo de buena fe, de acuerdo con la ley, con este aviso y con las Condiciones de uso, y a no usarlo para dañar a otras personas ni para estropear el servicio (por ejemplo, intentando entrar donde no le corresponde)."
+        },
+        "s04": {
+          "title": "4. Propiedad intelectual e industrial",
+          "body": "- Los textos, el diseño, las imágenes, el nombre y el logotipo de Badulake, así como el programa que hace funcionar la web, pertenecen a EITB o a quienes se los han cedido, y están protegidos por la normativa de propiedad intelectual e industrial.\n- Código de la aplicación: se publica en un repositorio abierto de GitHub como parte del proyecto. Licencia aplicable: **[A COMPLETAR POR ASESORÍA]**.\n- No se puede copiar, distribuir ni transformar el contenido de la web para otros fines sin permiso de EITB, salvo lo que permita la ley o la licencia indicada.\n- **Contenidos de las personas usuarias.** Los textos que escribe una persona al organizar un badulake (título, descripción…) siguen siendo suyos. Al publicarlos, da a EITB permiso gratuito, no exclusivo y limitado a lo necesario para enseñarlos en Badulake mientras el badulake exista. Cada persona es responsable de que lo que escribe no infrinja derechos de nadie.\n- Si crees que algo publicado en Badulake vulnera tus derechos, escribe al correo de contacto indicado arriba y lo revisaremos con prontitud."
+        },
+        "s05": {
+          "title": "5. Responsabilidad",
+          "body": "- Hacemos lo posible para que la web funcione bien y esté disponible, pero no podemos garantizar que no haya fallos o interrupciones (por mantenimiento, averías o causas ajenas). Badulake se ofrece tal cual, de forma gratuita.\n- **Los intercambios son entre personas.** EITB no responde de lo que ocurra en una quedada, del estado, la procedencia o la seguridad de los objetos intercambiados, ni de lo que haga cada persona. Tampoco verifica la identidad de quienes usan la app más allá de comprobar que declaran ser mayores de edad. Más detalle en las Condiciones de uso.\n- EITB no se hace responsable de los contenidos escritos por las personas usuarias, pero los retirará cuando tenga conocimiento efectivo de que son ilícitos o incumplen las condiciones (por ejemplo, tras una denuncia).\n- La web no contiene enlaces a otras webs de terceros, salvo los que se indiquen expresamente. Si los hubiera, EITB no responde de sus contenidos.\n- Nada de lo aquí dicho limita los derechos que la ley reconoce a las personas consumidoras ni la responsabilidad de EITB cuando la ley no permita excluirla."
+        },
+        "s06": {
+          "title": "6. Protección de datos y cookies",
+          "body": "El tratamiento de datos personales se explica en la Política de privacidad. Badulake solo usa cookies técnicas, necesarias para que la web funcione; se explican en la Política de cookies."
+        },
+        "s07": {
+          "title": "7. Cambios",
+          "body": "Podemos modificar este aviso para adaptarlo a cambios legales o de la app. Siempre estará publicada la versión vigente, con su fecha. Fecha de esta versión: **[A COMPLETAR POR ASESORÍA]**."
+        },
+        "s08": {
+          "title": "8. Ley aplicable y jurisdicción",
+          "body": "Este aviso se rige por la ley española. Para resolver cualquier conflicto, las partes se someten a los juzgados y tribunales de **[A COMPLETAR POR ASESORÍA]**, salvo que la ley obligue a otro fuero. Si eres consumidora, se aplicará el fuero de tu domicilio cuando la ley así lo establezca."
+        }
+      }
+    },
+    "condiciones": {
+      "title": "Condiciones de uso",
+      "sections": {
+        "s01": {
+          "title": "1. Qué es Badulake",
+          "body": "Badulake es una aplicación web gratuita de EITB para organizar y apuntarse a **badulakes**: quedadas presenciales de entre **5 y 10 personas** para **intercambiar ropa y objetos sin dinero**. Está pensada para mujeres y abierta a cualquier persona mayor de 18 años.\nBadulake te da la herramienta para organizarte (crear badulakes, ver los que hay, apuntarte y ver la dirección). **No organiza ni asiste a las quedadas, y no participa en los intercambios.**\nAl crear una cuenta o usar la app aceptas estas condiciones, el Aviso legal y la Política de privacidad. Si no estás de acuerdo, no la uses."
+        },
+        "s02": {
+          "title": "2. Quién puede usarla",
+          "body": "- Solo personas **mayores de 18 años**. Al crear tu cuenta declaras tu fecha de nacimiento para comprobarlo (no la guardamos).\n- Hace falta un correo válido, que verificarás, y una contraseña de al menos 8 caracteres.\n- Una persona, una cuenta. No compartas tu cuenta ni tu contraseña, y avísanos si crees que alguien más entra con ella.\n- Tienes que tener capacidad para aceptar estas condiciones y actuar en tu propio nombre."
+        },
+        "s03": {
+          "title": "3. Tu cuenta",
+          "body": "- Los datos que das al registrarte deben ser verdaderos.\n- Eres responsable de lo que se haga con tu cuenta.\n- Puedes dejar de usar Badulake y borrar tu cuenta cuando quieras (pronto desde la propia app; mientras tanto, pidiéndolo por correo).\n- Podemos suspender o cerrar una cuenta si incumple estas condiciones (apartado 10)."
+        },
+        "s04": {
+          "title": "4. Cómo funcionan los badulakes",
+          "body": "- **Organizar.** Quien organiza crea el badulake con título, descripción, fecha y hora, zona o barrio, plazas (de 5 a 10) y dirección exacta. Puede guardarlo como borrador o publicarlo. Es quien decide dónde y cuándo se celebra y quien se responsabiliza de que sea un lugar adecuado.\n- **Apuntarse.** Las personas con cuenta ven los badulakes publicados (sin dirección y sin saber quién los organiza) y se apuntan si quedan plazas. Quien se apunta ve la dirección exacta y puede añadir la cita al calendario. La organizadora ve cuántas personas se han apuntado, no quiénes.\n- **Cancelar.** Si no puedes ir, bórrate del badulake cuanto antes para dejar la plaza a otra persona. Si organizas y no puedes celebrarlo, avisa por los medios que ofrezca la app.\n- Los datos del badulake se borran solos: la dirección al día siguiente, el resto a los 30 días (ver Política de privacidad)."
+        },
+        "s05": {
+          "title": "5. Intercambio sin dinero",
+          "body": "- Los intercambios son **gratuitos y entre personas**: se lleva ropa y objetos y se vuelve con otros. **En Badulake no se vende, no se compra ni se pide dinero**, ni en la app ni en la quedada, ni de forma encubierta (transferencias, bizum, «a cambio de un donativo»).\n- Badulake **no cobra nada** a nadie: es gratuita. Si en el futuro se ofrecieran servicios de pago, se informaría antes y no afectaría a lo que ya es gratis.\n- Si alguien te pide dinero, avísanos con el botón de denunciar."
+        },
+        "s06": {
+          "title": "6. Normas de convivencia",
+          "body": "En un badulake, y en todo lo que escribas en la app:\n- **Respeto.** Trata bien a las demás personas. No se tolera el acoso, las amenazas, los insultos ni ninguna discriminación por sexo, origen, edad, creencias, orientación sexual, identidad de género, discapacidad o cualquier otra circunstancia.\n- **Sin presiones.** Nadie está obligada a intercambiar nada, ni a quedarse. Un «no» se respeta.\n- **Puntualidad y cuidado.** Cumple lo que apuntaste. Cuida la casa o el lugar que te recibe.\n- **Intimidad.** No hagas fotos ni vídeos de otras personas ni de su casa sin su permiso expreso. No compartas la dirección del badulake con quien no esté apuntada.\n- **Honestidad.** Lleva objetos en el estado que describes; avisa de defectos y manchas.\n- **Seguridad.** Un badulake es para convivir, no para otra cosa: nada de actividades ajenas (venta de productos o servicios, captación, publicidad, política o religión como propaganda).\nConsejos de seguridad (no son una garantía)\n- Badulake no comprueba quién eres más allá de la mayoría de edad, y tú tampoco sabes quién es la otra persona. Ve con prudencia.\n- Avisa a alguien de confianza de dónde y cuándo vas, sobre todo la primera vez.\n- No des tu teléfono, apellidos ni datos bancarios si no quieres; no hace falta.\n- Si algo no te da buena espina, vete. Si hay una emergencia, llama al 112."
+        },
+        "s07": {
+          "title": "7. Qué está prohibido",
+          "body": "No puedes usar Badulake para publicar, ofrecer o intercambiar:\n- Dinero, tarjetas regalo, valores o cualquier cosa que sea una forma de pago.\n- Objetos ilegales, robados, falsificados o peligrosos; armas; drogas; medicamentos; sustancias dañinas.\n- Animales.\n- Productos de los que no puedas disponer libremente o que infrinjan derechos de otras personas.\n- Contenido ofensivo, sexual, violento, engañoso o que incite al odio.\n- Ropa interior usada o artículos de higiene personal abiertos **[PENDIENTE: confirmar con la Asesoría y OlaIA]**.\nTampoco puedes:\n- Usar la app para fines comerciales, publicidad o captar clientas.\n- Crear cuentas falsas, suplantar a otra persona o mentir sobre tu edad.\n- Intentar entrar donde no te corresponde, saltarte los límites de seguridad, sobrecargar el servicio o recoger datos de otras personas.\n- Escribir en la app datos personales de terceras personas."
+        },
+        "s08": {
+          "title": "8. Responsabilidad sobre los objetos y las quedadas",
+          "body": "- **Cada persona es responsable de lo que lleva y de lo que se lleva.** Los objetos se entregan tal cual, sin garantía, y quien los entrega responde de que sean suyos y de que estén como dijo. Entre particulares no hay devoluciones ni garantía de comercio.\n- **EITB no es parte del intercambio.** No responde de la calidad, el estado, el origen ni la seguridad de los objetos, ni de los daños o pérdidas que ocurran en una quedada, ni del comportamiento de las personas, salvo cuando la ley no permita excluirlo.\n- **Quien organiza responde de la casa o el lugar** que pone a disposición: que sea seguro y adecuado, y que tenga el permiso de quien deba dárselo (propietaria, comunidad, etc.). EITB no revisa los lugares.\n- Podemos retirar un badulake o una cuenta (apartado 10) pero no estamos obligados a vigilar lo que pasa en las quedadas.\n- Nada de esto limita derechos que la ley no permita limitar, ni la responsabilidad de EITB por su propia actuación."
+        },
+        "s09": {
+          "title": "9. Lo que tú escribes",
+          "body": "- Eres responsable de lo que escribas (títulos y descripciones). Mantente fuera de lo prohibido y no incluyas datos personales.\n- Nos das permiso, gratuito y limitado a lo necesario, para mostrarlo en Badulake mientras el badulake exista (ver Aviso legal).\n- Podemos retirar un contenido que incumpla estas condiciones o la ley, con o sin aviso previo según el caso."
+        },
+        "s10": {
+          "title": "10. Denuncias y suspensión de cuentas",
+          "body": "- **Denunciar.** Si ves un badulake o una conducta que incumple estas condiciones (dinero, acoso, contenido prohibido, menores, suplantación…), puedes denunciarlo con el botón de denunciar de la app **[A CONFIRMAR: disponible cuando se publique la Tarea 13]**. Si no está disponible, escribe al correo de contacto: **[A COMPLETAR POR ASESORÍA]**.\n- **Qué hace el equipo.** Revisaremos la denuncia, y según su gravedad podemos: retirar el contenido, avisar a quien lo publicó, **suspender** temporalmente la cuenta o **cerrarla** definitivamente. Evitaremos revelar tu identidad a la persona denunciada.\n- **Cuándo.** Sobre todo ante: contenidos prohibidos, peticiones de dinero, acoso o amenazas, mentir sobre la edad, suplantación, abuso del servicio o repetición de incumplimientos. En casos graves, sin aviso previo.\n- **Si te suspenden** y crees que es un error, escribe al correo de contacto explicando tu caso; revisaremos la decisión. **[A COMPLETAR POR ASESORÍA: plazo y procedimiento]**\n- Cuando una ley lo exija, comunicaremos los hechos a las autoridades. En una emergencia llama primero al 112."
+        },
+        "s11": {
+          "title": "11. Gratuidad, disponibilidad y cambios en la app",
+          "body": "- Badulake es **gratuita** y se ofrece tal cual: puede tener fallos o cortes, y puede cambiar o dejar de existir. Intentaremos avisar con tiempo y borrar los datos conforme a la Política de privacidad.\n- Si algún día añadimos funciones nuevas o de pago, lo diremos antes."
+        },
+        "s12": {
+          "title": "12. Cambios en estas condiciones",
+          "body": "Podemos cambiar estas condiciones. Los cambios importantes se avisarán en la web (y por correo si afectan a tu cuenta) **[A COMPLETAR POR ASESORÍA: antelación]**. Si sigues usando Badulake después, aceptas la nueva versión; si no estás de acuerdo, puedes borrar tu cuenta. Siempre estará publicada la versión vigente, con su fecha: **[A COMPLETAR POR ASESORÍA]**."
+        },
+        "s13": {
+          "title": "13. Ley aplicable y contacto",
+          "body": "Estas condiciones se rigen por la ley española. Para cualquier duda o reclamación escribe a **[A COMPLETAR POR ASESORÍA: correo]**. Los conflictos se someterán a los juzgados y tribunales que indica el Aviso legal, y si eres consumidora, a los de tu domicilio cuando la ley así lo establezca."
+        }
+      }
+    },
+    "cookies": {
+      "title": "Política de cookies",
+      "sections": {
+        "s01": {
+          "title": "1. Qué son las cookies",
+          "body": "Una cookie es un pequeño archivo que una web guarda en tu navegador para recordar algo. Algunas son imprescindibles para que la web funcione; otras sirven para medir visitas o para enseñar publicidad."
+        },
+        "s02": {
+          "title": "2. Qué cookies usa Badulake",
+          "body": "Solo **cookies técnicas**, imprescindibles para que la web funcione y para algo que tú has pedido:\n- **NEXT_LOCALE** — recuerda el idioma que eliges para no tener que cambiarlo cada vez. Solo guarda el código del idioma (por ejemplo «eu» o «es»). Dura **1 año**. Es de Badulake.\n- **Cookies de sesión (empiezan por «sb-» y acaban en «auth-token»)** — solo aparecen si entras en tu cuenta. Sirven para que la web sepa que eres tú sin pedirte la contraseña en cada página. Se borran al salir de la cuenta; si no vuelves a usarla, la sesión caduca sola (como mucho, a los 90 días sin uso). Son de Badulake (las gestiona nuestro proveedor de cuentas, Supabase, en nombre de EITB)."
+        },
+        "s03": {
+          "title": "3. Qué cookies NO usa",
+          "body": "- No usa cookies de **publicidad**.\n- No usa cookies de **analítica o medición** de visitas.\n- No usa cookies de **redes sociales** ni contenido de **otras empresas** (mapas, vídeos, fuentes…).\n- No hace **perfiles** de nadie."
+        },
+        "s04": {
+          "title": "4. Por qué no hay banner de cookies",
+          "body": "La ley (artículo 22.2 de la LSSI) solo exige pedir permiso para las cookies que no son imprescindibles. Las que usamos son necesarias para prestar el servicio o para recordar una elección tuya, así que **no necesitamos preguntarte** y no hay un banner que moleste. Si algún día añadimos otras (por ejemplo, para medir visitas), te lo preguntaremos antes de usarlas."
+        },
+        "s05": {
+          "title": "5. Cómo borrarlas o bloquearlas",
+          "body": "Puedes borrar o bloquear las cookies desde la configuración de tu navegador (Chrome, Safari, Firefox, Edge…). Si bloqueas las técnicas, la web funcionará pero **no recordará tu idioma** y **no podrás mantener la sesión abierta**."
+        },
+        "s06": {
+          "title": "6. Más información y cambios",
+          "body": "Más información sobre cómo tratamos tus datos en la Política de privacidad. Si cambiamos las cookies que usa Badulake, actualizaremos esta página. Fecha de esta versión: **[A COMPLETAR POR ASESORÍA]**."
+        }
+      }
+    }
+  },
+  "Report": {
+    "button": "Denunciar este badulake",
+    "reasonLegend": "¿Por qué lo denuncias?",
+    "reasons": {
+      "estafa": "Parece una estafa o piden dinero",
+      "ofensivo": "Contenido ofensivo o discriminatorio",
+      "datos": "Enseña datos personales de alguien",
+      "peligroso": "Algo ilegal o peligroso",
+      "spam": "Es spam o está repetido",
+      "otro": "Otro motivo"
+    },
+    "noteLabel": "Cuéntanos más (opcional)",
+    "noteHint": "Máximo 300 letras. No escribas datos de nadie. Solo el equipo de Badulake lo leerá y no sabrá quién eres.",
+    "send": "Enviar denuncia",
+    "hiddenByTeam": "El equipo de Badulake ha ocultado este badulake: nadie más lo ve."
+  },
+  "Team": {
+    "title": "Panel del equipo",
+    "loading": "Cargando…",
+    "intro": "Solo el equipo ve esta página. Aquí no se ve quién denuncia, quién organiza ni la dirección exacta.",
+    "empty": "No hay denuncias abiertas.",
+    "count": "{count, plural, one {# denuncia abierta} other {# denuncias abiertas}}",
+    "hidden": "Oculto",
+    "suspended": "Cuenta suspendida",
+    "reason": "Motivo",
+    "note": "Lo que ha escrito",
+    "reportedOn": "Denunciado",
+    "reportsOfThis": "{count, plural, one {1 denuncia abierta} other {# denuncias abiertas}} de este badulake",
+    "badulake": "El badulake",
+    "hide": "Ocultar badulake",
+    "show": "Volver a mostrar",
+    "suspend": "Suspender a quien lo organiza",
+    "resolve": "Marcar como resuelta",
+    "notices": {
+      "ocultar": "Badulake oculto.",
+      "mostrar": "Badulake visible otra vez.",
+      "suspender": "Cuenta suspendida: no puede entrar y sus badulakes están ocultos.",
+      "resolver": "Denuncia resuelta.",
+      "error": "Algo ha fallado. Inténtalo de nuevo."
+    }
   }
 }
