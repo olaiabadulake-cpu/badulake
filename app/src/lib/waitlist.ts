@@ -1,6 +1,5 @@
 import "server-only";
-import { appendFile, mkdir, readFile } from "node:fs/promises";
-import path from "node:path";
+import { createClient } from "@supabase/supabase-js";
 import type { Locale } from "@/i18n/languages";
 
 export type WaitlistEntry = {
@@ -10,28 +9,26 @@ export type WaitlistEntry = {
   consentAt: string;
 };
 
-// PROVISIONAL: mientras no exista la base de datos (Supabase, región UE),
-// en desarrollo las altas se guardan en .data/waitlist.jsonl (fuera de git).
-// En producción falla a propósito: no se publica el formulario sin base de datos.
-const FILE = path.join(process.cwd(), ".data", "waitlist.jsonl");
+// Las claves vienen de variables de entorno (nunca del código ni NEXT_PUBLIC_*).
+const url = process.env.SUPABASE_URL;
+const key = process.env.SUPABASE_PUBLISHABLE_KEY;
 
-// En la web publicada el formulario no se enseña hasta que haya base de datos.
-export const waitlistOpen = process.env.NODE_ENV !== "production";
+// El formulario solo se enseña si hay base de datos conectada.
+export const waitlistOpen = Boolean(url && key);
 
+// Con la clave pública y la seguridad por filas (RLS) solo se puede INSERTAR en `lista_espera`:
+// nadie puede leer la tabla desde fuera. Ver supabase/lista_espera.sql.
 export async function saveWaitlistEntry(entry: WaitlistEntry): Promise<void> {
-  if (!waitlistOpen) {
-    throw new Error("Waitlist storage is not configured yet (pending Supabase).");
-  }
+  if (!url || !key) throw new Error("Supabase no está configurado.");
 
-  await mkdir(path.dirname(FILE), { recursive: true });
-  const existing = await readFile(FILE, "utf8").catch(() => "");
-  const alreadyIn = existing
-    .split("\n")
-    .filter(Boolean)
-    .some((line) => (JSON.parse(line) as WaitlistEntry).email === entry.email);
+  const supabase = createClient(url, key, { auth: { persistSession: false } });
+  const { error } = await supabase.from("lista_espera").insert({
+    email: entry.email,
+    zona: entry.zone,
+    idioma: entry.language,
+    consentimiento_en: entry.consentAt,
+  });
 
-  // Si ya estaba apuntada, no se duplica (y no se le dice a nadie).
-  if (!alreadyIn) {
-    await appendFile(FILE, JSON.stringify(entry) + "\n");
-  }
+  // 23505 = el correo ya estaba apuntado: no se duplica y no se le dice a nadie.
+  if (error && error.code !== "23505") throw new Error(`${error.code}: ${error.message}`);
 }
