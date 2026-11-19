@@ -208,3 +208,18 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Sigue cerrado:** `PRIVACY_NOTICE_READY` y `CUENTAS_ABIERTAS` siguen apagados. No se abre nada hasta que la Asesoría entregue los textos definitivos y se sustituyan los borradores.
 - **Pendiente:** texto definitivo de la Asesoría; traducción al euskera y a las demás lenguas (solo después de validarlo, ver [traducciones.md](traducciones.md)); sumar a la política el proveedor de correo (Tarea 10) y las denuncias (Tarea 13).
 - **Propuso y redactó:** Claude (tarea 12 del plan maestro) · **Decidió:** OlaIA (pidió intensidad media para un borrador completo y útil)
+
+### D-027 · Denunciar un badulake, suspender cuentas y un panel sencillo para el equipo
+- **Fecha:** 19/11/2026
+- **Alternativas:** revisar las denuncias solo desde el panel de Supabase (sin pantalla); marcar al equipo con un dato del perfil o de la sesión (la persona podría cambiarlo); poder denunciar también personas y mensajes; borrar el badulake en vez de ocultarlo.
+- **Decisión** (`supabase/denuncias.sql`, [seguridad.md](seguridad.md), [privacidad.md](privacidad.md)):
+  - **Denunciar:** quien tenga sesión ve «Denunciar este badulake» en su detalle (no en los suyos): elige un motivo (estafa o piden dinero · ofensivo o discriminatorio · datos personales de alguien · algo ilegal o peligroso · spam o repetido · otro) y puede escribir hasta 300 letras. La tabla `denuncias` tiene RLS: cada persona solo crea las suyas, de badulakes que puede ver, una abierta por badulake, y **no puede leer ninguna**. Límite de 5 denuncias por hora.
+  - **Equipo:** la tabla `equipo` solo se rellena desde el panel de Supabase; la app no puede leerla ni escribirla. Las funciones `equipo_*` comprueban primero que quien llama está en ella.
+  - **Panel `/[locale]/equipo`:** solo para el equipo (para el resto, 404; cerrado también con `CUENTAS_ABIERTAS`). Enseña la denuncia abierta, el motivo, lo que escribió la persona y el badulake (título, descripción, zona y fecha). **No enseña** quién denuncia, quién organiza, ni correos ni la dirección exacta (D-024). Acciones: ocultar o volver a mostrar el badulake, **suspender a quien lo organiza** y marcar la denuncia como resuelta.
+  - **Se aplica en la base de datos:** un badulake oculto no lo ve nadie salvo su organizadora (con aviso), no admite inscripciones y deja de enseñar su dirección a quien se había apuntado. Una cuenta suspendida no puede entrar (Supabase Auth la bloquea y se cierran sus sesiones) ni, con una sesión que aún no haya caducado, crear, publicar, apuntarse ni denunciar; sus badulakes se ocultan. No se puede suspender a una cuenta del equipo.
+  - **Levantar una suspensión** se hace desde el panel de Supabase (instrucciones en [seguridad.md](seguridad.md)); no hay botón.
+  - **Plazo:** las denuncias se borran con el badulake, 30 días después de celebrarse (D-024).
+- **No entra:** avisos por correo (Tarea 10), estadísticas (15), denunciar personas o mensajes, borrar cuentas (21).
+- **Cerrado en producción:** con `CUENTAS_ABIERTAS`, como el resto. Día del lanzamiento: dar de alta al equipo (ver [seguridad.md](seguridad.md)).
+- **Por qué:** Una app que pone en contacto a desconocidos en casas necesita una forma de denunciar y de actuar rápido, sin que el equipo tenga que ver más datos personales de los imprescindibles.
+- **Propuso:** Claude · **Decidió:** OlaIA (motivos y equipo: la propuesta de Claude; solo su cuenta por ahora) · **Hizo:** Claude (tarea 13 del plan maestro; OlaIA autorizó los cambios en Supabase)

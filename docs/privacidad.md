@@ -61,6 +61,17 @@ Ficha hecha el 19/11/2026 (Tarea 9 del plan maestro, decisión D-024). Es el **b
 | **Quién lo ve** | Solo la propia persona. La **organizadora ve cuántas personas hay, no quiénes**. |
 | **Cuánto tiempo** | Se borran con el badulake, **30 días después** de celebrarse. Si la persona se borra antes, desaparece en el momento. |
 
+### 2.5 Denuncias (Tarea 13, D-027)
+
+| | |
+|---|---|
+| **Datos** | Qué badulake se denuncia, el motivo (de una lista), un texto libre opcional de hasta 300 letras, el estado (abierta o resuelta), las fechas y **quién denuncia** (identificador de la cuenta, sin su nombre; tabla `denuncias`). Además, qué cuentas son del equipo (`equipo`) y cuáles están suspendidas (`suspendidas`, con la fecha). |
+| **Para qué** | Atender quejas, ocultar badulakes y suspender cuentas que incumplen las condiciones, y proteger a la comunidad. |
+| **Base legal propuesta** | Interés legítimo en la seguridad de la comunidad (6.1.f) y ejecución del servicio (6.1.b) — *a confirmar*. |
+| **Quién lo ve** | Solo el equipo, desde el panel `/equipo`, que **no enseña** quién denuncia, quién organiza, correos ni la dirección exacta (solo motivo, texto, título, descripción, zona y fecha del badulake). Con la clave pública nadie puede leerlas, tampoco quien denuncia. El equipo, además, puede ver los datos completos desde el panel de Supabase. |
+| **Cuánto tiempo** | Se borran con el badulake, **30 días después** de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se borre o se levante. Si quien denunció borra su cuenta, la denuncia sigue sin su identificador. |
+| **Aviso para la Asesoría** | El texto libre podría contener datos personales de terceros: el formulario avisa de que no se escriban. La cuenta suspendida no puede entrar ni usar la app. Falta decidir si la persona suspendida debe poder saber el motivo y reclamar (Tarea 12). |
+
 ## 3. Dónde se guarda y quién interviene (encargados del tratamiento)
 
 | Proveedor | Qué hace | Dónde | Notas para la Asesoría |
@@ -98,6 +109,7 @@ Se aplican **solos cada noche a las 03:15 (hora UTC)** con una tarea programada 
 | Registro de accesos de Supabase Auth | A los 30 días |
 | Contadores del límite de intentos | Nunca se guardan: viven unos minutos en la memoria del servidor |
 | Cuenta | Cuando la persona lo pida (Tarea 21) |
+| Denuncias | Con el badulake, 30 días después de celebrarse |
 
 Comprobado con un badulake inventado: a los 2 días ya no tenía dirección y a los 31 días no quedaba ni el badulake ni la inscripción.
 

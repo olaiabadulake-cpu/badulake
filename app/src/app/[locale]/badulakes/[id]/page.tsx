@@ -5,7 +5,8 @@ import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link, redirect } from "@/i18n/navigation";
 import { accountsOpen, createSupabase, getCurrentUser, idsOf } from "@/lib/supabase/server";
-import { joinBadulake, leaveBadulake, publishBadulake } from "../actions";
+import { reportReasons } from "@/lib/report";
+import { joinBadulake, leaveBadulake, publishBadulake, reportBadulake } from "../actions";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Badulake");
@@ -44,7 +45,7 @@ async function Details({
   const [{ data: b }, { data: ownIds }] = await Promise.all([
     supabase
       .from("badulakes")
-      .select("id, titulo, descripcion, fecha_hora, zona, plazas, estado")
+      .select("id, titulo, descripcion, fecha_hora, zona, plazas, estado, oculto")
       .eq("id", id)
       .maybeSingle(),
     supabase.rpc("mis_badulakes"),
@@ -72,9 +73,10 @@ async function Details({
     ...(a ? ([[t("address"), a.direccion]] as [string, string][]) : []),
     [t("seats"), isOrganizer ? t("seatsTaken", { taken, total: b.plazas }) : t("freeSeats", { count: free })],
   ];
-  const notices = ["apuntada", "borrada", "lleno", "error", "no_disponible"] as const;
+  const notices = ["apuntada", "borrada", "lleno", "error", "no_disponible", "denunciado", "denuncia_repetida", "denuncia_error"] as const;
   const notice = notices.find((n) => n === aviso) ?? null;
-  const good = notice === "apuntada" || notice === "borrada";
+  const good = notice === "apuntada" || notice === "borrada" || notice === "denunciado";
+  const tr = await getTranslations("Report");
   const button =
     "rounded-full bg-noche px-6 py-3 text-center text-lg font-semibold text-white hover:bg-noche/90 sm:self-start";
 
@@ -91,6 +93,11 @@ async function Details({
           </p>
           <h2 className="font-display text-2xl font-bold">{b.titulo}</h2>
         </>
+      )}
+      {isOrganizer && b.oculto && (
+        <p role="status" className="rounded-lg border-2 border-error bg-white p-4 font-medium text-error">
+          {tr("hiddenByTeam")}
+        </p>
       )}
       {notice && (
         <p
@@ -150,6 +157,38 @@ async function Details({
         ) : (
           <p role="status" className="font-medium">{t("full")}</p>
         )
+      )}
+      {!isOrganizer && (
+        <details className="rounded-lg border-2 border-noche/30 p-4">
+          <summary className="cursor-pointer font-semibold">{tr("button")}</summary>
+          <form action={reportBadulake} className="mt-4 flex flex-col gap-4">
+            <input type="hidden" name="locale" value={locale} />
+            <input type="hidden" name="id" value={b.id} />
+            <fieldset className="flex flex-col gap-2">
+              <legend className="mb-1 font-medium">{tr("reasonLegend")}</legend>
+              {reportReasons.map((r) => (
+                <label key={r} className="flex items-start gap-2">
+                  <input type="radio" name="reason" value={r} required className="mt-1.5 size-4" />
+                  <span>{tr(`reasons.${r}`)}</span>
+                </label>
+              ))}
+            </fieldset>
+            <div className="flex flex-col gap-1.5">
+              <label htmlFor="note" className="font-medium">{tr("noteLabel")}</label>
+              <textarea
+                id="note" name="note" rows={3} maxLength={300} aria-describedby="note-hint"
+                className="w-full rounded-lg border-2 border-noche/60 bg-white px-3 py-2.5 text-base focus:border-noche"
+              />
+              <p id="note-hint" className="text-sm text-noche/70">{tr("noteHint")}</p>
+            </div>
+            <button
+              type="submit"
+              className="rounded-full border-2 border-noche px-6 py-2.5 font-semibold hover:bg-noche/5 sm:self-start"
+            >
+              {tr("send")}
+            </button>
+          </form>
+        </details>
       )}
     </>
   );

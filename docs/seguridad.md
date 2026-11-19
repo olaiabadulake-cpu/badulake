@@ -103,7 +103,7 @@ Al pasarse sale «Demasiados intentos. Espera unos minutos y vuelve a probar». 
 - ~~**Quien tenga la clave pública** podría crear una cuenta llamando a Supabase directamente, aunque `CUENTAS_ABIERTAS` esté apagado.~~ **Cerrado:** OlaIA apagó «Allow new users to sign up» en Supabase el 19/11/2026 hasta el lanzamiento. Mientras tanto, las cuentas de prueba se crean directamente en la base de datos (SQL), no con el formulario.
 - **Contraseñas filtradas:** solo con el plan Pro de Supabase.
 - ~~**Privacidad** (Tarea 9).~~ **Hecha** (D-024, [privacidad.md](privacidad.md)): nadie ve quién organiza un badulake, los datos se borran solos y la web se procesa en Frankfurt.
-- **Correo propio** (Tarea 10) y **denuncias** (Tarea 13).
+- **Correo propio** (Tarea 10). ~~**Denuncias** (Tarea 13).~~ **Hechas** (D-027): ver el apartado 9.
 - **Copia de la base de datos:** el plan gratuito no guarda copias recuperables; valorar antes de tener datos reales.
 - La revisión del experto de seguridad del episodio 4 se hará al final, como todas (no en tiempo real). Los fallos que enseñe el guion solo se reproducirán en una copia con datos inventados (Tarea 22), nunca en la app real.
 
@@ -118,3 +118,17 @@ Para abrir las cuentas, todo a la vez:
 5. Comprobar en Supabase (Integrations → Cron) que la tarea `borrar-datos-caducados` sigue activa y se ha ejecutado bien la última noche.
 6. Comprobar que la parte del servidor sigue en Frankfurt: la cabecera `x-vercel-id` de `/api/hora` debe contener `fra1`.
 7. Si la Tarea 10 añade un proveedor de correo, sumarlo a [privacidad.md](privacidad.md) (apartado 3) y al aviso.
+8. **Dar de alta al equipo (Tarea 13):** el panel `/equipo` no deja entrar a nadie hasta que haya cuentas en la tabla `equipo`. Con la cuenta ya creada: en Supabase (SQL Editor) `insert into public.equipo (persona) select id from auth.users where email = 'correo-de-la-persona';`. Para quitar a alguien: `delete from public.equipo where persona = '…';`. Ninguna cuenta se da de alta desde la app.
+
+## 9. Denuncias, suspensiones y panel del equipo (Tarea 13, D-027)
+
+Script: `supabase/denuncias.sql`. Todo se aplica en la base de datos, no solo en la pantalla.
+
+- **Quién puede qué:** cualquier persona con sesión crea denuncias propias (motivo de una lista de 6 y texto de hasta 300 letras; una abierta por badulake; solo de badulakes que ve). **Nadie puede leerlas desde la app**, tampoco quien las crea. Las tablas `equipo` y `suspendidas` no tienen permisos para la web: solo se tocan desde el panel de Supabase.
+- **El equipo** son las cuentas de la tabla `equipo`. Las funciones `equipo_denuncias`, `equipo_ocultar`, `equipo_suspender` y `equipo_resolver` comprueban `soy_equipo()` antes de nada y no devuelven correos, quién denuncia, quién organiza ni la dirección exacta.
+- **Ocultar** (`badulakes.oculto`): no se ve (salvo la organizadora, con aviso), no admite inscripciones, no cuenta plazas y su dirección deja de verse a quien estaba apuntado.
+- **Suspender:** la cuenta entra en `suspendidas`, Supabase Auth la bloquea (`banned_until`) y se cierran sus sesiones; sus badulakes se ocultan; no puede crear, publicar, apuntarse ni denunciar aunque su sesión (que dura hasta una hora) siga abierta. No se puede suspender a una cuenta del equipo.
+- **Levantar una suspensión** (desde el SQL Editor de Supabase, con el identificador de la cuenta): `delete from public.suspendidas where persona = '…'; update auth.users set banned_until = null where id = '…'; update public.badulakes set oculto = false where organizadora = '…';`
+- **Límite de intentos:** 5 denuncias por hora desde la misma conexión (además de la regla de una abierta por badulake).
+- **Prueba de ataque** con la clave pública y cuatro cuentas inventadas: 54 comprobaciones superadas (ver [diario.md](diario.md)); cuentas borradas al acabar.
+- **Límite conocido:** quien denuncia a un badulake propio o de una cuenta que luego se borra deja la denuncia sin denunciante (`on delete set null`); no hay botón para levantar suspensiones ni para reabrir denuncias resueltas.
