@@ -2,10 +2,11 @@
 
 import { languages, type Locale } from "@/i18n/languages";
 import { saveWaitlistEntry } from "@/lib/waitlist";
+import { tooManyAttempts } from "@/lib/rate-limit";
 
 export type WaitlistState = {
   status: "idle" | "success" | "error";
-  errors?: Partial<Record<"email" | "zone" | "consent" | "generic", true>>;
+  errors?: Partial<Record<"email" | "zone" | "consent" | "generic" | "tooMany", true>>;
 };
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -18,7 +19,7 @@ export async function joinWaitlist(
   const email = String(formData.get("email") ?? "").trim().toLowerCase();
   const zone = String(formData.get("zone") ?? "").trim();
   const requested = String(formData.get("language") ?? "");
-  const language: Locale = requested in languages ? (requested as Locale) : "es";
+  const language: Locale = Object.hasOwn(languages, requested) ? (requested as Locale) : "es";
   const consent = formData.get("consent") === "on";
 
   const errors: WaitlistState["errors"] = {};
@@ -26,6 +27,9 @@ export async function joinWaitlist(
   if (zone.length < 2 || zone.length > 80) errors.zone = true;
   if (!consent) errors.consent = true;
   if (Object.keys(errors).length > 0) return { status: "error", errors };
+
+  // Límite de intentos (D-023): 5 altas por hora desde la misma conexión.
+  if (await tooManyAttempts("lista", 5, 60)) return { status: "error", errors: { tooMany: true } };
 
   try {
     await saveWaitlistEntry({

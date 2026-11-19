@@ -36,9 +36,11 @@ async function List() {
     .gt("fecha_hora", new Date().toISOString())
     .order("fecha_hora", { ascending: true });
   const ids = (rows ?? []).map((r) => r.id);
-  const { data: counts } = ids.length
-    ? await supabase.from("badulakes_ocupadas").select("badulake_id, ocupadas").in("badulake_id", ids)
-    : { data: [] };
+  // Solo el número de plazas ocupadas de cada badulake (supabase/seguridad.sql).
+  type Count = { badulake_id: string; ocupadas: number };
+  const counts: Count[] = ids.length
+    ? ((await supabase.rpc("plazas_ocupadas", { p_ids: ids })).data as Count[] | null) ?? []
+    : [];
   const taken = new Map((counts ?? []).map((c) => [c.badulake_id, c.ocupadas ?? 0]));
   // RLS: solo se leen mis propias inscripciones.
   const { data: mine } = ids.length

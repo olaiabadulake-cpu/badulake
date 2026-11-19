@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from "next/server";
 import { accountsOpen, createSupabase } from "@/lib/supabase/server";
 
 const escape = (s: string) =>
-  s.replace(/\\/g, "\\\\").replace(/;/g, "\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
+  s.replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
 const stamp = (d: Date) => d.toISOString().replace(/[-:]|\.\d{3}/g, "");
 
 // Archivo .ics para el calendario. Solo para quien esté apuntada (si no, 404 como si no existiera).

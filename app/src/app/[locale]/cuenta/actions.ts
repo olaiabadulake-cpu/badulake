@@ -1,25 +1,36 @@
 "use server";
 
-import { headers } from "next/headers";
 import { redirect } from "@/i18n/navigation";
 import { languages, type Locale } from "@/i18n/languages";
 import { accountsOpen, createSupabase } from "@/lib/supabase/server";
+import { tooManyAttempts } from "@/lib/rate-limit";
 
 export type SignUpState = {
   status: "idle" | "check-email" | "error";
-  errors?: Partial<Record<"email" | "password" | "birthdate" | "underage" | "generic", true>>;
+  errors?: Partial<Record<"email" | "password" | "birthdate" | "underage" | "generic" | "tooMany", true>>;
 };
 
 export type SignInState = {
   status: "idle" | "error";
-  errors?: Partial<Record<"credentials" | "unconfirmed" | "generic", true>>;
+  errors?: Partial<Record<"credentials" | "unconfirmed" | "generic" | "tooMany", true>>;
 };
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
+// Dirección de la web para el enlace del correo de verificación. Es fija: no se toma de la
+// petición, para que nadie pueda hacer que el enlace lleve a otra web (D-023).
+function siteOrigin(): string {
+  if (process.env.SITE_URL) return process.env.SITE_URL;
+  if (process.env.VERCEL_ENV === "production" && process.env.VERCEL_PROJECT_PRODUCTION_URL) {
+    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  }
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+  return "http://localhost:3000";
+}
+
 function readLocale(formData: FormData): Locale {
   const requested = String(formData.get("locale") ?? "");
-  return requested in languages ? (requested as Locale) : "es";
+  return Object.hasOwn(languages, requested) ? (requested as Locale) : "es";
 }
 
 // Edad cumplida hoy a partir de AAAA-MM-DD. null si la fecha no es válida.
@@ -55,7 +66,12 @@ export async function signUp(_prev: SignUpState, formData: FormData): Promise<Si
   else if (age < 18) errors.underage = true;
   if (Object.keys(errors).length > 0) return { status: "error", errors };
 
-  const origin = (await headers()).get("origin") ?? "http://localhost:3000";
+  // Límite de intentos (D-023): 5 cuentas por hora desde la misma conexión o con el mismo correo.
+  if (await tooManyAttempts("registro", 5, 60, email)) {
+    return { status: "error", errors: { tooMany: true } };
+  }
+
+  const origin = siteOrigin();
   const supabase = await createSupabase();
   const { data, error } = await supabase.auth.signUp({
     email,
@@ -87,6 +103,12 @@ export async function signIn(_prev: SignInState, formData: FormData): Promise<Si
   const email = String(formData.get("email") ?? "").trim().toLowerCase();
   const password = String(formData.get("password") ?? "");
   if (!email || !password) return { status: "error", errors: { credentials: true } };
+
+  // Límite de intentos (D-023): 10 cada 15 minutos desde la misma conexión o para el mismo correo,
+  // para que nadie pueda probar contraseñas sin fin.
+  if (await tooManyAttempts("entrar", 10, 15, email)) {
+    return { status: "error", errors: { tooMany: true } };
+  }
 
   const supabase = await createSupabase();
   const { error } = await supabase.auth.signInWithPassword({ email, password });

@@ -3,6 +3,7 @@
 import { redirect } from "@/i18n/navigation";
 import { languages, type Locale } from "@/i18n/languages";
 import { accountsOpen, createSupabase } from "@/lib/supabase/server";
+import { tooManyAttempts } from "@/lib/rate-limit";
 
 export type NewBadulakeState = {
   status: "idle" | "error";
@@ -17,7 +18,7 @@ const DATETIME = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})$/;
 
 function readLocale(formData: FormData): Locale {
   const requested = String(formData.get("locale") ?? "");
-  return requested in languages ? (requested as Locale) : "es";
+  return Object.hasOwn(languages, requested) ? (requested as Locale) : "es";
 }
 
 const text = (formData: FormData, name: string) => String(formData.get(name) ?? "").trim();
@@ -96,7 +97,9 @@ export async function joinBadulake(formData: FormData): Promise<void> {
   const locale = readLocale(formData);
   const id = text(formData, "id");
   let aviso = "";
-  if (accountsOpen && /^[0-9a-f-]{36}$/.test(id)) {
+  // Límite de intentos (D-023): 30 cada 10 minutos desde la misma conexión.
+  if (accountsOpen && (await tooManyAttempts("apuntarme", 30, 10))) aviso = "?aviso=error";
+  else if (accountsOpen && /^[0-9a-f-]{36}$/.test(id)) {
     const supabase = await createSupabase();
     const { data, error } = await supabase.rpc("apuntarme", { p_badulake: id });
     if (error) console.error("[apuntarme]", error.code, error.message);

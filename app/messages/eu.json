@@ -22,7 +22,8 @@
       "email": "Berrikusi posta elektronikoa: ez dirudi baliozkoa.",
       "zone": "Esaiguzu zure eremua edo auzoa.",
       "consent": "Zure baimena behar dugu zure datuak gordetzeko.",
-      "generic": "Zerbaitek huts egin du. Saiatu berriro tarte baten buruan."
+      "generic": "Zerbaitek huts egin du. Saiatu berriro tarte baten buruan.",
+      "tooMany": "Saiakera gehiegi. Itxaron pixka bat eta saiatu berriro."
     }
   },
   "Privacy": {
@@ -64,7 +65,8 @@
       "underage": "Sentitzen dugu: Badulake 18 urtetik gorakoentzat da bakarrik.",
       "credentials": "Posta elektronikoa edo pasahitza ez dira zuzenak.",
       "unconfirmed": "Oraindik ez duzu kontua aktibatu. Ireki bidali dizugun mezuko esteka.",
-      "generic": "Zerbaitek huts egin du. Saiatu berriro tarte baten buruan."
+      "generic": "Zerbaitek huts egin du. Saiatu berriro tarte baten buruan.",
+      "tooMany": "Saiakera gehiegi. Itxaron minutu batzuk eta saiatu berriro."
     },
     "notices": {
       "salida": "Kontutik irten zara.",

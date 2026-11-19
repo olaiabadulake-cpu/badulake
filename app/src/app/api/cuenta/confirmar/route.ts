@@ -7,7 +7,7 @@ import { accountsOpen, createSupabase } from "@/lib/supabase/server";
 export async function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams;
   const requested = params.get("locale") ?? "es";
-  const locale = requested in languages ? requested : "es";
+  const locale = Object.hasOwn(languages, requested) ? requested : "es";
   const to = (path: string) => NextResponse.redirect(new URL(`/${locale}${path}`, request.url));
 
   if (!accountsOpen) return to("");

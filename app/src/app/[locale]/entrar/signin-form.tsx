@@ -15,7 +15,7 @@ export function SignInForm() {
   const locale = useLocale();
   const [state, action, pending] = useActionState(signIn, initial);
   const err = state.errors ?? {};
-  const message = err.credentials ? "credentials" : err.unconfirmed ? "unconfirmed" : err.generic ? "generic" : null;
+  const message = err.credentials ? "credentials" : err.unconfirmed ? "unconfirmed" : err.tooMany ? "tooMany" : err.generic ? "generic" : null;
 
   return (
     <form action={action} noValidate className="flex flex-col gap-5">

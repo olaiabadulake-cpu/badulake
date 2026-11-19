@@ -163,3 +163,17 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Fuera de esta tarea:** diseño visual y logo (tarea 14), fotos, seguridad (8), privacidad (9), correos (10) y revisión completa de accesibilidad (11). En el contenido de la app no hay referencias a Los Simpson; el nombre «badulake» no se toca.
 - **Por qué:** El guion (episodio 3) anticipa las críticas: navegación inconsistente, etiquetas ambiguas, malos mensajes y la palabra «badulake» sin explicar. OlaIA decidió que los expertos revisan al final, así que se corrige ya.
 - **Propuso:** Claude · **Decidió:** OlaIA (tarea 7 del plan maestro) · **Hizo:** Claude
+
+### D-023 · Seguridad antes de abrir: reglas de la base de datos revisadas, escudos en la web y límite de intentos
+- **Fecha:** 19/11/2026
+- **Alternativas:** esperar a la revisión del experto en seguridad (episodio 4); usar un servicio de pago para el límite de intentos o un CAPTCHA; pasar al plan Pro de Supabase para comprobar contraseñas filtradas.
+- **Decisión:** Se revisa todo lo hecho en las Tareas 2 a 7 y se deja escrito en [seguridad.md](seguridad.md):
+  - **Base de datos** (`supabase/seguridad.sql`): se arreglan los avisos del Security Advisor de Supabase (la vista de plazas ocupadas pasa a ser la función `plazas_ocupadas`; ruta fija en `hora_actual`; la lista de espera comprueba la forma del correo; nadie puede llamar a `rls_auto_enable`); un borrador con fecha pasada no se publica; lo que se cree en el futuro empieza sin permisos. Atacada con la clave pública y dos cuentas inventadas: 48 de 48 pruebas superadas.
+  - **Web:** enlace de verificación con dirección fija; solo se aceptan idiomas de verdad (sin redirecciones fuera de la web); cabeceras de seguridad en todas las páginas (CSP, HSTS, nosniff, Referrer-Policy, prohibido incrustarla); límite de intentos propio en entrar, crear cuenta, apuntarse y lista de espera, además de los de Supabase.
+  - **Supabase Auth:** contraseña mínima de 8 (antes 6), contraseña actual y sesión reciente para cambiarla, enlaces mágicos apagados. La verificación por correo sigue obligatoria.
+  - **Dependencias:** 0 fallos conocidos; actualizadas dentro de la misma versión.
+- **No se hace:** comprobar contraseñas filtradas (solo plan Pro, 25 $/mes) ni CAPTCHA (no hace falta mientras esté cerrado).
+- **Cerrado en producción:** todo sigue como estaba (D-018, D-019).
+- **Pendiente:** antes de abrir las cuentas hay que arreglar que la compilación falla con `CUENTAS_ABIERTAS=1` (página de cada badulake) y valorar apagar las altas en Supabase hasta el lanzamiento.
+- **Por qué:** La app guarda direcciones de casas y datos de personas: tiene que ser segura antes de que entre nadie, y el guion anticipa que el experto buscará fallos.
+- **Propuso:** Claude · **Decidió:** OlaIA (tarea 8 del plan maestro) · **Hizo:** Claude (OlaIA autorizó los cambios en Supabase)

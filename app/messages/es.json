@@ -22,7 +22,8 @@
       "email": "Revisa el correo: no parece válido.",
       "zone": "Dinos tu zona o barrio.",
       "consent": "Necesitamos tu permiso para guardar tus datos.",
-      "generic": "Algo ha fallado. Inténtalo de nuevo en un rato."
+      "generic": "Algo ha fallado. Inténtalo de nuevo en un rato.",
+      "tooMany": "Demasiados intentos. Espera un rato y vuelve a probar."
     }
   },
   "Privacy": {
@@ -64,7 +65,8 @@
       "underage": "Lo sentimos: Badulake es solo para mayores de 18 años.",
       "credentials": "El correo o la contraseña no son correctos.",
       "unconfirmed": "Aún no has activado tu cuenta. Abre el enlace del correo que te enviamos.",
-      "generic": "Algo ha fallado. Inténtalo de nuevo en un rato."
+      "generic": "Algo ha fallado. Inténtalo de nuevo en un rato.",
+      "tooMany": "Demasiados intentos. Espera unos minutos y vuelve a probar."
     },
     "notices": {
       "salida": "Has salido de tu cuenta.",

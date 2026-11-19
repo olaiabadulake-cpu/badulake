@@ -67,6 +67,7 @@ export function SignUpForm() {
       </div>
 
       {err.generic && <p role="alert" className="font-medium text-error">{t("errors.generic")}</p>}
+      {err.tooMany && <p role="alert" className="font-medium text-error">{t("errors.tooMany")}</p>}
 
       <button
         type="submit" disabled={pending}

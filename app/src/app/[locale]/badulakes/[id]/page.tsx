@@ -44,7 +44,7 @@ async function Details({
   const [{ data: a }, { data: mine }, { data: count }] = await Promise.all([
     supabase.from("badulakes_direccion").select("direccion").eq("badulake_id", id).maybeSingle(),
     supabase.from("inscripciones").select("badulake_id").eq("badulake_id", id).maybeSingle(),
-    supabase.from("badulakes_ocupadas").select("ocupadas").eq("badulake_id", id).maybeSingle(),
+    supabase.rpc("plazas_ocupadas", { p_ids: [id] }).maybeSingle<{ ocupadas: number }>(),
   ]);
   const joined = Boolean(mine);
   const taken = count?.ocupadas ?? 0;
