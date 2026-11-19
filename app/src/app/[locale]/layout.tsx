@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Raleway, Roboto } from "next/font/google";
 import { notFound } from "next/navigation";
 import { locale as rootLocale } from "next/root-params";
@@ -9,6 +9,8 @@ import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { Analytics } from "@vercel/analytics/next";
 import { Suspense } from "react";
+import { InstallHint } from "./install-hint";
+import { RegisterSW } from "./register-sw";
 import { SiteHeader } from "./site-header";
 import "../globals.css";
 
@@ -29,8 +31,18 @@ export function generateStaticParams() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Meta");
-  return { title: t("title"), description: t("description") };
+  const locale = await rootLocale();
+  return {
+    title: t("title"),
+    description: t("description"),
+    // App instalable (Tarea 16, D-030): manifiesto del idioma, icono de iPhone y nombre al añadir a la pantalla de inicio.
+    manifest: `/${locale}/manifest.webmanifest`,
+    icons: { apple: "/iconos/apple-touch-icon.png" },
+    appleWebApp: { capable: true, title: "Badulake", statusBarStyle: "default" },
+  };
 }
+
+export const viewport: Viewport = { themeColor: "#FEDB75" };
 
 export default async function RootLayout({ children }: LayoutProps<"/[locale]">) {
   const locale = await rootLocale();
@@ -55,6 +67,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
           <footer className="sobre-noche bg-noche text-white">
             <div className="mx-auto flex max-w-2xl flex-col gap-2 px-4 py-6 text-[0.9375rem] sm:px-8">
             <p className="font-display font-bold">{t("project")}</p>
+            <InstallHint lang={await contentLang()} />
             <nav aria-label={t("legalNav")} lang={await contentLang()}>
               <ul className="flex flex-wrap gap-x-4 gap-y-1">
                 <li><Link href="/aviso-legal" className="enlace !font-normal">{t("legalLink")}</Link></li>
@@ -68,6 +81,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
             </div>
           </footer>
         </NextIntlClientProvider>
+        <RegisterSW />
         {/* Visitas sin cookies ni seguimiento entre webs (Tarea 15, D-029). Solo existe en producción. */}
         <Suspense fallback={null}><Analytics /></Suspense>
       </body>

@@ -64,6 +64,7 @@ En todas las páginas (`app/next.config.ts`):
 - **HSTS:** el navegador solo usará https durante dos años.
 - **X-Content-Type-Options, Referrer-Policy, X-Frame-Options y Permissions-Policy:** el navegador no adivina tipos de archivo, no se manda la dirección completa a otras webs, nadie puede incrustar Badulake para engañar con clics, y la web no puede usar cámara, micrófono ni ubicación.
 - Se quita la cabecera que decía con qué está hecha la web.
+- **App instalable (Tarea 16, D-031):** el service worker (`sw.js`) solo guarda la página «sin conexión» y un icono; nunca páginas con datos ni respuestas de la API. La CSP no cambia (el service worker y el manifiesto salen del mismo dominio).
 
 Comprobado en el Mac: la portada, «Qué es un badulake», entrar y el selector de idioma funcionan, sin ningún bloqueo en la consola.
 

@@ -41,7 +41,11 @@ const nextConfig: NextConfig = {
   // 404 propia, con la marca, para direcciones que no existen en ninguna lengua (Tarea 14).
   experimental: { globalNotFound: true },
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    return [
+      { source: "/:path*", headers: securityHeaders },
+      // El service worker nunca se guarda en la caché del navegador, para que los cambios lleguen siempre (Tarea 16).
+      { source: "/sw.js", headers: [{ key: "Cache-Control", value: "no-cache, max-age=0" }, { key: "Content-Type", value: "text/javascript; charset=utf-8" }] },
+    ];
   },
   turbopack: {
     rules: {

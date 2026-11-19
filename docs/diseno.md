@@ -34,7 +34,7 @@ Raleway (títulos, logotipo) y Roboto (texto), ya cargadas desde `next/font` (al
 
 ## Logo e icono
 
-Símbolo: la «ë» en amarillo dentro de un círculo azul noche (en la web) o en azul sobre amarillo (icono de la app, `app/src/app/icon.svg`, para la Tarea 16). Logotipo: «badulakë» en Raleway extranegrita con la «a» subrayada, como el original. Todo dibujado en SVG y texto, sin imágenes.
+Símbolo: la «ë» en amarillo dentro de un círculo azul noche (en la web) o en azul sobre amarillo (icono de la app, `app/src/app/icon.svg`; los iconos instalables salen de él con `app/scripts/iconos.mjs`, Tarea 16). Logotipo: «badulakë» en Raleway extranegrita con la «a» subrayada, como el original. Todo dibujado en SVG y texto, sin imágenes.
 
 ## Reglas
 

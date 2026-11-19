@@ -251,3 +251,14 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - **Coste** en [costes.md](costes.md): hoy 0 USD; con 100 usuarias ≈ 45 USD/mes; con 1.000, ≈ 45–75 USD/mes (estimación; dominio pendiente, sin precio en la hoja).
 - **Por qué:** El guion del episodio 6 habla de VIP y BaduCoins; la app puede medir si la gente las quiere sin cobrar nada ni prometer algo que no existe.
 - **Propuso y hizo:** Claude (tarea 17 del plan maestro) · **Decidió:** OlaIA (la idea de medir interés y no cobrar)
+
+### D-031 · App instalable (PWA): manifiesto por idioma, iconos y un service worker que no guarda datos
+- **Fecha:** 19/11/2026
+- **Alternativas:** app en las tiendas (descartada en D-013); service worker que guarde páginas para usarlas sin conexión (descartado: habría datos personales y direcciones en el móvil); ventana emergente de «Instalar» al entrar (molesta e inaccesible).
+- **Decisión** (Tarea 16 del plan maestro):
+  - **Manifiesto** `/<idioma>/manifest.webmanifest` (uno por idioma, para que la app instalada se abra en el idioma desde el que se instaló): nombre «Badulake», `display: standalone`, fondo crema #FFF6DC y color de tema amarillo #FEDB75 (D-028). Iconos 192 y 512 (círculo del icono de la Tarea 14), 192 y 512 «maskable» (cuadrado, símbolo al 62 %) y el de iPhone de 180 px, generados con `app/scripts/iconos.mjs` en `app/public/iconos/`.
+  - **Instalar:** en el pie de todas las páginas, sin ventanas. En Android/Chrome sale el botón «Instalar» cuando el navegador lo permite; en iPhone/iPad, un desplegable «Instálala en tu móvil» con «Compartir → Añadir a pantalla de inicio». Si ya está instalada, no sale nada. Textos en castellano y euskera (las demás lenguas, castellano marcado con `lang="es"`).
+  - **Service worker** (`app/public/sw.js`, registrado solo en producción): guarda **solo** la página «sin conexión» (`/sin-conexion.html`, castellano y euskera) y un icono. No guarda páginas, datos de nadie ni respuestas de la API: cada visita va a la red, y solo si falla una página se enseña la de «sin conexión». Cabecera `no-cache` en `sw.js`.
+  - **CSP: no cambia** (D-023): el service worker y el manifiesto salen del mismo dominio (`script-src`/`default-src 'self'`).
+- **No entra:** notificaciones push, tiendas, usar datos sin conexión.
+- **Propuso y hizo:** Claude (tarea 16 del plan maestro) · **Decidió:** Claude, por ser técnica; OlaIA puede cambiarla.
