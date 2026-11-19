@@ -37,7 +37,7 @@ Ficha hecha el 19/11/2026 (Tarea 9 del plan maestro, decisión D-024). Es el **b
 | **Para qué** | Entrar en la app y usarla; comprobar que solo hay mayores de 18. |
 | **Base legal propuesta** | Ejecución del servicio que pide la persona (art. 6.1.b). La comprobación de edad, interés legítimo de proteger a menores (6.1.f) — *a confirmar*. |
 | **Quién lo ve** | Solo la propia persona (su perfil). Nadie más, ni otras cuentas. |
-| **Cuánto tiempo** | Hasta que la persona pida borrarla (el botón llegará en la Tarea 21). Las **sesiones sin usar 90 días** se borran solas (hay que volver a entrar). |
+| **Cuánto tiempo** | Hasta que la persona la borre con el botón **«Borrar mi cuenta»** de «Tu cuenta» (Tarea 21, D-034): se borra al momento, con todos sus datos. Las **sesiones sin usar 90 días** se borran solas (hay que volver a entrar). |
 | **Pendiente de decidir** | Qué hacer con cuentas que nunca se usan (por ejemplo, borrarlas tras 2 años avisando antes por correo; necesita el correo propio, Tarea 10). |
 
 ### 2.3 Badulakes
@@ -133,7 +133,8 @@ Se aplican **solos cada noche a las 03:15 (hora UTC)** con una tarea programada 
 | Sesiones abandonadas | A los 90 días sin usarse |
 | Registro de accesos de Supabase Auth | A los 30 días |
 | Contadores del límite de intentos | Nunca se guardan: viven unos minutos en la memoria del servidor |
-| Cuenta | Cuando la persona lo pida (Tarea 21) |
+| Cuenta | Al momento, cuando la persona pulsa «Borrar mi cuenta» (Tarea 21) |
+| Huella del correo de una cuenta suspendida que se borra | 12 meses |
 | Denuncias | Con el badulake, 30 días después de celebrarse |
 
 Comprobado con un badulake inventado: a los 2 días ya no tenía dirección y a los 31 días no quedaba ni el badulake ni la inscripción.
@@ -151,7 +152,9 @@ Solo **cookies técnicas**, exentas de consentimiento (art. 22.2 LSSI). Comproba
 
 ## 7. Derechos de las personas
 
-Acceso, rectificación, supresión, portabilidad, oposición y limitación. **Por ahora se ejercen por correo** a EITB (*pendiente de la Asesoría:* la dirección). El botón para borrar la cuenta desde la app es la Tarea 21. Mientras tanto, el equipo puede atender una petición desde el panel de Supabase: borrar una cuenta borra en cascada su perfil, sus badulakes, sus direcciones y sus inscripciones.
+Acceso, rectificación, supresión, portabilidad, oposición y limitación. **Por ahora se ejercen por correo** a EITB (*pendiente de la Asesoría:* la dirección). **Supresión de la cuenta: ya con botón** (Tarea 21, D-034). «Tu cuenta» tiene «Borrar mi cuenta» (hay que escribir BORRAR, o EZABATU en euskera): borra al instante la cuenta, el perfil, las inscripciones, las listas de espera, los «Me interesa» y los badulakes que organiza con sus direcciones; si un badulake publicado tenía gente apuntada o esperando, se cancela antes (avisa a esas personas), se queda sin organizadora ni descripción y se borra 30 días después de su fecha, y entran las personas de las listas en los badulakes de los que se va. Las **denuncias** que hizo se quedan, **anonimizadas** (sin el identificador). Si la cuenta estaba **suspendida**, se guarda solo una **huella cifrada del correo** (tabla `bloqueados`, ilegible desde la app) **12 meses** para que no pueda volver a registrarse; no se guarda la fecha ni el motivo. Un correo sigue haciendo falta para el resto de derechos (acceso, rectificación, portabilidad…). *Pendiente de la Asesoría:* confirmar la base legal de la huella (interés legítimo, 6.1.f) y el plazo de 12 meses.
+
+**Contraseñas (Tarea 21):** «¿Has olvidado tu contraseña?» en /entrar (responde siempre lo mismo, exista o no el correo) y cambio de contraseña dentro de la cuenta (pide la actual). El envío real del correo depende del correo propio (Tarea 10): hasta entonces Supabase solo envía al equipo.
 
 ## 8. Seguridad
 

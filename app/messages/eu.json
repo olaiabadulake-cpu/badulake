@@ -53,11 +53,11 @@
       },
       "time": {
         "title": "Zenbat denboran",
-        "body": "- Badulake baten helbide zehatza berez ezabatzen da egin eta hurrengo egunean.\n- Badulakea eta izena eman zutenen zerrenda berez ezabatzen dira 30 egun geroago.\n- Itxaron-zerrenda abiaraztearen berri ematean ezabatzen da, eta gehienez 12 hilabetera.\n- Zure kontua gordeko da hura ezabatzeko eskatu arte. 90 egunean erabiltzen ez baduzu, zure saioa itxiko da.\n- Erregistro teknikoak (adibidez, zure konexioaren helbidea) gehienez 30 egunean ezabatzen dira."
+        "body": "- Badulake baten helbide zehatza berez ezabatzen da egin eta hurrengo egunean.\n- Badulakea eta izena eman zutenen zerrenda berez ezabatzen dira 30 egun geroago.\n- Itxaron-zerrenda abiaraztearen berri ematean ezabatzen da, eta gehienez 12 hilabetera.\n- Zure kontua gordeko da zuk «Nire kontua ezabatu» botoiarekin ezabatu arte. 90 egunean erabiltzen ez baduzu, zure saioa itxiko da.\n- Erregistro teknikoak (adibidez, zure konexioaren helbidea) gehienez 30 egunean ezabatzen dira."
       },
       "rights": {
         "title": "Zure eskubideak",
-        "body": "Zure datuak ikusteko, zuzentzeko, ezabatzeko, eramateko edo erabiltzeari uzteko eska dezakezu. Oraingoz, idatzi EITBren datuen babeserako helbide elektronikora (Aholkularitza Juridikoak gehituko du). Laster, zure kontua aplikaziotik bertatik ezabatu ahal izango duzu. Ados ez bazaude, datuak babesteko agintaritzaren aurrean erreklamatu dezakezu."
+        "body": "Zure datuak ikusteko, zuzentzeko, ezabatzeko, eramateko edo erabiltzeari uzteko eska dezakezu. Oraingoz, idatzi EITBren datuen babeserako helbide elektronikora (Aholkularitza Juridikoak gehituko du). «Zure kontua» orrian «Nire kontua ezabatu» botoia dago: zure kontua eta datuak unean bertan ezabatzen ditu. Kontua etenda bazegoen, zure postaren hatz-marka zifratu bat (ezin da irakurri) 12 hilabetez gordetzen da, kontua berriro ez sortzeko. Pasahitza ere alda dezakezu, edo ahaztu baduzu berreskuratu. Ados ez bazaude, datuak babesteko agintaritzaren aurrean erreklamatu dezakezu."
       },
       "cookies": {
         "title": "Cookieak",
@@ -106,13 +106,17 @@
       "credentials": "Posta elektronikoa edo pasahitza ez dira zuzenak.",
       "unconfirmed": "Oraindik ez duzu kontua aktibatu. Ireki bidali dizugun mezuko esteka.",
       "generic": "Zerbaitek huts egin du. Saiatu berriro tarte baten buruan.",
-      "tooMany": "Saiakera gehiegi. Itxaron minutu batzuk eta saiatu berriro."
+      "tooMany": "Saiakera gehiegi. Itxaron minutu batzuk eta saiatu berriro.",
+      "confirmMismatch": "Bi pasahitzak ez datoz bat.",
+      "currentWrong": "Oraingo pasahitza ez da zuzena.",
+      "deleteWord": "Idatzi {word} berresteko."
     },
     "notices": {
       "salida": "Kontutik irten zara.",
       "enlace": "Esteka ez da baliozkoa edo iraungita dago. Saiatu sartzen edo sortu berriro kontua.",
       "verificada": "Zure posta elektronikoa egiaztatuta dago. Orain sar zaitezke.",
-      "cuenta": "Horretarako zure kontuan sartu behar duzu. Konturik ez baduzu, sortu: doakoa da."
+      "cuenta": "Horretarako zure kontuan sartu behar duzu. Konturik ez baduzu, sortu: doakoa da.",
+      "borrada": "Zure kontua eta datuak ezabatu dira."
     },
     "interestTitle": "Gogoan ditugun ideiak",
     "interestIntro": "Gaur ez daude eta ez dute ezer balio. Interesatuko zaizkizun jakin nahi dugu, zer egin erabakitzeko.",
@@ -126,7 +130,29 @@
     "noticesTitle": "Abisuak",
     "noticeFromWaitlist": "itxaron-zerrendatik sartu zara.",
     "noticeCancelled": "badulake hau bertan behera geratu da.",
-    "noticeWaiting": "itxaron-zerrendan zaude, {position}. postuan."
+    "noticeWaiting": "itxaron-zerrendan zaude, {position}. postuan.",
+    "forgot": "Pasahitza ahaztu duzu?",
+    "forgotTitle": "Pasahitza berreskuratu",
+    "forgotIntro": "Idatzi zure kontuaren posta elektronikoa eta, badago, pasahitz berri bat aukeratzeko esteka bidaliko dizugu.",
+    "forgotSubmit": "Bidali esteka",
+    "forgotSent": "Eginda. Posta horrek kontua badu, pasahitz berri bat aukeratzeko esteka jasoko duzu. Begiratu spam karpeta ere.",
+    "newPasswordTitle": "Aukeratu pasahitz berri bat",
+    "newPasswordSubmit": "Gorde pasahitza",
+    "newPassword": "Pasahitz berria",
+    "repeatPassword": "Errepikatu pasahitz berria",
+    "currentPassword": "Oraingo pasahitza",
+    "changePasswordTitle": "Pasahitza aldatu",
+    "changePasswordSubmit": "Aldatu pasahitza",
+    "passwordChanged": "Zure pasahitza aldatu da.",
+    "deleteTitle": "Nire kontua ezabatu",
+    "deleteIntro": "Zure kontua ezabatzen baduzu, benetan eta unean bertan ezabatzen da:",
+    "deleteItem1": "Zure profila, badulakeetan izen emateak, itxaron-zerrendak eta «Interesatzen zait» markak.",
+    "deleteItem2": "Antolatzen dituzun badulakeak eta haien helbideak. Norbait izena emanda badago, lehenago bertan behera uzten da eta jakinarazten zaie; gainerakoak ezabatzen dira.",
+    "deleteItem3": "Zure salaketek bere horretan jarraitzen dute, baina zu identifikatzen zaituen daturik gabe.",
+    "deleteWarning": "Ezin da desegin.",
+    "deleteWord": "EZABATU",
+    "deleteLabel": "Berresteko, idatzi {word}",
+    "deleteSubmit": "Ezabatu nire kontua betiko"
   },
   "Badulake": {
     "newTitle": "Badulake bat sortu",

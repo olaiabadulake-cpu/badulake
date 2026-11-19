@@ -154,3 +154,10 @@ Script `supabase/cupo.sql`, ejecutado por Claude en Supabase el 19/11/2026.
 - **Vercel y Supabase**: entran con GitHub, protegidas por la misma cadena (GitHub → Google). Supabase, por confirmar.
 - **Riverside y Resend**: pendientes de confirmar con qué entran.
 - **Revisor de seguridad de Supabase (Security Advisor), 20/11/2026, después del script:** **0 errores**, 15 avisos y 2 sugerencias, **todos a propósito**. Los 15 avisos son las 15 funciones especiales que se pueden llamar con sesión (nunca sin sesión): `apuntarme`, `crear_badulake`, `cancelar_mi_badulake`, `mi_espera`, `mis_badulakes`, `plazas_ocupadas`, `estoy_suspendida`, `soy_equipo`, `badulake_oculto` y las seis `equipo_*`. Son la única forma de hacer esas cosas y cada una comprueba quién llama (o que es del equipo) y solo devuelve lo propio. Las funciones internas de esta tarea (`rellenar_desde_espera`, `al_borrarse`, `cancelar`, `cancelar_sin_minimo`) no las puede llamar nadie, comprobado también con una consulta a los permisos. Las 2 sugerencias son las tablas `equipo` y `suspendidas`, con RLS y sin reglas: a propósito, para que nadie pueda leerlas desde la app (D-027).
+
+## 12. Borrar cuenta y contraseñas (Tarea 21, D-034)
+
+- `borrar_mi_cuenta()` se puede llamar solo con sesión (sin sesión: «permission denied»), no recibe ningún identificador (solo borra a quien llama), tiene ruta fija y no se puede usar para borrar a otra persona.
+- Tabla `bloqueados` y funciones `huella_correo` y `comprobar_bloqueado`: sin permisos para la app (comprobado con la clave pública).
+- Pruebas con 8 cuentas inventadas (`prueba-borrar1..8@badulake.app`, borradas al acabar): sin sesión no se puede borrar; al borrar la suya, las demás siguen; el badulake con gente se cancela, sin organizadora, sin dirección y sin descripción; el borrador desaparece; entra la primera de la lista de espera; la denuncia queda sin denunciante; la cuenta suspendida deja la huella y la base de datos rechaza volver a crearla.
+- Recuperar contraseña: respuesta idéntica exista o no el correo; límite de 5 por hora y correo.

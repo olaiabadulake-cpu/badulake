@@ -53,11 +53,11 @@
       },
       "s06": {
         "title": "6. Cuánto tiempo guardamos tus datos",
-        "body": "Muchos se borran solos cada noche con una tarea programada:\n- **Dirección exacta de un badulake:** al día siguiente de celebrarse, o en el momento en que se cancela.\n- **El badulake y quién se apuntó:** 30 días después de su fecha, también si se canceló (margen para quejas o denuncias).\n- **Lista de espera de un badulake:** cuando empieza el badulake, cuando sales de ella o cuando entras.\n- **Denuncias:** se borran con el badulake denunciado, 30 días después de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se levante la suspensión o se borre la cuenta. Si borras tu cuenta, tus denuncias siguen, pero sin el código que te identificaba.\n- **Lista de espera del lanzamiento:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.\n- **Cuenta:** hasta que pidas borrarla. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.\n- **Registro de accesos de la cuenta** (con IP): 30 días.\n- **Contador de intentos:** no se guarda; vive unos minutos en la memoria del servidor.\n- Después, los datos se mantienen bloqueados solo el tiempo que la ley exija para posibles responsabilidades. **[A CONFIRMAR POR ASESORÍA]**"
+        "body": "Muchos se borran solos cada noche con una tarea programada:\n- **Dirección exacta de un badulake:** al día siguiente de celebrarse, o en el momento en que se cancela.\n- **El badulake y quién se apuntó:** 30 días después de su fecha, también si se canceló (margen para quejas o denuncias).\n- **Lista de espera de un badulake:** cuando empieza el badulake, cuando sales de ella o cuando entras.\n- **Denuncias:** se borran con el badulake denunciado, 30 días después de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se levante la suspensión o se borre la cuenta. Si borras tu cuenta, tus denuncias siguen, pero sin el código que te identificaba.\n- **Lista de espera del lanzamiento:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.\n- **Cuenta:** hasta que la borres tú con el botón «Borrar mi cuenta» (o la pidas por correo). Huella del correo de una cuenta suspendida y borrada: 12 meses. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.\n- **Registro de accesos de la cuenta** (con IP): 30 días.\n- **Contador de intentos:** no se guarda; vive unos minutos en la memoria del servidor.\n- Después, los datos se mantienen bloqueados solo el tiempo que la ley exija para posibles responsabilidades. **[A CONFIRMAR POR ASESORÍA]**"
       },
       "s07": {
         "title": "7. Tus derechos y cómo ejercerlos",
-        "body": "Puedes pedirnos:\n- **Acceso:** saber qué datos tuyos tenemos.\n- **Rectificación:** corregir datos incorrectos.\n- **Supresión:** que borremos tus datos.\n- **Oposición:** que dejemos de usarlos por nuestro interés legítimo.\n- **Limitación:** que los congelemos mientras se aclara una duda.\n- **Portabilidad:** llevarte los que nos diste en un formato legible.\n- **Retirar tu consentimiento** (lista de espera) en cualquier momento.\n**Cómo:** escribe a **[A COMPLETAR POR ASESORÍA: correo]**, indicando qué quieres y con qué correo te registraste. Si hace falta, te pediremos que confirmes que eres tú. Responderemos en **un mes** como máximo (ampliable por la ley en casos complejos). Es gratis.\nMuy pronto podrás **borrar tu cuenta tú misma desde la propia app**. Mientras tanto, si lo pides por correo, borramos tu cuenta y, con ella, tu perfil, tus badulakes, sus direcciones y tus inscripciones."
+        "body": "Puedes pedirnos:\n- **Acceso:** saber qué datos tuyos tenemos.\n- **Rectificación:** corregir datos incorrectos.\n- **Supresión:** que borremos tus datos.\n- **Oposición:** que dejemos de usarlos por nuestro interés legítimo.\n- **Limitación:** que los congelemos mientras se aclara una duda.\n- **Portabilidad:** llevarte los que nos diste en un formato legible.\n- **Retirar tu consentimiento** (lista de espera) en cualquier momento.\n**Cómo:** escribe a **[A COMPLETAR POR ASESORÍA: correo]**, indicando qué quieres y con qué correo te registraste. Si hace falta, te pediremos que confirmes que eres tú. Responderemos en **un mes** como máximo (ampliable por la ley en casos complejos). Es gratis.\n**Supresión sin esperar:** en «Tu cuenta» hay un botón **«Borrar mi cuenta»** que borra al momento tu cuenta y tus datos (perfil, apuntes, listas de espera, «Me interesa», badulakes que organizas y sus direcciones). Si organizas un badulake con gente apuntada, se cancela antes y se les avisa. Tus denuncias se quedan, sin nada que te identifique. Si tu cuenta estaba suspendida, guardamos solo una huella cifrada de tu correo (no se puede leer) durante 12 meses para que no se pueda volver a crear la cuenta. También puedes cambiar tu contraseña o recuperarla si la olvidas."
       },
       "s08": {
         "title": "8. Si no estás conforme",
@@ -122,13 +122,17 @@
       "credentials": "El correo o la contraseña no son correctos.",
       "unconfirmed": "Aún no has activado tu cuenta. Abre el enlace del correo que te enviamos.",
       "generic": "Algo ha fallado. Inténtalo de nuevo en un rato.",
-      "tooMany": "Demasiados intentos. Espera unos minutos y vuelve a probar."
+      "tooMany": "Demasiados intentos. Espera unos minutos y vuelve a probar.",
+      "confirmMismatch": "Las dos contraseñas no coinciden.",
+      "currentWrong": "La contraseña actual no es correcta.",
+      "deleteWord": "Escribe {word} para confirmar."
     },
     "notices": {
       "salida": "Has salido de tu cuenta.",
       "enlace": "El enlace no es válido o ha caducado. Prueba a entrar o vuelve a crear la cuenta.",
       "verificada": "Tu correo está verificado. Ya puedes entrar.",
-      "cuenta": "Para eso tienes que entrar en tu cuenta. Si aún no tienes, créala: es gratis."
+      "cuenta": "Para eso tienes que entrar en tu cuenta. Si aún no tienes, créala: es gratis.",
+      "borrada": "Tu cuenta y tus datos se han borrado."
     },
     "interestTitle": "Ideas que estamos valorando",
     "interestIntro": "Hoy no existen y no cuestan nada. Solo queremos saber si te interesarían, para decidir qué hacer después.",
@@ -142,7 +146,29 @@
     "noticesTitle": "Avisos",
     "noticeFromWaitlist": "has entrado desde la lista de espera.",
     "noticeCancelled": "este badulake se ha cancelado.",
-    "noticeWaiting": "estás en la lista de espera ({position}.ª)."
+    "noticeWaiting": "estás en la lista de espera ({position}.ª).",
+    "forgot": "¿Has olvidado tu contraseña?",
+    "forgotTitle": "Recuperar la contraseña",
+    "forgotIntro": "Escribe el correo de tu cuenta y, si existe, te enviaremos un enlace para elegir una contraseña nueva.",
+    "forgotSubmit": "Enviar el enlace",
+    "forgotSent": "Listo. Si ese correo tiene cuenta, te llegará un enlace para elegir una contraseña nueva. Revisa también el correo no deseado.",
+    "newPasswordTitle": "Elige una contraseña nueva",
+    "newPasswordSubmit": "Guardar la contraseña",
+    "newPassword": "Contraseña nueva",
+    "repeatPassword": "Repite la contraseña nueva",
+    "currentPassword": "Contraseña actual",
+    "changePasswordTitle": "Cambiar la contraseña",
+    "changePasswordSubmit": "Cambiar la contraseña",
+    "passwordChanged": "Tu contraseña se ha cambiado.",
+    "deleteTitle": "Borrar mi cuenta",
+    "deleteIntro": "Si borras tu cuenta, se borra de verdad y al momento:",
+    "deleteItem1": "Tu perfil, tus apuntes a badulakes, tus listas de espera y tus «Me interesa».",
+    "deleteItem2": "Los badulakes que organizas y sus direcciones. Si alguno tiene gente apuntada, se cancela antes y se les avisa; los demás se borran.",
+    "deleteItem3": "Tus denuncias siguen, pero sin ningún dato que te identifique.",
+    "deleteWarning": "No se puede deshacer.",
+    "deleteWord": "BORRAR",
+    "deleteLabel": "Para confirmarlo, escribe {word}",
+    "deleteSubmit": "Borrar mi cuenta para siempre"
   },
   "Badulake": {
     "newTitle": "Crear un badulake",

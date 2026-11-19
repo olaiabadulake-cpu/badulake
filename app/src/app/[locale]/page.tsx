@@ -55,9 +55,9 @@ export default async function Home({ searchParams }: PageProps<"/[locale]">) {
 // Aviso al volver a la portada (por ahora, solo al salir de la cuenta).
 async function Notice({ searchParams }: Pick<PageProps<"/[locale]">, "searchParams">) {
   const { aviso } = await searchParams;
-  if (aviso !== "salida") return null;
+  if (aviso !== "salida" && aviso !== "borrada") return null;
   const t = await getTranslations("Account.notices");
-  return <p role="status" lang={await contentLang()} className="aviso">{t("salida")}</p>;
+  return <p role="status" lang={await contentLang()} className="aviso">{t(aviso)}</p>;
 }
 
 // Botón principal: sin sesión, crear cuenta; con sesión, ir a los badulakes.

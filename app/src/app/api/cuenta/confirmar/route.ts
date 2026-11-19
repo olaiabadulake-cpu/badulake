@@ -20,5 +20,9 @@ export async function GET(request: NextRequest) {
   const { error } = await supabase.auth.exchangeCodeForSession(code);
   // Si el enlace se abre en otro navegador no se puede abrir sesión, pero el correo ya está
   // verificado: se pide entrar con la contraseña.
+  if (params.get("next") === "nueva-contrasena") {
+    // Recuperar contraseña: con el enlace del correo se abre una sesión solo para poner la nueva.
+    return error ? to("/entrar?aviso=enlace") : to("/nueva-contrasena");
+  }
   return error ? to("/entrar?aviso=verificada") : to("/cuenta");
 }

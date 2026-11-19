@@ -187,7 +187,7 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - **Frankfurt:** la parte del servidor de la web pasa de Washington a Frankfurt (`"regions": ["fra1"]` en `app/vercel.json`), junto a la base de datos.
   - **Cookies:** solo técnicas (idioma y sesión); sin banner. Comprobado que no hay otras ni scripts de terceros.
   - **Página `/privacidad`:** borrador provisional en lenguaje llano, marcado como tal (castellano y euskera), con qué se guarda, para qué, quién lo ve, dónde, cuánto tiempo, derechos y cookies. Enlace en el pie de todas las páginas y en «Crear cuenta».
-  - **Derechos:** por correo a EITB (dirección pendiente de la Asesoría); el botón de borrar la cuenta es la Tarea 21.
+  - **Derechos:** por correo a EITB (dirección pendiente de la Asesoría); el botón de borrar la cuenta llegó en la Tarea 21 (D-034).
 - **Cerrado en producción:** `PRIVACY_NOTICE_READY` y `CUENTAS_ABIERTAS` siguen apagados (D-018, D-019).
 - **Por qué:** El RGPD exige privacidad desde el diseño y guardar los datos solo el tiempo necesario. La dirección de una casa no sirve de nada después del badulake. Saber qué badulakes organiza la misma persona podría revelar dónde vive y cuándo está en casa.
 - **Propuso:** Claude · **Decidió:** OlaIA (tarea 9 del plan maestro; plazos y correo de derechos) · **Hizo:** Claude
@@ -290,3 +290,13 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - **Carga:** prueba con autocannon, **en el Mac y con la versión idéntica a la publicada** (200 visitantes a la vez, unas 2.500 visitas por segundo, 0 errores); en la web publicada solo una comprobación suave. Apuntarse a la vez, a escala, en la base real con datos inventados: 120 cuentas a la vez por 10 plazas dieron 10 dentro, 110 en lista con puestos 1 a 110 y 0 errores; todo borrado (`docs/carga.md`).
 - **No entra:** abrir cuentas, correos, dominio, herramientas del día del badulake.
 - **Propuso y hizo:** Claude (tarea 18 del plan maestro) · **Decidió:** Claude, por ser técnica; OlaIA puede cambiarla.
+
+### D-034 · Borrar la cuenta con un botón, recuperar y cambiar la contraseña
+- **Fecha:** 20/11/2026
+- **Alternativas:** borrar solo desde el panel de Supabase a petición por correo; borrar también las denuncias hechas; no guardar nada de las cuentas suspendidas borradas.
+- **Decisión:**
+  - **Borrar mi cuenta** (en «Tu cuenta», escribiendo BORRAR / EZABATU): una función segura de la base de datos (`borrar_mi_cuenta`, `security definer`, ruta fija, solo para quien tiene sesión y solo borra la cuenta de quien llama; `supabase/borrar_cuenta.sql`). Borra perfil, inscripciones (entra la primera de cada lista de espera), listas de espera, «Me interesa» y los badulakes que organiza; los publicados con gente apuntada o esperando se cancelan antes, se quedan sin organizadora ni descripción y se borran 30 días después. Las denuncias que hizo quedan anonimizadas (sin identificador).
+  - **Cuentas suspendidas (decide OlaIA, 20/11/2026):** si se borra una suspendida se guarda solo una huella cifrada del correo (tabla `bloqueados`, sin permisos para la app) 12 meses, y la base de datos no deja crear una cuenta con ese correo.
+  - **Contraseña:** «¿Has olvidado tu contraseña?» en /entrar (mismo mensaje exista o no el correo, con límite de intentos) y página `/nueva-contrasena` con el enlace del correo; cambiar la contraseña dentro pide la actual.
+- **Pendiente:** el correo de recuperación solo llega a quien sea del equipo hasta tener correo propio (Tarea 10). La Asesoría debe confirmar la base legal de la huella.
+- **Cerrado en producción:** todo sigue con `CUENTAS_ABIERTAS` (D-019): las páginas nuevas dan 404 en la web publicada.

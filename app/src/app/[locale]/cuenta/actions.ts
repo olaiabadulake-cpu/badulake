@@ -133,3 +133,95 @@ export async function signOut(formData: FormData): Promise<void> {
   }
   redirect({ href: "/?aviso=salida", locale });
 }
+
+// ---- Contraseñas y borrado de cuenta (Tarea 21, D-034) ----
+
+export type SimpleState = {
+  status: "idle" | "done" | "error";
+  errors?: Partial<Record<"password" | "current" | "confirm" | "generic" | "tooMany" | "email", true>>;
+};
+
+// «He olvidado mi contraseña». Siempre responde lo mismo, exista o no el correo (no se dice
+// quién está registrado). Supabase envía el correo (de momento solo al equipo: Tarea 10).
+export async function requestReset(_prev: SimpleState, formData: FormData): Promise<SimpleState> {
+  if (!accountsOpen) return { status: "error", errors: { generic: true } };
+  const locale = readLocale(formData);
+  const email = String(formData.get("email") ?? "").trim().toLowerCase();
+  if (!EMAIL.test(email) || email.length > 254) return { status: "error", errors: { email: true } };
+  if (await tooManyAttempts("olvidada", 5, 60, email)) return { status: "error", errors: { tooMany: true } };
+
+  const supabase = await createSupabase();
+  const { error } = await supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: `${siteOrigin()}/api/cuenta/confirmar?locale=${locale}&next=nueva-contrasena`,
+  });
+  if (error) console.error("[olvidada]", error.code, error.message);
+  return { status: "done" };
+}
+
+// Poner una contraseña nueva (tras el enlace del correo, con la sesión de recuperación).
+export async function setNewPassword(_prev: SimpleState, formData: FormData): Promise<SimpleState> {
+  if (!accountsOpen) return { status: "error", errors: { generic: true } };
+  const locale = readLocale(formData);
+  const password = String(formData.get("password") ?? "");
+  const confirm = String(formData.get("confirm") ?? "");
+  if (password.length < 8 || new TextEncoder().encode(password).length > 72) return { status: "error", errors: { password: true } };
+  if (password !== confirm) return { status: "error", errors: { confirm: true } };
+  if (await tooManyAttempts("nueva", 10, 15)) return { status: "error", errors: { tooMany: true } };
+
+  const supabase = await createSupabase();
+  const { error } = await supabase.auth.updateUser({ password });
+  if (error) {
+    console.error("[nueva]", error.code, error.message);
+    if (error.code === "weak_password" || error.code === "same_password") return { status: "error", errors: { password: true } };
+    return { status: "error", errors: { generic: true } };
+  }
+  redirect({ href: "/cuenta?aviso=contrasena", locale });
+  return { status: "done" };
+}
+
+// Cambiar la contraseña estando dentro: pide la actual (Supabase lo exige, Tarea 8).
+export async function changePassword(_prev: SimpleState, formData: FormData): Promise<SimpleState> {
+  if (!accountsOpen) return { status: "error", errors: { generic: true } };
+  const current = String(formData.get("current") ?? "");
+  const password = String(formData.get("password") ?? "");
+  const confirm = String(formData.get("confirm") ?? "");
+  if (!current) return { status: "error", errors: { current: true } };
+  if (password.length < 8 || new TextEncoder().encode(password).length > 72) return { status: "error", errors: { password: true } };
+  if (password !== confirm) return { status: "error", errors: { confirm: true } };
+  if (await tooManyAttempts("cambiar", 10, 15)) return { status: "error", errors: { tooMany: true } };
+
+  const supabase = await createSupabase();
+  const { error } = await supabase.auth.updateUser({ password, current_password: current });
+  if (error) {
+    console.error("[cambiar]", error.code, error.message);
+    if (error.code === "weak_password" || error.code === "same_password") return { status: "error", errors: { password: true } };
+    if (error.code === "invalid_credentials" || error.code === "reauthentication_not_valid" || error.code === "reauthentication_needed") {
+      return { status: "error", errors: { current: true } };
+    }
+    return { status: "error", errors: { generic: true } };
+  }
+  return { status: "done" };
+}
+
+// Borrar mi cuenta. Hay que escribir la palabra de confirmación (BORRAR / EZABATU).
+// La función de la base de datos solo borra la cuenta de quien llama (supabase/borrar_cuenta.sql).
+const CONFIRM_WORD: Record<string, string> = { eu: "EZABATU" };
+export async function deleteAccount(_prev: SimpleState, formData: FormData): Promise<SimpleState> {
+  if (!accountsOpen) return { status: "error", errors: { generic: true } };
+  const locale = readLocale(formData);
+  const word = CONFIRM_WORD[locale] ?? "BORRAR";
+  if (String(formData.get("confirm") ?? "").trim().toUpperCase() !== word) {
+    return { status: "error", errors: { confirm: true } };
+  }
+  if (await tooManyAttempts("borrar", 5, 15)) return { status: "error", errors: { tooMany: true } };
+
+  const supabase = await createSupabase();
+  const { error } = await supabase.rpc("borrar_mi_cuenta");
+  if (error) {
+    console.error("[borrar]", error.code, error.message);
+    return { status: "error", errors: { generic: true } };
+  }
+  await supabase.auth.signOut({ scope: "local" });
+  redirect({ href: "/?aviso=borrada", locale });
+  return { status: "done" };
+}

@@ -89,7 +89,7 @@ Muchos se borran solos cada noche con una tarea programada:
 - **Lista de espera de un badulake:** cuando empieza el badulake, cuando sales de ella o cuando entras.
 - **Denuncias:** se borran con el badulake denunciado, 30 días después de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se levante la suspensión o se borre la cuenta. Si borras tu cuenta, tus denuncias siguen, pero sin el código que te identificaba.
 - **Lista de espera del lanzamiento:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.
-- **Cuenta:** hasta que pidas borrarla. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.
+- **Cuenta:** hasta que la borres tú con el botón «Borrar mi cuenta» (o la pidas por correo). **Huella del correo de una cuenta suspendida y borrada:** 12 meses. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.
 - **Registro de accesos de la cuenta** (con IP): 30 días.
 - **Contador de intentos:** no se guarda; vive unos minutos en la memoria del servidor.
 - Después, los datos se mantienen bloqueados solo el tiempo que la ley exija para posibles responsabilidades. **[A CONFIRMAR POR ASESORÍA]**
@@ -108,7 +108,7 @@ Puedes pedirnos:
 
 **Cómo:** escribe a **[A COMPLETAR POR ASESORÍA: correo]**, indicando qué quieres y con qué correo te registraste. Si hace falta, te pediremos que confirmes que eres tú. Responderemos en **un mes** como máximo (ampliable por la ley en casos complejos). Es gratis.
 
-Muy pronto podrás **borrar tu cuenta tú misma desde la propia app**. Mientras tanto, si lo pides por correo, borramos tu cuenta y, con ella, tu perfil, tus badulakes, sus direcciones y tus inscripciones.
+**Supresión sin esperar:** en «Tu cuenta» hay un botón **«Borrar mi cuenta»** que borra al momento tu cuenta y tus datos (perfil, apuntes, listas de espera, «Me interesa», badulakes que organizas y sus direcciones). Si organizas un badulake con gente apuntada, se cancela antes y se les avisa. Tus denuncias se quedan, sin nada que te identifique. Si tu cuenta estaba suspendida, guardamos solo una huella cifrada de tu correo (no se puede leer) durante 12 meses para que no se pueda volver a crear la cuenta **[A CONFIRMAR POR ASESORÍA: base legal y plazo]**. También puedes cambiar tu contraseña o recuperarla si la olvidas.
 
 ## 8. Si no estás conforme
 

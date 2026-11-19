@@ -54,6 +54,10 @@ export function SignInForm() {
       </button>
 
       <p>
+        <Link href="/olvidada" className="enlace">{t("forgot")}</Link>
+      </p>
+
+      <p>
         {t("noAccount")}{" "}
         <Link href="/registro" className="enlace">{t("signUpLink")}</Link>
       </p>
