@@ -13,13 +13,20 @@ export type WaitlistEntry = {
 const url = process.env.SUPABASE_URL;
 const key = process.env.SUPABASE_PUBLISHABLE_KEY;
 
-// El formulario solo se enseña si hay base de datos conectada.
-export const waitlistOpen = Boolean(url && key);
+// En producción (badulake.vercel.app) la lista sigue cerrada hasta que esté publicado el aviso de
+// privacidad definitivo (D-018). Para abrirla: variable PRIVACY_NOTICE_READY=true en Vercel.
+// En local y en las vistas previas sí se puede probar.
+const isProduction = process.env.VERCEL_ENV === "production";
+const privacyNoticeReady = process.env.PRIVACY_NOTICE_READY === "true";
+
+// El formulario solo se enseña si hay base de datos conectada y, en producción, aviso de privacidad.
+export const waitlistOpen = Boolean(url && key) && (!isProduction || privacyNoticeReady);
 
 // Con la clave pública y la seguridad por filas (RLS) solo se puede INSERTAR en `lista_espera`:
 // nadie puede leer la tabla desde fuera. Ver supabase/lista_espera.sql.
 export async function saveWaitlistEntry(entry: WaitlistEntry): Promise<void> {
-  if (!url || !key) throw new Error("Supabase no está configurado.");
+  // También se bloquea aquí, por si alguien intenta enviar el formulario aunque esté oculto.
+  if (!waitlistOpen || !url || !key) throw new Error("La lista de espera está cerrada.");
 
   const supabase = createClient(url, key, { auth: { persistSession: false } });
   const { error } = await supabase.from("lista_espera").insert({

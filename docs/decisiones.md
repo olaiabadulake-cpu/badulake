@@ -115,3 +115,10 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Por qué:** Es lo mínimo necesario (RGPD: solo correo, zona, idioma y fecha del consentimiento) y, aunque alguien consiguiera la clave pública, no podría leer los correos de nadie.
 - **Pendiente:** el aviso de privacidad definitivo de la Asesoría Jurídica debe estar publicado **antes de abrir la web al público**; la página `/privacidad` es provisional.
 - **Propuso:** Claude · **Decidió:** OlaIA · **Hizo:** Claude
+
+### D-018 · Lista de espera cerrada hasta tener el aviso de privacidad
+- **Fecha:** 19/11/2026
+- **Alternativas:** dejarla abierta con el aviso provisional.
+- **Decisión:** En producción el formulario no se enseña y el servidor rechaza cualquier envío hasta que la Asesoría Jurídica entregue el aviso de privacidad definitivo y se publique en `/privacidad`. Entonces se abre poniendo `PRIVACY_NOTICE_READY=true` en Vercel. En local y en las vistas previas se puede seguir probando, siempre con datos inventados (D-011).
+- **Por qué:** El RGPD obliga a informar antes de recoger un correo; el aviso actual es provisional. Así se cumple D-006 y D-017.
+- **Propuso:** Claude · **Decidió:** OlaIA · **Hizo:** Claude
