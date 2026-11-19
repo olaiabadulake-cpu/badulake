@@ -30,3 +30,20 @@ La Tarea 6 comprobó que con **cinco plazas y seis personas a la vez entran exac
 Cómo hacerlo cuando la Tarea 20 acabe (con permiso, datos inventados `prueba-carga…@badulake.app` y borrado al terminar): crear un badulake de 10 plazas y 150 cuentas inventadas por SQL, lanzar `apuntarme` desde 150 conexiones a la vez y comprobar que hay exactamente 10 inscripciones y 140 respuestas «lleno» y 0 errores; después, borrar cuentas y badulake y comprobar todo a 0.
 
 ## 4. Web publicada (comprobación suave)
+
+Tras publicar (commit `c604bda`), 100 visitas en total (25 por página, 5 a la vez) a la web de verdad:
+
+| Página | Tiempo medio | Errores |
+|---|---|---|
+| Portada | 153 ms | 0 |
+| Qué es | 119 ms | 0 |
+| `/es/hola` (QR) | 88 ms | 0 |
+| `/eu/hola` (QR) | 95 ms | 0 |
+
+Las páginas salen ya preparadas desde la red de Vercel (cabecera `x-vercel-cache: HIT`). Comprobado también que las públicas dan 200 (portada, Qué es, `/hola` en es, eu y ca) y que lo que va con cuenta (`registro`, `entrar`, `badulakes`, `cuenta`, `equipo`) da 404 mientras las cuentas sigan cerradas.
+
+## 5. Límites que conviene saber (consultados el 19/11/2026)
+
+- **Vercel (plan gratuito Hobby):** uso personal y no comercial según su política; las pruebas de carga fuertes requieren aviso a Vercel. Si el día de Sant Boi se espera mucha más gente (miles), conviene revisar con OlaIA y EITB si el plan gratuito sirve (ver [costes.md](costes.md)).
+- **Supabase (gratis):** las páginas públicas no le hacen preguntas, así que el QR no gasta nada de la base de datos. Lo que sí gasta es crear cuentas (correo de verificación limitado hasta que exista el correo propio, Tarea 10).
+- **Herramientas usadas:** autocannon y qrcode, libres y sin cuenta ni coste.
