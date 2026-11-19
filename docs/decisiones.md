@@ -100,3 +100,10 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Decisión:** 44 lenguas, también las minoritarias (sami, frisón, bretón, corso, ladino, rusino…). Cada persona elige la suya en un menú, y cada lengua aparece escrita en su propio idioma. Se publican ya, con un aviso de que son traducciones automáticas pendientes de revisar. Nunca se usa el traductor de Google: para cada lengua se usa el mejor traductor neuronal disponible, y Claude lo pule para que suene natural (detalle en `docs/traducciones.md`).
 - **Por qué:** Que cualquier persona pueda usar la app en su lengua, como piden FORTA y CIRCOM.
 - **Propuso:** OlaIA · **Hizo:** Claude · **Pendiente:** revisión por personas nativas.
+
+### D-016 · Base de datos en Supabase, en Frankfurt (UE)
+- **Fecha:** 19/11/2026
+- **Alternativas:** Firebase; una base de datos en un servidor propio.
+- **Decisión:** La base de datos de Badulake es un proyecto de Supabase en Frankfurt (`eu-central-1`), con seguridad por filas (RLS) activada en las tablas nuevas. Plan gratuito para empezar.
+- **Por qué:** Los datos de las personas se guardan en la UE (RGPD), Supabase tiene plan gratuito y encaja con Next.js. Las claves nunca van en el repositorio: solo en `app/.env.local` y en las variables de entorno de Vercel. En la app solo se usa la clave pública (publishable); la clave secreta no se usa.
+- **Propuso:** Claude · **Decidió:** OlaIA · **Hizo:** OlaIA (cuenta y contraseña) y Claude (proyecto, función y claves)

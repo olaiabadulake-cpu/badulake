@@ -14,6 +14,7 @@
 | [next-intl](https://next-intl.dev) | Euskera y castellano | Día 1 |
 | [Tailwind CSS](https://tailwindcss.com) | Los estilos (colores, tamaños, espacios) | Día 1 |
 | [Itzuli](https://www.euskadi.eus/itzuli/) (Gobierno Vasco) y [Elia](https://elia.eus) (Elhuyar) | Revisar los textos en euskera (no usamos el traductor de Google) | Día 1 |
+| [Supabase](https://supabase.com) (plan gratuito, Frankfurt, UE) | La base de datos. Claves solo en `app/.env.local` y en Vercel | Día 1 (tarea 2) |
 | [DeepL](https://www.deepl.com/translator) | Traducir la web a la mayoría de lenguas europeas (versión web gratuita, sin cuenta) | Día 1 |
 | [Proxecto Nós](http://tradutor.nos.gal) (Xunta y USC) | Traducir al gallego | Día 1 |
 | [TartuNLP](https://translate.ut.ee) (Universidad de Tartu) | Traducir al sami del norte | Día 1 |
