@@ -94,6 +94,17 @@ No confundir con la lista de espera del lanzamiento (2.1), que guarda correos: e
 | **Quién lo ve** | Solo la propia persona, que ve y borra lo suyo. El equipo solo ve el número total por opción, sin nombres. |
 | **Cuánto tiempo** | Hasta que la persona lo quite o borre su cuenta (lo borra también el borrado de la cuenta). |
 
+### 2.4.2 El día del badulake: «Modo badulake» (Tarea 24, D-036)
+
+| | |
+|---|---|
+| **Datos** | Por cada persona presente (las apuntadas y la organizadora): un **nombre o apodo que escribe a mano quien organiza** (opcional, máx. 30 letras; las cuentas no tienen nombre), si ha venido, cuántos objetos aporta por tipo (ropa, calzado, accesorios, otros), su posición en el orden de exponer y en la cola de elegir, y un número al azar para desempatar (tablas `dia_personas` y `dia_estado`). Queda registrada la hora de cada sorteo. |
+| **Para qué** | Ordenar el intercambio en el evento: quién enseña primero y quién elige primero. |
+| **Base legal propuesta** | Ejecución del servicio (6.1.b). |
+| **Quién lo ve** | Solo la organizadora ve la lista completa (sin identificador de cuenta ni correo). Cada persona apuntada ve **solo su fila de turnos** («Tu turno es el 3.º»): ni nombres ni aportes de nadie más. |
+| **Cuánto tiempo** | **1 día después del badulake**, igual que la dirección exacta (función `borrar_dia_caducado()`, Supabase Cron a las 03:20 UTC). Se borra también si se borra la cuenta o el badulake. |
+| **Riesgo a valorar** | El nombre escrito a mano podría ser el real de otra persona: es un dato que apunta quien organiza, sin que la persona lo introduzca. Mitigación: solo vale ese día, 30 letras, se puede dejar vacío (sale «Persona 3») y se borra en 1 día. |
+
 ## 3. Dónde se guarda y quién interviene (encargados del tratamiento)
 
 | Proveedor | Qué hace | Dónde | Notas para la Asesoría |
@@ -129,6 +140,7 @@ Se aplican **solos cada noche a las 03:15 (hora UTC)** con una tarea programada 
 | Dirección exacta de un badulake cancelado | En el momento de cancelarse |
 | Badulake e inscripciones (también los cancelados) | 30 días después de la fecha |
 | Lista de espera de un badulake | Al empezar el badulake (o al salir de ella o entrar) |
+| Lo del día del badulake (nombres escritos, objetos contados, turnos y sorteos) | 1 día después de celebrarse |
 | Lista de espera | Al avisar del lanzamiento y, como mucho, a los 12 meses del alta |
 | Sesiones abandonadas | A los 90 días sin usarse |
 | Registro de accesos de Supabase Auth | A los 30 días |

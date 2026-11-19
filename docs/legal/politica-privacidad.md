@@ -33,6 +33,7 @@ Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni 
 - **Los badulakes que organizas.** Título, descripción, fecha y hora, zona o barrio, número de plazas, estado (borrador o publicado) y la dirección exacta. Para que otras personas lo encuentren y puedan ir.
 - **Los badulakes a los que te apuntas.** Cuál y cuándo, y si entraste desde la lista de espera. Para reservarte la plaza, no pasarnos del cupo, enseñarte la dirección y avisarte.
 - **Las listas de espera de los badulakes.** Si un badulake está completo, en qué lista estás y desde cuándo. Para darte la plaza que se libere, por orden de llegada, y decirte qué puesto tienes.
+- **El día del badulake.** Si quien organiza usa el «Modo badulake»: el nombre (o apodo) que escribe a mano para reconocerte, si has venido, cuántos objetos has aportado por tipo (ropa, calzado, accesorios y otros) y tu turno en los sorteos de ese día. Para ordenar el intercambio. Solo lo ve quien organiza; tú ves solo tu turno.
 - **Datos técnicos de seguridad.** Un contador de intentos (entrar, crear cuenta, apuntarse) que usa solo una huella cifrada de tu conexión y vive unos minutos en la memoria del servidor; y los registros técnicos del servidor, que solo guardan códigos de error, nunca correos ni direcciones.
 - **Denuncias y suspensiones.** Si denuncias un badulake, guardamos qué badulake, el motivo que elijas, el texto opcional de hasta 300 letras que escribas y quién denuncia (un código de tu cuenta, no tu nombre). Si una cuenta incumple las condiciones y se suspende, guardamos que está suspendida y desde cuándo. Es para atender quejas, ocultar badulakes y proteger a la comunidad. No escribas datos personales de nadie en el texto de una denuncia.
 - **Lo que escribas tú.** El título y la descripción de un badulake son texto libre. **No escribas datos personales tuyos ni de otras personas** (teléfonos, apellidos, datos de salud…): se verían por las demás personas con cuenta.
@@ -87,6 +88,7 @@ Muchos se borran solos cada noche con una tarea programada:
 - **Dirección exacta de un badulake:** al día siguiente de celebrarse, o en el momento en que se cancela.
 - **El badulake y quién se apuntó:** 30 días después de su fecha, también si se canceló (margen para quejas o denuncias).
 - **Lista de espera de un badulake:** cuando empieza el badulake, cuando sales de ella o cuando entras.
+- **Lo del día del badulake** (nombres escritos, objetos contados y turnos): al día siguiente de celebrarse.
 - **Denuncias:** se borran con el badulake denunciado, 30 días después de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se levante la suspensión o se borre la cuenta. Si borras tu cuenta, tus denuncias siguen, pero sin el código que te identificaba.
 - **Lista de espera del lanzamiento:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.
 - **Cuenta:** hasta que la borres tú con el botón «Borrar mi cuenta» (o la pidas por correo). **Huella del correo de una cuenta suspendida y borrada:** 12 meses. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.

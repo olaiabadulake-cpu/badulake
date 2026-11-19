@@ -161,3 +161,10 @@ Script `supabase/cupo.sql`, ejecutado por Claude en Supabase el 19/11/2026.
 - Tabla `bloqueados` y funciones `huella_correo` y `comprobar_bloqueado`: sin permisos para la app (comprobado con la clave pública).
 - Pruebas con 8 cuentas inventadas (`prueba-borrar1..8@badulake.app`, borradas al acabar): sin sesión no se puede borrar; al borrar la suya, las demás siguen; el badulake con gente se cancela, sin organizadora, sin dirección y sin descripción; el borrador desaparece; entra la primera de la lista de espera; la denuncia queda sin denunciante; la cuenta suspendida deja la huella y la base de datos rechaza volver a crearla.
 - Recuperar contraseña: respuesta idéntica exista o no el correo; límite de 5 por hora y correo.
+
+## 13. Herramientas del día del badulake (Tarea 24, D-036)
+
+- Tablas `dia_estado` y `dia_personas` con RLS y **sin permisos para la clave pública** salvo leer las columnas `id, badulake_id, presente, orden_exponer, orden_elegir` de la **propia** fila. Todo lo demás pasa por funciones `security definer` con ruta fija; las que escriben (`dia_fijar`, `dia_etiqueta`, `dia_presente`, `dia_sortear_orden`, `dia_empezar_elegir`, `dia_siguiente`, `dia_panel`) comprueban dentro `dia_permitido()`: sesión, que sea la organizadora, que no esté suspendida, badulake publicado y no oculto, desde 2 h antes hasta 1 día después y confirmado al abrir. Sin sesión (`anon`): sin permiso.
+- **Sorteos únicos:** `dia_sortear_orden` y `dia_empezar_elegir` bloquean el badulake y la fila de estado y responden `ya_sorteado` / `ya_empezado` si ya se hicieron; la hora queda registrada.
+- El panel no devuelve identificadores de cuenta ni correos. La página `/dia` da 404 a quien no organiza (y a todos si las cuentas están cerradas) y no incluye datos en el HTML.
+- Pruebas en `docs/diario.md` y D-036: 32 comprobaciones; la clave pública no lee etiquetas, no escribe y solo ve su fila.

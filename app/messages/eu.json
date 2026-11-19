@@ -37,7 +37,7 @@
       },
       "what": {
         "title": "Zer datu gordetzen ditugun eta zertarako",
-        "body": "- Itxaron-zerrenda: zure helbide elektronikoa, zure eremua, abisua zein hizkuntzatan nahi duzun eta noiz eman zenuen baimena. Badulake irekitzen denean abisatzeko bakarrik.\n- Zure kontua: zure helbide elektronikoa, zure pasahitza (zifratuta: inork ezin du irakurri), zure hizkuntza eta adin nagusikoa zarela egiaztatu genuen data. Sartu eta aplikazioa erabili ahal izateko.\n- Zure jaiotze-data: kontua sortzeko unean bakarrik erabiltzen da, 18 urte edo gehiago dituzula egiaztatzeko. Ez da gordetzen.\n- Antolatzen dituzun badulakeak: izenburua, deskribapena, data, eremua, plaza kopurua eta helbide zehatza. Beste pertsona batzuek aurkitu eta iritsi ahal izateko.\n- Izena ematen duzun badulakeak: zein eta noiz. Plaza gordetzeko eta helbidea erakusteko.\n- **Interes-zerrenda.** VIP edo BaduCoins «Interesatzen zait» markatzen baduzu (gaur ez dira existitzen eta ez dute ezer balio), aukera eta data bakarrik gordetzen dugu. Interesa neurtzeko; nahi duzunean kendu dezakezu."
+        "body": "- Itxaron-zerrenda: zure helbide elektronikoa, zure eremua, abisua zein hizkuntzatan nahi duzun eta noiz eman zenuen baimena. Badulake irekitzen denean abisatzeko bakarrik.\n- Zure kontua: zure helbide elektronikoa, zure pasahitza (zifratuta: inork ezin du irakurri), zure hizkuntza eta adin nagusikoa zarela egiaztatu genuen data. Sartu eta aplikazioa erabili ahal izateko.\n- Zure jaiotze-data: kontua sortzeko unean bakarrik erabiltzen da, 18 urte edo gehiago dituzula egiaztatzeko. Ez da gordetzen.\n- Antolatzen dituzun badulakeak: izenburua, deskribapena, data, eremua, plaza kopurua eta helbide zehatza. Beste pertsona batzuek aurkitu eta iritsi ahal izateko.\n- Izena ematen duzun badulakeak: zein eta noiz. Plaza gordetzeko eta helbidea erakusteko.\n- Badulakearen eguna: antolatzaileak «Badulake modua» erabiltzen badu, zu ezagutzeko eskuz idazten duen izena (edo ezizena), etorri zaren, motaren arabera zenbat objektu ekarri dituzun (arropa, oinetakoak, osagarriak eta besteak) eta egun horretako zozketetan zure txanda. Trukea antolatzeko. Antolatzaileak bakarrik ikusten du; zuk zure txanda bakarrik ikusten duzu.\n- **Interes-zerrenda.** VIP edo BaduCoins «Interesatzen zait» markatzen baduzu (gaur ez dira existitzen eta ez dute ezer balio), aukera eta data bakarrik gordetzen dugu. Interesa neurtzeko; nahi duzunean kendu dezakezu."
       },
       "legal": {
         "title": "Zergatik erabil ditzakegun",
@@ -53,7 +53,7 @@
       },
       "time": {
         "title": "Zenbat denboran",
-        "body": "- Badulake baten helbide zehatza berez ezabatzen da egin eta hurrengo egunean.\n- Badulakea eta izena eman zutenen zerrenda berez ezabatzen dira 30 egun geroago.\n- Itxaron-zerrenda abiaraztearen berri ematean ezabatzen da, eta gehienez 12 hilabetera.\n- Zure kontua gordeko da zuk «Nire kontua ezabatu» botoiarekin ezabatu arte. 90 egunean erabiltzen ez baduzu, zure saioa itxiko da.\n- Erregistro teknikoak (adibidez, zure konexioaren helbidea) gehienez 30 egunean ezabatzen dira."
+        "body": "- Badulake baten helbide zehatza berez ezabatzen da egin eta hurrengo egunean.\n- Badulakea eta izena eman zutenen zerrenda berez ezabatzen dira 30 egun geroago.\n- Badulakearen eguneko datuak (idatzitako izenak, zenbatutako objektuak eta txandak) badulakea egin eta hurrengo egunean berez ezabatzen dira.\n- Itxaron-zerrenda abiaraztearen berri ematean ezabatzen da, eta gehienez 12 hilabetera.\n- Zure kontua gordeko da zuk «Nire kontua ezabatu» botoiarekin ezabatu arte. 90 egunean erabiltzen ez baduzu, zure saioa itxiko da.\n- Erregistro teknikoak (adibidez, zure konexioaren helbidea) gehienez 30 egunean ezabatzen dira."
       },
       "rights": {
         "title": "Zure eskubideak",
@@ -232,7 +232,14 @@
     "cancelSummary": "Bertan behera utzi badulake hau",
     "cancelExplain": "Izena emandako eta itxaron-zerrendako guztientzat geratuko da bertan behera, eta helbide zehatza ezabatuko da. Ezin da desegin.",
     "cancelConfirm": "Bai, bertan behera utzi",
-    "cancelledByYou": "Zuk utzi duzu bertan behera."
+    "cancelledByYou": "Zuk utzi duzu bertan behera.",
+    "dayMode": "Badulake modua",
+    "myTurn": "Zure txanda {n}. da",
+    "itsYourTurn": "Zure txanda da orain aukeratzeko!",
+    "nowTurn": "Orain {n}. txanda doa.",
+    "turnsDone": "Pertsona guztiek aukeratu dute.",
+    "myExpose": "Zure objektuak {n}. postuan erakusten dituzu",
+    "dayNoDraw": "Gaur da eguna. Ordena oraindik ez da zozkatu."
   },
   "Nav": {
     "label": "Menu nagusia",
@@ -352,5 +359,66 @@
     "waitlist": "Badulake 2027. urtearen hasieran helduko da. Eman izena eta abisatuko dizugu.",
     "soon": "Badulake 2027. urtearen hasieran helduko da. Laster eman ahal izango duzu izena itxaron-zerrendan.",
     "more": "Gehiago jakin: zer da badulake bat"
+  },
+  "Dia": {
+    "title": "Badulake modua",
+    "back": "Itzuli badulakera",
+    "loading": "Kargatzen…",
+    "notOpen": "Badulake modua badulakearen ordua baino 2 ordu lehenago irekitzen da eta hurrengo egunean ixten da.",
+    "notConfirmed": "Badulake modua badulakea baieztatuta dagoenean soilik irekitzen da (5 lagun edo gehiago).",
+    "closed": "Badulake modua ez dago erabilgarri orain.",
+    "intro": "{count, plural, one {# lagun dago} other {# lagun daude}} badulakean. Zenbatzen duzun guztia automatikoki gordetzen da.",
+    "offline": "Konexiorik ez. Zenbatzen duzuna telefono honetan gordetzen da eta seinalea itzultzean automatikoki bidaliko da.",
+    "saving": "Gordetzen…",
+    "saved": "Dena gordeta.",
+    "person": "{num}. pertsona",
+    "nameLabel": "{num}. pertsonaren izena (gaur ezagutzeko soilik)",
+    "types": {
+      "ropa": "Arropa",
+      "calzado": "Oinetakoak",
+      "accesorios": "Osagarriak",
+      "otros": "Besteak"
+    },
+    "plus": "Gehitu bat: {type}, {name}",
+    "minus": "Kendu bat: {type}, {name}",
+    "total": "{count, plural, one {objektu #} other {# objektu}}",
+    "absent": "{name}: ez da etorri",
+    "arrived": "{name}: iritsi da",
+    "absentBadge": "Ez da etorri",
+    "exposeBadge": "Erakusten du: {n}.",
+    "chooseBadge": "Aukeratzen du: {n}.",
+    "lateNote": "«Ez da etorri» markatu duzun norbait geroago iristen bada, sakatu «iritsi da»: orduz geroztik zozketetan sartzen da, ilararen amaieran.",
+    "drawTitle": "1. Objektuak erakusteko ordena",
+    "drawButton": "Ordena zozkatu",
+    "drawConfirm": "Zozketa behin bakarrik egiten da eta ezin da errepikatu. Orain zozkatu?",
+    "drawYes": "Bai, zozkatu",
+    "cancel": "Orain ez",
+    "drawn": "Ordena zozkatuta. Ezin da errepikatu.",
+    "countTitle": "2. Objektuak zenbatu",
+    "turnsTitle": "3. Aukeratzeko txandak",
+    "turnsExplain": "Objektu gehien ekarri duenak aukeratzen du lehenengo. Berdinketa badago, zozkatu egiten da. Beheko zerrenda aurrebista da hasi arte.",
+    "turnsExplainStarted": "Objektu gehien ekarri duenak aukeratzen du lehenengo; berdinketak hastean zozkatu ziren.",
+    "startChoose": "Aukeratzen hasi",
+    "startConfirm": "Ilara orain zenbatutakoarekin ixten da eta berdinketak behin bakarrik zozkatzen dira. Hasi?",
+    "startYes": "Bai, hasi",
+    "currentTurn": "{name}(r)en txanda da aukeratzeko",
+    "itsTurn": "bere txanda",
+    "nextTurn": "Hurrengo txanda",
+    "allDone": "Pertsona guztiek aukeratu dute.",
+    "queueTitle": "Txanden ilara",
+    "leftTitle": "4. Soberan geratzen dena",
+    "left": {
+      "bags": "Soberan geratzen dena poltsatan sartu, motaren arabera: arropa, oinetakoak, osagarriak eta besteak.",
+      "donate": "Inork hartzen ez duena: denda solidario batera edo arropa-edukiontzi batera.",
+      "own": "Nahi duenak bere gauzak berriro eraman ditzake.",
+      "tidy": "Utzi lekua aurkitu zenuten bezala."
+    },
+    "errors": {
+      "pending": "Oraindik bidali gabeko gauzak daude. Itxaron seinalea itzuli arte eta saiatu berriro.",
+      "offlineAction": "Konexiorik ez. Ez da ezer egin: saiatu berriro seinalea itzultzean.",
+      "alreadyDrawn": "Zozketa egina zegoen eta ez da errepikatzen.",
+      "alreadyStarted": "Ilara hasita zegoen eta ez da errepikatzen.",
+      "closed": "Badulake modua ez dago erabilgarri jada."
+    }
   }
 }

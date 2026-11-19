@@ -37,7 +37,7 @@
       },
       "s02": {
         "title": "2. Qué datos guardamos y para qué",
-        "body": "Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni fecha de nacimiento.\n- **Lista de espera.** Tu correo, tu zona o barrio, el idioma en que quieres el aviso, y cuándo diste tu permiso y cuándo te apuntaste. Para avisarte del lanzamiento de Badulake.\n- **Tu cuenta.** Tu correo y tu contraseña (cifrada: nadie puede leerla), tu idioma y la fecha en que se comprobó que eres mayor de edad. Para que puedas entrar y usar la app. Nuestro proveedor de cuentas guarda además las sesiones abiertas, con la dirección IP y el navegador, solo para mantener tu sesión y proteger tu cuenta.\n- **Tu fecha de nacimiento.** Solo se usa en el momento de crear la cuenta para comprobar que tienes 18 años o más. La base de datos la borra antes de guardar la cuenta: **no queda guardada**.\n- **Los badulakes que organizas.** Título, descripción, fecha y hora, zona o barrio, número de plazas, estado (borrador o publicado) y la dirección exacta. Para que otras personas lo encuentren y puedan ir.\n- **Los badulakes a los que te apuntas.** Cuál y cuándo, y si entraste desde la lista de espera. Para reservarte la plaza, no pasarnos del cupo, enseñarte la dirección y avisarte.\n- **Las listas de espera de los badulakes.** Si un badulake está completo, en qué lista estás y desde cuándo. Para darte la plaza que se libere, por orden de llegada, y decirte qué puesto tienes.\n- **Datos técnicos de seguridad.** Un contador de intentos (entrar, crear cuenta, apuntarse) que usa solo una huella cifrada de tu conexión y vive unos minutos en la memoria del servidor; y los registros técnicos del servidor, que solo guardan códigos de error, nunca correos ni direcciones.\n- **Denuncias y suspensiones.** Si denuncias un badulake, guardamos qué badulake, el motivo que elijas, el texto opcional de hasta 300 letras que escribas y quién denuncia (un código de tu cuenta, no tu nombre). Si una cuenta incumple las condiciones y se suspende, guardamos que está suspendida y desde cuándo. Es para atender quejas, ocultar badulakes y proteger a la comunidad. No escribas datos personales de nadie en el texto de una denuncia.\n- **Lo que escribas tú.** El título y la descripción de un badulake son texto libre. **No escribas datos personales tuyos ni de otras personas** (teléfonos, apellidos, datos de salud…): se verían por las demás personas con cuenta.\nNo usamos analítica, publicidad ni perfiles, ni tomamos decisiones automáticas sobre ti.\n- **Lista de interés.** Si marcas «Me interesa» en VIP o BaduCoins (ideas que hoy no existen y no cuestan nada), guardamos solo la opción y la fecha. Para medir el interés; puedes quitarla cuando quieras."
+        "body": "Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni fecha de nacimiento.\n- **Lista de espera.** Tu correo, tu zona o barrio, el idioma en que quieres el aviso, y cuándo diste tu permiso y cuándo te apuntaste. Para avisarte del lanzamiento de Badulake.\n- **Tu cuenta.** Tu correo y tu contraseña (cifrada: nadie puede leerla), tu idioma y la fecha en que se comprobó que eres mayor de edad. Para que puedas entrar y usar la app. Nuestro proveedor de cuentas guarda además las sesiones abiertas, con la dirección IP y el navegador, solo para mantener tu sesión y proteger tu cuenta.\n- **Tu fecha de nacimiento.** Solo se usa en el momento de crear la cuenta para comprobar que tienes 18 años o más. La base de datos la borra antes de guardar la cuenta: **no queda guardada**.\n- **Los badulakes que organizas.** Título, descripción, fecha y hora, zona o barrio, número de plazas, estado (borrador o publicado) y la dirección exacta. Para que otras personas lo encuentren y puedan ir.\n- **Los badulakes a los que te apuntas.** Cuál y cuándo, y si entraste desde la lista de espera. Para reservarte la plaza, no pasarnos del cupo, enseñarte la dirección y avisarte.\n- **Las listas de espera de los badulakes.** Si un badulake está completo, en qué lista estás y desde cuándo. Para darte la plaza que se libere, por orden de llegada, y decirte qué puesto tienes.\n- **El día del badulake.** Si quien organiza usa el «Modo badulake»: el nombre (o apodo) que escribe a mano para reconocerte, si has venido, cuántos objetos has aportado por tipo (ropa, calzado, accesorios y otros) y tu turno en los sorteos de ese día. Para ordenar el intercambio. Solo lo ve quien organiza; tú ves solo tu turno.\n- **Datos técnicos de seguridad.** Un contador de intentos (entrar, crear cuenta, apuntarse) que usa solo una huella cifrada de tu conexión y vive unos minutos en la memoria del servidor; y los registros técnicos del servidor, que solo guardan códigos de error, nunca correos ni direcciones.\n- **Denuncias y suspensiones.** Si denuncias un badulake, guardamos qué badulake, el motivo que elijas, el texto opcional de hasta 300 letras que escribas y quién denuncia (un código de tu cuenta, no tu nombre). Si una cuenta incumple las condiciones y se suspende, guardamos que está suspendida y desde cuándo. Es para atender quejas, ocultar badulakes y proteger a la comunidad. No escribas datos personales de nadie en el texto de una denuncia.\n- **Lo que escribas tú.** El título y la descripción de un badulake son texto libre. **No escribas datos personales tuyos ni de otras personas** (teléfonos, apellidos, datos de salud…): se verían por las demás personas con cuenta.\nNo usamos analítica, publicidad ni perfiles, ni tomamos decisiones automáticas sobre ti.\n- **Lista de interés.** Si marcas «Me interesa» en VIP o BaduCoins (ideas que hoy no existen y no cuestan nada), guardamos solo la opción y la fecha. Para medir el interés; puedes quitarla cuando quieras."
       },
       "s03": {
         "title": "3. Por qué podemos usar tus datos (bases legales)",
@@ -53,7 +53,7 @@
       },
       "s06": {
         "title": "6. Cuánto tiempo guardamos tus datos",
-        "body": "Muchos se borran solos cada noche con una tarea programada:\n- **Dirección exacta de un badulake:** al día siguiente de celebrarse, o en el momento en que se cancela.\n- **El badulake y quién se apuntó:** 30 días después de su fecha, también si se canceló (margen para quejas o denuncias).\n- **Lista de espera de un badulake:** cuando empieza el badulake, cuando sales de ella o cuando entras.\n- **Denuncias:** se borran con el badulake denunciado, 30 días después de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se levante la suspensión o se borre la cuenta. Si borras tu cuenta, tus denuncias siguen, pero sin el código que te identificaba.\n- **Lista de espera del lanzamiento:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.\n- **Cuenta:** hasta que la borres tú con el botón «Borrar mi cuenta» (o la pidas por correo). Huella del correo de una cuenta suspendida y borrada: 12 meses. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.\n- **Registro de accesos de la cuenta** (con IP): 30 días.\n- **Contador de intentos:** no se guarda; vive unos minutos en la memoria del servidor.\n- Después, los datos se mantienen bloqueados solo el tiempo que la ley exija para posibles responsabilidades. **[A CONFIRMAR POR ASESORÍA]**"
+        "body": "Muchos se borran solos cada noche con una tarea programada:\n- **Dirección exacta de un badulake:** al día siguiente de celebrarse, o en el momento en que se cancela.\n- **El badulake y quién se apuntó:** 30 días después de su fecha, también si se canceló (margen para quejas o denuncias).\n- **Lista de espera de un badulake:** cuando empieza el badulake, cuando sales de ella o cuando entras.\n- **Lo del día del badulake** (nombres escritos, objetos contados y turnos): al día siguiente de celebrarse.\n- **Denuncias:** se borran con el badulake denunciado, 30 días después de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se levante la suspensión o se borre la cuenta. Si borras tu cuenta, tus denuncias siguen, pero sin el código que te identificaba.\n- **Lista de espera del lanzamiento:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.\n- **Cuenta:** hasta que la borres tú con el botón «Borrar mi cuenta» (o la pidas por correo). Huella del correo de una cuenta suspendida y borrada: 12 meses. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.\n- **Registro de accesos de la cuenta** (con IP): 30 días.\n- **Contador de intentos:** no se guarda; vive unos minutos en la memoria del servidor.\n- Después, los datos se mantienen bloqueados solo el tiempo que la ley exija para posibles responsabilidades. **[A CONFIRMAR POR ASESORÍA]**"
       },
       "s07": {
         "title": "7. Tus derechos y cómo ejercerlos",
@@ -248,7 +248,14 @@
     "cancelSummary": "Cancelar este badulake",
     "cancelExplain": "Se cancelará para todas las personas apuntadas y en lista de espera, y se borrará la dirección exacta. No se puede deshacer.",
     "cancelConfirm": "Sí, cancelarlo",
-    "cancelledByYou": "Lo has cancelado tú."
+    "cancelledByYou": "Lo has cancelado tú.",
+    "dayMode": "Modo badulake",
+    "myTurn": "Tu turno es el {n}.º",
+    "itsYourTurn": "¡Te toca elegir ahora!",
+    "nowTurn": "Ahora va el turno {n}.º.",
+    "turnsDone": "Ya han elegido todas las personas.",
+    "myExpose": "Enseñas tus objetos en el puesto {n}.º",
+    "dayNoDraw": "Hoy es el día. Aún no se ha sorteado el orden."
   },
   "Nav": {
     "label": "Menú principal",
@@ -486,5 +493,66 @@
     "waitlist": "Badulake llega a principios de 2027. Apúntate y te avisamos.",
     "soon": "Badulake llega a principios de 2027. Muy pronto podrás apuntarte a la lista de espera.",
     "more": "Saber más: qué es un badulake"
+  },
+  "Dia": {
+    "title": "Modo badulake",
+    "back": "Volver al badulake",
+    "loading": "Cargando…",
+    "notOpen": "El modo badulake se abre 2 horas antes de la hora del badulake y se cierra al día siguiente.",
+    "notConfirmed": "El modo badulake solo se abre si el badulake está confirmado (5 personas o más).",
+    "closed": "El modo badulake no está disponible ahora.",
+    "intro": "{count, plural, one {Hay # persona} other {Hay # personas}} en el badulake. Todo lo que cuentas se guarda solo.",
+    "offline": "Sin conexión. Lo que cuentas se guarda en este móvil y se enviará solo cuando vuelva la señal.",
+    "saving": "Guardando…",
+    "saved": "Todo guardado.",
+    "person": "Persona {num}",
+    "nameLabel": "Nombre de la persona {num} (solo para reconocerla hoy)",
+    "types": {
+      "ropa": "Ropa",
+      "calzado": "Calzado",
+      "accesorios": "Accesorios",
+      "otros": "Otros"
+    },
+    "plus": "Sumar uno a {type} de {name}",
+    "minus": "Restar uno a {type} de {name}",
+    "total": "{count, plural, one {# objeto} other {# objetos}}",
+    "absent": "{name}: no ha venido",
+    "arrived": "{name}: ha llegado",
+    "absentBadge": "No ha venido",
+    "exposeBadge": "Enseña: {n}.º",
+    "chooseBadge": "Elige: {n}.º",
+    "lateNote": "Si alguien que marcaste como «no ha venido» llega después, pulsa «ha llegado»: entra en los sorteos desde ese momento, al final de la fila.",
+    "drawTitle": "1. Orden para enseñar los objetos",
+    "drawButton": "Sortear orden",
+    "drawConfirm": "El sorteo se hace una sola vez y no se puede repetir. ¿Sortear ahora?",
+    "drawYes": "Sí, sortear",
+    "cancel": "Ahora no",
+    "drawn": "Orden sorteado. No se puede repetir.",
+    "countTitle": "2. Contar objetos",
+    "turnsTitle": "3. Turnos para elegir",
+    "turnsExplain": "Elige primero quien ha aportado más objetos. Si hay empate, se sortea. La lista de abajo es una vista previa hasta que empieces.",
+    "turnsExplainStarted": "Elige primero quien ha aportado más objetos; los empates se sortearon al empezar.",
+    "startChoose": "Empezar a elegir",
+    "startConfirm": "Se cierra la cola con lo contado ahora y los empates se sortean una sola vez. ¿Empezar?",
+    "startYes": "Sí, empezar",
+    "currentTurn": "Le toca elegir a {name}",
+    "itsTurn": "su turno",
+    "nextTurn": "Siguiente turno",
+    "allDone": "Todas las personas han elegido.",
+    "queueTitle": "Cola de turnos",
+    "leftTitle": "4. Lo que sobra",
+    "left": {
+      "bags": "Meted lo que sobre en bolsas, una por tipo: ropa, calzado, accesorios y otros.",
+      "donate": "Lo que nadie se lleve: a una tienda solidaria o a un contenedor de ropa.",
+      "own": "Quien quiera puede volver a llevarse lo suyo.",
+      "tidy": "Dejad el sitio como lo encontrasteis."
+    },
+    "errors": {
+      "pending": "Todavía hay cosas sin enviar. Espera a que vuelva la señal y prueba otra vez.",
+      "offlineAction": "Sin conexión. No se ha hecho nada: inténtalo de nuevo cuando vuelva la señal.",
+      "alreadyDrawn": "El sorteo ya estaba hecho y no se repite.",
+      "alreadyStarted": "La cola ya estaba empezada y no se repite.",
+      "closed": "El modo badulake ya no está disponible."
+    }
   }
 }

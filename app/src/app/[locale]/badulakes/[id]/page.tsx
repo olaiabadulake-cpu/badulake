@@ -6,6 +6,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { Link, redirect } from "@/i18n/navigation";
 import { accountsOpen, createSupabase, getCurrentUser, idsOf } from "@/lib/supabase/server";
 import { reportReasons } from "@/lib/report";
+import type { DiaMiTurno } from "@/lib/dia";
 import {
   cancelBadulake, joinBadulake, leaveBadulake, leaveWaitlist, publishBadulake, reportBadulake,
 } from "../actions";
@@ -62,6 +63,13 @@ async function Details({
     // Mi puesto en la lista de espera (solo el mío, Tarea 20).
     supabase.rpc("mi_espera", { p_ids: [id] }).maybeSingle<{ puesto: number }>(),
   ]);
+  // Día del badulake (Tarea 24): el botón solo para la organizadora y solo ese día; las
+  // apuntadas ven su turno. Las dos comprobaciones las hace la base de datos.
+  const [{ data: dayOn }, { data: myTurn }] = await Promise.all([
+    isOrganizer ? supabase.rpc("dia_activo", { p_badulake: id }) : Promise.resolve({ data: false }),
+    isOrganizer ? Promise.resolve({ data: null }) : supabase.rpc("dia_mi_turno", { p_badulake: id }),
+  ]);
+  const turn = (myTurn ?? null) as DiaMiTurno | null;
   const joined = Boolean(mine);
   const position = wait?.puesto ?? null;
   const taken = count?.ocupadas ?? 0;
@@ -141,6 +149,23 @@ async function Details({
         ))}
       </dl>
       {isOrganizer && !cancelled && <p className="ayuda">{t("addressPrivate")}</p>}
+      {isOrganizer && dayOn === true && (
+        <Link href={`/badulakes/${b.id}/dia`} className="boton sm:self-start">{t("dayMode")}</Link>
+      )}
+      {!isOrganizer && turn?.presente && (
+        <div role="status" className="aviso">
+          {turn.elegir_empezado && turn.orden_elegir !== null ? (
+            <>
+              <p className="text-xl font-bold">{t("myTurn", { n: turn.orden_elegir })}</p>
+              <p>{turn.turno === null ? t("turnsDone") : turn.turno === turn.orden_elegir ? t("itsYourTurn") : t("nowTurn", { n: turn.turno })}</p>
+            </>
+          ) : turn.orden_exponer !== null ? (
+            <p className="text-xl font-bold">{t("myExpose", { n: turn.orden_exponer })}</p>
+          ) : (
+            <p>{t("dayNoDraw")}</p>
+          )}
+        </div>
+      )}
       {isOrganizer && b.estado === "borrador" && (
         <form action={publishBadulake}>
           <input type="hidden" name="locale" value={locale} />

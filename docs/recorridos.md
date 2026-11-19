@@ -72,6 +72,19 @@ Esto aparece en la portada y en su propia página, «Qué es un badulake», enla
 1. En «Tu cuenta» veo con qué correo he entrado, mis **avisos** (he entrado desde la lista de espera, mi puesto en una lista, un badulake cancelado; cada uno lleva al badulake) y el botón «Salir».
 2. Al salir vuelvo a la portada con el aviso «Has salido de tu cuenta».
 
+### Recorrido G · El día del badulake (Tarea 24, D-036)
+
+**Organizadora** (solo el día del evento: desde 2 horas antes hasta el día siguiente, con el badulake confirmado)
+
+1. En mi badulake aparece el botón grande **«Modo badulake»**. Fuera de ese día no existe.
+2. Arriba veo «Todo guardado» (o «Sin conexión: lo que cuentas se guarda en este móvil y se enviará solo cuando vuelva la señal»).
+3. **1. Orden para enseñar los objetos:** «Sortear orden» → «El sorteo se hace una sola vez y no se puede repetir» → «Sí, sortear». Cada persona muestra «Enseña: 3.º».
+4. **2. Contar objetos:** una tarjeta por persona («Persona 3»; puedo escribirle un nombre), con ropa, calzado, accesorios y otros, cada uno con **−** y **+** grandes y el total. Si alguien no ha venido, «No ha venido»; si llega, «Ha llegado» y entra desde ese momento, la última.
+5. **3. Turnos para elegir:** «Empezar a elegir» → confirmo → queda la cola (más objetos primero; empates, sorteo) y «Le toca elegir a …». Pulso **«Siguiente turno»** cada vez.
+6. **4. Lo que sobra:** consejos para las bolsas y qué hacer con ello.
+
+**Persona apuntada:** en el detalle del badulake ve «Tu turno es el 3.º» y «Ahora va el turno 2.º» (o «¡Te toca elegir ahora!»). Nada más de los demás.
+
 ## 3. Árbol del menú
 
 El mismo menú arriba en todas las páginas. Cambia solo según haya o no sesión.
