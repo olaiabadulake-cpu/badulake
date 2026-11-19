@@ -13,5 +13,6 @@
 | [Next.js](https://nextjs.org) 16 + TypeScript | La base de la aplicación web | Día 1 |
 | [next-intl](https://next-intl.dev) | Euskera y castellano | Día 1 |
 | [Tailwind CSS](https://tailwindcss.com) | Los estilos (colores, tamaños, espacios) | Día 1 |
+| [Itzuli](https://www.euskadi.eus/itzuli/) (Gobierno Vasco) y [Elia](https://elia.eus) (Elhuyar) | Revisar los textos en euskera (no usamos el traductor de Google) | Día 1 |
 
 Las herramientas para programar la app se añaden aquí a medida que las elegimos.
