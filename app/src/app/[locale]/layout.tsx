@@ -30,10 +30,12 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
     <html lang={locale} className={`${roboto.variable} ${raleway.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
         <NextIntlClientProvider>
+          <div className="mx-auto flex w-full max-w-2xl justify-end px-4 pt-4 sm:px-8">
+            <LanguageSwitch label={t("language")} />
+          </div>
           <main className="flex-1">{children}</main>
-          <footer className="flex flex-wrap items-center justify-between gap-2 border-t border-noche/15 px-4 py-4 text-sm sm:px-8">
-            <span>{t("project")}</span>
-            <LanguageSwitch label={t("switchLanguage")} />
+          <footer className="border-t border-noche/15 px-4 py-4 text-sm sm:px-8">
+            {t("project")}
           </footer>
         </NextIntlClientProvider>
       </body>

@@ -7,7 +7,7 @@ export default async function Home() {
   const locale = await getLocale();
 
   return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-10 px-4 py-12 sm:px-8 sm:py-16">
+    <div className="mx-auto flex max-w-2xl flex-col gap-10 px-4 pt-6 pb-12 sm:px-8 sm:pb-16">
       <header className="flex flex-col gap-5">
         <div className="flex items-center gap-3">
           <span
