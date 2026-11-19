@@ -48,10 +48,10 @@ from _vecinas;
 -- 3. Badulakes inventados (barrios y calles que no existen).
 create temp table _b (n int, org int, titulo text, descr text, dias int, zona text, calle text, plazas int, id uuid default gen_random_uuid());
 insert into _b (n, org, titulo, descr, dias, zona, calle, plazas) values
-  (1, 1, 'Ropa de entretiempo', 'Trae ropa que ya no uses y llévate algo nuevo. Chaquetas, jerséis y bufandas.', 5, 'Barrio del Olmo',      'Calle del Naranjo 12, 2.º (inventada)', 8),
-  (2, 2, 'Libros y juegos de mesa', 'Cambiamos libros y juegos de mesa. Merienda compartida.',                  6, 'Colina del Tejo',    'Plaza del Reloj Viejo 3 (inventada)',    5),
-  (3, 3, 'Ropa infantil',          'Ropa y zapatos de 0 a 8 años. Sin dinero, solo intercambio.',               8, 'Barrio de las Gaviotas', 'Calle de la Fuente Azul 7 (inventada)',  6),
-  (4, 4, 'Plantas y macetas',      'Esquejes, macetas y semillas. Trae lo que te sobre.',                        9, 'Barrio del Olmo',      'Paseo de los Almendros 1 (inventado)',  10);
+  (1, 1, 'Barrio del Olmo · Sant Boi de Llobregat (Barcelona)',      'Trae ropa y objetos que ya no uses y llévate otros. Sin dinero.', 5, 'Barrio del Olmo',          'Calle del Naranjo 12, 2.º (inventada)',  8),
+  (2, 2, 'Colina del Tejo · Sant Boi de Llobregat (Barcelona)',      'Traemos lo que nos sobra y nos llevamos lo que nos gusta. Merienda compartida.', 6, 'Colina del Tejo',        'Plaza del Reloj Viejo 3 (inventada)',     5),
+  (3, 3, 'Barrio de las Gaviotas · Cornellà de Llobregat (Barcelona)', 'Intercambio de ropa, calzado y cosas de casa, entre vecinas.',          8, 'Barrio de las Gaviotas', 'Calle de la Fuente Azul 7 (inventada)',   6),
+  (4, 4, 'Barrio del Roble · Bilbao (Bizkaia)',                      'Un rato para intercambiar lo que ya no usas. Cada quien trae lo que quiere.',   9, 'Barrio del Roble',       'Paseo de los Almendros 1 (inventado)',   10);
 
 insert into public.badulakes (id, organizadora, titulo, descripcion, fecha_hora, zona, plazas, estado)
 select b.id, v.id, b.titulo, b.descr, now() + make_interval(days => b.dias), b.zona, b.plazas, 'publicado'

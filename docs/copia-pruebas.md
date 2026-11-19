@@ -64,13 +64,13 @@ Se encienden y apagan **solo en la copia**. Después de cambiar una variable en 
 - **Variable:** `PRUEBAS_DATOS_A_LA_VISTA=1` (encender) / quitarla o `0` (apagar).
 - **Qué se ve:** quien está apuntada a un badulake ve, bajo la ficha, «Personas apuntadas» con el **correo, el idioma y la fecha** de todas las demás (todo inventado).
 - **Cómo funciona:** el código llama a la función `pruebas_asistentes`, que solo existe en la base de datos de la copia (`01-fallos.sql`).
-- **Probar:** entrar con `ane.demo@pruebas.badulake.app` → «Libros y juegos de mesa».
+- **Probar:** entrar con `ane.demo@pruebas.badulake.app` → el badulake de Colina del Tejo (Sant Boi de Llobregat).
 
 ### 3. «Botones confusos y pasos de más» (episodio 3)
 
 - **Variable:** `PRUEBAS_BOTONES_CONFUSOS=1` (encender) / quitarla o `0` (apagar).
 - **Qué se ve:** apuntarse pasa de un botón («Apuntarme») a **tres pasos** con nombres que no dicen qué hacen («Siguiente» → «Aceptar» → «Continuar»), y el botón de borrarse se llama «Aceptar».
-- **Probar:** entrar con `leire.demo@…` → «Ropa de entretiempo» (hay plazas libres).
+- **Probar:** entrar con `leire.demo@…` → el badulake de Barrio del Olmo (Sant Boi de Llobregat; hay plazas libres).
 
 ## Por qué producción no puede activarlos
 
