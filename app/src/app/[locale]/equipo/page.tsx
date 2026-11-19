@@ -48,6 +48,10 @@ async function Counter() {
   const t = await getTranslations("Team");
   const { data, error } = await supabase.rpc("equipo_contador");
   if (error) return null;
+  // Interés por opción (Tarea 17, D-030): solo el número de personas.
+  const { data: interes } = await supabase.rpc("equipo_interes");
+  const interesDe = (o: string) =>
+    ((interes ?? []) as { opcion: string; personas: number }[]).find((r) => r.opcion === o)?.personas ?? 0;
   const c = (Array.isArray(data) ? data[0] : data) as
     | { cuentas: number; activas_30d: number; badulakes_publicados: number; inscripciones: number; lista_espera: number }
     | undefined;
@@ -58,6 +62,8 @@ async function Counter() {
     [t("stats.badulakes"), c.badulakes_publicados],
     [t("stats.signups"), c.inscripciones],
     [t("stats.waitlist"), c.lista_espera],
+    [t("stats.vip"), interesDe("vip")],
+    [t("stats.baducoins"), interesDe("baducoins")],
   ];
   return (
     <section aria-labelledby="contador" className="flex flex-col gap-3">

@@ -72,6 +72,16 @@ Ficha hecha el 19/11/2026 (Tarea 9 del plan maestro, decisión D-024). Es el **b
 | **Cuánto tiempo** | Se borran con el badulake, **30 días después** de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se borre o se levante. Si quien denunció borra su cuenta, la denuncia sigue sin su identificador. |
 | **Aviso para la Asesoría** | El texto libre podría contener datos personales de terceros: el formulario avisa de que no se escriban. La cuenta suspendida no puede entrar ni usar la app. Falta decidir si la persona suspendida debe poder saber el motivo y reclamar (Tarea 12). |
 
+### 2.6 Lista de interés «VIP» y «BaduCoins» (Tarea 17, D-030)
+
+| | |
+|---|---|
+| **Datos** | Qué opción marca cada persona (VIP o BaduCoins) y cuándo (tabla `interes`). |
+| **Para qué** | Medir el interés. **Hoy no existe ninguna de las dos ni se cobra nada** (D-012). |
+| **Base legal propuesta** | Consentimiento (6.1.a): la persona marca «Me interesa» y lo quita cuando quiera. |
+| **Quién lo ve** | Solo la propia persona, que ve y borra lo suyo. El equipo solo ve el número total por opción, sin nombres. |
+| **Cuánto tiempo** | Hasta que la persona lo quite o borre su cuenta (lo borra también el borrado de la cuenta). |
+
 ## 3. Dónde se guarda y quién interviene (encargados del tratamiento)
 
 | Proveedor | Qué hace | Dónde | Notas para la Asesoría |

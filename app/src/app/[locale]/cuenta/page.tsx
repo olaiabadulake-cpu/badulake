@@ -6,6 +6,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { redirect } from "@/i18n/navigation";
 import { accountsOpen, getCurrentUser } from "@/lib/supabase/server";
 import { signOut } from "./actions";
+import { Interest } from "./interest";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Account");
@@ -46,6 +47,7 @@ async function Account() {
           {t("signOut")}
         </button>
       </form>
+      <Interest />
     </>
   );
 }

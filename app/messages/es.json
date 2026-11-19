@@ -37,7 +37,7 @@
       },
       "s02": {
         "title": "2. Qué datos guardamos y para qué",
-        "body": "Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni fecha de nacimiento.\n- **Lista de espera.** Tu correo, tu zona o barrio, el idioma en que quieres el aviso, y cuándo diste tu permiso y cuándo te apuntaste. Para avisarte del lanzamiento de Badulake.\n- **Tu cuenta.** Tu correo y tu contraseña (cifrada: nadie puede leerla), tu idioma y la fecha en que se comprobó que eres mayor de edad. Para que puedas entrar y usar la app. Nuestro proveedor de cuentas guarda además las sesiones abiertas, con la dirección IP y el navegador, solo para mantener tu sesión y proteger tu cuenta.\n- **Tu fecha de nacimiento.** Solo se usa en el momento de crear la cuenta para comprobar que tienes 18 años o más. La base de datos la borra antes de guardar la cuenta: **no queda guardada**.\n- **Los badulakes que organizas.** Título, descripción, fecha y hora, zona o barrio, número de plazas, estado (borrador o publicado) y la dirección exacta. Para que otras personas lo encuentren y puedan ir.\n- **Los badulakes a los que te apuntas.** Cuál y cuándo. Para reservarte la plaza, no pasarnos del cupo y enseñarte la dirección.\n- **Datos técnicos de seguridad.** Un contador de intentos (entrar, crear cuenta, apuntarse) que usa solo una huella cifrada de tu conexión y vive unos minutos en la memoria del servidor; y los registros técnicos del servidor, que solo guardan códigos de error, nunca correos ni direcciones.\n- **Denuncias y suspensiones.** Si denuncias un badulake, guardamos qué badulake, el motivo que elijas, el texto opcional de hasta 300 letras que escribas y quién denuncia (un código de tu cuenta, no tu nombre). Si una cuenta incumple las condiciones y se suspende, guardamos que está suspendida y desde cuándo. Es para atender quejas, ocultar badulakes y proteger a la comunidad. No escribas datos personales de nadie en el texto de una denuncia.\n- **Lo que escribas tú.** El título y la descripción de un badulake son texto libre. **No escribas datos personales tuyos ni de otras personas** (teléfonos, apellidos, datos de salud…): se verían por las demás personas con cuenta.\nNo usamos analítica, publicidad ni perfiles, ni tomamos decisiones automáticas sobre ti."
+        "body": "Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni fecha de nacimiento.\n- **Lista de espera.** Tu correo, tu zona o barrio, el idioma en que quieres el aviso, y cuándo diste tu permiso y cuándo te apuntaste. Para avisarte del lanzamiento de Badulake.\n- **Tu cuenta.** Tu correo y tu contraseña (cifrada: nadie puede leerla), tu idioma y la fecha en que se comprobó que eres mayor de edad. Para que puedas entrar y usar la app. Nuestro proveedor de cuentas guarda además las sesiones abiertas, con la dirección IP y el navegador, solo para mantener tu sesión y proteger tu cuenta.\n- **Tu fecha de nacimiento.** Solo se usa en el momento de crear la cuenta para comprobar que tienes 18 años o más. La base de datos la borra antes de guardar la cuenta: **no queda guardada**.\n- **Los badulakes que organizas.** Título, descripción, fecha y hora, zona o barrio, número de plazas, estado (borrador o publicado) y la dirección exacta. Para que otras personas lo encuentren y puedan ir.\n- **Los badulakes a los que te apuntas.** Cuál y cuándo. Para reservarte la plaza, no pasarnos del cupo y enseñarte la dirección.\n- **Datos técnicos de seguridad.** Un contador de intentos (entrar, crear cuenta, apuntarse) que usa solo una huella cifrada de tu conexión y vive unos minutos en la memoria del servidor; y los registros técnicos del servidor, que solo guardan códigos de error, nunca correos ni direcciones.\n- **Denuncias y suspensiones.** Si denuncias un badulake, guardamos qué badulake, el motivo que elijas, el texto opcional de hasta 300 letras que escribas y quién denuncia (un código de tu cuenta, no tu nombre). Si una cuenta incumple las condiciones y se suspende, guardamos que está suspendida y desde cuándo. Es para atender quejas, ocultar badulakes y proteger a la comunidad. No escribas datos personales de nadie en el texto de una denuncia.\n- **Lo que escribas tú.** El título y la descripción de un badulake son texto libre. **No escribas datos personales tuyos ni de otras personas** (teléfonos, apellidos, datos de salud…): se verían por las demás personas con cuenta.\nNo usamos analítica, publicidad ni perfiles, ni tomamos decisiones automáticas sobre ti.\n- **Lista de interés.** Si marcas «Me interesa» en VIP o BaduCoins (ideas que hoy no existen y no cuestan nada), guardamos solo la opción y la fecha. Para medir el interés; puedes quitarla cuando quieras."
       },
       "s03": {
         "title": "3. Por qué podemos usar tus datos (bases legales)",
@@ -129,7 +129,16 @@
       "enlace": "El enlace no es válido o ha caducado. Prueba a entrar o vuelve a crear la cuenta.",
       "verificada": "Tu correo está verificado. Ya puedes entrar.",
       "cuenta": "Para eso tienes que entrar en tu cuenta. Si aún no tienes, créala: es gratis."
-    }
+    },
+    "interestTitle": "Ideas que estamos valorando",
+    "interestIntro": "Hoy no existen y no cuestan nada. Solo queremos saber si te interesarían, para decidir qué hacer después.",
+    "vipTitle": "VIP",
+    "vipText": "Una cuenta con más ventajas para organizar badulakes. Hoy no existe.",
+    "baducoinsTitle": "BaduCoins",
+    "baducoinsText": "Monedas para intercambiar entre badulakes. Hoy no existen ni se pueden comprar.",
+    "interestOn": "Me interesa",
+    "interestOff": "Ya no me interesa",
+    "interestError": "No se ha podido guardar. Inténtalo de nuevo en un rato."
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
@@ -397,12 +406,21 @@
       "badulakes": "Badulakes publicados",
       "signups": "Inscripciones",
       "waitlist": "Lista de espera",
-      "note": "Solo números; no se ve quién es cada persona. «Activa» es quien ha entrado en los últimos 30 días."
+      "note": "Solo números; no se ve quién es cada persona. «Activa» es quien ha entrado en los últimos 30 días.",
+      "vip": "Interesadas en VIP",
+      "baducoins": "Interesadas en BaduCoins"
     }
   },
   "NotFound": {
     "title": "Esta página no existe",
     "text": "Puede que el enlace esté mal escrito o que la página todavía no esté abierta.",
     "home": "Volver a la portada"
+  },
+  "Install": {
+    "title": "Instálala en tu móvil",
+    "button": "Instalar",
+    "iosStep1": "Toca el botón Compartir (el cuadrado con una flecha hacia arriba), abajo o arriba en Safari.",
+    "iosStep2": "Baja y toca «Añadir a pantalla de inicio».",
+    "iosStep3": "Toca «Añadir». Badulake aparecerá como una app más."
   }
 }

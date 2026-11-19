@@ -38,6 +38,10 @@ Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni 
 
 No usamos analítica, publicidad ni perfiles, ni tomamos decisiones automáticas sobre ti.
 
+### Lista de interés «VIP» y «BaduCoins» (Tarea 17)
+
+Puedes marcar, si quieres, que te interesan dos ideas que **hoy no existen y no cuestan nada**: VIP y BaduCoins. Guardamos solo la opción marcada y la fecha, para saber cuánto interés hay. Solo tú la ves y la puedes quitar cuando quieras; el equipo solo ve el número total. Base legal propuesta: tu consentimiento (art. 6.1.a RGPD), que puedes retirar en cualquier momento. **Pendiente de la Asesoría:** confirmar esta base y, si algún día hubiera cobros, una nueva versión de esta política.
+
 ## 3. Por qué podemos usar tus datos (bases legales)
 
 - **Lista de espera:** tu consentimiento (artículo 6.1.a del RGPD). Marcas una casilla, sin marcar de antemano, y puedes retirarlo cuando quieras sin que afecte a lo anterior.

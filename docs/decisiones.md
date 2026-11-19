@@ -241,3 +241,13 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - **Coste (precios oficiales, comprobados 19/11/2026):** plan Hobby, gratis: 50.000 eventos al mes, datos de 1 mes, **sin parámetros utm**. El complemento «Web Analytics Plus» (10 $/mes) añade utm y 24 meses. Las visitas desde Instagram y Facebook se distinguen por la web de origen sin pagar; para separar campañas por `utm_campaign` hace falta Plus (decide OlaIA antes de las campañas). Los precios de Vercel Pro que publica su documentación no coinciden entre sus páginas: revisar antes de contratar.
 - **No entra:** píxel de Meta ni nada con cookies (si se quisiera, habría que añadir banner con consentimiento previo y cambiar CSP, privacidad y cookies).
 - **Propuso y hizo:** Claude (tarea 15 del plan maestro) · **Decidió:** Claude, por ser técnica; OlaIA puede cambiarla.
+
+### D-030 · Lista de interés «VIP» y «BaduCoins» y coste de la app: se mide el interés, nada se cobra
+- **Fecha:** 19/11/2026
+- **Alternativas:** lanzar un botón de compra o una moneda de prueba (eso sería cobrar o simularlo, D-012); no preguntar nada; guardar el interés sin decir que no existe.
+- **Decisión:**
+  - **Lista de interés** (`supabase/interes.sql`): en «Tu cuenta», dos ideas explicadas en una frase cada una y dejando claro que **hoy no existen y no cuestan nada**, con un botón «Me interesa» / «Ya no me interesa» por cada una. La tabla `interes` (persona, opción, fecha) tiene RLS: cada persona solo ve, crea y borra lo suyo. El equipo ve solo el número total por opción en el contador (`equipo_interes()`, con `soy_equipo()`).
+  - **Tratamiento** añadido a [privacidad.md](privacidad.md) (2.6), a la política de privacidad de la Asesoría, a `/privacidad` (castellano y euskera) con base legal propuesta: consentimiento, retirable.
+  - **Coste** en [costes.md](costes.md): hoy 0 USD; con 100 usuarias ≈ 45 USD/mes; con 1.000, ≈ 45–75 USD/mes (estimación; dominio pendiente, sin precio en la hoja).
+- **Por qué:** El guion del episodio 6 habla de VIP y BaduCoins; la app puede medir si la gente las quiere sin cobrar nada ni prometer algo que no existe.
+- **Propuso y hizo:** Claude (tarea 17 del plan maestro) · **Decidió:** OlaIA (la idea de medir interés y no cobrar)

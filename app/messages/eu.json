@@ -37,7 +37,7 @@
       },
       "what": {
         "title": "Zer datu gordetzen ditugun eta zertarako",
-        "body": "- Itxaron-zerrenda: zure helbide elektronikoa, zure eremua, abisua zein hizkuntzatan nahi duzun eta noiz eman zenuen baimena. Badulake irekitzen denean abisatzeko bakarrik.\n- Zure kontua: zure helbide elektronikoa, zure pasahitza (zifratuta: inork ezin du irakurri), zure hizkuntza eta adin nagusikoa zarela egiaztatu genuen data. Sartu eta aplikazioa erabili ahal izateko.\n- Zure jaiotze-data: kontua sortzeko unean bakarrik erabiltzen da, 18 urte edo gehiago dituzula egiaztatzeko. Ez da gordetzen.\n- Antolatzen dituzun badulakeak: izenburua, deskribapena, data, eremua, plaza kopurua eta helbide zehatza. Beste pertsona batzuek aurkitu eta iritsi ahal izateko.\n- Izena ematen duzun badulakeak: zein eta noiz. Plaza gordetzeko eta helbidea erakusteko."
+        "body": "- Itxaron-zerrenda: zure helbide elektronikoa, zure eremua, abisua zein hizkuntzatan nahi duzun eta noiz eman zenuen baimena. Badulake irekitzen denean abisatzeko bakarrik.\n- Zure kontua: zure helbide elektronikoa, zure pasahitza (zifratuta: inork ezin du irakurri), zure hizkuntza eta adin nagusikoa zarela egiaztatu genuen data. Sartu eta aplikazioa erabili ahal izateko.\n- Zure jaiotze-data: kontua sortzeko unean bakarrik erabiltzen da, 18 urte edo gehiago dituzula egiaztatzeko. Ez da gordetzen.\n- Antolatzen dituzun badulakeak: izenburua, deskribapena, data, eremua, plaza kopurua eta helbide zehatza. Beste pertsona batzuek aurkitu eta iritsi ahal izateko.\n- Izena ematen duzun badulakeak: zein eta noiz. Plaza gordetzeko eta helbidea erakusteko.\n- **Interes-zerrenda.** VIP edo BaduCoins «Interesatzen zait» markatzen baduzu (gaur ez dira existitzen eta ez dute ezer balio), aukera eta data bakarrik gordetzen dugu. Interesa neurtzeko; nahi duzunean kendu dezakezu."
       },
       "legal": {
         "title": "Zergatik erabil ditzakegun",
@@ -113,7 +113,16 @@
       "enlace": "Esteka ez da baliozkoa edo iraungita dago. Saiatu sartzen edo sortu berriro kontua.",
       "verificada": "Zure posta elektronikoa egiaztatuta dago. Orain sar zaitezke.",
       "cuenta": "Horretarako zure kontuan sartu behar duzu. Konturik ez baduzu, sortu: doakoa da."
-    }
+    },
+    "interestTitle": "Gogoan ditugun ideiak",
+    "interestIntro": "Gaur ez daude eta ez dute ezer balio. Interesatuko zaizkizun jakin nahi dugu, zer egin erabakitzeko.",
+    "vipTitle": "VIP",
+    "vipText": "Badulakeak antolatzeko abantaila gehiago dituen kontua. Gaur ez dago.",
+    "baducoinsTitle": "BaduCoins",
+    "baducoinsText": "Badulakeen artean trukatzeko txanponak. Gaur ez daude eta ezin dira erosi.",
+    "interestOn": "Interesatzen zait",
+    "interestOff": "Ez zait interesatzen",
+    "interestError": "Ezin izan da gorde. Saiatu berriro une batean."
   },
   "Badulake": {
     "newTitle": "Badulake bat sortu",
@@ -263,12 +272,21 @@
       "badulakes": "Argitaratutako badulakeak",
       "signups": "Izen-emateak",
       "waitlist": "Itxaron-zerrenda",
-      "note": "Zenbakiak bakarrik; ez da ikusten nor den bakoitza. «Aktibo»: azken 30 egunetan sartu den pertsona."
+      "note": "Zenbakiak bakarrik; ez da ikusten nor den bakoitza. «Aktibo»: azken 30 egunetan sartu den pertsona.",
+      "vip": "VIParekin interesatuta",
+      "baducoins": "BaduCoinsekin interesatuta"
     }
   },
   "NotFound": {
     "title": "Orrialde hau ez dago",
     "text": "Agian esteka gaizki dago idatzita, edo orrialdea oraindik ez dago irekita.",
     "home": "Itzuli azalera"
+  },
+  "Install": {
+    "title": "Instalatu ezazu telefonoan",
+    "button": "Instalatu",
+    "iosStep1": "Sakatu Partekatu botoia (gezi bat gorantz duen koadroa), Safariren behealdean edo goialdean.",
+    "iosStep2": "Jaitsi eta sakatu «Gehitu hasierako pantailara».",
+    "iosStep3": "Sakatu «Gehitu». Badulake beste aplikazio bat bezala agertuko da."
   }
 }
