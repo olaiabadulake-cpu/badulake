@@ -174,6 +174,6 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - **Dependencias:** 0 fallos conocidos; actualizadas dentro de la misma versión.
 - **No se hace:** comprobar contraseñas filtradas (solo plan Pro, 25 $/mes) ni CAPTCHA (no hace falta mientras esté cerrado).
 - **Cerrado en producción:** todo sigue como estaba (D-018, D-019).
-- **Pendiente:** valorar apagar las altas en Supabase hasta el lanzamiento. (El fallo de compilación con `CUENTAS_ABIERTAS=1` quedó arreglado en la Tarea 8.1.)
+- **Altas en Supabase apagadas hasta el lanzamiento:** OlaIA apagó «Allow new users to sign up» el 19/11/2026; se vuelve a encender el día del lanzamiento junto con `CUENTAS_ABIERTAS` (lista en [seguridad.md](seguridad.md)). El fallo de compilación con `CUENTAS_ABIERTAS=1` quedó arreglado en la Tarea 8.1.
 - **Por qué:** La app guarda direcciones de casas y datos de personas: tiene que ser segura antes de que entre nadie, y el guion anticipa que el experto buscará fallos.
 - **Propuso:** Claude · **Decidió:** OlaIA (tarea 8 del plan maestro) · **Hizo:** Claude (OlaIA autorizó los cambios en Supabase)
