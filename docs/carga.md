@@ -1,6 +1,6 @@
 # ¿Aguanta Badulake el día de Sant Boi? (Tarea 18)
 
-**Resumen:** sí. La parte pública (portada, «Qué es un badulake» y la página del QR) aguanta de sobra a 200 personas entrando a la vez. La parte con cuenta (apuntarse a la vez) **queda pendiente de probar** cuando la Tarea 20 acabe de cambiar cómo se reparten las plazas.
+**Resumen:** sí. La parte pública (portada, «Qué es un badulake» y la página del QR) aguanta de sobra a 200 personas entrando a la vez. La parte con cuenta también: 120 personas apuntándose a la vez a un badulake de 10 plazas dieron exactamente 10 dentro, 110 en lista con puestos del 1 al 110 y 0 errores.
 
 ## 1. Lo que NO se hizo, y por qué
 
@@ -21,13 +21,27 @@ Traducido: en Sant Boi no llegarán 2.500 personas por segundo; lo normal serán
 
 **b) Comprobación suave en la web publicada** (como si fueran unas pocas personas normales, sin pasar de 5 a la vez y unas 100 visitas en total): ver el apartado 4.
 
-## 3. Pendiente: apuntarse a la vez (con cuenta)
+## 3. Apuntarse a la vez (con cuenta): hecho
 
-La Tarea 6 comprobó que con **cinco plazas y seis personas a la vez entran exactamente cinco**, gracias a un bloqueo en la base de datos (`apuntarme`, D-021). Quedaba por repetirlo a escala (100–200 personas). **No se ha hecho** por dos razones:
-1. **La Tarea 20 está cambiando esa función ahora mismo** (cupo, lista de espera y cancelación automática, D-032): probarla antes de que termine no valdría.
-2. **No hay base de datos local** (el Mac no tiene Docker ni Postgres) y la única es la de producción en Frankfurt, que tiene el alta apagada y límites de acceso de cuentas por hora. Crear 150 cuentas inventadas y que entren a la vez a la misma hora se hace con SQL.
+La Tarea 6 comprobó 6 personas a la vez por 5 plazas; la Tarea 20 (D-032) añadió la lista de espera. Aquí se repitió a escala, **en la base de datos real** (Frankfurt, sin tocar la web) y con datos inventados:
 
-Cómo hacerlo cuando la Tarea 20 acabe (con permiso, datos inventados `prueba-carga…@badulake.app` y borrado al terminar): crear un badulake de 10 plazas y 150 cuentas inventadas por SQL, lanzar `apuntarme` desde 150 conexiones a la vez y comprobar que hay exactamente 10 inscripciones y 140 respuestas «lleno» y 0 errores; después, borrar cuentas y badulake y comprobar todo a 0.
+- **Preparación:** 121 cuentas inventadas (`prueba-t18-000` a `120`, del dominio badulake.app, creadas por SQL con permiso de OlaIA, D-011) y un badulake publicado de **10 plazas** organizado por la 000.
+- **La prueba:** las 120 cuentas inician sesión y, **todas a la vez** (120 llamadas simultáneas a `apuntarme`), pulsan «Apuntarme».
+
+| Resultado | Esperado | Obtenido |
+|---|---|---|
+| Entran con plaza | 10 | **10** |
+| En lista de espera | 110 | **110** |
+| Errores | 0 | **0** |
+| Puestos de la lista (cada cuenta pregunta el suyo) | del 1 al 110, sin repetir ni saltos | **del 1 al 110 exactos** |
+| Alguien en las dos (dentro y en espera) | 0 | **0** |
+| Tiempo en atender a las 120 a la vez | | **1,4 s** en total (mediana 1,2 s, la más lenta 1,4 s) |
+
+Traducido: aunque 120 personas pulsen en el mismo segundo, entran justo las plazas, el resto queda en la lista en orden y nadie recibe un error. Las peticiones se ponen en cola dentro de la base de datos (bloqueo del badulake), por eso la última espera algo más de un segundo, pero ninguna falla.
+
+- **Límite de Supabase al probar:** las entradas de cuenta (iniciar sesión) están limitadas por conexión (unas 10 cada 2 minutos tras las primeras 30), así que preparar las 120 sesiones tardó unos 5 minutos. **Es un límite de la prueba, no de apuntarse:** el día de Sant Boi la gente entra poco a poco. Para registrarse a la vez (crear cuentas) rige además el límite de correos de Supabase hasta tener el correo propio (Tarea 10).
+- **Borrado:** al acabar se borraron las cuentas, el badulake y todo lo demás. Comprobado: cuentas, perfiles, badulakes, direcciones, inscripciones y lista de espera **a 0**.
+- **No se probó** la salida a la vez de varias personas con otras entrando (la Tarea 20 ya lo comprobó con 3 bajas a la vez y 15 cuentas).
 
 ## 4. Web publicada (comprobación suave)
 

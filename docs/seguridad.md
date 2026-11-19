@@ -122,7 +122,7 @@ Para abrir las cuentas, todo a la vez:
 8. **Dar de alta al equipo (Tarea 13):** el panel `/equipo` no deja entrar a nadie hasta que haya cuentas en la tabla `equipo`. Con la cuenta ya creada: en Supabase (SQL Editor) `insert into public.equipo (persona) select id from auth.users where email = 'correo-de-la-persona';`. Para quitar a alguien: `delete from public.equipo where persona = '…';`. Ninguna cuenta se da de alta desde la app.
 
 9. **Códigos QR de Sant Boi (Tarea 18, D-033):** los QR de `docs/qr/` llevan escrita la dirección **badulake.vercel.app**. Si badulake.app ya funciona (Tarea 3), **regenerarlos y volver a imprimirlos** (`cd app && npm i --no-save qrcode && node scripts/qr.mjs https://badulake.app`), escanear uno y comprobar que abre `/es/hola`. Imprimir uno de prueba antes de la tirada.
-10. **Antes de abrir, probar apuntarse a la vez a escala** (pendiente, ver [carga.md](carga.md)) con cuentas inventadas y borrarlas después.
+10. **Apuntarse a la vez a escala:** probado (120 a la vez por 10 plazas, [carga.md](carga.md)). Solo repetirlo si cambia `apuntarme()`.
 
 ## 9. Denuncias, suspensiones y panel del equipo (Tarea 13, D-027)
 

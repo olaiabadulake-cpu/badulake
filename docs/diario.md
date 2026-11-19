@@ -136,3 +136,8 @@ Cada entrada indica quién hizo cada cosa: **Claude** (la IA), **OlaIA** (dirige
 - **Queda:** que una persona euskaldun revise el euskera nuevo (tabla en `docs/revision-euskera.md`); traducir a las otras 42 lenguas.
 - **Euskera repasado (20/11):** Claude corrige 11 textos: singular y plural de las personas que faltan («Lagun bat falta da» / «2 lagun falta dira»), el puesto en la lista («2. postuan»), «Eman izena itxaron-zerrendan» como en el resto de la web, «Abisuak» para los avisos y frases más naturales.
 - **Después (20/11):** OlaIA confirma el margen de 48 horas desde la conversación maestra («Sí, 48 horas»). Claude pasa el revisor de seguridad de Supabase: 0 errores; los avisos son todos a propósito (`docs/seguridad.md` §10).
+
+**Apuntarse a la vez a escala (tarea 18, segunda parte).** Con permiso de OlaIA, Claude crea por SQL 121 cuentas inventadas (`prueba-t18-…`, del dominio badulake.app, D-011) y un badulake de 10 plazas, y hace que 120 cuentas pulsen «Apuntarme» **a la vez** con la lista de espera de la Tarea 20 (D-032).
+- **Resultado:** 10 dentro, 110 en lista con puestos del 1 al 110 sin repetir, 0 errores, nadie en las dos listas; las 120 atendidas en 1,4 s. Verificado en la base de datos (10 inscritas, 110 en espera, 110 distintas).
+- **Borrado:** cuentas, perfiles, badulake, direcciones, inscripciones y espera **a 0** (hubo que borrar el badulake a mano: al borrarse su organizadora queda sin dueña por privacidad, D-024).
+- **Nota:** Supabase limita las entradas de cuenta por conexión; preparar las 120 sesiones tardó unos 5 minutos. Es un límite de la prueba, no de apuntarse.
