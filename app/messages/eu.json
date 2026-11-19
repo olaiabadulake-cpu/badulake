@@ -5,14 +5,8 @@
   },
   "Home": {
     "tagline": "Jada erabiltzen ez dituzun arropa eta gauzak trukatzeko topaketak. Dirurik gabe.",
-    "point1": "Elkartu 5 eta 10 pertsona artean zure inguruko lokal batean.",
-    "point2": "Ekarri jada erabiltzen ez duzuna eta eraman gustatzen zaizuna.",
-    "point3": "Askatu armairua eta ondo pasa.",
     "coming": "Badulake 2027. urtearen hasieran helduko da. Eman izena eta abisatuko dizugu.",
-    "comingSoon": "Badulake 2027. urtearen hasieran helduko da. Laster eman ahal izango duzu izena itxaron-zerrendan.",
-    "signIn": "Sartu",
-    "signUp": "Sortu kontua",
-    "seeBadulakes": "Ikusi badulakeak"
+    "comingSoon": "Badulake 2027. urtearen hasieran helduko da. Laster eman ahal izango duzu izena itxaron-zerrendan."
   },
   "Waitlist": {
     "title": "Itxaron-zerrenda",
@@ -58,7 +52,7 @@
     "signInTitle": "Sartu",
     "signInSubmit": "Sartu",
     "noAccount": "Oraindik ez duzu konturik?",
-    "signUpLink": "Sortu hemen",
+    "signUpLink": "Sortu kontua",
     "accountTitle": "Zure kontua",
     "loading": "Kargatzen…",
     "signedInAs": "{email} helbidearekin sartu zara.",
@@ -75,10 +69,9 @@
     "notices": {
       "salida": "Kontutik irten zara.",
       "enlace": "Esteka ez da baliozkoa edo iraungita dago. Saiatu sartzen edo sortu berriro kontua.",
-      "verificada": "Zure posta elektronikoa egiaztatuta dago. Orain sar zaitezke."
-    },
-    "newBadulake": "Badulake bat sortu",
-    "seeBadulakes": "Ikusi badulakeak"
+      "verificada": "Zure posta elektronikoa egiaztatuta dago. Orain sar zaitezke.",
+      "cuenta": "Horretarako zure kontuan sartu behar duzu. Konturik ez baduzu, sortu: doakoa da."
+    }
   },
   "Badulake": {
     "newTitle": "Badulake bat sortu",
@@ -98,7 +91,7 @@
       "address": "Zuk bakarrik ikusiko duzu; izena ematen duenari erakutsiko diogu.",
       "seats": "5 eta 10 lagun artean."
     },
-    "save": "Zirriborroa gorde",
+    "save": "Gorde zirriborro gisa",
     "pending": "Gordetzen…",
     "publish": "Argitaratu",
     "statusDraft": "Zirriborroa da: oraingoz zuk bakarrik ikusten duzu.",
@@ -113,20 +106,52 @@
       "seats": "Plazak 5 eta 10 artean izan behar dira.",
       "generic": "Zerbait gaizki atera da. Saiatu berriro apur bat geroago."
     },
-    "listTitle": "Badulakeak",
-    "listEmpty": "Oraintxe ez dago hurrengo badulakerik. Itzuli laster edo sortu zuk bat.",
+    "listTitle": "Hurrengo badulakeak",
+    "listEmpty": "Oraindik ez dago badulakerik. Itzuli laster edo sortu zuk bat.",
     "freeSeats": "{count} toki libre",
     "full": "Beteta: ez dago plazarik",
     "seatsTaken": "{taken}/{total} toki beteta",
-    "join": "Apuntatu",
-    "leave": "Ezabatu nazazu",
-    "youAreIn": "Apuntatu zara. Hona hemen helbide zehatza.",
+    "join": "Eman izena",
+    "leave": "Kendu izena",
+    "youAreIn": "Izena eman duzu. Hona hemen helbide zehatza.",
     "addToCalendar": "Gehitu egutegira",
-    "addressAfterJoin": "Apuntatzen zarenean helbide zehatza ikusiko duzu.",
+    "addressAfterJoin": "Izena ematean helbide zehatza ikusiko duzu.",
     "notices": {
-      "lleno": "Sentitzen dugu: plazak bete dira.",
+      "lleno": "Sentitzen dugu: ez da plazarik geratzen.",
       "error": "Zerbait gaizki atera da. Saiatu berriro apur bat geroago.",
-      "no_disponible": "Badulake honek ez du izen-emate gehiago onartzen."
-    }
+      "no_disponible": "Badulake honek ez du izen-emate gehiago onartzen.",
+      "apuntada": "Izena eman duzu! Orain helbide zehatza ikus dezakezu.",
+      "borrada": "Badulake honetatik izena kendu duzu."
+    },
+    "back": "Itzuli badulakeetara",
+    "mine": "Zuk antolatzen duzu",
+    "draft": "Zirriborroa",
+    "joinedTag": "Izena emanda"
+  },
+  "Nav": {
+    "label": "Menu nagusia",
+    "home": "badulakë, hasiera",
+    "whatIs": "Zer da badulake bat",
+    "signIn": "Sartu",
+    "signUp": "Sortu kontua",
+    "badulakes": "Badulakeak",
+    "create": "Badulake bat sortu",
+    "account": "Zure kontua",
+    "skip": "Joan edukira"
+  },
+  "WhatIs": {
+    "title": "Zer da badulake bat",
+    "intro": "Badulake bat 5 eta 10 pertsona arteko topaketa bat da, aurrez aurre, jada erabiltzen ez dituzuen arropa eta gauzak trukatzeko. Inork ez du ezer ordaintzen, ezta kobratzen ere.",
+    "howTitle": "Nola funtzionatzen du",
+    "step1": "Sortu zure kontua. Doakoa da, eta 18 urtetik gorakoentzat bakarrik.",
+    "step2": "Bilatu badulake bat eta eman izena. Izena ematean helbide zehatza ikusiko duzu.",
+    "step3": "Joan jada erabiltzen ez duzunarekin.",
+    "step4": "Trukatu: eraman gustatzen zaizuna.",
+    "organize": "Zuk antolatu nahi duzu? Sortu badulake bat eta argitaratu.",
+    "factsTitle": "Laburbilduz",
+    "free": "Doan",
+    "noMoney": "Dirurik gabe",
+    "people": "5 eta 10 pertsona artean",
+    "adults": "18 urtetik gorakoentzat bakarrik"
   }
 }

@@ -22,7 +22,7 @@ function readLocale(formData: FormData): Locale {
 
 const text = (formData: FormData, name: string) => String(formData.get(name) ?? "").trim();
 
-// Crear un badulake (queda en borrador). Todo se comprueba aquí, en el servidor, y la base de
+// Crear un badulake: publicado de una vez o guardado como borrador. Todo se comprueba aquí, en el servidor, y la base de
 // datos lo vuelve a comprobar (supabase/badulakes.sql).
 export async function createBadulake(
   _prev: NewBadulakeState,
@@ -51,7 +51,7 @@ export async function createBadulake(
 
   const supabase = await createSupabase();
   const { data: auth } = await supabase.auth.getUser();
-  if (!auth.user) redirect({ href: "/entrar", locale });
+  if (!auth.user) redirect({ href: "/entrar?aviso=cuenta", locale });
 
   const { data, error } = await supabase.rpc("crear_badulake", {
     p_titulo: title,
@@ -69,6 +69,13 @@ export async function createBadulake(
     return { status: "error", errors: { generic: true }, values };
   }
 
+  // Botón principal «Publicar»: se publica de una vez (antes eran dos pasos). La base de datos
+  // crea siempre en borrador; aquí se publica justo después. Si eso fallara, queda en borrador
+  // con su botón «Publicar» a la vista.
+  if (formData.get("intent") === "publish") {
+    const { error: pubError } = await supabase.from("badulakes").update({ estado: "publicado" }).eq("id", data);
+    if (pubError) console.error("[publicar]", pubError.code, pubError.message);
+  }
   redirect({ href: `/badulakes/${data}`, locale });
   return { status: "idle" };
 }
@@ -93,7 +100,7 @@ export async function joinBadulake(formData: FormData): Promise<void> {
     const supabase = await createSupabase();
     const { data, error } = await supabase.rpc("apuntarme", { p_badulake: id });
     if (error) console.error("[apuntarme]", error.code, error.message);
-    if (error || data !== "ok") aviso = `?aviso=${error ? "error" : data}`;
+    aviso = `?aviso=${error ? "error" : data === "ok" ? "apuntada" : data}`;
   }
   redirect({ href: `/badulakes/${id}${aviso}`, locale });
 }
@@ -104,7 +111,9 @@ export async function leaveBadulake(formData: FormData): Promise<void> {
   const id = text(formData, "id");
   if (accountsOpen && /^[0-9a-f-]{36}$/.test(id)) {
     const supabase = await createSupabase();
-    await supabase.from("inscripciones").delete().eq("badulake_id", id);
+    const { error } = await supabase.from("inscripciones").delete().eq("badulake_id", id);
+    if (error) console.error("[borrarme]", error.code, error.message);
+    redirect({ href: `/badulakes/${id}?aviso=${error ? "error" : "borrada"}`, locale });
   }
   redirect({ href: `/badulakes/${id}`, locale });
 }

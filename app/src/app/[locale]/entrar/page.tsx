@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { accountsOpen } from "@/lib/supabase/server";
 import { SignInForm } from "./signin-form";
 
-const notices = ["salida", "enlace", "verificada"] as const;
+const notices = ["salida", "enlace", "verificada", "cuenta"] as const;
 
 export default async function SignIn({ searchParams }: PageProps<"/[locale]/entrar">) {
   // Cerrado en producción hasta que exista el aviso de privacidad (D-019).
@@ -22,7 +22,7 @@ export default async function SignIn({ searchParams }: PageProps<"/[locale]/entr
   );
 }
 
-// Aviso según de dónde venga: ha salido, enlace caducado o correo ya verificado.
+// Aviso según de dónde venga: ha salido, enlace caducado, correo verificado o necesita entrar.
 async function Notice({ searchParams }: Pick<PageProps<"/[locale]/entrar">, "searchParams">) {
   const { aviso } = await searchParams;
   const notice = notices.find((n) => n === aviso);

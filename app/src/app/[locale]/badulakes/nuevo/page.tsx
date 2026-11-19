@@ -24,6 +24,6 @@ export default async function NewBadulake() {
 async function Form() {
   const locale = await getLocale();
   const user = await getCurrentUser();
-  if (!user) redirect({ href: "/entrar", locale });
+  if (!user) redirect({ href: "/entrar?aviso=cuenta", locale });
   return <NewBadulakeForm />;
 }

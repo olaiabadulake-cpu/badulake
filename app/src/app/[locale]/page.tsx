@@ -5,13 +5,23 @@ import { accountsOpen, getCurrentUser } from "@/lib/supabase/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/languages";
 import { WaitlistForm } from "./waitlist-form";
+import { WhatIs } from "./what-is";
 
-export default async function Home() {
+const button =
+  "rounded-full bg-noche px-6 py-3 text-center text-lg font-semibold text-white hover:bg-noche/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-noche";
+
+export default async function Home({ searchParams }: PageProps<"/[locale]">) {
   const t = await getTranslations("Home");
   const locale = await getLocale();
 
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-10 px-4 pt-6 pb-12 sm:px-8 sm:pb-16">
+      {accountsOpen && (
+        <Suspense fallback={null}>
+          <Notice searchParams={searchParams} />
+        </Suspense>
+      )}
+
       <header className="flex flex-col gap-5">
         <div className="flex items-center gap-3">
           <span
@@ -27,14 +37,14 @@ export default async function Home() {
         </p>
       </header>
 
-      <ul className="flex flex-col gap-3 text-lg">
-        {(["point1", "point2", "point3"] as const).map((key) => (
-          <li key={key} className="flex gap-3">
-            <span aria-hidden className="mt-2.5 size-2 shrink-0 rounded-full bg-noche" />
-            {t(key)}
-          </li>
-        ))}
-      </ul>
+      {/* Cuentas: solo en el Mac hasta que exista el aviso de privacidad (D-019). */}
+      {accountsOpen && (
+        <Suspense fallback={null}>
+          <Start />
+        </Suspense>
+      )}
+
+      <WhatIs />
 
       <section className="rounded-2xl bg-amarillo p-5 sm:p-8">
         <p className="text-lg font-medium">{waitlistOpen ? t("coming") : t("comingSoon")}</p>
@@ -44,31 +54,29 @@ export default async function Home() {
           </div>
         )}
       </section>
-
-      {/* Cuentas: solo en el Mac hasta que exista el aviso de privacidad (D-019). */}
-      {accountsOpen && (
-        <Suspense fallback={null}>
-          <AccountLinks />
-        </Suspense>
-      )}
     </div>
   );
 }
 
-// Con sesión: enlace a los badulakes. Sin sesión: entrar o crear cuenta.
-async function AccountLinks() {
-  const t = await getTranslations("Home");
+// Aviso al volver a la portada (por ahora, solo al salir de la cuenta).
+async function Notice({ searchParams }: Pick<PageProps<"/[locale]">, "searchParams">) {
+  const { aviso } = await searchParams;
+  if (aviso !== "salida") return null;
+  const t = await getTranslations("Account.notices");
+  return <p role="status" className="rounded-lg bg-amarillo p-4 font-medium">{t("salida")}</p>;
+}
+
+// Botón principal: sin sesión, crear cuenta; con sesión, ir a los badulakes.
+async function Start() {
+  const t = await getTranslations("Nav");
   const user = await getCurrentUser();
   return (
-    <nav className="flex gap-4 text-lg font-medium">
+    <div className="flex flex-col gap-3 sm:flex-row">
       {user ? (
-        <Link href="/badulakes" className="underline underline-offset-4">{t("seeBadulakes")}</Link>
+        <Link href="/badulakes" className={button}>{t("badulakes")}</Link>
       ) : (
-        <>
-          <Link href="/entrar" className="underline underline-offset-4">{t("signIn")}</Link>
-          <Link href="/registro" className="underline underline-offset-4">{t("signUp")}</Link>
-        </>
+        <Link href="/registro" className={button}>{t("signUp")}</Link>
       )}
-    </nav>
+    </div>
   );
 }

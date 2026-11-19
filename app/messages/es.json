@@ -5,14 +5,8 @@
   },
   "Home": {
     "tagline": "Quedadas para intercambiar ropa y cosas que ya no usas. Sin dinero.",
-    "point1": "Juntaos de 5 a 10 personas en un local de tu zona.",
-    "point2": "Lleva lo que ya no usas y llévate lo que te guste.",
-    "point3": "Libera el armario y pásalo bien.",
     "coming": "Badulake llega a principios de 2027. Apúntate y te avisamos.",
-    "comingSoon": "Badulake llega a principios de 2027. Muy pronto podrás apuntarte a la lista de espera.",
-    "signIn": "Entrar",
-    "signUp": "Crear cuenta",
-    "seeBadulakes": "Ver badulakes"
+    "comingSoon": "Badulake llega a principios de 2027. Muy pronto podrás apuntarte a la lista de espera."
   },
   "Waitlist": {
     "title": "Lista de espera",
@@ -54,11 +48,11 @@
     "pending": "Enviando…",
     "checkEmail": "Te hemos enviado un correo. Abre el enlace que contiene para activar tu cuenta.",
     "haveAccount": "¿Ya tienes cuenta?",
-    "signInLink": "Entra",
+    "signInLink": "Entrar",
     "signInTitle": "Entrar",
     "signInSubmit": "Entrar",
-    "noAccount": "¿Aún no tienes cuenta?",
-    "signUpLink": "Créala aquí",
+    "noAccount": "¿Todavía no tienes cuenta?",
+    "signUpLink": "Crear cuenta",
     "accountTitle": "Tu cuenta",
     "loading": "Cargando…",
     "signedInAs": "Has entrado como {email}.",
@@ -75,10 +69,9 @@
     "notices": {
       "salida": "Has salido de tu cuenta.",
       "enlace": "El enlace no es válido o ha caducado. Prueba a entrar o vuelve a crear la cuenta.",
-      "verificada": "Tu correo está verificado. Ya puedes entrar."
-    },
-    "newBadulake": "Crear un badulake",
-    "seeBadulakes": "Ver badulakes"
+      "verificada": "Tu correo está verificado. Ya puedes entrar.",
+      "cuenta": "Para eso tienes que entrar en tu cuenta. Si aún no tienes, créala: es gratis."
+    }
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
@@ -98,11 +91,11 @@
       "address": "Solo la verás tú; se la enseñaremos a quien se apunte.",
       "seats": "Entre 5 y 10 personas."
     },
-    "save": "Guardar borrador",
+    "save": "Guardar como borrador",
     "pending": "Guardando…",
     "publish": "Publicar",
     "statusDraft": "Es un borrador: de momento solo lo ves tú.",
-    "statusPublished": "Publicado: ya pueden verlo las personas con cuenta.",
+    "statusPublished": "Publicado: ya lo pueden ver las personas con cuenta.",
     "addressPrivate": "La dirección exacta es privada: solo la ves tú.",
     "errors": {
       "title": "El título debe tener entre 3 y 80 letras.",
@@ -113,20 +106,52 @@
       "seats": "Las plazas deben ser entre 5 y 10.",
       "generic": "Algo ha fallado. Inténtalo de nuevo en un rato."
     },
-    "listTitle": "Badulakes",
-    "listEmpty": "Ahora mismo no hay ningún badulake próximo. Vuelve pronto o crea uno tú.",
+    "listTitle": "Próximos badulakes",
+    "listEmpty": "Todavía no hay badulakes. Vuelve pronto o crea uno tú.",
     "freeSeats": "{count, plural, one {# plaza libre} other {# plazas libres}}",
     "full": "Completo: no quedan plazas",
     "seatsTaken": "{taken} de {total} plazas ocupadas",
     "join": "Apuntarme",
-    "leave": "Me borro",
-    "youAreIn": "Te has apuntado. Aquí tienes la dirección exacta.",
+    "leave": "Borrarme",
+    "youAreIn": "Te has apuntado. Esta es la dirección exacta.",
     "addToCalendar": "Añadir al calendario",
     "addressAfterJoin": "Cuando te apuntes verás la dirección exacta.",
     "notices": {
-      "lleno": "Lo sentimos: se han acabado las plazas.",
+      "lleno": "Lo sentimos: ya no quedan plazas.",
       "error": "Algo ha fallado. Inténtalo de nuevo en un rato.",
-      "no_disponible": "Este badulake ya no admite inscripciones."
-    }
+      "no_disponible": "Este badulake ya no admite inscripciones.",
+      "apuntada": "¡Te has apuntado! Ya puedes ver la dirección exacta.",
+      "borrada": "Te has borrado de este badulake."
+    },
+    "back": "Volver a los badulakes",
+    "mine": "Lo organizas tú",
+    "draft": "Borrador",
+    "joinedTag": "Te has apuntado"
+  },
+  "Nav": {
+    "label": "Menú principal",
+    "home": "badulakë, portada",
+    "whatIs": "Qué es un badulake",
+    "signIn": "Entrar",
+    "signUp": "Crear cuenta",
+    "badulakes": "Badulakes",
+    "create": "Crear un badulake",
+    "account": "Tu cuenta",
+    "skip": "Saltar al contenido"
+  },
+  "WhatIs": {
+    "title": "Qué es un badulake",
+    "intro": "Un badulake es una quedada en persona de 5 a 10 personas para intercambiar ropa y cosas que ya no usáis. Nadie paga ni cobra nada.",
+    "howTitle": "Cómo funciona",
+    "step1": "Crea tu cuenta. Es gratis y solo para mayores de 18 años.",
+    "step2": "Busca un badulake y apúntate. Al apuntarte verás la dirección exacta.",
+    "step3": "Ve con lo que ya no usas.",
+    "step4": "Intercambia: llévate lo que te guste.",
+    "organize": "¿Prefieres organizarlo tú? Crea un badulake y publícalo.",
+    "factsTitle": "En resumen",
+    "free": "Gratis",
+    "noMoney": "Sin dinero",
+    "people": "De 5 a 10 personas",
+    "adults": "Solo mayores de 18 años"
   }
 }

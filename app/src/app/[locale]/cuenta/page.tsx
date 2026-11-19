@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
-import { Link, redirect } from "@/i18n/navigation";
+import { redirect } from "@/i18n/navigation";
 import { accountsOpen, getCurrentUser } from "@/lib/supabase/server";
 import { signOut } from "./actions";
 
@@ -24,24 +24,12 @@ export default async function AccountPage() {
 async function Account() {
   const locale = await getLocale();
   const user = await getCurrentUser();
-  if (!user) redirect({ href: "/entrar", locale });
+  if (!user) redirect({ href: "/entrar?aviso=cuenta", locale });
 
   const t = await getTranslations("Account");
   return (
     <>
       <p className="text-lg">{t("signedInAs", { email: user!.email })}</p>
-      <Link
-        href="/badulakes"
-        className="rounded-full bg-noche px-6 py-3 text-center text-lg font-semibold text-white hover:bg-noche/90 sm:self-start"
-      >
-        {t("seeBadulakes")}
-      </Link>
-      <Link
-        href="/badulakes/nuevo"
-        className="rounded-full bg-noche px-6 py-3 text-center text-lg font-semibold text-white hover:bg-noche/90 sm:self-start"
-      >
-        {t("newBadulake")}
-      </Link>
       <form action={signOut}>
         <input type="hidden" name="locale" value={locale} />
         <button

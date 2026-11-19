@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
-import { redirect } from "@/i18n/navigation";
+import { Link, redirect } from "@/i18n/navigation";
 import { accountsOpen, createSupabase, getCurrentUser } from "@/lib/supabase/server";
 import { joinBadulake, leaveBadulake, publishBadulake } from "../actions";
 
@@ -27,7 +27,7 @@ async function Details({
   const { aviso } = await searchParams;
   const locale = await getLocale();
   const user = await getCurrentUser();
-  if (!user) redirect({ href: "/entrar", locale });
+  if (!user) redirect({ href: "/entrar?aviso=cuenta", locale });
   if (!/^[0-9a-f-]{36}$/.test(id)) notFound();
 
   // RLS: cualquier persona con sesión ve los publicados; los borradores solo su organizadora.
@@ -61,12 +61,17 @@ async function Details({
     ...(a ? ([[t("address"), a.direccion]] as [string, string][]) : []),
     [t("seats"), isOrganizer ? t("seatsTaken", { taken, total: b.plazas }) : t("freeSeats", { count: free })],
   ];
-  const notice = aviso === "lleno" || aviso === "error" || aviso === "no_disponible" ? aviso : null;
+  const notices = ["apuntada", "borrada", "lleno", "error", "no_disponible"] as const;
+  const notice = notices.find((n) => n === aviso) ?? null;
+  const good = notice === "apuntada" || notice === "borrada";
   const button =
     "rounded-full bg-noche px-6 py-3 text-center text-lg font-semibold text-white hover:bg-noche/90 sm:self-start";
 
   return (
     <>
+      <Link href="/badulakes" className="font-medium underline underline-offset-4 sm:self-start">
+        ← {t("back")}
+      </Link>
       <h1 className="font-display text-3xl font-bold">{isOrganizer ? t("yourTitle") : b.titulo}</h1>
       {isOrganizer && (
         <>
@@ -77,7 +82,12 @@ async function Details({
         </>
       )}
       {notice && (
-        <p role="alert" className="rounded-lg bg-amarillo p-4 font-medium">{t(`notices.${notice}`)}</p>
+        <p
+          role={good ? "status" : "alert"}
+          className={`rounded-lg p-4 font-medium ${good ? "bg-amarillo" : "border-2 border-error bg-white text-error"}`}
+        >
+          {t(`notices.${notice}`)}
+        </p>
       )}
       <p className="whitespace-pre-line text-lg">{b.descripcion}</p>
       <dl className="flex flex-col gap-3">
@@ -98,7 +108,9 @@ async function Details({
       )}
       {!isOrganizer && joined && (
         <>
-          <p role="status" className="rounded-lg bg-amarillo p-4 font-medium">{t("youAreIn")}</p>
+          {notice !== "apuntada" && (
+            <p role="status" className="rounded-lg bg-amarillo p-4 font-medium">{t("youAreIn")}</p>
+          )}
           <a href={`/api/badulakes/${b.id}/calendario`} download className={button}>
             {t("addToCalendar")}
           </a>

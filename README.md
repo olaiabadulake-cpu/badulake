@@ -23,6 +23,7 @@ Todo se graba y se documenta aquí: el código, cada decisión, las herramientas
 | Diario del proyecto, día a día | [docs/diario.md](docs/diario.md) |
 | Decisiones y por qué se tomaron | [docs/decisiones.md](docs/decisiones.md) |
 | Herramientas que usamos | [docs/herramientas.md](docs/herramientas.md) |
+| Recorridos de la app y menú | [docs/recorridos.md](docs/recorridos.md) |
 | La app publicada | [badulake.vercel.app](https://badulake.vercel.app) |
 | El código de la app (Next.js) | carpeta [`app/`](app/) |
 
@@ -32,7 +33,7 @@ Nos encanta que mires el código y opines. Abre un *issue* con sugerencias, duda
 
 ## Estado
 
-🟡 Día 1 (19 de noviembre de 2026): primera versión publicada en [badulake.vercel.app](https://badulake.vercel.app), una portada en euskera y castellano. Ya hay base de datos (Supabase, UE), lista de espera y cuentas (crear cuenta, entrar y salir, solo para mayores de 18) y crear un badulake (borrador y publicar). La lista de espera y las cuentas se abrirán al público cuando esté el aviso de privacidad (D-018 y D-019); mientras, las cuentas y crear badulakes solo funcionan en el Mac.
+🟡 Día 1 (19 de noviembre de 2026): primera versión publicada en [badulake.vercel.app](https://badulake.vercel.app), una portada en euskera y castellano. Ya hay base de datos (Supabase, UE), lista de espera y cuentas (crear cuenta, entrar y salir, solo para mayores de 18) crear un badulake, ver badulakes y apuntarse, y una sección «Qué es un badulake» con un menú común en todas las páginas ([recorridos](docs/recorridos.md)). La lista de espera y las cuentas se abrirán al público cuando esté el aviso de privacidad (D-018 y D-019); mientras, las cuentas y crear badulakes solo funcionan en el Mac.
 
 ## Arrancar la app en tu ordenador
 

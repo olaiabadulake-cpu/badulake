@@ -74,7 +74,7 @@ export async function signUp(_prev: SignUpState, formData: FormData): Promise<Si
   }
 
   // Si la verificación por correo estuviera desactivada, ya hay sesión.
-  if (data.session) redirect({ href: "/cuenta", locale });
+  if (data.session) redirect({ href: "/badulakes", locale });
 
   // Mismo mensaje aunque el correo ya tuviera cuenta: no se dice quién está registrado.
   return { status: "check-email" };
@@ -98,7 +98,8 @@ export async function signIn(_prev: SignInState, formData: FormData): Promise<Si
     return { status: "error", errors: { generic: true } };
   }
 
-  redirect({ href: "/cuenta", locale });
+  // Lo primero que se quiere ver al entrar son los badulakes (docs/recorridos.md).
+  redirect({ href: "/badulakes", locale });
   return { status: "idle" };
 }
 
@@ -108,5 +109,5 @@ export async function signOut(formData: FormData): Promise<void> {
     const supabase = await createSupabase();
     await supabase.auth.signOut();
   }
-  redirect({ href: "/entrar?aviso=salida", locale });
+  redirect({ href: "/?aviso=salida", locale });
 }

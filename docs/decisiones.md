@@ -148,3 +148,18 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Fuera de esta tarea:** lista de espera del badulake lleno y cancelación automática a 24 h (tarea 20), correos (tarea 10), filtros, mapa, valoraciones.
 - **Por qué:** La última plaza es el único punto de choque entre personas, y solo la base de datos puede arbitrarlo de forma fiable. Dar la dirección solo tras apuntarse protege lo más delicado (D-020) y la organizadora no necesita ver datos de nadie para su trabajo.
 - **Propuso:** Claude · **Decidió:** OlaIA (tarea 6 del plan maestro) · **Hizo:** Claude
+
+### D-022 · Recorridos de la app: un solo menú, «Qué es un badulake» a la vista y menos pasos
+- **Fecha:** 19/11/2026
+- **Alternativas:** esperar a la revisión de Daniel Torres Burriel (experto en usabilidad) para cambiar nada; retocar solo los textos; un menú distinto en cada página, como hasta ahora.
+- **Decisión:** Se escribe el «algoritmo del Badulake» en [recorridos.md](recorridos.md) (los recorridos paso a paso y el árbol del menú) y, con el visto bueno de OlaIA, se rehace la app según él:
+  - **Un solo menú arriba en todas las páginas.** Sin sesión: «Qué es un badulake», «Entrar», «Crear cuenta» e idioma. Con sesión: «Badulakes», «Crear un badulake», «Qué es un badulake», «Tu cuenta» e idioma. Marca la página en la que estás. Hay un enlace oculto «Saltar al contenido» para quien navega con teclado.
+  - **«Qué es un badulake»**: sección en la portada y página propia (`/que-es`), con qué es, cómo funciona en cuatro pasos y el resumen (gratis, sin dinero, de 5 a 10 personas, solo mayores de 18). Es pública también en producción.
+  - **Menos pasos:** al entrar se va directamente a los badulakes (no a «Tu cuenta»); al crear un badulake el botón principal es «Publicar», que lo publica de una vez («Guardar como borrador» queda como segunda opción); al salir se vuelve a la portada.
+  - **Mensajes claros:** lista vacía («Todavía no hay badulakes…» con botón para crear uno), «¡Te has apuntado!», «Te has borrado de este badulake», «ya no quedan plazas», y por qué te pide entrar si llegas sin sesión. Los avisos de éxito se anuncian como estado y los de error como alerta.
+  - **Encontrar lo tuyo:** la lista enseña también tus badulakes (aunque sean borradores) y marca los tuyos y aquellos en los que te has apuntado. Cada badulake tiene «Volver a los badulakes».
+  - **Mismas palabras siempre:** Entrar, Crear cuenta, Salir, Badulakes, Crear un badulake, Apuntarme / Borrarme, Tu cuenta.
+- **Cerrado en producción:** lo que va con cuenta sigue cerrado con `CUENTAS_ABIERTAS` (D-019); en la web pública el menú solo enseña «Qué es un badulake».
+- **Fuera de esta tarea:** diseño visual y logo (tarea 14), fotos, seguridad (8), privacidad (9), correos (10) y revisión completa de accesibilidad (11). En el contenido de la app no hay referencias a Los Simpson; el nombre «badulake» no se toca.
+- **Por qué:** El guion (episodio 3) anticipa las críticas: navegación inconsistente, etiquetas ambiguas, malos mensajes y la palabra «badulake» sin explicar. OlaIA decidió que los expertos revisan al final, así que se corrige ya.
+- **Propuso:** Claude · **Decidió:** OlaIA (tarea 7 del plan maestro) · **Hizo:** Claude

@@ -78,12 +78,21 @@ export function NewBadulakeForm() {
         <p role="alert" className="font-medium text-error">{t("errors.generic")}</p>
       )}
 
-      <button
-        type="submit" disabled={pending}
-        className="rounded-full bg-noche px-6 py-3 text-lg font-semibold text-white hover:bg-noche/90 disabled:opacity-60 sm:self-start"
-      >
-        {pending ? t("pending") : t("save")}
-      </button>
+      <div className="flex flex-col gap-3 sm:flex-row">
+        <button
+          type="submit" name="intent" value="publish" disabled={pending}
+          className="rounded-full bg-noche px-6 py-3 text-lg font-semibold text-white hover:bg-noche/90 disabled:opacity-60"
+        >
+          {t("publish")}
+        </button>
+        <button
+          type="submit" name="intent" value="draft" disabled={pending}
+          className="rounded-full border-2 border-noche px-6 py-2.5 text-lg font-semibold hover:bg-noche/5 disabled:opacity-60"
+        >
+          {t("save")}
+        </button>
+      </div>
+      {pending && <p role="status">{t("pending")}</p>}
     </form>
   );
 }
