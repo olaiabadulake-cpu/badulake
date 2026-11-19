@@ -57,3 +57,36 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Por qué:** Quien elige euskera con el navegador en castellano tiene que poder volver otro día y seguir en euskera. Es una cookie técnica: solo guarda «eu» o «es».
 - **Propuso:** Claude · **Decidió:** OlaIA
 - **Más lenguas (FORTA, CIRCOM):** la app ya está preparada. Añadir una lengua es añadirla en `routing.ts` y crear su archivo en `app/messages/`. Solo habrá que ampliar el selector EU | ES cuando llegue la tercera lengua; no se hace antes.
+
+### D-007 · La app se publica en badulake.app
+- **Fecha:** 19/11/2026
+- **Decisión:** El dominio de la app es **badulake.app** (ya comprado). Mientras se configura, sigue en badulake.vercel.app.
+- **Decidió:** OlaIA
+
+### D-008 · Abierta a todas las personas mayores de 18, pensada para mujeres
+- **Fecha:** 19/11/2026
+- **Decisión:** Cualquier persona mayor de 18 años puede usar Badulake. La comunicación y el tono se dirigen a mujeres, que son el público al que nos dirigimos.
+- **Por qué:** Cerrar la app por sexo plantea problemas legales; dirigirse a un público no.
+- **Decidió:** OlaIA
+
+### D-009 · Nunca datos de personas reales en pruebas ni demostraciones
+- **Fecha:** 19/11/2026
+- **Decisión:** Las pruebas, las demostraciones y cualquier fallo que se enseñe se hacen en una copia de la app con datos inventados, nunca con datos de personas reales.
+- **Propuso:** Claude · **Decidió:** OlaIA
+
+### D-010 · Sin cobros al principio
+- **Fecha:** 19/11/2026
+- **Decisión:** La app es gratis. Las ideas de pago (cuentas VIP, monedas) se prueban primero como lista de interés, sin cobrar. Los pagos reales, si llegan, se estudian después con Comercial y la Asesoría Jurídica.
+- **Propuso:** Claude · **Decidió:** OlaIA
+
+### D-011 · Web instalable en el móvil, no app en las tiendas
+- **Fecha:** 19/11/2026
+- **Alternativas:** publicar en App Store y Google Play.
+- **Decisión:** Badulake es una web que se instala en el móvil (PWA). No se sube a las tiendas por ahora.
+- **Por qué:** Las tiendas exigen cuentas de desarrollador, revisiones y mucho más trabajo, para una app que funciona igual desde el navegador.
+- **Propuso:** Claude · **Decidió:** OlaIA
+
+### D-012 · Primero lo imprescindible
+- **Fecha:** 19/11/2026
+- **Decisión:** Se desarrolla primero lo mínimo para que Badulake funcione de verdad (registro, crear y apuntarse a badulakes, aforo, seguridad, privacidad, accesibilidad, avisos y el día del badulake básico). Grupos, notificaciones en el móvil, filtros, mapa, valoraciones, puntos de generosidad, badulake online y pagos quedan para cuando la comunidad lo pida o haya tiempo.
+- **Decidió:** OlaIA
