@@ -83,3 +83,28 @@ export async function publishBadulake(formData: FormData): Promise<void> {
   }
   redirect({ href: `/badulakes/${id}`, locale });
 }
+
+// Apuntarme: la base de datos comprueba plazas, fecha y que no seas la organizadora.
+export async function joinBadulake(formData: FormData): Promise<void> {
+  const locale = readLocale(formData);
+  const id = text(formData, "id");
+  let aviso = "";
+  if (accountsOpen && /^[0-9a-f-]{36}$/.test(id)) {
+    const supabase = await createSupabase();
+    const { data, error } = await supabase.rpc("apuntarme", { p_badulake: id });
+    if (error) console.error("[apuntarme]", error.code, error.message);
+    if (error || data !== "ok") aviso = `?aviso=${error ? "error" : data}`;
+  }
+  redirect({ href: `/badulakes/${id}${aviso}`, locale });
+}
+
+// Borrarme: RLS solo deja borrar mis propias inscripciones.
+export async function leaveBadulake(formData: FormData): Promise<void> {
+  const locale = readLocale(formData);
+  const id = text(formData, "id");
+  if (accountsOpen && /^[0-9a-f-]{36}$/.test(id)) {
+    const supabase = await createSupabase();
+    await supabase.from("inscripciones").delete().eq("badulake_id", id);
+  }
+  redirect({ href: `/badulakes/${id}`, locale });
+}

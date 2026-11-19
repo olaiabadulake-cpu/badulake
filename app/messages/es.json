@@ -11,7 +11,8 @@
     "coming": "Badulake llega a principios de 2027. Apúntate y te avisamos.",
     "comingSoon": "Badulake llega a principios de 2027. Muy pronto podrás apuntarte a la lista de espera.",
     "signIn": "Entrar",
-    "signUp": "Crear cuenta"
+    "signUp": "Crear cuenta",
+    "seeBadulakes": "Ver badulakes"
   },
   "Waitlist": {
     "title": "Lista de espera",
@@ -76,7 +77,8 @@
       "enlace": "El enlace no es válido o ha caducado. Prueba a entrar o vuelve a crear la cuenta.",
       "verificada": "Tu correo está verificado. Ya puedes entrar."
     },
-    "newBadulake": "Crear un badulake"
+    "newBadulake": "Crear un badulake",
+    "seeBadulakes": "Ver badulakes"
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
@@ -110,6 +112,21 @@
       "address": "Escribe la dirección exacta.",
       "seats": "Las plazas deben ser entre 5 y 10.",
       "generic": "Algo ha fallado. Inténtalo de nuevo en un rato."
+    },
+    "listTitle": "Badulakes",
+    "listEmpty": "Ahora mismo no hay ningún badulake próximo. Vuelve pronto o crea uno tú.",
+    "freeSeats": "{count, plural, one {# plaza libre} other {# plazas libres}}",
+    "full": "Completo: no quedan plazas",
+    "seatsTaken": "{taken} de {total} plazas ocupadas",
+    "join": "Apuntarme",
+    "leave": "Me borro",
+    "youAreIn": "Te has apuntado. Aquí tienes la dirección exacta.",
+    "addToCalendar": "Añadir al calendario",
+    "addressAfterJoin": "Cuando te apuntes verás la dirección exacta.",
+    "notices": {
+      "lleno": "Lo sentimos: se han acabado las plazas.",
+      "error": "Algo ha fallado. Inténtalo de nuevo en un rato.",
+      "no_disponible": "Este badulake ya no admite inscripciones."
     }
   }
 }

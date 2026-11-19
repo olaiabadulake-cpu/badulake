@@ -31,6 +31,12 @@ async function Account() {
     <>
       <p className="text-lg">{t("signedInAs", { email: user!.email })}</p>
       <Link
+        href="/badulakes"
+        className="rounded-full bg-noche px-6 py-3 text-center text-lg font-semibold text-white hover:bg-noche/90 sm:self-start"
+      >
+        {t("seeBadulakes")}
+      </Link>
+      <Link
         href="/badulakes/nuevo"
         className="rounded-full bg-noche px-6 py-3 text-center text-lg font-semibold text-white hover:bg-noche/90 sm:self-start"
       >

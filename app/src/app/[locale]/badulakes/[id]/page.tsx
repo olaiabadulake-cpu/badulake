@@ -3,44 +3,53 @@ import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import { redirect } from "@/i18n/navigation";
 import { accountsOpen, createSupabase, getCurrentUser } from "@/lib/supabase/server";
-import { publishBadulake } from "../actions";
+import { joinBadulake, leaveBadulake, publishBadulake } from "../actions";
 
-export default async function YourBadulake({ params }: PageProps<"/[locale]/badulakes/[id]">) {
+export default async function BadulakePage({ params, searchParams }: PageProps<"/[locale]/badulakes/[id]">) {
   // Cerrado en producción hasta que exista el aviso de privacidad (D-019, D-020).
   if (!accountsOpen) notFound();
   const t = await getTranslations("Badulake");
 
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-6 px-4 pt-6 pb-12 sm:px-8">
-      <h1 className="font-display text-3xl font-bold">{t("yourTitle")}</h1>
       <Suspense fallback={<p>{t("loading")}</p>}>
-        <Details params={params} />
+        <Details params={params} searchParams={searchParams} />
       </Suspense>
     </div>
   );
 }
 
-async function Details({ params }: Pick<PageProps<"/[locale]/badulakes/[id]">, "params">) {
+async function Details({
+  params,
+  searchParams,
+}: Pick<PageProps<"/[locale]/badulakes/[id]">, "params" | "searchParams">) {
   const { id } = await params;
+  const { aviso } = await searchParams;
   const locale = await getLocale();
   const user = await getCurrentUser();
   if (!user) redirect({ href: "/entrar", locale });
   if (!/^[0-9a-f-]{36}$/.test(id)) notFound();
 
-  // RLS: la dirección exacta solo la puede leer su organizadora. El listado y el detalle para
-  // el resto de personas llegan en la Tarea 6.
+  // RLS: cualquier persona con sesión ve los publicados; los borradores solo su organizadora.
+  // La dirección exacta solo la organizadora y quien esté apuntada.
   const supabase = await createSupabase();
   const { data: b } = await supabase
     .from("badulakes")
     .select("id, organizadora, titulo, descripcion, fecha_hora, zona, plazas, estado")
     .eq("id", id)
     .maybeSingle();
-  if (!b || b.organizadora !== user!.id) notFound();
-  const { data: a } = await supabase
-    .from("badulakes_direccion")
-    .select("direccion")
-    .eq("badulake_id", id)
-    .maybeSingle();
+  if (!b) notFound();
+  const isOrganizer = b.organizadora === user!.id;
+
+  const [{ data: a }, { data: mine }, { data: count }] = await Promise.all([
+    supabase.from("badulakes_direccion").select("direccion").eq("badulake_id", id).maybeSingle(),
+    supabase.from("inscripciones").select("badulake_id").eq("badulake_id", id).maybeSingle(),
+    supabase.from("badulakes_ocupadas").select("ocupadas").eq("badulake_id", id).maybeSingle(),
+  ]);
+  const joined = Boolean(mine);
+  const taken = count?.ocupadas ?? 0;
+  const free = Math.max(0, b.plazas - taken);
+  const upcoming = new Date(b.fecha_hora) > new Date();
 
   const t = await getTranslations("Badulake");
   const when = new Intl.DateTimeFormat(locale, {
@@ -49,16 +58,27 @@ async function Details({ params }: Pick<PageProps<"/[locale]/badulakes/[id]">, "
   const rows: [string, string][] = [
     [t("date"), when],
     [t("zone"), b.zona],
-    [t("address"), a?.direccion ?? ""],
-    [t("seats"), String(b.plazas)],
+    ...(a ? ([[t("address"), a.direccion]] as [string, string][]) : []),
+    [t("seats"), isOrganizer ? t("seatsTaken", { taken, total: b.plazas }) : t("freeSeats", { count: free })],
   ];
+  const notice = aviso === "lleno" || aviso === "error" || aviso === "no_disponible" ? aviso : null;
+  const button =
+    "rounded-full bg-noche px-6 py-3 text-center text-lg font-semibold text-white hover:bg-noche/90 sm:self-start";
 
   return (
     <>
-      <p role="status" className="rounded-lg bg-amarillo p-4 font-medium">
-        {b.estado === "publicado" ? t("statusPublished") : t("statusDraft")}
-      </p>
-      <h2 className="font-display text-2xl font-bold">{b.titulo}</h2>
+      <h1 className="font-display text-3xl font-bold">{isOrganizer ? t("yourTitle") : b.titulo}</h1>
+      {isOrganizer && (
+        <>
+          <p role="status" className="rounded-lg bg-amarillo p-4 font-medium">
+            {b.estado === "publicado" ? t("statusPublished") : t("statusDraft")}
+          </p>
+          <h2 className="font-display text-2xl font-bold">{b.titulo}</h2>
+        </>
+      )}
+      {notice && (
+        <p role="alert" className="rounded-lg bg-amarillo p-4 font-medium">{t(`notices.${notice}`)}</p>
+      )}
       <p className="whitespace-pre-line text-lg">{b.descripcion}</p>
       <dl className="flex flex-col gap-3">
         {rows.map(([k, v]) => (
@@ -68,18 +88,45 @@ async function Details({ params }: Pick<PageProps<"/[locale]/badulakes/[id]">, "
           </div>
         ))}
       </dl>
-      <p className="text-sm text-noche/70">{t("addressPrivate")}</p>
-      {b.estado === "borrador" && (
+      {isOrganizer && <p className="text-sm text-noche/70">{t("addressPrivate")}</p>}
+      {isOrganizer && b.estado === "borrador" && (
         <form action={publishBadulake}>
           <input type="hidden" name="locale" value={locale} />
           <input type="hidden" name="id" value={b.id} />
-          <button
-            type="submit"
-            className="rounded-full bg-noche px-6 py-3 text-lg font-semibold text-white hover:bg-noche/90"
-          >
-            {t("publish")}
-          </button>
+          <button type="submit" className={button}>{t("publish")}</button>
         </form>
+      )}
+      {!isOrganizer && joined && (
+        <>
+          <p role="status" className="rounded-lg bg-amarillo p-4 font-medium">{t("youAreIn")}</p>
+          <a href={`/api/badulakes/${b.id}/calendario`} download className={button}>
+            {t("addToCalendar")}
+          </a>
+          <form action={leaveBadulake}>
+            <input type="hidden" name="locale" value={locale} />
+            <input type="hidden" name="id" value={b.id} />
+            <button
+              type="submit"
+              className="rounded-full border-2 border-noche px-6 py-2.5 font-semibold hover:bg-noche/5"
+            >
+              {t("leave")}
+            </button>
+          </form>
+        </>
+      )}
+      {!isOrganizer && !joined && b.estado === "publicado" && upcoming && (
+        free > 0 ? (
+          <>
+            <p className="text-sm text-noche/70">{t("addressAfterJoin")}</p>
+            <form action={joinBadulake}>
+              <input type="hidden" name="locale" value={locale} />
+              <input type="hidden" name="id" value={b.id} />
+              <button type="submit" className={button}>{t("join")}</button>
+            </form>
+          </>
+        ) : (
+          <p role="status" className="font-medium">{t("full")}</p>
+        )
       )}
     </>
   );

@@ -1,6 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { waitlistOpen } from "@/lib/waitlist";
-import { accountsOpen } from "@/lib/supabase/server";
+import { Suspense } from "react";
+import { accountsOpen, getCurrentUser } from "@/lib/supabase/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/languages";
 import { WaitlistForm } from "./waitlist-form";
@@ -46,11 +47,28 @@ export default async function Home() {
 
       {/* Cuentas: solo en el Mac hasta que exista el aviso de privacidad (D-019). */}
       {accountsOpen && (
-        <nav className="flex gap-4 text-lg font-medium">
-          <Link href="/entrar" className="underline underline-offset-4">{t("signIn")}</Link>
-          <Link href="/registro" className="underline underline-offset-4">{t("signUp")}</Link>
-        </nav>
+        <Suspense fallback={null}>
+          <AccountLinks />
+        </Suspense>
       )}
     </div>
+  );
+}
+
+// Con sesión: enlace a los badulakes. Sin sesión: entrar o crear cuenta.
+async function AccountLinks() {
+  const t = await getTranslations("Home");
+  const user = await getCurrentUser();
+  return (
+    <nav className="flex gap-4 text-lg font-medium">
+      {user ? (
+        <Link href="/badulakes" className="underline underline-offset-4">{t("seeBadulakes")}</Link>
+      ) : (
+        <>
+          <Link href="/entrar" className="underline underline-offset-4">{t("signIn")}</Link>
+          <Link href="/registro" className="underline underline-offset-4">{t("signUp")}</Link>
+        </>
+      )}
+    </nav>
   );
 }

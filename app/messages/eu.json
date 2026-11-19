@@ -11,7 +11,8 @@
     "coming": "Badulake 2027. urtearen hasieran helduko da. Eman izena eta abisatuko dizugu.",
     "comingSoon": "Badulake 2027. urtearen hasieran helduko da. Laster eman ahal izango duzu izena itxaron-zerrendan.",
     "signIn": "Sartu",
-    "signUp": "Sortu kontua"
+    "signUp": "Sortu kontua",
+    "seeBadulakes": "Ikusi badulakeak"
   },
   "Waitlist": {
     "title": "Itxaron-zerrenda",
@@ -76,7 +77,8 @@
       "enlace": "Esteka ez da baliozkoa edo iraungita dago. Saiatu sartzen edo sortu berriro kontua.",
       "verificada": "Zure posta elektronikoa egiaztatuta dago. Orain sar zaitezke."
     },
-    "newBadulake": "Badulake bat sortu"
+    "newBadulake": "Badulake bat sortu",
+    "seeBadulakes": "Ikusi badulakeak"
   },
   "Badulake": {
     "newTitle": "Badulake bat sortu",
@@ -110,6 +112,21 @@
       "address": "Idatzi helbide zehatza.",
       "seats": "Plazak 5 eta 10 artean izan behar dira.",
       "generic": "Zerbait gaizki atera da. Saiatu berriro apur bat geroago."
+    },
+    "listTitle": "Badulakeak",
+    "listEmpty": "Oraintxe ez dago hurrengo badulakerik. Itzuli laster edo sortu zuk bat.",
+    "freeSeats": "{count} toki libre",
+    "full": "Beteta: ez dago plazarik",
+    "seatsTaken": "{taken}/{total} toki beteta",
+    "join": "Apuntatu",
+    "leave": "Ezabatu nazazu",
+    "youAreIn": "Apuntatu zara. Hona hemen helbide zehatza.",
+    "addToCalendar": "Gehitu egutegira",
+    "addressAfterJoin": "Apuntatzen zarenean helbide zehatza ikusiko duzu.",
+    "notices": {
+      "lleno": "Sentitzen dugu: plazak bete dira.",
+      "error": "Zerbait gaizki atera da. Saiatu berriro apur bat geroago.",
+      "no_disponible": "Badulake honek ez du izen-emate gehiago onartzen."
     }
   }
 }
