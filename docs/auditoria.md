@@ -13,6 +13,8 @@ OlaIA pidió a Claude una auditoría de toda la web: cada pantalla, el código y
 | 8.3 | En la copia, sin sesión, se ven los títulos de `/equipo` y lo que no existe no da un 404 de verdad. `/api/hora` está abierta en la web real | Proteger esas rutas y devolver 404 de verdad. Cerrar o limitar `/api/hora` |
 | 5.3 | Si «Publicar» falla al crear, se queda en borrador sin avisar. «Me interesa» cambia aunque no se guarde. Se puede denunciar un badulake cancelado o pasado | Avisar del fallo, deshacer el cambio si no se guarda y ocultar «Denunciar» donde no toca |
 
+**Hecho (21/11/2026, D-040):** 24.1, 20.1, 8.3 y 5.3 arreglados y probados en la copia de pruebas.
+
 ## 🟠 Antes de Sant Boi
 
 | Subtarea | Qué |

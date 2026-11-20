@@ -43,10 +43,10 @@ Esto aparece en la portada y en su propia página, «Qué es un badulake», enla
 
 ### Recorrido D · Ver badulakes, entrar en uno y apuntarme
 
-1. En «Badulakes» veo los próximos, ordenados por fecha: título, día y hora, zona y plazas libres. Los que ya tienen 5 personas o más llevan la etiqueta «Confirmado». Los cancelados solo los veo si eran míos o estaba apuntada o en lista de espera, con la etiqueta «Cancelado».
+1. En «Badulakes» veo los próximos, ordenados por fecha: título, día y hora, zona y plazas libres. Los que ya tienen 5 personas o más, contando a quien organiza, llevan la etiqueta «Confirmado» (D-040). Los cancelados solo los veo si eran míos o estaba apuntada o en lista de espera, con la etiqueta «Cancelado».
 2. Si no hay ninguno: «Todavía no hay badulakes. Vuelve pronto o crea uno tú», con el botón «Crear un badulake».
 3. En la lista también veo marcados los míos: los que organizo (aunque sean borradores) y en los que estoy apuntada.
-4. Pulso uno. Veo si está confirmado o cuántas personas le faltan («Faltan 2 personas para confirmarse. Si 24 horas antes no hay 5, se cancela solo»), la descripción, el día y la hora, la zona y las plazas libres. Me dice que la dirección exacta la veré al apuntarme.
+4. Pulso uno. Veo si está confirmado o cuántas personas le faltan («Faltan 2 personas para confirmarse. Si 24 horas antes no son 5, contando a quien organiza, se cancela solo»; en las últimas 24 horas este aviso ya no sale), la descripción, el día y la hora, la zona y las plazas libres. Me dice que la dirección exacta la veré al apuntarme.
 5. Pulso «Apuntarme».
    - Bien: «¡Te has apuntado!», ya veo la dirección exacta y el botón «Añadir al calendario».
    - Sin plazas: en vez de «Apuntarme» el botón es **«Ponerme en lista de espera»**. Al pulsarlo: «No quedaban plazas: te has puesto en la lista de espera» y «Estás en la lista de espera: eres la 2.ª». No veo la dirección. Puedo «Salir de la lista de espera».
@@ -60,12 +60,12 @@ Esto aparece en la portada y en su propia página, «Qué es un badulake», enla
 ### Recorrido E · Organizar un badulake
 
 1. Pulso «Crear un badulake» (en el menú o en la lista). **Si todavía no he ido a ningún badulake** (Tarea 5.2, D-038), en vez del formulario veo «Todavía no puedes organizar un badulake», con una frase que explica por qué (para conocer las reglas, solo organiza quien ya ha ido a uno) y el botón «Ver los próximos badulakes». Cuenta como haber ido estar apuntada a un badulake ya celebrado sin que la organizadora me marcara «No ha venido» (o haber organizado uno celebrado), o tener permiso del equipo. Si intento publicar un borrador sin poder, el aviso dice lo mismo.
-2. Relleno **barrio, ciudad o pueblo y provincia** (Tarea 5.1, D-037), descripción, fecha y hora (al menos 2 días después de hoy, para que dé tiempo a juntar a 5 personas), dirección exacta y plazas (de 5 a 10). **No escribo título:** el nombre se forma solo con el lugar («Badulake de Gràcia, Barcelona»; si la provincia es otra, «Badulake de Deusto, Bilbao (Bizkaia)»), nunca con un tema. Cada campo explica qué poner; los errores salen junto al campo y no se pierde nada.
-3. **Pulso «Publicar»** y queda publicado de una vez (antes había que guardar borrador y luego publicar: un paso de más). Si aún no lo quiero publicar, pulso «Guardar como borrador».
+2. Relleno **barrio, ciudad o pueblo y provincia** (Tarea 5.1, D-037), descripción, fecha y hora (al menos 2 días después de hoy, para que dé tiempo a juntar a 5 personas), dirección exacta y plazas (de 5 a 10 personas, contándome a mí, D-040). **No escribo título:** el nombre se forma solo con el lugar («Badulake de Gràcia, Barcelona»; si la provincia es otra, «Badulake de Deusto, Bilbao (Bizkaia)»), nunca con un tema. Cada campo explica qué poner; los errores salen junto al campo y no se pierde nada.
+3. **Pulso «Publicar»** y queda publicado de una vez (antes había que guardar borrador y luego publicar: un paso de más). Si aún no lo quiero publicar, pulso «Guardar como borrador». Si no se puede publicar, queda en borrador y me dice por qué (faltan menos de 2 días, aún no puedo organizar o «No se ha podido publicar y se ha guardado como borrador»; Tarea 5.3).
 4. Veo «Tu badulake» con un aviso claro: publicado («Ya lo pueden ver las personas con cuenta») o borrador («De momento solo lo ves tú», con el botón «Publicar»).
-5. Veo cuántas plazas están ocupadas, y que la dirección exacta solo la ven quienes se apunten.
+5. Veo cuántas plazas están ocupadas, contando la mía, y que la dirección exacta solo la ven quienes se apunten.
 6. Lo encuentro después en la lista de badulakes, marcado como mío.
-7. Si 24 horas antes no hay 5 personas apuntadas, se cancela solo y me sale el aviso en «Tu cuenta». Si quiero cancelarlo yo, abro «Cancelar este badulake», leo qué pasará (se cancela para todas y se borra la dirección; no se puede deshacer) y pulso «Sí, cancelarlo».
+7. Si 24 horas antes no somos 5 personas contándome a mí, se cancela solo y me sale el aviso en «Tu cuenta». Si quiero cancelarlo yo, abro «Cancelar este badulake», leo qué pasará (se cancela para todas y se borra la dirección; no se puede deshacer) y pulso «Sí, cancelarlo».
 
 **Nota para el equipo (Tarea 5.2):** en `/equipo`, «Permiso para organizar»: escribe el correo de la persona y pulsa «Dar permiso» (o «Quitar permiso»). Dice «Permiso dado», «No hay ninguna cuenta con ese correo» o «Esa persona ya podía organizar». No se guarda el correo ni se muestra quién tiene permiso. El equipo puede organizar siempre.
 
