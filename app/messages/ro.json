@@ -114,11 +114,11 @@
     "changePasswordSubmit": "Schimbă parola",
     "passwordChanged": "Parola ta a fost schimbată.",
     "deleteTitle": "Șterge-mi contul",
-    "deleteIntro": "Dacă îți ștergi contul, se șterge de-adevăratelea și pe loc:",
+    "deleteIntro": "Dacă îți ștergi contul, se șterge definitiv și imediat:",
     "deleteItem1": "Profilul tău, înscrierile tale la badulake, listele tale de așteptare și „Mă interesează”-urile tale.",
     "deleteItem2": "Badulake-urile pe care le organizezi și adresele lor. Dacă la vreunul s-au înscris oameni, întâi se anulează și sunt anunțați; celelalte se șterg.",
     "deleteItem3": "Raportările tale rămân, dar fără nicio informație după care să se poată afla cine ești.",
-    "deleteWarning": "Nu se poate anula.",
+    "deleteWarning": "Acțiunea este ireversibilă.",
     "deleteWord": "ȘTERGE",
     "deleteLabel": "Ca să confirmi, scrie {word}",
     "deleteSubmit": "Șterge-mi contul definitiv"
@@ -126,7 +126,7 @@
   "Badulake": {
     "newTitle": "Creează un badulake",
     "notYetTitle": "Încă nu poți organiza un badulake",
-    "notYetBody": "Ca să cunoască bine regulile, poate organiza un badulake doar cine a fost deja la unul. După ce mergi la un badulake (te înscrii și cine îl organizează nu te marchează cu „n-a venit”), îl vei putea organiza pe al tău. Până atunci, uită-te la următoarele badulake și înscrie-te la unul.",
+    "notYetBody": "Ca toată lumea să cunoască bine regulile, poate organiza un badulake doar cine a fost deja la unul. După ce mergi la un badulake (te înscrii și cine îl organizează nu te marchează cu „n-a venit”), îl vei putea organiza pe al tău. Până atunci, uită-te la următoarele badulake și înscrie-te la unul.",
     "notYetLink": "Vezi următoarele badulake",
     "yourTitle": "Badulake-ul tău",
     "loading": "Se încarcă…",
@@ -208,7 +208,7 @@
     "leaveWaitlist": "Ieși de pe lista de așteptare",
     "fromWaitlist": "Ai primit loc de pe lista de așteptare. Acum poți vedea adresa exactă.",
     "cancelSummary": "Anulează acest badulake",
-    "cancelExplain": "Se va anula pentru toți cei înscriși și cei de pe lista de așteptare, iar adresa exactă se va șterge. Nu se poate anula.",
+    "cancelExplain": "Se va anula pentru toți cei înscriși și cei de pe lista de așteptare, iar adresa exactă se va șterge. Acțiunea este ireversibilă.",
     "cancelConfirm": "Da, anulează-l",
     "cancelledByYou": "L-ai anulat tu.",
     "dayMode": "Modul badulake",
@@ -216,7 +216,7 @@
     "itsYourTurn": "E rândul tău să alegi!",
     "nowTurn": "Acum e rândul nr. {n}.",
     "turnsDone": "Toată lumea a ales deja.",
-    "myExpose": "Îți arăți lucrurile la standul nr. {n}",
+    "myExpose": "Îți arăți lucrurile la rândul nr. {n}",
     "dayNoDraw": "Azi e ziua cea mare. Ordinea încă nu a fost trasă la sorți."
   },
   "Nav": {
@@ -350,7 +350,7 @@
     "leftTitle": "4. Ce rămâne",
     "left": {
       "bags": "Puneți ce rămâne în saci, câte unul pentru fiecare tip: haine, încălțăminte, accesorii și altele.",
-      "donate": "Ce nu ia nimeni: la un magazin caritabil sau într-un container de haine.",
+      "donate": "Ce nu ia nimeni: duceți la un magazin caritabil sau la un container de haine.",
       "own": "Cine vrea își poate lua înapoi lucrurile.",
       "tidy": "Lăsați locul cum l-ați găsit."
     },

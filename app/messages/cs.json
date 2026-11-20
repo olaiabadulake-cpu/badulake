@@ -87,7 +87,7 @@
       "cuenta": "K tomu se musíš přihlásit. Pokud ještě nemáš účet, založ si ho: je zdarma.",
       "borrada": "Tvůj účet i údaje jsou smazané."
     },
-    "interestTitle": "Nápady, o kterých přemýšlíme",
+    "interestTitle": "Nápady, které zvažujeme",
     "interestIntro": "Zatím neexistují a nic nestojí. Jen chceme vědět, jestli by tě zajímaly, abychom se rozhodli, co dál.",
     "vipTitle": "VIP",
     "vipText": "Účet s více výhodami pro pořádání badulake. Zatím neexistuje.",
@@ -160,7 +160,7 @@
       "description": "Napiš něco o badulake (nejvýš 500 znaků).",
       "date": "Vyber datum a čas nejdřív za 2 dny.",
       "address": "Napiš přesnou adresu.",
-      "notYet": "Zatím nemůžeš pořádat badulake: kdo chce znát pravidla, musí se nejdřív nějakého zúčastnit.",
+      "notYet": "Zatím nemůžeš pořádat badulake: abys poznal(a) pravidla, musíš se nejdřív nějakého zúčastnit.",
       "seats": "Míst musí být 5 až 10.",
       "generic": "Něco se pokazilo. Zkus to za chvíli znovu."
     },
@@ -188,7 +188,7 @@
       "espera_salida": "Už nejsi na čekací listině.",
       "cancelado": "Badulake je zrušený. Už se na něj nedá přihlásit.",
       "no_publicable": "Nejde to zveřejnit: do setkání musí zbývat aspoň 2 dny, aby byl čas sehnat 5 lidí.",
-      "aun_no_puedes": "Zatím nemůžeš zveřejnit badulake: kdo chce znát pravidla, musí se nejdřív nějakého zúčastnit."
+      "aun_no_puedes": "Zatím nemůžeš zveřejnit badulake: abys poznal(a) pravidla, musíš se nejdřív nějakého zúčastnit."
     },
     "back": "Zpět na badulake",
     "mine": "Pořádáš ho ty",
@@ -216,7 +216,7 @@
     "itsYourTurn": "Teď vybíráš ty!",
     "nowTurn": "Teď je na řadě č. {n}.",
     "turnsDone": "Všichni už si vybrali.",
-    "myExpose": "Své věci ukazuješ na stanovišti č. {n}",
+    "myExpose": "Své věci ukazuješ jako {n}. v pořadí",
     "dayNoDraw": "Dnes je ten den. Pořadí se ještě nelosovalo."
   },
   "Nav": {
@@ -312,8 +312,8 @@
     "offline": "Bez připojení. Co spočítáš, se uloží v tomto mobilu a odešle se samo, až bude zase signál.",
     "saving": "Ukládám…",
     "saved": "Vše uloženo.",
-    "person": "Člověk {num}",
-    "nameLabel": "Jméno člověka {num} (jen abyste se dnes poznali)",
+    "person": "Osoba {num}",
+    "nameLabel": "Jméno osoby {num} (jen abyste se dnes poznali)",
     "types": {
       "ropa": "Oblečení",
       "calzado": "Obuv",
@@ -323,12 +323,12 @@
     "plus": "Přidat jednu věc: {type}, {name}",
     "minus": "Ubrat jednu věc: {type}, {name}",
     "total": "{count, plural, one {# věc} few {# věci} many {# věci} other {# věcí}}",
-    "absent": "{name}: nepřítomnost",
+    "absent": "{name}: chybí",
     "arrived": "{name}: je tu",
-    "absentBadge": "Nepřítomnost",
+    "absentBadge": "Chybí",
     "exposeBadge": "Ukazuje: {n}.",
     "chooseBadge": "Vybírá: {n}.",
-    "lateNote": "Když někdo označený jako nepřítomný dorazí později, klepni na „je tu“: od té chvíle je v losování, na konci řady.",
+    "lateNote": "Když někdo, koho jsi označil(a), že chybí, dorazí později, klepni na „je tu“: od té chvíle je v losování, na konci řady.",
     "drawTitle": "1. Pořadí ukazování věcí",
     "drawButton": "Vylosovat pořadí",
     "drawConfirm": "Losuje se jen jednou a nejde to zopakovat. Losovat teď?",

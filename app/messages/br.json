@@ -26,7 +26,7 @@
       "zone": "Lavarit deomp ho korn-bro pe ho karter.",
       "consent": "Ezhomm hon eus eus hoc'h aotre evit mirout ho roadennoù.",
       "generic": "Un dra bennak a zo aet a-dreuz. Klaskit en-dro a-benn ur pennadig.",
-      "tooMany": "Re a klaskoù. Gortozit ur pennadig ha klaskit en-dro."
+      "tooMany": "Re a glaskoù. Gortozit ur pennadig ha klaskit en-dro."
     }
   },
   "Privacy": {
@@ -75,13 +75,13 @@
       "credentials": "Ar postel pe ar ger-tremen n'int ket reizh.",
       "unconfirmed": "N'hoc'h eus ket gweredekaet ho kont c'hoazh. Digorit al liamm er postel kaset deoc'h.",
       "generic": "Un dra bennak a zo aet a-dreuz. Klaskit en-dro a-benn ur pennadig.",
-      "tooMany": "Re a klaskoù. Gortozit un nebeud munutennoù ha klaskit en-dro.",
+      "tooMany": "Re a glaskoù. Gortozit un nebeud munutennoù ha klaskit en-dro.",
       "confirmMismatch": "An daou c'her-tremen n'int ket heñvel.",
       "currentWrong": "Ar ger-tremen a-vremañ n'eo ket reizh.",
       "deleteWord": "Skrivit {word} evit kadarnaat."
     },
     "notices": {
-      "salida": "Digevreet oc'h eus ho kont.",
+      "salida": "Digevreet oc'h diouzh ho kont.",
       "enlace": "N'eo ket mat al liamm pe aet eo da get. Klaskit kevreañ pe krouit ar gont en-dro.",
       "verificada": "Gwiriet eo ho postel. Gallout a rit kevreañ bremañ.",
       "cuenta": "Evit se e rankit kevreañ ouzh ho kont. Ma n'hoc'h eus kont ebet c'hoazh, krouit unan: digoust eo.",
@@ -180,7 +180,7 @@
       "error": "Un dra bennak a zo aet a-dreuz. Klaskit en-dro a-benn ur pennadig.",
       "no_disponible": "N'haller ket en em enskrivañ d'ar badulake-mañ ken.",
       "apuntada": "Enskrivet oc'h! Gallout a rit gwelet ar chomlec'h resis bremañ.",
-      "borrada": "En em zienskrivet oc'h eus ar badulake-mañ.",
+      "borrada": "En em zienskrivet oc'h diouzh ar badulake-mañ.",
       "denunciado": "Kaset eo an disklêriadur. Trugarez: ar skipailh a lakaio evezh outañ.",
       "denuncia_repetida": "Disklêriet hoc'h eus ar badulake-mañ dija. Emañ ar skipailh o sellet outañ.",
       "denuncia_error": "N'eus ket bet gallet kas an disklêriadur. Dibabit un abeg ha klaskit en-dro a-benn ur pennadig.",
@@ -338,7 +338,7 @@
     "countTitle": "2. Kontañ an traoù",
     "turnsTitle": "3. Troioù evit dibab",
     "turnsExplain": "An hini en deus degaset ar muiañ a draoù a zibab da gentañ. Ma'z eus kevatalder, e vez tennet d'ar sord. Ar roll amañ dindan n'eo nemet ur rakwel ken na grogot.",
-    "turnsExplainStarted": "An hini en deus degaset ar muiañ a draoù a zibab da gentañ; tennet eo bet d'ar sord ar c'hevatalderioù pa oc'h bet kroget.",
+    "turnsExplainStarted": "An hini en deus degaset ar muiañ a draoù a zibab da gentañ; tennet eo bet d'ar sord ar c'hevatalderioù e deroù.",
     "startChoose": "Kregiñ da zibab",
     "startConfirm": "Serret e vo ar steudad gant ar pezh a zo bet kontet betek bremañ, ha ne vo tennet d'ar sord ar c'hevatalderioù nemet ur wech. Kregiñ?",
     "startYes": "Ya, kregiñ",

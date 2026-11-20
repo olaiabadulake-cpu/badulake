@@ -88,7 +88,7 @@
       "borrada": "A fiókodat és az adataidat töröltük."
     },
     "interestTitle": "Ötletek, amelyeken gondolkodunk",
-    "interestIntro": "Egyelőre nem léteznek, és semmibe sem kerülnek. Csak azt szeretnénk tudni, érdekelnének-e, hogy eldöntsük, mi legyen a következő lépés.",
+    "interestIntro": "Egyelőre nem léteznek, és semmibe sem kerülnek. Csak azt szeretnénk tudni, érdekelnének-e, hogy eldönthessük, mi legyen a következő lépés.",
     "vipTitle": "VIP",
     "vipText": "Több előnnyel járó fiók badulakék szervezéséhez. Egyelőre nem létezik.",
     "baducoinsTitle": "BaduCoins",
@@ -143,7 +143,7 @@
       "city": "Pl. Barcelona. A név ez lesz: „Badulake de Gràcia, Barcelona”.",
       "province": "Pl. Barcelona. Nyilvánosan látható lesz, akárcsak a városrész és a város.",
       "description": "Meséld el, milyen lesz a találkozó (hangulat, mit érdemes tudni). Legfeljebb 500 karakter.",
-      "date": "Madridi idő szerint. Legalább 2 nappal mai nap után, hogy legyen idő 5 embert összegyűjteni.",
+      "date": "Madridi idő szerint. Legalább 2 nappal a mai nap után, hogy legyen idő 5 embert összegyűjteni.",
       "address": "Csak te látod; azoknak mutatjuk meg, akik jelentkeznek.",
       "seats": "5 és 10 fő között."
     },
@@ -216,7 +216,7 @@
     "itsYourTurn": "Most te választasz!",
     "nowTurn": "Most a(z) {n}. következik.",
     "turnsDone": "Már mindenki választott.",
-    "myExpose": "A holmidat a(z) {n}. standnál mutatod be",
+    "myExpose": "A holmidat {n}.-ként mutatod be",
     "dayNoDraw": "Ma van a nagy nap. A sorrendet még nem sorsolták ki."
   },
   "Nav": {

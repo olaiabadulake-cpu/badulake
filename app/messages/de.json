@@ -114,7 +114,7 @@
     "changePasswordSubmit": "Passwort ändern",
     "passwordChanged": "Dein Passwort wurde geändert.",
     "deleteTitle": "Mein Konto löschen",
-    "deleteIntro": "Wenn du dein Konto löschst, wird es wirklich und sofort gelöscht:",
+    "deleteIntro": "Wenn du dein Konto löschst, wird es sofort und endgültig gelöscht:",
     "deleteItem1": "Dein Profil, deine Anmeldungen zu badulakes, deine Wartelisten und dein „Interessiert mich“.",
     "deleteItem2": "Die badulakes, die du organisierst, und ihre Adressen. Wenn sich bei einem schon Leute angemeldet haben, wird es vorher abgesagt und sie bekommen Bescheid; die anderen werden gelöscht.",
     "deleteItem3": "Deine Meldungen bleiben bestehen, aber ohne Daten, über die man dich erkennen könnte.",
@@ -144,7 +144,7 @@
       "province": "Z. B. Barcelona. Sie ist öffentlich sichtbar, genau wie das Viertel und die Stadt.",
       "description": "Erzähl uns, wie das Treffen wird (Stimmung, was man wissen muss). Höchstens 500 Zeichen.",
       "date": "Uhrzeit in Madrid. Mindestens 2 Tage ab heute, damit genug Zeit bleibt, 5 Leute zusammenzubekommen.",
-      "address": "Nur du siehst sie; wer sich anmeldet, bekommt sie von uns gezeigt.",
+      "address": "Nur du siehst sie; wir zeigen sie allen, die sich anmelden.",
       "seats": "Zwischen 5 und 10 Personen."
     },
     "save": "Als Entwurf speichern",
@@ -350,7 +350,7 @@
     "leftTitle": "4. Was übrig bleibt",
     "left": {
       "bags": "Packt alles, was übrig ist, in Tüten, eine pro Art: Kleidung, Schuhe, Accessoires und Sonstiges.",
-      "donate": "Was niemand mitnimmt: in einen Sozialladen oder einen Altkleidercontainer.",
+      "donate": "Was niemand mitnimmt: in ein Sozialkaufhaus oder einen Altkleidercontainer.",
       "own": "Wer will, kann seine eigenen Sachen wieder mitnehmen.",
       "tidy": "Hinterlasst den Ort so, wie ihr ihn vorgefunden habt."
     },

@@ -160,7 +160,7 @@
       "description": "Napíš niečo o badulake (najviac 500 znakov).",
       "date": "Vyber dátum a čas najskôr o 2 dni.",
       "address": "Napíš presnú adresu.",
-      "notYet": "Zatiaľ nemôžeš organizovať badulake: kto chce poznať pravidlá, musí sa najprv na nejakom zúčastniť.",
+      "notYet": "Zatiaľ nemôžeš organizovať badulake: aby si spoznal(a) pravidlá, musíš sa najprv na nejakom zúčastniť.",
       "seats": "Miest musí byť 5 až 10.",
       "generic": "Niečo sa pokazilo. Skús to o chvíľu znova."
     },
@@ -188,7 +188,7 @@
       "espera_salida": "Už nie si v poradovníku.",
       "cancelado": "Badulake je zrušený. Už sa naň nedá prihlásiť.",
       "no_publicable": "Nedá sa to zverejniť: do stretnutia musia zostávať aspoň 2 dni, aby bol čas zohnať 5 ľudí.",
-      "aun_no_puedes": "Zatiaľ nemôžeš zverejniť badulake: kto chce poznať pravidlá, musí sa najprv na nejakom zúčastniť."
+      "aun_no_puedes": "Zatiaľ nemôžeš zverejniť badulake: aby si spoznal(a) pravidlá, musíš sa najprv na nejakom zúčastniť."
     },
     "back": "Späť na badulake",
     "mine": "Organizuješ ho ty",
@@ -216,7 +216,7 @@
     "itsYourTurn": "Teraz vyberáš ty!",
     "nowTurn": "Teraz je na rade č. {n}.",
     "turnsDone": "Všetci si už vybrali.",
-    "myExpose": "Svoje veci ukazuješ na stanovišti č. {n}",
+    "myExpose": "Svoje veci ukazuješ ako {n}. v poradí",
     "dayNoDraw": "Dnes je ten deň. Poradie sa ešte nežrebovalo."
   },
   "Nav": {
@@ -312,8 +312,8 @@
     "offline": "Bez pripojenia. Čo spočítaš, sa uloží v tomto mobile a odošle sa samo, keď bude znova signál.",
     "saving": "Ukladá sa…",
     "saved": "Všetko uložené.",
-    "person": "Človek {num}",
-    "nameLabel": "Meno človeka {num} (len aby ste sa dnes spoznali)",
+    "person": "Osoba {num}",
+    "nameLabel": "Meno osoby {num} (len aby ste sa dnes spoznali)",
     "types": {
       "ropa": "Oblečenie",
       "calzado": "Obuv",
@@ -323,12 +323,12 @@
     "plus": "Pridať jednu vec: {type}, {name}",
     "minus": "Ubrať jednu vec: {type}, {name}",
     "total": "{count, plural, one {# vec} few {# veci} many {# veci} other {# vecí}}",
-    "absent": "{name}: neprítomnosť",
+    "absent": "{name}: chýba",
     "arrived": "{name}: je tu",
-    "absentBadge": "Neprítomnosť",
+    "absentBadge": "Chýba",
     "exposeBadge": "Ukazuje: {n}.",
     "chooseBadge": "Vyberá: {n}.",
-    "lateNote": "Keď niekto označený ako neprítomný dorazí neskôr, ťukni na „je tu“: od tej chvíle je v žrebovaní, na konci radu.",
+    "lateNote": "Keď niekto, koho si označil(a), že chýba, príde neskôr, ťukni na „je tu“: od tej chvíle je v žrebovaní, na konci radu.",
     "drawTitle": "1. Poradie ukazovania vecí",
     "drawButton": "Vyžrebovať poradie",
     "drawConfirm": "Žrebuje sa len raz a nedá sa to zopakovať. Žrebovať teraz?",

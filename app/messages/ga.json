@@ -184,7 +184,7 @@
       "denunciado": "Seoladh an tuairisc. Go raibh maith agat: breathnóidh an fhoireann uirthi.",
       "denuncia_repetida": "Bhí tuairisc déanta agat ar an mbadulake seo cheana. Tá an fhoireann ag breathnú air.",
       "denuncia_error": "Níorbh fhéidir an tuairisc a sheoladh. Roghnaigh cúis agus bain triail eile as i gceann tamaillín.",
-      "en_espera": "Ní raibh aon áit fágtha: tá tú ar an liosta feithimh anois.",
+      "en_espera": "Ní raibh aon áit fágtha: cuireadh ar an liosta feithimh thú.",
       "espera_salida": "D'fhág tú an liosta feithimh.",
       "cancelado": "Chuir tú an badulake ar ceal. Ní féidir clárú dó a thuilleadh.",
       "no_publicable": "Ní féidir é a fhoilsiú: caithfidh 2 lá ar a laghad a bheith fágtha, le go mbeidh am ann 5 dhuine a bhailiú.",
@@ -232,7 +232,7 @@
   },
   "WhatIs": {
     "title": "Cad is badulake ann",
-    "intro": "Is éard is badulake ann ná cruinniú aghaidh ar aghaidh, 5 go 10 duine, chun éadaí agus rudaí nach n-úsáideann sibh níos mó a mhalartú. Ní íocann aon duine faic agus ní ghearrann aon duine faic.",
+    "intro": "Is éard is badulake ann ná cruinniú aghaidh ar aghaidh, 5 go 10 duine, chun éadaí agus rudaí nach n-úsáideann tú níos mó a mhalartú. Ní íocann aon duine faic agus ní ghearrann aon duine faic.",
     "howTitle": "Conas a oibríonn sé",
     "step1": "Cruthaigh do chuntas. Tá sé saor in aisce agus níl sé ach do dhaoine 18 mbliana d'aois nó níos sine.",
     "step2": "Aimsigh badulake agus cláraigh. Nuair a chláraíonn tú, feicfidh tú an seoladh beacht.",
@@ -290,7 +290,7 @@
   },
   "Hola": {
     "title": "Fáilte go Badulake",
-    "intro": "Is éard is badulake ann ná cruinniú aghaidh ar aghaidh, 5 go 10 duine, chun éadaí agus rudaí nach n-úsáideann sibh níos mó a mhalartú. Saor in aisce agus gan airgead. Do dhaoine 18 mbliana d'aois nó níos sine amháin.",
+    "intro": "Is éard is badulake ann ná cruinniú aghaidh ar aghaidh, 5 go 10 duine, chun éadaí agus rudaí nach n-úsáideann tú níos mó a mhalartú. Saor in aisce agus gan airgead. Do dhaoine 18 mbliana d'aois nó níos sine amháin.",
     "step1": "Cláraigh ar bhadulake i do cheantar.",
     "step2": "Tabhair leat a bhfuil tú réidh leis.",
     "step3": "Malartaigh: tabhair abhaile a dtaitníonn leat.",
@@ -316,8 +316,8 @@
     "nameLabel": "Ainm an duine {num} (le go n-aithneoidh sibh é nó í inniu)",
     "types": {
       "ropa": "Éadaí",
-      "calzado": "Bróga",
-      "accesorios": "Oiriúintí",
+      "calzado": "Coisbheart",
+      "accesorios": "Gabhálais",
       "otros": "Eile"
     },
     "plus": "Cuir ceann le {type} ({name})",
@@ -349,7 +349,7 @@
     "queueTitle": "Scuaine na sealanna",
     "leftTitle": "4. A bhfuil fágtha",
     "left": {
-      "bags": "Cuirigí a bhfuil fágtha i málaí, ceann do gach cineál: éadaí, bróga, oiriúintí agus eile.",
+      "bags": "Cuirigí a bhfuil fágtha i málaí, ceann do gach cineál: éadaí, coisbheart, gabhálais agus eile.",
       "donate": "Gach rud nach dtógann aon duine: chuig siopa carthanachta nó isteach i gcoimeádán éadaí.",
       "own": "Is féidir le duine ar bith a rudaí féin a thabhairt abhaile arís.",
       "tidy": "Fágaigí an áit mar a fuair sibh í."

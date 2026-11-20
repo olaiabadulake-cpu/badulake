@@ -88,7 +88,7 @@
       "borrada": "Tvoj račun in podatki so izbrisani."
     },
     "interestTitle": "Ideje, o katerih razmišljamo",
-    "interestIntro": "Zaenkrat jih ni in nič ne stanejo. Radi bi le vedeli, ali bi te zanimale, da se odločimo, kaj naprej.",
+    "interestIntro": "Zaenkrat jih še ni in nič ne stanejo. Radi bi le vedeli, ali bi te zanimale, da se odločimo, kako naprej.",
     "vipTitle": "VIP",
     "vipText": "Račun z več ugodnostmi za organizacijo badulake. Zaenkrat ga ni.",
     "baducoinsTitle": "BaduCoins",
@@ -216,7 +216,7 @@
     "itsYourTurn": "Zdaj izbiraš ti!",
     "nowTurn": "Zdaj je na vrsti št. {n}.",
     "turnsDone": "Vsi so že izbrali.",
-    "myExpose": "Svoje stvari pokažeš na mestu št. {n}",
+    "myExpose": "Svoje stvari pokažeš kot {n}. po vrsti",
     "dayNoDraw": "Danes je ta dan. Vrstni red še ni izžreban."
   },
   "Nav": {
@@ -323,12 +323,12 @@
     "plus": "Dodaj eno stvar: {type}, {name}",
     "minus": "Odvzemi eno stvar: {type}, {name}",
     "total": "{count, plural, one {# stvar} two {# stvari} few {# stvari} other {# stvari}}",
-    "absent": "{name}: odsotnost",
+    "absent": "{name}: ni tu",
     "arrived": "{name}: je tu",
-    "absentBadge": "Odsotnost",
+    "absentBadge": "Ni tu",
     "exposeBadge": "Pokaže: {n}.",
     "chooseBadge": "Izbira: {n}.",
-    "lateNote": "Če nekdo, označen kot odsoten, pride pozneje, se dotakni »je tu«: od takrat je v žrebanju, na koncu vrste.",
+    "lateNote": "Če nekdo, ki si ga označil(a), da ni tu, pride pozneje, se dotakni »je tu«: od takrat je v žrebanju, na koncu vrste.",
     "drawTitle": "1. Vrstni red predstavitve stvari",
     "drawButton": "Izžrebaj vrstni red",
     "drawConfirm": "Žreba se samo enkrat in ga ni mogoče ponoviti. Izžrebam zdaj?",

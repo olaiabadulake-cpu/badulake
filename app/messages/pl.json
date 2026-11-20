@@ -31,7 +31,7 @@
   },
   "Privacy": {
     "title": "Informacja o prywatności",
-    "draftBadge": "Wstępny szkic",
+    "draftBadge": "Wersja robocza",
     "draftNote": "Ten tekst to SZKIC do sprawdzenia przez Dział Prawny EITB: nie jest ostateczny i może się zmienić. Luki oznaczone [A COMPLETAR POR ASESORÍA] uzupełni Dział Prawny. Do tego czasu aplikacja jest zamknięta i nie przechowuje niczyich danych.",
     "signUpNotice": "Przy zakładaniu konta zapisujemy tylko to, co niezbędne. Więcej informacji w <link>informacji o prywatności</link>.",
     "footerLink": "Prywatność",
@@ -76,7 +76,7 @@
       "unconfirmed": "Konto nie jest jeszcze aktywne. Otwórz link z e-maila, który ci wysłaliśmy.",
       "generic": "Coś poszło nie tak. Spróbuj ponownie za chwilę.",
       "tooMany": "Zbyt wiele prób. Odczekaj kilka minut i spróbuj ponownie.",
-      "confirmMismatch": "Hasła nie są takie same.",
+      "confirmMismatch": "Hasła nie są zgodne.",
       "currentWrong": "Obecne hasło jest nieprawidłowe.",
       "deleteWord": "Wpisz {word}, aby potwierdzić."
     },
@@ -160,7 +160,7 @@
       "description": "Napisz coś o tym badulake (maksymalnie 500 znaków).",
       "date": "Wybierz datę i godzinę co najmniej 2 dni od dziś.",
       "address": "Wpisz dokładny adres.",
-      "notYet": "Nie możesz jeszcze zorganizować badulake: żeby poznać zasady, najpierw trzeba być na jednym.",
+      "notYet": "Nie możesz jeszcze zorganizować badulake: żeby poznać zasady, trzeba najpierw wziąć udział w jednym.",
       "seats": "Liczba miejsc musi wynosić od 5 do 10.",
       "generic": "Coś poszło nie tak. Spróbuj ponownie za chwilę."
     },
@@ -188,7 +188,7 @@
       "espera_salida": "Wypisano cię z listy oczekujących.",
       "cancelado": "Badulake został odwołany. Nie można się już na niego zapisać.",
       "no_publicable": "Nie można opublikować: do spotkania muszą zostać co najmniej 2 dni, żeby zdążyć zebrać 5 osób.",
-      "aun_no_puedes": "Nie możesz jeszcze opublikować badulake: żeby poznać zasady, najpierw trzeba być na jednym."
+      "aun_no_puedes": "Nie możesz jeszcze opublikować badulake: żeby poznać zasady, trzeba najpierw wziąć udział w jednym."
     },
     "back": "Wróć do badulake",
     "mine": "Organizujesz go ty",
@@ -246,7 +246,7 @@
     "adults": "Tylko dla osób pełnoletnich (18+)"
   },
   "Legal": {
-    "draftBadge": "Wstępny szkic",
+    "draftBadge": "Wersja robocza",
     "draftNote": "Ten tekst to SZKIC do sprawdzenia przez Dział Prawny EITB: nie jest ostateczny i może się zmienić. Luki oznaczone [A COMPLETAR POR ASESORÍA] uzupełni Dział Prawny. Do tego czasu aplikacja jest zamknięta i nie przechowuje niczyich danych.",
     "pendingTranslation": "Treść tekstu jest po hiszpańsku i czeka na tłumaczenie.",
     "back": "Wróć",

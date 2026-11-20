@@ -84,7 +84,7 @@
       "salida": "Olet kirjautunut ulos.",
       "enlace": "Linkki ei kelpaa tai se on vanhentunut. Yritä kirjautua sisään tai luo tili uudelleen.",
       "verificada": "Sähköpostiosoitteesi on vahvistettu. Nyt voit kirjautua sisään.",
-      "cuenta": "Siihen sinun pitää kirjautua sisään. Jos sinulla ei vielä ole tiliä, luo sellainen: se on maksuton.",
+      "cuenta": "Tätä varten sinun pitää kirjautua sisään. Jos sinulla ei vielä ole tiliä, luo sellainen: se on maksuton.",
       "borrada": "Tilisi ja tietosi on poistettu."
     },
     "interestTitle": "Ideoita, joita harkitsemme",
@@ -126,7 +126,7 @@
   "Badulake": {
     "newTitle": "Luo badulake",
     "notYetTitle": "Et voi vielä järjestää badulakea",
-    "notYetBody": "Jotta säännöt ovat tuttuja, badulaken voi järjestää vain se, joka on jo käynyt yhdessä. Kun olet käynyt badulakessa (ilmoittautuneena, eikä järjestäjä ole merkinnyt sinua ”Ei tullut”), voit järjestää oman. Sillä välin katso tulevia badulakeja ja ilmoittaudu johonkin.",
+    "notYetBody": "Jotta säännöt ovat tuttuja, badulaken voi järjestää vain se, joka on jo osallistunut johonkin. Kun olet osallistunut badulakeen (ilmoittautuneena, eikä järjestäjä ole merkinnyt sinua ”Ei tullut”), voit järjestää oman. Sillä välin voit katsoa tulevia badulakeja ja ilmoittautua johonkin niistä.",
     "notYetLink": "Katso tulevat badulaket",
     "yourTitle": "Badulakesi",
     "loading": "Ladataan…",
@@ -160,7 +160,7 @@
       "description": "Kerro jotain badulakesta (enintään 500 merkkiä).",
       "date": "Valitse päivä ja kellonaika vähintään 2 päivän päähän.",
       "address": "Kirjoita tarkka osoite.",
-      "notYet": "Et voi vielä järjestää badulakea: jotta säännöt tulevat tutuiksi, käy ensin yhdessä.",
+      "notYet": "Et voi vielä järjestää badulakea: jotta säännöt tulevat tutuiksi, osallistu ensin johonkin.",
       "seats": "Paikkoja on oltava 5–10.",
       "generic": "Jokin meni pieleen. Yritä hetken päästä uudelleen."
     },
@@ -188,7 +188,7 @@
       "espera_salida": "Poistuit odotuslistalta.",
       "cancelado": "Peruit badulaken. Siihen ei voi enää ilmoittautua.",
       "no_publicable": "Sitä ei voi julkaista: alkuun on oltava vähintään 2 päivää, jotta ehditään saada kokoon 5 henkeä.",
-      "aun_no_puedes": "Et voi vielä julkaista badulakea: jotta säännöt tulevat tutuiksi, käy ensin yhdessä."
+      "aun_no_puedes": "Et voi vielä julkaista badulakea: jotta säännöt tulevat tutuiksi, osallistu ensin johonkin."
     },
     "back": "Takaisin badulakeihin",
     "mine": "Sinä järjestät tämän",
@@ -236,8 +236,8 @@
     "howTitle": "Näin se toimii",
     "step1": "Luo tili. Se on maksuton ja vain täysi-ikäisille.",
     "step2": "Etsi badulake ja ilmoittaudu. Kun ilmoittaudut, näet tarkan osoitteen.",
-    "step3": "Tule paikalle tavaroiden kanssa, joita et enää käytä.",
-    "step4": "Vaihda: vie kotiin, mikä miellyttää.",
+    "step3": "Tuo mukanasi tavarat, joita et enää käytä.",
+    "step4": "Vaihda: vie kotiin se, mistä pidät.",
     "organize": "Haluatko mieluummin järjestää itse? Luo badulake ja julkaise se.",
     "factsTitle": "Lyhyesti",
     "free": "Maksuton",
@@ -292,8 +292,8 @@
     "title": "Tervetuloa Badulakeen",
     "intro": "Badulake on 5–10 hengen kasvokkainen tapaaminen, jossa vaihdetaan vaatteita ja tavaroita, joita ette enää käytä. Maksuton ja ilman rahaa. Vain täysi-ikäisille.",
     "step1": "Ilmoittaudu badulakeen omalla alueellasi.",
-    "step2": "Tule paikalle tavaroiden kanssa, joita et enää käytä.",
-    "step3": "Vaihda: vie kotiin, mikä miellyttää.",
+    "step2": "Tuo mukanasi tavarat, joita et enää käytä.",
+    "step3": "Vaihda: vie kotiin se, mistä pidät.",
     "rules": "Kukaan ei maksa eikä peri mitään, ja tarkan osoitteen näet vasta, kun ilmoittaudut.",
     "accounts": "Luo tili. Se on maksuton ja vie vain minuutin.",
     "signUp": "Luo tili",
@@ -337,10 +337,10 @@
     "drawn": "Järjestys on arvottu. Sitä ei voi toistaa.",
     "countTitle": "2. Laske tavarat",
     "turnsTitle": "3. Valintavuorot",
-    "turnsExplain": "Ensimmäisenä valitsee se, joka toi eniten tavaroita. Tasapelissä arvotaan. Alla oleva lista on esikatselu, kunnes aloitatte.",
-    "turnsExplainStarted": "Ensimmäisenä valitsee se, joka toi eniten tavaroita. Tasapelit arvottiin aloitettaessa.",
+    "turnsExplain": "Ensimmäisenä valitsee se, joka toi eniten tavaroita. Tasatilanteessa ratkaisee arpa. Alla oleva lista on esikatselu, kunnes aloitatte.",
+    "turnsExplainStarted": "Ensimmäisenä valitsee se, joka toi eniten tavaroita. Tasatilanteet arvottiin aloitettaessa.",
     "startChoose": "Aloita valinta",
-    "startConfirm": "Jono lukitaan nykyisen laskennan mukaan, ja tasapelit arvotaan vain kerran. Aloitetaanko?",
+    "startConfirm": "Jono lukitaan nykyisen laskennan mukaan, ja tasatilanteet arvotaan vain kerran. Aloitetaanko?",
     "startYes": "Kyllä, aloita",
     "currentTurn": "Valintavuorossa: {name}",
     "itsTurn": "vuorossa",
@@ -352,7 +352,7 @@
       "bags": "Pakatkaa ylijäävät tavarat pusseihin, yksi kutakin lajia kohden: vaatteet, kengät, asusteet ja muut.",
       "donate": "Mitä kukaan ei ota: hyväntekeväisyyskauppaan tai vaatekeräykseen.",
       "own": "Halutessaan jokainen voi ottaa omat tavaransa takaisin.",
-      "tidy": "Jättäkää paikka sellaiseksi kuin se oli tullessanne."
+      "tidy": "Jättäkää paikka sellaisena kuin löysitte sen."
     },
     "errors": {
       "pending": "Kaikkea ei ole vielä lähetetty. Odota, että yhteys palaa, ja yritä uudelleen.",

@@ -232,7 +232,7 @@
   },
   "WhatIs": {
     "title": "Beth yw badulake",
-    "intro": "Cyfarfod wyneb yn wyneb yw badulake, rhwng 5 a 10 o bobl, i gyfnewid dillad a phethau dydych chi ddim yn eu defnyddio mwyach. Does neb yn talu nac yn codi dim.",
+    "intro": "Cyfarfod wyneb yn wyneb yw badulake, rhwng 5 a 10 o bobl, i gyfnewid dillad a phethau nad wyt ti'n eu defnyddio mwyach. Does neb yn talu nac yn codi dim.",
     "howTitle": "Sut mae'n gweithio",
     "step1": "Crea dy gyfrif. Mae'n rhad ac am ddim ac i bobl 18 oed neu hŷn yn unig.",
     "step2": "Chwilia am fadulake a chofrestra. Pan fyddi di'n cofrestru, byddi di'n gweld yr union gyfeiriad.",
@@ -290,7 +290,7 @@
   },
   "Hola": {
     "title": "Croeso i Badulake",
-    "intro": "Cyfarfod wyneb yn wyneb yw badulake, rhwng 5 a 10 o bobl, i gyfnewid dillad a phethau dydych chi ddim yn eu defnyddio mwyach. Am ddim a heb arian. I bobl 18 oed neu hŷn yn unig.",
+    "intro": "Cyfarfod wyneb yn wyneb yw badulake, rhwng 5 a 10 o bobl, i gyfnewid dillad a phethau nad wyt ti'n eu defnyddio mwyach. Am ddim a heb arian. I bobl 18 oed neu hŷn yn unig.",
     "step1": "Cofrestra ar gyfer badulake yn dy ardal di.",
     "step2": "Tyrd â'r hyn nad wyt ti'n ei ddefnyddio mwyach.",
     "step3": "Cyfnewida: cymer adref beth bynnag rwyt ti'n ei hoffi.",
@@ -337,8 +337,8 @@
     "drawn": "Mae'r drefn wedi'i thynnu o'r het. Does dim modd ei wneud eto.",
     "countTitle": "2. Cyfrif y pethau",
     "turnsTitle": "3. Troeon i ddewis",
-    "turnsExplain": "Y person ddaeth â'r mwyaf o bethau sy'n dewis gyntaf. Os oes cyfartaledd, caiff ei dynnu o'r het. Rhagolwg yn unig yw'r rhestr isod nes i chi ddechrau.",
-    "turnsExplainStarted": "Y person ddaeth â'r mwyaf o bethau sy'n dewis gyntaf; cafodd y cyfartaleddau eu tynnu o'r het pan ddechreuoch chi.",
+    "turnsExplain": "Y person ddaeth â'r mwyaf o bethau sy'n dewis gyntaf. Os oes cyfartaledd, caiff ei dynnu o'r het. Rhagolwg yn unig yw'r rhestr isod nes i ti ddechrau.",
+    "turnsExplainStarted": "Y person ddaeth â'r mwyaf o bethau sy'n dewis gyntaf; cafodd y cyfartaleddau eu tynnu o'r het ar y dechrau.",
     "startChoose": "Dechrau dewis",
     "startConfirm": "Bydd y ciw yn cau gyda'r hyn sydd wedi'i gyfrif nawr, a dim ond unwaith y caiff y cyfartaleddau eu tynnu o'r het. Dechrau?",
     "startYes": "Ie, dechrau",

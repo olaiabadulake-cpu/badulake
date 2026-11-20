@@ -65,7 +65,7 @@
     "signUpLink": "Créer un compte",
     "accountTitle": "Votre compte",
     "loading": "Chargement…",
-    "signedInAs": "Vous êtes connecté·e avec {email}.",
+    "signedInAs": "Vous êtes connecté·e en tant que {email}.",
     "signOut": "Se déconnecter",
     "errors": {
       "email": "Vérifiez votre adresse e-mail : elle ne semble pas valide.",
@@ -78,7 +78,7 @@
       "tooMany": "Trop de tentatives. Patientez quelques minutes et réessayez.",
       "confirmMismatch": "Les deux mots de passe ne correspondent pas.",
       "currentWrong": "Le mot de passe actuel est incorrect.",
-      "deleteWord": "Tapez {word} pour confirmer."
+      "deleteWord": "Saisissez {word} pour confirmer."
     },
     "notices": {
       "salida": "Vous êtes déconnecté·e.",
@@ -120,7 +120,7 @@
     "deleteItem3": "Vos signalements restent, mais sans aucune donnée qui permette de vous identifier.",
     "deleteWarning": "C'est irréversible.",
     "deleteWord": "SUPPRIMER",
-    "deleteLabel": "Pour confirmer, tapez {word}",
+    "deleteLabel": "Pour confirmer, saisissez {word}",
     "deleteSubmit": "Supprimer définitivement mon compte"
   },
   "Badulake": {
@@ -160,7 +160,7 @@
       "description": "Dites-nous quelque chose sur le badulake (500 caractères maximum).",
       "date": "Choisissez une date et une heure au moins 2 jours après aujourd'hui.",
       "address": "Indiquez l'adresse exacte.",
-      "notYet": "Vous ne pouvez pas encore organiser de badulake : pour connaître les règles, il faut d'abord avoir participé à un badulake.",
+      "notYet": "Vous ne pouvez pas encore organiser de badulake : pour connaître les règles, il faut d’abord y avoir participé.",
       "seats": "Le nombre de places doit être compris entre 5 et 10.",
       "generic": "Un problème est survenu. Réessayez dans un moment."
     },
@@ -173,7 +173,7 @@
     "join": "Je m'inscris",
     "leave": "Me désinscrire",
     "youAreIn": "Vous êtes inscrit·e. Voici l'adresse exacte.",
-    "addToCalendar": "Ajouter à l'agenda",
+    "addToCalendar": "Ajouter au calendrier",
     "addressAfterJoin": "Vous verrez l'adresse exacte une fois inscrit·e.",
     "notices": {
       "lleno": "Désolés : il ne reste plus de place.",
@@ -188,7 +188,7 @@
       "espera_salida": "Vous avez quitté la liste d'attente.",
       "cancelado": "Vous avez annulé le badulake. Les inscriptions sont fermées.",
       "no_publicable": "Impossible de le publier : il doit avoir lieu dans au moins 2 jours, pour avoir le temps de réunir 5 personnes.",
-      "aun_no_puedes": "Vous ne pouvez pas encore publier de badulake : pour connaître les règles, il faut d'abord avoir participé à un badulake."
+      "aun_no_puedes": "Vous ne pouvez pas encore publier de badulake : pour connaître les règles, il faut d’abord y avoir participé."
     },
     "back": "Retour aux badulakes",
     "mine": "C'est vous qui l'organisez",
@@ -265,7 +265,7 @@
     "reasonLegend": "Pourquoi le signalez-vous ?",
     "reasons": {
       "estafa": "On dirait une arnaque ou on demande de l'argent",
-      "ofensivo": "Contenu choquant ou discriminatoire",
+      "ofensivo": "Contenu offensant ou discriminatoire",
       "datos": "Il montre des données personnelles de quelqu'un",
       "peligroso": "Quelque chose d'illégal ou de dangereux",
       "spam": "C'est du spam ou un doublon",
@@ -338,7 +338,7 @@
     "countTitle": "2. Compter les objets",
     "turnsTitle": "3. Tours pour choisir",
     "turnsExplain": "La personne qui a apporté le plus d'objets choisit en premier. En cas d'égalité, on tire au sort. La liste ci-dessous est un aperçu jusqu'à ce que vous commenciez.",
-    "turnsExplainStarted": "La personne qui a apporté le plus d'objets choisit en premier ; les égalités ont été tirées au sort au début.",
+    "turnsExplainStarted": "La personne qui a apporté le plus d’objets choisit en premier ; les égalités ont été départagées par tirage au sort au début.",
     "startChoose": "Commencer à choisir",
     "startConfirm": "La file sera fixée avec les comptes actuels et les égalités seront tirées au sort une seule fois. On commence ?",
     "startYes": "Oui, commencer",
@@ -351,7 +351,7 @@
     "left": {
       "bags": "Mettez ce qui reste dans des sacs, un par type : vêtements, chaussures, accessoires et autres.",
       "donate": "Ce que personne ne prend : à une boutique solidaire ou dans un conteneur à vêtements.",
-      "own": "Ceux qui le souhaitent peuvent reprendre leurs affaires.",
+      "own": "Ceux qui le souhaitent peuvent récupérer leurs affaires.",
       "tidy": "Laissez les lieux comme vous les avez trouvés."
     },
     "errors": {
