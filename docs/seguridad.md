@@ -124,6 +124,14 @@ Para abrir las cuentas, todo a la vez:
 9. **Códigos QR de Sant Boi (Tarea 18, D-033):** los QR de `docs/qr/` llevan escrita la dirección **badulake.vercel.app**. Si badulake.app ya funciona (Tarea 3), **regenerarlos y volver a imprimirlos** (`cd app && npm i --no-save qrcode && node scripts/qr.mjs https://badulake.app`), escanear uno y comprobar que abre `/es/hola`. Imprimir uno de prueba antes de la tirada.
 10. **Apuntarse a la vez a escala:** probado (120 a la vez por 10 plazas, [carga.md](carga.md)). Solo repetirlo si cambia `apuntarme()`.
 11. **Primeras organizadoras (Tarea 5.2, D-038):** al abrir, nadie puede organizar un badulake hasta haber ido a uno. Para los primeros, alguien del equipo da permiso de organizar desde el panel `/equipo` (el equipo puede organizar siempre). Hacerlo antes de anunciar la app.
+12. **Entrar con Google (Tarea 4.1, D-039).** Hoy solo funciona en la copia de pruebas. Para el Supabase real:
+    1. Ejecutar `supabase/google.sql` en el SQL Editor del proyecto **real** (antes de abrir las altas).
+    2. En Google Cloud (proyecto «Badulake», cuenta de Google del proyecto) → Google Auth Platform → Clientes → **crear un cliente nuevo** «Badulake · web real», tipo «Aplicación web», con la URI de redireccionamiento `https://aecjynkozbepjaljutjz.supabase.co/auth/v1/callback`. Un cliente distinto del de la copia, para que sus claves no se mezclen.
+    3. En Supabase real → Authentication → Sign In / Providers → Google: encender, pegar el ID del cliente y la clave secreta (copiar y pegar desde Google, nunca al chat ni al repositorio) y «Save».
+    4. Supabase real → URL Configuration: añadir `https://<dirección de la web>/api/cuenta/**` a las direcciones de vuelta permitidas.
+    5. Google Auth Platform → Información de la marca: logotipo, página de inicio, enlaces a privacidad y condiciones y dominio autorizado (el de la web). Después, Público → **«Publicar app»** (salir del modo de prueba). Con solo correo y perfil básico no hace falta la verificación larga de Google, pero sí que revise la marca (unos días): hacerlo con tiempo.
+    6. En Vercel (proyecto real) poner **`GOOGLE_ACTIVADO=1`** y volver a publicar.
+    7. Probar con una cuenta de Google de una persona del equipo: «Un último paso», entrar y salir. Mirar en Supabase (Authentication → Users) que la cuenta no guarda nombre ni foto.
 
 ## 9. Denuncias, suspensiones y panel del equipo (Tarea 13, D-027)
 
@@ -177,3 +185,14 @@ Script `supabase/cupo.sql`, ejecutado por Claude en Supabase el 19/11/2026.
 - `puedo_organizar()` (con sesión; devuelve si el que llama puede) y `equipo_permiso_organizar()` (comprueba `soy_equipo()`; no devuelve correos ni lista de personas) se pueden llamar con sesión a propósito: salen en el revisor de Supabase como avisos, como las demás funciones de este tipo.
 - La política «publicar_mi_borrador» exige `puedo_organizar()`: no se puede publicar un borrador sin haber ido (probado: bloqueado por RLS).
 - Tarea de Supabase Cron `registrar-asistencias` cada 10 minutos.
+
+## 15. Entrar con Google (Tarea 4.1, D-039)
+
+- Botón «Continuar con Google» solo con `CUENTAS_ABIERTAS=1` **y** `GOOGLE_ACTIVADO=1`. Hoy encendido solo en la copia de pruebas.
+- **La edad no se puede saltar:** la cuenta de Google nace pendiente; `estoy_suspendida()` la trata como suspendida (no puede crear, publicar, apuntarse, denunciar ni usar el día del badulake) y reglas RLS restrictivas `edad_confirmada` en `badulakes`, `badulakes_direccion` e `interes` le impiden ver nada. Solo `confirmar_mayoria_edad(fecha, idioma)` (con sesión; solo cambia la cuenta de quien llama) la desbloquea; si es menor, borra la cuenta. `edad_pendiente()` se puede llamar con sesión a propósito (saldrá en el revisor de Supabase como aviso, como las demás de este tipo).
+- `perfiles.mayoria_edad_comprobada_en` no se puede cambiar desde fuera (solo `idioma`, como antes).
+- `borrar_cuentas_sin_edad()` y `solo_datos_minimos()` no las puede llamar nadie desde fuera. Supabase Cron `borrar-cuentas-sin-edad` cada hora (minuto 40).
+- **Direcciones de vuelta fijas:** la vuelta de Google se construye con la dirección fija de la web (`siteOrigin`, D-023), no con la de la petición; en Supabase solo está permitida `https://badulake-pruebas.vercel.app/api/cuenta/**`.
+- **Clave secreta del cliente OAuth:** solo en Supabase (Authentication → Sign In / Providers → Google). No está en el repositorio, ni en Vercel, ni en el chat. Se pasó con copiar y pegar y luego se vació el portapapeles.
+- **Límite de intentos:** 20 cada 15 minutos para empezar con Google y 10 cada 15 minutos para confirmar la edad, por conexión.
+

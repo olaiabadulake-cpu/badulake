@@ -44,6 +44,7 @@ Coste: **0 €** (Supabase Free permite 2 proyectos activos por organización; V
 | `PRUEBAS_SUPABASE_REF` | la referencia del proyecto de la copia (la parte de la URL antes de `.supabase.co`) |
 | `PRUEBAS_DATOS_A_LA_VISTA` | `0` (apagado) o `1` (encendido) |
 | `PRUEBAS_BOTONES_CONFUSOS` | `0` (apagado) o `1` (encendido) |
+| `GOOGLE_ACTIVADO` | `1`: enseña «Continuar con Google» (Tarea 4.1, D-039). Solo si Google está configurado en el Supabase de la copia |
 
 6. **Supabase → Authentication → Sign In / Providers → Email:** ajustar «Confirm email» y «Authentication → URL Configuration» con la dirección de la copia (ver el interruptor 1).
 
@@ -77,3 +78,6 @@ Se encienden y apagan **solo en la copia**. Después de cambiar una variable en 
 Los fallos están en el código de `main`, pero `app/src/lib/pruebas.ts` solo los activa si **a la vez**: `PRUEBAS_COPIA=1`, `PRUEBAS_SUPABASE_REF` es una referencia válida **y coincide con el dominio de `SUPABASE_URL`**, y el interruptor propio vale `1`. Esas variables no existen en el proyecto de Vercel real. Aunque se pusieran por error allí, la base de datos real no coincidiría con la referencia anotada; y la función `pruebas_asistentes` no existe en la base de datos real. Comprobaciones hechas: ver el diario.
 
 **Actualizada el 20/11/2026 (tareas 5.1 y 5.2, D-037 y D-038):** la copia ya tiene `titulo_lugar.sql` y `haber_ido.sql` (también los carga `juntar-esquema.sh`), los títulos inventados son «Badulake de <barrio>, <ciudad> (<provincia>)» y las vecinas 1 a 7 ya pueden organizar; Unai (8) no, para enseñar el aviso «Todavía no puedes organizar un badulake». El equipo (cuenta Equipo) puede darle permiso desde `/equipo`.
+
+**Actualizada el 21/11/2026 (Tarea 4.1, D-039):** la copia tiene `google.sql` (también lo carga `juntar-esquema.sh`) y **entrar con Google**: en Supabase de la copia, proveedor Google encendido con el cliente «Badulake · copia de pruebas» (Google Cloud, proyecto «Badulake»), «Site URL» `https://badulake-pruebas.vercel.app` y dirección de vuelta permitida `https://badulake-pruebas.vercel.app/api/cuenta/**`; en Vercel, `GOOGLE_ACTIVADO=1`. Google está en modo de prueba: solo entran las cuentas apuntadas en Google Auth Platform → Público → Usuarios de prueba (hoy, la del proyecto). Para probar con otra cuenta de Google, añadirla allí.
+

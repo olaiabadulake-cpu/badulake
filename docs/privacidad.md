@@ -40,6 +40,17 @@ Ficha hecha el 19/11/2026 (Tarea 9 del plan maestro, decisión D-024). Es el **b
 | **Cuánto tiempo** | Hasta que la persona la borre con el botón **«Borrar mi cuenta»** de «Tu cuenta» (Tarea 21, D-034): se borra al momento, con todos sus datos. Las **sesiones sin usar 90 días** se borran solas (hay que volver a entrar). |
 | **Pendiente de decidir** | Qué hacer con cuentas que nunca se usan (por ejemplo, borrarlas tras 2 años avisando antes por correo; necesita el correo propio, Tarea 10). |
 
+### 2.2.1 Entrar con Google (Tarea 4.1, D-039)
+
+| | |
+|---|---|
+| **Qué recibimos de Google** | Un código fijo de la cuenta de Google (`sub`, para reconocerla la próxima vez), el correo y que está verificado. Google manda también el **nombre y la foto** (los pide siempre con el permiso básico de perfil), pero **se tiran antes de guardar nada**, también cada vez que se vuelve a entrar (`solo_datos_minimos`). |
+| **Qué no recibimos** | La edad ni la fecha de nacimiento: la primera vez se pregunta la fecha, como en el registro con correo, y **no se guarda** (solo cuándo se comprobó). |
+| **Qué sabe Google** | Que esa cuenta de Google ha entrado en «Badulake» y cuándo (lo enseña en la cuenta de Google de la persona, en «Apps de terceros con acceso a la cuenta»). Lo trata según su propia política de privacidad; nosotros no le enviamos ningún dato. |
+| **Cuenta sin terminar** | Si no se confirma la edad, la cuenta se borra sola a las 24 horas. Si la fecha es de una persona menor de 18, se borra en el acto. |
+| **Base legal** | La misma que la cuenta (6.1.b) y, para la edad, interés legítimo (6.1.f). **[Asesoría: papel de Google como responsable independiente del inicio de sesión y transferencia a EE. UU.]** |
+| **Dónde** | Google Ireland Ltd. (Irlanda) y Google LLC (EE. UU.). Lo guardado se queda en Supabase (Frankfurt). |
+
 ### 2.3 Badulakes
 
 | | |
@@ -122,6 +133,7 @@ No confundir con la lista de espera del lanzamiento (2.1), que guarda correos: e
 |---|---|---|---|
 | **Supabase** (Supabase Inc., EE. UU.) | Base de datos y cuentas | **Frankfurt** (`eu-central-1`, UE) | Plan gratuito. Empresa de EE. UU.: revisar su acuerdo de tratamiento (DPA) y garantías (cláusulas tipo / Marco de Privacidad UE-EE. UU.). |
 | **Vercel** (Vercel Inc., EE. UU.) | Publica la web y ejecuta la parte del servidor (formularios, sesiones) | **Frankfurt** (`fra1`) desde esta tarea; la red que sirve las páginas está repartida por el mundo y atiende desde el punto más cercano | Plan gratuito (Hobby). Antes de esta tarea la parte del servidor se ejecutaba en Washington (EE. UU.); corregido en `app/vercel.json`. Revisar su DPA y si el plan gratuito es adecuado para un servicio de EITB. |
+| **Google** (Google Ireland Ltd. / Google LLC, EE. UU.) | Solo si la persona elige «Continuar con Google»: comprueba quién es y nos da su correo (D-039) | Servicios de Google | Gratis (Google Cloud, sin facturación). No es encargado nuestro: lo más probable es que sea responsable independiente del inicio de sesión. Confirmar con la Asesoría. |
 | **Vercel Web Analytics** (misma empresa) | Mide visitas y de dónde vienen, sin cookies | Red global de Vercel | Incluido en Hobby (50.000 eventos/mes). Sin cookies ni IP guardada (según Vercel): confirmar con la Asesoría que no hace falta banner. |
 | **GitHub** (Microsoft) | Guarda el código | — | **No guarda datos de personas.** El repositorio es público y no contiene claves ni datos. |
 
@@ -192,6 +204,7 @@ Ver [seguridad.md](seguridad.md): reglas por filas en todas las tablas, 48 de 48
 4. ¿Os parecen bien los plazos de conservación (apartado 5)? ¿Qué hacer con las cuentas que no se usan?
 5. ¿Hace falta una evaluación de impacto (EIPD)? Se guardan direcciones de casas particulares, aunque se borran al día siguiente.
 6. El texto provisional de `/privacidad` está escrito en lenguaje llano: podéis usarlo como base.
+7. **Entrar con Google (D-039):** ¿Google es responsable independiente del inicio de sesión o hay que tratarlo de otra forma? ¿Cómo se explica en el aviso que Google sabe que la persona usa Badulake? ¿Basta con lo que ya dice el borrador de `/privacidad` (apartados 2 y 5)?
 
 ## 10. La página `/privacidad`
 

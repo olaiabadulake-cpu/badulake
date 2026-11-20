@@ -29,6 +29,7 @@ Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni 
 
 - **Lista de espera.** Tu correo, tu zona o barrio, el idioma en que quieres el aviso, y cuándo diste tu permiso y cuándo te apuntaste. Para avisarte del lanzamiento de Badulake.
 - **Tu cuenta.** Tu correo y tu contraseña (cifrada: nadie puede leerla), tu idioma y la fecha en que se comprobó que eres mayor de edad. Para que puedas entrar y usar la app. Nuestro proveedor de cuentas guarda además las sesiones abiertas, con la dirección IP y el navegador, solo para mantener tu sesión y proteger tu cuenta.
+- **Si entras con Google.** Google nos dice tu correo, que está verificado y un código de tu cuenta de Google (para reconocerte la próxima vez). También nos manda tu nombre y tu foto, pero **los tiramos antes de guardar nada**. Google no nos dice tu edad: la primera vez te pedimos la fecha de nacimiento, igual que al crear la cuenta con correo, y tampoco la guardamos. Si no la confirmas, la cuenta se borra sola en 24 horas.
 - **Tu fecha de nacimiento.** Solo se usa en el momento de crear la cuenta para comprobar que tienes 18 años o más. La base de datos la borra antes de guardar la cuenta: **no queda guardada**.
 - **Los badulakes que organizas.** Título, descripción, fecha y hora, zona o barrio, número de plazas, estado (borrador o publicado) y la dirección exacta. Para que otras personas lo encuentren y puedan ir.
 - **Los badulakes a los que te apuntas.** Cuál y cuándo, y si entraste desde la lista de espera. Para reservarte la plaza, no pasarnos del cupo, enseñarte la dirección y avisarte.
@@ -72,6 +73,7 @@ Para dar el servicio usamos estas empresas, que tratan los datos por encargo de 
 
 - **Supabase** (Supabase Inc., EE. UU.): base de datos y cuentas. Los datos están en **Frankfurt (Alemania, Unión Europea)**.
 - **Vercel** (Vercel Inc., EE. UU.): publica la web y ejecuta la parte del servidor (formularios, sesiones), configurada para trabajar en **Frankfurt**. La red que sirve las páginas está repartida por el mundo y atiende desde el punto más cercano a ti, pero sin guardar tus datos personales.
+- **Google** (Google Ireland Ltd., Irlanda; y Google LLC, EE. UU.): solo si eliges «Continuar con Google». Comprueba quién eres en su propia página y nos dice tu correo. Google sabe que has entrado en Badulake y cuándo, según su propia política de privacidad; nosotros no le enviamos nada más. **[A CONFIRMAR POR ASESORÍA: papel de Google (responsable independiente del inicio de sesión) y transferencia]**
 - **GitHub** (Microsoft): guarda el código de la app. **No guarda datos de personas.**
 
 Aunque los datos estén en la UE, Supabase y Vercel son empresas estadounidenses, por lo que podría haber acceso desde fuera de la UE (transferencia internacional). Se apoyan en las garantías previstas por el RGPD: **[A CONFIRMAR POR ASESORÍA: Marco de Privacidad UE-EE. UU. y/o cláusulas contractuales tipo]**.
