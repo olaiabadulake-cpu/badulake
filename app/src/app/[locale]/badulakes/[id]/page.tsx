@@ -75,16 +75,11 @@ async function Details({
   const joined = Boolean(mine);
   const position = wait?.puesto ?? null;
   const taken = count?.ocupadas ?? 0;
-  // La organizadora cuenta como una persona más (Tarea 20.1, D-040): «plazas» es el total, con ella.
-  const people = taken + 1;
-  const free = Math.max(0, b.plazas - people);
-  const start = new Date(b.fecha_hora).getTime();
-  const upcoming = start > Date.now();
-  // En las últimas 24 horas ya no se cancela solo (pasó la comprobación): no se avisa de eso.
-  const last24h = start - Date.now() <= 24 * 3600_000;
+  const free = Math.max(0, b.plazas - taken);
+  const upcoming = new Date(b.fecha_hora) > new Date();
   const cancelled = b.estado === "cancelado";
-  // «Confirmado» no se guarda: es publicado con 5 personas o más, contando a la organizadora (D-032, D-040).
-  const confirmed = b.estado === "publicado" && people >= 5;
+  // «Confirmado» no se guarda: es publicado con 5 apuntadas o más (D-032).
+  const confirmed = b.estado === "publicado" && taken >= 5;
 
   const t = await getTranslations("Badulake");
   const when = new Intl.DateTimeFormat(await contentLang(), {
@@ -94,11 +89,11 @@ async function Details({
     [t("date"), when],
     [t("zone"), b.zona],
     ...(a ? ([[t("address"), a.direccion]] as [string, string][]) : []),
-    ...(cancelled ? [] : ([[t("seats"), isOrganizer ? t("seatsTaken", { taken: people, total: b.plazas }) : t("freeSeats", { count: free })]] as [string, string][])),
+    ...(cancelled ? [] : ([[t("seats"), isOrganizer ? t("seatsTaken", { taken, total: b.plazas }) : t("freeSeats", { count: free })]] as [string, string][])),
   ];
   const notices = [
     "apuntada", "borrada", "lleno", "error", "no_disponible", "denunciado", "denuncia_repetida",
-    "denuncia_error", "en_espera", "espera_salida", "cancelado", "no_publicable", "aun_no_puedes", "no_publicado",
+    "denuncia_error", "en_espera", "espera_salida", "cancelado", "no_publicable", "aun_no_puedes",
   ] as const;
   const notice = notices.find((n) => n === aviso) ?? null;
   const good = (["apuntada", "borrada", "denunciado", "en_espera", "espera_salida", "cancelado"] as const)
@@ -141,9 +136,9 @@ async function Details({
           <p>{b.cancelado_por === "automatica" ? t("cancelledAuto") : isOrganizer ? t("cancelledByYou") : t("cancelledByOrganizer")}</p>
         </div>
       )}
-      {!cancelled && b.estado === "publicado" && upcoming && (confirmed || !last24h) && (
+      {!cancelled && b.estado === "publicado" && upcoming && (
         <p className={confirmed ? "aviso" : "ayuda"}>
-          {confirmed ? t("statusConfirmed") : t("statusNeeds", { count: 5 - people })}
+          {confirmed ? t("statusConfirmed") : t("statusNeeds", { count: 5 - taken })}
         </p>
       )}
       <p className="whitespace-pre-line text-lg">{b.descripcion}</p>
@@ -251,8 +246,7 @@ async function Details({
           </>
         )
       )}
-      {/* Denunciar solo los que siguen en pie: ni cancelados ni pasados (Tarea 5.3). */}
-      {!isOrganizer && !cancelled && upcoming && (
+      {!isOrganizer && (
         <details className="tarjeta">
           <summary className="cursor-pointer font-semibold">{tr("button")}</summary>
           <form action={reportBadulake} className="mt-4 flex flex-col gap-4">

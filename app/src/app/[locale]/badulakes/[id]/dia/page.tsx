@@ -43,6 +43,7 @@ async function Contenido({ params }: Pick<PageProps<"/[locale]/badulakes/[id]/di
   const result = await diaCargar(id);
   const closedKey =
     result.code === "fuera_de_hora" ? "notOpen"
+    : result.code === "no_confirmado" ? "notConfirmed"
     : result.code === "ok" ? null : "closed";
 
   return (

@@ -79,11 +79,13 @@ export async function createBadulake(
   }
 
   // Botón principal «Publicar»: se publica de una vez (antes eran dos pasos). La base de datos
-  // crea siempre en borrador; aquí se publica justo después. Si eso falla, queda en borrador con
-  // su botón «Publicar» a la vista y se dice por qué (Tarea 5.3).
-  let aviso = "";
-  if (formData.get("intent") === "publish") aviso = await publishOrWhy(supabase, data);
-  redirect({ href: `/badulakes/${data}${aviso}`, locale });
+  // crea siempre en borrador; aquí se publica justo después. Si eso fallara, queda en borrador
+  // con su botón «Publicar» a la vista.
+  if (formData.get("intent") === "publish") {
+    const { error: pubError } = await supabase.from("badulakes").update({ estado: "publicado" }).eq("id", data);
+    if (pubError) console.error("[publicar]", pubError.code, pubError.message);
+  }
+  redirect({ href: `/badulakes/${data}`, locale });
   return { status: "idle" };
 }
 
@@ -93,23 +95,16 @@ export async function publishBadulake(formData: FormData): Promise<void> {
   const id = text(formData, "id");
   let aviso = "";
   if (accountsOpen && /^[0-9a-f-]{36}$/.test(id)) {
-    aviso = await publishOrWhy(await createSupabase(), id);
+    const supabase = await createSupabase();
+    // Si falta menos de 48 horas, la base de datos no lo publica (D-032): se avisa.
+    const { data } = await supabase.from("badulakes").update({ estado: "publicado" }).eq("id", id).select("id");
+    if (!data?.length) {
+      // Si falta por haber ido antes (Tarea 5.2), se dice; si no, es el margen de 48 horas.
+      const { data: puedo } = await supabase.rpc("puedo_organizar");
+      aviso = puedo === false ? "?aviso=aun_no_puedes" : "?aviso=no_publicable";
+    }
   }
   redirect({ href: `/badulakes/${id}${aviso}`, locale });
-}
-
-// Publica un borrador y devuelve el aviso que hay que enseñar ("" si ha ido bien).
-async function publishOrWhy(supabase: Awaited<ReturnType<typeof createSupabase>>, id: string): Promise<string> {
-  // Si falta menos de 48 horas, la base de datos no lo publica (D-032): no da error, no cambia nada.
-  const { data, error } = await supabase.from("badulakes").update({ estado: "publicado" }).eq("id", id).select("id");
-  if (error) {
-    console.error("[publicar]", error.code, error.message);
-    return "?aviso=no_publicado";
-  }
-  if (data?.length) return "";
-  // Si falta por haber ido antes (Tarea 5.2), se dice; si no, es el margen de 48 horas.
-  const { data: puedo } = await supabase.rpc("puedo_organizar");
-  return puedo === false ? "?aviso=aun_no_puedes" : "?aviso=no_publicable";
 }
 
 // Apuntarme: la base de datos comprueba plazas, fecha y que no seas la organizadora. Si no quedan
