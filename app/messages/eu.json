@@ -37,7 +37,7 @@
       },
       "what": {
         "title": "Zer datu gordetzen ditugun eta zertarako",
-        "body": "- Itxaron-zerrenda: zure helbide elektronikoa, zure eremua, abisua zein hizkuntzatan nahi duzun eta noiz eman zenuen baimena. Badulake irekitzen denean abisatzeko bakarrik.\n- Zure kontua: zure helbide elektronikoa, zure pasahitza (zifratuta: inork ezin du irakurri), zure hizkuntza eta adin nagusikoa zarela egiaztatu genuen data. Sartu eta aplikazioa erabili ahal izateko.\n- Zure jaiotze-data: kontua sortzeko unean bakarrik erabiltzen da, 18 urte edo gehiago dituzula egiaztatzeko. Ez da gordetzen.\n- Antolatzen dituzun badulakeak: izenburua, deskribapena, data, eremua, plaza kopurua eta helbide zehatza. Beste pertsona batzuek aurkitu eta iritsi ahal izateko.\n- Izena ematen duzun badulakeak: zein eta noiz. Plaza gordetzeko eta helbidea erakusteko.\n- Badulakearen eguna: antolatzaileak «Badulake modua» erabiltzen badu, zu ezagutzeko eskuz idazten duen izena (edo ezizena), etorri zaren, motaren arabera zenbat objektu ekarri dituzun (arropa, oinetakoak, osagarriak eta besteak) eta egun horretako zozketetan zure txanda. Trukea antolatzeko. Antolatzaileak bakarrik ikusten du; zuk zure txanda bakarrik ikusten duzu.\n- **Interes-zerrenda.** VIP edo BaduCoins «Interesatzen zait» markatzen baduzu (gaur ez dira existitzen eta ez dute ezer balio), aukera eta data bakarrik gordetzen dugu. Interesa neurtzeko; nahi duzunean kendu dezakezu."
+        "body": "- Itxaron-zerrenda: zure helbide elektronikoa, zure eremua, abisua zein hizkuntzatan nahi duzun eta noiz eman zenuen baimena. Badulake irekitzen denean abisatzeko bakarrik.\n- Zure kontua: zure helbide elektronikoa, zure pasahitza (zifratuta: inork ezin du irakurri), zure hizkuntza eta adin nagusikoa zarela egiaztatu genuen data. Sartu eta aplikazioa erabili ahal izateko.\n- Zure jaiotze-data: kontua sortzeko unean bakarrik erabiltzen da, 18 urte edo gehiago dituzula egiaztatzeko. Ez da gordetzen.\n- Antolatzen dituzun badulakeak: izenburua (auzoarekin, hiriarekin eta probintziarekin osatzen da), deskribapena, data, eremua, plaza kopurua eta helbide zehatza. Beste pertsona batzuek aurkitu eta iritsi ahal izateko.\n- Izena ematen duzun badulakeak: zein eta noiz. Plaza gordetzeko eta helbidea erakusteko.\n- Badulakearen eguna: antolatzaileak «Badulake modua» erabiltzen badu, zu ezagutzeko eskuz idazten duen izena (edo ezizena), etorri zaren, motaren arabera zenbat objektu ekarri dituzun (arropa, oinetakoak, osagarriak eta besteak) eta egun horretako zozketetan zure txanda. Trukea antolatzeko. Antolatzaileak bakarrik ikusten du; zuk zure txanda bakarrik ikusten duzu.\n- **Badulake batera joatea.** Badulake bat antolatzeko, lehenago batera joan behar da. Antolatu dezakezula bakarrik gordetzen dugu (joateagatik edo taldearen baimenagatik) eta noiztik, zein badulaketara joan zinen jakin gabe. Arau hori betetzeko; zure kontua ezabatzean ezabatzen da.\n- **Interes-zerrenda.** VIP edo BaduCoins «Interesatzen zait» markatzen baduzu (gaur ez dira existitzen eta ez dute ezer balio), aukera eta data bakarrik gordetzen dugu. Interesa neurtzeko; nahi duzunean kendu dezakezu."
       },
       "legal": {
         "title": "Zergatik erabil ditzakegun",
@@ -53,7 +53,7 @@
       },
       "time": {
         "title": "Zenbat denboran",
-        "body": "- Badulake baten helbide zehatza berez ezabatzen da egin eta hurrengo egunean.\n- Badulakea eta izena eman zutenen zerrenda berez ezabatzen dira 30 egun geroago.\n- Badulakearen eguneko datuak (idatzitako izenak, zenbatutako objektuak eta txandak) badulakea egin eta hurrengo egunean berez ezabatzen dira.\n- Itxaron-zerrenda abiaraztearen berri ematean ezabatzen da, eta gehienez 12 hilabetera.\n- Zure kontua gordeko da zuk «Nire kontua ezabatu» botoiarekin ezabatu arte. 90 egunean erabiltzen ez baduzu, zure saioa itxiko da.\n- Erregistro teknikoak (adibidez, zure konexioaren helbidea) gehienez 30 egunean ezabatzen dira."
+        "body": "- Badulake baten helbide zehatza berez ezabatzen da egin eta hurrengo egunean.\n- Badulakea eta izena eman zutenen zerrenda berez ezabatzen dira 30 egun geroago.\n- Antolatzeko aukera (badulake batera joatea edo taldearen baimena): kontua duzun bitartean.\n- Badulakearen eguneko datuak (idatzitako izenak, zenbatutako objektuak eta txandak) badulakea egin eta hurrengo egunean berez ezabatzen dira.\n- Itxaron-zerrenda abiaraztearen berri ematean ezabatzen da, eta gehienez 12 hilabetera.\n- Zure kontua gordeko da zuk «Nire kontua ezabatu» botoiarekin ezabatu arte. 90 egunean erabiltzen ez baduzu, zure saioa itxiko da.\n- Erregistro teknikoak (adibidez, zure konexioaren helbidea) gehienez 30 egunean ezabatzen dira."
       },
       "rights": {
         "title": "Zure eskubideak",
@@ -156,19 +156,25 @@
   },
   "Badulake": {
     "newTitle": "Badulake bat sortu",
+    "notYetTitle": "Oraindik ezin duzu badulakerik antolatu",
+    "notYetBody": "Arauak ondo ezagutzeko, badulake bat antola dezake dagoeneko batera joan denak bakarrik. Badulake batera joan zarenean (izena emanda eta antolatzaileak «Ez da etorri» markatu gabe), zurea antolatu ahal izango duzu. Bitartean, begiratu hurrengo badulakeak eta eman izena batean.",
+    "notYetLink": "Ikusi hurrengo badulakeak",
     "yourTitle": "Zure badulakea",
     "loading": "Kargatzen…",
-    "title": "Izenburua",
+    "zone": "Auzoa",
+    "neighborhood": "Auzoa",
+    "city": "Hiria edo herria",
+    "province": "Probintzia",
     "description": "Azalpen laburra",
     "date": "Data eta ordua",
-    "zone": "Eremua edo auzoa",
     "address": "Helbide zehatza",
     "seats": "Plazak",
     "hints": {
-      "title": "3 eta 80 letra artean.",
-      "description": "Zer trukatuko duzuen eta nola. Gehienez 500 letra.",
+      "neighborhood": "Adib.: Deustu. Badulakearen izena lekuarekin osatzen da, bere kabuz.",
+      "city": "Adib.: Bilbo. Izena hau izango da: «Badulake de Deustu, Bilbo (Bizkaia)».",
+      "province": "Adib.: Bizkaia. Publikoki ikusiko da, auzoa eta hiria bezala.",
+      "description": "Kontatu nolakoa izango den bilera (giroa, jakin beharrekoa). Gehienez 500 letra.",
       "date": "Madrilgo ordua. Gaurtik gutxienez 2 egunera, 5 lagun biltzeko denbora izan dadin.",
-      "zone": "Publikoki ikusiko da. Adib.: Deustu, Bilbo.",
       "address": "Zuk bakarrik ikusiko duzu; izena ematen duenari erakutsiko diogu.",
       "seats": "5 eta 10 lagun artean."
     },
@@ -179,11 +185,13 @@
     "statusPublished": "Argitaratuta: kontua duten pertsonek ikus dezakete.",
     "addressPrivate": "Helbide zehatza pribatua da: zuk bakarrik ikusten duzu.",
     "errors": {
-      "title": "Izenburuak 3 eta 80 letra artean izan behar ditu.",
+      "neighborhood": "Idatzi auzoa (2 eta 40 letra artean).",
+      "city": "Idatzi hiria edo herria (2 eta 40 letra artean).",
+      "province": "Idatzi probintzia (2 eta 30 letra artean).",
       "description": "Kontatu zerbait badulakeari buruz (gehienez 500 letra).",
       "date": "Aukeratu gaurtik gutxienez 2 egunerako data eta ordua.",
-      "zone": "Esan zein eremu edo auzo den.",
       "address": "Idatzi helbide zehatza.",
+      "notYet": "Oraindik ezin duzu badulakerik antolatu: arauak ezagutzeko, lehenengo batera joan behar da.",
       "seats": "Plazak 5 eta 10 artean izan behar dira.",
       "generic": "Zerbait gaizki atera da. Saiatu berriro apur bat geroago."
     },
@@ -210,7 +218,8 @@
       "en_espera": "Ez zegoen plazarik: orain itxaron-zerrendan zaude.",
       "espera_salida": "Itxaron-zerrendatik atera zara.",
       "cancelado": "Badulakea bertan behera utzi duzu. Ez du izen-emate gehiago onartzen.",
-      "no_publicable": "Ezin da argitaratu: gutxienez 2 egun geratu behar dira, 5 lagun biltzeko denbora izan dadin."
+      "no_publicable": "Ezin da argitaratu: gutxienez 2 egun geratu behar dira, 5 lagun biltzeko denbora izan dadin.",
+      "aun_no_puedes": "Oraindik ezin duzu badulakerik argitaratu: arauak ezagutzeko, lehenengo batera joan behar da."
     },
     "back": "Itzuli badulakeetara",
     "mine": "Zuk antolatzen duzu",
@@ -320,7 +329,19 @@
       "mostrar": "Badulakea berriro ikusgai.",
       "suspender": "Kontua esekita: ezin da sartu eta bere badulakeak ezkutatuta daude.",
       "resolver": "Salaketa ebatzita.",
+      "permiso_dado": "Baimena emanda: pertsona horrek badulakeak antola ditzake dagoeneko.",
+      "permiso_quitado": "Baimena kenduta.",
+      "permiso_no_existe": "Ez dago posta elektroniko horrekin konturik.",
+      "permiso_ya_tenia": "Pertsona horrek antola zezakeen jada.",
+      "permiso_no_tenia": "Pertsona horrek ez zuen taldearen baimenik (badulake batera joan bada, antolatzen jarraituko du).",
       "error": "Zerbait huts egin du. Saiatu berriro."
+    },
+    "permission": {
+      "title": "Antolatzeko baimena",
+      "help": "Badulake bat antolatzeko, lehenago batera joan behar da. Norbaitek joan gabe hasi behar badu (lehenengo pertsonak), eman baimena hemen bere posta elektronikoarekin. Posta ez da gordetzen eta pantaila honek ez du inoiz erakusten nork duen baimena.",
+      "email": "Pertsonaren posta elektronikoa",
+      "give": "Eman baimena",
+      "remove": "Kendu baimena"
     },
     "reportsTitle": "Salaketak",
     "stats": {

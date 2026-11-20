@@ -93,7 +93,7 @@ async function Details({
   ];
   const notices = [
     "apuntada", "borrada", "lleno", "error", "no_disponible", "denunciado", "denuncia_repetida",
-    "denuncia_error", "en_espera", "espera_salida", "cancelado", "no_publicable",
+    "denuncia_error", "en_espera", "espera_salida", "cancelado", "no_publicable", "aun_no_puedes",
   ] as const;
   const notice = notices.find((n) => n === aviso) ?? null;
   const good = (["apuntada", "borrada", "denunciado", "en_espera", "espera_salida", "cancelado"] as const)

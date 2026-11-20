@@ -9,7 +9,7 @@ import { reportReasons } from "@/lib/report";
 export type NewBadulakeState = {
   status: "idle" | "error";
   errors?: Partial<
-    Record<"title" | "description" | "date" | "zone" | "address" | "seats" | "generic", true>
+    Record<"neighborhood" | "city" | "province" | "description" | "date" | "address" | "seats" | "notYet" | "generic", true>
   >;
   // Lo que se había escrito, para no perderlo si hay un error.
   values?: Record<string, string>;
@@ -34,15 +34,17 @@ export async function createBadulake(
 
   const locale = readLocale(formData);
   const values = Object.fromEntries(
-    ["title", "description", "date", "zone", "address", "seats"].map((k) => [k, text(formData, k)]),
+    ["neighborhood", "city", "province", "description", "date", "address", "seats"].map((k) => [k, text(formData, k)]),
   );
-  const { title, description, date, zone, address } = values;
+  const { neighborhood, city, province, description, date, address } = values;
   const seats = Number(values.seats);
 
   const errors: NonNullable<NewBadulakeState["errors"]> = {};
-  if (title.length < 3 || title.length > 80) errors.title = true;
+  // El título lo forma la base de datos con el lugar (Tarea 5.1, D-037): barrio, ciudad y provincia.
+  if (neighborhood.length < 2 || neighborhood.length > 40) errors.neighborhood = true;
+  if (city.length < 2 || city.length > 40) errors.city = true;
+  if (province.length < 2 || province.length > 30) errors.province = true;
   if (description.length < 1 || description.length > 500) errors.description = true;
-  if (zone.length < 2 || zone.length > 80) errors.zone = true;
   if (address.length < 3 || address.length > 200) errors.address = true;
   if (!Number.isInteger(seats) || seats < 5 || seats > 10) errors.seats = true;
   const match = DATETIME.exec(date);
@@ -57,15 +59,19 @@ export async function createBadulake(
   if (!auth.user) redirect({ href: "/entrar?aviso=cuenta", locale });
 
   const { data, error } = await supabase.rpc("crear_badulake", {
-    p_titulo: title,
+    p_barrio: neighborhood,
+    p_ciudad: city,
+    p_provincia: province,
     p_descripcion: description,
     p_fecha_hora: date,
-    p_zona: zone,
     p_direccion: address,
     p_plazas: seats,
   });
   if (error || !data) {
     console.error("[nuevo badulake]", error?.code, error?.message);
+    if (/aun_no_puedes_organizar/.test(error?.message ?? "")) {
+      return { status: "error", errors: { notYet: true }, values };
+    }
     if (error?.code === "23514" && /fecha/.test(error.message)) {
       return { status: "error", errors: { date: true }, values };
     }
@@ -92,7 +98,11 @@ export async function publishBadulake(formData: FormData): Promise<void> {
     const supabase = await createSupabase();
     // Si falta menos de 48 horas, la base de datos no lo publica (D-032): se avisa.
     const { data } = await supabase.from("badulakes").update({ estado: "publicado" }).eq("id", id).select("id");
-    if (!data?.length) aviso = "?aviso=no_publicable";
+    if (!data?.length) {
+      // Si falta por haber ido antes (Tarea 5.2), se dice; si no, es el margen de 48 horas.
+      const { data: puedo } = await supabase.rpc("puedo_organizar");
+      aviso = puedo === false ? "?aviso=aun_no_puedes" : "?aviso=no_publicable";
+    }
   }
   redirect({ href: `/badulakes/${id}${aviso}`, locale });
 }

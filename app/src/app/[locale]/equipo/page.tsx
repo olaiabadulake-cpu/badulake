@@ -6,7 +6,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { redirect } from "@/i18n/navigation";
 import { accountsOpen, createSupabase, getCurrentUser } from "@/lib/supabase/server";
 import { reportReasons } from "@/lib/report";
-import { teamAction } from "./actions";
+import { permissionAction, teamAction } from "./actions";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Team");
@@ -102,7 +102,10 @@ async function Reports({ searchParams }: Pick<PageProps<"/[locale]/equipo">, "se
   if (error) console.error("[equipo]", error.code, error.message);
   const reports = (data ?? []) as Report[];
 
-  const notices = ["ocultar", "mostrar", "suspender", "resolver", "error"] as const;
+  const notices = [
+    "ocultar", "mostrar", "suspender", "resolver", "permiso_dado", "permiso_quitado", "permiso_no_existe",
+    "permiso_ya_tenia", "permiso_no_tenia", "error",
+  ] as const;
   const notice = notices.find((n) => n === aviso) ?? null;
   const date = new Intl.DateTimeFormat(await contentLang(), {
     dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Madrid",
@@ -131,6 +134,22 @@ async function Reports({ searchParams }: Pick<PageProps<"/[locale]/equipo">, "se
           {t(`notices.${notice}`)}
         </p>
       )}
+      <section aria-labelledby="permiso" className="tarjeta gap-3">
+        <h2 id="permiso" className="titulo-3">{t("permission.title")}</h2>
+        <p className="ayuda">{t("permission.help")}</p>
+        <form action={permissionAction} className="flex flex-col gap-3">
+          <input type="hidden" name="locale" value={locale} />
+          <label htmlFor="permiso-correo" className="etiqueta">{t("permission.email")}</label>
+          <input
+            id="permiso-correo" name="correo" type="email" required autoComplete="off"
+            maxLength={254} className="campo"
+          />
+          <div className="flex flex-wrap gap-3">
+            <button type="submit" name="kind" value="dar" className={solid}>{t("permission.give")}</button>
+            <button type="submit" name="kind" value="quitar" className={outline}>{t("permission.remove")}</button>
+          </div>
+        </form>
+      </section>
       {reports.length === 0 ? (
         <p className="text-lg">{t("empty")}</p>
       ) : (

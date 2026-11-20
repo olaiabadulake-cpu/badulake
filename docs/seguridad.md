@@ -168,3 +168,11 @@ Script `supabase/cupo.sql`, ejecutado por Claude en Supabase el 19/11/2026.
 - **Sorteos únicos:** `dia_sortear_orden` y `dia_empezar_elegir` bloquean el badulake y la fila de estado y responden `ya_sorteado` / `ya_empezado` si ya se hicieron; la hora queda registrada.
 - El panel no devuelve identificadores de cuenta ni correos. La página `/dia` da 404 a quien no organiza (y a todos si las cuentas están cerradas) y no incluye datos en el HTML.
 - Pruebas en `docs/diario.md` y D-036: 32 comprobaciones; la clave pública no lee etiquetas, no escribe y solo ve su fila.
+
+## 14. Título por lugar y haber ido antes de organizar (Tareas 5.1 y 5.2, D-037 y D-038)
+
+- `crear_badulake` ya no recibe título: forma «Badulake de barrio, ciudad (provincia)» y comprueba las longitudes. Como nadie inserta en `badulakes` por la clave pública, el título no puede ser un tema.
+- `permiso_organizar` (quién ya puede organizar): RLS activada y **sin ningún permiso** para `anon` ni `authenticated`; solo la tocan funciones de la base de datos. `persona_ha_ido` y `registrar_asistencias` no las puede llamar nadie desde fuera (comprobado con la clave pública).
+- `puedo_organizar()` (con sesión; devuelve si el que llama puede) y `equipo_permiso_organizar()` (comprueba `soy_equipo()`; no devuelve correos ni lista de personas) se pueden llamar con sesión a propósito: salen en el revisor de Supabase como avisos, como las demás funciones de este tipo.
+- La política «publicar_mi_borrador» exige `puedo_organizar()`: no se puede publicar un borrador sin haber ido (probado: bloqueado por RLS).
+- Tarea de Supabase Cron `registrar-asistencias` cada 10 minutos.

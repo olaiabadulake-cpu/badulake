@@ -25,3 +25,23 @@ export async function teamAction(formData: FormData): Promise<void> {
   }
   redirect({ href: `/equipo?aviso=${aviso}`, locale });
 }
+
+// Dar o quitar el permiso de organizar a una persona, por su correo (Tarea 5.2, D-038). La base de
+// datos comprueba que quien llama es del equipo y no guarda ni devuelve el correo.
+export async function permissionAction(formData: FormData): Promise<void> {
+  const requested = String(formData.get("locale") ?? "");
+  const locale: Locale = Object.hasOwn(languages, requested) ? (requested as Locale) : "es";
+  const correo = String(formData.get("correo") ?? "").trim();
+  const dar = formData.get("kind") === "dar";
+  let aviso = "error";
+  if (accountsOpen && correo.length > 3 && correo.length <= 254) {
+    const supabase = await createSupabase();
+    const { data, error } = await supabase.rpc("equipo_permiso_organizar", { p_correo: correo, p_dar: dar });
+    if (error) console.error("[equipo]", "permiso", error.code, error.message);
+    else if (data === "ok") aviso = dar ? "permiso_dado" : "permiso_quitado";
+    else if (data === "no_existe") aviso = "permiso_no_existe";
+    else if (data === "ya_tenia") aviso = "permiso_ya_tenia";
+    else if (data === "no_tenia") aviso = "permiso_no_tenia";
+  }
+  redirect({ href: `/equipo?aviso=${aviso}`, locale });
+}

@@ -10,7 +10,7 @@ const initial: NewBadulakeState = { status: "idle" };
 const input =
   "campo";
 
-type Field = "title" | "description" | "date" | "zone" | "address" | "seats";
+type Field = "neighborhood" | "city" | "province" | "description" | "date" | "address" | "seats";
 
 export function NewBadulakeForm() {
   const t = useTranslations("Badulake");
@@ -42,9 +42,21 @@ export function NewBadulakeForm() {
       <input type="hidden" name="locale" value={locale} />
 
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="title" className="etiqueta">{t("title")}</label>
-        <input {...props("title")} type="text" maxLength={80} />
-        {note("title")}
+        <label htmlFor="neighborhood" className="etiqueta">{t("neighborhood")}</label>
+        <input {...props("neighborhood")} type="text" maxLength={40} autoComplete="off" />
+        {note("neighborhood")}
+      </div>
+
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="city" className="etiqueta">{t("city")}</label>
+        <input {...props("city")} type="text" maxLength={40} autoComplete="off" />
+        {note("city")}
+      </div>
+
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="province" className="etiqueta">{t("province")}</label>
+        <input {...props("province")} type="text" maxLength={30} autoComplete="off" />
+        {note("province")}
       </div>
 
       <div className="flex flex-col gap-1.5">
@@ -60,12 +72,6 @@ export function NewBadulakeForm() {
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="zone" className="etiqueta">{t("zone")}</label>
-        <input {...props("zone")} type="text" maxLength={80} />
-        {note("zone")}
-      </div>
-
-      <div className="flex flex-col gap-1.5">
         <label htmlFor="address" className="etiqueta">{t("address")}</label>
         <input {...props("address")} type="text" maxLength={200} autoComplete="off" />
         {note("address")}
@@ -77,6 +83,7 @@ export function NewBadulakeForm() {
         {note("seats")}
       </div>
 
+      {err.notYet && <p role="alert" className="error-texto">{t("errors.notYet")}</p>}
       {err.generic && (
         <p role="alert" className="error-texto">{t("errors.generic")}</p>
       )}

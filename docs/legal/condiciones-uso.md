@@ -38,7 +38,7 @@ Al crear una cuenta o usar la app aceptas estas condiciones, el [Aviso legal](av
 
 ## 4. Cómo funcionan los badulakes
 
-- **Organizar.** Quien organiza crea el badulake con título, descripción, fecha y hora, zona o barrio, plazas (de 5 a 10) y dirección exacta. Puede guardarlo como borrador o publicarlo. Es quien decide dónde y cuándo se celebra y quien se responsabiliza de que sea un lugar adecuado.
+- **Organizar.** Para organizar hay que haber ido antes a un badulake (el equipo puede dar permiso a las primeras personas). Quien organiza crea el badulake con barrio, ciudad y provincia (el título es siempre el lugar, no un tema), descripción, fecha y hora, plazas (de 5 a 10) y dirección exacta. Puede guardarlo como borrador o publicarlo. Es quien decide dónde y cuándo se celebra y quien se responsabiliza de que sea un lugar adecuado.
 - **Apuntarse.** Las personas con cuenta ven los badulakes publicados (sin dirección y sin saber quién los organiza) y se apuntan si quedan plazas. Quien se apunta ve la dirección exacta y puede añadir la cita al calendario. La organizadora ve cuántas personas se han apuntado, no quiénes.
 - **Cancelar.** Si no puedes ir, bórrate del badulake cuanto antes para dejar la plaza a otra persona. Si organizas y no puedes celebrarlo, avisa por los medios que ofrezca la app.
 - Los datos del badulake se borran solos: la dirección al día siguiente, el resto a los 30 días (ver Política de privacidad).

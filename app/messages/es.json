@@ -37,7 +37,7 @@
       },
       "s02": {
         "title": "2. Qué datos guardamos y para qué",
-        "body": "Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni fecha de nacimiento.\n- **Lista de espera.** Tu correo, tu zona o barrio, el idioma en que quieres el aviso, y cuándo diste tu permiso y cuándo te apuntaste. Para avisarte del lanzamiento de Badulake.\n- **Tu cuenta.** Tu correo y tu contraseña (cifrada: nadie puede leerla), tu idioma y la fecha en que se comprobó que eres mayor de edad. Para que puedas entrar y usar la app. Nuestro proveedor de cuentas guarda además las sesiones abiertas, con la dirección IP y el navegador, solo para mantener tu sesión y proteger tu cuenta.\n- **Tu fecha de nacimiento.** Solo se usa en el momento de crear la cuenta para comprobar que tienes 18 años o más. La base de datos la borra antes de guardar la cuenta: **no queda guardada**.\n- **Los badulakes que organizas.** Título, descripción, fecha y hora, zona o barrio, número de plazas, estado (borrador o publicado) y la dirección exacta. Para que otras personas lo encuentren y puedan ir.\n- **Los badulakes a los que te apuntas.** Cuál y cuándo, y si entraste desde la lista de espera. Para reservarte la plaza, no pasarnos del cupo, enseñarte la dirección y avisarte.\n- **Las listas de espera de los badulakes.** Si un badulake está completo, en qué lista estás y desde cuándo. Para darte la plaza que se libere, por orden de llegada, y decirte qué puesto tienes.\n- **El día del badulake.** Si quien organiza usa el «Modo badulake»: el nombre (o apodo) que escribe a mano para reconocerte, si has venido, cuántos objetos has aportado por tipo (ropa, calzado, accesorios y otros) y tu turno en los sorteos de ese día. Para ordenar el intercambio. Solo lo ve quien organiza; tú ves solo tu turno.\n- **Datos técnicos de seguridad.** Un contador de intentos (entrar, crear cuenta, apuntarse) que usa solo una huella cifrada de tu conexión y vive unos minutos en la memoria del servidor; y los registros técnicos del servidor, que solo guardan códigos de error, nunca correos ni direcciones.\n- **Denuncias y suspensiones.** Si denuncias un badulake, guardamos qué badulake, el motivo que elijas, el texto opcional de hasta 300 letras que escribas y quién denuncia (un código de tu cuenta, no tu nombre). Si una cuenta incumple las condiciones y se suspende, guardamos que está suspendida y desde cuándo. Es para atender quejas, ocultar badulakes y proteger a la comunidad. No escribas datos personales de nadie en el texto de una denuncia.\n- **Lo que escribas tú.** El título y la descripción de un badulake son texto libre. **No escribas datos personales tuyos ni de otras personas** (teléfonos, apellidos, datos de salud…): se verían por las demás personas con cuenta.\nNo usamos analítica, publicidad ni perfiles, ni tomamos decisiones automáticas sobre ti.\n- **Lista de interés.** Si marcas «Me interesa» en VIP o BaduCoins (ideas que hoy no existen y no cuestan nada), guardamos solo la opción y la fecha. Para medir el interés; puedes quitarla cuando quieras."
+        "body": "Guardamos lo mínimo. **No pedimos ni guardamos** tu nombre, teléfono, foto ni fecha de nacimiento.\n- **Lista de espera.** Tu correo, tu zona o barrio, el idioma en que quieres el aviso, y cuándo diste tu permiso y cuándo te apuntaste. Para avisarte del lanzamiento de Badulake.\n- **Tu cuenta.** Tu correo y tu contraseña (cifrada: nadie puede leerla), tu idioma y la fecha en que se comprobó que eres mayor de edad. Para que puedas entrar y usar la app. Nuestro proveedor de cuentas guarda además las sesiones abiertas, con la dirección IP y el navegador, solo para mantener tu sesión y proteger tu cuenta.\n- **Tu fecha de nacimiento.** Solo se usa en el momento de crear la cuenta para comprobar que tienes 18 años o más. La base de datos la borra antes de guardar la cuenta: **no queda guardada**.\n- **Los badulakes que organizas.** Título, descripción, fecha y hora, zona o barrio, número de plazas, estado (borrador o publicado) y la dirección exacta. Para que otras personas lo encuentren y puedan ir.\n- **Los badulakes a los que te apuntas.** Cuál y cuándo, y si entraste desde la lista de espera. Para reservarte la plaza, no pasarnos del cupo, enseñarte la dirección y avisarte.\n- **Las listas de espera de los badulakes.** Si un badulake está completo, en qué lista estás y desde cuándo. Para darte la plaza que se libere, por orden de llegada, y decirte qué puesto tienes.\n- **El día del badulake.** Si quien organiza usa el «Modo badulake»: el nombre (o apodo) que escribe a mano para reconocerte, si has venido, cuántos objetos has aportado por tipo (ropa, calzado, accesorios y otros) y tu turno en los sorteos de ese día. Para ordenar el intercambio. Solo lo ve quien organiza; tú ves solo tu turno.\n- **Datos técnicos de seguridad.** Un contador de intentos (entrar, crear cuenta, apuntarse) que usa solo una huella cifrada de tu conexión y vive unos minutos en la memoria del servidor; y los registros técnicos del servidor, que solo guardan códigos de error, nunca correos ni direcciones.\n- **Denuncias y suspensiones.** Si denuncias un badulake, guardamos qué badulake, el motivo que elijas, el texto opcional de hasta 300 letras que escribas y quién denuncia (un código de tu cuenta, no tu nombre). Si una cuenta incumple las condiciones y se suspende, guardamos que está suspendida y desde cuándo. Es para atender quejas, ocultar badulakes y proteger a la comunidad. No escribas datos personales de nadie en el texto de una denuncia.\n- **Lo que escribas tú.** La descripción de un badulake es texto libre (el título se forma solo con el barrio, la ciudad y la provincia que indicas). **No escribas datos personales tuyos ni de otras personas** (teléfonos, apellidos, datos de salud…): se verían por las demás personas con cuenta.\nNo usamos analítica, publicidad ni perfiles, ni tomamos decisiones automáticas sobre ti.\n- **Haber ido a un badulake.** Para organizar un badulake hay que haber ido antes a uno. Guardamos solo que ya puedes organizar (y si fue por haber ido o por permiso del equipo) y desde cuándo, sin saber a qué badulake fuiste. Para que se cumpla esa regla; se borra al borrar tu cuenta.\n- **Lista de interés.** Si marcas «Me interesa» en VIP o BaduCoins (ideas que hoy no existen y no cuestan nada), guardamos solo la opción y la fecha. Para medir el interés; puedes quitarla cuando quieras."
       },
       "s03": {
         "title": "3. Por qué podemos usar tus datos (bases legales)",
@@ -53,7 +53,7 @@
       },
       "s06": {
         "title": "6. Cuánto tiempo guardamos tus datos",
-        "body": "Muchos se borran solos cada noche con una tarea programada:\n- **Dirección exacta de un badulake:** al día siguiente de celebrarse, o en el momento en que se cancela.\n- **El badulake y quién se apuntó:** 30 días después de su fecha, también si se canceló (margen para quejas o denuncias).\n- **Lista de espera de un badulake:** cuando empieza el badulake, cuando sales de ella o cuando entras.\n- **Lo del día del badulake** (nombres escritos, objetos contados y turnos): al día siguiente de celebrarse.\n- **Denuncias:** se borran con el badulake denunciado, 30 días después de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se levante la suspensión o se borre la cuenta. Si borras tu cuenta, tus denuncias siguen, pero sin el código que te identificaba.\n- **Lista de espera del lanzamiento:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.\n- **Cuenta:** hasta que la borres tú con el botón «Borrar mi cuenta» (o la pidas por correo). Huella del correo de una cuenta suspendida y borrada: 12 meses. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.\n- **Registro de accesos de la cuenta** (con IP): 30 días.\n- **Contador de intentos:** no se guarda; vive unos minutos en la memoria del servidor.\n- Después, los datos se mantienen bloqueados solo el tiempo que la ley exija para posibles responsabilidades. **[A CONFIRMAR POR ASESORÍA]**"
+        "body": "Muchos se borran solos cada noche con una tarea programada:\n- **Dirección exacta de un badulake:** al día siguiente de celebrarse, o en el momento en que se cancela.\n- **El badulake y quién se apuntó:** 30 días después de su fecha, también si se canceló (margen para quejas o denuncias).\n- **Lista de espera de un badulake:** cuando empieza el badulake, cuando sales de ella o cuando entras.\n- **Poder organizar** (haber ido a un badulake o permiso del equipo): mientras tengas cuenta.\n- **Lo del día del badulake** (nombres escritos, objetos contados y turnos): al día siguiente de celebrarse.\n- **Denuncias:** se borran con el badulake denunciado, 30 días después de celebrarse. Una cuenta suspendida se mantiene como suspendida hasta que se levante la suspensión o se borre la cuenta. Si borras tu cuenta, tus denuncias siguen, pero sin el código que te identificaba.\n- **Lista de espera del lanzamiento:** al avisarte del lanzamiento y, como mucho, a los 12 meses de apuntarte.\n- **Cuenta:** hasta que la borres tú con el botón «Borrar mi cuenta» (o la pidas por correo). Huella del correo de una cuenta suspendida y borrada: 12 meses. Si no usas la sesión en 90 días, se cierra y tendrás que entrar de nuevo.\n- **Registro de accesos de la cuenta** (con IP): 30 días.\n- **Contador de intentos:** no se guarda; vive unos minutos en la memoria del servidor.\n- Después, los datos se mantienen bloqueados solo el tiempo que la ley exija para posibles responsabilidades. **[A CONFIRMAR POR ASESORÍA]**"
       },
       "s07": {
         "title": "7. Tus derechos y cómo ejercerlos",
@@ -172,19 +172,25 @@
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
+    "notYetTitle": "Todavía no puedes organizar un badulake",
+    "notYetBody": "Para conocer bien las reglas, solo puede organizar un badulake quien ya ha ido a uno. Cuando hayas ido a un badulake (apuntada y sin que la organizadora te marque «No ha venido»), podrás organizar el tuyo. Mientras tanto, mira los próximos badulakes y apúntate a uno.",
+    "notYetLink": "Ver los próximos badulakes",
     "yourTitle": "Tu badulake",
     "loading": "Cargando…",
-    "title": "Título",
+    "zone": "Barrio",
+    "neighborhood": "Barrio",
+    "city": "Ciudad o pueblo",
+    "province": "Provincia",
     "description": "Descripción corta",
     "date": "Fecha y hora",
-    "zone": "Zona o barrio",
     "address": "Dirección exacta",
     "seats": "Plazas",
     "hints": {
-      "title": "Entre 3 y 80 letras.",
-      "description": "Qué vais a intercambiar y cómo. Máximo 500 letras.",
+      "neighborhood": "Ej.: Gràcia. El nombre del badulake se forma solo con el lugar.",
+      "city": "Ej.: Barcelona. El nombre será «Badulake de Gràcia, Barcelona».",
+      "province": "Ej.: Barcelona. Se verá en público, igual que el barrio y la ciudad.",
+      "description": "Cuéntanos cómo será la quedada (ambiente, qué hay que saber). Máximo 500 letras.",
       "date": "Hora de Madrid. Al menos 2 días después de hoy, para que dé tiempo a juntar a 5 personas.",
-      "zone": "Se verá en público. Ej.: Deusto, Bilbao.",
       "address": "Solo la verás tú; se la enseñaremos a quien se apunte.",
       "seats": "Entre 5 y 10 personas."
     },
@@ -195,11 +201,13 @@
     "statusPublished": "Publicado: ya lo pueden ver las personas con cuenta.",
     "addressPrivate": "La dirección exacta es privada: solo la ves tú.",
     "errors": {
-      "title": "El título debe tener entre 3 y 80 letras.",
+      "neighborhood": "Escribe el barrio (entre 2 y 40 letras).",
+      "city": "Escribe la ciudad o el pueblo (entre 2 y 40 letras).",
+      "province": "Escribe la provincia (entre 2 y 30 letras).",
       "description": "Cuéntanos algo del badulake (máximo 500 letras).",
       "date": "Elige una fecha y hora al menos 2 días después de hoy.",
-      "zone": "Dinos la zona o el barrio.",
       "address": "Escribe la dirección exacta.",
+      "notYet": "Todavía no puedes organizar un badulake: para conocer las reglas, primero hay que ir a uno.",
       "seats": "Las plazas deben ser entre 5 y 10.",
       "generic": "Algo ha fallado. Inténtalo de nuevo en un rato."
     },
@@ -226,7 +234,8 @@
       "en_espera": "No quedaban plazas: te has puesto en la lista de espera.",
       "espera_salida": "Has salido de la lista de espera.",
       "cancelado": "Has cancelado el badulake. Ya no admite inscripciones.",
-      "no_publicable": "No se puede publicar: tiene que faltar al menos 2 días para que dé tiempo a juntar a 5 personas."
+      "no_publicable": "No se puede publicar: tiene que faltar al menos 2 días para que dé tiempo a juntar a 5 personas.",
+      "aun_no_puedes": "Todavía no puedes publicar un badulake: para conocer las reglas, primero hay que ir a uno."
     },
     "back": "Volver a los badulakes",
     "mine": "Lo organizas tú",
@@ -342,7 +351,7 @@
         },
         "s04": {
           "title": "4. Cómo funcionan los badulakes",
-          "body": "- **Organizar.** Quien organiza crea el badulake con título, descripción, fecha y hora, zona o barrio, plazas (de 5 a 10) y dirección exacta. Puede guardarlo como borrador o publicarlo. Es quien decide dónde y cuándo se celebra y quien se responsabiliza de que sea un lugar adecuado.\n- **Apuntarse.** Las personas con cuenta ven los badulakes publicados (sin dirección y sin saber quién los organiza) y se apuntan si quedan plazas. Quien se apunta ve la dirección exacta y puede añadir la cita al calendario. La organizadora ve cuántas personas se han apuntado, no quiénes.\n- **Cancelar.** Si no puedes ir, bórrate del badulake cuanto antes para dejar la plaza a otra persona. Si organizas y no puedes celebrarlo, avisa por los medios que ofrezca la app.\n- Los datos del badulake se borran solos: la dirección al día siguiente, el resto a los 30 días (ver Política de privacidad)."
+          "body": "- **Organizar.** Para organizar hay que haber ido antes a un badulake (el equipo puede dar permiso a las primeras personas). Quien organiza crea el badulake con barrio, ciudad y provincia (el título es siempre el lugar, no un tema), descripción, fecha y hora, plazas (de 5 a 10) y dirección exacta. Puede guardarlo como borrador o publicarlo. Es quien decide dónde y cuándo se celebra y quien se responsabiliza de que sea un lugar adecuado.\n- **Apuntarse.** Las personas con cuenta ven los badulakes publicados (sin dirección y sin saber quién los organiza) y se apuntan si quedan plazas. Quien se apunta ve la dirección exacta y puede añadir la cita al calendario. La organizadora ve cuántas personas se han apuntado, no quiénes.\n- **Cancelar.** Si no puedes ir, bórrate del badulake cuanto antes para dejar la plaza a otra persona. Si organizas y no puedes celebrarlo, avisa por los medios que ofrezca la app.\n- Los datos del badulake se borran solos: la dirección al día siguiente, el resto a los 30 días (ver Política de privacidad)."
         },
         "s05": {
           "title": "5. Intercambio sin dinero",
@@ -454,7 +463,19 @@
       "mostrar": "Badulake visible otra vez.",
       "suspender": "Cuenta suspendida: no puede entrar y sus badulakes están ocultos.",
       "resolver": "Denuncia resuelta.",
+      "permiso_dado": "Permiso dado: esa persona ya puede organizar badulakes.",
+      "permiso_quitado": "Permiso quitado.",
+      "permiso_no_existe": "No hay ninguna cuenta con ese correo.",
+      "permiso_ya_tenia": "Esa persona ya podía organizar.",
+      "permiso_no_tenia": "Esa persona no tenía permiso del equipo (si ya ha ido a un badulake, seguirá pudiendo organizar).",
       "error": "Algo ha fallado. Inténtalo de nuevo."
+    },
+    "permission": {
+      "title": "Permiso para organizar",
+      "help": "Para organizar un badulake hay que haber ido antes a uno. Si alguien tiene que empezar sin haber ido (las primeras personas), dale permiso aquí con su correo. El correo no se guarda y esta pantalla nunca enseña quién tiene permiso.",
+      "email": "Correo de la persona",
+      "give": "Dar permiso",
+      "remove": "Quitar permiso"
     },
     "reportsTitle": "Denuncias",
     "stats": {

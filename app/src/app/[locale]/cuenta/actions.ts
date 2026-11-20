@@ -1,5 +1,6 @@
 "use server";
 
+import { getTranslations } from "next-intl/server";
 import { redirect } from "@/i18n/navigation";
 import { languages, type Locale } from "@/i18n/languages";
 import { accountsOpen, createSupabase } from "@/lib/supabase/server";
@@ -203,14 +204,15 @@ export async function changePassword(_prev: SimpleState, formData: FormData): Pr
   return { status: "done" };
 }
 
-// Borrar mi cuenta. Hay que escribir la palabra de confirmación (BORRAR / EZABATU).
+// Borrar mi cuenta. Hay que escribir la palabra de confirmación de su lengua (BORRAR, EZABATU,
+// DELETE…), la misma que enseña la página: sale de Account.deleteWord en messages/<lengua>.json.
 // La función de la base de datos solo borra la cuenta de quien llama (supabase/borrar_cuenta.sql).
-const CONFIRM_WORD: Record<string, string> = { eu: "EZABATU" };
 export async function deleteAccount(_prev: SimpleState, formData: FormData): Promise<SimpleState> {
   if (!accountsOpen) return { status: "error", errors: { generic: true } };
   const locale = readLocale(formData);
-  const word = CONFIRM_WORD[locale] ?? "BORRAR";
-  if (String(formData.get("confirm") ?? "").trim().toUpperCase() !== word) {
+  const t = await getTranslations({ locale, namespace: "Account" });
+  const word = t("deleteWord").toLocaleUpperCase(locale);
+  if (String(formData.get("confirm") ?? "").trim().toLocaleUpperCase(locale) !== word) {
     return { status: "error", errors: { confirm: true } };
   }
   if (await tooManyAttempts("borrar", 5, 15)) return { status: "error", errors: { tooMany: true } };

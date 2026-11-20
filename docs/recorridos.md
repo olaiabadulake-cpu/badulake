@@ -59,13 +59,15 @@ Esto aparece en la portada y en su propia página, «Qué es un badulake», enla
 
 ### Recorrido E · Organizar un badulake
 
-1. Pulso «Crear un badulake» (en el menú o en la lista).
-2. Relleno título, descripción, fecha y hora (al menos 2 días después de hoy, para que dé tiempo a juntar a 5 personas), zona, dirección exacta y plazas (de 5 a 10). Cada campo explica qué poner; los errores salen junto al campo y no se pierde nada.
+1. Pulso «Crear un badulake» (en el menú o en la lista). **Si todavía no he ido a ningún badulake** (Tarea 5.2, D-038), en vez del formulario veo «Todavía no puedes organizar un badulake», con una frase que explica por qué (para conocer las reglas, solo organiza quien ya ha ido a uno) y el botón «Ver los próximos badulakes». Cuenta como haber ido estar apuntada a un badulake ya celebrado sin que la organizadora me marcara «No ha venido» (o haber organizado uno celebrado), o tener permiso del equipo. Si intento publicar un borrador sin poder, el aviso dice lo mismo.
+2. Relleno **barrio, ciudad o pueblo y provincia** (Tarea 5.1, D-037), descripción, fecha y hora (al menos 2 días después de hoy, para que dé tiempo a juntar a 5 personas), dirección exacta y plazas (de 5 a 10). **No escribo título:** el nombre se forma solo con el lugar («Badulake de Gràcia, Barcelona»; si la provincia es otra, «Badulake de Deusto, Bilbao (Bizkaia)»), nunca con un tema. Cada campo explica qué poner; los errores salen junto al campo y no se pierde nada.
 3. **Pulso «Publicar»** y queda publicado de una vez (antes había que guardar borrador y luego publicar: un paso de más). Si aún no lo quiero publicar, pulso «Guardar como borrador».
 4. Veo «Tu badulake» con un aviso claro: publicado («Ya lo pueden ver las personas con cuenta») o borrador («De momento solo lo ves tú», con el botón «Publicar»).
 5. Veo cuántas plazas están ocupadas, y que la dirección exacta solo la ven quienes se apunten.
 6. Lo encuentro después en la lista de badulakes, marcado como mío.
 7. Si 24 horas antes no hay 5 personas apuntadas, se cancela solo y me sale el aviso en «Tu cuenta». Si quiero cancelarlo yo, abro «Cancelar este badulake», leo qué pasará (se cancela para todas y se borra la dirección; no se puede deshacer) y pulso «Sí, cancelarlo».
+
+**Nota para el equipo (Tarea 5.2):** en `/equipo`, «Permiso para organizar»: escribe el correo de la persona y pulsa «Dar permiso» (o «Quitar permiso»). Dice «Permiso dado», «No hay ninguna cuenta con ese correo» o «Esa persona ya podía organizar». No se guarda el correo ni se muestra quién tiene permiso. El equipo puede organizar siempre.
 
 ### Recorrido F · Mi cuenta y salir
 

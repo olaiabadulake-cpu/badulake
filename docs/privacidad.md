@@ -44,12 +44,23 @@ Ficha hecha el 19/11/2026 (Tarea 9 del plan maestro, decisión D-024). Es el **b
 
 | | |
 |---|---|
-| **Datos** | Título, descripción, fecha y hora, zona o barrio, plazas, estado (borrador o publicado) y quién lo organiza (tabla `badulakes`). La **dirección exacta** va aparte (tabla `badulakes_direccion`). |
+| **Datos** | Título (se forma solo con barrio, ciudad y provincia: «Badulake de Gràcia, Barcelona», D-037), descripción, fecha y hora, zona o barrio, plazas, estado (borrador o publicado) y quién lo organiza (tabla `badulakes`). La **dirección exacta** va aparte (tabla `badulakes_direccion`). |
 | **Para qué** | Que otras personas encuentren el badulake y puedan ir. |
 | **Base legal propuesta** | Ejecución del servicio (6.1.b). |
 | **Quién lo ve** | Un badulake publicado lo ven las personas con cuenta, **sin dirección y sin saber quién lo organiza** (corregido en esta tarea: antes se podía leer el identificador de la organizadora). Los borradores, solo la organizadora. La **dirección**, solo la organizadora y las personas apuntadas. |
 | **Cuánto tiempo** | La **dirección se borra al día siguiente** del badulake, o **en el momento en que se cancela** (Tarea 20). El **badulake, 30 días después** (margen para quejas o denuncias). |
 | **Aviso para la Asesoría** | La dirección suele ser la de una casa: es el dato más delicado de la app. La descripción es texto libre: la organizadora podría escribir datos personales (lo explicarán las condiciones de uso, Tarea 12). |
+
+### 2.3.1 Haber ido a un badulake antes de organizar (Tarea 5.2, D-038)
+
+| | |
+|---|---|
+| **Datos** | Por persona, una fila en `permiso_organizar`: identificador de la cuenta, el motivo (`asistencia` o `equipo`) y la fecha. **Sin enlace al badulake al que fue.** El panel `/equipo` recibe un correo para dar o quitar el permiso, pero ese correo no se guarda y el panel nunca enseña quién tiene permiso. |
+| **Para qué** | Que solo organice quien ya ha ido a un badulake y conoce las reglas (decidido por OlaIA). |
+| **Base legal propuesta** | Ejecución del servicio (6.1.b) e interés legítimo en la seguridad de la comunidad (6.1.f). |
+| **Quién lo ve** | Nadie desde la app (tabla sin permisos): solo las funciones de la base de datos. Cada persona sabe si puede organizar o no, y nada más. |
+| **Cuánto tiempo** | Mientras exista la cuenta; se borra con ella (Tarea 21). Se necesita guardarlo porque las inscripciones se borran a los 30 días. |
+| **Aviso para la Asesoría** | Es un dato de comportamiento mínimo (haber asistido). «Haber ido» = estar apuntada a un badulake celebrado sin que la organizadora marcara «No ha venido» (esa marca es un dato del día, que se borra al día siguiente). Los correos que mira el equipo para dar permiso no se guardan. |
 
 ### 2.4 Inscripciones (apuntarse a un badulake)
 
@@ -140,6 +151,7 @@ Se aplican **solos cada noche a las 03:15 (hora UTC)** con una tarea programada 
 | Dirección exacta de un badulake cancelado | En el momento de cancelarse |
 | Badulake e inscripciones (también los cancelados) | 30 días después de la fecha |
 | Lista de espera de un badulake | Al empezar el badulake (o al salir de ella o entrar) |
+| Poder organizar (haber ido o permiso del equipo) | Con la cuenta |
 | Lo del día del badulake (nombres escritos, objetos contados, turnos y sorteos) | 1 día después de celebrarse |
 | Lista de espera | Al avisar del lanzamiento y, como mucho, a los 12 meses del alta |
 | Sesiones abandonadas | A los 90 días sin usarse |

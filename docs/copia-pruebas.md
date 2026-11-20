@@ -75,3 +75,5 @@ Se encienden y apagan **solo en la copia**. Después de cambiar una variable en 
 ## Por qué producción no puede activarlos
 
 Los fallos están en el código de `main`, pero `app/src/lib/pruebas.ts` solo los activa si **a la vez**: `PRUEBAS_COPIA=1`, `PRUEBAS_SUPABASE_REF` es una referencia válida **y coincide con el dominio de `SUPABASE_URL`**, y el interruptor propio vale `1`. Esas variables no existen en el proyecto de Vercel real. Aunque se pusieran por error allí, la base de datos real no coincidiría con la referencia anotada; y la función `pruebas_asistentes` no existe en la base de datos real. Comprobaciones hechas: ver el diario.
+
+**Actualizada el 20/11/2026 (tareas 5.1 y 5.2, D-037 y D-038):** la copia ya tiene `titulo_lugar.sql` y `haber_ido.sql` (también los carga `juntar-esquema.sh`), los títulos inventados son «Badulake de <barrio>, <ciudad> (<provincia>)» y las vecinas 1 a 7 ya pueden organizar; Unai (8) no, para enseñar el aviso «Todavía no puedes organizar un badulake». El equipo (cuenta Equipo) puede darle permiso desde `/equipo`.
