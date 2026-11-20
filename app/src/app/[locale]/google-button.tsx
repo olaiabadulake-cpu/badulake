@@ -1,9 +1,11 @@
 import { getLocale, getTranslations } from "next-intl/server";
+import { googleOn } from "@/lib/supabase/server";
 
 // Botón «Continuar con Google» (Tarea 4.1, D-039), en /entrar y /registro.
-// Es un enlace normal (funciona sin JavaScript) a /api/cuenta/google, que manda a Google.
+// Solo sale con GOOGLE_ACTIVADO=1. Es un enlace normal (funciona sin JavaScript) a /api/cuenta/google, que manda a Google.
 // La «G» de colores es el logotipo que Google pide usar en estos botones.
 export async function GoogleButton() {
+  if (!googleOn) return null;
   const t = await getTranslations("Account");
   const locale = await getLocale();
   return (

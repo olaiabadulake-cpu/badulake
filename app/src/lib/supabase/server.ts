@@ -11,6 +11,10 @@ const key = process.env.SUPABASE_PUBLISHABLE_KEY;
 // En producción está apagado hasta que exista el aviso de privacidad definitivo (D-019).
 export const accountsOpen = Boolean(url && key) && process.env.CUENTAS_ABIERTAS === "1";
 
+// «Continuar con Google» (Tarea 4.1, D-039) solo sale con GOOGLE_ACTIVADO=1, es decir, cuando el
+// proveedor Google ya está configurado en ese Supabase. Sin ella, el botón no aparece.
+export const googleOn = accountsOpen && process.env.GOOGLE_ACTIVADO === "1";
+
 // Cliente de Supabase con la sesión de la persona (guardada en cookies).
 // Hay que crear uno nuevo en cada petición.
 export async function createSupabase() {

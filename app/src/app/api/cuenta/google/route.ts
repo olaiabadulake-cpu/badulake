@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { languages } from "@/i18n/languages";
-import { accountsOpen, createSupabase } from "@/lib/supabase/server";
+import { createSupabase, googleOn } from "@/lib/supabase/server";
 import { tooManyAttempts } from "@/lib/rate-limit";
 import { siteOrigin } from "@/lib/site-origin";
 
@@ -12,7 +12,7 @@ export async function GET(request: NextRequest) {
   const locale = Object.hasOwn(languages, requested) ? requested : "es";
   const to = (path: string) => NextResponse.redirect(new URL(`/${locale}${path}`, request.url), 303);
 
-  if (!accountsOpen) return to("");
+  if (!googleOn) return to("");
   // Límite de intentos (D-023): 20 cada 15 minutos desde la misma conexión.
   if (await tooManyAttempts("google", 20, 15)) return to("/entrar?aviso=google");
 
