@@ -5,6 +5,7 @@ import { redirect } from "@/i18n/navigation";
 import { languages, type Locale } from "@/i18n/languages";
 import { accountsOpen, createSupabase } from "@/lib/supabase/server";
 import { tooManyAttempts } from "@/lib/rate-limit";
+import { siteOrigin } from "@/lib/site-origin";
 
 export type SignUpState = {
   status: "idle" | "check-email" | "error";
@@ -17,17 +18,6 @@ export type SignInState = {
 };
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-
-// Dirección de la web para el enlace del correo de verificación. Es fija: no se toma de la
-// petición, para que nadie pueda hacer que el enlace lleve a otra web (D-023).
-function siteOrigin(): string {
-  if (process.env.SITE_URL) return process.env.SITE_URL;
-  if (process.env.VERCEL_ENV === "production" && process.env.VERCEL_PROJECT_PRODUCTION_URL) {
-    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
-  }
-  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
-  return "http://localhost:3000";
-}
 
 function readLocale(formData: FormData): Locale {
   const requested = String(formData.get("locale") ?? "");
@@ -95,6 +85,40 @@ export async function signUp(_prev: SignUpState, formData: FormData): Promise<Si
 
   // Mismo mensaje aunque el correo ya tuviera cuenta: no se dice quién está registrado.
   return { status: "check-email" };
+}
+
+// ---- Entrar con Google (Tarea 4.1, D-039) ----
+
+export type AgeState = {
+  status: "idle" | "deleted" | "error";
+  errors?: Partial<Record<"birthdate" | "generic" | "tooMany", true>>;
+};
+
+// La primera vez que alguien entra con Google hay que confirmar los 18 años (Google no lo dice).
+// Se comprueba aquí y otra vez en la base de datos (confirmar_mayoria_edad, supabase/google.sql):
+// si es menor, la cuenta se borra en el acto. La fecha no se guarda en ningún sitio.
+export async function confirmAge(_prev: AgeState, formData: FormData): Promise<AgeState> {
+  if (!accountsOpen) return { status: "error", errors: { generic: true } };
+  const locale = readLocale(formData);
+  const birthdate = String(formData.get("birthdate") ?? "");
+  const age = ageFrom(birthdate);
+  if (age === null) return { status: "error", errors: { birthdate: true } };
+  if (await tooManyAttempts("edad", 10, 15)) return { status: "error", errors: { tooMany: true } };
+
+  const supabase = await createSupabase();
+  const { data, error } = await supabase.rpc("confirmar_mayoria_edad", { p_fecha: birthdate, p_idioma: locale });
+  if (error) {
+    console.error("[edad]", error.code, error.message);
+    return { status: "error", errors: { generic: true } };
+  }
+  if (data === "fecha") return { status: "error", errors: { birthdate: true } };
+  if (data === "menor") {
+    // La cuenta ya no existe: se cierra también la sesión en este navegador.
+    await supabase.auth.signOut({ scope: "local" });
+    return { status: "deleted" };
+  }
+  redirect({ href: "/badulakes", locale });
+  return { status: "idle" };
 }
 
 export async function signIn(_prev: SignInState, formData: FormData): Promise<SignInState> {

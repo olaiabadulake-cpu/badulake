@@ -47,9 +47,13 @@ export async function getCurrentUser(): Promise<CurrentUser | null> {
   // RLS: con esta sesión solo se puede leer la fila propia de `perfiles`.
   const { data: profile } = await supabase
     .from("perfiles")
-    .select("idioma")
+    .select("idioma, mayoria_edad_comprobada_en")
     .eq("id", data.user.id)
     .maybeSingle();
+
+  // Cuenta de Google que aún no ha confirmado su edad (D-039): para la web es como si no hubiera
+  // entrado. La base de datos tampoco le deja hacer nada. /entrar la manda a /confirmar-edad.
+  if (!profile || !profile.mayoria_edad_comprobada_en) return null;
 
   return { id: data.user.id, email: data.user.email ?? "", language: profile?.idioma ?? "es" };
 }
@@ -61,4 +65,14 @@ export function idsOf(data: unknown): string[] {
   return data
     .map((x) => (typeof x === "string" ? x : (x as Record<string, unknown>)?.mis_badulakes))
     .filter((x): x is string => typeof x === "string");
+}
+
+// ¿Hay una sesión de Google con la edad todavía sin confirmar? (D-039)
+export async function ageIsPending(): Promise<boolean> {
+  if (!accountsOpen) return false;
+  const supabase = await createSupabase();
+  const { data } = await supabase.auth.getUser();
+  if (!data.user) return false;
+  const { data: pending } = await supabase.rpc("edad_pendiente");
+  return pending === true;
 }

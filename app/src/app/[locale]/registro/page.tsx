@@ -4,6 +4,7 @@ import { contentLang } from "@/i18n/content-lang";
 import { getTranslations } from "next-intl/server";
 import { accountsOpen } from "@/lib/supabase/server";
 import { SignUpForm } from "./signup-form";
+import { GoogleButton } from "../google-button";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Account");
@@ -19,6 +20,7 @@ export default async function SignUp() {
     <div lang={await contentLang()} className="pagina">
       <h1 className="titulo-1">{t("signUpTitle")}</h1>
       <p className="text-lg">{t("signUpIntro")}</p>
+      <GoogleButton />
       <SignUpForm />
     </div>
   );

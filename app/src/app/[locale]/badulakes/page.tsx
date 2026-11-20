@@ -95,9 +95,10 @@ async function List() {
     <ul className="flex flex-col gap-4">
       {visible.map((b) => {
         const count = taken.get(b.id) ?? 0;
-        const free = Math.max(0, b.plazas - count);
+        // La organizadora cuenta como una persona más (Tarea 20.1, D-040).
+        const free = Math.max(0, b.plazas - 1 - count);
         const cancelled = b.estado === "cancelado";
-        const confirmed = b.estado === "publicado" && count >= 5;
+        const confirmed = b.estado === "publicado" && count + 1 >= 5;
         const position = waiting.get(b.id);
         return (
           <li key={b.id}>
