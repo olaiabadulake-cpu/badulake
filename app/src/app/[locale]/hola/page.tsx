@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
+import { contentLang } from "@/i18n/content-lang";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/languages";
 import { accountsOpen } from "@/lib/supabase/server";
@@ -16,13 +17,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return { title: `${t("title")} · Badulake`, robots: { index: false } };
 }
 
-// Castellano, euskera y catalán tienen estos textos propios; el resto, el castellano (D-025).
-const own = new Set(["es", "eu", "ca"]);
-
 export default async function HolaPage() {
   const t = await getTranslations("Hola");
+  // Desde la tarea 23.1 las 44 lenguas tienen estos textos; si faltaran, se marcan como castellano (D-025).
+  const lang = await contentLang();
   const locale = await getLocale();
-  const lang = own.has(locale) ? locale : "es";
   const steps = ["step1", "step2", "step3"] as const;
 
   return (
