@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { contentLang } from "@/i18n/content-lang";
+import { teamLang } from "@/i18n/content-lang";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -19,7 +19,7 @@ export default async function TeamPage({ searchParams }: PageProps<"/[locale]/eq
   if (!accountsOpen) notFound();
   const t = await getTranslations("Team");
   return (
-    <div lang={await contentLang()} className="pagina">
+    <div lang={await teamLang()} className="pagina">
       <h1 className="titulo-1">{t("title")}</h1>
       <Suspense fallback={<p>{t("loading")}</p>}>
         <Panel searchParams={searchParams} />
@@ -107,7 +107,7 @@ async function Reports({ searchParams }: Pick<PageProps<"/[locale]/equipo">, "se
     "permiso_ya_tenia", "permiso_no_tenia", "error",
   ] as const;
   const notice = notices.find((n) => n === aviso) ?? null;
-  const date = new Intl.DateTimeFormat(await contentLang(), {
+  const date = new Intl.DateTimeFormat(await teamLang(), {
     dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Madrid",
   });
   const solid = "boton !text-base";
