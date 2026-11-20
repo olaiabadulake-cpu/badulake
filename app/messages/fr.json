@@ -69,7 +69,7 @@
     "ageIntro": "Badulake est réservé aux plus de 18 ans. Google ne nous indique pas votre âge : nous vous demandons donc votre date de naissance, une seule fois.",
     "ageSubmit": "Confirmer et continuer",
     "ageLeaveHint": "Si vous partez maintenant, le compte inachevé sera supprimé automatiquement sous 24 heures.",
-    "ageLeave": "Partir sans terminer",
+    "ageLeave": "Quitter sans terminer",
     "ageDeleted": "Désolés : Badulake est réservé aux plus de 18 ans. Nous avons supprimé le compte qui venait d'être créé avec Google.",
     "accountTitle": "Votre compte",
     "loading": "Chargement…",
@@ -94,7 +94,7 @@
       "verificada": "Votre adresse e-mail est vérifiée. Vous pouvez maintenant vous connecter.",
       "cuenta": "Pour cela, vous devez vous connecter à votre compte. Pas encore de compte ? Créez-en un, c'est gratuit.",
       "borrada": "Votre compte et vos données ont été supprimés.",
-      "google": "Impossible de vous connecter avec Google. Réessayez ou utilisez votre adresse e-mail et votre mot de passe."
+      "google": "La connexion avec Google a échoué. Réessayez ou utilisez votre adresse e-mail et votre mot de passe."
     },
     "interestTitle": "Des idées à l'étude",
     "interestIntro": "Elles n'existent pas encore et ne coûtent rien. Nous voulons juste savoir si elles vous intéressent, pour décider de la suite.",
