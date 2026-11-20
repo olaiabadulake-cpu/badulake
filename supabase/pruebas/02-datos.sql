@@ -49,7 +49,7 @@ from _vecinas;
 create temp table _b (n int, org int, titulo text, descr text, dias int, zona text, calle text, plazas int, id uuid default gen_random_uuid());
 insert into _b (n, org, titulo, descr, dias, zona, calle, plazas) values
   (1, 1, 'Badulake de Barrio del Olmo, Sant Boi de Llobregat (Barcelona)',     'Trae ropa y objetos que ya no uses y llévate otros. Sin dinero.', 5, 'Barrio del Olmo',          'Calle del Naranjo 12, 2.º (inventada)',  8),
-  (2, 2, 'Badulake de Colina del Tejo, Sant Boi de Llobregat (Barcelona)',     'Traemos lo que nos sobra y nos llevamos lo que nos gusta. Merienda compartida.', 6, 'Colina del Tejo',        'Plaza del Reloj Viejo 3 (inventada)',     5),
+  (2, 2, 'Badulake de Colina del Tejo, Sant Boi de Llobregat (Barcelona)',     'Traemos lo que nos sobra y nos llevamos lo que nos gusta. Merienda compartida.', 6, 'Colina del Tejo',        'Plaza del Reloj Viejo 3 (inventada)',     6),
   (3, 3, 'Badulake de Barrio de las Gaviotas, Cornellà de Llobregat (Barcelona)', 'Un rato entre vecinas para intercambiar sin dinero.',          8, 'Barrio de las Gaviotas', 'Calle de la Fuente Azul 7 (inventada)',   6),
   (4, 4, 'Badulake de Barrio del Roble, Bilbao (Bizkaia)',                     'Un rato para intercambiar lo que ya no usas. Cada quien trae lo que quiere.',   9, 'Barrio del Roble',       'Paseo de los Almendros 1 (inventado)',   10);
 
@@ -60,7 +60,8 @@ from _b b join _vecinas v on v.n = b.org;
 insert into public.badulakes_direccion (badulake_id, organizadora, direccion)
 select b.id, v.id, b.calle from _b b join _vecinas v on v.n = b.org;
 
--- 4. Inscripciones: el 1 casi sin gente, el 2 lleno (5 de 5) con 2 en lista de espera, el 3 con 5 (confirmado).
+-- 4. Inscripciones (la organizadora cuenta como una persona más, D-040): el 1 casi sin gente, el 2 lleno
+-- (5 apuntadas + la organizadora = 6 de 6) con 2 en lista de espera, el 3 lleno y confirmado (5 + 1 = 6 de 6).
 insert into public.inscripciones (badulake_id, persona)
 select b.id, v.id from _b b join _vecinas v on
   (b.n = 1 and v.n in (2, 5)) or
