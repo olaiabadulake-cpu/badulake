@@ -126,7 +126,7 @@
   "Badulake": {
     "newTitle": "Badulake létrehozása",
     "notYetTitle": "Még nem szervezhetsz badulakét",
-    "notYetBody": "Hogy mindenki jól ismerje a szabályokat, csak az szervezhet badulakét, aki már részt vett egyen. Ha részt veszel egy badulakén (jelentkezel, és a szervező nem jelöl meg „nem jött el” jelöléssel), szervezhetsz sajátot. Addig is nézd meg a közelgő badulakékat, és jelentkezz valamelyikre.",
+    "notYetBody": "Hogy mindenki jól ismerje a szabályokat, csak az szervezhet badulakét, aki már részt vett egyen. Ha részt veszel egy badulakén (jelentkezel, és a szervező nem jelöl meg „Nem jött el” jelöléssel), szervezhetsz sajátot. Addig is nézd meg a közelgő badulakékat, és jelentkezz valamelyikre.",
     "notYetLink": "Közelgő badulakék",
     "yourTitle": "A te badulakéd",
     "loading": "Betöltés…",
@@ -328,7 +328,7 @@
     "absentBadge": "Nem jött el",
     "exposeBadge": "Bemutat: {n}.",
     "chooseBadge": "Választ: {n}.",
-    "lateNote": "Ha valaki, akit „nem jött el” jelöléssel láttál el, később megérkezik, koppints a „megérkezett” gombra: onnantól részt vesz a sorsolásokon, a sor végén.",
+    "lateNote": "Ha valaki, akit „Nem jött el” jelöléssel láttál el, később megérkezik, koppints a „megérkezett” gombra: onnantól részt vesz a sorsolásokon, a sor végén.",
     "drawTitle": "1. A holmik bemutatásának sorrendje",
     "drawButton": "Sorrend kisorsolása",
     "drawConfirm": "A sorsolás csak egyszer történik meg, és nem ismételhető. Sorsoljunk most?",

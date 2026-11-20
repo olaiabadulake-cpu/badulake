@@ -126,7 +126,7 @@
   "Badulake": {
     "newTitle": "Creează un badulake",
     "notYetTitle": "Încă nu poți organiza un badulake",
-    "notYetBody": "Ca toată lumea să cunoască bine regulile, poate organiza un badulake doar cine a fost deja la unul. După ce mergi la un badulake (te înscrii și cine îl organizează nu te marchează cu „n-a venit”), îl vei putea organiza pe al tău. Până atunci, uită-te la următoarele badulake și înscrie-te la unul.",
+    "notYetBody": "Ca toată lumea să cunoască bine regulile, poate organiza un badulake doar cine a fost deja la unul. După ce mergi la un badulake (te înscrii și cine îl organizează nu te marchează cu „N-a venit”), îl vei putea organiza pe al tău. Până atunci, uită-te la următoarele badulake și înscrie-te la unul.",
     "notYetLink": "Vezi următoarele badulake",
     "yourTitle": "Badulake-ul tău",
     "loading": "Se încarcă…",
@@ -328,7 +328,7 @@
     "absentBadge": "N-a venit",
     "exposeBadge": "Arată: nr. {n}",
     "chooseBadge": "Alege: nr. {n}",
-    "lateNote": "Dacă cineva marcat cu „n-a venit” ajunge mai târziu, apasă „a ajuns”: intră în tragerile la sorți din acel moment, la coada listei.",
+    "lateNote": "Dacă cineva marcat cu „N-a venit” ajunge mai târziu, apasă „a ajuns”: intră în tragerile la sorți din acel moment, la coada listei.",
     "drawTitle": "1. Ordinea în care se arată lucrurile",
     "drawButton": "Trage ordinea la sorți",
     "drawConfirm": "Tragerea la sorți se face o singură dată și nu se poate repeta. O facem acum?",

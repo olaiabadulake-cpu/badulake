@@ -126,7 +126,7 @@
   "Badulake": {
     "newTitle": "Vytvoriť badulake",
     "notYetTitle": "Zatiaľ nemôžeš organizovať badulake",
-    "notYetBody": "Aby každý dobre poznal pravidlá, môže badulake organizovať len ten, kto už na nejakom bol. Keď sa zúčastníš na badulake (prihlásiš sa a organizátor ťa neoznačí ako neprítomného), budeš môcť zorganizovať vlastný. Zatiaľ si pozri najbližšie badulake a na niektorý sa prihlás.",
+    "notYetBody": "Aby každý dobre poznal pravidlá, môže badulake organizovať len ten, kto už na nejakom bol. Keď sa zúčastníš na badulake (prihlásiš sa a ten, kto ho organizuje, ťa neoznačí ako „Chýba“), budeš môcť zorganizovať vlastný. Zatiaľ si pozri najbližšie badulake a na niektorý sa prihlás.",
     "notYetLink": "Zobraziť najbližšie badulake",
     "yourTitle": "Tvoj badulake",
     "loading": "Načítava sa…",
