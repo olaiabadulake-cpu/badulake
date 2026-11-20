@@ -20,7 +20,7 @@ No se ha usado el traductor de Google. Para cada lengua, Claude buscó el mejor 
 | Gallego | Proxecto Nós (Xunta y USC) y DeepL | Claude combinó lo mejor de los dos |
 | Sami del norte | TartuNLP (Universidad de Tartu) | A partir del noruego, porque no traduce desde el castellano |
 | Frisón | Frysker (Fryske Akademy) | A partir del neerlandés |
-| Ladino | Tradutur (Universidad de Innsbruck) | A partir del italiano. Variante de Val Badia |
+| Ladino | Tradutur (Universidad de Innsbruck) | A partir del italiano. Variante de Val Badia. En la tarea 23.1 ya no estaba disponible |
 | Valenciano | Claude, a partir del catalán de DeepL | Sigue la norma de la AVL. SalamandraTA (BSC), el traductor recomendado, no estaba disponible |
 | Aranés | Claude, a partir del catalán y el occitano | SalamandraTA no estaba disponible |
 | Asturiano | Claude | SalamandraTA no estaba disponible. Los demás traductores de asturiano no son neuronales |
@@ -35,7 +35,40 @@ No se ha usado el traductor de Google. Para cada lengua, Claude buscó el mejor 
 
 Cada lengua tiene su archivo en `app/messages/<código>.json`. Basta con cambiar el texto entre comillas y no tocar lo que va a la izquierda de los dos puntos. Si cambia un texto en castellano, hay que actualizar las 43 lenguas.
 
+## Traducción conjunta de cuentas y badulakes (tarea 23.1, noche del 20 al 21/11/2026)
+
+Siguiendo la decisión de OlaIA del 20/11 («todo junto»), Claude tradujo de una vez a las 42 lenguas todos los textos de la web que no son legales: cuentas, crear y ver badulakes, lista de espera, menú, «Qué es un badulake», denunciar, instalar, Modo badulake, la página del QR (`Hola`, salvo el catalán, que ya la tenía), la página 404 y el marco de los textos legales (títulos, recuadro de borrador, enlaces del pie y un aviso de que el cuerpo está en castellano, pendiente de traducción). En total, 280 textos por lengua, más `Badulake.zone` de la tarea 5.1. **No se tradujo:** el cuerpo de `Legal` y de `Privacy` (espera al texto definitivo de la Asesoría) ni `Team` (panel interno, se sigue viendo en castellano y marcado como tal).
+
+Con esto **las 44 lenguas están completas** salvo los textos legales y están todas en `complete` (`app/src/i18n/content-lang.ts`), así que cada página se marca con su lengua. La palabra que hay que escribir para borrar la cuenta es la de cada lengua (DELETE, LÖSCHEN, ОБРИШИ…), y el servidor la saca del mismo archivo de textos.
+
+**Ninguna de estas traducciones la ha revisado una persona nativa.**
+
+### Cómo se tradujo cada lengua
+
+Primero Claude escribió una versión de cada lengua, con el mismo trato y vocabulario que el resto de su archivo y frases naturales en vez de calcos. Después se compararon con el traductor de la tabla de arriba, quedándose con la frase más natural de cada una. **DeepL agotó el uso gratuito de este Chrome a mitad de la noche** («límite de uso de la versión gratuita», vuelve en 30 días), así que la mayoría de lenguas quedaron con la versión de Claude sola:
+
+| Lengua | Método | Trato |
+|---|---|---|
+| Inglés | DeepL (7 de 9 bloques) + repaso de Claude | you (ortografía británica) |
+| Croata | DeepL + repaso de Claude | vi |
+| Búlgaro | Claude + DeepL en 3 de 9 bloques | вие |
+| Catalán | Claude + DeepL en 7 de 9 bloques (solo términos de interfaz) | tu |
+| Valenciano | Claude a partir del catalán, norma AVL | tu |
+| Gallego | Claude + Proxecto Nós en las 8 frases más difíciles (Nós solo admite 1.000 letras) | ti |
+| Sami del norte | Claude + TartuNLP (desde el noruego; salida floja, solo algunos términos) | don |
+| Frisón | Claude + Frysker (desde el neerlandés, 3 de 5 bloques) | do |
+| Francés, alemán, italiano, portugués, neerlandés, danés, sueco, noruego bokmål, finés, polaco, checo, eslovaco, esloveno, húngaro, rumano, griego, ucraniano, macedonio, serbio (cirílico), bosnio, albanés, occitano, irlandés, galés, bretón | **Solo Claude** (DeepL agotado) | el de su archivo |
+| Noruego nynorsk, montenegrino, asturiano, aranés, corso, rusino, gaélico escocés, alsaciano | **Solo Claude** (no hay traductor neuronal útil) | el de su archivo |
+| Ladino | **Solo Claude** (la dirección de Tradutur ya no existe) | tu |
+
+Comprobado con un programa: las 44 tienen las mismas claves que el castellano en esas secciones, variables (`{name}`, `{n}`…) y enlaces intactos, plurales con las formas de cada lengua (polaco, checo, eslovaco, ucraniano, serbio… con 3 o 4 formas; galés con 6) y todos los mensajes se pueden leer sin error. **Pendiente para cuando DeepL vuelva a dejar (o con la cuenta de pago de EITB):** pasar por DeepL las 25 lenguas que quedaron solo con Claude y comparar.
+
+**Lo que más conviene que revise una persona nativa:** rusino, ladino, sami del norte, aranés, corso, alsaciano, asturiano y montenegrino; y en todas, la palabra para borrar la cuenta y cómo se escribe «badulake» con terminaciones (húngaro «badulakét», rumano «badulake-ul», serbio «badulake-а»).
+
 ## Textos nuevos aún sin traducir
+
+**Desde la tarea 23.1 no queda ninguno fuera de los legales** (ver arriba). Lo que sigue es el historial de cómo se fueron quedando en castellano.
+
 
 Si a una lengua le falta un texto, la web enseña el texto en castellano en vez de un error (`app/src/i18n/request.ts`). Así está hoy todo lo de las cuentas (crear cuenta, entrar, salir), crear un badulake y, desde la tarea 6, ver badulakes, apuntarse y el calendario: escrito en castellano y euskera; las otras 42 lenguas se traducirán con los mismos traductores antes de abrir las cuentas al público.
 
