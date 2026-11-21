@@ -130,7 +130,14 @@
     "deleteWarning": "Det går inte att ångra.",
     "deleteWord": "RADERA",
     "deleteLabel": "Skriv {word} för att bekräfta",
-    "deleteSubmit": "Radera mitt konto för alltid"
+    "deleteSubmit": "Radera mitt konto för alltid",
+    "myTitle": "Mina badulakes",
+    "myUpcoming": "Kommande",
+    "myPast": "Tidigare",
+    "myNoUpcoming": "Du har inga kommande badulakes.",
+    "myEmpty": "Du har inga badulakes än. Titta på de kommande och anmäl dig till en.",
+    "myBrowse": "Se badulakes",
+    "noticeCanOrganize": "Du har varit på en badulake: nu kan du ordna din egen."
   },
   "Badulake": {
     "newTitle": "Skapa en badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Nu är det tur nr {n}.",
     "turnsDone": "Alla har valt.",
     "myExpose": "Du visar dina saker vid bord nr {n}",
-    "dayNoDraw": "I dag är det dags. Ordningen har inte lottats än."
+    "dayNoDraw": "I dag är det dags. Ordningen har inte lottats än.",
+    "finishedTag": "Avslutad",
+    "statusFinished": "Den här badulaken är slut.",
+    "thanksOrganizer": "Tack för att du ordnade den!",
+    "thanksAttendee": "Tack för att du kom!",
+    "canOrganizeNow": "Eftersom du har varit på en badulake kan du nu ordna din egen.",
+    "organizeYours": "Ordna min badulake"
   },
   "Nav": {
     "label": "Huvudmeny",

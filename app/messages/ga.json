@@ -130,7 +130,14 @@
     "deleteWarning": "Níl aon dul siar air.",
     "deleteWord": "SCRIOS",
     "deleteLabel": "Chun é a dhearbhú, scríobh {word}",
-    "deleteSubmit": "Scrios mo chuntas go deo"
+    "deleteSubmit": "Scrios mo chuntas go deo",
+    "myTitle": "Mo bhadulakes",
+    "myUpcoming": "Le teacht",
+    "myPast": "Thart",
+    "myNoUpcoming": "Níl aon bhadulake le teacht agat.",
+    "myEmpty": "Níl aon bhadulake agat fós. Féach ar na cinn atá le teacht agus cláraigh do cheann acu.",
+    "myBrowse": "Féach ar na badulakes",
+    "noticeCanOrganize": "Bhí tú ag badulake cheana: is féidir leat do cheann féin a eagrú anois."
   },
   "Badulake": {
     "newTitle": "Cruthaigh badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Seal uimhir {n} atá ann anois.",
     "turnsDone": "Tá a rogha déanta ag gach duine.",
     "myExpose": "Taispeánfaidh tú do chuid rudaí ag seastán uimhir {n}",
-    "dayNoDraw": "Is inniu an lá. Níor caitheadh crainn ar an ord fós."
+    "dayNoDraw": "Is inniu an lá. Níor caitheadh crainn ar an ord fós.",
+    "finishedTag": "Críochnaithe",
+    "statusFinished": "Tá an badulake seo thart.",
+    "thanksOrganizer": "Go raibh maith agat as é a eagrú!",
+    "thanksAttendee": "Go raibh maith agat as teacht!",
+    "canOrganizeNow": "Ós rud é go raibh tú ag badulake cheana, is féidir leat do cheann féin a eagrú anois.",
+    "organizeYours": "Mo bhadulake a eagrú"
   },
   "Nav": {
     "label": "Príomh-roghchlár",

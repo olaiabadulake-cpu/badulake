@@ -130,7 +130,14 @@
     "deleteWarning": "Nuk mund të zhbëhet.",
     "deleteWord": "FSHI",
     "deleteLabel": "Për ta konfirmuar, shkruani {word}",
-    "deleteSubmit": "Fshi llogarinë time përgjithmonë"
+    "deleteSubmit": "Fshi llogarinë time përgjithmonë",
+    "myTitle": "Badulake-t e mia",
+    "myUpcoming": "Të ardhshme",
+    "myPast": "Të kaluara",
+    "myNoUpcoming": "Nuk keni asnjë badulake të ardhshëm.",
+    "myEmpty": "Ende nuk keni asnjë badulake. Shikoni ato të ardhshme dhe regjistrohuni në një.",
+    "myBrowse": "Shikoni badulake-t",
+    "noticeCanOrganize": "Keni qenë tashmë në një badulake: tani mund të organizoni tuajin."
   },
   "Badulake": {
     "newTitle": "Krijoni një badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Tani është radha nr. {n}.",
     "turnsDone": "Të gjithë kanë zgjedhur tashmë.",
     "myExpose": "Sendet tuaja i tregoni te tezga nr. {n}",
-    "dayNoDraw": "Sot është dita. Rendi ende nuk është hedhur në short."
+    "dayNoDraw": "Sot është dita. Rendi ende nuk është hedhur në short.",
+    "finishedTag": "Përfunduar",
+    "statusFinished": "Ky badulake ka përfunduar.",
+    "thanksOrganizer": "Faleminderit që e organizuat!",
+    "thanksAttendee": "Faleminderit që erdhët!",
+    "canOrganizeNow": "Meqë keni qenë tashmë në një badulake, tani mund të organizoni tuajin.",
+    "organizeYours": "Organizo badulake-n tim"
   },
   "Nav": {
     "label": "Menuja kryesore",

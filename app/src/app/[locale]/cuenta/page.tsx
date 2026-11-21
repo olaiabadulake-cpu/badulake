@@ -9,6 +9,7 @@ import { signOut } from "./actions";
 import { Interest } from "./interest";
 import { ChangePassword, DeleteAccount } from "./security-forms";
 import { Avisos } from "./avisos";
+import { MisBadulakes } from "./mis-badulakes";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Account");
@@ -43,6 +44,7 @@ async function Account({ searchParams }: Pick<PageProps<"/[locale]/cuenta">, "se
       <p className="text-lg">{t("signedInAs", { email: user!.email })}</p>
       {aviso === "contrasena" && <p role="status" className="aviso">{t("passwordChanged")}</p>}
       <Avisos />
+      <MisBadulakes />
       <form action={signOut}>
         <input type="hidden" name="locale" value={locale} />
         <button

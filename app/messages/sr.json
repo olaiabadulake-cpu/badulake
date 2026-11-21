@@ -130,7 +130,14 @@
     "deleteWarning": "Ово не може да се поништи.",
     "deleteWord": "ОБРИШИ",
     "deleteLabel": "Да бисте потврдили, унесите {word}",
-    "deleteSubmit": "Трајно обриши мој налог"
+    "deleteSubmit": "Трајно обриши мој налог",
+    "myTitle": "Моји badulake-и",
+    "myUpcoming": "Предстојећи",
+    "myPast": "Прошли",
+    "myNoUpcoming": "Немате ниједан предстојећи badulake.",
+    "myEmpty": "Још немате ниједан badulake. Погледајте предстојеће и пријавите се на неки.",
+    "myBrowse": "Погледајте badulake-е",
+    "noticeCanOrganize": "Већ сте били на badulake-у: сада можете да организујете свој."
   },
   "Badulake": {
     "newTitle": "Направите badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Сада је на реду број {n}.",
     "turnsDone": "Сви су већ изабрали.",
     "myExpose": "Своје ствари показујете на штанду број {n}",
-    "dayNoDraw": "Данас је тај дан. Редослед још није извучен."
+    "dayNoDraw": "Данас је тај дан. Редослед још није извучен.",
+    "finishedTag": "Завршено",
+    "statusFinished": "Овај badulake је завршен.",
+    "thanksOrganizer": "Хвала што сте га организовали!",
+    "thanksAttendee": "Хвала што сте дошли!",
+    "canOrganizeNow": "Пошто сте већ били на badulake-у, сада можете да организујете свој.",
+    "organizeYours": "Организујте свој badulake"
   },
   "Nav": {
     "label": "Главни мени",

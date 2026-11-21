@@ -130,7 +130,14 @@
     "deleteWarning": "No es pot desfer.",
     "deleteWord": "ESBORRAR",
     "deleteLabel": "Per confirmar-ho, escriu {word}",
-    "deleteSubmit": "Esborrar el meu compte per sempre"
+    "deleteSubmit": "Esborrar el meu compte per sempre",
+    "myTitle": "Els meus badulakes",
+    "myUpcoming": "Propers",
+    "myPast": "Passats",
+    "myNoUpcoming": "No tens cap badulake proper.",
+    "myEmpty": "Encara no tens cap badulake. Mira els propers i apunta't a un.",
+    "myBrowse": "Veure els badulakes",
+    "noticeCanOrganize": "Ja has anat a un badulake: ja pots organitzar el teu."
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Ara és el torn número {n}.",
     "turnsDone": "Ja han triat totes les persones.",
     "myExpose": "Ensenyes els teus objectes al lloc número {n}",
-    "dayNoDraw": "Avui és el dia. Encara no s'ha sortejat l'ordre."
+    "dayNoDraw": "Avui és el dia. Encara no s'ha sortejat l'ordre.",
+    "finishedTag": "Acabat",
+    "statusFinished": "Aquest badulake ja s'ha acabat.",
+    "thanksOrganizer": "Gràcies per organitzar-lo!",
+    "thanksAttendee": "Gràcies per venir!",
+    "canOrganizeNow": "Com que ja has anat a un badulake, ja pots organitzar el teu.",
+    "organizeYours": "Organitzar el meu badulake"
   },
   "Nav": {
     "label": "Menú principal",

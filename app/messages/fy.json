@@ -130,7 +130,14 @@
     "deleteWarning": "Dit kin net ûngedien makke wurde.",
     "deleteWord": "WISKJE",
     "deleteLabel": "Typ {word} om te befêstigjen",
-    "deleteSubmit": "Myn account foargoed wiskje"
+    "deleteSubmit": "Myn account foargoed wiskje",
+    "myTitle": "Myn badulakes",
+    "myUpcoming": "Oansteande",
+    "myPast": "Foarby",
+    "myNoUpcoming": "Do hast gjin oansteande badulakes.",
+    "myEmpty": "Do hast noch gjin badulakes. Sjoch nei de oansteande en jou dy op foar ien.",
+    "myBrowse": "Badulakes besjen",
+    "noticeCanOrganize": "Do hast al ris nei in badulake west: no kinst dyn eigen organisearje."
   },
   "Badulake": {
     "newTitle": "In badulake oanmeitsje",
@@ -227,7 +234,13 @@
     "nowTurn": "No is beurt {n} oan 'e gong.",
     "turnsDone": "Elkenien hat keazen.",
     "myExpose": "Do lietst dyn guod sjen by stâl {n}",
-    "dayNoDraw": "Hjoed is de dei. De folchoarder is noch net troch lotting bepaald."
+    "dayNoDraw": "Hjoed is de dei. De folchoarder is noch net troch lotting bepaald.",
+    "finishedTag": "Ôfrûn",
+    "statusFinished": "Dizze badulake is ôfrûn.",
+    "thanksOrganizer": "Tank dat do him organisearre hast!",
+    "thanksAttendee": "Tank dat do kommen bist!",
+    "canOrganizeNow": "Om't do al ris nei in badulake west hast, kinst no dyn eigen organisearje.",
+    "organizeYours": "Myn badulake organisearje"
   },
   "Nav": {
     "label": "Haadmenu",

@@ -130,7 +130,14 @@
     "deleteWarning": "Ezt nem lehet visszavonni.",
     "deleteWord": "TÖRLÉS",
     "deleteLabel": "A megerősítéshez írd be: {word}",
-    "deleteSubmit": "Fiókom végleges törlése"
+    "deleteSubmit": "Fiókom végleges törlése",
+    "myTitle": "Badulakéim",
+    "myUpcoming": "Közelgők",
+    "myPast": "Korábbiak",
+    "myNoUpcoming": "Nincs közelgő badulakéd.",
+    "myEmpty": "Még nincs egy badulakéd sem. Nézd meg a közelgőket, és jelentkezz valamelyikre.",
+    "myBrowse": "Badulakék megtekintése",
+    "noticeCanOrganize": "Már voltál badulakén: most már szervezhetsz sajátot."
   },
   "Badulake": {
     "newTitle": "Badulake létrehozása",
@@ -227,7 +234,13 @@
     "nowTurn": "Most a(z) {n}. következik.",
     "turnsDone": "Már mindenki választott.",
     "myExpose": "A holmidat {n}.-ként mutatod be",
-    "dayNoDraw": "Ma van a nagy nap. A sorrendet még nem sorsolták ki."
+    "dayNoDraw": "Ma van a nagy nap. A sorrendet még nem sorsolták ki.",
+    "finishedTag": "Véget ért",
+    "statusFinished": "Ez a badulake véget ért.",
+    "thanksOrganizer": "Köszönjük, hogy megszervezted!",
+    "thanksAttendee": "Köszönjük, hogy eljöttél!",
+    "canOrganizeNow": "Mivel már voltál badulakén, most már szervezhetsz sajátot.",
+    "organizeYours": "Saját badulake szervezése"
   },
   "Nav": {
     "label": "Főmenü",

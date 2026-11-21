@@ -71,7 +71,7 @@ Esto aparece en la portada y en su propia página, «Qué es un badulake», enla
 
 ### Recorrido F · Mi cuenta y salir
 
-1. En «Tu cuenta» veo con qué correo he entrado, mis **avisos** (he entrado desde la lista de espera, mi puesto en una lista, un badulake cancelado; cada uno lleva al badulake) y el botón «Salir».
+1. En «Tu cuenta» veo **«Mis badulakes»** (Tarea 6.1, D-041): próximos y pasados, los que organizo, a los que voy y en los que espero, con su etiqueta («Terminado» cuando ya se ha celebrado). Después de ir a uno, la ficha dice «¡Gracias por venir!» y, si ya puedo, «Ya puedes organizar el tuyo». También veo con qué correo he entrado, mis **avisos** (he entrado desde la lista de espera, mi puesto en una lista, un badulake cancelado; cada uno lleva al badulake) y el botón «Salir».
 2. Al salir vuelvo a la portada con el aviso «Has salido de tu cuenta».
 
 ### Recorrido G · El día del badulake (Tarea 24, D-036)

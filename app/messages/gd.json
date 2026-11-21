@@ -130,7 +130,14 @@
     "deleteWarning": "Cha ghabh seo a neo-dhèanamh.",
     "deleteWord": "SGRIOS",
     "deleteLabel": "Airson a dhearbhadh, sgrìobh {word}",
-    "deleteSubmit": "Sguab às mo chunntas gu buan"
+    "deleteSubmit": "Sguab às mo chunntas gu buan",
+    "myTitle": "Na badulakes agam",
+    "myUpcoming": "Ri thighinn",
+    "myPast": "Seachad",
+    "myNoUpcoming": "Chan eil badulake ri thighinn agad.",
+    "myEmpty": "Chan eil badulake agad fhathast. Thoir sùil air an fheadhainn a tha ri thighinn is clàraich airson tè.",
+    "myBrowse": "Seall na badulakes",
+    "noticeCanOrganize": "Bha thu aig badulake mu thràth: faodaidh tu do thè fhèin a chur air dòigh a-nis."
   },
   "Badulake": {
     "newTitle": "Cruthaich badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Tha cothrom àireamh {n} a' dol a-nis.",
     "turnsDone": "Tha a h-uile duine air taghadh.",
     "myExpose": "Seallaidh tu na rudan agad aig stàile àireamh {n}",
-    "dayNoDraw": "'S e an-diugh an latha. Cha deach an t-òrdugh a tharraing fhathast."
+    "dayNoDraw": "'S e an-diugh an latha. Cha deach an t-òrdugh a tharraing fhathast.",
+    "finishedTag": "Seachad",
+    "statusFinished": "Tha am badulake seo seachad.",
+    "thanksOrganizer": "Mòran taing airson a chur air dòigh!",
+    "thanksAttendee": "Mòran taing airson tighinn!",
+    "canOrganizeNow": "On a bha thu aig badulake mu thràth, faodaidh tu do thè fhèin a chur air dòigh a-nis.",
+    "organizeYours": "Cuir mo bhadulake air dòigh"
   },
   "Nav": {
     "label": "Prìomh chlàr-taice",

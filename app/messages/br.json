@@ -130,7 +130,14 @@
     "deleteWarning": "Ne c'haller ket dizober se.",
     "deleteWord": "DILEMEL",
     "deleteLabel": "Evit kadarnaat, skrivit {word}",
-    "deleteSubmit": "Dilemel ma c'hont da viken"
+    "deleteSubmit": "Dilemel ma c'hont da viken",
+    "myTitle": "Ma badulakes",
+    "myUpcoming": "Da zont",
+    "myPast": "Tremenet",
+    "myNoUpcoming": "N'hoc'h eus badulake ebet da zont.",
+    "myEmpty": "N'hoc'h eus badulake ebet c'hoazh. Sellit ouzh ar re da zont hag en em enskrivit en unan.",
+    "myBrowse": "Gwelet ar badulakes",
+    "noticeCanOrganize": "Bet oc'h en ur badulake: gallout a rit aozañ ho hini bremañ."
   },
   "Badulake": {
     "newTitle": "Krouiñ ur badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Bremañ eo tro an niverenn {n}.",
     "turnsDone": "An holl o deus dibabet.",
     "myExpose": "Diskouez a reot ho traoù war ar stal niverenn {n}",
-    "dayNoDraw": "Hiziv eo an devezh. N'eo ket bet tennet d'ar sord an urzh c'hoazh."
+    "dayNoDraw": "Hiziv eo an devezh. N'eo ket bet tennet d'ar sord an urzh c'hoazh.",
+    "finishedTag": "Echu",
+    "statusFinished": "Echu eo ar badulake-mañ.",
+    "thanksOrganizer": "Trugarez evit e aozañ!",
+    "thanksAttendee": "Trugarez evit bezañ deuet!",
+    "canOrganizeNow": "Bet oc'h en ur badulake, neuze gallout a rit aozañ ho hini bremañ.",
+    "organizeYours": "Aozañ ma badulake"
   },
   "Nav": {
     "label": "Lañser pennañ",

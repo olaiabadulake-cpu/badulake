@@ -130,7 +130,14 @@
     "deleteWarning": "Tega ni mogoče razveljaviti.",
     "deleteWord": "IZBRIŠI",
     "deleteLabel": "Za potrditev napiši {word}",
-    "deleteSubmit": "Za vedno izbriši moj račun"
+    "deleteSubmit": "Za vedno izbriši moj račun",
+    "myTitle": "Moji badulake",
+    "myUpcoming": "Prihajajoči",
+    "myPast": "Pretekli",
+    "myNoUpcoming": "Nimaš nobenega prihajajočega badulake.",
+    "myEmpty": "Zaenkrat še nimaš nobenega badulake. Poglej prihajajoče in se prijavi na enega.",
+    "myBrowse": "Poglej badulake",
+    "noticeCanOrganize": "Prvi badulake imaš že za sabo: zdaj lahko organiziraš svojega."
   },
   "Badulake": {
     "newTitle": "Ustvari badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Zdaj je na vrsti št. {n}.",
     "turnsDone": "Vsi so že izbrali.",
     "myExpose": "Svoje stvari pokažeš kot {n}. po vrsti",
-    "dayNoDraw": "Danes je ta dan. Vrstni red še ni izžreban."
+    "dayNoDraw": "Danes je ta dan. Vrstni red še ni izžreban.",
+    "finishedTag": "Končano",
+    "statusFinished": "Ta badulake se je končal.",
+    "thanksOrganizer": "Hvala za organizacijo!",
+    "thanksAttendee": "Hvala za udeležbo!",
+    "canOrganizeNow": "Ker imaš badulake že za sabo, lahko zdaj organiziraš svojega.",
+    "organizeYours": "Organiziraj svoj badulake"
   },
   "Nav": {
     "label": "Glavni meni",

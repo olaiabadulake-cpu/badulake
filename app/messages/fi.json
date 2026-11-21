@@ -130,7 +130,14 @@
     "deleteWarning": "Tätä ei voi perua.",
     "deleteWord": "POISTA",
     "deleteLabel": "Vahvista kirjoittamalla {word}",
-    "deleteSubmit": "Poista tilini lopullisesti"
+    "deleteSubmit": "Poista tilini lopullisesti",
+    "myTitle": "Omat badulaket",
+    "myUpcoming": "Tulevat",
+    "myPast": "Menneet",
+    "myNoUpcoming": "Sinulla ei ole tulevia badulakeja.",
+    "myEmpty": "Sinulla ei ole vielä yhtään badulakea. Katso tulevat ja ilmoittaudu johonkin.",
+    "myBrowse": "Katso badulaket",
+    "noticeCanOrganize": "Olet jo käynyt badulakessa: nyt voit järjestää oman."
   },
   "Badulake": {
     "newTitle": "Luo badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Nyt on vuoro {n}.",
     "turnsDone": "Kaikki ovat valinneet.",
     "myExpose": "Esittelet tavarasi pöydässä {n}",
-    "dayNoDraw": "Tänään on se päivä. Järjestystä ei ole vielä arvottu."
+    "dayNoDraw": "Tänään on se päivä. Järjestystä ei ole vielä arvottu.",
+    "finishedTag": "Päättynyt",
+    "statusFinished": "Tämä badulake on päättynyt.",
+    "thanksOrganizer": "Kiitos, että järjestit sen!",
+    "thanksAttendee": "Kiitos, että tulit!",
+    "canOrganizeNow": "Koska olet jo käynyt badulakessa, voit nyt järjestää oman.",
+    "organizeYours": "Järjestä oma badulake"
   },
   "Nav": {
     "label": "Päävalikko",

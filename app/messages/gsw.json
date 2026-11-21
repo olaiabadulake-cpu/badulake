@@ -130,7 +130,14 @@
     "deleteWarning": "Dìss kànn mr nit rìckgängig màche.",
     "deleteWord": "LÖSCHE",
     "deleteLabel": "Fer's ze bstätige, schrïb {word}",
-    "deleteSubmit": "Mi Konto fer ìmmer lösche"
+    "deleteSubmit": "Mi Konto fer ìmmer lösche",
+    "myTitle": "Mini badulakes",
+    "myUpcoming": "Nächschti",
+    "myPast": "Vergàngeni",
+    "myNoUpcoming": "Dü hesch keini nächschte badulakes.",
+    "myEmpty": "Dü hesch noch kei badulake. Lüeg d'nächschte à un meld dich bi eim à.",
+    "myBrowse": "badulakes àlüege",
+    "noticeCanOrganize": "Dü bisch schun bi eme badulake gsìì: jetzt kànnsch dinner eije organisiere."
   },
   "Badulake": {
     "newTitle": "E badulake àleje",
@@ -227,7 +234,13 @@
     "nowTurn": "Jetzt isch d'Nr. {n} dràn.",
     "turnsDone": "Àlli hàn schu üsgsüecht.",
     "myExpose": "Dü zeijsch dini Sàche àm Stànd Nr. {n}",
-    "dayNoDraw": "Hit isch's so wit. D'Reihefolg isch noch nit üsgelost."
+    "dayNoDraw": "Hit isch's so wit. D'Reihefolg isch noch nit üsgelost.",
+    "finishedTag": "Fertig",
+    "statusFinished": "Des badulake isch verbii.",
+    "thanksOrganizer": "Merci, dàss dü's organisiert hesch!",
+    "thanksAttendee": "Merci, dàss dü kumme bisch!",
+    "canOrganizeNow": "Wil dü schun bi eme badulake gsìì bisch, kànnsch jetzt dinner eije organisiere.",
+    "organizeYours": "Mi badulake organisiere"
   },
   "Nav": {
     "label": "Hauptmenü",

@@ -130,7 +130,14 @@
     "deleteWarning": "An ne po nia tó zoruch.",
     "deleteWord": "SCANCELÉ",
     "deleteLabel": "Por confermé, scrí {word}",
-    "deleteSubmit": "Scancelé mi account por dagnora"
+    "deleteSubmit": "Scancelé mi account por dagnora",
+    "myTitle": "I mi badulakes",
+    "myUpcoming": "Che vëgn",
+    "myPast": "Passà",
+    "myNoUpcoming": "Te n'as degügn badulake che vëgn.",
+    "myEmpty": "Te n'as ciamó degügn badulake. Cëla chi che vëgn y scrí te sö a un.",
+    "myBrowse": "Vëire i badulakes",
+    "noticeCanOrganize": "Te es bele stè a n badulake: śëgn pos-te organisé le tü."
   },
   "Badulake": {
     "newTitle": "Fá n badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Śëgn vára le tur numer {n}.",
     "turnsDone": "Dötes les porsones à bele stlüt.",
     "myExpose": "Te mostres tü ogesc tl post numer {n}",
-    "dayNoDraw": "Al dí d'ancö él le dé. La seqenza n'é ciamó nia gnüda trata a sort."
+    "dayNoDraw": "Al dí d'ancö él le dé. La seqenza n'é ciamó nia gnüda trata a sort.",
+    "finishedTag": "Finé",
+    "statusFinished": "Chësc badulake é finé.",
+    "thanksOrganizer": "Dilan por l'avëi organisé!",
+    "thanksAttendee": "Dilan dla partezipaziun!",
+    "canOrganizeNow": "Deache te es bele stè a n badulake, pos-te śëgn organisé le tü.",
+    "organizeYours": "Organisé mi badulake"
   },
   "Nav": {
     "label": "Menü prinzipal",

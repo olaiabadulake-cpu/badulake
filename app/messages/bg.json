@@ -130,7 +130,14 @@
     "deleteWarning": "Това не може да бъде отменено.",
     "deleteWord": "ИЗТРИЙ",
     "deleteLabel": "За да потвърдите, въведете {word}",
-    "deleteSubmit": "Изтриване на профила ми завинаги"
+    "deleteSubmit": "Изтриване на профила ми завинаги",
+    "myTitle": "Моите badulake",
+    "myUpcoming": "Предстоящи",
+    "myPast": "Минали",
+    "myNoUpcoming": "Нямате предстоящи badulake.",
+    "myEmpty": "Все още нямате badulake. Разгледайте предстоящите и се запишете за някой.",
+    "myBrowse": "Към badulake",
+    "noticeCanOrganize": "Вече сте ходили на badulake: вече можете да организирате свой."
   },
   "Badulake": {
     "newTitle": "Създаване на badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Сега е ред № {n}.",
     "turnsDone": "Всички вече избраха.",
     "myExpose": "Показвате вещите си на щанд № {n}",
-    "dayNoDraw": "Днес е денят. Редът още не е изтеглен."
+    "dayNoDraw": "Днес е денят. Редът още не е изтеглен.",
+    "finishedTag": "Приключил",
+    "statusFinished": "Този badulake вече приключи.",
+    "thanksOrganizer": "Благодарим, че го организирахте!",
+    "thanksAttendee": "Благодарим, че дойдохте!",
+    "canOrganizeNow": "Тъй като вече сте ходили на badulake, вече можете да организирате свой.",
+    "organizeYours": "Организиране на мой badulake"
   },
   "Nav": {
     "label": "Главно меню",

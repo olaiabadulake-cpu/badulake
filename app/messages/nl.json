@@ -130,7 +130,14 @@
     "deleteWarning": "Dit kan niet ongedaan worden gemaakt.",
     "deleteWord": "VERWIJDEREN",
     "deleteLabel": "Typ {word} om te bevestigen",
-    "deleteSubmit": "Mijn account voorgoed verwijderen"
+    "deleteSubmit": "Mijn account voorgoed verwijderen",
+    "myTitle": "Mijn badulakes",
+    "myUpcoming": "Komend",
+    "myPast": "Voorbij",
+    "myNoUpcoming": "Je hebt geen komende badulakes.",
+    "myEmpty": "Je hebt nog geen badulakes. Bekijk de komende en meld je aan voor een.",
+    "myBrowse": "Badulakes bekijken",
+    "noticeCanOrganize": "Je bent al naar een badulake geweest: nu kun je er zelf een organiseren."
   },
   "Badulake": {
     "newTitle": "Een badulake aanmaken",
@@ -227,7 +234,13 @@
     "nowTurn": "Nu is nummer {n} aan de beurt.",
     "turnsDone": "Iedereen heeft gekozen.",
     "myExpose": "Je laat je spullen zien bij kraam {n}",
-    "dayNoDraw": "Vandaag is het zover. De volgorde is nog niet geloot."
+    "dayNoDraw": "Vandaag is het zover. De volgorde is nog niet geloot.",
+    "finishedTag": "Afgelopen",
+    "statusFinished": "Deze badulake is afgelopen.",
+    "thanksOrganizer": "Bedankt voor het organiseren!",
+    "thanksAttendee": "Bedankt voor je komst!",
+    "canOrganizeNow": "Omdat je al naar een badulake bent geweest, kun je er nu zelf een organiseren.",
+    "organizeYours": "Mijn badulake organiseren"
   },
   "Nav": {
     "label": "Hoofdmenu",

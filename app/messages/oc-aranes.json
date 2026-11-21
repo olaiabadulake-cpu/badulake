@@ -130,7 +130,14 @@
     "deleteWarning": "Non se pòt desfèr.",
     "deleteWord": "ESBORRAR",
     "deleteLabel": "Entà confirmar-ac, escriu {word}",
-    "deleteSubmit": "Esborrar eth mèn compde entà tostemps"
+    "deleteSubmit": "Esborrar eth mèn compde entà tostemps",
+    "myTitle": "Es mèns badulakes",
+    "myUpcoming": "Pròplèus",
+    "myPast": "Passadi",
+    "myNoUpcoming": "Non as cap de badulake pròplèu.",
+    "myEmpty": "Encara non as cap de badulake. Guarda es pròplèus e apunta-te a un.",
+    "myBrowse": "Veir es badulakes",
+    "noticeCanOrganize": "Ja as anat a un badulake: ja pòs organizar eth tòn."
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Ara va eth torn numèro {n}.",
     "turnsDone": "Ja an chausit totes es persones.",
     "myExpose": "Mòstres es tòns objèctes ath lòc numèro {n}",
-    "dayNoDraw": "Aué ei eth dia. Encara non s'a sortejat er orde."
+    "dayNoDraw": "Aué ei eth dia. Encara non s'a sortejat er orde.",
+    "finishedTag": "Acabat",
+    "statusFinished": "Aguest badulake ja s'a acabat.",
+    "thanksOrganizer": "Mercés per organizar-lo!",
+    "thanksAttendee": "Mercés per vier!",
+    "canOrganizeNow": "Coma ja as anat a un badulake, ja pòs organizar eth tòn.",
+    "organizeYours": "Organizar eth mèn badulake"
   },
   "Nav": {
     "label": "Menú principau",

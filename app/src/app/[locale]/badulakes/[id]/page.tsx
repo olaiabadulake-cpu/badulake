@@ -11,6 +11,7 @@ import {
   cancelBadulake, joinBadulake, leaveBadulake, leaveWaitlist, publishBadulake, reportBadulake,
 } from "../actions";
 import { fallos } from "@/lib/pruebas";
+import { isFinished } from "@/lib/badulake-estado";
 import { ApuntarseConfuso, AsistentesAlaVista } from "./pruebas-fallos";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -86,6 +87,11 @@ async function Details({
   const cancelled = b.estado === "cancelado";
   // «Confirmado» no se guarda: es publicado con 5 personas o más, contando a la organizadora (D-032, D-040).
   const confirmed = b.estado === "publicado" && people >= 5;
+  // «Terminado» (Tarea 6.1): publicado y ya pasado; no se guarda, se calcula.
+  const finished = b.estado === "publicado" && isFinished(b.fecha_hora, now);
+  // Quien fue (apuntada y sin «No ha venido») ve si ya puede organizar el suyo (D-038).
+  const wentThere = finished && !isOrganizer && joined && turn?.presente !== false;
+  const { data: canOrganize } = wentThere ? await supabase.rpc("puedo_organizar") : { data: false };
 
   const t = await getTranslations("Badulake");
   const when = new Intl.DateTimeFormat(await contentLang(), {
@@ -95,7 +101,7 @@ async function Details({
     [t("date"), when],
     [t("zone"), b.zona],
     ...(a ? ([[t("address"), a.direccion]] as [string, string][]) : []),
-    ...(cancelled ? [] : ([[t("seats"), isOrganizer ? t("seatsTaken", { taken: people, total: b.plazas }) : t("freeSeats", { count: free })]] as [string, string][])),
+    ...(cancelled || finished ? [] : ([[t("seats"), isOrganizer ? t("seatsTaken", { taken: people, total: b.plazas }) : t("freeSeats", { count: free })]] as [string, string][])),
   ];
   const notices = [
     "apuntada", "borrada", "lleno", "error", "no_disponible", "denunciado", "denuncia_repetida",
@@ -147,6 +153,19 @@ async function Details({
           {confirmed ? t("statusConfirmed") : t("statusNeeds", { count: 5 - people })}
         </p>
       )}
+      {finished && (
+        <div role="status" className="aviso flex flex-col gap-2">
+          <p className="font-semibold">{t("statusFinished")}</p>
+          {isOrganizer && <p>{t("thanksOrganizer")}</p>}
+          {wentThere && <p>{t("thanksAttendee")}</p>}
+          {wentThere && canOrganize === true && (
+            <>
+              <p>{t("canOrganizeNow")}</p>
+              <Link href="/badulakes/nuevo" className="boton sm:self-start">{t("organizeYours")}</Link>
+            </>
+          )}
+        </div>
+      )}
       <p className="whitespace-pre-line text-lg">{b.descripcion}</p>
       <dl className="flex flex-col gap-3">
         {rows.map(([k, v]) => (
@@ -193,7 +212,7 @@ async function Details({
           </form>
         </details>
       )}
-      {!isOrganizer && joined && !cancelled && (
+      {!isOrganizer && joined && !cancelled && !finished && (
         <>
           {notice !== "apuntada" && (
             <p role="status" className="aviso">

@@ -130,7 +130,14 @@
     "deleteWarning": "Does dim modd dadwneud hyn.",
     "deleteWord": "DILEU",
     "deleteLabel": "I gadarnhau, teipia {word}",
-    "deleteSubmit": "Dileu fy nghyfrif am byth"
+    "deleteSubmit": "Dileu fy nghyfrif am byth",
+    "myTitle": "Fy badulakes",
+    "myUpcoming": "I ddod",
+    "myPast": "Wedi bod",
+    "myNoUpcoming": "Does gen ti ddim badulake i ddod.",
+    "myEmpty": "Does gen ti ddim badulake eto. Edrych ar y rhai i ddod a chofrestra ar gyfer un.",
+    "myBrowse": "Gweld y badulakes",
+    "noticeCanOrganize": "Rwyt ti wedi bod mewn badulake: gelli di drefnu dy un di nawr."
   },
   "Badulake": {
     "newTitle": "Creu badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Tro rhif {n} sydd nawr.",
     "turnsDone": "Mae pawb wedi dewis.",
     "myExpose": "Byddi di'n dangos dy bethau di ar stondin rhif {n}",
-    "dayNoDraw": "Heddiw yw'r diwrnod. Dydy'r drefn ddim wedi'i thynnu o'r het eto."
+    "dayNoDraw": "Heddiw yw'r diwrnod. Dydy'r drefn ddim wedi'i thynnu o'r het eto.",
+    "finishedTag": "Wedi gorffen",
+    "statusFinished": "Mae'r badulake hwn wedi gorffen.",
+    "thanksOrganizer": "Diolch am ei drefnu!",
+    "thanksAttendee": "Diolch am ddod!",
+    "canOrganizeNow": "Gan dy fod wedi bod mewn badulake, gelli di drefnu dy un di nawr.",
+    "organizeYours": "Trefnu fy badulake"
   },
   "Nav": {
     "label": "Prif ddewislen",

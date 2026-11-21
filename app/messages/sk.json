@@ -130,7 +130,14 @@
     "deleteWarning": "Nedá sa to vrátiť späť.",
     "deleteWord": "VYMAZAŤ",
     "deleteLabel": "Na potvrdenie napíš {word}",
-    "deleteSubmit": "Vymazať môj účet navždy"
+    "deleteSubmit": "Vymazať môj účet navždy",
+    "myTitle": "Moje badulake",
+    "myUpcoming": "Najbližšie",
+    "myPast": "Minulé",
+    "myNoUpcoming": "Nemáš žiadne najbližšie badulake.",
+    "myEmpty": "Zatiaľ nemáš žiadne badulake. Pozri si najbližšie a prihlás sa na niektoré.",
+    "myBrowse": "Zobraziť badulake",
+    "noticeCanOrganize": "Už máš za sebou prvé badulake: teraz môžeš zorganizovať vlastné."
   },
   "Badulake": {
     "newTitle": "Vytvoriť badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Teraz je na rade č. {n}.",
     "turnsDone": "Všetci si už vybrali.",
     "myExpose": "Svoje veci ukazuješ ako {n}. v poradí",
-    "dayNoDraw": "Dnes je ten deň. Poradie sa ešte nežrebovalo."
+    "dayNoDraw": "Dnes je ten deň. Poradie sa ešte nežrebovalo.",
+    "finishedTag": "Skončilo",
+    "statusFinished": "Toto badulake už skončilo.",
+    "thanksOrganizer": "Ďakujeme za zorganizovanie!",
+    "thanksAttendee": "Ďakujeme za účasť!",
+    "canOrganizeNow": "Keďže už máš za sebou jedno badulake, teraz môžeš zorganizovať vlastné.",
+    "organizeYours": "Zorganizovať vlastné badulake"
   },
   "Nav": {
     "label": "Hlavné menu",

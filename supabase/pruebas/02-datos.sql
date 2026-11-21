@@ -77,3 +77,22 @@ insert into public.equipo (persona) select id from _vecinas where n = 9;
 -- 6. Quién puede organizar (Tarea 5.2, D-038): las vecinas 1 a 7 ya han ido a algún badulake;
 -- Unai (8) todavía no, para enseñar el aviso «aún no puedes organizar». El equipo organiza siempre.
 insert into public.permiso_organizar (persona, origen) select id, 'asistencia' from _vecinas where n between 1 and 7;
+
+-- 7. Un badulake ya celebrado (Tarea 6.1): para ver «Mis badulakes → Pasados», el estado «Terminado» y
+-- el «gracias». Lo organizó Ane (1) y fueron Mikel (2), Nerea (5), Iker (6) y Maialen (7). Se crea con
+-- fecha futura (la base de datos no deja crearlo en el pasado) y después se mueve a hace 3 días.
+-- Ojo: la limpieza nocturna lo borra a los 30 días; volver a ejecutar este archivo lo recrea.
+with nuevo as (
+  insert into public.badulakes (organizadora, titulo, descripcion, fecha_hora, zona, plazas, estado)
+  select id, 'Badulake de Barrio del Sauce, Sant Boi de Llobregat (Barcelona)',
+         'El primero del barrio: ropa de invierno y libros.', now() + interval '3 days', 'Barrio del Sauce', 8, 'publicado'
+  from _vecinas where n = 1
+  returning id
+)
+insert into _b (n, org, titulo, descr, dias, zona, calle, plazas, id)
+select 5, 1, 'pasado', '', -3, 'Barrio del Sauce', 'Calle del Sauce 4 (inventada)', 8, id from nuevo;
+update public.badulakes set fecha_hora = now() - interval '3 days' where id = (select id from _b where n = 5);
+insert into public.badulakes_direccion (badulake_id, organizadora, direccion)
+select b.id, v.id, b.calle from _b b join _vecinas v on v.n = b.org where b.n = 5;
+insert into public.inscripciones (badulake_id, persona)
+select b.id, v.id from _b b join _vecinas v on b.n = 5 and v.n in (2, 5, 6, 7);

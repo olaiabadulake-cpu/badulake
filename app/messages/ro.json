@@ -130,7 +130,14 @@
     "deleteWarning": "Acțiunea este ireversibilă.",
     "deleteWord": "ȘTERGE",
     "deleteLabel": "Ca să confirmi, scrie {word}",
-    "deleteSubmit": "Șterge-mi contul definitiv"
+    "deleteSubmit": "Șterge-mi contul definitiv",
+    "myTitle": "Badulake-urile mele",
+    "myUpcoming": "Următoarele",
+    "myPast": "Trecute",
+    "myNoUpcoming": "Nu ai niciun badulake în curând.",
+    "myEmpty": "Încă nu ai niciun badulake. Uită-te la următoarele și înscrie-te la unul.",
+    "myBrowse": "Vezi badulake-urile",
+    "noticeCanOrganize": "Ai fost deja la un badulake: acum îl poți organiza pe al tău."
   },
   "Badulake": {
     "newTitle": "Creează un badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Acum e rândul nr. {n}.",
     "turnsDone": "Toată lumea a ales deja.",
     "myExpose": "Îți arăți lucrurile la rândul nr. {n}",
-    "dayNoDraw": "Azi e ziua cea mare. Ordinea încă nu a fost trasă la sorți."
+    "dayNoDraw": "Azi e ziua cea mare. Ordinea încă nu a fost trasă la sorți.",
+    "finishedTag": "Încheiat",
+    "statusFinished": "Acest badulake s-a încheiat.",
+    "thanksOrganizer": "Mulțumim că l-ai organizat!",
+    "thanksAttendee": "Mulțumim că ai venit!",
+    "canOrganizeNow": "Pentru că ai fost deja la un badulake, acum îl poți organiza pe al tău.",
+    "organizeYours": "Organizează badulake-ul meu"
   },
   "Nav": {
     "label": "Meniu principal",

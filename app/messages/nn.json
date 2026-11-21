@@ -130,7 +130,14 @@
     "deleteWarning": "Dette kan ikkje angrast.",
     "deleteWord": "SLETT",
     "deleteLabel": "Skriv {word} for å stadfeste",
-    "deleteSubmit": "Slett kontoen min for godt"
+    "deleteSubmit": "Slett kontoen min for godt",
+    "myTitle": "Mine badulakes",
+    "myUpcoming": "Komande",
+    "myPast": "Tidlegare",
+    "myNoUpcoming": "Du har ingen komande badulakes.",
+    "myEmpty": "Du har ingen badulakes enno. Sjå på dei komande, og meld deg på ein.",
+    "myBrowse": "Sjå badulakes",
+    "noticeCanOrganize": "Du har vore på ein badulake: No kan du skipe til din eigen."
   },
   "Badulake": {
     "newTitle": "Opprett ein badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "No er det tur nr. {n}.",
     "turnsDone": "Alle har valt.",
     "myExpose": "Du viser fram tinga dine ved bord nr. {n}",
-    "dayNoDraw": "I dag er dagen. Rekkjefølgja er ikkje trekt enno."
+    "dayNoDraw": "I dag er dagen. Rekkjefølgja er ikkje trekt enno.",
+    "finishedTag": "Avslutta",
+    "statusFinished": "Denne badulaken er over.",
+    "thanksOrganizer": "Takk for at du skipa han til!",
+    "thanksAttendee": "Takk for at du kom!",
+    "canOrganizeNow": "Sidan du har vore på ein badulake, kan du no skipe til din eigen.",
+    "organizeYours": "Skip til min badulake"
   },
   "Nav": {
     "label": "Hovudmeny",

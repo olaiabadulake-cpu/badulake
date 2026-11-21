@@ -161,7 +161,14 @@
     "deleteWarning": "Ezin da desegin.",
     "deleteWord": "EZABATU",
     "deleteLabel": "Berresteko, idatzi {word}",
-    "deleteSubmit": "Ezabatu nire kontua betiko"
+    "deleteSubmit": "Ezabatu nire kontua betiko",
+    "myTitle": "Nire badulakeak",
+    "myUpcoming": "Hurrengoak",
+    "myPast": "Iraganak",
+    "myNoUpcoming": "Ez duzu hurrengo badulakerik.",
+    "myEmpty": "Oraindik ez duzu badulakerik. Begiratu hurrengoak eta eman izena batean.",
+    "myBrowse": "Badulakeak ikusi",
+    "noticeCanOrganize": "Badulake batera joan zara dagoeneko: zurea antola dezakezu."
   },
   "Badulake": {
     "newTitle": "Badulake bat sortu",
@@ -258,7 +265,13 @@
     "nowTurn": "Orain {n}. txanda doa.",
     "turnsDone": "Pertsona guztiek aukeratu dute.",
     "myExpose": "Zure objektuak {n}. postuan erakusten dituzu",
-    "dayNoDraw": "Gaur da eguna. Ordena oraindik ez da zozkatu."
+    "dayNoDraw": "Gaur da eguna. Ordena oraindik ez da zozkatu.",
+    "finishedTag": "Amaituta",
+    "statusFinished": "Badulake hau amaitu da.",
+    "thanksOrganizer": "Eskerrik asko antolatzeagatik!",
+    "thanksAttendee": "Eskerrik asko etortzeagatik!",
+    "canOrganizeNow": "Badulake batera joan zarenez, zurea antola dezakezu orain.",
+    "organizeYours": "Nire badulakea antolatu"
   },
   "Nav": {
     "label": "Menu nagusia",

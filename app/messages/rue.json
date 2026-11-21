@@ -130,7 +130,14 @@
     "deleteWarning": "То ше нє да врациц.",
     "deleteWord": "ВИМАЖ",
     "deleteLabel": "Же би потвердзиц, напиш {word}",
-    "deleteSubmit": "Вимазац мой профил назавше"
+    "deleteSubmit": "Вимазац мой профил назавше",
+    "myTitle": "Мойо badulake",
+    "myUpcoming": "Шлїдуюци",
+    "myPast": "Прешли",
+    "myNoUpcoming": "Нє маш нїяки шлїдуюци badulake.",
+    "myEmpty": "Ище нє маш нїяки badulake. Попатр шлїдуюци и запиш ше на дајаки.",
+    "myBrowse": "Попатриц badulake",
+    "noticeCanOrganize": "Уж маш за собом єден badulake: тераз можеш организовац свой."
   },
   "Badulake": {
     "newTitle": "Направ badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Тераз на шоре число {n}.",
     "turnsDone": "Шицки уж вибрали.",
     "myExpose": "Твойо ствари указуєш на штанду число {n}",
-    "dayNoDraw": "Нєшка тот дзень. Шор ище нє вилосовани."
+    "dayNoDraw": "Нєшка тот дзень. Шор ище нє вилосовани.",
+    "finishedTag": "Законченє",
+    "statusFinished": "Тот badulake ше закончел.",
+    "thanksOrganizer": "Дзекуєме за организованє!",
+    "thanksAttendee": "Дзекуєме за участ!",
+    "canOrganizeNow": "Кед уж маш за собом єден badulake, тераз можеш организовац свой.",
+    "organizeYours": "Организовац мой badulake"
   },
   "Nav": {
     "label": "Главни меню",

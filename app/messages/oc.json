@@ -130,7 +130,14 @@
     "deleteWarning": "Se pòt pas desfar.",
     "deleteWord": "ESCAFAR",
     "deleteLabel": "Per confirmar, escriu {word}",
-    "deleteSubmit": "Escafar mon compte per totjorn"
+    "deleteSubmit": "Escafar mon compte per totjorn",
+    "myTitle": "Mos badulakes",
+    "myUpcoming": "Que venon",
+    "myPast": "Passats",
+    "myNoUpcoming": "As pas cap de badulake que ven.",
+    "myEmpty": "As pas encara cap de badulake. Agacha los que venon e marca-te a un.",
+    "myBrowse": "Veire los badulakes",
+    "noticeCanOrganize": "Ja siás anat a un badulake : ara pòdes organizar lo tieu."
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Ara es lo torn n° {n}.",
     "turnsDone": "Totas las personas an causit.",
     "myExpose": "Mòstras tos objèctes a la plaça n° {n}",
-    "dayNoDraw": "Es uèi lo jorn. L'òrdre es pas encara estat tirat al sòrt."
+    "dayNoDraw": "Es uèi lo jorn. L'òrdre es pas encara estat tirat al sòrt.",
+    "finishedTag": "Acabat",
+    "statusFinished": "Aqueste badulake es acabat.",
+    "thanksOrganizer": "Mercé de l'aver organizat !",
+    "thanksAttendee": "Mercé d'èsser vengut !",
+    "canOrganizeNow": "Coma ja siás anat a un badulake, ara pòdes organizar lo tieu.",
+    "organizeYours": "Organizar mon badulake"
   },
   "Nav": {
     "label": "Menut principal",

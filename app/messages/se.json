@@ -130,7 +130,14 @@
     "deleteWarning": "Dan ii sáhte máhcahit.",
     "deleteWord": "SIHKO",
     "deleteLabel": "Čális {word} nannen dihtii",
-    "deleteSubmit": "Sihko mu konttu agibeaivái"
+    "deleteSubmit": "Sihko mu konttu agibeaivái",
+    "myTitle": "Mu badulaket",
+    "myUpcoming": "Boahttevaččat",
+    "myPast": "Vássán",
+    "myNoUpcoming": "Dus eai leat boahttevaš badulaket.",
+    "myEmpty": "Dus eai vel leat badulaket. Geahča boahttevaččaid ja čális iežat oktii.",
+    "myBrowse": "Geahča badulakeid",
+    "noticeCanOrganize": "Don leat juo leamaš badulakes: dál sáhtát lágidit iežat badulake."
   },
   "Badulake": {
     "newTitle": "Ráhkat badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Dál lea {n}. vuorru.",
     "turnsDone": "Buohkat leat juo válljen.",
     "myExpose": "Don čájehat iežat diŋggaid {n}. beavddis",
-    "dayNoDraw": "Odne lea dat beaivi. Ortnet ii leat vel vuorbádallon."
+    "dayNoDraw": "Odne lea dat beaivi. Ortnet ii leat vel vuorbádallon.",
+    "finishedTag": "Nohkan",
+    "statusFinished": "Dát badulake lea nohkan.",
+    "thanksOrganizer": "Giitu go lágidit dan!",
+    "thanksAttendee": "Giitu go bohtet!",
+    "canOrganizeNow": "Go don leat juo leamaš badulakes, de sáhtát dál lágidit iežat badulake.",
+    "organizeYours": "Lágit mu badulake"
   },
   "Nav": {
     "label": "Váldofállu",

@@ -1,9 +1,10 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { createSupabase, idsOf } from "@/lib/supabase/server";
+import { isFinished } from "@/lib/badulake-estado";
 
 type B = { id: string; titulo: string; fecha_hora: string; estado: string; cancelado_por: string | null };
-type Notice = { id: string; title: string; kind: "fromWaitlist" | "cancelled" | "waiting"; position?: number };
+type Notice = { id: string; title: string; kind: "fromWaitlist" | "cancelled" | "waiting" | "canOrganize"; position?: number };
 
 // Avisos dentro de la app (Tarea 20, D-032): has entrado desde la lista de espera, estás en la
 // lista, o un badulake tuyo se ha cancelado. Los correos con estos avisos son de la Tarea 10.
@@ -52,6 +53,15 @@ export async function Avisos() {
   for (const b of (owned ?? []) as B[]) {
     if (b.cancelado_por === "automatica" && recent(b)) notices.push({ id: b.id, title: b.titulo, kind: "cancelled" });
   }
+  // Ya has ido a un badulake y aún no has organizado ninguno: ya puedes (Tarea 6.1, D-038).
+  const attended = (mine ?? []).some((m) => {
+    const b = one(m.badulakes);
+    return !!b && b.estado === "publicado" && isFinished(b.fecha_hora, new Date(now));
+  });
+  if (attended && own.length === 0) {
+    const { data: puedo } = await supabase.rpc("puedo_organizar");
+    if (puedo === true) notices.unshift({ id: "nuevo", title: "", kind: "canOrganize" });
+  }
   if (notices.length === 0) return null;
 
   const t = await getTranslations("Account");
@@ -61,11 +71,15 @@ export async function Avisos() {
       <ul className="flex flex-col gap-3">
         {notices.map((n) => (
           <li key={`${n.kind}-${n.id}`}>
+            {n.kind === "canOrganize" ? (
+              <Link href="/badulakes/nuevo" className="aviso block">{t("noticeCanOrganize")}</Link>
+            ) : (
             <Link href={`/badulakes/${n.id}`} className={n.kind === "cancelled" ? "aviso-error block" : "aviso block"}>
               <span className="font-semibold">{n.title}</span>
               {": "}
               {n.kind === "waiting" ? t("noticeWaiting", { position: n.position! }) : t(n.kind === "cancelled" ? "noticeCancelled" : "noticeFromWaitlist")}
             </Link>
+            )}
           </li>
         ))}
       </ul>

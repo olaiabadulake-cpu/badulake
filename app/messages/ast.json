@@ -130,7 +130,14 @@
     "deleteWarning": "Nun se pue desfacer.",
     "deleteWord": "BORRAR",
     "deleteLabel": "Pa confirmalo, escribi {word}",
-    "deleteSubmit": "Borrar la mio cuenta pa siempres"
+    "deleteSubmit": "Borrar la mio cuenta pa siempres",
+    "myTitle": "Los mios badulakes",
+    "myUpcoming": "Próximos",
+    "myPast": "Pasaos",
+    "myNoUpcoming": "Nun tienes nengún badulake próximu.",
+    "myEmpty": "Entá nun tienes nengún badulake. Mira los próximos y apúntate a ún.",
+    "myBrowse": "Ver los badulakes",
+    "noticeCanOrganize": "Yá fuisti a un badulake: yá pues organizar el tuyu."
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Agora va la vez n.º {n}.",
     "turnsDone": "Yá escoyeron toles persones.",
     "myExpose": "Amueses los tos oxetos nel puestu n.º {n}",
-    "dayNoDraw": "Güei ye'l día. Entá nun se sortió l'orde."
+    "dayNoDraw": "Güei ye'l día. Entá nun se sortió l'orde.",
+    "finishedTag": "Acabáu",
+    "statusFinished": "Esti badulake yá acabó.",
+    "thanksOrganizer": "¡Gracies por organizalu!",
+    "thanksAttendee": "¡Gracies por venir!",
+    "canOrganizeNow": "Como yá fuisti a un badulake, yá pues organizar el tuyu.",
+    "organizeYours": "Organizar el mio badulake"
   },
   "Nav": {
     "label": "Menú principal",

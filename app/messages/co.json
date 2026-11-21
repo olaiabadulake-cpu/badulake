@@ -130,7 +130,14 @@
     "deleteWarning": "Ùn si pò micca disfà.",
     "deleteWord": "SCANCELLA",
     "deleteLabel": "Per cunfirmà, scrivi {word}",
-    "deleteSubmit": "Scancellà u mo contu per sempre"
+    "deleteSubmit": "Scancellà u mo contu per sempre",
+    "myTitle": "I mo badulakes",
+    "myUpcoming": "I prossimi",
+    "myPast": "I passati",
+    "myNoUpcoming": "Ùn ai micca badulake chì vene.",
+    "myEmpty": "Ùn ai ancu nisun badulake. Fighjula i prossimi è iscriviti à unu.",
+    "myBrowse": "Vede i badulakes",
+    "noticeCanOrganize": "Sì digià andatu à un badulake: avà poi urganizà u toiu."
   },
   "Badulake": {
     "newTitle": "Creà un badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Avà hè u turnu nùmeru {n}.",
     "turnsDone": "Tutte e persone anu sceltu.",
     "myExpose": "Mostri i to oggetti à u postu nùmeru {n}",
-    "dayNoDraw": "Oghje hè u ghjornu. L'ordine ùn hè ancu statu tiratu à a sorte."
+    "dayNoDraw": "Oghje hè u ghjornu. L'ordine ùn hè ancu statu tiratu à a sorte.",
+    "finishedTag": "Finitu",
+    "statusFinished": "Stu badulake hè finitu.",
+    "thanksOrganizer": "Grazie d'avellu urganizatu!",
+    "thanksAttendee": "Grazie d'esse vinutu!",
+    "canOrganizeNow": "Postu chì sì digià andatu à un badulake, avà poi urganizà u toiu.",
+    "organizeYours": "Urganizà u mo badulake"
   },
   "Nav": {
     "label": "Menù principale",

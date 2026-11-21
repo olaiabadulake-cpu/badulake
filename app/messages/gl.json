@@ -130,7 +130,14 @@
     "deleteWarning": "Non se pode desfacer.",
     "deleteWord": "BORRAR",
     "deleteLabel": "Para confirmalo, escribe {word}",
-    "deleteSubmit": "Borrar a miña conta para sempre"
+    "deleteSubmit": "Borrar a miña conta para sempre",
+    "myTitle": "Os meus badulakes",
+    "myUpcoming": "Próximos",
+    "myPast": "Pasados",
+    "myNoUpcoming": "Non tes ningún badulake próximo.",
+    "myEmpty": "Aínda non tes ningún badulake. Mira os próximos e apúntate a un.",
+    "myBrowse": "Ver os badulakes",
+    "noticeCanOrganize": "Xa fuches a un badulake: xa podes organizar o teu."
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
@@ -227,7 +234,13 @@
     "nowTurn": "Agora vai a quenda {n}.ª.",
     "turnsDone": "Xa escolleron todas as persoas.",
     "myExpose": "Ensinas os teus obxectos no posto {n}.º",
-    "dayNoDraw": "Hoxe é o día. Aínda non se sorteou a orde."
+    "dayNoDraw": "Hoxe é o día. Aínda non se sorteou a orde.",
+    "finishedTag": "Rematado",
+    "statusFinished": "Este badulake xa rematou.",
+    "thanksOrganizer": "Grazas por organizalo!",
+    "thanksAttendee": "Grazas por vir!",
+    "canOrganizeNow": "Como xa fuches a un badulake, xa podes organizar o teu.",
+    "organizeYours": "Organizar o meu badulake"
   },
   "Nav": {
     "label": "Menú principal",
