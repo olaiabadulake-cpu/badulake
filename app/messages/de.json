@@ -144,7 +144,15 @@
     "myNoUpcoming": "Du hast keine anstehenden badulakes.",
     "myEmpty": "Du hast noch kein badulake. Schau dir die nächsten an und melde dich bei einem an.",
     "myBrowse": "badulakes ansehen",
-    "noticeCanOrganize": "Du warst schon bei einem badulake: Jetzt kannst du dein eigenes organisieren."
+    "noticeCanOrganize": "Du warst schon bei einem badulake: Jetzt kannst du dein eigenes organisieren.",
+    "pushTitle": "Benachrichtigungen auf dem Handy",
+    "pushExplain": "Wir sagen dir Bescheid: am Tag vor einem badulake, wenn du von der Warteliste nachrückst und wenn eins abgesagt wird. Nur auf diesem Handy; du kannst sie jederzeit abschalten.",
+    "pushOn": "Benachrichtigungen einschalten",
+    "pushOff": "Benachrichtigungen ausschalten",
+    "pushActive": "Die Benachrichtigungen sind auf diesem Handy eingeschaltet.",
+    "pushDenied": "Dieses Handy lässt keine Benachrichtigungen zu. Du kannst sie in den Browser-Einstellungen erlauben.",
+    "pushUnsupported": "Dieser Browser kann keine Benachrichtigungen empfangen. Auf dem iPhone füge Badulake zuerst zum Home-Bildschirm hinzu.",
+    "pushError": "Die Benachrichtigungen konnten nicht eingeschaltet werden. Versuch es noch einmal."
   },
   "Badulake": {
     "newTitle": "Ein badulake erstellen",
@@ -415,5 +423,13 @@
       "closed": "Der Badulake-Modus ist nicht mehr verfügbar."
     },
     "countsLocked": "Die Reihenfolge steht fest: Die gezählten Sachen lassen sich nicht mehr ändern."
+  },
+  "Push": {
+    "reminderTitle": "Morgen ist badulake",
+    "reminderBody": "{title}. Schau nach, was du mitbringst.",
+    "waitlistTitle": "Du hast einen Platz!",
+    "waitlistBody": "Du bist von der Warteliste bei {title} nachgerückt.",
+    "cancelledTitle": "badulake abgesagt",
+    "cancelledBody": "{title} wurde abgesagt."
   }
 }

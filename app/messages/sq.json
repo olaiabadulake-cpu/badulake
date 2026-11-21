@@ -144,7 +144,15 @@
     "myNoUpcoming": "Nuk keni asnjë badulake të ardhshëm.",
     "myEmpty": "Ende nuk keni asnjë badulake. Shikoni ato të ardhshme dhe regjistrohuni në një.",
     "myBrowse": "Shikoni badulake-t",
-    "noticeCanOrganize": "Keni qenë tashmë në një badulake: tani mund të organizoni tuajin."
+    "noticeCanOrganize": "Keni qenë tashmë në një badulake: tani mund të organizoni tuajin.",
+    "pushTitle": "Njoftime në telefon",
+    "pushExplain": "Ju njoftojmë një ditë para një badulake, nëse hyni nga lista e pritjes dhe nëse anulohet ndonjë. Vetëm në këtë telefon; mund t'i hiqni kur të doni.",
+    "pushOn": "Aktivizo njoftimet",
+    "pushOff": "Hiq njoftimet",
+    "pushActive": "Njoftimet janë aktive në këtë telefon.",
+    "pushDenied": "Ky telefon nuk lejon njoftime. Mund t'i lejoni te cilësimet e shfletuesit.",
+    "pushUnsupported": "Ky shfletues nuk mund të marrë njoftime. Në iPhone, shtoni më parë Badulake në ekranin bazë.",
+    "pushError": "Njoftimet nuk u aktivizuan dot. Provoni sërish."
   },
   "Badulake": {
     "newTitle": "Krijoni një badulake",
@@ -415,5 +423,13 @@
       "closed": "Modaliteti badulake nuk është më i disponueshëm."
     },
     "countsLocked": "Radha është caktuar tashmë: sendet e numëruara nuk mund të ndryshohen më."
+  },
+  "Push": {
+    "reminderTitle": "Nesër ka badulake",
+    "reminderBody": "{title}. Shikoni çfarë të sillni.",
+    "waitlistTitle": "Keni vend!",
+    "waitlistBody": "Hytë në {title} nga lista e pritjes.",
+    "cancelledTitle": "Badulake u anulua",
+    "cancelledBody": "{title} u anulua."
   }
 }

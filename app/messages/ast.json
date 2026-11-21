@@ -144,7 +144,15 @@
     "myNoUpcoming": "Nun tienes nengún badulake próximu.",
     "myEmpty": "Entá nun tienes nengún badulake. Mira los próximos y apúntate a ún.",
     "myBrowse": "Ver los badulakes",
-    "noticeCanOrganize": "Yá fuisti a un badulake: yá pues organizar el tuyu."
+    "noticeCanOrganize": "Yá fuisti a un badulake: yá pues organizar el tuyu.",
+    "pushTitle": "Avisos nel móvil",
+    "pushExplain": "Avisámoste el día enantes d'un badulake, si entres dende la llista d'espera y si s'encaboxa ún. Namás nesti móvil; pues quitalos cuando quieras.",
+    "pushOn": "Activar avisos",
+    "pushOff": "Quitar avisos",
+    "pushActive": "Los avisos tán activaos nesti móvil.",
+    "pushDenied": "Esti móvil nun dexa unviar avisos. Pues permitilo nos axustes del navegador.",
+    "pushUnsupported": "Esti navegador nun pue recibir avisos. N'iPhone, amiesta enantes Badulake a la pantalla d'aniciu.",
+    "pushError": "Nun se pudieron activar los avisos. Téntalo de nueves."
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
@@ -415,5 +423,13 @@
       "closed": "El mou badulake yá nun ta disponible."
     },
     "countsLocked": "La cola de turnos yá ta fixada: los oxetos contaos yá nun se puen camudar."
+  },
+  "Push": {
+    "reminderTitle": "Mañana hai badulake",
+    "reminderBody": "{title}. Repasa qué llevar.",
+    "waitlistTitle": "¡Tienes plaza!",
+    "waitlistBody": "Entraste en {title} dende la llista d'espera.",
+    "cancelledTitle": "Badulake encaboxáu",
+    "cancelledBody": "{title} encaboxóse."
   }
 }

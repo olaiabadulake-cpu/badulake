@@ -144,7 +144,15 @@
     "myNoUpcoming": "Nemate nijedan predstojeći badulake.",
     "myEmpty": "Još nemate nijedan badulake. Pogledajte predstojeće i prijavite se na neki.",
     "myBrowse": "Pogledajte badulakee",
-    "noticeCanOrganize": "Već ste bili na badulakeu: sada možete organizovati svoj."
+    "noticeCanOrganize": "Već ste bili na badulakeu: sada možete organizovati svoj.",
+    "pushTitle": "Obavještenja na mobitelu",
+    "pushExplain": "Obavijestit ćemo vas dan prije badulakea, ako uđete s liste čekanja i ako se neki otkaže. Samo na ovom mobitelu; možete ih isključiti kad god želite.",
+    "pushOn": "Uključi obavještenja",
+    "pushOff": "Isključi obavještenja",
+    "pushActive": "Obavještenja su uključena na ovom mobitelu.",
+    "pushDenied": "Ovaj mobitel ne dozvoljava obavještenja. Možete ih dozvoliti u postavkama preglednika.",
+    "pushUnsupported": "Ovaj preglednik ne može primati obavještenja. Na iPhoneu prvo dodajte Badulake na početni ekran.",
+    "pushError": "Obavještenja se nisu mogla uključiti. Pokušajte ponovo."
   },
   "Badulake": {
     "newTitle": "Napravite badulake",
@@ -415,5 +423,13 @@
       "closed": "Badulake način više nije dostupan."
     },
     "countsLocked": "Red za izbor je utvrđen: izbrojane stvari više se ne mogu mijenjati."
+  },
+  "Push": {
+    "reminderTitle": "Sutra je badulake",
+    "reminderBody": "{title}. Pogledajte šta ponijeti.",
+    "waitlistTitle": "Imate mjesto!",
+    "waitlistBody": "Ušli ste u {title} s liste čekanja.",
+    "cancelledTitle": "Badulake je otkazan",
+    "cancelledBody": "{title} je otkazan."
   }
 }

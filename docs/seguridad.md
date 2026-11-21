@@ -202,6 +202,14 @@ Script `supabase/cupo.sql`, ejecutado por Claude en Supabase el 19/11/2026.
 - `proxy.ts` solo la usa para la ficha compartida sin sesión; lo que no devuelve nada da 404.
 - La cookie `badulake-volver` es `httpOnly`, `SameSite=Lax`, segura en https y dura un día. Solo se usa si es una ruta privada de esta web (misma comprobación que las rutas protegidas): no puede llevar a otra web.
 
+## 18. Avisos en el móvil (Tarea 16.1, D-050) — solo en la copia
+
+- Claves VAPID solo en Vercel de la copia y en `app/.env.pruebas` (fuera del repositorio). La privada nunca sale del servidor.
+- `/api/avisos/enviar` da 404 si no es la copia o faltan `AVISOS_PUSH=1` y las claves. Sin una **ficha** válida (uuid de un solo uso creado por la base de datos, caduca a los 5 minutos) no devuelve nada: no hay ninguna clave compartida que se pueda filtrar.
+- `avisos_tomar` y `avisos_quitar` se pueden llamar sin cuenta a propósito (las llama la web con la clave pública), pero sin ficha válida no hacen nada. Saldrán como aviso en el revisor de Supabase.
+- `push_suscripciones`: cada persona solo crea, ve y borra las suyas (RLS); la cola y las fichas no se leen desde fuera.
+- Ojo aprendido: Supabase no deja `DELETE` sin `WHERE` en lo que se llama desde la web; la función pone una condición siempre cierta.
+
 ## 17. Buscar por zona (Tarea 6.2, D-043)
 
 - `Permissions-Policy: geolocation=(self)` (antes `()`): solo la propia web puede pedir la ubicación, y solo cuando la persona pulsa «Cerca de mí». La ubicación no se envía al servidor: el móvil calcula la provincia y solo manda su código.

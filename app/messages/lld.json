@@ -144,7 +144,15 @@
     "myNoUpcoming": "Te n'as degügn badulake che vëgn.",
     "myEmpty": "Te n'as ciamó degügn badulake. Cëla chi che vëgn y scrí te sö a un.",
     "myBrowse": "Vëire i badulakes",
-    "noticeCanOrganize": "Te es bele stè a n badulake: śëgn pos-te organisé le tü."
+    "noticeCanOrganize": "Te es bele stè a n badulake: śëgn pos-te organisé le tü.",
+    "pushTitle": "Avisc sun telefonin",
+    "pushExplain": "Te avisun le dé denant da n badulake, sce te vëgnes ite dala lista d'aspetada y sce un vëgn anulé. Ma sun chësc telefonin; te pos i tó demez canche te ues.",
+    "pushOn": "Ativé i avisc",
+    "pushOff": "Tó demez i avisc",
+    "pushActive": "I avisc é atis sun chësc telefonin.",
+    "pushDenied": "Chësc telefonin ne lascia nia mandé avisc. Te i pos permëte tles impostaziuns dl navigadù.",
+    "pushUnsupported": "Chësc navigadù ne po nia ciafé avisc. Sun iPhone, injunta denant Badulake ala videata de partenza.",
+    "pushError": "Ne n'an nia podü ativé i avisc. Proa ciamó n iade."
   },
   "Badulake": {
     "newTitle": "Fá n badulake",
@@ -415,5 +423,13 @@
       "closed": "La modalité badulake n'é nia plü a desposiziun."
     },
     "countsLocked": "La rodlada di turns é bele fissada: i ogeç cuntà ne po nia plü gnì mudà."
+  },
+  "Push": {
+    "reminderTitle": "Doman él badulake",
+    "reminderBody": "{title}. Cëla ci portè.",
+    "waitlistTitle": "T'as n post!",
+    "waitlistBody": "T'es gnü ite te {title} dala lista d'aspetada.",
+    "cancelledTitle": "Badulake anulé",
+    "cancelledBody": "{title} é gnü anulé."
   }
 }

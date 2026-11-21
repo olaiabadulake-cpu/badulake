@@ -144,7 +144,15 @@
     "myNoUpcoming": "Je hebt geen komende badulakes.",
     "myEmpty": "Je hebt nog geen badulakes. Bekijk de komende en meld je aan voor een.",
     "myBrowse": "Badulakes bekijken",
-    "noticeCanOrganize": "Je bent al naar een badulake geweest: nu kun je er zelf een organiseren."
+    "noticeCanOrganize": "Je bent al naar een badulake geweest: nu kun je er zelf een organiseren.",
+    "pushTitle": "Meldingen op je telefoon",
+    "pushExplain": "We laten het je weten de dag voor een badulake, als je van de wachtlijst binnenkomt en als er een wordt geannuleerd. Alleen op deze telefoon; je kunt ze uitzetten wanneer je wilt.",
+    "pushOn": "Meldingen aanzetten",
+    "pushOff": "Meldingen uitzetten",
+    "pushActive": "Meldingen staan aan op deze telefoon.",
+    "pushDenied": "Deze telefoon staat geen meldingen toe. Je kunt ze toestaan in de browserinstellingen.",
+    "pushUnsupported": "Deze browser kan geen meldingen ontvangen. Zet op een iPhone eerst Badulake op het beginscherm.",
+    "pushError": "De meldingen konden niet worden aangezet. Probeer het opnieuw."
   },
   "Badulake": {
     "newTitle": "Een badulake aanmaken",
@@ -415,5 +423,13 @@
       "closed": "De badulake-modus is niet meer beschikbaar."
     },
     "countsLocked": "De volgorde ligt vast: de getelde spullen kunnen niet meer worden gewijzigd."
+  },
+  "Push": {
+    "reminderTitle": "Morgen is er badulake",
+    "reminderBody": "{title}. Kijk wat je meeneemt.",
+    "waitlistTitle": "Je hebt een plek!",
+    "waitlistBody": "Je bent via de wachtlijst binnengekomen bij {title}.",
+    "cancelledTitle": "Badulake geannuleerd",
+    "cancelledBody": "{title} is geannuleerd."
   }
 }

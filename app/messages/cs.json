@@ -144,7 +144,15 @@
     "myNoUpcoming": "Nemáš žádné nejbližší badulake.",
     "myEmpty": "Zatím nemáš žádné badulake. Podívej se na nejbližší a přihlas se na některé.",
     "myBrowse": "Zobrazit badulake",
-    "noticeCanOrganize": "Už máš za sebou první badulake: teď můžeš uspořádat vlastní."
+    "noticeCanOrganize": "Už máš za sebou první badulake: teď můžeš uspořádat vlastní.",
+    "pushTitle": "Upozornění v telefonu",
+    "pushExplain": "Dáme ti vědět den před badulake, když se dostaneš z čekací listiny a když se nějaké zruší. Jen v tomto telefonu; můžeš je kdykoli vypnout.",
+    "pushOn": "Zapnout upozornění",
+    "pushOff": "Vypnout upozornění",
+    "pushActive": "Upozornění jsou v tomto telefonu zapnutá.",
+    "pushDenied": "Tento telefon upozornění nepovoluje. Můžeš je povolit v nastavení prohlížeče.",
+    "pushUnsupported": "Tento prohlížeč neumí přijímat upozornění. Na iPhonu si nejdřív přidej Badulake na plochu.",
+    "pushError": "Upozornění se nepodařilo zapnout. Zkus to znovu."
   },
   "Badulake": {
     "newTitle": "Vytvořit badulake",
@@ -415,5 +423,13 @@
       "closed": "Režim badulake už není k dispozici."
     },
     "countsLocked": "Pořadí je už pevně dané: spočítané věci už nejde měnit."
+  },
+  "Push": {
+    "reminderTitle": "Zítra je badulake",
+    "reminderBody": "{title}. Připomeň si, co s sebou.",
+    "waitlistTitle": "Máš místo!",
+    "waitlistBody": "Z čekací listiny se ti uvolnilo místo na {title}.",
+    "cancelledTitle": "Badulake zrušeno",
+    "cancelledBody": "{title} bylo zrušeno."
   }
 }

@@ -175,7 +175,15 @@
     "myNoUpcoming": "Ez duzu hurrengo badulakerik.",
     "myEmpty": "Oraindik ez duzu badulakerik. Begiratu hurrengoak eta eman izena batean.",
     "myBrowse": "Badulakeak ikusi",
-    "noticeCanOrganize": "Badulake batera joan zara dagoeneko: zurea antola dezakezu."
+    "noticeCanOrganize": "Badulake batera joan zara dagoeneko: zurea antola dezakezu.",
+    "pushTitle": "Abisuak mugikorrean",
+    "pushExplain": "Badulake baten aurreko egunean, itxaron-zerrendatik sartzen bazara eta bat bertan behera geratzen bada abisatuko dizugu. Mugikor honetan bakarrik; nahi duzunean ken ditzakezu.",
+    "pushOn": "Abisuak aktibatu",
+    "pushOff": "Abisuak kendu",
+    "pushActive": "Abisuak aktibatuta daude mugikor honetan.",
+    "pushDenied": "Mugikor honek ez du abisurik bidaltzen uzten. Nabigatzailearen ezarpenetan baimendu dezakezu.",
+    "pushUnsupported": "Nabigatzaile honek ezin du abisurik jaso. iPhonean, gehitu lehenago Badulake hasierako pantailara.",
+    "pushError": "Ezin izan dira abisuak aktibatu. Saiatu berriro."
   },
   "Badulake": {
     "newTitle": "Badulake bat sortu",
@@ -505,5 +513,13 @@
       "closed": "Badulake modua ez dago erabilgarri jada."
     },
     "countsLocked": "Txanden ilara finkatuta dago: zenbatutako objektuak ezin dira aldatu."
+  },
+  "Push": {
+    "reminderTitle": "Bihar badulakea dago",
+    "reminderBody": "{title}. Begiratu zer eraman.",
+    "waitlistTitle": "Tokia duzu!",
+    "waitlistBody": "Itxaron-zerrendatik sartu zara {title} badulakean.",
+    "cancelledTitle": "Badulakea bertan behera",
+    "cancelledBody": "{title} bertan behera geratu da."
   }
 }

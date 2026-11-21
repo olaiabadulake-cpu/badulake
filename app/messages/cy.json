@@ -144,7 +144,15 @@
     "myNoUpcoming": "Does gen ti ddim badulake i ddod.",
     "myEmpty": "Does gen ti ddim badulake eto. Edrych ar y rhai i ddod a chofrestra ar gyfer un.",
     "myBrowse": "Gweld y badulakes",
-    "noticeCanOrganize": "Rwyt ti wedi bod mewn badulake: gelli di drefnu dy un di nawr."
+    "noticeCanOrganize": "Rwyt ti wedi bod mewn badulake: gelli di drefnu dy un di nawr.",
+    "pushTitle": "Hysbysiadau ar y ffôn",
+    "pushExplain": "Byddwn ni'n dy rybuddio'r diwrnod cyn badulake, os wyt ti'n cael lle o'r rhestr aros ac os caiff un ei ganslo. Ar y ffôn hwn yn unig; gelli di eu diffodd unrhyw bryd.",
+    "pushOn": "Troi hysbysiadau ymlaen",
+    "pushOff": "Diffodd hysbysiadau",
+    "pushActive": "Mae hysbysiadau ymlaen ar y ffôn hwn.",
+    "pushDenied": "Dydy'r ffôn hwn ddim yn caniatáu hysbysiadau. Gelli di eu caniatáu yng ngosodiadau'r porwr.",
+    "pushUnsupported": "Dydy'r porwr hwn ddim yn gallu derbyn hysbysiadau. Ar iPhone, ychwanega Badulake at y sgrin gartref yn gyntaf.",
+    "pushError": "Doedd dim modd troi'r hysbysiadau ymlaen. Rho gynnig arall arni."
   },
   "Badulake": {
     "newTitle": "Creu badulake",
@@ -415,5 +423,13 @@
       "closed": "Dydy modd badulake ddim ar gael bellach."
     },
     "countsLocked": "Mae trefn y tro wedi'i phennu: does dim modd newid y pethau sydd wedi'u cyfrif bellach."
+  },
+  "Push": {
+    "reminderTitle": "Mae badulake yfory",
+    "reminderBody": "{title}. Edrych beth i ddod gyda thi.",
+    "waitlistTitle": "Mae gen ti le!",
+    "waitlistBody": "Rwyt ti wedi cael lle yn {title} o'r rhestr aros.",
+    "cancelledTitle": "Badulake wedi'i ganslo",
+    "cancelledBody": "Mae {title} wedi'i ganslo."
   }
 }

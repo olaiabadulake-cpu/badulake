@@ -10,6 +10,8 @@ import { Interest } from "./interest";
 import { ChangePassword, DeleteAccount } from "./security-forms";
 import { Avisos } from "./avisos";
 import { MisBadulakes } from "./mis-badulakes";
+import { PushAvisos } from "./push-avisos";
+import { vapidPublicKey } from "@/lib/avisos";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Account");
@@ -54,6 +56,8 @@ async function Account({ searchParams }: Pick<PageProps<"/[locale]/cuenta">, "se
           {t("signOut")}
         </button>
       </form>
+      {/* Avisos en el móvil: solo en la copia de pruebas (Tarea 16.1, D-050). */}
+      {vapidPublicKey && <PushAvisos publicKey={vapidPublicKey} />}
       <Interest />
       <ChangePassword />
       <DeleteAccount />

@@ -144,7 +144,15 @@
     "myNoUpcoming": "Não tens nenhum badulake próximo.",
     "myEmpty": "Ainda não tens nenhum badulake. Vê os próximos e inscreve-te num.",
     "myBrowse": "Ver os badulakes",
-    "noticeCanOrganize": "Já foste a um badulake: já podes organizar o teu."
+    "noticeCanOrganize": "Já foste a um badulake: já podes organizar o teu.",
+    "pushTitle": "Avisos no telemóvel",
+    "pushExplain": "Avisamos-te no dia antes de um badulake, se entrares a partir da lista de espera e se algum for cancelado. Só neste telemóvel; podes desativá-los quando quiseres.",
+    "pushOn": "Ativar avisos",
+    "pushOff": "Desativar avisos",
+    "pushActive": "Os avisos estão ativos neste telemóvel.",
+    "pushDenied": "Este telemóvel não permite avisos. Podes permiti-los nas definições do navegador.",
+    "pushUnsupported": "Este navegador não pode receber avisos. No iPhone, adiciona primeiro o Badulake ao ecrã principal.",
+    "pushError": "Não foi possível ativar os avisos. Tenta outra vez."
   },
   "Badulake": {
     "newTitle": "Criar um badulake",
@@ -415,5 +423,13 @@
       "closed": "O modo badulake já não está disponível."
     },
     "countsLocked": "A ordem já está fixada: os objetos contados já não se podem alterar."
+  },
+  "Push": {
+    "reminderTitle": "Amanhã há badulake",
+    "reminderBody": "{title}. Revê o que levar.",
+    "waitlistTitle": "Tens lugar!",
+    "waitlistBody": "Entraste em {title} a partir da lista de espera.",
+    "cancelledTitle": "Badulake cancelado",
+    "cancelledBody": "{title} foi cancelado."
   }
 }

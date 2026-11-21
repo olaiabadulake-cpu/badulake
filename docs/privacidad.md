@@ -154,6 +154,17 @@ Para no repetir el aviso «Tu móvil está en otra lengua», el navegador guarda
 
 Al pulsar «Cerca de mí», el navegador pide permiso para la ubicación una sola vez. El móvil calcula la provincia más cercana y solo manda su código (por ejemplo, «bizkaia») para filtrar la lista. **La ubicación no sale del móvil y no se guarda en ningún sitio.** No es un tratamiento de la ubicación por parte de Badulake; se explica para que la Asesoría lo confirme.
 
+### 2.8 Avisos en el móvil (Tarea 16.1, D-050) — SOLO EN LA COPIA DE PRUEBAS
+
+| | |
+|---|---|
+| **Datos** | Por cada móvil en el que la persona activa los avisos: la dirección de avisos que da su navegador (de Google, Apple o Mozilla, según el móvil) y dos claves para cifrarlos (tabla `push_suscripciones`). Mientras un aviso espera a enviarse (minutos): a quién, de qué tipo y de qué badulake (tabla `avisos_cola`). |
+| **Para qué** | Avisar el día antes de un badulake, al entrar desde la lista de espera y cuando se cancela. |
+| **Base legal propuesta** | Consentimiento (la persona los activa a mano y los puede quitar). |
+| **Quién lo ve** | Nadie desde fuera; solo la base de datos y la función que envía. El aviso viaja **cifrado** por el servicio de avisos del navegador (Google, Apple o Mozilla), que no puede leerlo. |
+| **Cuánto tiempo** | La suscripción, hasta que la persona quita los avisos, borra la cuenta o el móvil deja de existir. La cola, hasta que se envía (o 2 días como mucho). |
+| **Aviso para la Asesoría** | Los servicios de avisos de Google (FCM), Apple (APNs) y Mozilla reciben el aviso cifrado y saben que ese móvil ha recibido algo de Badulake. ¿Hay que nombrarlos en el aviso de privacidad? ¿Basta el consentimiento del botón? |
+
 ## 3. Dónde se guarda y quién interviene (encargados del tratamiento)
 
 | Proveedor | Qué hace | Dónde | Notas para la Asesoría |
@@ -232,6 +243,7 @@ Ver [seguridad.md](seguridad.md): reglas por filas en todas las tablas, 48 de 48
 5. ¿Hace falta una evaluación de impacto (EIPD)? Se guardan direcciones de casas particulares, aunque se borran al día siguiente.
 6. El texto provisional de `/privacidad` está escrito en lenguaje llano: podéis usarlo como base.
 7. **Entrar con Google (D-039):** ¿Google es responsable independiente del inicio de sesión o hay que tratarlo de otra forma? ¿Cómo se explica en el aviso que Google sabe que la persona usa Badulake? ¿Basta con lo que ya dice el borrador de `/privacidad` (apartados 2 y 5)?
+9. **Avisos en el móvil (D-050):** hoy solo en la copia de pruebas. ¿Se puede activar en la web real con el consentimiento del botón y una línea en el aviso de privacidad sobre los servicios de avisos de Google, Apple y Mozilla (§2.8)?
 8. **Compartir (D-042):** ¿os parece bien que la vista previa pública enseñe lugar, fecha y plazas a quien tenga el enlace, sin cuenta? ¿La cookie técnica `badulake-volver` (un día, recuerda qué badulake se quería ver) entra en la política de cookies como técnica?
 
 ## 10. La página `/privacidad`

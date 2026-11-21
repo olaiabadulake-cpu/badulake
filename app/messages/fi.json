@@ -144,7 +144,15 @@
     "myNoUpcoming": "Sinulla ei ole tulevia badulakeja.",
     "myEmpty": "Sinulla ei ole vielä yhtään badulakea. Katso tulevat ja ilmoittaudu johonkin.",
     "myBrowse": "Katso badulaket",
-    "noticeCanOrganize": "Olet jo käynyt badulakessa: nyt voit järjestää oman."
+    "noticeCanOrganize": "Olet jo käynyt badulakessa: nyt voit järjestää oman.",
+    "pushTitle": "Ilmoitukset puhelimeen",
+    "pushExplain": "Ilmoitamme päivää ennen badulakea, jos pääset mukaan jonosta ja jos jokin peruutetaan. Vain tähän puhelimeen; voit poistaa ne milloin haluat.",
+    "pushOn": "Ota ilmoitukset käyttöön",
+    "pushOff": "Poista ilmoitukset",
+    "pushActive": "Ilmoitukset ovat käytössä tässä puhelimessa.",
+    "pushDenied": "Tämä puhelin ei salli ilmoituksia. Voit sallia ne selaimen asetuksista.",
+    "pushUnsupported": "Tämä selain ei voi vastaanottaa ilmoituksia. Lisää iPhonessa Badulake ensin kotivalikkoon.",
+    "pushError": "Ilmoituksia ei voitu ottaa käyttöön. Yritä uudelleen."
   },
   "Badulake": {
     "newTitle": "Luo badulake",
@@ -415,5 +423,13 @@
       "closed": "Badulake-tila ei ole enää käytettävissä."
     },
     "countsLocked": "Vuorojärjestys on jo lukittu: laskettuja tavaroita ei voi enää muuttaa."
+  },
+  "Push": {
+    "reminderTitle": "Huomenna on badulake",
+    "reminderBody": "{title}. Katso, mitä ottaa mukaan.",
+    "waitlistTitle": "Sait paikan!",
+    "waitlistBody": "Pääsit jonosta mukaan: {title}.",
+    "cancelledTitle": "Badulake peruttu",
+    "cancelledBody": "{title} on peruttu."
   }
 }

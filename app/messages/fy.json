@@ -144,7 +144,15 @@
     "myNoUpcoming": "Do hast gjin oansteande badulakes.",
     "myEmpty": "Do hast noch gjin badulakes. Sjoch nei de oansteande en jou dy op foar ien.",
     "myBrowse": "Badulakes besjen",
-    "noticeCanOrganize": "Do hast al ris nei in badulake west: no kinst dyn eigen organisearje."
+    "noticeCanOrganize": "Do hast al ris nei in badulake west: no kinst dyn eigen organisearje.",
+    "pushTitle": "Meldingen op 'e telefoan",
+    "pushExplain": "Wy litte it dy witte de dei foar in badulake, ast fan 'e wachtlist ynkomst en as der ien ôfsein wurdt. Allinnich op dizze telefoan; do kinst se útsette wannear'tsto wolst.",
+    "pushOn": "Meldingen oansette",
+    "pushOff": "Meldingen útsette",
+    "pushActive": "Meldingen steane oan op dizze telefoan.",
+    "pushDenied": "Dizze telefoan lit gjin meldingen ta. Do kinst se tastean yn 'e ynstellings fan 'e browser.",
+    "pushUnsupported": "Dizze browser kin gjin meldingen ûntfange. Set op in iPhone Badulake earst op it startskerm.",
+    "pushError": "De meldingen koene net oansetten wurde. Besykje it op 'e nij."
   },
   "Badulake": {
     "newTitle": "In badulake oanmeitsje",
@@ -415,5 +423,13 @@
       "closed": "De badulake-modus is net mear beskikber."
     },
     "countsLocked": "De beurtrige stiet fêst: it telde guod kin net mear feroare wurde."
+  },
+  "Push": {
+    "reminderTitle": "Moarn is der badulake",
+    "reminderBody": "{title}. Sjoch wat meinimme.",
+    "waitlistTitle": "Do hast in plak!",
+    "waitlistBody": "Do bist fan 'e wachtlist ynkommen by {title}.",
+    "cancelledTitle": "Badulake ôfsein",
+    "cancelledBody": "{title} is ôfsein."
   }
 }

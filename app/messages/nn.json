@@ -144,7 +144,15 @@
     "myNoUpcoming": "Du har ingen komande badulakes.",
     "myEmpty": "Du har ingen badulakes enno. Sjå på dei komande, og meld deg på ein.",
     "myBrowse": "Sjå badulakes",
-    "noticeCanOrganize": "Du har vore på ein badulake: No kan du skipe til din eigen."
+    "noticeCanOrganize": "Du har vore på ein badulake: No kan du skipe til din eigen.",
+    "pushTitle": "Varsel på mobilen",
+    "pushExplain": "Vi seier frå dagen før ein badulake, viss du kjem inn frå ventelista, og viss ein blir avlyst. Berre på denne mobilen; du kan slå dei av når du vil.",
+    "pushOn": "Slå på varsel",
+    "pushOff": "Slå av varsel",
+    "pushActive": "Varsel er slått på på denne mobilen.",
+    "pushDenied": "Denne mobilen tillèt ikkje varsel. Du kan tillate dei i nettlesarinnstillingane.",
+    "pushUnsupported": "Denne nettlesaren kan ikkje ta imot varsel. På iPhone legg du først Badulake til på Heim-skjermen.",
+    "pushError": "Varsla kunne ikkje slåast på. Prøv igjen."
   },
   "Badulake": {
     "newTitle": "Opprett ein badulake",
@@ -415,5 +423,13 @@
       "closed": "Badulake-modus er ikkje tilgjengeleg lenger."
     },
     "countsLocked": "Turrekkjefølgja ligg fast: Dei opptalde tinga kan ikkje lenger endrast."
+  },
+  "Push": {
+    "reminderTitle": "I morgon er det badulake",
+    "reminderBody": "{title}. Sjå kva du skal ta med.",
+    "waitlistTitle": "Du har fått plass!",
+    "waitlistBody": "Du har kome inn på {title} frå ventelista.",
+    "cancelledTitle": "Badulake avlyst",
+    "cancelledBody": "{title} er avlyst."
   }
 }

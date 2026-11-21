@@ -144,7 +144,15 @@
     "myNoUpcoming": "Dü hesch keini nächschte badulakes.",
     "myEmpty": "Dü hesch noch kei badulake. Lüeg d'nächschte à un meld dich bi eim à.",
     "myBrowse": "badulakes àlüege",
-    "noticeCanOrganize": "Dü bisch schun bi eme badulake gsìì: jetzt kànnsch dinner eije organisiere."
+    "noticeCanOrganize": "Dü bisch schun bi eme badulake gsìì: jetzt kànnsch dinner eije organisiere.",
+    "pushTitle": "Mitteilunge uf em Handy",
+    "pushExplain": "Mr sàgen dr Bscheid: àm Tàà vor eme badulake, wenn dü vun dr Wartelischt nochruckesch un wenn eins àbgsàt wird. Nur uf dem Handy; dü kànnsch si jederzitt àbstelle.",
+    "pushOn": "Mitteilunge ìnschàlte",
+    "pushOff": "Mitteilunge üsschàlte",
+    "pushActive": "D'Mitteilunge sìn uf dem Handy ìngschàlte.",
+    "pushDenied": "Des Handy làsst keini Mitteilunge züe. Dü kànnsch si in de Iistellunge vum Browser erlàuwe.",
+    "pushUnsupported": "Dr Browser kànn keini Mitteilunge empfànge. Uf em iPhone, füeg Badulake züerscht zum Startbildschirm àà.",
+    "pushError": "D'Mitteilunge hàn nit känne ìngschàlte wäre. Prowier's nochemol."
   },
   "Badulake": {
     "newTitle": "E badulake àleje",
@@ -415,5 +423,13 @@
       "closed": "Dr badulake-Modus isch nimm verfüegbàr."
     },
     "countsLocked": "D'Reihefolg isch fescht: Di zellte Sàcha känn nimm gänderet wäre."
+  },
+  "Push": {
+    "reminderTitle": "Morn isch badulake",
+    "reminderBody": "{title}. Lüeg, was dü mìtnìmmsch.",
+    "waitlistTitle": "Dü hesch e Plàtz!",
+    "waitlistBody": "Dü bisch vun dr Wartelischt bi {title} nochgruckt.",
+    "cancelledTitle": "badulake àbgsàt",
+    "cancelledBody": "{title} isch àbgsàt wore."
   }
 }

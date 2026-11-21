@@ -144,7 +144,15 @@
     "myNoUpcoming": "Vous n'avez aucun badulake à venir.",
     "myEmpty": "Vous n'avez encore aucun badulake. Regardez les prochains et inscrivez-vous à l'un d'eux.",
     "myBrowse": "Voir les badulakes",
-    "noticeCanOrganize": "Vous êtes déjà allé·e à un badulake : vous pouvez maintenant organiser le vôtre."
+    "noticeCanOrganize": "Vous êtes déjà allé·e à un badulake : vous pouvez maintenant organiser le vôtre.",
+    "pushTitle": "Notifications sur le téléphone",
+    "pushExplain": "Nous vous prévenons la veille d'un badulake, si vous obtenez une place depuis la liste d'attente et si un badulake est annulé. Seulement sur ce téléphone ; vous pouvez les désactiver quand vous voulez.",
+    "pushOn": "Activer les notifications",
+    "pushOff": "Désactiver les notifications",
+    "pushActive": "Les notifications sont activées sur ce téléphone.",
+    "pushDenied": "Ce téléphone n'autorise pas les notifications. Vous pouvez les autoriser dans les réglages du navigateur.",
+    "pushUnsupported": "Ce navigateur ne peut pas recevoir de notifications. Sur iPhone, ajoutez d'abord Badulake à l'écran d'accueil.",
+    "pushError": "Impossible d'activer les notifications. Réessayez."
   },
   "Badulake": {
     "newTitle": "Créer un badulake",
@@ -415,5 +423,13 @@
       "closed": "Le mode badulake n'est plus disponible."
     },
     "countsLocked": "L'ordre de passage est fixé : les objets comptés ne peuvent plus être modifiés."
+  },
+  "Push": {
+    "reminderTitle": "Badulake demain",
+    "reminderBody": "{title}. Revoyez quoi apporter.",
+    "waitlistTitle": "Vous avez une place !",
+    "waitlistBody": "Vous avez obtenu une place à {title} depuis la liste d'attente.",
+    "cancelledTitle": "Badulake annulé",
+    "cancelledBody": "{title} a été annulé."
   }
 }

@@ -144,7 +144,15 @@
     "myNoUpcoming": "Níl aon bhadulake le teacht agat.",
     "myEmpty": "Níl aon bhadulake agat fós. Féach ar na cinn atá le teacht agus cláraigh do cheann acu.",
     "myBrowse": "Féach ar na badulakes",
-    "noticeCanOrganize": "Bhí tú ag badulake cheana: is féidir leat do cheann féin a eagrú anois."
+    "noticeCanOrganize": "Bhí tú ag badulake cheana: is féidir leat do cheann féin a eagrú anois.",
+    "pushTitle": "Fógraí ar an bhfón",
+    "pushExplain": "Cuirfimid in iúl duit an lá roimh badulake, má fhaigheann tú áit ón liosta feithimh agus má chuirtear ceann ar ceal. Ar an bhfón seo amháin; is féidir leat iad a mhúchadh am ar bith.",
+    "pushOn": "Cuir fógraí ar siúl",
+    "pushOff": "Múch fógraí",
+    "pushActive": "Tá fógraí ar siúl ar an bhfón seo.",
+    "pushDenied": "Ní cheadaíonn an fón seo fógraí. Is féidir leat iad a cheadú i socruithe an bhrabhsálaí.",
+    "pushUnsupported": "Ní féidir leis an mbrabhsálaí seo fógraí a fháil. Ar iPhone, cuir Badulake leis an scáileán baile ar dtús.",
+    "pushError": "Níorbh fhéidir na fógraí a chur ar siúl. Bain triail eile as."
   },
   "Badulake": {
     "newTitle": "Cruthaigh badulake",
@@ -415,5 +423,13 @@
       "closed": "Níl mód badulake ar fáil a thuilleadh."
     },
     "countsLocked": "Tá ord na seal socraithe anois: ní féidir na rudaí a comhaireadh a athrú a thuilleadh."
+  },
+  "Push": {
+    "reminderTitle": "Badulake amárach",
+    "reminderBody": "{title}. Féach cad atá le tabhairt leat.",
+    "waitlistTitle": "Tá áit agat!",
+    "waitlistBody": "Fuair tú áit ag {title} ón liosta feithimh.",
+    "cancelledTitle": "Badulake curtha ar ceal",
+    "cancelledBody": "Cuireadh {title} ar ceal."
   }
 }

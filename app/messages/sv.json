@@ -144,7 +144,15 @@
     "myNoUpcoming": "Du har inga kommande badulakes.",
     "myEmpty": "Du har inga badulakes än. Titta på de kommande och anmäl dig till en.",
     "myBrowse": "Se badulakes",
-    "noticeCanOrganize": "Du har varit på en badulake: nu kan du ordna din egen."
+    "noticeCanOrganize": "Du har varit på en badulake: nu kan du ordna din egen.",
+    "pushTitle": "Aviseringar i mobilen",
+    "pushExplain": "Vi säger till dagen före en badulake, om du kommer in från väntelistan och om en ställs in. Bara i den här mobilen; du kan stänga av dem när du vill.",
+    "pushOn": "Slå på aviseringar",
+    "pushOff": "Stäng av aviseringar",
+    "pushActive": "Aviseringar är på i den här mobilen.",
+    "pushDenied": "Den här mobilen tillåter inte aviseringar. Du kan tillåta dem i webbläsarens inställningar.",
+    "pushUnsupported": "Den här webbläsaren kan inte ta emot aviseringar. På iPhone lägger du först till Badulake på hemskärmen.",
+    "pushError": "Aviseringarna kunde inte slås på. Försök igen."
   },
   "Badulake": {
     "newTitle": "Skapa en badulake",
@@ -415,5 +423,13 @@
       "closed": "Badulake-läget är inte längre tillgängligt."
     },
     "countsLocked": "Turordningen är nu låst: de räknade sakerna kan inte längre ändras."
+  },
+  "Push": {
+    "reminderTitle": "I morgon är det badulake",
+    "reminderBody": "{title}. Kolla vad du ska ta med.",
+    "waitlistTitle": "Du har fått en plats!",
+    "waitlistBody": "Du har kommit in på {title} från väntelistan.",
+    "cancelledTitle": "Badulake inställd",
+    "cancelledBody": "{title} har ställts in."
   }
 }

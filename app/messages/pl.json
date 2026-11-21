@@ -144,7 +144,15 @@
     "myNoUpcoming": "Nie masz żadnych najbliższych badulake.",
     "myEmpty": "Nie masz jeszcze żadnego badulake. Zobacz najbliższe i zapisz się na któreś.",
     "myBrowse": "Zobacz badulake",
-    "noticeCanOrganize": "Masz już za sobą pierwsze badulake: teraz możesz zorganizować własne."
+    "noticeCanOrganize": "Masz już za sobą pierwsze badulake: teraz możesz zorganizować własne.",
+    "pushTitle": "Powiadomienia w telefonie",
+    "pushExplain": "Damy znać dzień przed badulake, gdy wejdziesz z listy rezerwowej i gdy któreś zostanie odwołane. Tylko w tym telefonie; możesz je wyłączyć w dowolnej chwili.",
+    "pushOn": "Włącz powiadomienia",
+    "pushOff": "Wyłącz powiadomienia",
+    "pushActive": "Powiadomienia są włączone w tym telefonie.",
+    "pushDenied": "Ten telefon nie pozwala na powiadomienia. Możesz je zezwolić w ustawieniach przeglądarki.",
+    "pushUnsupported": "Ta przeglądarka nie może odbierać powiadomień. Na iPhonie najpierw dodaj Badulake do ekranu początkowego.",
+    "pushError": "Nie udało się włączyć powiadomień. Spróbuj ponownie."
   },
   "Badulake": {
     "newTitle": "Utwórz badulake",
@@ -415,5 +423,13 @@
       "closed": "Tryb badulake nie jest już dostępny."
     },
     "countsLocked": "Kolejka jest już ustalona: policzonych rzeczy nie można już zmienić."
+  },
+  "Push": {
+    "reminderTitle": "Jutro badulake",
+    "reminderBody": "{title}. Sprawdź, co zabrać.",
+    "waitlistTitle": "Masz miejsce!",
+    "waitlistBody": "Zwolniło się dla ciebie miejsce z listy rezerwowej: {title}.",
+    "cancelledTitle": "Badulake odwołany",
+    "cancelledBody": "{title} został odwołany."
   }
 }

@@ -144,7 +144,15 @@
     "myNoUpcoming": "Nincs közelgő badulakéd.",
     "myEmpty": "Még nincs egy badulakéd sem. Nézd meg a közelgőket, és jelentkezz valamelyikre.",
     "myBrowse": "Badulakék megtekintése",
-    "noticeCanOrganize": "Már voltál badulakén: most már szervezhetsz sajátot."
+    "noticeCanOrganize": "Már voltál badulakén: most már szervezhetsz sajátot.",
+    "pushTitle": "Értesítések a telefonon",
+    "pushExplain": "Szólunk a badulake előtti napon, ha a várólistáról bekerülsz, és ha valamelyik elmarad. Csak ezen a telefonon; bármikor kikapcsolhatod.",
+    "pushOn": "Értesítések bekapcsolása",
+    "pushOff": "Értesítések kikapcsolása",
+    "pushActive": "Az értesítések be vannak kapcsolva ezen a telefonon.",
+    "pushDenied": "Ez a telefon nem engedi az értesítéseket. A böngésző beállításaiban engedélyezheted.",
+    "pushUnsupported": "Ez a böngésző nem tud értesítéseket fogadni. iPhone-on előbb tedd ki a Badulake-ot a kezdőképernyőre.",
+    "pushError": "Nem sikerült bekapcsolni az értesítéseket. Próbáld újra."
   },
   "Badulake": {
     "newTitle": "Badulake létrehozása",
@@ -415,5 +423,13 @@
       "closed": "A badulake mód már nem érhető el."
     },
     "countsLocked": "A sorrend már rögzítve van: a megszámolt tárgyakat már nem lehet módosítani."
+  },
+  "Push": {
+    "reminderTitle": "Holnap badulake",
+    "reminderBody": "{title}. Nézd meg, mit hozz.",
+    "waitlistTitle": "Van helyed!",
+    "waitlistBody": "A várólistáról bekerültél: {title}.",
+    "cancelledTitle": "A badulake elmarad",
+    "cancelledBody": "{title} elmarad."
   }
 }

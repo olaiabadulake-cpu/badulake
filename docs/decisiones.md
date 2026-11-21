@@ -487,3 +487,18 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Probado** con el Chrome contra la web del Mac: buscar «alem», «eusk» y algo que no existe; en `/eu` con un móvil en castellano sale el aviso y «No, gracias» lo quita para siempre.
 - **Por qué:** con 44 lenguas el menú era largo y había que saber el nombre de la lengua en esa lengua; y quien llega por un enlace en otra lengua debe poder pasar a la suya con un toque.
 - **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 11.1)
+
+### D-050 · Avisos en el móvil (notificaciones), solo en la copia de pruebas hasta que lo vea la Asesoría
+- **Fecha:** 21/11/2026
+- **Alternativas:** correos (Tarea 10, aún sin proveedor); un servicio de avisos de otra empresa (OneSignal, Firebase…: otro encargado de datos); esperar a tener app en las tiendas (descartado, D-012).
+- **Decisión** (Tarea 16.1 de [auditoria.md](auditoria.md); `supabase/avisos_push.sql`, `app/src/app/api/avisos/enviar/route.ts`, `app/src/app/[locale]/cuenta/push-avisos.tsx`, `app/public/sw.js`):
+  - **Tres avisos:** el día antes de un badulake (a las apuntadas y a la organizadora), al entrar desde la lista de espera y cuando se cancela (a las apuntadas y a quien esperaba). Se escriben en la lengua de la persona y, al tocarlos, abren la ficha.
+  - **Se activan a mano** en «Tu cuenta» → «Avisos en el móvil», en cada móvil, y se quitan igual. En iPhone hace falta haber instalado Badulake en la pantalla de inicio (D-031).
+  - **Sin otra empresa en medio:** se usan los avisos estándar del navegador (Web Push con claves VAPID). Las claves están **solo** en Vercel de la copia y en `app/.env.pruebas` del Mac, nunca en el repositorio.
+  - **Cómo se envían:** la base de datos apunta cada aviso en una cola (solo si la persona tiene los avisos activados). Cada 2 minutos, si hay algo, llama a la web (`pg_net`) con una **ficha de un solo uso** que caduca a los 5 minutos; la web la devuelve para recoger los avisos y los envía. Sin ficha válida no se puede leer nada: no hace falta ninguna clave compartida entre la base de datos y la web. Si un móvil ya no existe, su suscripción se borra sola.
+  - **Solo en la copia de pruebas:** el código solo se enciende si es la copia (`pruebas.ts`) y además `AVISOS_PUSH=1` y las claves. `avisos_push.sql` **no se ha ejecutado en la base de datos real**. Para la real hará falta el visto bueno de la Asesoría ([privacidad.md](privacidad.md) §2.8 y §9).
+  - 14 textos en las 44 lenguas.
+  - **Probado:** en la base de datos de la copia, 8 comprobaciones (deshechas): entrar desde la espera y cancelar ponen el aviso en la cola; con la ficha se recogen una sola vez; una ficha inventada no da nada; sin cuenta no se lee ni la cola ni las suscripciones; un móvil que ya no existe se borra. Con la web del Mac en modo publicación y una suscripción falsa: la ruta recoge el aviso, lo intenta enviar y borra la suscripción falsa. Al probar salieron y se arreglaron dos fallos de la función que recoge los avisos.
+  - **Falta (OlaIA, por la mañana):** poner las tres variables en Vercel de la copia y probar con su móvil, aceptando el permiso de avisos ([copia-pruebas.md](copia-pruebas.md), «Avisos en el móvil»).
+- **Por qué:** sin correo propio todavía, el aviso del día antes y el de «tienes plaza» son lo que más evita que la gente se quede sin ir o pierda su plaza.
+- **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría; solo en la copia) · **Hizo:** Claude (Tarea 16.1)

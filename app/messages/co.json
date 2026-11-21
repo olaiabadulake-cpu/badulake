@@ -144,7 +144,15 @@
     "myNoUpcoming": "Ùn ai micca badulake chì vene.",
     "myEmpty": "Ùn ai ancu nisun badulake. Fighjula i prossimi è iscriviti à unu.",
     "myBrowse": "Vede i badulakes",
-    "noticeCanOrganize": "Sì digià andatu à un badulake: avà poi urganizà u toiu."
+    "noticeCanOrganize": "Sì digià andatu à un badulake: avà poi urganizà u toiu.",
+    "pushTitle": "Avisi nant'à u telefuninu",
+    "pushExplain": "Ti avisemu u ghjornu nanzu un badulake, s'è tù entri da a lista d'aspettu è s'è unu hè annullatu. Solu nant'à stu telefuninu; i poi caccià quandu tù voli.",
+    "pushOn": "Attivà l'avisi",
+    "pushOff": "Caccià l'avisi",
+    "pushActive": "L'avisi sò attivati nant'à stu telefuninu.",
+    "pushDenied": "Stu telefuninu ùn lascia mandà avisi. U poi permette in i paràmetri di u navigatore.",
+    "pushUnsupported": "Stu navigatore ùn pò riceve avisi. Nant'à iPhone, aghjunghje prima Badulake à u screnu d'accolta.",
+    "pushError": "Ùn s'hè pussutu attivà l'avisi. Prova torna."
   },
   "Badulake": {
     "newTitle": "Creà un badulake",
@@ -415,5 +423,13 @@
       "closed": "U modu badulake ùn hè più dispunibule."
     },
     "countsLocked": "A fila di i turni hè digià fissata: l'oggetti cuntati ùn si ponu più cambià."
+  },
+  "Push": {
+    "reminderTitle": "Dumane ci hè badulake",
+    "reminderBody": "{title}. Fighjula cosa purtà.",
+    "waitlistTitle": "Ai una piazza!",
+    "waitlistBody": "Sì entratu in {title} da a lista d'aspettu.",
+    "cancelledTitle": "Badulake annullatu",
+    "cancelledBody": "{title} hè statu annullatu."
   }
 }

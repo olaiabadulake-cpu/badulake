@@ -144,7 +144,15 @@
     "myNoUpcoming": "Dus eai leat boahttevaš badulaket.",
     "myEmpty": "Dus eai vel leat badulaket. Geahča boahttevaččaid ja čális iežat oktii.",
     "myBrowse": "Geahča badulakeid",
-    "noticeCanOrganize": "Don leat juo leamaš badulakes: dál sáhtát lágidit iežat badulake."
+    "noticeCanOrganize": "Don leat juo leamaš badulakes: dál sáhtát lágidit iežat badulake.",
+    "pushTitle": "Dieđáhusat telefovdnii",
+    "pushExplain": "Mii dieđihit dutnje beaivvi ovdal badulake, jus beasat vuordinlisttus sisa ja jus okta heaittihuvvo. Dušše dán telefovdnii; sáhtát daid jaddadit goas fal.",
+    "pushOn": "Doaimmat dieđáhusaid",
+    "pushOff": "Jaddat dieđáhusaid",
+    "pushActive": "Dieđáhusat leat doaimmas dán telefovnnas.",
+    "pushDenied": "Dát telefovdna ii suova dieđáhusaid. Sáhtát daid suovvat neahttalohkki heivehusain.",
+    "pushUnsupported": "Dát neahttalohkki ii sáhte vuostáiváldit dieđáhusaid. iPhones lasit vuos Badulake álgošearbmii.",
+    "pushError": "Dieđáhusaid ii sáhttán doaimmahit. Geahččal ođđasit."
   },
   "Badulake": {
     "newTitle": "Ráhkat badulake",
@@ -415,5 +423,13 @@
       "closed": "Badulake-vuohki ii leat šat olahanmuttus."
     },
     "countsLocked": "Vuorrolistu lea juo giddejuvvon: lohkkojuvvon diŋggaid ii sáhte šat rievdadit."
+  },
+  "Push": {
+    "reminderTitle": "Ihttin lea badulake",
+    "reminderBody": "{title}. Geahča maid váldit mielde.",
+    "waitlistTitle": "Dus lea sadji!",
+    "waitlistBody": "Don leat beassan {title} vuordinlisttus.",
+    "cancelledTitle": "Badulake heaittihuvvon",
+    "cancelledBody": "{title} lea heaittihuvvon."
   }
 }

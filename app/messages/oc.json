@@ -144,7 +144,15 @@
     "myNoUpcoming": "As pas cap de badulake que ven.",
     "myEmpty": "As pas encara cap de badulake. Agacha los que venon e marca-te a un.",
     "myBrowse": "Veire los badulakes",
-    "noticeCanOrganize": "Ja siás anat a un badulake : ara pòdes organizar lo tieu."
+    "noticeCanOrganize": "Ja siás anat a un badulake : ara pòdes organizar lo tieu.",
+    "pushTitle": "Avises sul telefòn",
+    "pushExplain": "T'avisam lo jorn d'abans d'un badulake, s'i dintras dempuèi la lista d'espèra e se n'anullan un. Sonque sus aqueste telefòn ; los pòdes levar quand vòles.",
+    "pushOn": "Activar los avises",
+    "pushOff": "Levar los avises",
+    "pushActive": "Los avises son activats sus aqueste telefòn.",
+    "pushDenied": "Aqueste telefòn daissa pas mandar d'avises. O pòdes permetre dins los paramètres del navigador.",
+    "pushUnsupported": "Aqueste navigador pòt pas recebre d'avises. Sus iPhone, apondètz d'en primièr Badulake a l'ecran d'acuèlh.",
+    "pushError": "Se son pas poscuts activar los avises. Ensaja tornamai."
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
@@ -415,5 +423,13 @@
       "closed": "Lo mòde badulake es pas pus disponible."
     },
     "countsLocked": "L'òrdre dels torns es fixat : los objèctes comptats se pòdon pas pus cambiar."
+  },
+  "Push": {
+    "reminderTitle": "Deman i a badulake",
+    "reminderBody": "{title}. Torna veire de qué portar.",
+    "waitlistTitle": "As una plaça !",
+    "waitlistBody": "As una plaça a {title} dempuèi la lista d'espèra.",
+    "cancelledTitle": "Badulake anullat",
+    "cancelledBody": "{title} es estat anullat."
   }
 }

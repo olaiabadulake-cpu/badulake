@@ -144,7 +144,15 @@
     "myNoUpcoming": "Nu ai niciun badulake în curând.",
     "myEmpty": "Încă nu ai niciun badulake. Uită-te la următoarele și înscrie-te la unul.",
     "myBrowse": "Vezi badulake-urile",
-    "noticeCanOrganize": "Ai fost deja la un badulake: acum îl poți organiza pe al tău."
+    "noticeCanOrganize": "Ai fost deja la un badulake: acum îl poți organiza pe al tău.",
+    "pushTitle": "Notificări pe telefon",
+    "pushExplain": "Te anunțăm cu o zi înainte de un badulake, dacă intri de pe lista de așteptare și dacă unul se anulează. Doar pe acest telefon; le poți opri oricând.",
+    "pushOn": "Activează notificările",
+    "pushOff": "Oprește notificările",
+    "pushActive": "Notificările sunt activate pe acest telefon.",
+    "pushDenied": "Acest telefon nu permite notificări. Le poți permite din setările browserului.",
+    "pushUnsupported": "Acest browser nu poate primi notificări. Pe iPhone, adaugă mai întâi Badulake pe ecranul principal.",
+    "pushError": "Notificările nu au putut fi activate. Încearcă din nou."
   },
   "Badulake": {
     "newTitle": "Creează un badulake",
@@ -415,5 +423,13 @@
       "closed": "Modul badulake nu mai e disponibil."
     },
     "countsLocked": "Ordinea e deja stabilită: obiectele numărate nu mai pot fi schimbate."
+  },
+  "Push": {
+    "reminderTitle": "Mâine e badulake",
+    "reminderBody": "{title}. Vezi ce să aduci.",
+    "waitlistTitle": "Ai un loc!",
+    "waitlistBody": "Ai intrat la {title} de pe lista de așteptare.",
+    "cancelledTitle": "Badulake anulat",
+    "cancelledBody": "{title} a fost anulat."
   }
 }

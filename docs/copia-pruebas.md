@@ -82,3 +82,13 @@ Los fallos están en el código de `main`, pero `app/src/lib/pruebas.ts` solo lo
 **Actualizada el 21/11/2026 (Tarea 4.1, D-039):** la copia tiene `google.sql` (también lo carga `juntar-esquema.sh`) y **entrar con Google**: en Supabase de la copia, proveedor Google encendido con el cliente «Badulake · copia de pruebas» (Google Cloud, proyecto «Badulake»), «Site URL» `https://badulake-pruebas.vercel.app` y dirección de vuelta permitida `https://badulake-pruebas.vercel.app/api/cuenta/**`; en Vercel, `GOOGLE_ACTIVADO=1`. Google está en modo de prueba: solo entran las cuentas apuntadas en Google Auth Platform → Público → Usuarios de prueba (hoy, la del proyecto). Para probar con otra cuenta de Google, añadirla allí.
 
 **Actualizada el 21/11/2026 (tareas 20.1 y 24.1, D-040):** la copia ya tiene `plazas_organizadora.sql` (también lo carga `juntar-esquema.sh`): la organizadora cuenta como una persona más. En los datos inventados, Colina del Tejo pasa a 6 plazas (5 apuntadas + la organizadora, lleno, con 2 en lista de espera) y Barrio de las Gaviotas queda lleno (6 de 6). **Tarea 6.1 (D-041):** hay un badulake ya celebrado, Barrio del Sauce (organiza Ane; fueron Mikel, Nerea, Iker y Maialen), para enseñar «Mis badulakes → Pasados», «Terminado» y el «gracias». Probar con `nerea.demo@…` (fue y no organiza ninguno: ve el aviso «ya puedes organizar»).
+
+## Avisos en el móvil (Tarea 16.1, D-050) — pasos para OlaIA
+
+Solo en la copia. La base de datos de la copia ya está preparada (`supabase/avisos_push.sql`). Falta encender la web:
+
+1. Abrir en el Mac el archivo `app/.env.pruebas` (no está en el repositorio). Al final hay tres líneas: `AVISOS_PUSH`, `VAPID_PUBLIC_KEY` y `VAPID_PRIVATE_KEY`.
+2. En Vercel → proyecto **badulake-pruebas** → Settings → Environment Variables, añadir esas tres con su valor (copiar y pegar). **Nunca** en el proyecto de la web real.
+3. Deployments → «Redeploy».
+4. En el móvil: abrir https://badulake-pruebas.vercel.app, entrar con una cuenta inventada (en iPhone, antes «Añadir a pantalla de inicio» y abrir desde ahí), ir a «Tu cuenta» → «Avisos en el móvil» → «Activar avisos» y aceptar el permiso.
+5. Para probar sin esperar: pedir a Claude que mueva un badulake inventado a «mañana» o que cancele uno de prueba; el aviso llega en unos 2 minutos.

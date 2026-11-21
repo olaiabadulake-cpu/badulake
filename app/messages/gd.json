@@ -144,7 +144,15 @@
     "myNoUpcoming": "Chan eil badulake ri thighinn agad.",
     "myEmpty": "Chan eil badulake agad fhathast. Thoir sùil air an fheadhainn a tha ri thighinn is clàraich airson tè.",
     "myBrowse": "Seall na badulakes",
-    "noticeCanOrganize": "Bha thu aig badulake mu thràth: faodaidh tu do thè fhèin a chur air dòigh a-nis."
+    "noticeCanOrganize": "Bha thu aig badulake mu thràth: faodaidh tu do thè fhèin a chur air dòigh a-nis.",
+    "pushTitle": "Brathan air an fhòn",
+    "pushExplain": "Leigidh sinn fios dhut an latha ro badulake, ma gheibh thu àite on liosta-feitheimh is ma thèid tè a chur dheth. Air an fhòn seo a-mhàin; faodaidh tu an cur dheth uair sam bith.",
+    "pushOn": "Cuir brathan air",
+    "pushOff": "Cuir brathan dheth",
+    "pushActive": "Tha brathan air an fhòn seo.",
+    "pushDenied": "Chan eil am fòn seo a' ceadachadh brathan. Faodaidh tu an ceadachadh ann an roghainnean a' bhrabhsair.",
+    "pushUnsupported": "Chan urrainn dhan bhrabhsair seo brathan fhaighinn. Air iPhone, cuir Badulake ris an sgrìn-dachaigh an toiseach.",
+    "pushError": "Cha b' urrainn dhuinn na brathan a chur air. Feuch a-rithist."
   },
   "Badulake": {
     "newTitle": "Cruthaich badulake",
@@ -415,5 +423,13 @@
       "closed": "Chan eil am modh badulake ri fhaighinn tuilleadh."
     },
     "countsLocked": "Tha òrdugh nan cuairtean stèidhte a-nis: chan urrainn dhut na rudan a chaidh a chunntadh atharrachadh tuilleadh."
+  },
+  "Push": {
+    "reminderTitle": "Badulake a-màireach",
+    "reminderBody": "{title}. Thoir sùil air na bheir thu leat.",
+    "waitlistTitle": "Tha àite agad!",
+    "waitlistBody": "Fhuair thu àite aig {title} on liosta-feitheimh.",
+    "cancelledTitle": "Badulake air a chur dheth",
+    "cancelledBody": "Chaidh {title} a chur dheth."
   }
 }

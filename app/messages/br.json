@@ -144,7 +144,15 @@
     "myNoUpcoming": "N'hoc'h eus badulake ebet da zont.",
     "myEmpty": "N'hoc'h eus badulake ebet c'hoazh. Sellit ouzh ar re da zont hag en em enskrivit en unan.",
     "myBrowse": "Gwelet ar badulakes",
-    "noticeCanOrganize": "Bet oc'h en ur badulake: gallout a rit aozañ ho hini bremañ."
+    "noticeCanOrganize": "Bet oc'h en ur badulake: gallout a rit aozañ ho hini bremañ.",
+    "pushTitle": "Kemennoù war ar pellgomzer",
+    "pushExplain": "Kas a raimp ur c'hemenn deoc'h an deiz a-raok ur badulake, ma'z it tre diwar ar roll-gortoz ha ma vez nullet unan. War ar pellgomzer-mañ hepken; gallout a rit o lemel pa garit.",
+    "pushOn": "Gweredekaat ar c'hemennoù",
+    "pushOff": "Lemel ar c'hemennoù",
+    "pushActive": "Gweredekaet eo ar c'hemennoù war ar pellgomzer-mañ.",
+    "pushDenied": "Ar pellgomzer-mañ ne ro ket an aotre da gas kemennoù. Gallout a rit e aotren e arventennoù ar merdeer.",
+    "pushUnsupported": "Ar merdeer-mañ ne c'hell ket resev kemennoù. War iPhone, ouzhpennit Badulake d'ar skramm degemer da gentañ.",
+    "pushError": "N'eus ket bet gallet gweredekaat ar c'hemennoù. Klaskit en-dro."
   },
   "Badulake": {
     "newTitle": "Krouiñ ur badulake",
@@ -415,5 +423,13 @@
       "closed": "N'haller ket implijout ar mod badulake ken."
     },
     "countsLocked": "Steudad an troioù a zo bet startaet: n'haller ket kemmañ an traoù kontet ken."
+  },
+  "Push": {
+    "reminderTitle": "Warc'hoazh e vo badulake",
+    "reminderBody": "{title}. Adlennit petra degas.",
+    "waitlistTitle": "Ur plas hoc'h eus!",
+    "waitlistBody": "Aet oc'h e {title} diwar ar roll-gortoz.",
+    "cancelledTitle": "Badulake nullet",
+    "cancelledBody": "Nullet eo bet {title}."
   }
 }

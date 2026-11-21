@@ -144,7 +144,15 @@
     "myNoUpcoming": "Non as cap de badulake pròplèu.",
     "myEmpty": "Encara non as cap de badulake. Guarda es pròplèus e apunta-te a un.",
     "myBrowse": "Veir es badulakes",
-    "noticeCanOrganize": "Ja as anat a un badulake: ja pòs organizar eth tòn."
+    "noticeCanOrganize": "Ja as anat a un badulake: ja pòs organizar eth tòn.",
+    "pushTitle": "Avisi en mobil",
+    "pushExplain": "T'avisam eth dia abans d'un badulake, s'entres dera lista d'espèra e s'un s'anulle. Solet en aguest mobil; les pòs treir quan vulhues.",
+    "pushOn": "Activar avisi",
+    "pushOff": "Treir avisi",
+    "pushActive": "Es avisi son activadi en aguest mobil.",
+    "pushDenied": "Aguest mobil non dèishe enviar avisi. Ac pòs permeter ena configuracion deth navegador.",
+    "pushUnsupported": "Aguest navegador non pòt recéber avisi. En iPhone, higa abans Badulake ara pantalha d'inici.",
+    "pushError": "Non s'an pogut activar es avisi. Torna-ac a ensajar."
   },
   "Badulake": {
     "newTitle": "Crear un badulake",
@@ -415,5 +423,13 @@
       "closed": "Eth mòde badulake ja non ei disponible."
     },
     "countsLocked": "Era coa de torns ja ei fixada: es objèctes comptats ja non se pòden cambiar."
+  },
+  "Push": {
+    "reminderTitle": "Doman i a badulake",
+    "reminderBody": "{title}. Repassa qué portar.",
+    "waitlistTitle": "As plaça!",
+    "waitlistBody": "As entrat en {title} dera lista d'espèra.",
+    "cancelledTitle": "Badulake anullat",
+    "cancelledBody": "{title} s'a anullat."
   }
 }

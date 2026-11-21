@@ -144,7 +144,15 @@
     "myNoUpcoming": "You have no upcoming badulakes.",
     "myEmpty": "You don't have any badulakes yet. Have a look at the upcoming ones and sign up for one.",
     "myBrowse": "See the badulakes",
-    "noticeCanOrganize": "You've been to a badulake: now you can organise your own."
+    "noticeCanOrganize": "You've been to a badulake: now you can organise your own.",
+    "pushTitle": "Notifications on your phone",
+    "pushExplain": "We'll let you know the day before a badulake, if you get a place from the waiting list and if one is cancelled. Only on this phone; you can turn them off whenever you like.",
+    "pushOn": "Turn on notifications",
+    "pushOff": "Turn off notifications",
+    "pushActive": "Notifications are on for this phone.",
+    "pushDenied": "This phone doesn't allow notifications. You can allow them in your browser settings.",
+    "pushUnsupported": "This browser can't receive notifications. On iPhone, add Badulake to your home screen first.",
+    "pushError": "Notifications couldn't be turned on. Please try again."
   },
   "Badulake": {
     "newTitle": "Create a badulake",
@@ -415,5 +423,13 @@
       "closed": "Badulake mode is no longer available."
     },
     "countsLocked": "The queue is now fixed: the counted items can no longer be changed."
+  },
+  "Push": {
+    "reminderTitle": "Badulake tomorrow",
+    "reminderBody": "{title}. Check what to bring.",
+    "waitlistTitle": "You've got a place!",
+    "waitlistBody": "You've got a place at {title} from the waiting list.",
+    "cancelledTitle": "Badulake cancelled",
+    "cancelledBody": "{title} has been cancelled."
   }
 }
