@@ -401,6 +401,7 @@
       "alreadyDrawn": "Izvlačenje je već obavljeno i ne ponavlja se.",
       "alreadyStarted": "Red je već započet i ne ponavlja se.",
       "closed": "Način rada badulake više nije dostupan."
-    }
+    },
+    "countsLocked": "Red za odabir je utvrđen: prebrojene stvari više se ne mogu mijenjati."
   }
 }

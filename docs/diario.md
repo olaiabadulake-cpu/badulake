@@ -188,3 +188,5 @@ Cada entrada indica quién hizo cada cosa: **Claude** (la IA), **OlaIA** (dirige
 
 **«Quiero organizar» (tarea 5.4).** Claude añade a la pantalla «Todavía no puedes organizar» cómo se consigue y el botón «Quiero organizar», que avisa al equipo; en `/equipo` el equipo ve las peticiones sin correo y da el permiso o las descarta (D-045). `supabase/quiero_organizar.sql` ejecutado en la copia y en la real. 8 textos en las 44 lenguas.
 - **Comprobado:** 7 pruebas en la base de datos de la copia (deshechas) y en la web del Mac con las cuentas inventadas de Unai y del equipo.
+
+**Modo badulake en el móvil (tarea 24.2).** Claude pone el turno arriba (franja fija), una tarjeta compacta por persona con los contadores en cuadrícula, la pantalla siempre encendida y el recuento bloqueado al fijar la cola, también en la base de datos (`supabase/dia_movil.sql`, ejecutado en la copia y en la real; D-046). 1 texto en las 44 lenguas.

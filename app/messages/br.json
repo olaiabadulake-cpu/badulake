@@ -401,6 +401,7 @@
       "alreadyDrawn": "Graet e oa an tennañ d'ar sord dija ha ne vez ket adgraet.",
       "alreadyStarted": "Kroget e oa ar steudad dija ha ne vez ket adkroget.",
       "closed": "N'haller ket implijout ar mod badulake ken."
-    }
+    },
+    "countsLocked": "Steudad an troioù a zo bet startaet: n'haller ket kemmañ an traoù kontet ken."
   }
 }

@@ -401,6 +401,7 @@
       "alreadyDrawn": "Roedd y drefn eisoes wedi'i thynnu o'r het, a does dim modd ei wneud eto.",
       "alreadyStarted": "Roedd y ciw eisoes wedi dechrau, a does dim modd ei ddechrau eto.",
       "closed": "Dydy modd badulake ddim ar gael bellach."
-    }
+    },
+    "countsLocked": "Mae trefn y tro wedi'i phennu: does dim modd newid y pethau sydd wedi'u cyfrif bellach."
   }
 }

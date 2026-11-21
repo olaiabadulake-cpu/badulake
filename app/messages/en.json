@@ -401,6 +401,7 @@
       "alreadyDrawn": "The draw has already been done and can't be repeated.",
       "alreadyStarted": "The queue has already started and can't be started again.",
       "closed": "Badulake mode is no longer available."
-    }
+    },
+    "countsLocked": "The queue is now fixed: the counted items can no longer be changed."
   }
 }

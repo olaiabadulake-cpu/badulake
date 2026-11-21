@@ -401,6 +401,7 @@
       "alreadyDrawn": "Chaidh an crannchur a dhèanamh mu thràth agus cha tèid a dhèanamh a-rithist.",
       "alreadyStarted": "Bha a' chiudha air tòiseachadh mu thràth agus cha tòisich i a-rithist.",
       "closed": "Chan eil am modh badulake ri fhaighinn tuilleadh."
-    }
+    },
+    "countsLocked": "Tha òrdugh nan cuairtean stèidhte a-nis: chan urrainn dhut na rudan a chaidh a chunntadh atharrachadh tuilleadh."
   }
 }

@@ -401,6 +401,7 @@
       "alreadyDrawn": "Losowanie już się odbyło i nie można go powtórzyć.",
       "alreadyStarted": "Kolejka już się zaczęła i nie można jej powtórzyć.",
       "closed": "Tryb badulake nie jest już dostępny."
-    }
+    },
+    "countsLocked": "Kolejka jest już ustalona: policzonych rzeczy nie można już zmienić."
   }
 }

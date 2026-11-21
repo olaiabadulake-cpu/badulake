@@ -401,6 +401,7 @@
       "alreadyDrawn": "Tragerea la sorți era deja făcută și nu se repetă.",
       "alreadyStarted": "Alegerea începuse deja și nu se repetă.",
       "closed": "Modul badulake nu mai e disponibil."
-    }
+    },
+    "countsLocked": "Ordinea e deja stabilită: obiectele numărate nu mai pot fi schimbate."
   }
 }

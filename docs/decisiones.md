@@ -443,3 +443,15 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - **Probado:** en la base de datos de la copia (Unai pide, repetir dice «ya pedido», Unai no ve las peticiones, el equipo da el permiso y Unai ya puede; deshecho al acabar) y en la web del Mac contra la copia (Unai pide; el equipo lo ve sin correo y lo descarta). Ejecutado en la copia y en la real.
 - **Por qué:** en un barrio nuevo no hay badulakes a los que ir; sin esto, la primera persona no tenía cómo empezar más que conociendo al equipo.
 - **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 5.4)
+
+### D-046 · Modo badulake pensado para el móvil: turno arriba, tarjetas compactas, pantalla encendida y recuento bloqueado al fijar la cola
+- **Fecha:** 21/11/2026
+- **Alternativas:** dejarlo como estaba (una tarjeta alta por persona y el turno al final de la página); dejar cambiar los objetos después de fijar la cola.
+- **Decisión** (Tarea 24.2 de [auditoria.md](auditoria.md); `dia-panel.tsx`, `supabase/dia_movil.sql`):
+  - **El turno arriba:** en cuanto empieza a elegirse, «Le toca elegir a…» y «Siguiente turno» van en una franja amarilla **fija arriba** al bajar por la página, con un enlace a la cola; y la sección de turnos pasa delante del recuento.
+  - **Una tarjeta compacta por persona:** nombre y total en la misma fila, y los cuatro contadores (ropa, calzado, accesorios, otros) en una cuadrícula de dos columnas con botones grandes (56 px); en pantallas muy estrechas, en una columna.
+  - **Pantalla siempre encendida** mientras está abierto el Modo badulake (Wake Lock del navegador); si el navegador no lo permite, no pasa nada.
+  - **Recuento bloqueado al fijar la cola:** con «Empezar a elegir», los botones de sumar y restar se desactivan y sale «La cola de turnos ya está fijada: los objetos contados ya no se pueden cambiar». La base de datos también lo rechaza (`dia_fijar` devuelve `ya_empezado`), por si un móvil sin señal manda cambios tarde. Ejecutado en la copia y en la real.
+  - 1 texto nuevo en las 44 lenguas.
+- **Por qué:** el día del badulake la organizadora usa el móvil de pie y con prisa; si la cola ya se ha decidido por los objetos aportados, cambiarlos después no sería justo.
+- **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 24.2)

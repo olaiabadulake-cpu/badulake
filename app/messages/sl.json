@@ -401,6 +401,7 @@
       "alreadyDrawn": "Žrebanje je že opravljeno in se ne ponovi.",
       "alreadyStarted": "Izbiranje se je že začelo in se ne ponovi.",
       "closed": "Način badulake ni več na voljo."
-    }
+    },
+    "countsLocked": "Vrstni red je že določen: preštetih stvari ni več mogoče spreminjati."
   }
 }

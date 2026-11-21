@@ -401,6 +401,7 @@
       "alreadyDrawn": "Žrebovanie už prebehlo a neopakuje sa.",
       "alreadyStarted": "Výber sa už začal a neopakuje sa.",
       "closed": "Režim badulake už nie je dostupný."
-    }
+    },
+    "countsLocked": "Poradie je už pevne dané: spočítané veci sa už nedajú meniť."
   }
 }

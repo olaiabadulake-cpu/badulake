@@ -401,6 +401,7 @@
       "alreadyDrawn": "Er was al geloot. Dat kan niet over.",
       "alreadyStarted": "Het kiezen was al begonnen. Dat kan niet over.",
       "closed": "De badulake-modus is niet meer beschikbaar."
-    }
+    },
+    "countsLocked": "De volgorde ligt vast: de getelde spullen kunnen niet meer worden gewijzigd."
   }
 }

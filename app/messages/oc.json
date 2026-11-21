@@ -401,6 +401,7 @@
       "alreadyDrawn": "Lo tiratge èra ja fach e se torna pas far.",
       "alreadyStarted": "La fila èra ja començada e se torna pas far.",
       "closed": "Lo mòde badulake es pas pus disponible."
-    }
+    },
+    "countsLocked": "L'òrdre dels torns es fixat : los objèctes comptats se pòdon pas pus cambiar."
   }
 }

@@ -87,7 +87,8 @@ export function DiaPanelView({ id, initial }: { id: string; initial: DiaPanel })
         if (q.counts) code = await diaFijar(fila, q.counts);
         if (code === "ok" && q.label !== undefined) code = await diaEtiqueta(fila, q.label);
         if (code === "error") throw new Error("red");
-        if (code !== "ok") setMessage(t("errors.closed"));
+        if (code === "ya_empezado") setMessage(t("countsLocked"));
+        else if (code !== "ok") setMessage(t("errors.closed"));
         // Solo se quita si no ha cambiado mientras se enviaba.
         const now = pendingRef.current[fila];
         if (now && JSON.stringify(now) === sent) {
@@ -119,6 +120,27 @@ export function DiaPanelView({ id, initial }: { id: string; initial: DiaPanel })
     };
   }, [flush]);
 
+  // Pantalla siempre encendida mientras el Modo badulake está abierto (Tarea 24.2): el móvil no se
+  // apaga entre turno y turno. Si el navegador no lo permite, no pasa nada.
+  useEffect(() => {
+    let lock: { release: () => Promise<void> } | null = null;
+    const nav = navigator as Navigator & { wakeLock?: { request: (t: "screen") => Promise<{ release: () => Promise<void> }> } };
+    const ask = async () => {
+      try {
+        if (nav.wakeLock && document.visibilityState === "visible") lock = await nav.wakeLock.request("screen");
+      } catch {
+        lock = null;
+      }
+    };
+    const onVisible = () => { if (document.visibilityState === "visible") void ask(); };
+    void ask();
+    document.addEventListener("visibilitychange", onVisible);
+    return () => {
+      document.removeEventListener("visibilitychange", onVisible);
+      void lock?.release().catch(() => {});
+    };
+  }, []);
+
   function change(fila: string, patch: (q: Pending[string]) => Pending[string], update: (p: DiaPersona) => DiaPersona) {
     setPanel((cur) => ({ ...cur, personas: cur.personas.map((p) => (p.id === fila ? update(p) : p)) }));
     save({ ...pendingRef.current, [fila]: patch(pendingRef.current[fila] ?? {}) });
@@ -126,6 +148,8 @@ export function DiaPanelView({ id, initial }: { id: string; initial: DiaPanel })
   }
 
   function bump(p: DiaPersona, type: ItemType, delta: number) {
+    // Con la cola fijada, los objetos ya no cambian (Tarea 24.2; la base de datos también lo impide).
+    if (panel.elegir_empezado) return;
     // Se parte del último valor pedido (aunque la pantalla aún no se haya redibujado), para que dos
     // toques muy seguidos cuenten dos veces.
     const last = { ...countsOf(p), ...(pendingRef.current[p.id]?.counts ?? {}) };
@@ -173,6 +197,96 @@ export function DiaPanelView({ id, initial }: { id: string; initial: DiaPanel })
   const current = panel.turno === null ? null : queue.find((p) => p.orden_elegir === panel.turno) ?? null;
   const allDone = panel.elegir_empezado && !current;
   const unsaved = Object.keys(pending).length > 0;
+  const locked = panel.elegir_empezado;
+
+  const contar = (
+      <section aria-labelledby="dia-contar" className="flex flex-col gap-4">
+        <h2 id="dia-contar" className="titulo-2">{t("countTitle")}</h2>
+        {locked && <p className="aviso">{t("countsLocked")}</p>}
+        <ul className="flex flex-col gap-4">
+          {list.map((p) => (
+            <li key={p.id} className={`tarjeta !gap-2 !p-3 ${p.presente ? "" : "opacity-70"}`}>
+              <div className="flex flex-wrap items-center gap-2">
+                {p.orden_exponer !== null && p.presente && (
+                  <span className="etiqueta-pildora">{t("exposeBadge", { n: p.orden_exponer })}</span>
+                )}
+                {p.orden_elegir !== null && p.presente && (
+                  <span className="etiqueta-pildora contorno">{t("chooseBadge", { n: p.orden_elegir })}</span>
+                )}
+                {!p.presente && <span className="etiqueta-pildora contorno">{t("absentBadge")}</span>}
+              </div>
+              <div className="flex items-end gap-3">
+                <div className="flex min-w-0 flex-1 flex-col gap-1">
+                  <label htmlFor={`n-${p.id}`} className="etiqueta">{t("nameLabel", { num: p.num })}</label>
+                  <input
+                    id={`n-${p.id}`} className="campo" maxLength={30} autoComplete="off"
+                    placeholder={t("person", { num: p.num })} value={p.etiqueta ?? ""}
+                    onChange={(e) => rename(p, e.target.value)}
+                  />
+                </div>
+                {p.presente && <p className="shrink-0 pb-2 text-lg font-bold">{t("total", { count: total(p) })}</p>}
+              </div>
+              {p.presente && (
+                <div className="grid grid-cols-1 gap-2 min-[22rem]:grid-cols-2">
+                  {ITEM_TYPES.map((type) => (
+                    <div key={type} className="flex items-center justify-between gap-2 rounded-xl bg-amarillo-claro px-2 py-1" role="group" aria-label={`${t(`types.${type}`)} · ${name(p)}`}>
+                      <span className="font-semibold">{t(`types.${type}`)}</span>
+                      <span className="flex items-center gap-1.5">
+                        <button type="button" className="boton-2 contador" aria-label={t("minus", { type: t(`types.${type}`), name: name(p) })}
+                          disabled={locked || p[type] === 0} onClick={() => bump(p, type, -1)}><Sign plus={false} /></button>
+                        <output className="min-w-8 text-center text-2xl font-bold" aria-live="polite">{p[type]}</output>
+                        <button type="button" className="boton contador" aria-label={t("plus", { type: t(`types.${type}`), name: name(p) })}
+                          disabled={locked || p[type] >= MAX_ITEMS} onClick={() => bump(p, type, 1)}><Sign plus /></button>
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <button
+                type="button" className="boton-2 sm:self-start" disabled={busy}
+                onClick={() => run(() => diaPresente(id, p.id, !p.presente))}
+              >
+                {p.presente ? t("absent", { name: name(p) }) : t("arrived", { name: name(p) })}
+              </button>
+            </li>
+          ))}
+        </ul>
+        <p className="ayuda">{t("lateNote")}</p>
+      </section>
+  );
+  const turnos = (
+      <section id="dia-turnos" aria-labelledby="dia-turnos-t" className="flex scroll-mt-40 flex-col gap-3">
+        <h2 id="dia-turnos-t" className="titulo-2">{t("turnsTitle")}</h2>
+        <p className="ayuda">{panel.elegir_empezado ? t("turnsExplainStarted") : t("turnsExplain")}</p>
+        {!panel.elegir_empezado ? (
+          confirm === "empezar" ? (
+            <div className="tarjeta">
+              <p className="font-semibold">{t("startConfirm")}</p>
+              <div className="mt-2 flex flex-col gap-3 sm:flex-row">
+                <button type="button" className="boton grande" disabled={busy} onClick={() => run(() => diaEmpezar(id))}>{t("startYes")}</button>
+                <button type="button" className="boton-2 grande" onClick={() => setConfirm(null)}>{t("cancel")}</button>
+              </div>
+            </div>
+          ) : (
+            <button type="button" className="boton grande" disabled={busy || here.length === 0} onClick={() => setConfirm("empezar")}>
+              {t("startChoose")}
+            </button>
+          )
+        ) : null}
+        <h3 className="titulo-3">{t("queueTitle")}</h3>
+        <ol className="flex flex-col gap-2">
+          {[...here]
+            .sort((a, b) => (a.orden_elegir ?? 0) - (b.orden_elegir ?? 0) || total(b) - total(a) || a.num - b.num)
+            .map((p, i) => (
+              <li key={p.id} className="flex items-center justify-between gap-3 rounded-xl border-2 border-current px-3 py-2"
+                aria-current={current?.id === p.id ? "step" : undefined}>
+                <span className="font-semibold">{i + 1}.º · {name(p)}</span>
+                <span>{t("total", { count: total(p) })}{current?.id === p.id ? ` · ${t("itsTurn")}` : ""}</span>
+              </li>
+            ))}
+        </ol>
+      </section>
+  );
 
   return (
     <>
@@ -181,6 +295,19 @@ export function DiaPanelView({ id, initial }: { id: string; initial: DiaPanel })
       </div>
       {message && <p role="alert" className="aviso-error">{message}</p>}
       <p className="ayuda">{t("intro", { count: here.length })}</p>
+      {panel.elegir_empezado && (
+        <div className="sticky top-0 z-10 flex flex-col gap-2 rounded-2xl border-2 border-noche bg-amarillo p-3 shadow-md">
+          <p role="status" className="text-xl font-bold">
+            {allDone ? t("allDone") : t("currentTurn", { name: name(current!) })}
+          </p>
+          {!allDone && (
+            <button type="button" className="boton grande" disabled={busy} onClick={() => run(() => diaSiguiente(id))}>
+              {t("nextTurn")}
+            </button>
+          )}
+          {!allDone && <a href="#dia-turnos" className="enlace text-base">{t("queueTitle")}</a>}
+        </div>
+      )}
 
       <section aria-labelledby="dia-orden" className="flex flex-col gap-3">
         <h2 id="dia-orden" className="titulo-2">{t("drawTitle")}</h2>
@@ -201,98 +328,7 @@ export function DiaPanelView({ id, initial }: { id: string; initial: DiaPanel })
         )}
       </section>
 
-      <section aria-labelledby="dia-contar" className="flex flex-col gap-4">
-        <h2 id="dia-contar" className="titulo-2">{t("countTitle")}</h2>
-        <ul className="flex flex-col gap-4">
-          {list.map((p) => (
-            <li key={p.id} className={`tarjeta ${p.presente ? "" : "opacity-70"}`}>
-              <div className="flex flex-wrap items-center gap-2">
-                {p.orden_exponer !== null && p.presente && (
-                  <span className="etiqueta-pildora">{t("exposeBadge", { n: p.orden_exponer })}</span>
-                )}
-                {p.orden_elegir !== null && p.presente && (
-                  <span className="etiqueta-pildora contorno">{t("chooseBadge", { n: p.orden_elegir })}</span>
-                )}
-                {!p.presente && <span className="etiqueta-pildora contorno">{t("absentBadge")}</span>}
-              </div>
-              <label htmlFor={`n-${p.id}`} className="etiqueta mt-1">{t("nameLabel", { num: p.num })}</label>
-              <input
-                id={`n-${p.id}`} className="campo" maxLength={30} autoComplete="off"
-                placeholder={t("person", { num: p.num })} value={p.etiqueta ?? ""}
-                onChange={(e) => rename(p, e.target.value)}
-              />
-              {p.presente && (
-                <div className="mt-3 flex flex-col gap-3">
-                  {ITEM_TYPES.map((type) => (
-                    <div key={type} className="flex items-center justify-between gap-3" role="group" aria-label={`${t(`types.${type}`)} · ${name(p)}`}>
-                      <span className="text-lg font-semibold">{t(`types.${type}`)}</span>
-                      <span className="flex items-center gap-3">
-                        <button type="button" className="boton-2 contador" aria-label={t("minus", { type: t(`types.${type}`), name: name(p) })}
-                          disabled={p[type] === 0} onClick={() => bump(p, type, -1)}><Sign plus={false} /></button>
-                        <output className="min-w-10 text-center text-2xl font-bold" aria-live="polite">{p[type]}</output>
-                        <button type="button" className="boton contador" aria-label={t("plus", { type: t(`types.${type}`), name: name(p) })}
-                          disabled={p[type] >= MAX_ITEMS} onClick={() => bump(p, type, 1)}><Sign plus /></button>
-                      </span>
-                    </div>
-                  ))}
-                  <p className="font-bold">{t("total", { count: total(p) })}</p>
-                </div>
-              )}
-              <button
-                type="button" className="boton-2 mt-3 sm:self-start" disabled={busy}
-                onClick={() => run(() => diaPresente(id, p.id, !p.presente))}
-              >
-                {p.presente ? t("absent", { name: name(p) }) : t("arrived", { name: name(p) })}
-              </button>
-            </li>
-          ))}
-        </ul>
-        <p className="ayuda">{t("lateNote")}</p>
-      </section>
-
-      <section aria-labelledby="dia-turnos" className="flex flex-col gap-3">
-        <h2 id="dia-turnos" className="titulo-2">{t("turnsTitle")}</h2>
-        <p className="ayuda">{panel.elegir_empezado ? t("turnsExplainStarted") : t("turnsExplain")}</p>
-        {!panel.elegir_empezado ? (
-          confirm === "empezar" ? (
-            <div className="tarjeta">
-              <p className="font-semibold">{t("startConfirm")}</p>
-              <div className="mt-2 flex flex-col gap-3 sm:flex-row">
-                <button type="button" className="boton grande" disabled={busy} onClick={() => run(() => diaEmpezar(id))}>{t("startYes")}</button>
-                <button type="button" className="boton-2 grande" onClick={() => setConfirm(null)}>{t("cancel")}</button>
-              </div>
-            </div>
-          ) : (
-            <button type="button" className="boton grande" disabled={busy || here.length === 0} onClick={() => setConfirm("empezar")}>
-              {t("startChoose")}
-            </button>
-          )
-        ) : (
-          <>
-            <p role="status" className="aviso text-xl">
-              {allDone ? t("allDone") : t("currentTurn", { name: name(current!) })}
-            </p>
-            {!allDone && (
-              <button type="button" className="boton grande" disabled={busy} onClick={() => run(() => diaSiguiente(id))}>
-                {t("nextTurn")}
-              </button>
-            )}
-          </>
-        )}
-        <h3 className="titulo-3">{t("queueTitle")}</h3>
-        <ol className="flex flex-col gap-2">
-          {[...here]
-            .sort((a, b) => (a.orden_elegir ?? 0) - (b.orden_elegir ?? 0) || total(b) - total(a) || a.num - b.num)
-            .map((p, i) => (
-              <li key={p.id} className="flex items-center justify-between gap-3 rounded-xl border-2 border-current px-3 py-2"
-                aria-current={current?.id === p.id ? "step" : undefined}>
-                <span className="font-semibold">{i + 1}.º · {name(p)}</span>
-                <span>{t("total", { count: total(p) })}{current?.id === p.id ? ` · ${t("itsTurn")}` : ""}</span>
-              </li>
-            ))}
-        </ol>
-      </section>
-
+      {locked ? <>{turnos}{contar}</> : <>{contar}{turnos}</>}
       <section aria-labelledby="dia-sobra" className="flex flex-col gap-3">
         <h2 id="dia-sobra" className="titulo-2">{t("leftTitle")}</h2>
         <ul className="list-disc pl-6 text-lg">

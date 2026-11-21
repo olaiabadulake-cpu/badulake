@@ -401,6 +401,7 @@
       "alreadyDrawn": "Lottningen var redan gjord och görs inte om.",
       "alreadyStarted": "Kön hade redan startat och startas inte om.",
       "closed": "Badulake-läget är inte längre tillgängligt."
-    }
+    },
+    "countsLocked": "Turordningen är nu låst: de räknade sakerna kan inte längre ändras."
   }
 }

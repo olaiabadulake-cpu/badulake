@@ -401,6 +401,7 @@
       "alreadyDrawn": "Losování už proběhlo a neopakuje se.",
       "alreadyStarted": "Výběr už začal a neopakuje se.",
       "closed": "Režim badulake už není k dispozici."
-    }
+    },
+    "countsLocked": "Pořadí je už pevně dané: spočítané věci už nejde měnit."
   }
 }

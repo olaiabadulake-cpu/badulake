@@ -401,6 +401,7 @@
       "alreadyDrawn": "Arvonta oli jo tehty, eikä sitä toisteta.",
       "alreadyStarted": "Jono oli jo aloitettu, eikä sitä aloiteta uudelleen.",
       "closed": "Badulake-tila ei ole enää käytettävissä."
-    }
+    },
+    "countsLocked": "Vuorojärjestys on jo lukittu: laskettuja tavaroita ei voi enää muuttaa."
   }
 }

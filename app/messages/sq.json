@@ -401,6 +401,7 @@
       "alreadyDrawn": "Shorti ishte hedhur tashmë dhe nuk përsëritet.",
       "alreadyStarted": "Radha kishte filluar tashmë dhe nuk përsëritet.",
       "closed": "Modaliteti badulake nuk është më i disponueshëm."
-    }
+    },
+    "countsLocked": "Radha është caktuar tashmë: sendet e numëruara nuk mund të ndryshohen më."
   }
 }

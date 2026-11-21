@@ -401,6 +401,7 @@
       "alreadyDrawn": "D'Verlosung isch schu gmàcht wore un wird nit widderholt.",
       "alreadyStarted": "D'Reih isch schu àgfànge un fàngt nit nochemol à.",
       "closed": "Dr badulake-Modus isch nimm verfüegbàr."
-    }
+    },
+    "countsLocked": "D'Reihefolg isch fescht: Di zellte Sàcha känn nimm gänderet wäre."
   }
 }

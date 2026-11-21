@@ -401,6 +401,7 @@
       "alreadyDrawn": "El sortéu yá taba fechu y nun se repite.",
       "alreadyStarted": "La cola yá taba empecipiada y nun se repite.",
       "closed": "El mou badulake yá nun ta disponible."
-    }
+    },
+    "countsLocked": "La cola de turnos yá ta fixada: los oxetos contaos yá nun se puen camudar."
   }
 }

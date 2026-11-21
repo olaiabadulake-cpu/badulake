@@ -401,6 +401,7 @@
       "alreadyDrawn": "Eth sortèg ja ère hèt e non se repetís.",
       "alreadyStarted": "Era coa ja ère començada e non se repetís.",
       "closed": "Eth mòde badulake ja non ei disponible."
-    }
+    },
+    "countsLocked": "Era coa de torns ja ei fixada: es objèctes comptats ja non se pòden cambiar."
   }
 }

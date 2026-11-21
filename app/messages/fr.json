@@ -401,6 +401,7 @@
       "alreadyDrawn": "Le tirage au sort a déjà été fait et ne peut pas être refait.",
       "alreadyStarted": "La file a déjà commencé et ne peut pas être relancée.",
       "closed": "Le mode badulake n'est plus disponible."
-    }
+    },
+    "countsLocked": "L'ordre de passage est fixé : les objets comptés ne peuvent plus être modifiés."
   }
 }

@@ -401,6 +401,7 @@
       "alreadyDrawn": "O sorteio já estava feito e não se repete.",
       "alreadyStarted": "A escolha já tinha começado e não se repete.",
       "closed": "O modo badulake já não está disponível."
-    }
+    },
+    "countsLocked": "A ordem já está fixada: os objetos contados já não se podem alterar."
   }
 }

@@ -401,6 +401,7 @@
       "alreadyDrawn": "Il sorteggio era già stato fatto e non si ripete.",
       "alreadyStarted": "La fila era già iniziata e non si ricomincia.",
       "closed": "La modalità badulake non è più disponibile."
-    }
+    },
+    "countsLocked": "La coda dei turni è ormai fissata: gli oggetti contati non si possono più cambiare."
   }
 }

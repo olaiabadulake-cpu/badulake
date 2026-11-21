@@ -401,6 +401,7 @@
       "alreadyDrawn": "El sorteig ja estava fet i no es repeteix.",
       "alreadyStarted": "La cua ja estava començada i no es repeteix.",
       "closed": "El mode badulake ja no està disponible."
-    }
+    },
+    "countsLocked": "La cua de torns ja està fixada: els objectes comptats ja no es poden canviar."
   }
 }

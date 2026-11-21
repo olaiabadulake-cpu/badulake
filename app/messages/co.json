@@ -401,6 +401,7 @@
       "alreadyDrawn": "U tiraghju era digià fattu è ùn si rifà micca.",
       "alreadyStarted": "A fila era digià cuminciata è ùn si rifà micca.",
       "closed": "U modu badulake ùn hè più dispunibule."
-    }
+    },
+    "countsLocked": "A fila di i turni hè digià fissata: l'oggetti cuntati ùn si ponu più cambià."
   }
 }

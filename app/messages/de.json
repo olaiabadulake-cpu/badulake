@@ -401,6 +401,7 @@
       "alreadyDrawn": "Es wurde schon ausgelost. Das lässt sich nicht wiederholen.",
       "alreadyStarted": "Das Aussuchen hat schon angefangen. Das lässt sich nicht wiederholen.",
       "closed": "Der Badulake-Modus ist nicht mehr verfügbar."
-    }
+    },
+    "countsLocked": "Die Reihenfolge steht fest: Die gezählten Sachen lassen sich nicht mehr ändern."
   }
 }

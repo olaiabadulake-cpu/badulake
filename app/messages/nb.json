@@ -401,6 +401,7 @@
       "alreadyDrawn": "Trekningen var allerede gjort og gjentas ikke.",
       "alreadyStarted": "Køen var allerede startet og startes ikke på nytt.",
       "closed": "Badulake-modus er ikke tilgjengelig lenger."
-    }
+    },
+    "countsLocked": "Turrekkefølgen ligger fast: De opptalte tingene kan ikke lenger endres."
   }
 }

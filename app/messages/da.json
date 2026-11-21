@@ -401,6 +401,7 @@
       "alreadyDrawn": "Der var allerede trukket lod, og det gentages ikke.",
       "alreadyStarted": "Køen var allerede startet, og det gentages ikke.",
       "closed": "Badulake-tilstanden er ikke længere tilgængelig."
-    }
+    },
+    "countsLocked": "Turrækkefølgen ligger nu fast: De optalte ting kan ikke længere ændres."
   }
 }

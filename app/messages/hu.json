@@ -401,6 +401,7 @@
       "alreadyDrawn": "A sorsolás már megtörtént, és nem ismételhető.",
       "alreadyStarted": "A választás már elindult, és nem ismételhető.",
       "closed": "A badulake mód már nem érhető el."
-    }
+    },
+    "countsLocked": "A sorrend már rögzítve van: a megszámolt tárgyakat már nem lehet módosítani."
   }
 }

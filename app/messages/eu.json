@@ -491,6 +491,7 @@
       "alreadyDrawn": "Zozketa egina zegoen eta ez da errepikatzen.",
       "alreadyStarted": "Ilara hasita zegoen eta ez da errepikatzen.",
       "closed": "Badulake modua ez dago erabilgarri jada."
-    }
+    },
+    "countsLocked": "Txanden ilara finkatuta dago: zenbatutako objektuak ezin dira aldatu."
   }
 }

@@ -401,6 +401,7 @@
       "alreadyDrawn": "Bhí an crannchur déanta cheana agus ní dhéantar arís é.",
       "alreadyStarted": "Bhí an scuaine tosaithe cheana agus ní thosaítear arís í.",
       "closed": "Níl mód badulake ar fáil a thuilleadh."
-    }
+    },
+    "countsLocked": "Tá ord na seal socraithe anois: ní féidir na rudaí a comhaireadh a athrú a thuilleadh."
   }
 }
