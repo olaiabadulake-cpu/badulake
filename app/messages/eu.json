@@ -271,7 +271,11 @@
     "thanksOrganizer": "Eskerrik asko antolatzeagatik!",
     "thanksAttendee": "Eskerrik asko etortzeagatik!",
     "canOrganizeNow": "Badulake batera joan zarenez, zurea antola dezakezu orain.",
-    "organizeYours": "Nire badulakea antolatu"
+    "organizeYours": "Nire badulakea antolatu",
+    "share": "Partekatu",
+    "shareCopied": "Esteka kopiatuta. Itsatsi nahi duzun lekuan.",
+    "shareText": "Badulake bat: arropa eta gauzak dirurik gabe trukatzeko topaketa. Izena emango duzu?",
+    "previewJoin": "Izena emateko eta helbide zehatza ikusteko, sartu edo sortu zure kontua. Doan da."
   },
   "Nav": {
     "label": "Menu nagusia",

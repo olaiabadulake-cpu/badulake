@@ -240,7 +240,11 @@
     "thanksOrganizer": "¡Gracies por organizalu!",
     "thanksAttendee": "¡Gracies por venir!",
     "canOrganizeNow": "Como yá fuisti a un badulake, yá pues organizar el tuyu.",
-    "organizeYours": "Organizar el mio badulake"
+    "organizeYours": "Organizar el mio badulake",
+    "share": "Compartir",
+    "shareCopied": "Enllaz copiáu. Pégalu onde quieras.",
+    "shareText": "Un badulake: una quedada pa intercambiar ropa y coses ensin dineru. ¿Apúntaste?",
+    "previewJoin": "Pa apuntate y ver la direición exacta, entra o crea la to cuenta. Ye de baldre."
   },
   "Nav": {
     "label": "Menú principal",

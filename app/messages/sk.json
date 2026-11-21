@@ -240,7 +240,11 @@
     "thanksOrganizer": "Ďakujeme za zorganizovanie!",
     "thanksAttendee": "Ďakujeme za účasť!",
     "canOrganizeNow": "Keďže už máš za sebou jedno badulake, teraz môžeš zorganizovať vlastné.",
-    "organizeYours": "Zorganizovať vlastné badulake"
+    "organizeYours": "Zorganizovať vlastné badulake",
+    "share": "Zdieľať",
+    "shareCopied": "Odkaz skopírovaný. Vlož ho, kam chceš.",
+    "shareText": "Badulake: stretnutie, kde sa bez peňazí vymieňa oblečenie a veci. Prihlásiš sa?",
+    "previewJoin": "Ak sa chceš prihlásiť a vidieť presnú adresu, prihlás sa do účtu alebo si ho vytvor. Je to zadarmo."
   },
   "Nav": {
     "label": "Hlavné menu",

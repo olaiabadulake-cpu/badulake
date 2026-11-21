@@ -240,7 +240,11 @@
     "thanksOrganizer": "Mercés per organizar-lo!",
     "thanksAttendee": "Mercés per vier!",
     "canOrganizeNow": "Coma ja as anat a un badulake, ja pòs organizar eth tòn.",
-    "organizeYours": "Organizar eth mèn badulake"
+    "organizeYours": "Organizar eth mèn badulake",
+    "share": "Compartir",
+    "shareCopied": "Ligam copiat. Pega-lo a on vulhues.",
+    "shareText": "Un badulake: ua trobada entà escambiar ròba e causes sense sòs. T'i apuntes?",
+    "previewJoin": "Entà apuntar-te e veir era adreça exacta, entra o crea eth tòn compde. Ei de bades."
   },
   "Nav": {
     "label": "Menú principau",

@@ -240,7 +240,11 @@
     "thanksOrganizer": "Faleminderit që e organizuat!",
     "thanksAttendee": "Faleminderit që erdhët!",
     "canOrganizeNow": "Meqë keni qenë tashmë në një badulake, tani mund të organizoni tuajin.",
-    "organizeYours": "Organizo badulake-n tim"
+    "organizeYours": "Organizo badulake-n tim",
+    "share": "Ndaje",
+    "shareCopied": "Lidhja u kopjua. Ngjiteni ku të doni.",
+    "shareText": "Një badulake: një takim për të shkëmbyer rroba dhe sende pa para. Regjistroheni?",
+    "previewJoin": "Për t'u regjistruar dhe për të parë adresën e saktë, hyni ose krijoni llogarinë tuaj. Është falas."
   },
   "Nav": {
     "label": "Menuja kryesore",

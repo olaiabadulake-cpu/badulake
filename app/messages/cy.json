@@ -240,7 +240,11 @@
     "thanksOrganizer": "Diolch am ei drefnu!",
     "thanksAttendee": "Diolch am ddod!",
     "canOrganizeNow": "Gan dy fod wedi bod mewn badulake, gelli di drefnu dy un di nawr.",
-    "organizeYours": "Trefnu fy badulake"
+    "organizeYours": "Trefnu fy badulake",
+    "share": "Rhannu",
+    "shareCopied": "Dolen wedi'i chopïo. Gludia hi lle bynnag ti eisiau.",
+    "shareText": "Badulake: cyfarfod i gyfnewid dillad a phethau heb arian. Wyt ti am ddod?",
+    "previewJoin": "I gofrestru a gweld yr union gyfeiriad, mewngofnoda neu crea gyfrif. Mae am ddim."
   },
   "Nav": {
     "label": "Prif ddewislen",

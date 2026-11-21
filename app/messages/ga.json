@@ -240,7 +240,11 @@
     "thanksOrganizer": "Go raibh maith agat as é a eagrú!",
     "thanksAttendee": "Go raibh maith agat as teacht!",
     "canOrganizeNow": "Ós rud é go raibh tú ag badulake cheana, is féidir leat do cheann féin a eagrú anois.",
-    "organizeYours": "Mo bhadulake a eagrú"
+    "organizeYours": "Mo bhadulake a eagrú",
+    "share": "Comhroinn",
+    "shareCopied": "Nasc cóipeáilte. Greamaigh é áit ar bith is maith leat.",
+    "shareText": "Badulake: cruinniú chun éadaí agus rudaí a mhalartú gan airgead. An mbeidh tú ann?",
+    "previewJoin": "Chun clárú agus an seoladh cruinn a fheiceáil, sínigh isteach nó cruthaigh cuntas. Tá sé saor in aisce."
   },
   "Nav": {
     "label": "Príomh-roghchlár",

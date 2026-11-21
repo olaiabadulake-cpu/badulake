@@ -240,7 +240,11 @@
     "thanksOrganizer": "Hvala za organizacijo!",
     "thanksAttendee": "Hvala za udeležbo!",
     "canOrganizeNow": "Ker imaš badulake že za sabo, lahko zdaj organiziraš svojega.",
-    "organizeYours": "Organiziraj svoj badulake"
+    "organizeYours": "Organiziraj svoj badulake",
+    "share": "Deli",
+    "shareCopied": "Povezava je kopirana. Prilepi jo, kamor želiš.",
+    "shareText": "Badulake: srečanje za izmenjavo oblačil in stvari brez denarja. Se prijaviš?",
+    "previewJoin": "Za prijavo in ogled točnega naslova se prijavi v račun ali ga ustvari. Brezplačno je."
   },
   "Nav": {
     "label": "Glavni meni",

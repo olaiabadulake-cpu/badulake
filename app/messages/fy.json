@@ -240,7 +240,11 @@
     "thanksOrganizer": "Tank dat do him organisearre hast!",
     "thanksAttendee": "Tank dat do kommen bist!",
     "canOrganizeNow": "Om't do al ris nei in badulake west hast, kinst no dyn eigen organisearje.",
-    "organizeYours": "Myn badulake organisearje"
+    "organizeYours": "Myn badulake organisearje",
+    "share": "Diele",
+    "shareCopied": "Keppeling kopiearre. Plak him wêr'tsto wolst.",
+    "shareText": "In badulake: in gearkomste om klean en guod sûnder jild te ruiljen. Dochsto mei?",
+    "previewJoin": "Meld dy oan of meitsje in akkount om dy op te jaan en it krekte adres te sjen. It is fergees."
   },
   "Nav": {
     "label": "Haadmenu",

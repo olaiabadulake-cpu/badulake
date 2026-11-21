@@ -240,7 +240,11 @@
     "thanksOrganizer": "Tack för att du ordnade den!",
     "thanksAttendee": "Tack för att du kom!",
     "canOrganizeNow": "Eftersom du har varit på en badulake kan du nu ordna din egen.",
-    "organizeYours": "Ordna min badulake"
+    "organizeYours": "Ordna min badulake",
+    "share": "Dela",
+    "shareCopied": "Länken är kopierad. Klistra in den var du vill.",
+    "shareText": "En badulake: en träff för att byta kläder och saker utan pengar. Hänger du med?",
+    "previewJoin": "Logga in eller skapa ett konto för att anmäla dig och se den exakta adressen. Det är gratis."
   },
   "Nav": {
     "label": "Huvudmeny",

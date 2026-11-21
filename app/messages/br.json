@@ -240,7 +240,11 @@
     "thanksOrganizer": "Trugarez evit e aozañ!",
     "thanksAttendee": "Trugarez evit bezañ deuet!",
     "canOrganizeNow": "Bet oc'h en ur badulake, neuze gallout a rit aozañ ho hini bremañ.",
-    "organizeYours": "Aozañ ma badulake"
+    "organizeYours": "Aozañ ma badulake",
+    "share": "Rannañ",
+    "shareCopied": "Liamm eilet. Pegit anezhañ e-lec'h ma karit.",
+    "shareText": "Ur badulake: un emgav evit eskemm dilhad ha traoù hep arc'hant. Dont a rit?",
+    "previewJoin": "Evit en em enskrivañ ha gwelet ar chomlec'h resis, kevreit pe krouit ho kont. Digoust eo."
   },
   "Nav": {
     "label": "Lañser pennañ",

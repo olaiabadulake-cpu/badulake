@@ -13,6 +13,7 @@ import {
 import { fallos } from "@/lib/pruebas";
 import { isFinished } from "@/lib/badulake-estado";
 import { ApuntarseConfuso, AsistentesAlaVista } from "./pruebas-fallos";
+import { ShareButton } from "./share-button";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Badulake");
@@ -177,6 +178,9 @@ async function Details({
       </dl>
       {joined && <AsistentesAlaVista id={b.id} />}
       {isOrganizer && !cancelled && <p className="ayuda">{t("addressPrivate")}</p>}
+      {b.estado === "publicado" && upcoming && !b.oculto && (
+        <ShareButton title={b.titulo} text={t("shareText")} label={t("share")} copied={t("shareCopied")} />
+      )}
       {isOrganizer && dayOn === true && (
         <Link href={`/badulakes/${b.id}/dia`} className="boton sm:self-start">{t("dayMode")}</Link>
       )}

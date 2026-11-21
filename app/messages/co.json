@@ -240,7 +240,11 @@
     "thanksOrganizer": "Grazie d'avellu urganizatu!",
     "thanksAttendee": "Grazie d'esse vinutu!",
     "canOrganizeNow": "Postu chì sì digià andatu à un badulake, avà poi urganizà u toiu.",
-    "organizeYours": "Urganizà u mo badulake"
+    "organizeYours": "Urganizà u mo badulake",
+    "share": "Sparte",
+    "shareCopied": "Ligame cupiatu. Incullalu induve tù voli.",
+    "shareText": "Un badulake: un scontru per scambià robba è oggetti senza soldi. T'iscrivi?",
+    "previewJoin": "Per iscriveti è vede l'indirizzu precisu, entre o crea u to contu. Hè gratisu."
   },
   "Nav": {
     "label": "Menù principale",

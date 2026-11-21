@@ -240,7 +240,11 @@
     "thanksOrganizer": "Dziękujemy za organizację!",
     "thanksAttendee": "Dziękujemy za udział!",
     "canOrganizeNow": "Skoro masz już za sobą jedno badulake, możesz teraz zorganizować własne.",
-    "organizeYours": "Zorganizuj moje badulake"
+    "organizeYours": "Zorganizuj moje badulake",
+    "share": "Udostępnij",
+    "shareCopied": "Link skopiowany. Wklej go, gdzie chcesz.",
+    "shareText": "Badulake: spotkanie, na którym bez pieniędzy wymienia się ubrania i rzeczy. Zapiszesz się?",
+    "previewJoin": "Aby się zapisać i zobaczyć dokładny adres, zaloguj się lub załóż konto. To nic nie kosztuje."
   },
   "Nav": {
     "label": "Menu główne",

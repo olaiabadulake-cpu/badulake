@@ -240,7 +240,11 @@
     "thanksOrganizer": "Mercé de l'aver organizat !",
     "thanksAttendee": "Mercé d'èsser vengut !",
     "canOrganizeNow": "Coma ja siás anat a un badulake, ara pòdes organizar lo tieu.",
-    "organizeYours": "Organizar mon badulake"
+    "organizeYours": "Organizar mon badulake",
+    "share": "Partejar",
+    "shareCopied": "Ligam copiat. Pega-lo ont vòles.",
+    "shareText": "Un badulake : un rescontre per escambiar vestits e causas sens argent. T'i marcas ?",
+    "previewJoin": "Per te marcar e veire l'adreça exacta, connècta-te o crea ton compte. Es gratuit."
   },
   "Nav": {
     "label": "Menut principal",

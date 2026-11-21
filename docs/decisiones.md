@@ -392,3 +392,16 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - **Copia de pruebas:** un badulake ya celebrado inventado (Barrio del Sauce, organizado por Ane, con Mikel, Nerea, Iker y Maialen), también en `02-datos.sql`.
 - **Por qué:** la auditoría vio que no había forma de encontrar los badulakes propios ni de cerrar el ciclo después de ir; el «gracias» y el «ya puedes organizar» empujan a que quien va organice el siguiente.
 - **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 6.1)
+
+### D-042 · Compartir un badulake: botón, vista previa pública sin dirección y vuelta al badulake después de entrar
+- **Fecha:** 21/11/2026
+- **Alternativas:** compartir solo copiando la dirección de la web; que el enlace sin cuenta lleve a «Entrar» (sin vista previa); guardar adónde volver en la dirección de «Entrar» (habría que tocar entrar y registro, que lleva la Tarea 4.1).
+- **Decisión** (Tarea 6.3 de [auditoria.md](auditoria.md); `supabase/vista_publica.sql`, `app/src/app/[locale]/vista/[id]/`, `app/src/proxy.ts`):
+  - **Botón «Compartir»** en la ficha de un badulake publicado y futuro: abre el menú de compartir del móvil (WhatsApp, Telegram…) y, si el navegador no lo tiene, copia el enlace («Enlace copiado»). El enlace es el de la ficha.
+  - **Vista previa pública:** quien abre ese enlace **sin sesión** ve una página mínima: título (el lugar), fecha y hora, barrio, plazas libres o «Completo», qué es un badulake y los botones «Entrar» y «Crear cuenta». Las apps de mensajería ven título, descripción e **imagen** (amarillo de la marca con el lugar y la fecha). **Nunca la dirección exacta, ni quién organiza, ni quién va.** Los datos salen de `badulake_vista(id)`, la única función que se puede llamar sin cuenta: solo badulakes publicados o cancelados, no ocultos y de los últimos 30 días; hay que conocer el identificador (no se puede listar). Lo que no existe da 404. `noindex`: no sale en buscadores.
+  - **Volver al badulake:** al enseñar la vista previa (o al mandar a «Entrar» desde cualquier página privada), `proxy.ts` guarda en una cookie técnica `badulake-volver` (un día, solo la ruta, solo direcciones privadas de esta web) adónde volver. Como entrar, crear la cuenta y Google acaban en la lista de badulakes, `proxy.ts` lleva de ahí a la página guardada y borra la cookie. No se ha tocado nada de entrar ni de registro.
+  - 4 textos nuevos en las 44 lenguas.
+  - **Probado** en el Mac contra la copia: sin sesión, la ficha da la vista previa (200) con título, descripción e imagen y sin dirección; un identificador inventado, 404; entrar con la cuenta inventada de Leire desde ahí vuelve a ese badulake; después la lista ya no redirige. `next build` sin errores.
+- **Para la Asesoría** ([privacidad.md](privacidad.md) §2.3 y §9): la vista previa enseña a cualquiera con el enlace el título (barrio, ciudad y provincia), la fecha y las plazas. La cookie `badulake-volver` es técnica (recuerda lo que la persona ha pedido).
+- **Por qué:** los badulakes se van a mover por WhatsApp entre vecinas; sin vista previa y sin volver al badulake, cada enlace compartido se perdía en «Entrar».
+- **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 6.3)

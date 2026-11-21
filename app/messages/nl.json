@@ -240,7 +240,11 @@
     "thanksOrganizer": "Bedankt voor het organiseren!",
     "thanksAttendee": "Bedankt voor je komst!",
     "canOrganizeNow": "Omdat je al naar een badulake bent geweest, kun je er nu zelf een organiseren.",
-    "organizeYours": "Mijn badulake organiseren"
+    "organizeYours": "Mijn badulake organiseren",
+    "share": "Delen",
+    "shareCopied": "Link gekopieerd. Plak hem waar je wilt.",
+    "shareText": "Een badulake: een ontmoeting om kleren en spullen te ruilen, zonder geld. Doe je mee?",
+    "previewJoin": "Log in of maak een account aan om je aan te melden en het precieze adres te zien. Het is gratis."
   },
   "Nav": {
     "label": "Hoofdmenu",

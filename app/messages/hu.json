@@ -240,7 +240,11 @@
     "thanksOrganizer": "Köszönjük, hogy megszervezted!",
     "thanksAttendee": "Köszönjük, hogy eljöttél!",
     "canOrganizeNow": "Mivel már voltál badulakén, most már szervezhetsz sajátot.",
-    "organizeYours": "Saját badulake szervezése"
+    "organizeYours": "Saját badulake szervezése",
+    "share": "Megosztás",
+    "shareCopied": "Link kimásolva. Illeszd be, ahová szeretnéd.",
+    "shareText": "Egy badulake: találkozó, ahol pénz nélkül cserélünk ruhát és tárgyakat. Jössz?",
+    "previewJoin": "A jelentkezéshez és a pontos cím megtekintéséhez jelentkezz be, vagy hozz létre fiókot. Ingyenes."
   },
   "Nav": {
     "label": "Főmenü",

@@ -240,7 +240,11 @@
     "thanksOrganizer": "Dilan por l'avëi organisé!",
     "thanksAttendee": "Dilan dla partezipaziun!",
     "canOrganizeNow": "Deache te es bele stè a n badulake, pos-te śëgn organisé le tü.",
-    "organizeYours": "Organisé mi badulake"
+    "organizeYours": "Organisé mi badulake",
+    "share": "Spartì",
+    "shareCopied": "Link copié. Tachel ulà che te ues.",
+    "shareText": "N badulake: n incunt por baraté guant y cosses zënza scioldi. Vëgnes?",
+    "previewJoin": "Por te scrí sö y vëire l'adresa precisa, va ite o fej tü conto. Al é debant."
   },
   "Nav": {
     "label": "Menü prinzipal",

@@ -240,7 +240,11 @@
     "thanksOrganizer": "Mulțumim că l-ai organizat!",
     "thanksAttendee": "Mulțumim că ai venit!",
     "canOrganizeNow": "Pentru că ai fost deja la un badulake, acum îl poți organiza pe al tău.",
-    "organizeYours": "Organizează badulake-ul meu"
+    "organizeYours": "Organizează badulake-ul meu",
+    "share": "Distribuie",
+    "shareCopied": "Link copiat. Lipește-l unde vrei.",
+    "shareText": "Un badulake: o întâlnire la care se schimbă haine și lucruri fără bani. Te înscrii?",
+    "previewJoin": "Ca să te înscrii și să vezi adresa exactă, intră în cont sau creează-ți unul. E gratuit."
   },
   "Nav": {
     "label": "Meniu principal",

@@ -240,7 +240,11 @@
     "thanksOrganizer": "Mòran taing airson a chur air dòigh!",
     "thanksAttendee": "Mòran taing airson tighinn!",
     "canOrganizeNow": "On a bha thu aig badulake mu thràth, faodaidh tu do thè fhèin a chur air dòigh a-nis.",
-    "organizeYours": "Cuir mo bhadulake air dòigh"
+    "organizeYours": "Cuir mo bhadulake air dòigh",
+    "share": "Co-roinn",
+    "shareCopied": "Chaidh an ceangal a lethbhreacadh. Cuir ann e far an togair thu.",
+    "shareText": "Badulake: coinneamh airson aodach is rudan a mhalairt gun airgead. An tig thu?",
+    "previewJoin": "Airson clàradh is an dearbh sheòladh fhaicinn, clàraich a-steach no cruthaich cunntas. Tha e an-asgaidh."
   },
   "Nav": {
     "label": "Prìomh chlàr-taice",

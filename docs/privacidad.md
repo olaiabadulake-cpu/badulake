@@ -60,6 +60,7 @@ Ficha hecha el 19/11/2026 (Tarea 9 del plan maestro, decisión D-024). Es el **b
 | **Base legal propuesta** | Ejecución del servicio (6.1.b). |
 | **Quién lo ve** | Un badulake publicado lo ven las personas con cuenta, **sin dirección y sin saber quién lo organiza** (corregido en esta tarea: antes se podía leer el identificador de la organizadora). Los borradores, solo la organizadora. La **dirección**, solo la organizadora y las personas apuntadas. |
 | **Cuánto tiempo** | La **dirección se borra al día siguiente** del badulake, o **en el momento en que se cancela** (Tarea 20). El **badulake, 30 días después** (margen para quejas o denuncias). |
+| **Vista previa al compartir (Tarea 6.3, D-042)** | Quien tenga el enlace de un badulake, aunque no tenga cuenta, ve su título (barrio, ciudad y provincia), fecha y hora, barrio y plazas libres, y las apps de mensajería enseñan esos datos en la vista previa. **Nunca** la dirección, quién organiza ni quién va. Hay que conocer el enlace: no se pueden listar. |
 | **Aviso para la Asesoría** | La dirección suele ser la de una casa: es el dato más delicado de la app. La descripción es texto libre: la organizadora podría escribir datos personales (lo explicarán las condiciones de uso, Tarea 12). |
 
 ### 2.3.1 Haber ido a un badulake antes de organizar (Tarea 5.2, D-038)
@@ -204,6 +205,7 @@ Ver [seguridad.md](seguridad.md): reglas por filas en todas las tablas, 48 de 48
 4. ¿Os parecen bien los plazos de conservación (apartado 5)? ¿Qué hacer con las cuentas que no se usan?
 5. ¿Hace falta una evaluación de impacto (EIPD)? Se guardan direcciones de casas particulares, aunque se borran al día siguiente.
 6. El texto provisional de `/privacidad` está escrito en lenguaje llano: podéis usarlo como base.
+8. **Compartir (D-042):** ¿os parece bien que la vista previa pública enseñe lugar, fecha y plazas a quien tenga el enlace, sin cuenta? ¿La cookie técnica `badulake-volver` (un día, recuerda qué badulake se quería ver) entra en la política de cookies como técnica?
 7. **Entrar con Google (D-039):** ¿Google es responsable independiente del inicio de sesión o hay que tratarlo de otra forma? ¿Cómo se explica en el aviso que Google sabe que la persona usa Badulake? ¿Basta con lo que ya dice el borrador de `/privacidad` (apartados 2 y 5)?
 
 ## 10. La página `/privacidad`

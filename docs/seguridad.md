@@ -196,3 +196,8 @@ Script `supabase/cupo.sql`, ejecutado por Claude en Supabase el 19/11/2026.
 - **Clave secreta del cliente OAuth:** solo en Supabase (Authentication → Sign In / Providers → Google). No está en el repositorio, ni en Vercel, ni en el chat. Se pasó con copiar y pegar y luego se vació el portapapeles.
 - **Límite de intentos:** 20 cada 15 minutos para empezar con Google y 10 cada 15 minutos para confirmar la edad, por conexión.
 
+## 16. Compartir y vista previa pública (Tarea 6.3, D-042)
+
+- `badulake_vista(id)` es la **única función que se puede llamar sin cuenta** (además de la lista de espera de antes del lanzamiento). Devuelve solo título, fecha, zona, estado y plazas libres de un badulake publicado o cancelado, no oculto y de los últimos 30 días. Nunca la dirección ni personas. Saldrá en el revisor de Supabase como aviso (función `security definer` abierta), a propósito.
+- `proxy.ts` solo la usa para la ficha compartida sin sesión; lo que no devuelve nada da 404.
+- La cookie `badulake-volver` es `httpOnly`, `SameSite=Lax`, segura en https y dura un día. Solo se usa si es una ruta privada de esta web (misma comprobación que las rutas protegidas): no puede llevar a otra web.

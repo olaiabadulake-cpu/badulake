@@ -240,7 +240,11 @@
     "thanksOrganizer": "Takk for at du skipa han til!",
     "thanksAttendee": "Takk for at du kom!",
     "canOrganizeNow": "Sidan du har vore på ein badulake, kan du no skipe til din eigen.",
-    "organizeYours": "Skip til min badulake"
+    "organizeYours": "Skip til min badulake",
+    "share": "Del",
+    "shareCopied": "Lenkja er kopiert. Lim ho inn der du vil.",
+    "shareText": "Ein badulake: eit treff for å byte klede og ting utan pengar. Blir du med?",
+    "previewJoin": "Logg inn eller opprett ein konto for å melde deg på og sjå den nøyaktige adressa. Det er gratis."
   },
   "Nav": {
     "label": "Hovudmeny",

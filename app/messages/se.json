@@ -240,7 +240,11 @@
     "thanksOrganizer": "Giitu go lágidit dan!",
     "thanksAttendee": "Giitu go bohtet!",
     "canOrganizeNow": "Go don leat juo leamaš badulakes, de sáhtát dál lágidit iežat badulake.",
-    "organizeYours": "Lágit mu badulake"
+    "organizeYours": "Lágit mu badulake",
+    "share": "Juoge",
+    "shareCopied": "Liŋka lea máŋgejuvvon. Bija dan gosa háliidat.",
+    "shareText": "Badulake: deaivvadeapmi gos lonuhit biktasiid ja diŋggaid ruđaid haga. Boađát go?",
+    "previewJoin": "Vai sáhtát čálihit ja oaidnit dárkilis čujuhusa, čálil sisa dahje ráhkat kontu. Dat lea nuvttá."
   },
   "Nav": {
     "label": "Váldofállu",

@@ -240,7 +240,11 @@
     "thanksOrganizer": "Merci, dàss dü's organisiert hesch!",
     "thanksAttendee": "Merci, dàss dü kumme bisch!",
     "canOrganizeNow": "Wil dü schun bi eme badulake gsìì bisch, kànnsch jetzt dinner eije organisiere.",
-    "organizeYours": "Mi badulake organisiere"
+    "organizeYours": "Mi badulake organisiere",
+    "share": "Teile",
+    "shareCopied": "Link kopiert. Füej ne ìn, wo dü wìtt.",
+    "shareText": "E badulake: e Träffe, fer Kleider un Sàcha ohne Gald z'tüsche. Bìsch derbii?",
+    "previewJoin": "Fer dich àzmälde un d'gnàui Àdress z'sähn, mäld dich à oder leij e Konto à. S'koschtet nix."
   },
   "Nav": {
     "label": "Hauptmenü",

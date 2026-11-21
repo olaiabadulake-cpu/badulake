@@ -240,7 +240,11 @@
     "thanksOrganizer": "Kiitos, että järjestit sen!",
     "thanksAttendee": "Kiitos, että tulit!",
     "canOrganizeNow": "Koska olet jo käynyt badulakessa, voit nyt järjestää oman.",
-    "organizeYours": "Järjestä oma badulake"
+    "organizeYours": "Järjestä oma badulake",
+    "share": "Jaa",
+    "shareCopied": "Linkki kopioitu. Liitä se minne haluat.",
+    "shareText": "Badulake: tapaaminen, jossa vaihdetaan vaatteita ja tavaroita ilman rahaa. Tuletko mukaan?",
+    "previewJoin": "Kirjaudu sisään tai luo tili, niin voit ilmoittautua ja nähdä tarkan osoitteen. Se on maksutonta."
   },
   "Nav": {
     "label": "Päävalikko",
