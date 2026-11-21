@@ -18,13 +18,13 @@ export default async function Image({ params }: { params: Promise<{ locale: stri
     : "";
   return new ImageResponse(
     (
-      <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 64, background: "#fedb75", color: "#161944", fontFamily: "sans-serif" }}>
-        <div style={{ display: "flex", fontSize: 44, fontWeight: 700 }}>badulakë</div>
+      <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 64, background: "#2f2fd1", color: "#ffffff", fontFamily: "sans-serif" }}>
+        <div style={{ display: "flex", alignSelf: "flex-start", fontSize: 40, fontWeight: 900, letterSpacing: 1, color: "#ff3fa4", border: "6px solid #ff3fa4", borderRadius: 999, padding: "10px 34px", background: "#15135c" }}>BADULAKE</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
           <div style={{ display: "flex", fontSize: 64, fontWeight: 700, lineHeight: 1.1 }}>{b ? b.titulo : "Badulake"}</div>
           {b && <div style={{ display: "flex", fontSize: 38 }}>{when}</div>}
         </div>
-        <div style={{ display: "flex", fontSize: 30 }}>5–10 · 0 €</div>
+        <div style={{ display: "flex", fontSize: 30, color: "#c8ff2e", fontWeight: 700 }}>5–10 · 0 €</div>
       </div>
     ),
     size,

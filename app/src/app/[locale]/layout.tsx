@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Raleway, Roboto } from "next/font/google";
+import { Roboto, Unbounded } from "next/font/google";
 import { notFound } from "next/navigation";
 import { locale as rootLocale } from "next/root-params";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -9,6 +9,7 @@ import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { Analytics } from "@vercel/analytics/next";
 import { Suspense } from "react";
+import { PegatinaDefs } from "./logo";
 import { InstallHint } from "./install-hint";
 import { PruebasAviso } from "./pruebas-aviso";
 import { copiaDePruebas } from "@/lib/pruebas";
@@ -17,13 +18,13 @@ import { SiteHeader } from "./site-header";
 import "../globals.css";
 
 // Alfabetos: latino ampliado (č, ő, ș…), cirílico (búlgaro, serbio, ucraniano…) y griego.
-// Raleway no tiene griego: los títulos en griego usan la letra del sistema.
+// Unbounded no tiene griego: los títulos en griego usan la letra del sistema.
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext", "greek"],
 });
-const raleway = Raleway({
-  variable: "--font-raleway",
+const unbounded = Unbounded({
+  variable: "--font-unbounded",
   subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext"],
 });
 
@@ -46,7 +47,7 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export const viewport: Viewport = { themeColor: "#FEDB75" };
+export const viewport: Viewport = { themeColor: "#2f2fd1" };
 
 export default async function RootLayout({ children }: LayoutProps<"/[locale]">) {
   const locale = await rootLocale();
@@ -57,19 +58,20 @@ export default async function RootLayout({ children }: LayoutProps<"/[locale]">)
   const privacy = await getTranslations("Privacy");
 
   return (
-    <html lang={locale} className={`${roboto.variable} ${raleway.variable} h-full antialiased`}>
+    <html lang={locale} className={`${roboto.variable} ${unbounded.variable} h-full overflow-x-clip antialiased`}>
       <body className="flex min-h-full flex-col font-sans">
         <PruebasAviso />
         <NextIntlClientProvider>
+          <PegatinaDefs />
           <a
             href="#contenido"
-            className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-10 focus:rounded focus:bg-papel focus:p-3 focus:font-semibold"
+            className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-10 focus:rounded focus:bg-papel focus:p-3 focus:font-semibold focus:text-noche"
           >
             {nav("skip")}
           </a>
           <SiteHeader />
           <main id="contenido" tabIndex={-1} className="flex-1 focus:outline-none">{children}</main>
-          <footer className="sobre-noche bg-noche text-white">
+          <footer className="bg-noche text-white">
             <div className="mx-auto flex max-w-2xl flex-col gap-2 px-4 py-6 text-[0.9375rem] sm:px-8">
             <p className="font-display font-bold">{t("project")}</p>
             <InstallHint lang={await contentLang()} />

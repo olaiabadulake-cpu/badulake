@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/languages";
 import { accountsOpen } from "@/lib/supabase/server";
 import { waitlistOpen } from "@/lib/waitlist";
-import { Symbol, Wordmark } from "../logo";
+import { Wordmark } from "../logo";
 import { WaitlistForm } from "../waitlist-form";
 
 // Página de llegada del código QR (Tarea 18). Pública, corta y casi sin peso, para que cargue
@@ -27,18 +27,15 @@ export default async function HolaPage() {
   return (
     <div lang={lang} className="pagina !gap-8">
       <header className="flex flex-col gap-4">
-        <div className="flex items-center gap-3">
-          <Symbol className="size-14" />
-          <p className="text-4xl font-bold sm:text-5xl"><Wordmark /></p>
-        </div>
-        <h1 className="font-display text-3xl leading-snug font-bold sm:text-4xl">{t("title")}</h1>
+        <p className="text-3xl min-[400px]:text-4xl sm:text-5xl"><Wordmark /></p>
+        <h1 className="titulo-1">{t("title")}</h1>
         <p className="text-lg">{t("intro")}</p>
       </header>
 
       <ol className="flex flex-col gap-3 text-lg">
         {steps.map((k, i) => (
           <li key={k} className="flex gap-3">
-            <span aria-hidden className="flex size-8 shrink-0 items-center justify-center rounded-full bg-noche font-bold text-white">
+            <span aria-hidden className={`flex size-8 shrink-0 items-center justify-center rounded-full font-display font-extrabold text-noche ${["bg-rosa", "bg-lima", "bg-naranja", "bg-sol"][i % 4]}`}>
               {i + 1}
             </span>
             <span className="pt-0.5">{t(k)}</span>
@@ -47,7 +44,7 @@ export default async function HolaPage() {
       </ol>
       <p className="text-base">{t("rules")}</p>
 
-      <section className="rounded-3xl border-2 border-noche bg-amarillo p-5 sm:p-8">
+      <section className="sobre-papel rounded-3xl border-4 border-white bg-lima p-5 sm:p-8">
         {accountsOpen ? (
           <div className="flex flex-col gap-4">
             <p className="text-lg font-medium">{t("accounts")}</p>

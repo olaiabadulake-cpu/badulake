@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Badulake · propuesta de portada moderna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--y:#FEDB75;--y2:#FFE9A8;--n:#161944;--c:#FFF6DC;--p:#fff;--soft:#4a4d73}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"DM Sans",system-ui,sans-serif;color:var(--n);background:var(--c);font-size:17px;line-height:1.5}
+h1,h2,h3,.d{font-family:"Bricolage Grotesque","DM Sans",sans-serif;letter-spacing:-.025em;line-height:1.02;margin:0}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+/* barra */
+.bar{display:flex;align-items:center;gap:14px;padding:16px 0;flex-wrap:wrap}
+.logo{display:inline-flex;align-items:center;gap:10px;font:800 24px "Bricolage Grotesque";letter-spacing:-.03em;text-decoration:none}
+.logo u{text-decoration-thickness:3px;text-underline-offset:5px}
+.sym{width:38px;height:38px}
+.nav{margin-left:auto;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.nav a{padding:9px 14px;border-radius:999px;font-weight:700;text-decoration:none}
+.nav a:hover{background:rgba(22,25,68,.09)}
+.nav .cta{background:var(--n);color:#fff}
+.nav .cta:hover{background:#2a2e72}
+/* hero */
+.hero{background:var(--y);position:relative;overflow:hidden;border-radius:0 0 44px 44px}
+.hero .wrap{position:relative;padding-top:6px;padding-bottom:64px}
+.kicker{display:inline-flex;gap:8px;align-items:center;background:var(--n);color:var(--y);font-weight:700;font-size:14px;padding:7px 14px;border-radius:999px;margin:34px 0 22px;text-transform:uppercase;letter-spacing:.06em}
+.kicker i{width:9px;height:9px;border-radius:50%;background:var(--y);display:inline-block;animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.35}}
+.hero h1{font-size:clamp(44px,9.2vw,116px);font-weight:800;max-width:11ch}
+.hero h1 em{font-style:normal;background:var(--n);color:var(--y);padding:0 .14em;border-radius:.14em;display:inline-block;transform:rotate(-2deg)}
+.hero p.lead{font-size:clamp(18px,2.4vw,22px);max-width:30ch;margin:24px 0 30px;font-weight:500}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;font-size:18px;text-decoration:none;border:2px solid var(--n)}
+.btn.main{background:var(--n);color:#fff;box-shadow:5px 5px 0 rgba(22,25,68,.25)}
+.btn.main:hover{background:#fff;color:var(--n)}
+.btn.ghost{background:transparent}
+.btn.ghost:hover{background:var(--n);color:#fff}
+.big-e{position:absolute;right:-70px;top:70px;width:min(52vw,520px);opacity:1}
+.sticker{position:absolute;right:6%;bottom:36px;width:150px;height:150px;border-radius:50%;background:var(--n);color:var(--y);display:grid;place-content:center;text-align:center;transform:rotate(12deg);font:800 17px/1.1 "Bricolage Grotesque";text-transform:uppercase;letter-spacing:.02em;box-shadow:0 0 0 6px var(--y2)}
+.sticker b{display:block;font-size:44px;line-height:1}
+/* cinta */
+.tape{background:var(--n);color:var(--y);overflow:hidden;white-space:nowrap;transform:rotate(-1.2deg);margin:-14px -20px 0;position:relative;z-index:2}
+.tape div{display:inline-block;padding:14px 0;font:800 22px "Bricolage Grotesque";text-transform:uppercase;letter-spacing:.02em;animation:run 22s linear infinite}
+.tape span{margin:0 22px}
+@keyframes run{to{transform:translateX(-50%)}}
+/* pasos */
+section.sec{padding:84px 0 20px}
+h2{font-size:clamp(34px,5.4vw,60px);font-weight:800}
+.sub{max-width:44ch;font-size:19px;margin:14px 0 0;color:var(--soft)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:40px;counter-reset:s}
+.step{position:relative;background:var(--p);border:2px solid var(--n);border-radius:28px;padding:26px 22px 24px;min-height:230px;box-shadow:6px 6px 0 var(--y);transition:.2s}
+.step:nth-child(2){transform:translateY(14px)}.step:nth-child(4){transform:translateY(14px)}
+.step:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--y)}
+.step .num{font:800 72px/1 "Bricolage Grotesque";color:var(--y);-webkit-text-stroke:2px var(--n);margin-bottom:14px}
+.step h3{font-size:24px;margin-bottom:8px}
+.step p{margin:0;color:var(--soft)}
+/* badulakes */
+.demo{display:grid;grid-template-columns:1.1fr 1fr;gap:34px;align-items:center}
+.tile{background:var(--p);border:2px solid var(--n);border-radius:28px;padding:22px;box-shadow:6px 6px 0 var(--y);margin-bottom:18px}
+.tile .top{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.chip{display:inline-block;background:var(--y);border-radius:999px;padding:3px 12px;font-weight:700;font-size:14px}
+.chip.o{background:transparent;border:2px solid var(--n)}
+.tile h3{font-size:28px;margin-bottom:6px}
+.tile .meta{display:flex;gap:16px;flex-wrap:wrap;color:var(--soft);font-weight:500}
+.seats{margin-top:16px;display:flex;align-items:center;gap:6px}
+.seats i{width:22px;height:22px;border-radius:50%;border:2px solid var(--n);background:var(--n)}
+.seats i.f{background:transparent}
+.seats span{margin-left:8px;font-weight:700}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.facts span{background:var(--n);color:var(--y);padding:10px 18px;border-radius:999px;font-weight:700}
+/* cta final */
+.final{background:var(--n);color:#fff;border-radius:44px;margin:90px 0 0;padding:56px 32px;text-align:center;position:relative;overflow:hidden}
+.final h2{color:var(--y);max-width:14ch;margin:0 auto 18px}
+.final p{max-width:40ch;margin:0 auto 26px;color:#e8e9f5}
+.final .btn.main{background:var(--y);color:var(--n);border-color:var(--y);box-shadow:5px 5px 0 rgba(254,219,117,.25)}
+.final .btn.main:hover{background:#fff;border-color:#fff}
+footer{padding:34px 0 40px;font-size:15px;display:flex;gap:18px;flex-wrap:wrap;color:var(--soft)}
+footer b{color:var(--n);font-family:"Bricolage Grotesque"}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--n);outline-offset:3px}
+.final a:focus-visible{outline-color:var(--y)}
+@media (max-width:760px){
+ .demo{grid-template-columns:1fr}
+ .big-e{width:300px;right:-80px;top:120px;opacity:.9}
+ .sticker{width:118px;height:118px;font-size:13px;right:14px;bottom:18px}.sticker b{font-size:34px}
+ .step:nth-child(2),.step:nth-child(4){transform:none}
+ .nav a{padding:8px 11px}
+ .hero{border-radius:0 0 30px 30px}
+ .final{border-radius:30px;padding:42px 20px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* marco de comparación */
+.cmp{background:#e9e4d6;padding:26px 20px 60px}
+.cmp h4{margin:0 0 16px;font:700 15px "DM Sans";color:#555;text-align:center}
+.cmp .frames{display:flex;gap:26px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
+.cmp iframe{border:0;border-radius:26px;box-shadow:0 10px 40px rgba(0,0,0,.2);background:#fff}
+body.in-frame .cmp{display:none}
+</style>
+</head>
+<body>
+<script>if(window.top!==window.self)document.body.classList.add('in-frame')</script>
+
+<header class="hero">
+ <div class="wrap">
+  <div class="bar">
+   <a class="logo" href="#" aria-label="badulakë, portada">
+    <svg class="sym" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="32" fill="#161944"/><g fill="#FEDB75"><circle cx="24.5" cy="19" r="3.6"/><circle cx="39.5" cy="19" r="3.6"/></g><path d="M17 37.5H47A15 15 0 1 0 42.6 48.1" fill="none" stroke="#FEDB75" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>b<u>a</u>dulakë</span>
+   </a>
+   <nav class="nav" aria-label="Menú principal">
+    <a href="#que-es">Qué es un badulake</a>
+    <a href="#">Entrar</a>
+    <a class="cta" href="#">Crear cuenta</a>
+   </nav>
+  </div>
+
+  <svg class="big-e" viewBox="0 0 64 64" aria-hidden="true"><g fill="#161944"><circle cx="24.5" cy="19" r="3.6"/><circle cx="39.5" cy="19" r="3.6"/></g><path d="M17 37.5H47A15 15 0 1 0 42.6 48.1" fill="none" stroke="#161944" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".92"/></svg>
+
+  <span class="kicker"><i></i> Quedadas de trueque</span>
+  <h1>Cambia de armario <em>sin dinero</em></h1>
+  <p class="lead">Quedadas para intercambiar ropa y cosas que ya no usas. Gratis y entre vecinas.</p>
+  <div class="btns">
+   <a class="btn main" href="#">Crear cuenta →</a>
+   <a class="btn ghost" href="#que-es">Cómo funciona</a>
+  </div>
+  <div class="sticker" aria-hidden="true"><div><b>5–10</b>personas<br>por quedada</div></div>
+ </div>
+</header>
+
+<div class="wrap" style="overflow:hidden">
+ <div class="tape" aria-hidden="true"><div><span>Gratis</span>✺<span>Sin dinero</span>✺<span>De 5 a 10 personas</span>✺<span>Solo mayores de 18</span>✺<span>Gratis</span>✺<span>Sin dinero</span>✺<span>De 5 a 10 personas</span>✺<span>Solo mayores de 18</span>✺</div></div>
+</div>
+
+<main class="wrap">
+ <section class="sec" id="que-es" aria-labelledby="t1">
+  <h2 id="t1">Qué es un badulake</h2>
+  <p class="sub">Una quedada en persona de 5 a 10 personas para intercambiar ropa y cosas que ya no usáis. Nadie paga ni cobra nada.</p>
+  <ol class="steps" style="list-style:none;padding:0">
+   <li class="step"><div class="num" aria-hidden="true">1</div><h3>Crea tu cuenta</h3><p>Es gratis y solo para mayores de 18 años.</p></li>
+   <li class="step"><div class="num" aria-hidden="true">2</div><h3>Apúntate</h3><p>Busca un badulake y apúntate. Al hacerlo verás la dirección exacta.</p></li>
+   <li class="step"><div class="num" aria-hidden="true">3</div><h3>Ve con lo que ya no usas</h3><p>Ropa, libros, cosas de casa… lo que te sobre.</p></li>
+   <li class="step"><div class="num" aria-hidden="true">4</div><h3>Intercambia</h3><p>Llévate lo que te guste.</p></li>
+  </ol>
+ </section>
+
+ <section class="sec" aria-labelledby="t2">
+  <div class="demo">
+   <div>
+    <h2 id="t2">Próximos badulakes</h2>
+    <p class="sub">Mira cuándo y dónde, cuántas plazas quedan y apúntate con un toque.</p>
+    <div class="facts"><span>Gratis</span><span>Sin dinero</span><span>De 5 a 10 personas</span><span>Solo +18</span></div>
+   </div>
+   <div>
+    <article class="tile">
+     <div class="top"><span class="chip">Te has apuntado</span></div>
+     <h3>Intercambio de ropa de invierno</h3>
+     <div class="meta"><span>📅 sáb 12 dic · 17:00</span><span>📍 Bilbao · Deusto</span></div>
+     <div class="seats" aria-label="6 de 8 plazas ocupadas"><i></i><i></i><i></i><i></i><i></i><i></i><i class="f"></i><i class="f"></i><span>2 plazas libres</span></div>
+    </article>
+    <article class="tile">
+     <div class="top"><span class="chip o">Lo organizas tú</span></div>
+     <h3>Cosas de casa y libros</h3>
+     <div class="meta"><span>📅 dom 20 dic · 11:00</span><span>📍 Donostia · Gros</span></div>
+     <div class="seats" aria-label="3 de 10 plazas ocupadas"><i></i><i></i><i></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><span>7 plazas libres</span></div>
+    </article>
+   </div>
+  </div>
+ </section>
+
+ <section class="final" aria-labelledby="t3">
+  <h2 id="t3">¿Lo organizas tú?</h2>
+  <p>Crea un badulake, ponle fecha y zona, y deja que se apunten. La dirección exacta solo la ven quienes se apuntan.</p>
+  <a class="btn main" href="#">Crear cuenta →</a>
+ </section>
+
+ <footer>
+  <b>Un proyecto de EITB</b>
+  <a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Condiciones</a><a href="#">Cookies</a>
+ </footer>
+</main>
+
+<div class="cmp">
+ <h4>Así se ve en el móvil</h4>
+ <div class="frames"><iframe src="propuesta-home-moderna.html" width="390" height="760" title="Vista móvil de la propuesta"></iframe></div>
+</div>
+</body>
+</html>

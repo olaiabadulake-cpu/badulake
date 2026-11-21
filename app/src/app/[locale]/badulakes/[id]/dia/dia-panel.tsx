@@ -229,7 +229,7 @@ export function DiaPanelView({ id, initial }: { id: string; initial: DiaPanel })
               {p.presente && (
                 <div className="grid grid-cols-1 gap-2 min-[22rem]:grid-cols-2">
                   {ITEM_TYPES.map((type) => (
-                    <div key={type} className="flex items-center justify-between gap-2 rounded-xl bg-amarillo-claro px-2 py-1" role="group" aria-label={`${t(`types.${type}`)} · ${name(p)}`}>
+                    <div key={type} className="flex items-center justify-between gap-2 rounded-xl bg-crema text-noche px-2 py-1" role="group" aria-label={`${t(`types.${type}`)} · ${name(p)}`}>
                       <span className="font-semibold">{t(`types.${type}`)}</span>
                       <span className="flex items-center gap-1.5">
                         <button type="button" className="boton-2 contador" aria-label={t("minus", { type: t(`types.${type}`), name: name(p) })}
@@ -296,7 +296,7 @@ export function DiaPanelView({ id, initial }: { id: string; initial: DiaPanel })
       {message && <p role="alert" className="aviso-error">{message}</p>}
       <p className="ayuda">{t("intro", { count: here.length })}</p>
       {panel.elegir_empezado && (
-        <div className="sticky top-0 z-10 flex flex-col gap-2 rounded-2xl border-2 border-noche bg-amarillo p-3 shadow-md">
+        <div className="sticky top-0 z-10 flex flex-col gap-2 sobre-papel rounded-2xl border-4 border-white bg-lima p-3 shadow-md">
           <p role="status" className="text-xl font-bold">
             {allDone ? t("allDone") : t("currentTurn", { name: name(current!) })}
           </p>

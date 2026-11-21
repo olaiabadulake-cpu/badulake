@@ -1,37 +1,39 @@
 @import "tailwindcss";
 
-/* Sistema de estilos «Luz de barrio» (Tarea 14, D-028, docs/diseno.md).
-   Parte de la marca que ya existe (badulake.org): amarillo y azul noche, Raleway y Roboto.
-   Provisional hasta que LIN3S entregue la identidad y Miren Sanz (EITB) le dé el visto bueno:
-   para cambiarla basta con tocar los valores de este archivo. */
+/* Sistema de estilos «Careta» (Tarea 14.1, D-052, docs/diseno.md).
+   Sale de la careta de Badulake de LIN3S: fondo índigo, rosa fucsia, lima, pegatinas con borde blanco
+   y letra ancha. Provisional hasta que LIN3S y Miren Sanz (EITB) lo validen: para cambiar la marca basta
+   con tocar los valores de este archivo y `logo.tsx`. */
 @theme inline {
   /* Colores */
-  --color-amarillo: #fedb75;       /* acento: marca, avisos buenos, etiquetas, cabecera */
-  --color-amarillo-claro: #fff6dc; /* fondo de las páginas (crema) */
-  --color-noche: #161944;          /* texto, botones, bordes */
-  --color-suave: #4a4d73;          /* texto secundario (ayudas, etiquetas pequeñas): 7,6 a 1 sobre el crema */
-  --color-papel: #ffffff;          /* campos y tarjetas */
-  --color-error: #a3141d;          /* errores */
-  /* Letras */
+  --color-indigo: #2f2fd1;   /* fondo, parte de arriba */
+  --color-noche: #15135c;    /* tinta: texto sobre blanco, botones, pie y fondo, parte de abajo */
+  --color-rosa: #ff3fa4;     /* logo y detalles grandes (nunca texto pequeño sobre índigo) */
+  --color-lima: #c8ff2e;     /* acción principal, avisos buenos y etiquetas */
+  --color-naranja: #ff8a2b;
+  --color-sol: #ffc83d;
+  --color-papel: #ffffff;    /* campos y tarjetas */
+  --color-crema: #fff6dc;
+  --color-suave: #46467a;    /* texto secundario sobre blanco: 8,7 a 1 */
+  --color-error: #a3141d;    /* errores sobre blanco: 7,9 a 1 */
+  --color-error-claro: #ffc2d4; /* errores sobre el fondo índigo: 9,5 a 1 */
+  /* Letras: Unbounded (títulos, ancha) y Roboto (texto; cubre latino, cirílico y griego) */
   --font-sans: var(--font-roboto);
-  --font-display: var(--font-raleway);
+  --font-display: var(--font-unbounded);
 }
 
 body {
-  background: var(--color-amarillo-claro);
-  color: var(--color-noche);
+  background: linear-gradient(180deg, var(--color-indigo) 0, #25239a 38%, var(--color-noche) 100%) fixed, var(--color-noche);
+  color: #fff;
   font-size: 1.0625rem; /* 17 px: un punto más cómodo que el estándar */
   line-height: 1.55;
 }
 
-/* Foco del teclado: siempre visible y con el mismo trazo (accesibilidad, Tarea 11). */
+/* Foco del teclado: siempre visible. Aro lima por fuera y tinta por dentro: se ve sobre índigo y sobre blanco. */
 :focus-visible {
-  outline: 3px solid var(--color-noche);
+  outline: 3px solid var(--color-lima);
   outline-offset: 2px;
-}
-/* Sobre fondos oscuros (pie de página, botones) el trazo es amarillo. */
-.sobre-noche :focus-visible {
-  outline-color: var(--color-amarillo);
+  box-shadow: 0 0 0 2px var(--color-noche);
 }
 
 /* Piezas reutilizables. Todo el aspecto de la web sale de aquí. */
@@ -49,15 +51,20 @@ body {
     .pagina { padding-inline: 2rem; }
   }
 
-  /* Títulos */
-  .titulo-1 { font-family: var(--font-display); font-size: 2rem; line-height: 1.15; font-weight: 800; letter-spacing: -0.01em; }
-  .titulo-2 { font-family: var(--font-display); font-size: 1.5rem; line-height: 1.2; font-weight: 700; }
-  .titulo-3 { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.25; font-weight: 700; }
+  /* Títulos (Unbounded es ancha: letra algo más pequeña y palabras largas se parten, para llegar a 320 px) */
+  .titulo-1, .titulo-2, .titulo-3 { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.02em; overflow-wrap: break-word; hyphens: manual; }
+  .titulo-1 { font-size: 1.5rem; line-height: 1.12; text-transform: uppercase; }
+  .titulo-2 { font-size: 1.25rem; line-height: 1.2; text-transform: uppercase; }
+  .titulo-3 { font-size: 1.0625rem; line-height: 1.25; }
   @media (min-width: 40rem) {
-    .titulo-1 { font-size: 2.5rem; }
+    .titulo-1 { font-size: 2.25rem; }
+    .titulo-2 { font-size: 1.5rem; }
+    .titulo-3 { font-size: 1.1875rem; }
   }
+  /* Dentro de una tarjeta blanca, la tinta */
+  .tarjeta .titulo-1, .tarjeta .titulo-2, .tarjeta .titulo-3 { color: var(--color-noche); }
 
-  /* Botones: principal (azul noche), secundario (con borde) y de enlace. Mínimo 44 px de alto. */
+  /* Botones: principal (lima), secundario (con borde blanco) y de enlace. Mínimo 44 px de alto. */
   .boton,
   .boton-2 {
     display: inline-flex;
@@ -65,58 +72,96 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 9999px;
-    border: 2px solid var(--color-noche);
+    border: 3px solid #fff;
     padding: 0.5rem 1.5rem;
     text-align: center;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.15s, color 0.15s;
+    transition: background-color 0.15s, color 0.15s, transform 0.15s;
   }
-  .boton { background: var(--color-noche); color: #fff; font-size: 1.125rem; }
-  .boton:hover { background: var(--color-amarillo); color: var(--color-noche); }
-  .boton-2 { background: transparent; color: var(--color-noche); }
-  .boton-2:hover { background: var(--color-amarillo); }
+  .boton { background: var(--color-lima); border-color: var(--color-lima); color: var(--color-noche); font-size: 1.125rem; box-shadow: 4px 4px 0 var(--color-rosa); }
+  .boton:hover { background: #fff; border-color: #fff; }
+  .boton-2 { background: transparent; color: #fff; }
+  .boton-2:hover { background: #fff; color: var(--color-noche); }
   .boton:disabled,
   .boton-2:disabled { opacity: 0.6; cursor: default; }
   .enlace { font-weight: 500; text-decoration: underline; text-underline-offset: 4px; border-radius: 0.25rem; }
   .enlace:hover { text-decoration-thickness: 3px; }
+  /* Dentro de blanco o lima, los botones secundarios van en tinta */
+  .tarjeta .boton-2, .aviso .boton-2 { color: var(--color-noche); border-color: var(--color-noche); }
+  .tarjeta .boton-2:hover, .aviso .boton-2:hover { background: var(--color-noche); color: #fff; }
 
-  /* Campos de formulario */
+  /* Campos de formulario: blancos sobre el fondo índigo */
   .campo {
     width: 100%;
     min-height: 2.75rem;
-    border-radius: 0.75rem;
-    border: 2px solid var(--color-noche);
+    border-radius: 0.875rem;
+    border: 3px solid #fff;
     background: var(--color-papel);
+    color: var(--color-noche);
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
   }
-  .campo[aria-invalid="true"] { border-color: var(--color-error); }
+  .campo:focus { border-color: var(--color-lima); }
+  .campo[aria-invalid="true"] { border-color: var(--color-rosa); }
   .etiqueta { font-weight: 700; }
-  .ayuda { font-size: 0.9375rem; color: var(--color-suave); }
-  .error-texto { font-size: 0.9375rem; font-weight: 600; color: var(--color-error); }
+  .ayuda { font-size: 0.9375rem; color: #dcdcff; }
+  .error-texto { font-size: 0.9375rem; font-weight: 700; color: var(--color-error-claro); }
+  /* Sobre blanco o lima (tarjetas, paneles, avisos): colores de tinta. `sobre-papel` lo aplica a cualquier bloque. */
+  .tarjeta, .sobre-papel, .aviso-error { color: var(--color-noche); }
+  .tarjeta .ayuda, .sobre-papel .ayuda, .aviso-error .ayuda { color: var(--color-suave); }
+  .tarjeta .error-texto, .sobre-papel .error-texto { color: var(--color-error); }
+  .tarjeta .campo, .sobre-papel .campo { border-color: var(--color-noche); }
+  .tarjeta .campo:focus, .sobre-papel .campo:focus { border-color: var(--color-noche); }
+  .tarjeta .campo[aria-invalid="true"], .sobre-papel .campo[aria-invalid="true"] { border-color: var(--color-error); }
+  .sobre-papel .boton-2 { color: var(--color-noche); border-color: var(--color-noche); }
+  .sobre-papel .boton-2:hover { background: var(--color-noche); color: #fff; }
+  .sobre-papel .enlace { color: var(--color-noche); }
 
-  /* Avisos: amarillo (bueno o informativo) y rojo (error). Siempre con texto, nunca solo color. */
-  .aviso { border-radius: 0.75rem; background: var(--color-amarillo); padding: 1rem; font-weight: 500; }
-  .aviso-error { border-radius: 0.75rem; border: 2px solid var(--color-error); background: var(--color-papel); padding: 1rem; font-weight: 600; color: var(--color-error); }
+  /* Avisos: lima (bueno o informativo) y blanco con borde y texto rojos (error). Siempre con texto, nunca solo color. */
+  .aviso { border-radius: 1rem; background: var(--color-lima); color: var(--color-noche); padding: 1rem; font-weight: 600; }
+  .aviso .ayuda { color: var(--color-noche); }
+  .aviso-error { border-radius: 1rem; border: 3px solid var(--color-rosa); background: var(--color-papel); padding: 1rem; font-weight: 700; color: var(--color-error); }
 
-  /* Tarjeta de badulake: papel blanco, borde azul noche y sombra amarilla «de pegatina». */
+  /* Tarjeta: pegatina blanca con borde blanco grueso y sombra. */
   .tarjeta {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    border-radius: 1.25rem;
-    border: 2px solid var(--color-noche);
+    border-radius: 1.5rem;
+    border: 4px solid #fff;
     background: var(--color-papel);
     padding: 1rem;
-    box-shadow: 4px 4px 0 var(--color-amarillo);
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.25);
     transition: transform 0.15s, box-shadow 0.15s;
   }
-  a.tarjeta:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--color-amarillo); }
+  a.tarjeta:hover { transform: translateY(-3px) rotate(-0.4deg); box-shadow: 0 11px 0 rgba(0, 0, 0, 0.25); }
 
   /* Etiquetas pequeñas (plazas, «tuyo», «borrador»…) */
-  .etiqueta-pildora { display: inline-block; border-radius: 9999px; background: var(--color-amarillo); padding: 0.125rem 0.75rem; font-size: 0.9375rem; font-weight: 700; }
+  .etiqueta-pildora { display: inline-block; border-radius: 9999px; background: var(--color-lima); color: var(--color-noche); padding: 0.125rem 0.75rem; font-size: 0.9375rem; font-weight: 700; }
   .etiqueta-pildora.contorno { background: transparent; border: 2px solid var(--color-noche); }
+
+  /* Logotipo: pastilla rosa con la palabra en mayúsculas anchas, un poco girada */
+  .logo-pastilla {
+    display: inline-block;
+    border: 3px solid var(--color-rosa);
+    border-radius: 9999px;
+    color: var(--color-rosa);
+    font-family: var(--font-display);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    padding: 0.4rem 1rem;
+    transform: rotate(-3deg);
+  }
+  /* Pegatina: dibujo con borde blanco (el filtro vive en logo.tsx) */
+  .pegatina { position: absolute; z-index: 0; pointer-events: none; filter: url(#pegatina) drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25)); }
+  /* Cinta con las ideas clave, en rosa */
+  .cinta { position: relative; z-index: 1; overflow: hidden; white-space: nowrap; background: var(--color-rosa); color: var(--color-noche); transform: rotate(-1.4deg); margin-inline: -1rem; }
+  .cinta > div { display: inline-block; padding: 0.75rem 0; font-family: var(--font-display); font-weight: 800; text-transform: uppercase; animation: cinta 30s linear infinite; }
+  .cinta span { margin-inline: 1.25rem; }
+  @keyframes cinta { to { transform: translateX(-50%); } }
 }
 
 /* «Reducir movimiento»: sin animaciones ni desplazamientos suaves. */

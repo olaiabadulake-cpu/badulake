@@ -25,7 +25,7 @@ export async function WhatIs({ asPage = false }: { asPage?: boolean }) {
       <ol className="flex flex-col gap-3 text-lg">
         {steps.map((k, i) => (
           <li key={k} className="flex gap-3">
-            <span aria-hidden className="flex size-8 shrink-0 items-center justify-center rounded-full bg-noche font-bold text-white">
+            <span aria-hidden className={`flex size-8 shrink-0 items-center justify-center rounded-full font-display font-extrabold text-noche ${["bg-rosa", "bg-lima", "bg-naranja", "bg-sol"][i % 4]}`}>
               {i + 1}
             </span>
             <span className="pt-0.5">{t(k)}</span>

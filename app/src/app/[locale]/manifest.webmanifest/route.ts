@@ -22,8 +22,8 @@ export async function GET(_request: Request, { params }: { params: Promise<{ loc
     start_url: `/${locale}`,
     scope: "/",
     display: "standalone",
-    background_color: "#FFF6DC",
-    theme_color: "#FEDB75",
+    background_color: "#15135C",
+    theme_color: "#2F2FD1",
     icons: [
       { src: "/iconos/icono-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
       { src: "/iconos/icono-512.png", sizes: "512x512", type: "image/png", purpose: "any" },

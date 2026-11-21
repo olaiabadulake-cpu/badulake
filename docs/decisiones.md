@@ -515,3 +515,16 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Para la Asesoría** ([privacidad.md](privacidad.md) §3 y §9): Sentry sería un encargado de tratamiento nuevo (Functional Software Inc., EE. UU.; datos en la UE).
 - **Por qué:** antes de Sant Boi hay que enterarse de los fallos antes que las vecinas.
 - **Propuso:** requisitos técnicos v2 y auditoría · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 8.4), **falta:** OlaIA crea la cuenta
+
+### D-052 · Diseño «Careta»: la imagen de la careta de LIN3S (índigo, rosa y lima) sustituye a «Luz de barrio» (D-028)
+- **Fecha:** 21/11/2026
+- **Alternativas:** seguir con «Luz de barrio» (amarillo y azul noche, D-028); la propuesta moderna amarilla (`docs/diseno/propuesta-home-moderna.html`); hacer un test A/B con dos diseños en la misma web (lo pidió OlaIA y se montó el plan: dos direcciones y medir cuentas creadas, pero al final decidió quedarse de momento con uno).
+- **Decisión:** OlaIA elige el segundo diseño enseñado, el de la **careta de Badulake que LIN3S entregó a Miren Sanz** (vídeo `Badulake_entrada + Tarugo.mp4`): fondo índigo con degradado, rosa fucsia, lima, naranja y mostaza, pegatinas con borde blanco, pastilla rosa con «BADULAKE» en mayúsculas anchas. Se aplica a **toda la app** (portada, menú, pie, entrar, crear cuenta, badulakes, crear, tu cuenta, día del badulake, página del QR, textos legales, 404, página sin conexión, imagen al compartir, icono y manifiesto). Detalle en [diseno.md](diseno.md).
+  - **Cómo:** las mismas piezas de D-028 (`pagina`, `titulo-*`, `boton`, `boton-2`, `campo`, `aviso`, `tarjeta`, `etiqueta-pildora`…) con valores nuevos en `app/src/app/globals.css`, más `sobre-papel` (tinta sobre blanco o lima), `logo-pastilla`, `pegatina` y `cinta`. Los recorridos y los textos no cambian: la cinta de la portada reutiliza los textos de «Qué es un badulake».
+  - **Letras:** Unbounded (títulos, ancha, licencia OFL, alojada en la propia web con `next/font`) y Roboto para el texto (cubre latino, cirílico y griego). Raleway deja de usarse. Sin coste.
+  - **Pegatinas:** dibujos sencillos hechos en SVG con la misma paleta; **no son las ilustraciones originales** de la careta (si LIN3S las entrega, se sustituyen en `logo.tsx`).
+  - **Icono de la app:** «ë» rosa con dos puntos lima sobre índigo; los cinco PNG de la app instalable (Tarea 16) se han vuelto a generar.
+- **Accesibilidad (mantiene AA):** texto blanco sobre el índigo de 8,6 a 16,4 a 1, tinta sobre lima o blanco de 13,9 a 16,4, errores sobre blanco 7,9 y sobre índigo 9,5; el rosa solo en el logo y en detalles grandes (sobre el índigo claro llega a 2,7: no se usa para leer). Foco con aro lima por fuera y tinta por dentro, visible sobre índigo y sobre blanco. Cinta con la animación quieta si se pide «reducir movimiento».
+- **Provisional:** es una base hasta que LIN3S y Miren Sanz validen la identidad; no se sabe si la letra de la careta es Unbounded.
+- **Propuso y aplicó:** Claude (tarea 14.1 del plan maestro) · **Decidió:** OlaIA
+

@@ -1,44 +1,48 @@
-# Diseño de Badulake: «Luz de barrio»
+# Diseño de Badulake: «Careta»
 
-Tarea 14 · decisión [D-028](decisiones.md). Dirección elegida por OlaIA entre dos propuestas (vista en [diseno/propuestas.html](diseno/propuestas.html)). Parte de la marca que ya existe (badulake.org) y es **provisional** hasta que LIN3S entregue la identidad y Miren Sanz (EITB) le dé el visto bueno. Todo el aspecto sale de `app/src/app/globals.css` y `app/src/app/[locale]/logo.tsx`; cambiar la marca es tocar esos dos archivos.
+Tarea 14.1 · decisión [D-052](decisiones.md) (sustituye a «Luz de barrio», [D-028](decisiones.md)). Sale de la careta de Badulake que LIN3S entregó a Miren Sanz. Es **provisional** hasta que LIN3S y Miren Sanz (EITB) lo validen. Todo el aspecto sale de `app/src/app/globals.css` y `app/src/app/[locale]/logo.tsx`; cambiar la marca es tocar esos dos archivos. Las propuestas enseñadas a OlaIA están en [diseno/](diseno/) (`propuestas.html`: «Luz de barrio»; `propuesta-home-moderna.html`; `propuesta-home-careta.html`: la elegida).
 
-**Sensación:** cálida, clara y cercana, como una tienda de barrio; pensada para mujeres pero abierta a todas; sin infantilizar. Trato de «tú», frases cortas.
+**Sensación:** de programa de televisión, alegre y atrevida, pensada para mujeres pero abierta a todas; sin infantilizar. Trato de «tú», frases cortas.
 
 ## Colores
 
 | Nombre | Valor | Para qué |
 |---|---|---|
-| `amarillo` | #FEDB75 | cabecera, avisos buenos, etiquetas, sombra de las tarjetas |
-| `amarillo-claro` | #FFF6DC | fondo de las páginas |
-| `noche` | #161944 | texto, botones, bordes, pie |
-| `suave` | #4A4D73 | ayudas y texto secundario |
+| `indigo` | #2F2FD1 | fondo (parte de arriba del degradado) |
+| `noche` | #15135C | tinta: texto sobre blanco o lima, pie y fondo (parte de abajo) |
+| `rosa` | #FF3FA4 | logo, cinta y detalles grandes. Nunca texto pequeño sobre índigo |
+| `lima` | #C8FF2E | acción principal, avisos buenos y etiquetas |
+| `naranja`, `sol` | #FF8A2B, #FFC83D | números de pasos y pegatinas |
 | `papel` | #FFFFFF | campos y tarjetas |
-| `error` | #A3141D | errores (siempre con texto, nunca solo color) |
+| `suave` | #46467A | texto secundario sobre blanco |
+| `error` | #A3141D | errores sobre blanco; sobre el índigo, `error-claro` #FFC2D4 |
 
-Contrastes: noche sobre crema 15,5 · noche sobre amarillo 12,4 · blanco sobre noche 16,7 · suave sobre crema 7,5 · error sobre blanco 7,9 (mínimo AA: 4,5; bordes de campos: 3).
+Contrastes: blanco sobre índigo 8,6 · blanco sobre noche 16,4 · noche sobre lima 13,9 · noche sobre rosa 5,1 · suave sobre blanco 8,7 · error sobre blanco 7,9 · rosa sobre índigo claro 2,7 (solo logo y detalle). Mínimo AA: 4,5 (3 para letra grande y bordes). En el degradado axe no puede calcular el contraste solo: se comprueba con el color más claro del fondo.
 
 ## Letras
 
-Raleway (títulos, logotipo) y Roboto (texto), ya cargadas desde `next/font` (alojadas en la propia web, libres, licencia OFL; sin coste). Texto base de 17 px; ayudas de 15 px.
+Unbounded (títulos, ancha, en mayúsculas) y Roboto (texto; cubre latino, cirílico y griego), ambas libres (licencia OFL) y alojadas en la propia web con `next/font`. Texto base de 17 px; ayudas de 15 px. Los títulos usan `overflow-wrap: break-word` y letra algo menor en móvil para llegar a 320 px.
 
 ## Piezas (clases en `globals.css`)
 
 - `pagina`: columna centrada de 42 rem, mismo margen en todas.
-- `titulo-1`, `titulo-2`, `titulo-3`: títulos.
-- `boton` (principal, azul noche; al pasar, amarillo) y `boton-2` (con borde); mínimo 44 px de alto. `enlace` para enlaces.
-- `campo`, `etiqueta`, `ayuda`, `error-texto`: formularios.
-- `aviso` (amarillo) y `aviso-error` (borde y texto rojo): mensajes de estado y de error.
-- `tarjeta`: badulake y recuadros; borde azul y sombra amarilla; en enlaces se «levanta» al pasar el ratón.
+- `titulo-1`, `titulo-2`, `titulo-3`: títulos (Unbounded).
+- `boton` (principal: lima con sombra rosa) y `boton-2` (con borde); mínimo 44 px de alto. `enlace` para enlaces.
+- `campo`, `etiqueta`, `ayuda`, `error-texto`: formularios (campos blancos con borde blanco; azul noche sobre blanco).
+- `aviso` (lima) y `aviso-error` (blanco con borde rosa y texto rojo).
+- `tarjeta`: pegatina blanca con borde blanco y sombra; en enlaces se «levanta» al pasar el ratón.
+- `sobre-papel`: pone colores de tinta dentro de un bloque blanco o lima (paneles, avisos, formularios sobre lima).
 - `etiqueta-pildora` (y `contorno`): «Lo organizas tú», «Borrador», «Te has apuntado».
-- `sobre-noche`: pone el foco amarillo sobre fondos oscuros (pie).
+- `logo-pastilla`, `pegatina`, `cinta`: logotipo, dibujos de fondo y tira rosa de la portada.
 
 ## Logo e icono
 
-Símbolo: la «ë» en amarillo dentro de un círculo azul noche (en la web) o en azul sobre amarillo (icono de la app, `app/src/app/icon.svg`; los iconos instalables salen de él con `app/scripts/iconos.mjs`, Tarea 16). Logotipo: «badulakë» en Raleway extranegrita con la «a» subrayada, como el original. Todo dibujado en SVG y texto, sin imágenes.
+Logotipo: «BADULAKE» en Unbounded 900 dentro de una pastilla rosa, girada 3° (como en la careta). Símbolo: la «ë» en rosa con dos puntos lima sobre índigo; es el icono de la app (`app/src/app/icon.svg` y los PNG de `public/iconos/`, generados con ese dibujo). Las pegatinas de la portada son dibujos propios sencillos, no las ilustraciones originales de la careta.
 
 ## Reglas
 
-- Foco visible: trazo azul noche de 3 px en todo; amarillo sobre fondos oscuros.
-- Se respeta «reducir movimiento».
+- Foco visible: aro lima de 3 px por fuera y tinta por dentro; se ve sobre índigo y sobre blanco.
+- Se respeta «reducir movimiento» (la cinta se queda quieta).
 - A 320 px de ancho no hay desplazamiento lateral.
-- Página 404 con marca (`not-found.tsx`) y una global para direcciones sin idioma (`global-not-found.tsx`, bilingüe castellano-euskera; función experimental de Next.js activada en `next.config.ts`).
+- Las pegatinas y la cinta son decoración (`aria-hidden`), no se pueden pulsar y se ocultan en móvil estrecho.
+- Página 404 con marca (`not-found.tsx`) y otra global para direcciones sin idioma (`global-not-found.tsx`, bilingüe castellano-euskera).

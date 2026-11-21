@@ -10,7 +10,7 @@ export function NavLink({ href, children }: { href: string; children: React.Reac
     pathname === href ||
     (href === "/badulakes" && pathname.startsWith("/badulakes/") && pathname !== "/badulakes/nuevo");
   return (
-    <Link href={href} aria-current={current ? "page" : undefined} className={`${linkClass} ${current ? "underline decoration-2" : ""}`}>
+    <Link href={href} aria-current={current ? "page" : undefined} className={`${linkClass} ${current ? "underline decoration-lima decoration-[3px]" : ""}`}>
       {children}
     </Link>
   );
@@ -23,4 +23,4 @@ export function PlainNavLink({ href, children }: { href: string; children: React
 }
 
 const linkClass =
-  "rounded py-1 underline-offset-4 hover:underline hover:decoration-2";
+  "rounded py-1 underline-offset-4 hover:underline hover:decoration-lima hover:decoration-2";

@@ -22,16 +22,16 @@ export async function SiteHeader() {
   const whatIsPlain = <li key="que-es"><PlainNavLink href="/que-es">{t("whatIs")}</PlainNavLink></li>;
 
   return (
-    <header lang={await contentLang()} className="border-b-2 border-noche bg-amarillo">
+    <header lang={await contentLang()} className="">
       <div className="mx-auto flex max-w-2xl flex-wrap items-center gap-x-6 gap-y-3 px-4 py-3 sm:px-8">
         <Link
           href="/"
           aria-label={t("home")}
-          className="rounded text-xl"
+          className="rounded text-lg"
         >
-          <Logo symbolClass="size-9" />
+          <Logo />
         </Link>
-        <nav aria-label={t("label")} className="flex-1">
+        <nav aria-label={t("label")} className="min-w-[12rem] flex-1">
           <ul className="flex flex-wrap gap-x-5 gap-y-1 font-semibold">
             <Suspense fallback={whatIsPlain}>
               {accountsOpen ? <SessionLinks whatIs={whatIs} /> : whatIs}

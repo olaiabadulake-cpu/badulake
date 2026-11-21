@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Badulake · propuesta de portada estilo careta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --i1:#2f2fd1;--i2:#15135c;      /* índigo (fondo de la careta) */
+  --pink:#ff3fa4;--lime:#c8ff2e;--orange:#ff8a2b;--blue:#3b6bff;--teal:#0f6e73;--sun:#ffc83d;
+  --ink:#15135c;--paper:#fff;--cream:#fff6dc;--soft:#46467a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"DM Sans",system-ui,sans-serif;font-size:17px;line-height:1.55;color:#fff;
+  background:linear-gradient(180deg,var(--i1) 0,#25239a 38%,var(--i2) 100%) fixed,var(--i2)}
+h1,h2,h3,.d{font-family:Unbounded,"DM Sans",sans-serif;margin:0;letter-spacing:-.02em;line-height:1.06}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px;position:relative}
+/* barra */
+.bar{display:flex;align-items:center;gap:12px;padding:18px 0;flex-wrap:wrap}
+.pill-logo{font:900 20px Unbounded;letter-spacing:.02em;color:var(--pink);border:3px solid var(--pink);border-radius:999px;padding:7px 20px;text-decoration:none;text-transform:uppercase;transform:rotate(-3deg);display:inline-block}
+.nav{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.nav a{padding:10px 15px;border-radius:999px;font-weight:700;text-decoration:none}
+.nav a:hover{background:rgba(255,255,255,.14)}
+.nav .cta{background:var(--lime);color:var(--ink)}
+.nav .cta:hover{background:#fff}
+/* pegatinas */
+.st{position:absolute;z-index:0;pointer-events:none;filter:url(#sticker) drop-shadow(0 6px 10px rgba(0,0,0,.25))}
+/* hero */
+.hero{position:relative;overflow:hidden;padding-bottom:70px}
+.hero .wrap{padding-top:34px;z-index:2}
+.final>*:not(.st){position:relative;z-index:2}
+.sec>*:not(.st){position:relative;z-index:2}
+.word{display:inline-block;font:900 clamp(40px,10vw,128px)/1 Unbounded;text-transform:uppercase;color:var(--pink);letter-spacing:-.03em;border:5px solid var(--pink);border-radius:999px;padding:.12em .42em;transform:rotate(-4deg);margin:10px 0 30px;background:rgba(21,19,92,.35)}
+.hero h1{font-size:clamp(28px,4.6vw,52px);font-weight:800;max-width:17ch}
+.hero h1 mark{background:var(--lime);color:var(--ink);padding:0 .22em;border-radius:.2em;display:inline-block;transform:rotate(-1.5deg)}
+.lead{font-size:clamp(18px,2.2vw,21px);max-width:34ch;margin:20px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;min-height:54px;padding:0 28px;border-radius:999px;font:700 18px "DM Sans";text-decoration:none;border:3px solid #fff}
+.btn.main{background:var(--lime);color:var(--ink);border-color:var(--lime);box-shadow:5px 5px 0 var(--pink)}
+.btn.main:hover{background:#fff;border-color:#fff}
+.btn.ghost{background:transparent;color:#fff}
+.btn.ghost:hover{background:#fff;color:var(--ink)}
+/* cinta */
+.tape{background:var(--pink);color:var(--ink);overflow:hidden;white-space:nowrap;transform:rotate(-1.4deg);margin:10px -30px 0;position:relative;z-index:3}
+.tape div{display:inline-block;padding:13px 0;font:800 19px Unbounded;text-transform:uppercase;animation:run 26s linear infinite}
+.tape span{margin:0 20px}
+@keyframes run{to{transform:translateX(-50%)}}
+/* secciones */
+.sec{padding:84px 0 10px;position:relative}
+h2{font-size:clamp(28px,4.8vw,52px);font-weight:800;text-transform:uppercase}
+h2 b{color:var(--pink);font-weight:800}
+.sub{max-width:42ch;font-size:19px;margin:16px 0 0;color:#e3e3ff}
+.steps{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:22px}
+.step{background:var(--paper);color:var(--ink);border:5px solid #fff;border-radius:30px;padding:24px 22px 26px;min-height:220px;box-shadow:0 10px 0 rgba(0,0,0,.22);transition:.2s;position:relative}
+.step:nth-child(1){transform:rotate(-2deg)}.step:nth-child(2){transform:rotate(1.6deg) translateY(10px)}.step:nth-child(3){transform:rotate(-1.2deg)}.step:nth-child(4){transform:rotate(2deg) translateY(10px)}
+.step:hover{transform:rotate(0) translateY(-4px)}
+.num{width:58px;height:58px;border-radius:50%;display:grid;place-content:center;font:900 28px Unbounded;color:var(--ink);margin-bottom:14px}
+.step:nth-child(1) .num{background:var(--pink)}.step:nth-child(2) .num{background:var(--lime)}.step:nth-child(3) .num{background:var(--orange)}.step:nth-child(4) .num{background:var(--sun)}
+.step h3{font-size:20px;margin-bottom:8px;text-transform:uppercase}
+.step p{margin:0;color:var(--soft)}
+/* badulakes */
+.demo{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center}
+.tile{background:var(--paper);color:var(--ink);border:5px solid #fff;border-radius:30px;padding:22px;box-shadow:0 10px 0 rgba(0,0,0,.22);margin-bottom:22px}
+.tile:nth-child(2){transform:rotate(1.2deg)}
+.chip{display:inline-block;background:var(--lime);border-radius:999px;padding:3px 13px;font-weight:700;font-size:14px;margin-bottom:12px}
+.chip.o{background:var(--pink)}
+.tile h3{font-size:21px;text-transform:uppercase;margin-bottom:8px}
+.meta{display:flex;gap:16px;flex-wrap:wrap;color:var(--soft);font-weight:500}
+.seats{margin-top:16px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.seats i{width:22px;height:22px;border-radius:50%;background:var(--i1)}
+.seats i.f{background:transparent;border:3px solid var(--i1)}
+.seats span{margin-left:8px;font-weight:700}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.facts span{background:#fff;color:var(--ink);padding:10px 18px;border-radius:999px;font-weight:700;border:3px solid #fff}
+.facts span:nth-child(2){background:var(--lime)}.facts span:nth-child(3){background:var(--pink)}.facts span:nth-child(4){background:var(--sun)}
+/* final */
+.final{background:var(--pink);color:var(--ink);border:5px solid #fff;border-radius:40px;margin:96px 0 0;padding:56px 28px;text-align:center;position:relative;overflow:hidden;box-shadow:0 12px 0 rgba(0,0,0,.25)}
+.final h2{max-width:14ch;margin:0 auto 18px}
+.final p{max-width:40ch;margin:0 auto 26px;font-weight:500;font-size:19px}
+.final .btn.main{background:var(--ink);color:#fff;border-color:var(--ink);box-shadow:5px 5px 0 var(--lime)}
+.final .btn.main:hover{background:#fff;color:var(--ink);border-color:#fff}
+footer{padding:36px 0 44px;font-size:15px;display:flex;gap:18px;flex-wrap:wrap;color:#d9d9ff}
+footer b{color:#fff;font-family:Unbounded}
+a:focus-visible,.btn:focus-visible{outline:4px solid var(--lime);outline-offset:3px}
+.final a:focus-visible,.step a:focus-visible{outline-color:var(--ink)}
+@media (max-width:760px){
+ .demo{grid-template-columns:1fr}
+ .st.hide-m{display:none}
+ .st{opacity:.85}
+ .step:nth-child(n){transform:none}.tile:nth-child(2){transform:none}
+ .nav a{padding:9px 12px}
+ .final{border-radius:30px;padding:42px 18px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.cmp{background:#d9d6f0;padding:26px 20px 60px;color:#333}
+.cmp h4{margin:0 0 16px;font:700 15px "DM Sans";text-align:center}
+.cmp .frames{display:flex;justify-content:center}
+.cmp iframe{border:0;border-radius:26px;box-shadow:0 10px 40px rgba(0,0,0,.3);background:#fff}
+body.in-frame .cmp{display:none}
+</style>
+</head>
+<body>
+<script>if(window.top!==window.self)document.body.classList.add('in-frame')</script>
+
+<!-- Borde blanco de pegatina -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <filter id="sticker" x="-20%" y="-20%" width="140%" height="140%">
+  <feMorphology in="SourceAlpha" operator="dilate" radius="4" result="d"/>
+  <feFlood flood-color="#fff"/><feComposite in2="d" operator="in" result="w"/>
+  <feMerge><feMergeNode in="w"/><feMergeNode in="SourceGraphic"/></feMerge>
+ </filter>
+ <!-- Pegatinas propias (dibujo sencillo en la misma paleta, no son los dibujos originales de la careta) -->
+ <symbol id="tote" viewBox="0 0 100 120"><path d="M30 40V26a20 20 0 0 1 40 0v14" fill="none" stroke="#ff3fa4" stroke-width="7" stroke-linecap="round"/><path d="M12 40h76l-6 74H18z" fill="#3b6bff"/><path d="M16 90l68-26v14L16 104z" fill="#c8ff2e"/></symbol>
+ <symbol id="shirt" viewBox="0 0 120 110"><path d="M40 8l-30 20 14 22 12-8v56h48V42l12 8 14-22L80 8c-6 10-34 10-40 0z" fill="#3b6bff"/><path d="M56 34c12-6 22 4 14 14-4 6-12 4-14 12-8-10-8-20 0-26z" fill="#ff8a2b"/><path d="M40 8c6 10 34 10 40 0l-8 16-12 10-12-10z" fill="#fff6dc"/></symbol>
+ <symbol id="mug" viewBox="0 0 110 100"><path d="M82 30h8a14 14 0 0 1 0 38h-12" fill="none" stroke="#ff8a2b" stroke-width="9" stroke-linecap="round"/><path d="M10 20h72l-6 60a12 12 0 0 1-12 10H28A12 12 0 0 1 16 80z" fill="#fff6dc"/><circle cx="46" cy="48" r="13" fill="#ffc83d"/><path d="M20 66c10-12 20 0 30-12" stroke="#0f6e73" stroke-width="7" fill="none" stroke-linecap="round"/></symbol>
+ <symbol id="shoe" viewBox="0 0 120 90"><path d="M8 20c20 8 30 24 44 24 14 0 22-14 32-14 18 0 30 14 30 40H48c-8 0-14-8-18-16-8 2-16 4-22 2z" fill="#0f6e73"/><path d="M54 76l22-30c14 4 26 14 26 30z" fill="#7a4a1d"/><path d="M62 68c10-12 18-10 22-2-8 4-14 6-22 2z" fill="#ffc83d"/></symbol>
+ <symbol id="star" viewBox="0 0 100 100"><path d="M50 6l13 30 33 3-25 22 8 32-29-17-29 17 8-32L4 39l33-3z" fill="#ff3fa4"/></symbol>
+ <symbol id="hat" viewBox="0 0 130 90"><ellipse cx="65" cy="58" rx="62" ry="22" fill="#3b6bff"/><path d="M28 54c0-34 18-46 37-46s37 12 37 46z" fill="#3b6bff"/><path d="M28 50h74v10H28z" fill="#ff3fa4"/><rect x="58" y="46" width="14" height="18" rx="3" fill="#c8ff2e"/></symbol>
+ <symbol id="phone" viewBox="0 0 70 120"><rect x="6" y="4" width="58" height="112" rx="12" fill="#0f6e73"/><path d="M20 30c14-8 24 4 12 14-10 8-14 20-6 34" stroke="#ffc83d" stroke-width="7" fill="none" stroke-linecap="round"/><circle cx="46" cy="84" r="8" fill="#ff3fa4"/></symbol>
+</defs></svg>
+
+<header class="hero">
+ <!-- pegatinas de fondo -->
+ <svg class="st" style="left:-2%;top:120px;width:150px;transform:rotate(-14deg)"><use href="#tote"/></svg>
+ <svg class="st hide-m" style="left:21%;top:20px;width:130px;transform:rotate(10deg)"><use href="#shirt"/></svg>
+ <svg class="st" style="right:3%;top:90px;width:140px;transform:rotate(14deg)"><use href="#mug"/></svg>
+ <svg class="st hide-m" style="right:19%;top:28px;width:150px;transform:rotate(-8deg)"><use href="#hat"/></svg>
+ <svg class="st" style="right:-1%;bottom:110px;width:140px;transform:rotate(-12deg)"><use href="#shoe"/></svg>
+ <svg class="st hide-m" style="left:5%;bottom:60px;width:70px;transform:rotate(-10deg)"><use href="#phone"/></svg>
+ <svg class="st hide-m" style="left:38%;bottom:30px;width:70px;transform:rotate(18deg)"><use href="#star"/></svg>
+
+ <div class="wrap">
+  <div class="bar">
+   <a class="pill-logo" href="#" aria-label="Badulake, portada">Badulake</a>
+   <nav class="nav" aria-label="Menú principal">
+    <a href="#que-es">Qué es un badulake</a>
+    <a href="#">Entrar</a>
+    <a class="cta" href="#">Crear cuenta</a>
+   </nav>
+  </div>
+
+  <div class="word" role="img" aria-label="Badulake">Badulake</div>
+  <h1>Cambia de armario <mark>sin dinero</mark></h1>
+  <p class="lead">Quedadas para intercambiar ropa y cosas que ya no usas. Gratis y entre vecinas.</p>
+  <div class="btns">
+   <a class="btn main" href="#">Crear cuenta →</a>
+   <a class="btn ghost" href="#que-es">Cómo funciona</a>
+  </div>
+ </div>
+</header>
+
+<div style="overflow:hidden">
+ <div class="tape" aria-hidden="true"><div><span>Gratis</span>★<span>Sin dinero</span>★<span>De 5 a 10 personas</span>★<span>Solo mayores de 18</span>★<span>Gratis</span>★<span>Sin dinero</span>★<span>De 5 a 10 personas</span>★<span>Solo mayores de 18</span>★</div></div>
+</div>
+
+<main class="wrap">
+ <section class="sec" id="que-es" aria-labelledby="t1">
+  <svg class="st hide-m" style="right:0;top:60px;width:110px;transform:rotate(16deg)"><use href="#star"/></svg>
+  <h2 id="t1">Qué es un <b>badulake</b></h2>
+  <p class="sub">Una quedada en persona de 5 a 10 personas para intercambiar ropa y cosas que ya no usáis. Nadie paga ni cobra nada.</p>
+  <ol class="steps">
+   <li class="step"><div class="num" aria-hidden="true">1</div><h3>Crea tu cuenta</h3><p>Es gratis y solo para mayores de 18 años.</p></li>
+   <li class="step"><div class="num" aria-hidden="true">2</div><h3>Apúntate</h3><p>Busca un badulake y apúntate. Al hacerlo verás la dirección exacta.</p></li>
+   <li class="step"><div class="num" aria-hidden="true">3</div><h3>Ve con lo que ya no usas</h3><p>Ropa, libros, cosas de casa… lo que te sobre.</p></li>
+   <li class="step"><div class="num" aria-hidden="true">4</div><h3>Intercambia</h3><p>Llévate lo que te guste.</p></li>
+  </ol>
+ </section>
+
+ <section class="sec" aria-labelledby="t2">
+  <div class="demo">
+   <div>
+    <h2 id="t2">Próximos <b>badulakes</b></h2>
+    <p class="sub">Mira cuándo y dónde, cuántas plazas quedan y apúntate con un toque.</p>
+    <div class="facts"><span>Gratis</span><span>Sin dinero</span><span>De 5 a 10 personas</span><span>Solo +18</span></div>
+   </div>
+   <div>
+    <article class="tile">
+     <span class="chip">Te has apuntado</span>
+     <h3>Intercambio de ropa de invierno</h3>
+     <div class="meta"><span>sáb 12 dic · 17:00</span><span>Bilbao · Deusto</span></div>
+     <div class="seats" role="img" aria-label="6 de 8 plazas ocupadas"><i></i><i></i><i></i><i></i><i></i><i></i><i class="f"></i><i class="f"></i><span>2 plazas libres</span></div>
+    </article>
+    <article class="tile">
+     <span class="chip o">Lo organizas tú</span>
+     <h3>Cosas de casa y libros</h3>
+     <div class="meta"><span>dom 20 dic · 11:00</span><span>Donostia · Gros</span></div>
+     <div class="seats" role="img" aria-label="3 de 10 plazas ocupadas"><i></i><i></i><i></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><span>7 plazas libres</span></div>
+    </article>
+   </div>
+  </div>
+ </section>
+
+ <section class="final" aria-labelledby="t3">
+  <svg class="st hide-m" style="left:-10px;top:-10px;width:110px;transform:rotate(-14deg)"><use href="#shirt"/></svg>
+  <svg class="st hide-m" style="right:-6px;bottom:-14px;width:110px;transform:rotate(12deg)"><use href="#mug"/></svg>
+  <h2 id="t3">¿Lo organizas tú?</h2>
+  <p>Crea un badulake, ponle fecha y zona, y deja que se apunten. La dirección exacta solo la ven quienes se apuntan.</p>
+  <a class="btn main" href="#">Crear cuenta →</a>
+ </section>
+
+ <footer>
+  <b>Un proyecto de EITB</b>
+  <a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Condiciones</a><a href="#">Cookies</a>
+ </footer>
+</main>
+
+<div class="cmp">
+ <h4>Así se ve en el móvil</h4>
+ <div class="frames"><iframe src="propuesta-home-careta.html" width="390" height="780" title="Vista móvil de la propuesta"></iframe></div>
+</div>
+</body>
+</html>

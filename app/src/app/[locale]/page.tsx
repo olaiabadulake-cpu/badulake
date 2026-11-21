@@ -5,7 +5,7 @@ import { accountsOpen, getCurrentUser } from "@/lib/supabase/server";
 import { contentLang } from "@/i18n/content-lang";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/languages";
-import { Symbol, Wordmark } from "./logo";
+import { Pegatina, Wordmark } from "./logo";
 import { WaitlistForm } from "./waitlist-form";
 import { WhatIs } from "./what-is";
 import { getImpacto } from "@/lib/impacto";
@@ -15,19 +15,23 @@ export default async function Home({ searchParams }: PageProps<"/[locale]">) {
   const locale = await getLocale();
 
   return (
-    <div className="pagina !gap-10 sm:!pb-16">
+    <>
+    <div className="pagina relative !gap-8 !pb-10">
+      {/* Pegatinas de fondo: solo decoración, detrás del texto y ocultas en móvil estrecho. */}
+      <Pegatina name="tote" className="hidden w-28 -rotate-12 sm:block" style={{ right: "4%", top: "5.5rem" }} />
+      <Pegatina name="mug" className="hidden w-32 rotate-12 sm:block" style={{ right: "-4%", top: "13rem" }} />
+      <Pegatina name="shoe" className="hidden w-32 -rotate-6 sm:block" style={{ right: "12%", top: "21rem" }} />
+      <Pegatina name="star" className="hidden w-14 rotate-12 sm:block" style={{ right: "6%", top: "1.5rem" }} />
+
       {accountsOpen && (
         <Suspense fallback={null}>
           <Notice searchParams={searchParams} />
         </Suspense>
       )}
 
-      <header className="flex flex-col gap-5">
-        <div className="flex items-center gap-3">
-          <Symbol className="size-14" />
-          <h1 className="text-4xl sm:text-5xl"><Wordmark /></h1>
-        </div>
-        <p className="font-display text-2xl leading-snug font-bold sm:text-3xl">
+      <header className="relative z-[1] flex flex-col gap-6 pt-4">
+        <h1 className="text-3xl min-[400px]:text-4xl sm:text-6xl"><Wordmark /></h1>
+        <p className="titulo-2 max-w-[22ch] !hyphens-none !text-[1.375rem] !leading-[1.2] !normal-case sm:!text-[1.875rem]">
           {t("tagline")}
         </p>
       </header>
@@ -38,14 +42,19 @@ export default async function Home({ searchParams }: PageProps<"/[locale]">) {
           <Start />
         </Suspense>
       )}
+    </div>
 
+    {/* Cinta con las ideas clave (decoración: el texto de verdad está debajo, en «Qué es un badulake»). */}
+    <Tape />
+
+    <div className="pagina !gap-10 sm:!pb-16">
       <Suspense fallback={null}>
         <Impact />
       </Suspense>
 
       <WhatIs />
 
-      <section className="rounded-3xl border-2 border-noche bg-amarillo p-5 sm:p-8">
+      <section className="sobre-papel rounded-3xl border-4 border-white bg-lima p-5 sm:p-8">
         <p className="text-lg font-medium">{waitlistOpen ? t("coming") : t("comingSoon")}</p>
         {waitlistOpen && (
           <div className="mt-6">
@@ -53,6 +62,19 @@ export default async function Home({ searchParams }: PageProps<"/[locale]">) {
           </div>
         )}
       </section>
+    </div>
+    </>
+  );
+}
+
+// Cinta rosa con «Gratis · Sin dinero · De 5 a 10 personas · Solo mayores de 18», con los textos que ya existen.
+async function Tape() {
+  const t = await getTranslations("WhatIs");
+  const items = (["free", "noMoney", "people", "adults"] as const).map((k) => t(k));
+  const row = [...items, ...items].map((x, i) => <span key={i}>{x} ★</span>);
+  return (
+    <div aria-hidden lang={await contentLang()} className="overflow-hidden py-3">
+      <div className="cinta"><div>{row}{row}</div></div>
     </div>
   );
 }
