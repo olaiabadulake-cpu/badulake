@@ -117,3 +117,8 @@ function deny(request: NextRequest, from: NextResponse, guard: Guard) {
   out.headers.set("Cache-Control", "private, no-store");
   return out;
 }
+
+export const config = {
+  // Todo menos archivos internos, la API y archivos con extensión (favicon.ico…)
+  matcher: "/((?!api|_next|_vercel|.*\\..*).*)",
+};
