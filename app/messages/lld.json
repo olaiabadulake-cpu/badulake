@@ -47,7 +47,11 @@
     "legalLink": "Informaziuns legales",
     "termsLink": "Condiziuns",
     "cookiesLink": "Cookies",
-    "legalNav": "Tesć legai"
+    "legalNav": "Tesć legai",
+    "languageSearch": "Cri n lingaz",
+    "languageNone": "Al n'é degügn lingaz cun chësc inom.",
+    "languageSuggest": "Tü telefonin é te n ater lingaz:",
+    "languageDismiss": "No, dilan"
   },
   "Account": {
     "signUpTitle": "Fá n account",

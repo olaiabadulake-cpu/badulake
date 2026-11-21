@@ -47,7 +47,11 @@
     "legalLink": "Njoftimi ligjor",
     "termsLink": "Kushtet",
     "cookiesLink": "Cookies",
-    "legalNav": "Tekstet ligjore"
+    "legalNav": "Tekstet ligjore",
+    "languageSearch": "Kërko gjuhën",
+    "languageNone": "Nuk ka gjuhë me këtë emër.",
+    "languageSuggest": "Telefoni juaj është në një gjuhë tjetër:",
+    "languageDismiss": "Jo, faleminderit"
   },
   "Account": {
     "signUpTitle": "Krijoni një llogari",

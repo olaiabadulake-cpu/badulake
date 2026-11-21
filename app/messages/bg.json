@@ -47,7 +47,11 @@
     "legalLink": "Правна информация",
     "termsLink": "Условия",
     "cookiesLink": "Бисквитки",
-    "legalNav": "Правни текстове"
+    "legalNav": "Правни текстове",
+    "languageSearch": "Търсене на език",
+    "languageNone": "Няма език с това име.",
+    "languageSuggest": "Телефонът ви е на друг език:",
+    "languageDismiss": "Не, благодаря"
   },
   "Account": {
     "signUpTitle": "Създаване на профил",

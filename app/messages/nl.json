@@ -47,7 +47,11 @@
     "legalLink": "Juridische informatie",
     "termsLink": "Voorwaarden",
     "cookiesLink": "Cookies",
-    "legalNav": "Juridische teksten"
+    "legalNav": "Juridische teksten",
+    "languageSearch": "Taal zoeken",
+    "languageNone": "Er is geen taal met die naam.",
+    "languageSuggest": "Je telefoon staat in een andere taal:",
+    "languageDismiss": "Nee, bedankt"
   },
   "Account": {
     "signUpTitle": "Account aanmaken",

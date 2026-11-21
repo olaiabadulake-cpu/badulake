@@ -476,3 +476,14 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Probado** en el Mac contra la copia (castellano y francés).
 - **Por qué:** es la duda más típica antes de ir, y la lista evita que la gente lleve dinero o cosas en mal estado.
 - **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 7.1)
+
+### D-049 · Selector de lengua con buscador y aviso de la lengua del móvil
+- **Fecha:** 21/11/2026
+- **Alternativas:** dejar el menú desplegable de 44 lenguas; cambiar de lengua solo con el navegador; cambiar la lengua sola según el móvil (sorprende y no deja elegir).
+- **Decisión** (Tarea 11.1 de [auditoria.md](auditoria.md); `app/src/app/[locale]/language-switch.tsx`):
+  - El botón de la lengua (globo + nombre) abre un **panel con buscador**. Cada lengua sale escrita en su propia lengua y se puede buscar también por su nombre en la lengua de la página, sin tildes («alem» → Deutsch, «eusk» → Euskara). Son enlaces normales a la misma página en otra lengua. Se cierra con Escape o tocando fuera.
+  - **La lengua del móvil:** si el móvil está en otra de las 44 lenguas y la persona está viendo otra, sale una vez, bajo el menú, «Tu móvil está en otra lengua: [Euskara] · No, gracias». No cambia nada sola. Lo elegido se recuerda en el propio navegador (`badulake-lengua-vista`, sin cookies ni envío a ningún sitio). Reconoce también valenciano, aranés y montenegrino.
+  - 4 textos nuevos en las 44 lenguas. Se quita de paso el `id` repetido del menú mientras carga (la «duda» de axe de antes).
+- **Probado** con el Chrome contra la web del Mac: buscar «alem», «eusk» y algo que no existe; en `/eu` con un móvil en castellano sale el aviso y «No, gracias» lo quita para siempre.
+- **Por qué:** con 44 lenguas el menú era largo y había que saber el nombre de la lengua en esa lengua; y quien llega por un enlace en otra lengua debe poder pasar a la suya con un toque.
+- **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 11.1)

@@ -47,7 +47,11 @@
     "legalLink": "Juridihkalaš dieđut",
     "termsLink": "Eavttut",
     "cookiesLink": "Diehtočoahkut",
-    "legalNav": "Juridihkalaš teavsttat"
+    "legalNav": "Juridihkalaš teavsttat",
+    "languageSearch": "Oza giela",
+    "languageNone": "Ii leat giella dainna namain.",
+    "languageSuggest": "Du telefovdna lea eará gillii:",
+    "languageDismiss": "Ii, giitu"
   },
   "Account": {
     "signUpTitle": "Ráhkat konttu",

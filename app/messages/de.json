@@ -47,7 +47,11 @@
     "legalLink": "Impressum",
     "termsLink": "Nutzungsbedingungen",
     "cookiesLink": "Cookies",
-    "legalNav": "Rechtliches"
+    "legalNav": "Rechtliches",
+    "languageSearch": "Sprache suchen",
+    "languageNone": "Keine Sprache mit diesem Namen.",
+    "languageSuggest": "Dein Handy ist auf eine andere Sprache eingestellt:",
+    "languageDismiss": "Nein, danke"
   },
   "Account": {
     "signUpTitle": "Konto erstellen",

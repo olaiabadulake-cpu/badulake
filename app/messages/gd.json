@@ -47,7 +47,11 @@
     "legalLink": "Aithris laghail",
     "termsLink": "Cumhachan",
     "cookiesLink": "Briosgaidean",
-    "legalNav": "Teacsaichean laghail"
+    "legalNav": "Teacsaichean laghail",
+    "languageSearch": "Lorg cànan",
+    "languageNone": "Chan eil cànan ann air a bheil an t-ainm sin.",
+    "languageSuggest": "Tha am fòn agad ann an cànan eile:",
+    "languageDismiss": "Chan eil, mòran taing"
   },
   "Account": {
     "signUpTitle": "Cruthaich cunntas",

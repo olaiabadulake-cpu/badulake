@@ -47,7 +47,11 @@
     "legalLink": "Avisu llegal",
     "termsLink": "Condiciones",
     "cookiesLink": "Cookies",
-    "legalNav": "Testos llegales"
+    "legalNav": "Testos llegales",
+    "languageSearch": "Buscar llingua",
+    "languageNone": "Nun hai nenguna llingua con esi nome.",
+    "languageSuggest": "El to móvil ta n'otra llingua:",
+    "languageDismiss": "Non, gracies"
   },
   "Account": {
     "signUpTitle": "Crear cuenta",

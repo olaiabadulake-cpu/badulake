@@ -47,7 +47,11 @@
     "legalLink": "Právní upozornění",
     "termsLink": "Podmínky",
     "cookiesLink": "Cookies",
-    "legalNav": "Právní texty"
+    "legalNav": "Právní texty",
+    "languageSearch": "Hledat jazyk",
+    "languageNone": "Žádný jazyk s tímto názvem neexistuje.",
+    "languageSuggest": "Tvůj telefon je v jiném jazyce:",
+    "languageDismiss": "Ne, díky"
   },
   "Account": {
     "signUpTitle": "Založit účet",

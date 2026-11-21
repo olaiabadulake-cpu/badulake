@@ -47,7 +47,11 @@
     "legalLink": "Jogi nyilatkozat",
     "termsLink": "Feltételek",
     "cookiesLink": "Sütik",
-    "legalNav": "Jogi szövegek"
+    "legalNav": "Jogi szövegek",
+    "languageSearch": "Nyelv keresése",
+    "languageNone": "Nincs ilyen nevű nyelv.",
+    "languageSuggest": "A telefonod más nyelvre van állítva:",
+    "languageDismiss": "Nem, köszönöm"
   },
   "Account": {
     "signUpTitle": "Fiók létrehozása",

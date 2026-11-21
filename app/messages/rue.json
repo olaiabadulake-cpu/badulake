@@ -47,7 +47,11 @@
     "legalLink": "Правне обвисценє",
     "termsLink": "Условия",
     "cookiesLink": "Колачики",
-    "legalNav": "Правни тексти"
+    "legalNav": "Правни тексти",
+    "languageSearch": "Глєдац язик",
+    "languageNone": "Нєт язика з тим меном.",
+    "languageSuggest": "Твой телефон є на иншим язику:",
+    "languageDismiss": "Нє, дзекуєм"
   },
   "Account": {
     "signUpTitle": "Направ профил",

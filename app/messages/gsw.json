@@ -47,7 +47,11 @@
     "legalLink": "Impressum",
     "termsLink": "Bedingunge",
     "cookiesLink": "Cookies",
-    "legalNav": "Rechtlichs"
+    "legalNav": "Rechtlichs",
+    "languageSearch": "Sproch süeche",
+    "languageNone": "S'gìtt kei Sproch mit dem Nàme.",
+    "languageSuggest": "Di Handy isch uf e àndri Sproch igstellt:",
+    "languageDismiss": "Nei, merci"
   },
   "Account": {
     "signUpTitle": "Konto àleje",

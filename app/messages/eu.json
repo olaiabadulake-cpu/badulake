@@ -78,7 +78,11 @@
     "legalLink": "Lege-oharra",
     "termsLink": "Baldintzak",
     "cookiesLink": "Cookieak",
-    "legalNav": "Lege-testuak"
+    "legalNav": "Lege-testuak",
+    "languageSearch": "Bilatu hizkuntza",
+    "languageNone": "Ez dago izen hori duen hizkuntzarik.",
+    "languageSuggest": "Zure mugikorra beste hizkuntza batean dago:",
+    "languageDismiss": "Ez, eskerrik asko"
   },
   "Account": {
     "signUpTitle": "Sortu kontua",

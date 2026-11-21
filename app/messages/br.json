@@ -47,7 +47,11 @@
     "legalLink": "Kemenn lezennel",
     "termsLink": "Divizoù",
     "cookiesLink": "Toupinoù",
-    "legalNav": "Testennoù lezennel"
+    "legalNav": "Testennoù lezennel",
+    "languageSearch": "Klask ur yezh",
+    "languageNone": "N'eus yezh ebet gant an anv-se.",
+    "languageSuggest": "Ho pellgomzer a zo en ur yezh all:",
+    "languageDismiss": "Nann, trugarez"
   },
   "Account": {
     "signUpTitle": "Krouiñ ur gont",

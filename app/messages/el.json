@@ -47,7 +47,11 @@
     "legalLink": "Νομική σημείωση",
     "termsLink": "Όροι",
     "cookiesLink": "Cookies",
-    "legalNav": "Νομικά κείμενα"
+    "legalNav": "Νομικά κείμενα",
+    "languageSearch": "Αναζήτηση γλώσσας",
+    "languageNone": "Δεν υπάρχει γλώσσα με αυτό το όνομα.",
+    "languageSuggest": "Το κινητό σας είναι σε άλλη γλώσσα:",
+    "languageDismiss": "Όχι, ευχαριστώ"
   },
   "Account": {
     "signUpTitle": "Δημιουργία λογαριασμού",

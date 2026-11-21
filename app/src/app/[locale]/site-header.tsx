@@ -14,6 +14,11 @@ export async function SiteHeader() {
   const f = await getTranslations("Footer");
   const whatIs = <li key="que-es"><NavLink href="/que-es">{t("whatIs")}</NavLink></li>;
   // Mientras se prepara la página: el mismo enlace, sin marcar en qué página estás.
+  // Selector de lengua con buscador y aviso de la lengua del móvil (Tarea 11.1, D-049).
+  const languageLabels = {
+    label: f("language"), search: f("languageSearch"), none: f("languageNone"),
+    suggest: f("languageSuggest"), dismiss: f("languageDismiss"),
+  };
   const whatIsPlain = <li key="que-es"><PlainNavLink href="/que-es">{t("whatIs")}</PlainNavLink></li>;
 
   return (
@@ -33,8 +38,8 @@ export async function SiteHeader() {
             </Suspense>
           </ul>
         </nav>
-        <Suspense fallback={<LanguageSwitchFallback label={f("language")} />}>
-          <LanguageSwitch label={f("language")} />
+        <Suspense fallback={<LanguageSwitchFallback labels={languageLabels} />}>
+          <LanguageSwitch labels={languageLabels} />
         </Suspense>
       </div>
     </header>

@@ -94,7 +94,11 @@
     "legalLink": "Aviso legal",
     "termsLink": "Condiciones",
     "cookiesLink": "Cookies",
-    "legalNav": "Textos legales"
+    "legalNav": "Textos legales",
+    "languageSearch": "Buscar lengua",
+    "languageNone": "No hay ninguna lengua con ese nombre.",
+    "languageSuggest": "Tu móvil está en otra lengua:",
+    "languageDismiss": "No, gracias"
   },
   "Account": {
     "signUpTitle": "Crear cuenta",

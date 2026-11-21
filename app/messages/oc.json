@@ -47,7 +47,11 @@
     "legalLink": "Mencions legalas",
     "termsLink": "Condicions",
     "cookiesLink": "Cookies",
-    "legalNav": "Tèxtes legals"
+    "legalNav": "Tèxtes legals",
+    "languageSearch": "Cercar una lenga",
+    "languageNone": "I a pas cap de lenga amb aqueste nom.",
+    "languageSuggest": "Ton telefòn es dins una autra lenga :",
+    "languageDismiss": "Non, mercé"
   },
   "Account": {
     "signUpTitle": "Crear un compte",

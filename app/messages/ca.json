@@ -47,7 +47,11 @@
     "legalLink": "Avís legal",
     "termsLink": "Condicions",
     "cookiesLink": "Galetes",
-    "legalNav": "Textos legals"
+    "legalNav": "Textos legals",
+    "languageSearch": "Cerca una llengua",
+    "languageNone": "No hi ha cap llengua amb aquest nom.",
+    "languageSuggest": "El teu mòbil està en una altra llengua:",
+    "languageDismiss": "No, gràcies"
   },
   "Account": {
     "signUpTitle": "Crear compte",

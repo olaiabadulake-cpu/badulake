@@ -47,7 +47,11 @@
     "legalLink": "Nota prawna",
     "termsLink": "Warunki",
     "cookiesLink": "Pliki cookie",
-    "legalNav": "Teksty prawne"
+    "legalNav": "Teksty prawne",
+    "languageSearch": "Szukaj języka",
+    "languageNone": "Nie ma języka o tej nazwie.",
+    "languageSuggest": "Twój telefon jest w innym języku:",
+    "languageDismiss": "Nie, dziękuję"
   },
   "Account": {
     "signUpTitle": "Załóż konto",

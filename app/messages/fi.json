@@ -47,7 +47,11 @@
     "legalLink": "Oikeudelliset tiedot",
     "termsLink": "Käyttöehdot",
     "cookiesLink": "Evästeet",
-    "legalNav": "Oikeudelliset tekstit"
+    "legalNav": "Oikeudelliset tekstit",
+    "languageSearch": "Hae kieltä",
+    "languageNone": "Sen nimistä kieltä ei ole.",
+    "languageSuggest": "Puhelimesi on eri kielellä:",
+    "languageDismiss": "Ei kiitos"
   },
   "Account": {
     "signUpTitle": "Luo tili",

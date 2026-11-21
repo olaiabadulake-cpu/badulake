@@ -47,7 +47,11 @@
     "legalLink": "Fógra dlí",
     "termsLink": "Coinníollacha",
     "cookiesLink": "Fianáin",
-    "legalNav": "Téacsanna dlí"
+    "legalNav": "Téacsanna dlí",
+    "languageSearch": "Cuardaigh teanga",
+    "languageNone": "Níl aon teanga leis an ainm sin.",
+    "languageSuggest": "Tá d'fhón i dteanga eile:",
+    "languageDismiss": "Ní hea, go raibh maith agat"
   },
   "Account": {
     "signUpTitle": "Cruthaigh cuntas",

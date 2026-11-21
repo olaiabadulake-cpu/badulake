@@ -47,7 +47,11 @@
     "legalLink": "Juridyske ynformaasje",
     "termsLink": "Betingsten",
     "cookiesLink": "Cookies",
-    "legalNav": "Juridyske teksten"
+    "legalNav": "Juridyske teksten",
+    "languageSearch": "Taal sykje",
+    "languageNone": "Der is gjin taal mei dy namme.",
+    "languageSuggest": "Dyn telefoan stiet yn in oare taal:",
+    "languageDismiss": "Nee, tank"
   },
   "Account": {
     "signUpTitle": "Account oanmeitsje",

@@ -47,7 +47,11 @@
     "legalLink": "Juridisk informasjon",
     "termsLink": "Vilkår",
     "cookiesLink": "Informasjonskapslar",
-    "legalNav": "Juridiske tekstar"
+    "legalNav": "Juridiske tekstar",
+    "languageSearch": "Søk etter språk",
+    "languageNone": "Det finst ikkje noko språk med det namnet.",
+    "languageSuggest": "Mobilen din er på eit anna språk:",
+    "languageDismiss": "Nei takk"
   },
   "Account": {
     "signUpTitle": "Opprett konto",

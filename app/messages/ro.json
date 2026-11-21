@@ -47,7 +47,11 @@
     "legalLink": "Notă legală",
     "termsLink": "Condiții",
     "cookiesLink": "Cookie-uri",
-    "legalNav": "Texte legale"
+    "legalNav": "Texte legale",
+    "languageSearch": "Caută o limbă",
+    "languageNone": "Nu există nicio limbă cu acest nume.",
+    "languageSuggest": "Telefonul tău e în altă limbă:",
+    "languageDismiss": "Nu, mulțumesc"
   },
   "Account": {
     "signUpTitle": "Creează cont",

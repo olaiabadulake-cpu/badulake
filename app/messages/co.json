@@ -47,7 +47,11 @@
     "legalLink": "Avisu legale",
     "termsLink": "Cundizioni",
     "cookiesLink": "Cookies",
-    "legalNav": "Testi legali"
+    "legalNav": "Testi legali",
+    "languageSearch": "Circà una lingua",
+    "languageNone": "Ùn ci hè nisuna lingua cù stu nome.",
+    "languageSuggest": "U to telefuninu hè in un'altra lingua:",
+    "languageDismiss": "Innò, grazie"
   },
   "Account": {
     "signUpTitle": "Creà un contu",

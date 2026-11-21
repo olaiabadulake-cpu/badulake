@@ -47,7 +47,11 @@
     "legalLink": "Pravno obvestilo",
     "termsLink": "Pogoji",
     "cookiesLink": "Piškotki",
-    "legalNav": "Pravna besedila"
+    "legalNav": "Pravna besedila",
+    "languageSearch": "Išči jezik",
+    "languageNone": "Jezika s tem imenom ni.",
+    "languageSuggest": "Tvoj telefon je v drugem jeziku:",
+    "languageDismiss": "Ne, hvala"
   },
   "Account": {
     "signUpTitle": "Ustvari račun",

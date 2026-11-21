@@ -47,7 +47,11 @@
     "legalLink": "Hysbysiad cyfreithiol",
     "termsLink": "Amodau",
     "cookiesLink": "Cwcis",
-    "legalNav": "Testunau cyfreithiol"
+    "legalNav": "Testunau cyfreithiol",
+    "languageSearch": "Chwilio am iaith",
+    "languageNone": "Does dim iaith gyda'r enw hwnnw.",
+    "languageSuggest": "Mae dy ffôn mewn iaith arall:",
+    "languageDismiss": "Dim diolch"
   },
   "Account": {
     "signUpTitle": "Creu cyfrif",

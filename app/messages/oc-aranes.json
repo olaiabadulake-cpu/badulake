@@ -47,7 +47,11 @@
     "legalLink": "Avís legau",
     "termsLink": "Condicions",
     "cookiesLink": "Cookies",
-    "legalNav": "Tèxtes legaus"
+    "legalNav": "Tèxtes legaus",
+    "languageSearch": "Cercar ua lengua",
+    "languageNone": "Non i a cap de lengua damb aguest nòm.",
+    "languageSuggest": "Eth tòn mobil ei en ua auta lengua:",
+    "languageDismiss": "Non, mercés"
   },
   "Account": {
     "signUpTitle": "Crear compde",

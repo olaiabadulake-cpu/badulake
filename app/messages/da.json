@@ -47,7 +47,11 @@
     "legalLink": "Juridisk meddelelse",
     "termsLink": "Vilkår",
     "cookiesLink": "Cookies",
-    "legalNav": "Juridiske tekster"
+    "legalNav": "Juridiske tekster",
+    "languageSearch": "Søg efter sprog",
+    "languageNone": "Der er intet sprog med det navn.",
+    "languageSuggest": "Din mobil er på et andet sprog:",
+    "languageDismiss": "Nej tak"
   },
   "Account": {
     "signUpTitle": "Opret konto",

@@ -146,6 +146,10 @@ De lo contado en el Modo badulake se guardan, por badulake, solo **dos números*
 
 El archivo de calendario (`.ics`) que se descarga ya **no lleva la dirección exacta**, solo el título, el barrio y el enlace a la ficha. Así, aunque el calendario se sincronice con otros servicios, la dirección de una casa no se queda fuera de Badulake.
 
+### 2.6.2 Aviso de la lengua del móvil (Tarea 11.1, D-049)
+
+Para no repetir el aviso «Tu móvil está en otra lengua», el navegador guarda en su propio almacenamiento `badulake-lengua-vista = 1`. No es una cookie, no se envía a ningún sitio y no identifica a nadie: es una preferencia que la persona ha pedido (técnica).
+
 ### 2.7 «Cerca de mí» (Tarea 6.2, D-043)
 
 Al pulsar «Cerca de mí», el navegador pide permiso para la ubicación una sola vez. El móvil calcula la provincia más cercana y solo manda su código (por ejemplo, «bizkaia») para filtrar la lista. **La ubicación no sale del móvil y no se guarda en ningún sitio.** No es un tratamiento de la ubicación por parte de Badulake; se explica para que la Asesoría lo confirme.

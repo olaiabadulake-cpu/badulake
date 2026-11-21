@@ -47,7 +47,11 @@
     "legalLink": "Правова інформація",
     "termsLink": "Умови",
     "cookiesLink": "Файли cookie",
-    "legalNav": "Юридичні тексти"
+    "legalNav": "Юридичні тексти",
+    "languageSearch": "Пошук мови",
+    "languageNone": "Немає мови з такою назвою.",
+    "languageSuggest": "Ваш телефон іншою мовою:",
+    "languageDismiss": "Ні, дякую"
   },
   "Account": {
     "signUpTitle": "Створити обліковий запис",

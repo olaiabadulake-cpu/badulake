@@ -194,3 +194,5 @@ Cada entrada indica quién hizo cada cosa: **Claude** (la IA), **OlaIA** (dirige
 **Contador de impacto en la portada (tarea 15.1).** Claude añade a la portada «Lo que llevamos»: objetos con una segunda vida y badulakes celebrados, con los números del Modo badulake guardados solo como dos cifras por badulake (D-047). `supabase/impacto.sql` en la copia y en la real. 3 textos en las 44 lenguas. En la copia, cifra inventada para el badulake ya celebrado (37 objetos).
 
 **Qué llevar (tarea 7.1).** Claude añade a la ficha de cada badulake un desplegable «Qué llevar» con cuatro puntos (D-048). 5 textos en las 44 lenguas. Comprobado en el Mac contra la copia.
+
+**Selector de lengua (tarea 11.1).** Claude cambia el menú de 44 lenguas por un panel con buscador (también por el nombre en la lengua de la página) y añade un aviso discreto cuando el móvil está en otra de las 44 lenguas, sin cambiar nada solo (D-049). 4 textos en las 44 lenguas. Probado con el Chrome contra la web del Mac.

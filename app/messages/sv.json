@@ -47,7 +47,11 @@
     "legalLink": "Juridisk information",
     "termsLink": "Villkor",
     "cookiesLink": "Cookies",
-    "legalNav": "Juridiska texter"
+    "legalNav": "Juridiska texter",
+    "languageSearch": "Sök språk",
+    "languageNone": "Det finns inget språk med det namnet.",
+    "languageSuggest": "Din mobil är inställd på ett annat språk:",
+    "languageDismiss": "Nej tack"
   },
   "Account": {
     "signUpTitle": "Skapa konto",
