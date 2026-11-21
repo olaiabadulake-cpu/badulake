@@ -244,7 +244,14 @@
     "share": "Del",
     "shareCopied": "Lenken er kopiert. Lim den inn der du vil.",
     "shareText": "En badulake: et treff for å bytte klær og ting uten penger. Blir du med?",
-    "previewJoin": "Logg inn eller opprett en konto for å melde deg på og se den nøyaktige adressen. Det er gratis."
+    "previewJoin": "Logg inn eller opprett en konto for å melde deg på og se den nøyaktige adressen. Det er gratis.",
+    "searchLabel": "By, sted eller provins",
+    "searchButton": "Søk",
+    "nearMe": "I nærheten",
+    "nearMeHint": "Posisjonen din brukes bare akkurat nå, på mobilen din, og lagres ikke.",
+    "nearMeError": "Vi klarte ikke å finne ut hvor du er. Skriv byen eller provinsen din.",
+    "searchResults": "Badulakes i «{place}»: {count}",
+    "clearSearch": "Se alle"
   },
   "Nav": {
     "label": "Hovedmeny",

@@ -244,7 +244,14 @@
     "share": "Compartir",
     "shareCopied": "Ligazón copiada. Pégaa onde queiras.",
     "shareText": "Un badulake: unha quedada para intercambiar roupa e cousas sen diñeiro. Apúntaste?",
-    "previewJoin": "Para apuntarte e ver o enderezo exacto, entra ou crea a túa conta. É de balde."
+    "previewJoin": "Para apuntarte e ver o enderezo exacto, entra ou crea a túa conta. É de balde.",
+    "searchLabel": "Cidade, vila ou provincia",
+    "searchButton": "Buscar",
+    "nearMe": "Preto de min",
+    "nearMeHint": "A túa localización só se usa neste momento, no teu móbil, e non se garda.",
+    "nearMeError": "Non puidemos saber onde estás. Escribe a túa cidade ou provincia.",
+    "searchResults": "Badulakes en «{place}»: {count}",
+    "clearSearch": "Ver todos"
   },
   "Nav": {
     "label": "Menú principal",

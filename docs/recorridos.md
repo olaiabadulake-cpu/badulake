@@ -43,7 +43,7 @@ Esto aparece en la portada y en su propia página, «Qué es un badulake», enla
 
 ### Recorrido D · Ver badulakes, entrar en uno y apuntarme
 
-1. En «Badulakes» veo los próximos, ordenados por fecha: título, día y hora, zona y plazas libres. Los que ya tienen 5 personas o más, contando a quien organiza, llevan la etiqueta «Confirmado» (D-040). Los cancelados solo los veo si eran míos o estaba apuntada o en lista de espera, con la etiqueta «Cancelado».
+1. En «Badulakes» puedo buscar por **ciudad, pueblo o provincia** o pulsar **«Cerca de mí»** (la ubicación se usa solo en ese momento y no se guarda; Tarea 6.2, D-043). Veo los próximos, ordenados por fecha: título, día y hora, zona y plazas libres. Los que ya tienen 5 personas o más, contando a quien organiza, llevan la etiqueta «Confirmado» (D-040). Los cancelados solo los veo si eran míos o estaba apuntada o en lista de espera, con la etiqueta «Cancelado».
 2. Si no hay ninguno: «Todavía no hay badulakes. Vuelve pronto o crea uno tú», con el botón «Crear un badulake».
 3. En la lista también veo marcados los míos: los que organizo (aunque sean borradores) y en los que estoy apuntada.
 4. Pulso uno. Veo si está confirmado o cuántas personas le faltan («Faltan 2 personas para confirmarse. Si 24 horas antes no son 5, contando a quien organiza, se cancela solo»; en las últimas 24 horas este aviso ya no sale), la descripción, el día y la hora, la zona y las plazas libres. Me dice que la dirección exacta la veré al apuntarme.

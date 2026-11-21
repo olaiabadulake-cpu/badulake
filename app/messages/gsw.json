@@ -244,7 +244,14 @@
     "share": "Teile",
     "shareCopied": "Link kopiert. Füej ne ìn, wo dü wìtt.",
     "shareText": "E badulake: e Träffe, fer Kleider un Sàcha ohne Gald z'tüsche. Bìsch derbii?",
-    "previewJoin": "Fer dich àzmälde un d'gnàui Àdress z'sähn, mäld dich à oder leij e Konto à. S'koschtet nix."
+    "previewJoin": "Fer dich àzmälde un d'gnàui Àdress z'sähn, mäld dich à oder leij e Konto à. S'koschtet nix.",
+    "searchLabel": "Stàdt, Dorf oder Provinz",
+    "searchButton": "Süeche",
+    "nearMe": "In minere Nähe",
+    "nearMeHint": "Dinner Standort wird nur jetzt brüücht, uf dim Handy, un nit gspìchert.",
+    "nearMeError": "Mr hàn nit üsefìnde känne, wo dü bìsch. Schrib dinni Stàdt oder Provinz.",
+    "searchResults": "badulakes in „{place}“: {count}",
+    "clearSearch": "Àlli àlüege"
   },
   "Nav": {
     "label": "Hauptmenü",

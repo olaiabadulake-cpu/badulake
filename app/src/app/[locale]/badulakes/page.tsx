@@ -5,13 +5,15 @@ import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link, redirect } from "@/i18n/navigation";
 import { accountsOpen, createSupabase, getCurrentUser, idsOf } from "@/lib/supabase/server";
+import { PROVINCIAS, normalize } from "@/lib/provincias";
+import { NearMe } from "./near-me";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Badulake");
   return { title: `${t("listTitle")} · Badulake` };
 }
 
-export default async function BadulakesList() {
+export default async function BadulakesList({ searchParams }: PageProps<"/[locale]/badulakes">) {
   // Cerrado en producción hasta que exista el aviso de privacidad (D-019, D-021).
   if (!accountsOpen) notFound();
   const t = await getTranslations("Badulake");
@@ -20,13 +22,13 @@ export default async function BadulakesList() {
     <div lang={await contentLang()} className="pagina">
       <h1 className="titulo-1">{t("listTitle")}</h1>
       <Suspense fallback={<p>{t("loading")}</p>}>
-        <List />
+        <List searchParams={searchParams} />
       </Suspense>
     </div>
   );
 }
 
-async function List() {
+async function List({ searchParams }: Pick<PageProps<"/[locale]/badulakes">, "searchParams">) {
   const locale = await getLocale();
   const user = await getCurrentUser();
   if (!user) redirect({ href: "/entrar?aviso=cuenta", locale });
@@ -67,6 +69,20 @@ async function List() {
   const visible = (rows ?? []).filter(
     (b) => b.estado !== "cancelado" || own.has(b.id) || joined.has(b.id) || waiting.has(b.id),
   );
+  // Buscar por zona (Tarea 6.2, D-043): ciudad, pueblo, barrio o provincia, sin tildes ni
+  // mayúsculas, sobre el título (que es el lugar, D-037) y el barrio. «Cerca de mí» llega como
+  // código de provincia y busca cualquiera de sus nombres (Bizkaia o Vizcaya…).
+  const { donde, prov } = await searchParams;
+  const query = typeof donde === "string" ? donde.trim().slice(0, 60) : "";
+  const province = typeof prov === "string" ? PROVINCIAS.find((p) => p.code === prov) : undefined;
+  const words = province ? province.names.map(normalize) : query ? [normalize(query)] : [];
+  const place = province ? province.names[0] : query;
+  const shown = words.length
+    ? visible.filter((b) => {
+        const hay = normalize(`${b.titulo} ${b.zona}`);
+        return words.some((w) => hay.includes(w));
+      })
+    : visible;
   const fmt = new Intl.DateTimeFormat(await contentLang(), {
     dateStyle: "full", timeStyle: "short", timeZone: "Europe/Madrid",
   });
@@ -78,6 +94,19 @@ async function List() {
     >
       {nav("create")}
     </Link>
+  );
+
+  const search = (
+    <section role="search" aria-label={t("searchLabel")} className="tarjeta flex flex-col gap-3">
+      <form method="get" className="flex flex-col gap-2 sm:flex-row sm:items-end">
+        <div className="flex flex-1 flex-col gap-1.5">
+          <label htmlFor="donde" className="etiqueta">{t("searchLabel")}</label>
+          <input id="donde" name="donde" type="search" defaultValue={query} maxLength={60} className="campo" autoComplete="address-level2" />
+        </div>
+        <button type="submit" className="boton">{t("searchButton")}</button>
+      </form>
+      <NearMe label={t("nearMe")} hint={t("nearMeHint")} error={t("nearMeError")} />
+    </section>
   );
 
   if (visible.length === 0) {
@@ -92,8 +121,15 @@ async function List() {
   return (
     <>
     {create}
+    {search}
+    {words.length > 0 && (
+      <div className="flex flex-wrap items-center gap-3">
+        <p role="status" className="text-lg">{t("searchResults", { count: shown.length, place })}</p>
+        <Link href="/badulakes" className="enlace">{t("clearSearch")}</Link>
+      </div>
+    )}
     <ul className="flex flex-col gap-4">
-      {visible.map((b) => {
+      {shown.map((b) => {
         const count = taken.get(b.id) ?? 0;
         // La organizadora cuenta como una persona más (Tarea 20.1, D-040).
         const free = Math.max(0, b.plazas - 1 - count);

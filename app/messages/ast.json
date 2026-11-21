@@ -244,7 +244,14 @@
     "share": "Compartir",
     "shareCopied": "Enllaz copiáu. Pégalu onde quieras.",
     "shareText": "Un badulake: una quedada pa intercambiar ropa y coses ensin dineru. ¿Apúntaste?",
-    "previewJoin": "Pa apuntate y ver la direición exacta, entra o crea la to cuenta. Ye de baldre."
+    "previewJoin": "Pa apuntate y ver la direición exacta, entra o crea la to cuenta. Ye de baldre.",
+    "searchLabel": "Ciudá, pueblu o provincia",
+    "searchButton": "Buscar",
+    "nearMe": "Cerca de mi",
+    "nearMeHint": "La to llocalización úsase namás nesti momentu, nel to móvil, y nun se guarda.",
+    "nearMeError": "Nun pudimos saber ónde tás. Escribi la to ciudá o provincia.",
+    "searchResults": "Badulakes en «{place}»: {count}",
+    "clearSearch": "Ver toos"
   },
   "Nav": {
     "label": "Menú principal",

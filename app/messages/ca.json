@@ -244,7 +244,14 @@
     "share": "Compartir",
     "shareCopied": "Enllaç copiat. Enganxa'l on vulguis.",
     "shareText": "Un badulake: una trobada per intercanviar roba i coses sense diners. T'hi apuntes?",
-    "previewJoin": "Per apuntar-t'hi i veure l'adreça exacta, entra o crea el teu compte. És gratis."
+    "previewJoin": "Per apuntar-t'hi i veure l'adreça exacta, entra o crea el teu compte. És gratis.",
+    "searchLabel": "Ciutat, poble o província",
+    "searchButton": "Cercar",
+    "nearMe": "A prop meu",
+    "nearMeHint": "La teva ubicació només es fa servir en aquest moment, al teu mòbil, i no es desa.",
+    "nearMeError": "No hem pogut saber on ets. Escriu la teva ciutat o província.",
+    "searchResults": "Badulakes a «{place}»: {count}",
+    "clearSearch": "Veure'ls tots"
   },
   "Nav": {
     "label": "Menú principal",

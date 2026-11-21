@@ -244,7 +244,14 @@
     "share": "Share",
     "shareCopied": "Link copied. Paste it wherever you like.",
     "shareText": "A badulake: a meet-up to swap clothes and things, no money involved. Are you coming?",
-    "previewJoin": "To sign up and see the exact address, sign in or create your account. It's free."
+    "previewJoin": "To sign up and see the exact address, sign in or create your account. It's free.",
+    "searchLabel": "Town, city or province",
+    "searchButton": "Search",
+    "nearMe": "Near me",
+    "nearMeHint": "Your location is only used right now, on your phone, and isn't saved.",
+    "nearMeError": "We couldn't tell where you are. Type your town or province.",
+    "searchResults": "Badulakes in “{place}”: {count}",
+    "clearSearch": "See all"
   },
   "Nav": {
     "label": "Main menu",

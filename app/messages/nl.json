@@ -244,7 +244,14 @@
     "share": "Delen",
     "shareCopied": "Link gekopieerd. Plak hem waar je wilt.",
     "shareText": "Een badulake: een ontmoeting om kleren en spullen te ruilen, zonder geld. Doe je mee?",
-    "previewJoin": "Log in of maak een account aan om je aan te melden en het precieze adres te zien. Het is gratis."
+    "previewJoin": "Log in of maak een account aan om je aan te melden en het precieze adres te zien. Het is gratis.",
+    "searchLabel": "Stad, dorp of provincie",
+    "searchButton": "Zoeken",
+    "nearMe": "Bij mij in de buurt",
+    "nearMeHint": "Je locatie wordt alleen nu gebruikt, op je telefoon, en wordt niet opgeslagen.",
+    "nearMeError": "We konden niet bepalen waar je bent. Typ je stad of provincie.",
+    "searchResults": "Badulakes in ‘{place}’: {count}",
+    "clearSearch": "Alles bekijken"
   },
   "Nav": {
     "label": "Hoofdmenu",

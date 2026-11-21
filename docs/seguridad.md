@@ -201,3 +201,8 @@ Script `supabase/cupo.sql`, ejecutado por Claude en Supabase el 19/11/2026.
 - `badulake_vista(id)` es la **única función que se puede llamar sin cuenta** (además de la lista de espera de antes del lanzamiento). Devuelve solo título, fecha, zona, estado y plazas libres de un badulake publicado o cancelado, no oculto y de los últimos 30 días. Nunca la dirección ni personas. Saldrá en el revisor de Supabase como aviso (función `security definer` abierta), a propósito.
 - `proxy.ts` solo la usa para la ficha compartida sin sesión; lo que no devuelve nada da 404.
 - La cookie `badulake-volver` es `httpOnly`, `SameSite=Lax`, segura en https y dura un día. Solo se usa si es una ruta privada de esta web (misma comprobación que las rutas protegidas): no puede llevar a otra web.
+
+## 17. Buscar por zona (Tarea 6.2, D-043)
+
+- `Permissions-Policy: geolocation=(self)` (antes `()`): solo la propia web puede pedir la ubicación, y solo cuando la persona pulsa «Cerca de mí». La ubicación no se envía al servidor: el móvil calcula la provincia y solo manda su código.
+- El texto que se busca (`?donde=`) se recorta a 60 letras y solo se compara; no se guarda ni se manda a la base de datos.

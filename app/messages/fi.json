@@ -244,7 +244,14 @@
     "share": "Jaa",
     "shareCopied": "Linkki kopioitu. Liitä se minne haluat.",
     "shareText": "Badulake: tapaaminen, jossa vaihdetaan vaatteita ja tavaroita ilman rahaa. Tuletko mukaan?",
-    "previewJoin": "Kirjaudu sisään tai luo tili, niin voit ilmoittautua ja nähdä tarkan osoitteen. Se on maksutonta."
+    "previewJoin": "Kirjaudu sisään tai luo tili, niin voit ilmoittautua ja nähdä tarkan osoitteen. Se on maksutonta.",
+    "searchLabel": "Kaupunki, kunta tai maakunta",
+    "searchButton": "Hae",
+    "nearMe": "Lähelläni",
+    "nearMeHint": "Sijaintiasi käytetään vain nyt, puhelimessasi, eikä sitä tallenneta.",
+    "nearMeError": "Emme saaneet selville, missä olet. Kirjoita kaupunkisi tai maakuntasi.",
+    "searchResults": "Badulaket haulla ”{place}”: {count}",
+    "clearSearch": "Näytä kaikki"
   },
   "Nav": {
     "label": "Päävalikko",

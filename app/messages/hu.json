@@ -244,7 +244,14 @@
     "share": "Megosztás",
     "shareCopied": "Link kimásolva. Illeszd be, ahová szeretnéd.",
     "shareText": "Egy badulake: találkozó, ahol pénz nélkül cserélünk ruhát és tárgyakat. Jössz?",
-    "previewJoin": "A jelentkezéshez és a pontos cím megtekintéséhez jelentkezz be, vagy hozz létre fiókot. Ingyenes."
+    "previewJoin": "A jelentkezéshez és a pontos cím megtekintéséhez jelentkezz be, vagy hozz létre fiókot. Ingyenes.",
+    "searchLabel": "Város, település vagy tartomány",
+    "searchButton": "Keresés",
+    "nearMe": "A közelemben",
+    "nearMeHint": "A helyzetedet csak most, a telefonodon használjuk, és nem mentjük el.",
+    "nearMeError": "Nem sikerült megállapítani, hol vagy. Írd be a városodat vagy tartományodat.",
+    "searchResults": "Badulakék itt: „{place}”: {count}",
+    "clearSearch": "Összes"
   },
   "Nav": {
     "label": "Főmenü",

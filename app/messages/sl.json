@@ -244,7 +244,14 @@
     "share": "Deli",
     "shareCopied": "Povezava je kopirana. Prilepi jo, kamor želiš.",
     "shareText": "Badulake: srečanje za izmenjavo oblačil in stvari brez denarja. Se prijaviš?",
-    "previewJoin": "Za prijavo in ogled točnega naslova se prijavi v račun ali ga ustvari. Brezplačno je."
+    "previewJoin": "Za prijavo in ogled točnega naslova se prijavi v račun ali ga ustvari. Brezplačno je.",
+    "searchLabel": "Mesto, kraj ali provinca",
+    "searchButton": "Išči",
+    "nearMe": "V moji bližini",
+    "nearMeHint": "Tvoja lokacija se uporabi samo zdaj, na tvojem telefonu, in se ne shrani.",
+    "nearMeError": "Nismo mogli ugotoviti, kje si. Vpiši svoje mesto ali provinco.",
+    "searchResults": "Badulake v kraju »{place}«: {count}",
+    "clearSearch": "Pokaži vse"
   },
   "Nav": {
     "label": "Glavni meni",

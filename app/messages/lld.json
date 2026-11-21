@@ -244,7 +244,14 @@
     "share": "Spartì",
     "shareCopied": "Link copié. Tachel ulà che te ues.",
     "shareText": "N badulake: n incunt por baraté guant y cosses zënza scioldi. Vëgnes?",
-    "previewJoin": "Por te scrí sö y vëire l'adresa precisa, va ite o fej tü conto. Al é debant."
+    "previewJoin": "Por te scrí sö y vëire l'adresa precisa, va ite o fej tü conto. Al é debant.",
+    "searchLabel": "Cité, paisc o provinzia",
+    "searchButton": "Cri",
+    "nearMe": "Dlungia de me",
+    "nearMeHint": "Tüa posiziun vëgn ma adorada śëgn, sun tü telefonin, y ne vëgn nia salvada.",
+    "nearMeError": "Ne sun nia stà bugn de savëi olache te es. Scrî tüa cité o provinzia.",
+    "searchResults": "Badulakes a «{place}»: {count}",
+    "clearSearch": "Vëire düc"
   },
   "Nav": {
     "label": "Menü prinzipal",

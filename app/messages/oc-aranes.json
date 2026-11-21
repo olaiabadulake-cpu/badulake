@@ -244,7 +244,14 @@
     "share": "Compartir",
     "shareCopied": "Ligam copiat. Pega-lo a on vulhues.",
     "shareText": "Un badulake: ua trobada entà escambiar ròba e causes sense sòs. T'i apuntes?",
-    "previewJoin": "Entà apuntar-te e veir era adreça exacta, entra o crea eth tòn compde. Ei de bades."
+    "previewJoin": "Entà apuntar-te e veir era adreça exacta, entra o crea eth tòn compde. Ei de bades.",
+    "searchLabel": "Ciutat, pòble o província",
+    "searchButton": "Cercar",
+    "nearMe": "A prèp de jo",
+    "nearMeHint": "Era tua ubicacion solet s'utilize en aguest moment, en tòn mobil, e non se guarde.",
+    "nearMeError": "Non auem pogut saber a on ès. Escriu era tua ciutat o província.",
+    "searchResults": "Badulakes en «{place}»: {count}",
+    "clearSearch": "Veder-los toti"
   },
   "Nav": {
     "label": "Menú principau",

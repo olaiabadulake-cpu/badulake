@@ -178,3 +178,6 @@ Cada entrada indica quién hizo cada cosa: **Claude** (la IA), **OlaIA** (dirige
 
 **Compartir un badulake (tarea 6.3).** Claude añade el botón «Compartir», una vista previa pública del badulake para quien recibe el enlace sin cuenta (lugar, fecha y plazas, con imagen para WhatsApp; nunca la dirección) y la vuelta al badulake después de entrar o crear la cuenta, todo sin tocar entrar ni registro (D-042). `supabase/vista_publica.sql` ejecutado por Claude en la copia y en la web real. 4 textos en las 44 lenguas.
 - **Comprobado** en el Mac contra la copia: vista previa con título, descripción e imagen y sin dirección; 404 si no existe; entrar con la cuenta inventada de Leire desde la vista previa vuelve al badulake; botón «Compartir» en castellano y euskera; `next build` sin errores.
+
+**Buscar badulakes por zona (tarea 6.2).** Claude añade a «Próximos badulakes» un buscador por ciudad, pueblo o provincia (sin tildes ni mayúsculas) y «Cerca de mí», que calcula en el propio móvil la provincia más cercana y no manda ni guarda la ubicación (D-043). 7 textos en las 44 lenguas.
+- **Comprobado** en el Mac contra la copia con la cuenta inventada de Leire (búsquedas y provincias) y el cálculo de la provincia en 10 lugares reales; queda el límite de los bordes entre provincias (Eibar sale como Bizkaia).

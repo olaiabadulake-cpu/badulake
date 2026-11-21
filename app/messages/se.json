@@ -244,7 +244,14 @@
     "share": "Juoge",
     "shareCopied": "Liŋka lea máŋgejuvvon. Bija dan gosa háliidat.",
     "shareText": "Badulake: deaivvadeapmi gos lonuhit biktasiid ja diŋggaid ruđaid haga. Boađát go?",
-    "previewJoin": "Vai sáhtát čálihit ja oaidnit dárkilis čujuhusa, čálil sisa dahje ráhkat kontu. Dat lea nuvttá."
+    "previewJoin": "Vai sáhtát čálihit ja oaidnit dárkilis čujuhusa, čálil sisa dahje ráhkat kontu. Dat lea nuvttá.",
+    "searchLabel": "Gávpot, gilli dahje provinsa",
+    "searchButton": "Oza",
+    "nearMe": "Mu lahka",
+    "nearMeHint": "Du sajádat geavahuvvo dušše dál, du telefovnnas, iige dat vurkejuvvo.",
+    "nearMeError": "Eat sáhttán diehtit gos don leat. Čále iežat gávpoga dahje provinssa.",
+    "searchResults": "Badulaket «{place}»: {count}",
+    "clearSearch": "Geahča buot"
   },
   "Nav": {
     "label": "Váldofállu",

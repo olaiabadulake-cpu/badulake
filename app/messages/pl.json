@@ -244,7 +244,14 @@
     "share": "Udostępnij",
     "shareCopied": "Link skopiowany. Wklej go, gdzie chcesz.",
     "shareText": "Badulake: spotkanie, na którym bez pieniędzy wymienia się ubrania i rzeczy. Zapiszesz się?",
-    "previewJoin": "Aby się zapisać i zobaczyć dokładny adres, zaloguj się lub załóż konto. To nic nie kosztuje."
+    "previewJoin": "Aby się zapisać i zobaczyć dokładny adres, zaloguj się lub załóż konto. To nic nie kosztuje.",
+    "searchLabel": "Miasto, miejscowość lub prowincja",
+    "searchButton": "Szukaj",
+    "nearMe": "W pobliżu",
+    "nearMeHint": "Twoja lokalizacja jest używana tylko teraz, w twoim telefonie, i nie jest zapisywana.",
+    "nearMeError": "Nie udało się ustalić, gdzie jesteś. Wpisz swoje miasto lub prowincję.",
+    "searchResults": "Badulake w miejscu „{place}”: {count}",
+    "clearSearch": "Pokaż wszystkie"
   },
   "Nav": {
     "label": "Menu główne",

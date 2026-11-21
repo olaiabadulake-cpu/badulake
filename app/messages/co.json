@@ -244,7 +244,14 @@
     "share": "Sparte",
     "shareCopied": "Ligame cupiatu. Incullalu induve tù voli.",
     "shareText": "Un badulake: un scontru per scambià robba è oggetti senza soldi. T'iscrivi?",
-    "previewJoin": "Per iscriveti è vede l'indirizzu precisu, entre o crea u to contu. Hè gratisu."
+    "previewJoin": "Per iscriveti è vede l'indirizzu precisu, entre o crea u to contu. Hè gratisu.",
+    "searchLabel": "Cità, paese o pruvincia",
+    "searchButton": "Circà",
+    "nearMe": "Vicinu à mè",
+    "nearMeHint": "U to locu ùn hè adupratu ch'è avà, nant'à u to telefuninu, è ùn hè micca salvatu.",
+    "nearMeError": "Ùn avemu pussutu sapè induve sì. Scrivi a to cità o pruvincia.",
+    "searchResults": "Badulakes in «{place}»: {count}",
+    "clearSearch": "Vede li tutti"
   },
   "Nav": {
     "label": "Menù principale",

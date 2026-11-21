@@ -244,7 +244,14 @@
     "share": "Partager",
     "shareCopied": "Lien copié. Collez-le où vous voulez.",
     "shareText": "Un badulake : une rencontre pour échanger vêtements et objets, sans argent. Vous venez ?",
-    "previewJoin": "Pour vous inscrire et voir l'adresse exacte, connectez-vous ou créez votre compte. C'est gratuit."
+    "previewJoin": "Pour vous inscrire et voir l'adresse exacte, connectez-vous ou créez votre compte. C'est gratuit.",
+    "searchLabel": "Ville, village ou province",
+    "searchButton": "Rechercher",
+    "nearMe": "Près de moi",
+    "nearMeHint": "Votre position n'est utilisée qu'à ce moment, sur votre téléphone, et n'est pas enregistrée.",
+    "nearMeError": "Impossible de savoir où vous êtes. Écrivez votre ville ou votre province.",
+    "searchResults": "Badulakes à « {place} » : {count}",
+    "clearSearch": "Tout voir"
   },
   "Nav": {
     "label": "Menu principal",

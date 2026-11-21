@@ -244,7 +244,14 @@
     "share": "Distribuie",
     "shareCopied": "Link copiat. Lipește-l unde vrei.",
     "shareText": "Un badulake: o întâlnire la care se schimbă haine și lucruri fără bani. Te înscrii?",
-    "previewJoin": "Ca să te înscrii și să vezi adresa exactă, intră în cont sau creează-ți unul. E gratuit."
+    "previewJoin": "Ca să te înscrii și să vezi adresa exactă, intră în cont sau creează-ți unul. E gratuit.",
+    "searchLabel": "Oraș, localitate sau provincie",
+    "searchButton": "Caută",
+    "nearMe": "Lângă mine",
+    "nearMeHint": "Locația ta e folosită doar acum, pe telefonul tău, și nu se salvează.",
+    "nearMeError": "Nu am putut afla unde ești. Scrie orașul sau provincia ta.",
+    "searchResults": "Badulake în „{place}”: {count}",
+    "clearSearch": "Vezi toate"
   },
   "Nav": {
     "label": "Meniu principal",

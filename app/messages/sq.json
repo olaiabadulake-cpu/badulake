@@ -244,7 +244,14 @@
     "share": "Ndaje",
     "shareCopied": "Lidhja u kopjua. Ngjiteni ku të doni.",
     "shareText": "Një badulake: një takim për të shkëmbyer rroba dhe sende pa para. Regjistroheni?",
-    "previewJoin": "Për t'u regjistruar dhe për të parë adresën e saktë, hyni ose krijoni llogarinë tuaj. Është falas."
+    "previewJoin": "Për t'u regjistruar dhe për të parë adresën e saktë, hyni ose krijoni llogarinë tuaj. Është falas.",
+    "searchLabel": "Qytet, fshat ose krahinë",
+    "searchButton": "Kërko",
+    "nearMe": "Pranë meje",
+    "nearMeHint": "Vendndodhja juaj përdoret vetëm tani, në telefonin tuaj, dhe nuk ruhet.",
+    "nearMeError": "Nuk arritëm ta mësojmë ku jeni. Shkruani qytetin ose krahinën tuaj.",
+    "searchResults": "Badulake në «{place}»: {count}",
+    "clearSearch": "Shikoji të gjitha"
   },
   "Nav": {
     "label": "Menuja kryesore",

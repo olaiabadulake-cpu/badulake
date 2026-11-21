@@ -244,7 +244,14 @@
     "share": "Partejar",
     "shareCopied": "Ligam copiat. Pega-lo ont vòles.",
     "shareText": "Un badulake : un rescontre per escambiar vestits e causas sens argent. T'i marcas ?",
-    "previewJoin": "Per te marcar e veire l'adreça exacta, connècta-te o crea ton compte. Es gratuit."
+    "previewJoin": "Per te marcar e veire l'adreça exacta, connècta-te o crea ton compte. Es gratuit.",
+    "searchLabel": "Vila, vilatge o província",
+    "searchButton": "Cercar",
+    "nearMe": "Prèp de ieu",
+    "nearMeHint": "Ta posicion es pas utilizada qu'ara, sus ton telefòn, e es pas enregistrada.",
+    "nearMeError": "Avèm pas pogut saber ont siás. Escriu ta vila o ta província.",
+    "searchResults": "Badulakes a « {place} » : {count}",
+    "clearSearch": "Los veire totes"
   },
   "Nav": {
     "label": "Menut principal",

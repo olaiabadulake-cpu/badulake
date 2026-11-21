@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 // Cabeceras de seguridad (Tarea 8, D-023). Detalle en docs/seguridad.md.
+// La ubicación solo la puede pedir la propia web, para «Cerca de mí» (Tarea 6.2, D-043).
 const isDev = process.env.NODE_ENV !== "production";
 // La barra de comentarios de Vercel solo existe en las vistas previas.
 const vercelLive = process.env.VERCEL_ENV === "preview" ? " https://vercel.live" : "";
@@ -31,7 +32,7 @@ const securityHeaders = [
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
   // Nadie puede meter Badulake dentro de otra web (para engañar con clics).
   { key: "X-Frame-Options", value: "DENY" },
-  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), browsing-topics=()" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(self), browsing-topics=()" },
 ];
 
 // Copia de pruebas (Tarea 22, D-035): además de la etiqueta, la cabecera pide a los buscadores que la ignoren.

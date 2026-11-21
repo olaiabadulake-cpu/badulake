@@ -244,7 +244,14 @@
     "share": "Rannañ",
     "shareCopied": "Liamm eilet. Pegit anezhañ e-lec'h ma karit.",
     "shareText": "Ur badulake: un emgav evit eskemm dilhad ha traoù hep arc'hant. Dont a rit?",
-    "previewJoin": "Evit en em enskrivañ ha gwelet ar chomlec'h resis, kevreit pe krouit ho kont. Digoust eo."
+    "previewJoin": "Evit en em enskrivañ ha gwelet ar chomlec'h resis, kevreit pe krouit ho kont. Digoust eo.",
+    "searchLabel": "Kêr, kumun pe departamant",
+    "searchButton": "Klask",
+    "nearMe": "E-kichen din",
+    "nearMeHint": "Ho lec'hiadur n'eo implijet nemet bremañ, war ho pellgomzer, ha n'eo ket enrollet.",
+    "nearMeError": "N'hon eus ket gallet gouzout pelec'h emaoc'h. Skrivit ho kêr pe ho proviñs.",
+    "searchResults": "Badulakes e «{place}»: {count}",
+    "clearSearch": "Gwelet an holl"
   },
   "Nav": {
     "label": "Lañser pennañ",

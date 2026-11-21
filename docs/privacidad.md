@@ -128,6 +128,10 @@ No confundir con la lista de espera del lanzamiento (2.1), que guarda correos: e
 | **Cuánto tiempo** | **1 día después del badulake**, igual que la dirección exacta (función `borrar_dia_caducado()`, Supabase Cron a las 03:20 UTC). Se borra también si se borra la cuenta o el badulake. |
 | **Riesgo a valorar** | El nombre escrito a mano podría ser el real de otra persona: es un dato que apunta quien organiza, sin que la persona lo introduzca. Mitigación: solo vale ese día, 30 letras, se puede dejar vacío (sale «Persona 3») y se borra en 1 día. |
 
+### 2.7 «Cerca de mí» (Tarea 6.2, D-043)
+
+Al pulsar «Cerca de mí», el navegador pide permiso para la ubicación una sola vez. El móvil calcula la provincia más cercana y solo manda su código (por ejemplo, «bizkaia») para filtrar la lista. **La ubicación no sale del móvil y no se guarda en ningún sitio.** No es un tratamiento de la ubicación por parte de Badulake; se explica para que la Asesoría lo confirme.
+
 ## 3. Dónde se guarda y quién interviene (encargados del tratamiento)
 
 | Proveedor | Qué hace | Dónde | Notas para la Asesoría |
@@ -205,8 +209,8 @@ Ver [seguridad.md](seguridad.md): reglas por filas en todas las tablas, 48 de 48
 4. ¿Os parecen bien los plazos de conservación (apartado 5)? ¿Qué hacer con las cuentas que no se usan?
 5. ¿Hace falta una evaluación de impacto (EIPD)? Se guardan direcciones de casas particulares, aunque se borran al día siguiente.
 6. El texto provisional de `/privacidad` está escrito en lenguaje llano: podéis usarlo como base.
-8. **Compartir (D-042):** ¿os parece bien que la vista previa pública enseñe lugar, fecha y plazas a quien tenga el enlace, sin cuenta? ¿La cookie técnica `badulake-volver` (un día, recuerda qué badulake se quería ver) entra en la política de cookies como técnica?
 7. **Entrar con Google (D-039):** ¿Google es responsable independiente del inicio de sesión o hay que tratarlo de otra forma? ¿Cómo se explica en el aviso que Google sabe que la persona usa Badulake? ¿Basta con lo que ya dice el borrador de `/privacidad` (apartados 2 y 5)?
+8. **Compartir (D-042):** ¿os parece bien que la vista previa pública enseñe lugar, fecha y plazas a quien tenga el enlace, sin cuenta? ¿La cookie técnica `badulake-volver` (un día, recuerda qué badulake se quería ver) entra en la política de cookies como técnica?
 
 ## 10. La página `/privacidad`
 

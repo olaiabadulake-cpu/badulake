@@ -244,7 +244,14 @@
     "share": "Co-roinn",
     "shareCopied": "Chaidh an ceangal a lethbhreacadh. Cuir ann e far an togair thu.",
     "shareText": "Badulake: coinneamh airson aodach is rudan a mhalairt gun airgead. An tig thu?",
-    "previewJoin": "Airson clàradh is an dearbh sheòladh fhaicinn, clàraich a-steach no cruthaich cunntas. Tha e an-asgaidh."
+    "previewJoin": "Airson clàradh is an dearbh sheòladh fhaicinn, clàraich a-steach no cruthaich cunntas. Tha e an-asgaidh.",
+    "searchLabel": "Baile mòr, baile no roinn",
+    "searchButton": "Lorg",
+    "nearMe": "Faisg orm",
+    "nearMeHint": "Cha chleachdar d' ionad ach an-dràsta, air an fhòn agad, is cha tèid a shàbhaladh.",
+    "nearMeError": "Cha b' urrainn dhuinn faighinn a-mach càit a bheil thu. Sgrìobh am baile no an roinn agad.",
+    "searchResults": "Badulakes an “{place}”: {count}",
+    "clearSearch": "Seall na h-uile"
   },
   "Nav": {
     "label": "Prìomh chlàr-taice",

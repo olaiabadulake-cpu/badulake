@@ -244,7 +244,14 @@
     "share": "Rhannu",
     "shareCopied": "Dolen wedi'i chopïo. Gludia hi lle bynnag ti eisiau.",
     "shareText": "Badulake: cyfarfod i gyfnewid dillad a phethau heb arian. Wyt ti am ddod?",
-    "previewJoin": "I gofrestru a gweld yr union gyfeiriad, mewngofnoda neu crea gyfrif. Mae am ddim."
+    "previewJoin": "I gofrestru a gweld yr union gyfeiriad, mewngofnoda neu crea gyfrif. Mae am ddim.",
+    "searchLabel": "Dinas, tref neu dalaith",
+    "searchButton": "Chwilio",
+    "nearMe": "Yn agos ataf i",
+    "nearMeHint": "Dim ond nawr y caiff dy leoliad ei ddefnyddio, ar dy ffôn, a dydy e ddim yn cael ei gadw.",
+    "nearMeError": "Doedd dim modd gwybod ble rwyt ti. Ysgrifenna dy ddinas neu dy dalaith.",
+    "searchResults": "Badulakes yn “{place}”: {count}",
+    "clearSearch": "Gweld y cyfan"
   },
   "Nav": {
     "label": "Prif ddewislen",

@@ -405,3 +405,16 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Para la Asesoría** ([privacidad.md](privacidad.md) §2.3 y §9): la vista previa enseña a cualquiera con el enlace el título (barrio, ciudad y provincia), la fecha y las plazas. La cookie `badulake-volver` es técnica (recuerda lo que la persona ha pedido).
 - **Por qué:** los badulakes se van a mover por WhatsApp entre vecinas; sin vista previa y sin volver al badulake, cada enlace compartido se perdía en «Entrar».
 - **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 6.3)
+
+### D-043 · Buscar badulakes por zona y «Cerca de mí» sin guardar la ubicación
+- **Fecha:** 21/11/2026
+- **Alternativas:** guardar ciudad y provincia en columnas aparte y filtrar en la base de datos; mapa (descartado, D-014); «Cerca de mí» con coordenadas de cada badulake (habría que geolocalizar direcciones de casas) o mandando la ubicación al servidor.
+- **Decisión** (Tarea 6.2 de [auditoria.md](auditoria.md); `app/src/lib/provincias.ts`, `app/src/app/[locale]/badulakes/page.tsx` y `near-me.tsx`):
+  - En «Próximos badulakes», un buscador **«Ciudad, pueblo o provincia»** filtra por el título (que es el lugar, D-037) y el barrio, **sin tildes ni mayúsculas** («cornella» encuentra «Cornellà»). Dice cuántos hay («Badulakes en «Sant Boi»: 2») y tiene «Ver todos». No hace falta tocar la base de datos: hay pocos badulakes y el filtro se hace en el servidor sobre los que la persona ya puede ver.
+  - **«Cerca de mí»:** el navegador pide la ubicación **una sola vez y en ese momento**; el propio móvil calcula la **provincia más cercana** con una tabla de las 52 capitales y solo pone su código en la dirección (`?prov=bizkaia`). **La ubicación no se manda a ningún sitio ni se guarda.** La provincia busca todos sus nombres (Bizkaia o Vizcaya, Girona o Gerona…). Si falla o se deniega: «No hemos podido saber dónde estás. Escribe tu ciudad o provincia».
+  - **Límite conocido:** al estar cerca del borde de dos provincias puede elegir la vecina (Eibar sale como Bizkaia, porque Bilbao está más cerca que Donostia). Se puede mejorar añadiendo más puntos por provincia.
+  - **Cabecera:** `Permissions-Policy` pasa de `geolocation=()` a `geolocation=(self)`: solo la propia web puede pedir la ubicación.
+  - 7 textos nuevos en las 44 lenguas.
+  - **Probado** en el Mac contra la copia con la cuenta inventada de Leire: «sant boi» 2, «CORNELLA» 1, «olmo» 1, provincia Bizkaia 1, Madrid 0; la provincia más cercana, bien en Sant Boi, Bilbao, Getxo, Donostia, Irun, Vitoria, Madrid, Vigo y Palma.
+- **Por qué:** con badulakes en varias ciudades hace falta encontrar los de tu zona; la ubicación es un dato delicado y no se necesita guardarla ni mandarla para esto.
+- **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 6.2)

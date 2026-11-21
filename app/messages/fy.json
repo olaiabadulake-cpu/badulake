@@ -244,7 +244,14 @@
     "share": "Diele",
     "shareCopied": "Keppeling kopiearre. Plak him wêr'tsto wolst.",
     "shareText": "In badulake: in gearkomste om klean en guod sûnder jild te ruiljen. Dochsto mei?",
-    "previewJoin": "Meld dy oan of meitsje in akkount om dy op te jaan en it krekte adres te sjen. It is fergees."
+    "previewJoin": "Meld dy oan of meitsje in akkount om dy op te jaan en it krekte adres te sjen. It is fergees.",
+    "searchLabel": "Stêd, doarp of provinsje",
+    "searchButton": "Sykje",
+    "nearMe": "By my yn 'e buert",
+    "nearMeHint": "Dyn lokaasje wurdt allinnich no brûkt, op dyn telefoan, en wurdt net bewarre.",
+    "nearMeError": "Wy koene net útfine wêr'tsto bist. Typ dyn stêd of provinsje.",
+    "searchResults": "Badulakes yn ‘{place}’: {count}",
+    "clearSearch": "Alles sjen"
   },
   "Nav": {
     "label": "Haadmenu",

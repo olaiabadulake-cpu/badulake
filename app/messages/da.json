@@ -244,7 +244,14 @@
     "share": "Del",
     "shareCopied": "Linket er kopieret. Indsæt det, hvor du vil.",
     "shareText": "En badulake: et træf, hvor man bytter tøj og ting uden penge. Er du med?",
-    "previewJoin": "Log ind eller opret en konto for at tilmelde dig og se den præcise adresse. Det er gratis."
+    "previewJoin": "Log ind eller opret en konto for at tilmelde dig og se den præcise adresse. Det er gratis.",
+    "searchLabel": "By eller provins",
+    "searchButton": "Søg",
+    "nearMe": "I nærheden",
+    "nearMeHint": "Din placering bruges kun lige nu, på din mobil, og gemmes ikke.",
+    "nearMeError": "Vi kunne ikke finde ud af, hvor du er. Skriv din by eller provins.",
+    "searchResults": "Badulakes i »{place}«: {count}",
+    "clearSearch": "Se alle"
   },
   "Nav": {
     "label": "Hovedmenu",

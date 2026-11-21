@@ -244,7 +244,14 @@
     "share": "Zdieľať",
     "shareCopied": "Odkaz skopírovaný. Vlož ho, kam chceš.",
     "shareText": "Badulake: stretnutie, kde sa bez peňazí vymieňa oblečenie a veci. Prihlásiš sa?",
-    "previewJoin": "Ak sa chceš prihlásiť a vidieť presnú adresu, prihlás sa do účtu alebo si ho vytvor. Je to zadarmo."
+    "previewJoin": "Ak sa chceš prihlásiť a vidieť presnú adresu, prihlás sa do účtu alebo si ho vytvor. Je to zadarmo.",
+    "searchLabel": "Mesto, obec alebo provincia",
+    "searchButton": "Hľadať",
+    "nearMe": "V mojom okolí",
+    "nearMeHint": "Tvoja poloha sa použije len teraz, v tvojom telefóne, a neukladá sa.",
+    "nearMeError": "Nepodarilo sa zistiť, kde si. Napíš svoje mesto alebo provinciu.",
+    "searchResults": "Badulake v mieste „{place}“: {count}",
+    "clearSearch": "Zobraziť všetky"
   },
   "Nav": {
     "label": "Hlavné menu",

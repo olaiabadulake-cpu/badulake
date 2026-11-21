@@ -275,7 +275,14 @@
     "share": "Partekatu",
     "shareCopied": "Esteka kopiatuta. Itsatsi nahi duzun lekuan.",
     "shareText": "Badulake bat: arropa eta gauzak dirurik gabe trukatzeko topaketa. Izena emango duzu?",
-    "previewJoin": "Izena emateko eta helbide zehatza ikusteko, sartu edo sortu zure kontua. Doan da."
+    "previewJoin": "Izena emateko eta helbide zehatza ikusteko, sartu edo sortu zure kontua. Doan da.",
+    "searchLabel": "Hiria, herria edo probintzia",
+    "searchButton": "Bilatu",
+    "nearMe": "Nire inguruan",
+    "nearMeHint": "Zure kokapena une honetan bakarrik erabiltzen da, zure mugikorrean, eta ez da gordetzen.",
+    "nearMeError": "Ezin izan dugu jakin non zauden. Idatzi zure hiria edo probintzia.",
+    "searchResults": "Badulakeak «{place}» inguruan: {count}",
+    "clearSearch": "Denak ikusi"
   },
   "Nav": {
     "label": "Menu nagusia",

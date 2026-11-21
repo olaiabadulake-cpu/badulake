@@ -244,7 +244,14 @@
     "share": "Partilhar",
     "shareCopied": "Ligação copiada. Cola-a onde quiseres.",
     "shareText": "Um badulake: um encontro para trocar roupa e coisas sem dinheiro. Inscreves-te?",
-    "previewJoin": "Para te inscreveres e veres a morada exata, entra ou cria a tua conta. É grátis."
+    "previewJoin": "Para te inscreveres e veres a morada exata, entra ou cria a tua conta. É grátis.",
+    "searchLabel": "Cidade, localidade ou província",
+    "searchButton": "Procurar",
+    "nearMe": "Perto de mim",
+    "nearMeHint": "A tua localização só é usada neste momento, no teu telemóvel, e não fica guardada.",
+    "nearMeError": "Não conseguimos saber onde estás. Escreve a tua cidade ou província.",
+    "searchResults": "Badulakes em «{place}»: {count}",
+    "clearSearch": "Ver todos"
   },
   "Nav": {
     "label": "Menu principal",
