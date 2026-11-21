@@ -179,6 +179,8 @@ Al pulsar «Cerca de mí», el navegador pide permiso para la ubicación una sol
 
 **Pendiente:** el correo propio (Tarea 10) añadirá un proveedor de envío de correos; habrá que sumarlo aquí.
 
+**Sentry (Tarea 8.4, D-051), pendiente de activar:** si se activa, recibirá los fallos técnicos de la web (qué falló y en qué página, sin la parte `?…`), sin IP, sin cookies, sin usuario y con los correos tapados. Datos en la UE (Frankfurt). Habrá que añadirlo como encargado.
+
 ## 4. Minimización: qué se revisó en esta tarea
 
 | Qué | Cómo estaba | Qué se hizo |
@@ -243,6 +245,7 @@ Ver [seguridad.md](seguridad.md): reglas por filas en todas las tablas, 48 de 48
 5. ¿Hace falta una evaluación de impacto (EIPD)? Se guardan direcciones de casas particulares, aunque se borran al día siguiente.
 6. El texto provisional de `/privacidad` está escrito en lenguaje llano: podéis usarlo como base.
 7. **Entrar con Google (D-039):** ¿Google es responsable independiente del inicio de sesión o hay que tratarlo de otra forma? ¿Cómo se explica en el aviso que Google sabe que la persona usa Badulake? ¿Basta con lo que ya dice el borrador de `/privacidad` (apartados 2 y 5)?
+10. **Sentry (D-051):** ¿vale con su acuerdo de tratamiento estándar (plan gratuito) y datos en la UE, con lo que ya se limpia antes de enviar?
 9. **Avisos en el móvil (D-050):** hoy solo en la copia de pruebas. ¿Se puede activar en la web real con el consentimiento del botón y una línea en el aviso de privacidad sobre los servicios de avisos de Google, Apple y Mozilla (§2.8)?
 8. **Compartir (D-042):** ¿os parece bien que la vista previa pública enseñe lugar, fecha y plazas a quien tenga el enlace, sin cuenta? ¿La cookie técnica `badulake-volver` (un día, recuerda qué badulake se quería ver) entra en la política de cookies como técnica?
 

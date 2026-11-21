@@ -502,3 +502,15 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - **Falta (OlaIA, por la mañana):** poner las tres variables en Vercel de la copia y probar con su móvil, aceptando el permiso de avisos ([copia-pruebas.md](copia-pruebas.md), «Avisos en el móvil»).
 - **Por qué:** sin correo propio todavía, el aviso del día antes y el de «tienes plaza» son lo que más evita que la gente se quede sin ir o pierda su plaza.
 - **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría; solo en la copia) · **Hizo:** Claude (Tarea 16.1)
+
+### D-051 · Aviso automático de errores con Sentry (preparado; falta crear la cuenta)
+- **Fecha:** 21/11/2026
+- **Alternativas:** mirar los registros de Vercel a mano (se pierden y nadie avisa); otros servicios (Better Stack, Highlight…).
+- **Decisión** (Tarea 8.4 de [auditoria.md](auditoria.md); estaba en los requisitos técnicos y no se hizo):
+  - **Sentry, plan gratuito (Developer), región de datos de la UE (Frankfurt).** Avisa al equipo cuando la web falla, en el servidor o en el móvil de alguien.
+  - **Preparado y apagado:** el código (`@sentry/nextjs`, `src/instrumentation.ts`, `src/instrumentation-client.ts`, `src/lib/sentry-opciones.ts`) no hace nada mientras no existan `SENTRY_DSN` y `NEXT_PUBLIC_SENTRY_DSN`. **La cuenta no la ha creado Claude** (crear cuentas lo hace OlaIA): pasos en [herramientas.md](herramientas.md) → «Sentry».
+  - **Privacidad:** sin IP, sin cookies, sin cabeceras, sin la parte `?…` de las direcciones, sin seguimiento de rendimiento, sin grabaciones de pantalla y sin rastro de pasos; cualquier correo que aparezca en un error se cambia por «[correo]» antes de salir. La política de contenido solo deja hablar con el servidor de Sentry cuando hay DSN.
+  - **Probado:** la limpieza con un error de ejemplo (sale sin usuario, IP, cookies ni correos); `next build` sin DSN; la web arrancada con un DSN inventado responde normal.
+- **Para la Asesoría** ([privacidad.md](privacidad.md) §3 y §9): Sentry sería un encargado de tratamiento nuevo (Functional Software Inc., EE. UU.; datos en la UE).
+- **Por qué:** antes de Sant Boi hay que enterarse de los fallos antes que las vecinas.
+- **Propuso:** requisitos técnicos v2 y auditoría · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 8.4), **falta:** OlaIA crea la cuenta

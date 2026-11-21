@@ -23,3 +23,13 @@
 | [Tradutur](https://tradutur-informatik.uibk.ac.at) (Universidad de Innsbruck) | Traducir al ladino | Día 1 |
 
 Las herramientas para programar la app se añaden aquí a medida que las elegimos.
+
+## Sentry (Tarea 8.4, D-051) — PENDIENTE: crear la cuenta (OlaIA)
+
+El código ya está en la web y no hace nada hasta que existan las variables. Pasos para OlaIA (unos 10 minutos):
+
+1. Entrar en https://sentry.io/signup/ con la cuenta de Google del proyecto (la que tiene la verificación en dos pasos). **Plan:** Developer (gratis). **Data storage location: European Union (Frankfurt)** — se elige al crear la organización y luego no se puede cambiar.
+2. Crear un proyecto de tipo **Next.js** llamado `badulake`. En la pantalla de instalación no hay que hacer nada: solo copiar el **DSN** (empieza por `https://` y acaba en `.ingest.de.sentry.io/…`).
+3. En Sentry → Settings → Security & Privacy: activar **Data Scrubber** y **Prevent Storing of IP Addresses**.
+4. En Vercel, en **badulake-pruebas** (y, cuando se quiera, en la real): Settings → Environment Variables → añadir `SENTRY_DSN` y `NEXT_PUBLIC_SENTRY_DSN`, las dos con el DSN. Después, Deployments → «Redeploy».
+5. Avisar a Claude para comprobar que llega un error de prueba y apuntarlo en la hoja de costes (pestañas Costes: 0 €; Cuentas y accesos: dónde está guardado el acceso).

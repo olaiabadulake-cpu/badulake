@@ -7,6 +7,14 @@ const isDev = process.env.NODE_ENV !== "production";
 // La barra de comentarios de Vercel solo existe en las vistas previas.
 const vercelLive = process.env.VERCEL_ENV === "preview" ? " https://vercel.live" : "";
 
+// Sentry (Tarea 8.4, D-051): si hay DSN, el navegador puede mandar errores a su servidor de la UE.
+let sentryHost = "";
+try {
+  sentryHost = process.env.NEXT_PUBLIC_SENTRY_DSN ? ` https://${new URL(process.env.NEXT_PUBLIC_SENTRY_DSN).host}` : "";
+} catch {
+  sentryHost = "";
+}
+
 // Política de contenido: la web solo carga cosas de sí misma. Supabase se llama desde el
 // servidor, nunca desde el navegador. Next.js necesita 'unsafe-inline' para sus scripts.
 const csp = [
@@ -15,7 +23,7 @@ const csp = [
   `style-src 'self' 'unsafe-inline'${vercelLive}`,
   `img-src 'self' data: blob:${vercelLive}`,
   `font-src 'self' data:${vercelLive}`,
-  `connect-src 'self'${isDev ? " ws:" : ""}${vercelLive}`,
+  `connect-src 'self'${isDev ? " ws:" : ""}${vercelLive}${sentryHost}`,
   `frame-src 'none'${vercelLive}`,
   "object-src 'none'",
   "base-uri 'self'",
