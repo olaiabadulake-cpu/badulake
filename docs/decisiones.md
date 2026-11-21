@@ -499,7 +499,8 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - **Solo en la copia de pruebas:** el código solo se enciende si es la copia (`pruebas.ts`) y además `AVISOS_PUSH=1` y las claves. `avisos_push.sql` **no se ha ejecutado en la base de datos real**. Para la real hará falta el visto bueno de la Asesoría ([privacidad.md](privacidad.md) §2.8 y §9).
   - 14 textos en las 44 lenguas.
   - **Probado:** en la base de datos de la copia, 8 comprobaciones (deshechas): entrar desde la espera y cancelar ponen el aviso en la cola; con la ficha se recogen una sola vez; una ficha inventada no da nada; sin cuenta no se lee ni la cola ni las suscripciones; un móvil que ya no existe se borra. Con la web del Mac en modo publicación y una suscripción falsa: la ruta recoge el aviso, lo intenta enviar y borra la suscripción falsa. Al probar salieron y se arreglaron dos fallos de la función que recoge los avisos.
-  - **Falta (OlaIA, por la mañana):** poner las tres variables en Vercel de la copia y probar con su móvil, aceptando el permiso de avisos ([copia-pruebas.md](copia-pruebas.md), «Avisos en el móvil»).
+  - **Hecho el 21/11 a las 16:16:** las tres variables están en Vercel de la copia (solo Production; las puso Claude con la terminal después de que OlaIA confirmara la entrada en Vercel) y la copia se volvió a publicar. La ruta responde en la copia y da 404 en la web real.
+  - **Falta (OlaIA):** probar con su móvil, aceptando el permiso de avisos ([copia-pruebas.md](copia-pruebas.md), «Avisos en el móvil»).
 - **Por qué:** sin correo propio todavía, el aviso del día antes y el de «tienes plaza» son lo que más evita que la gente se quede sin ir o pierda su plaza.
 - **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría; solo en la copia) · **Hizo:** Claude (Tarea 16.1)
 

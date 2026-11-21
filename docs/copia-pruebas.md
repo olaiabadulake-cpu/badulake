@@ -85,6 +85,8 @@ Los fallos están en el código de `main`, pero `app/src/lib/pruebas.ts` solo lo
 
 ## Avisos en el móvil (Tarea 16.1, D-050) — pasos para OlaIA
 
+> **21/11, 16:16:** los pasos 1 a 3 ya están hechos (Claude con la terminal de Vercel). Solo quedan los pasos 4 y 5.
+
 Solo en la copia. La base de datos de la copia ya está preparada (`supabase/avisos_push.sql`). Falta encender la web:
 
 1. Abrir en el Mac el archivo `app/.env.pruebas` (no está en el repositorio). Al final hay tres líneas: `AVISOS_PUSH`, `VAPID_PUBLIC_KEY` y `VAPID_PRIVATE_KEY`.
