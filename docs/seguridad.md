@@ -117,7 +117,7 @@ Para abrir las cuentas, todo a la vez:
 3. Añadir la dirección de la web a las direcciones permitidas de Supabase (URL Configuration) y comprobar que el correo propio (Tarea 10) envía el enlace de verificación.
 4. Que estén publicados los textos legales (Tareas 9 y 12: privacidad, aviso legal, condiciones y cookies, borradores en [legal/](legal/README.md)): sustituir el borrador provisional de `/privacidad` (clave `Privacy` de `app/messages/*.json`) por el texto definitivo de la Asesoría Jurídica, con el correo para ejercer los derechos, y quitar el recuadro «Borrador provisional».
 5. Comprobar en Supabase (Integrations → Cron) que la tarea `borrar-datos-caducados` sigue activa y se ha ejecutado bien la última noche.
-6. Comprobar que la parte del servidor sigue en Frankfurt: la cabecera `x-vercel-id` de `/api/hora` debe contener `fra1` (en la web real esa ruta responde 404 desde la Tarea 8.3, pero la cabecera sigue saliendo).
+6. Comprobar que la parte del servidor sigue en Frankfurt: la cabecera `x-vercel-id` de `/api/badulakes/x/calendario` debe contener `fra1` (`/api/hora` ya no sirve: en la web real responde 404 desde la Tarea 8.3).
 7. Si la Tarea 10 añade un proveedor de correo, sumarlo a [privacidad.md](privacidad.md) (apartado 3) y al aviso.
 8. **Dar de alta al equipo (Tarea 13):** el panel `/equipo` no deja entrar a nadie hasta que haya cuentas en la tabla `equipo`. Con la cuenta ya creada: en Supabase (SQL Editor) `insert into public.equipo (persona) select id from auth.users where email = 'correo-de-la-persona';`. Para quitar a alguien: `delete from public.equipo where persona = '…';`. Ninguna cuenta se da de alta desde la app.
 

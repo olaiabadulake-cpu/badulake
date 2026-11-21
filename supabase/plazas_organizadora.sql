@@ -126,3 +126,8 @@ language sql stable security definer set search_path = '' as $$
   end;
 $$;
 revoke execute on function public.dia_permitido(public.badulakes) from public, anon, authenticated;
+
+-- 6. «Me interesa» (Tarea 5.3): la tabla se creó sin permisos para las cuentas (seguridad.sql hace
+-- que lo nuevo empiece sin permisos e interes.sql no los daba), así que nunca se podía guardar.
+-- Las políticas de interes.sql (cada persona solo lo suyo) y la de google.sql siguen mandando.
+grant select, insert, delete on public.interes to authenticated;
