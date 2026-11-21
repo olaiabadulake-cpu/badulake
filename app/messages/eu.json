@@ -6,7 +6,10 @@
   "Home": {
     "tagline": "Jada erabiltzen ez dituzun arropa eta gauzak trukatzeko topaketak. Dirurik gabe.",
     "coming": "Badulake 2027. urtearen hasieran helduko da. Eman izena eta abisatuko dizugu.",
-    "comingSoon": "Badulake 2027. urtearen hasieran helduko da. Laster eman ahal izango duzu izena itxaron-zerrendan."
+    "comingSoon": "Badulake 2027. urtearen hasieran helduko da. Laster eman ahal izango duzu izena itxaron-zerrendan.",
+    "impactTitle": "Orain arte",
+    "impactObjects": "Bigarren bizitza izan duten objektuak",
+    "impactBadulakes": "Egindako badulakeak"
   },
   "Waitlist": {
     "title": "Itxaron-zerrenda",

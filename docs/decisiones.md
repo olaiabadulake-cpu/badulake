@@ -455,3 +455,16 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - 1 texto nuevo en las 44 lenguas.
 - **Por qué:** el día del badulake la organizadora usa el móvil de pie y con prisa; si la cola ya se ha decidido por los objetos aportados, cambiarlos después no sería justo.
 - **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 24.2)
+
+### D-047 · Contador de impacto en la portada con los números del Modo badulake
+- **Fecha:** 21/11/2026
+- **Alternativas:** pedir a las organizadoras que apunten los kilos o las prendas a mano; guardar los datos del día más tiempo (choca con D-024).
+- **Decisión** (Tarea 15.1 de [auditoria.md](auditoria.md); `supabase/impacto.sql`, `app/src/lib/impacto.ts`):
+  - En la portada, «Lo que llevamos»: **objetos con una segunda vida** y **badulakes celebrados**. Sale solo cuando ya hay algo que contar (con 0 no aparece); en la web real hoy no sale.
+  - Los números salen de los objetos contados en el Modo badulake (D-036, solo de las personas que vinieron). Como lo del día se borra al día siguiente (D-024), cada media hora (y justo antes de ese borrado) se apuntan en la tabla `impacto` **solo dos números por badulake**: objetos y personas. Sin nombres, sin personas, sin enlace a nadie; se quedan aunque el badulake se borre. Cualquiera puede leer los **totales** (`impacto_total`), nada más.
+  - La portada los guarda en caché una hora: sigue igual de rápida.
+  - 3 textos nuevos en las 44 lenguas (sin plurales: cifra grande y etiqueta).
+  - **Copia de pruebas:** se apuntó a mano una cifra inventada para el badulake ya celebrado (Barrio del Sauce: 37 objetos, 5 personas) para poder enseñarlo.
+- **Probado:** en el Mac contra la copia, la portada en castellano, euskera e inglés (37 y 1); en la real, 0 y no sale. Las funciones corren sin error en la copia.
+- **Por qué:** enseña lo que consigue la comunidad sin pedir nada más a nadie y sin datos personales.
+- **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 15.1)

@@ -9,7 +9,10 @@
     "comingSoon": "Badulake startuje začátkem roku 2027. Už brzy se budeš moct zapsat na čekací listinu.",
     "point1": "Sejděte se v 5 až 10 lidech v nějakém prostoru ve vašem okolí.",
     "point2": "Přines, co už nepoužíváš, a odnes si, co se ti líbí.",
-    "point3": "Uvolni místo ve skříni a užij si to."
+    "point3": "Uvolni místo ve skříni a užij si to.",
+    "impactTitle": "Zatím",
+    "impactObjects": "Věci s druhým životem",
+    "impactBadulakes": "Uskutečněná badulake"
   },
   "Waitlist": {
     "title": "Čekací listina",

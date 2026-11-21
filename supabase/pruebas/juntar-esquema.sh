@@ -9,7 +9,7 @@ echo "create or replace function public.rls_auto_enable() returns void language 
 # La función de la Tarea 2 (la usa seguridad.sql); vive en app/supabase.
 echo "-- ===== hora_actual.sql ====="
 cat ../app/supabase/hora_actual.sql
-for f in lista_espera perfiles badulakes inscripciones seguridad privacidad denuncias contador interes cupo borrar_cuenta dia titulo_lugar haber_ido plazas_organizadora google vista_publica quiero_organizar dia_movil; do
+for f in lista_espera perfiles badulakes inscripciones seguridad privacidad denuncias contador interes cupo borrar_cuenta dia titulo_lugar haber_ido plazas_organizadora google vista_publica quiero_organizar dia_movil impacto; do
   # Solo los que ya están subidos al repositorio (los de tareas en marcha se añaden cuando se suban).
   git ls-files --error-unmatch "$f.sql" >/dev/null 2>&1 || { echo "-- (falta $f.sql: todavía no está en el repositorio)" ; continue; }
   echo "-- ===== $f.sql ====="

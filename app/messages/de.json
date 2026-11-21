@@ -9,7 +9,10 @@
     "comingSoon": "Badulake startet Anfang 2027. Schon bald kannst du dich in die Warteliste eintragen.",
     "point1": "Trefft euch zu fünft bis zu zehnt in einem Raum in eurer Nähe.",
     "point2": "Bring mit, was du nicht mehr brauchst, und nimm mit, was dir gefällt.",
-    "point3": "Schaff Platz im Kleiderschrank und hab Spaß dabei."
+    "point3": "Schaff Platz im Kleiderschrank und hab Spaß dabei.",
+    "impactTitle": "Bisher",
+    "impactObjects": "Sachen mit einem zweiten Leben",
+    "impactBadulakes": "Stattgefundene badulakes"
   },
   "Waitlist": {
     "title": "Warteliste",

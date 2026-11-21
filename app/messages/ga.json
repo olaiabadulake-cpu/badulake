@@ -9,7 +9,10 @@
     "comingSoon": "Beidh Badulake ag teacht go luath in 2027. Go han-luath beidh tú in ann clárú ar an liosta feithimh.",
     "point1": "Tagaigí le chéile, 5 go 10 duine, in ionad i do cheantar.",
     "point2": "Tabhair leat a bhfuil tú réidh leis agus tabhair abhaile a dtaitníonn leat.",
-    "point3": "Glan amach do vardrús agus bain sult as."
+    "point3": "Glan amach do vardrús agus bain sult as.",
+    "impactTitle": "Go dtí seo",
+    "impactObjects": "Rudaí a fuair an dara saol",
+    "impactBadulakes": "Badulakes a bhí ann"
   },
   "Waitlist": {
     "title": "Liosta feithimh",

@@ -138,6 +138,10 @@ No confundir con la lista de espera del lanzamiento (2.1), que guarda correos: e
 | **Cuánto tiempo** | **1 día después del badulake**, igual que la dirección exacta (función `borrar_dia_caducado()`, Supabase Cron a las 03:20 UTC). Se borra también si se borra la cuenta o el badulake. |
 | **Riesgo a valorar** | El nombre escrito a mano podría ser el real de otra persona: es un dato que apunta quien organiza, sin que la persona lo introduzca. Mitigación: solo vale ese día, 30 letras, se puede dejar vacío (sale «Persona 3») y se borra en 1 día. |
 
+### 2.4.3 Contador de impacto (Tarea 15.1, D-047)
+
+De lo contado en el Modo badulake se guardan, por badulake, solo **dos números** (objetos aportados y personas que vinieron), sin enlace a ninguna persona ni a la cuenta de la organizadora. No son datos personales. La portada enseña la suma de todos.
+
 ### 2.6.1 Calendario (Tarea 6.4, D-044)
 
 El archivo de calendario (`.ics`) que se descarga ya **no lleva la dirección exacta**, solo el título, el barrio y el enlace a la ficha. Así, aunque el calendario se sincronice con otros servicios, la dirección de una casa no se queda fuera de Badulake.

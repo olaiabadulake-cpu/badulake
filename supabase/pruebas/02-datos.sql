@@ -96,3 +96,6 @@ insert into public.badulakes_direccion (badulake_id, organizadora, direccion)
 select b.id, v.id, b.calle from _b b join _vecinas v on v.n = b.org where b.n = 5;
 insert into public.inscripciones (badulake_id, persona)
 select b.id, v.id from _b b join _vecinas v on b.n = 5 and v.n in (2, 5, 6, 7);
+
+-- 8. Contador de impacto (Tarea 15.1, D-047): cifra inventada del badulake ya celebrado.
+insert into public.impacto (badulake_id, objetos, personas) select id, 37, 5 from _b where n = 5;

@@ -190,3 +190,5 @@ Cada entrada indica quién hizo cada cosa: **Claude** (la IA), **OlaIA** (dirige
 - **Comprobado:** 7 pruebas en la base de datos de la copia (deshechas) y en la web del Mac con las cuentas inventadas de Unai y del equipo.
 
 **Modo badulake en el móvil (tarea 24.2).** Claude pone el turno arriba (franja fija), una tarjeta compacta por persona con los contadores en cuadrícula, la pantalla siempre encendida y el recuento bloqueado al fijar la cola, también en la base de datos (`supabase/dia_movil.sql`, ejecutado en la copia y en la real; D-046). 1 texto en las 44 lenguas.
+
+**Contador de impacto en la portada (tarea 15.1).** Claude añade a la portada «Lo que llevamos»: objetos con una segunda vida y badulakes celebrados, con los números del Modo badulake guardados solo como dos cifras por badulake (D-047). `supabase/impacto.sql` en la copia y en la real. 3 textos en las 44 lenguas. En la copia, cifra inventada para el badulake ya celebrado (37 objetos).

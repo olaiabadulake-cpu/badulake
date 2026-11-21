@@ -9,7 +9,10 @@
     "comingSoon": "Badulake saapuu alkuvuodesta 2027. Pian voit liittyä odotuslistalle.",
     "point1": "Kokoontukaa 5–10 hengen porukalla tilaan omalla alueellanne.",
     "point2": "Tuo, mitä et enää käytä, ja vie kotiin, mikä miellyttää.",
-    "point3": "Raivaa vaatekaappia ja pidä hauskaa."
+    "point3": "Raivaa vaatekaappia ja pidä hauskaa.",
+    "impactTitle": "Tähän mennessä",
+    "impactObjects": "Tavaroita, jotka saivat toisen elämän",
+    "impactBadulakes": "Pidettyjä badulakeja"
   },
   "Waitlist": {
     "title": "Odotuslista",

@@ -8,6 +8,7 @@ import type { Locale } from "@/i18n/languages";
 import { Symbol, Wordmark } from "./logo";
 import { WaitlistForm } from "./waitlist-form";
 import { WhatIs } from "./what-is";
+import { getImpacto } from "@/lib/impacto";
 
 export default async function Home({ searchParams }: PageProps<"/[locale]">) {
   const t = await getTranslations("Home");
@@ -37,6 +38,10 @@ export default async function Home({ searchParams }: PageProps<"/[locale]">) {
           <Start />
         </Suspense>
       )}
+
+      <Suspense fallback={null}>
+        <Impact />
+      </Suspense>
 
       <WhatIs />
 
@@ -72,5 +77,28 @@ async function Start() {
         <Link href="/registro" className="boton">{t("signUp")}</Link>
       )}
     </div>
+  );
+}
+
+// Contador de impacto (Tarea 15.1, D-047): solo sale cuando ya hay algo que contar.
+async function Impact() {
+  const data = await getImpacto();
+  if (!data || data.objetos === 0) return null;
+  const t = await getTranslations("Home");
+  const fmt = new Intl.NumberFormat(await contentLang());
+  return (
+    <section aria-labelledby="impacto" lang={await contentLang()} className="flex flex-col gap-3">
+      <h2 id="impacto" className="titulo-3">{t("impactTitle")}</h2>
+      <dl className="grid grid-cols-2 gap-3">
+        <div className="tarjeta !gap-1">
+          <dt className="ayuda">{t("impactObjects")}</dt>
+          <dd className="font-display text-4xl font-bold">{fmt.format(data.objetos)}</dd>
+        </div>
+        <div className="tarjeta !gap-1">
+          <dt className="ayuda">{t("impactBadulakes")}</dt>
+          <dd className="font-display text-4xl font-bold">{fmt.format(data.badulakes)}</dd>
+        </div>
+      </dl>
+    </section>
   );
 }

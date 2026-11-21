@@ -6,7 +6,10 @@
   "Home": {
     "tagline": "Quedadas para intercambiar ropa y cosas que ya no usas. Sin dinero.",
     "coming": "Badulake llega a principios de 2027. Apúntate y te avisamos.",
-    "comingSoon": "Badulake llega a principios de 2027. Muy pronto podrás apuntarte a la lista de espera."
+    "comingSoon": "Badulake llega a principios de 2027. Muy pronto podrás apuntarte a la lista de espera.",
+    "impactTitle": "Lo que llevamos",
+    "impactObjects": "Objetos con una segunda vida",
+    "impactBadulakes": "Badulakes celebrados"
   },
   "Waitlist": {
     "title": "Lista de espera",

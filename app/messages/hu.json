@@ -9,7 +9,10 @@
     "comingSoon": "A Badulake 2027 elején indul. Hamarosan feliratkozhatsz a várólistára.",
     "point1": "Gyűljetek össze 5–10 fővel egy helyiségben a környéketeken.",
     "point2": "Hozd el, amit már nem használsz, és vidd haza, ami tetszik.",
-    "point3": "Szabadítsd fel a szekrényedet, és érezd jól magad!"
+    "point3": "Szabadítsd fel a szekrényedet, és érezd jól magad!",
+    "impactTitle": "Eddig",
+    "impactObjects": "Második életet kapott tárgyak",
+    "impactBadulakes": "Megtartott badulakék"
   },
   "Waitlist": {
     "title": "Várólista",

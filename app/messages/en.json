@@ -9,7 +9,10 @@
     "comingSoon": "Badulake is coming in early 2027. You'll be able to join the waiting list very soon.",
     "point1": "Get together, 5 to 10 people, at a venue near you.",
     "point2": "Bring what you no longer use and take home what you like.",
-    "point3": "Clear out your wardrobe and have fun."
+    "point3": "Clear out your wardrobe and have fun.",
+    "impactTitle": "So far",
+    "impactObjects": "Items given a second life",
+    "impactBadulakes": "Badulakes held"
   },
   "Waitlist": {
     "title": "Waiting list",
