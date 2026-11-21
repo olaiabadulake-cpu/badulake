@@ -262,7 +262,12 @@
     "wantTitle": "Haluatko järjestää sellaisen jo aiemmin?",
     "wantText": "Jos lähelläsi ei vielä ole badulakeja, pyydä Badulake-tiimiltä, niin se harkitsee asiaa.",
     "wantButton": "Haluan järjestää",
-    "wantDone": "Valmis: Badulake-tiimi tietää, että haluat järjestää. Kun saat luvan, näet täällä lomakkeen oman badulaken luomiseen."
+    "wantDone": "Valmis: Badulake-tiimi tietää, että haluat järjestää. Kun saat luvan, näet täällä lomakkeen oman badulaken luomiseen.",
+    "bringTitle": "Mitä ottaa mukaan",
+    "bring1": "Vaatteita, kenkiä, asusteita tai muita tavaroita, joita et enää käytä – puhtaina ja hyväkuntoisina.",
+    "bring2": "Kassi sitä varten, mitä valitset.",
+    "bring3": "Ei rahaa: täällä ei osteta eikä myydä mitään.",
+    "bring4": "Jos kukaan ei ota jotain tavaraasi, voit viedä sen takaisin tai jättää lahjoitettavaksi."
   },
   "Nav": {
     "label": "Päävalikko",

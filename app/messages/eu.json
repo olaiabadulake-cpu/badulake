@@ -293,7 +293,12 @@
     "wantTitle": "Lehenago antolatu nahi duzu?",
     "wantText": "Inguruan oraindik badulakerik ez badago, eskatu Badulakeko taldeari eta aztertuko du.",
     "wantButton": "Antolatu nahi dut",
-    "wantDone": "Eginda: Badulakeko taldeak badaki antolatu nahi duzula. Baimena ematen dizunean, hemen ikusiko duzu zure badulakea sortzeko formularioa."
+    "wantDone": "Eginda: Badulakeko taldeak badaki antolatu nahi duzula. Baimena ematen dizunean, hemen ikusiko duzu zure badulakea sortzeko formularioa.",
+    "bringTitle": "Zer eraman",
+    "bring1": "Erabiltzen ez dituzun arropa, oinetakoak, osagarriak edo bestelako gauzak, garbi eta egoera onean.",
+    "bring2": "Poltsa bat, aukeratzen duzuna eramateko.",
+    "bring3": "Dirurik ez: hemen ez da ezer erosten ez saltzen.",
+    "bring4": "Zure gauzaren bat inork eramaten ez badu, berriro eraman dezakezu edo dohaintzan emateko utzi."
   },
   "Nav": {
     "label": "Menu nagusia",

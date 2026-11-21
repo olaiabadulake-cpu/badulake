@@ -262,7 +262,12 @@
     "wantTitle": "Queres organizar un antes?",
     "wantText": "Se aínda non hai badulakes preto, pídello ao equipo de Badulake e valorarao.",
     "wantButton": "Quero organizar",
-    "wantDone": "Feito: o equipo de Badulake xa sabe que queres organizar. Cando che dea permiso, aquí verás o formulario para crear o teu badulake."
+    "wantDone": "Feito: o equipo de Badulake xa sabe que queres organizar. Cando che dea permiso, aquí verás o formulario para crear o teu badulake.",
+    "bringTitle": "Que levar",
+    "bring1": "Roupa, calzado, complementos ou outras cousas que xa non uses, limpas e en bo estado.",
+    "bring2": "Unha bolsa para levar o que escollas.",
+    "bring3": "Nada de diñeiro: aquí non se compra nin se vende.",
+    "bring4": "Se algo teu non o leva ninguén, podes volver levalo ou deixalo para doar."
   },
   "Nav": {
     "label": "Menú principal",

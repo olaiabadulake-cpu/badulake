@@ -183,6 +183,15 @@ async function Details({
         ))}
       </dl>
       {joined && <AsistentesAlaVista id={b.id} />}
+      {/* Qué llevar (Tarea 7.1, D-048): la misma lista para todos los badulakes, antes de ir. */}
+      {b.estado === "publicado" && upcoming && (
+        <details className="tarjeta" open={joined || isOrganizer}>
+          <summary className="cursor-pointer font-semibold">{t("bringTitle")}</summary>
+          <ul className="mt-3 flex list-disc flex-col gap-1.5 pl-6">
+            {(["bring1", "bring2", "bring3", "bring4"] as const).map((k) => <li key={k}>{t(k)}</li>)}
+          </ul>
+        </details>
+      )}
       {isOrganizer && !cancelled && <p className="ayuda">{t("addressPrivate")}</p>}
       {b.estado === "publicado" && upcoming && !b.oculto && (
         <ShareButton title={b.titulo} text={t("shareText")} label={t("share")} copied={t("shareCopied")} />

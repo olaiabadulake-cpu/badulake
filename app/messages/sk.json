@@ -262,7 +262,12 @@
     "wantTitle": "Chceš nejaké zorganizovať skôr?",
     "wantText": "Ak vo tvojom okolí zatiaľ žiadne badulake nie je, požiadaj tím Badulake a ten to posúdi.",
     "wantButton": "Chcem organizovať",
-    "wantDone": "Hotovo: tím Badulake vie, že chceš organizovať. Keď ti dá povolenie, uvidíš tu formulár na vytvorenie vlastného badulake."
+    "wantDone": "Hotovo: tím Badulake vie, že chceš organizovať. Keď ti dá povolenie, uvidíš tu formulár na vytvorenie vlastného badulake.",
+    "bringTitle": "Čo si priniesť",
+    "bring1": "Oblečenie, obuv, doplnky alebo iné veci, ktoré už nepoužívaš – čisté a v dobrom stave.",
+    "bring2": "Tašku na to, čo si vyberieš.",
+    "bring3": "Žiadne peniaze: nič sa tu nekupuje ani nepredáva.",
+    "bring4": "Ak si nejakú tvoju vec nikto nevezme, môžeš si ju vziať späť alebo ju nechať na darovanie."
   },
   "Nav": {
     "label": "Hlavné menu",

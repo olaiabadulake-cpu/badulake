@@ -262,7 +262,12 @@
     "wantTitle": "Hoffet ti drefnu un cyn hynny?",
     "wantText": "Os nad oes badulakes yn agos eto, gofynna i dîm Badulake a byddan nhw'n ystyried y peth.",
     "wantButton": "Rwyf eisiau trefnu",
-    "wantDone": "Wedi'i wneud: mae tîm Badulake yn gwybod dy fod eisiau trefnu. Pan fyddan nhw'n rhoi caniatâd, byddi di'n gweld yma'r ffurflen i greu dy badulake."
+    "wantDone": "Wedi'i wneud: mae tîm Badulake yn gwybod dy fod eisiau trefnu. Pan fyddan nhw'n rhoi caniatâd, byddi di'n gweld yma'r ffurflen i greu dy badulake.",
+    "bringTitle": "Beth i ddod gyda thi",
+    "bring1": "Dillad, esgidiau, ategolion neu bethau eraill dwyt ti ddim yn eu defnyddio bellach, yn lân ac mewn cyflwr da.",
+    "bring2": "Bag i fynd â'r hyn rwyt ti'n ei ddewis.",
+    "bring3": "Dim arian: does dim byd yn cael ei brynu na'i werthu yma.",
+    "bring4": "Os nad oes neb yn mynd â rhywbeth sy'n perthyn i ti, gelli di fynd ag e'n ôl neu ei adael i'w roi."
   },
   "Nav": {
     "label": "Prif ddewislen",

@@ -262,7 +262,12 @@
     "wantTitle": "Voli urganizà ne unu prima?",
     "wantText": "S'ellu ùn ci hè ancu badulakes vicinu, dumandalu à a squadra di Badulake è a cunsiderà.",
     "wantButton": "Vogliu urganizà",
-    "wantDone": "Fattu: a squadra di Badulake sà chì tù voli urganizà. Quandu ti darà u permessu, quì viderai u furmulariu per creà u to badulake."
+    "wantDone": "Fattu: a squadra di Badulake sà chì tù voli urganizà. Quandu ti darà u permessu, quì viderai u furmulariu per creà u to badulake.",
+    "bringTitle": "Cosa purtà",
+    "bring1": "Robba, scarpi, accessorii o altre cose chì ùn adopri più, pulite è in bonu statu.",
+    "bring2": "Un saccu per purtà ciò chì tù sceglie.",
+    "bring3": "Nunda di soldi: quì ùn si compra nè si vende.",
+    "bring4": "S'è qualcosa di toiu ùn a piglia nimu, a poi ripiglià o lasciala per rigalalla."
   },
   "Nav": {
     "label": "Menù principale",

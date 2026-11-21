@@ -262,7 +262,12 @@
     "wantTitle": "Želiš organizirati prej?",
     "wantText": "Če v bližini še ni nobenega badulake, prosi ekipo Badulake in ga bo pretehtala.",
     "wantButton": "Želim organizirati",
-    "wantDone": "Opravljeno: ekipa Badulake ve, da želiš organizirati. Ko ti da dovoljenje, bo tukaj obrazec za ustvarjanje tvojega badulake."
+    "wantDone": "Opravljeno: ekipa Badulake ve, da želiš organizirati. Ko ti da dovoljenje, bo tukaj obrazec za ustvarjanje tvojega badulake.",
+    "bringTitle": "Kaj prinesti",
+    "bring1": "Oblačila, obutev, dodatke ali druge stvari, ki jih ne uporabljaš več – čiste in v dobrem stanju.",
+    "bring2": "Vrečko za tisto, kar izbereš.",
+    "bring3": "Brez denarja: tu se nič ne kupuje in ne prodaja.",
+    "bring4": "Če kakšne tvoje stvari nihče ne vzame, jo lahko odneseš nazaj ali jo pustiš za darovanje."
   },
   "Nav": {
     "label": "Glavni meni",

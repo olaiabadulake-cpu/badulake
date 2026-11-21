@@ -262,7 +262,12 @@
     "wantTitle": "Doni të organizoni një më herët?",
     "wantText": "Nëse ende nuk ka badulake pranë jush, kërkojeni ekipit të Badulake dhe ai do ta shqyrtojë.",
     "wantButton": "Dua të organizoj",
-    "wantDone": "U bë: ekipi i Badulake e di që doni të organizoni. Kur t'ju japë leje, këtu do të shihni formularin për të krijuar badulake-n tuaj."
+    "wantDone": "U bë: ekipi i Badulake e di që doni të organizoni. Kur t'ju japë leje, këtu do të shihni formularin për të krijuar badulake-n tuaj.",
+    "bringTitle": "Çfarë të sillni",
+    "bring1": "Rroba, këpucë, aksesorë ose sende të tjera që nuk i përdorni më, të pastra dhe në gjendje të mirë.",
+    "bring2": "Një qese për atë që zgjidhni.",
+    "bring3": "Pa para: këtu nuk blihet e nuk shitet asgjë.",
+    "bring4": "Nëse askush nuk merr diçka tuajën, mund ta merrni përsëri ose ta lini për dhurim."
   },
   "Nav": {
     "label": "Menuja kryesore",

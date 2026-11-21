@@ -262,7 +262,12 @@
     "wantTitle": "Vil du skipe til ein før?",
     "wantText": "Viss det ikkje finst nokon badulakes i nærleiken enno, spør Badulake-teamet, så vurderer dei det.",
     "wantButton": "Eg vil skipe til",
-    "wantDone": "Ferdig: Badulake-teamet veit at du vil skipe til. Når du får lov, ser du skjemaet for å opprette badulaken din her."
+    "wantDone": "Ferdig: Badulake-teamet veit at du vil skipe til. Når du får lov, ser du skjemaet for å opprette badulaken din her.",
+    "bringTitle": "Kva du tek med",
+    "bring1": "Klede, sko, tilbehøyr eller andre ting du ikkje brukar lenger – reine og i god stand.",
+    "bring2": "Ein pose til det du vel.",
+    "bring3": "Ingen pengar: Her blir ingenting kjøpt eller selt.",
+    "bring4": "Viss ingen tek noko av ditt, kan du ta det med heim att eller la det bli gitt bort."
   },
   "Nav": {
     "label": "Hovudmeny",

@@ -262,7 +262,12 @@
     "wantTitle": "Želite li organizovati prije toga?",
     "wantText": "Ako u blizini još nema badulakea, zamolite tim Badulakea i razmotrit će to.",
     "wantButton": "Želim organizovati",
-    "wantDone": "Gotovo: tim Badulakea zna da želite organizovati. Kad vam da dozvolu, ovdje ćete vidjeti obrazac za pravljenje svog badulakea."
+    "wantDone": "Gotovo: tim Badulakea zna da želite organizovati. Kad vam da dozvolu, ovdje ćete vidjeti obrazac za pravljenje svog badulakea.",
+    "bringTitle": "Šta ponijeti",
+    "bring1": "Odjeću, obuću, dodatke ili druge stvari koje više ne koristite, čiste i u dobrom stanju.",
+    "bring2": "Torbu da ponesete ono što izaberete.",
+    "bring3": "Bez novca: ovdje se ništa ne kupuje ni prodaje.",
+    "bring4": "Ako nešto vaše niko ne uzme, možete to vratiti kući ili ostaviti za doniranje."
   },
   "Nav": {
     "label": "Glavni meni",

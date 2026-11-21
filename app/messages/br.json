@@ -262,7 +262,12 @@
     "wantTitle": "Fellout a ra deoc'h aozañ unan a-raok?",
     "wantText": "Ma n'eus badulake ebet tost c'hoazh, goulennit gant skipailh Badulake hag e vo studiet.",
     "wantButton": "Me a fell din aozañ",
-    "wantDone": "Graet: skipailh Badulake a oar e fell deoc'h aozañ. Pa vo roet an aotre deoc'h, e welot amañ ar furmskrid evit krouiñ ho padulake."
+    "wantDone": "Graet: skipailh Badulake a oar e fell deoc'h aozañ. Pa vo roet an aotre deoc'h, e welot amañ ar furmskrid evit krouiñ ho padulake.",
+    "bringTitle": "Petra degas",
+    "bring1": "Dilhad, botoù, ardivinkoù pe traoù all na implijit ket ken, naet hag e stad vat.",
+    "bring2": "Ur sac'h evit kas ganeoc'h ar pezh a choazit.",
+    "bring3": "Arc'hant ebet: amañ ne vez prenet na gwerzhet netra.",
+    "bring4": "Ma ne gemer den unan eus ho traoù, e c'hellit e gas en-dro pe e lezel evit e reiñ."
   },
   "Nav": {
     "label": "Lañser pennañ",

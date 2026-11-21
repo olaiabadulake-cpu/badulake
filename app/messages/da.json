@@ -262,7 +262,12 @@
     "wantTitle": "Vil du arrangere en før?",
     "wantText": "Hvis der endnu ikke er nogen badulakes i nærheden, så spørg Badulake-holdet, så vurderer de det.",
     "wantButton": "Jeg vil arrangere",
-    "wantDone": "Klaret: Badulake-holdet ved, at du vil arrangere. Når du får lov, kan du se formularen til at oprette din badulake her."
+    "wantDone": "Klaret: Badulake-holdet ved, at du vil arrangere. Når du får lov, kan du se formularen til at oprette din badulake her.",
+    "bringTitle": "Hvad skal du have med",
+    "bring1": "Tøj, sko, tilbehør eller andre ting, du ikke bruger længere – rene og i god stand.",
+    "bring2": "En pose til det, du vælger.",
+    "bring3": "Ingen penge: Her bliver intet købt eller solgt.",
+    "bring4": "Hvis ingen tager noget af dit, kan du tage det med hjem igen eller efterlade det til donation."
   },
   "Nav": {
     "label": "Hovedmenu",

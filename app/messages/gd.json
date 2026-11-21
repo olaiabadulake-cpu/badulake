@@ -262,7 +262,12 @@
     "wantTitle": "Am bu toigh leat tè a chur air dòigh nas tràithe?",
     "wantText": "Mura bheil badulake faisg ort fhathast, iarr air sgioba Badulake is beachdaichidh iad air.",
     "wantButton": "Tha mi airson tè a chur air dòigh",
-    "wantDone": "Dèanta: tha fios aig sgioba Badulake gu bheil thu airson tè a chur air dòigh. Nuair a bheir iad cead dhut, chì thu an seo am foirm airson do bhadulake a chruthachadh."
+    "wantDone": "Dèanta: tha fios aig sgioba Badulake gu bheil thu airson tè a chur air dòigh. Nuair a bheir iad cead dhut, chì thu an seo am foirm airson do bhadulake a chruthachadh.",
+    "bringTitle": "Na bheir thu leat",
+    "bring1": "Aodach, brògan, rudan-còmhnaidh no rudan eile nach cleachd thu tuilleadh, glan is ann an deagh staid.",
+    "bring2": "Baga airson na thaghas tu.",
+    "bring3": "Gun airgead: chan eil dad ga cheannach no ga reic an seo.",
+    "bring4": "Mura toir duine sam bith rud agad leotha, faodaidh tu a thoirt dhachaigh no fhàgail airson a thoirt seachad."
   },
   "Nav": {
     "label": "Prìomh chlàr-taice",

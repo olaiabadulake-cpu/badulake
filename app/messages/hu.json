@@ -262,7 +262,12 @@
     "wantTitle": "Szeretnél hamarabb szervezni egyet?",
     "wantText": "Ha a közeledben még nincs badulake, kérd a Badulake csapatától, és mérlegelik.",
     "wantButton": "Szeretnék szervezni",
-    "wantDone": "Kész: a Badulake csapata tudja, hogy szervezni szeretnél. Ha engedélyt kapsz, itt látod majd az űrlapot a saját badulakéd létrehozásához."
+    "wantDone": "Kész: a Badulake csapata tudja, hogy szervezni szeretnél. Ha engedélyt kapsz, itt látod majd az űrlapot a saját badulakéd létrehozásához.",
+    "bringTitle": "Mit hozz",
+    "bring1": "Ruhát, cipőt, kiegészítőt vagy más dolgot, amit már nem használsz – tisztán és jó állapotban.",
+    "bring2": "Egy szatyrot arra, amit kiválasztasz.",
+    "bring3": "Pénzt ne: itt semmit nem vesznek és nem adnak el.",
+    "bring4": "Ha a holmidat senki sem viszi el, hazaviheted, vagy itt hagyhatod adományozásra."
   },
   "Nav": {
     "label": "Főmenü",

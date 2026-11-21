@@ -262,7 +262,12 @@
     "wantTitle": "Wolsto earder ien organisearje?",
     "wantText": "As der noch gjin badulakes by dy yn 'e buert binne, freegje it dan oan it Badulake-team; dat besjocht it.",
     "wantButton": "Ik wol organisearje",
-    "wantDone": "Klear: it Badulake-team wit dat do organisearje wolst. As it dy tastimming jout, sjochst hjir it formulier om dyn badulake oan te meitsjen."
+    "wantDone": "Klear: it Badulake-team wit dat do organisearje wolst. As it dy tastimming jout, sjochst hjir it formulier om dyn badulake oan te meitsjen.",
+    "bringTitle": "Wat meinimme",
+    "bring1": "Klean, skuon, aksessoires of oar guod datsto net mear brûkst, skjin en yn goede steat.",
+    "bring2": "In tas foar watsto útsikest.",
+    "bring3": "Gjin jild: hjir wurdt neat kocht of ferkocht.",
+    "bring4": "As nimmen wat fan dy meinimt, kinst it wer meinimme of efterlitte om te skinken."
   },
   "Nav": {
     "label": "Haadmenu",

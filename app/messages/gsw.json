@@ -262,7 +262,12 @@
     "wantTitle": "Witt schun vorhär eins organisiere?",
     "wantText": "Wenn's in dinere Nähe noch keini badulakes gìtt, frog s'Badulake-Team, es lüegt sich's à.",
     "wantButton": "Ich will organisiere",
-    "wantDone": "Fertig: S'Badulake-Team weiss, dàss dü organisiere witt. Wenn's dr d'Erlàubnis gìtt, sìehsch do s'Formular fer di badulake."
+    "wantDone": "Fertig: S'Badulake-Team weiss, dàss dü organisiere witt. Wenn's dr d'Erlàubnis gìtt, sìehsch do s'Formular fer di badulake.",
+    "bringTitle": "Was mìtnamme",
+    "bring1": "Kleider, Schüe, Accessoires oder àndri Sàcha, wo dü nimm brüchsch, süfer un in güetem Züestànd.",
+    "bring2": "E Tàsch fer das, wo dü üsesüechsch.",
+    "bring3": "Kei Gald: Do wird nix kauft oder verkauft.",
+    "bring4": "Wenn niemer ebbis vun dir mìtnìmmt, kànnsch's widder mìtnamme oder zum Spände do lonn."
   },
   "Nav": {
     "label": "Hauptmenü",

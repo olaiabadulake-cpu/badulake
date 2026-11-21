@@ -262,7 +262,12 @@
     "wantTitle": "Háliidatgo lágidit ovtta ovdal?",
     "wantText": "Jus du lahka eai vel leat badulaket, jearaš Badulake-joavkkus ja dat árvvoštallá dan.",
     "wantButton": "Mun háliidan lágidit",
-    "wantDone": "Dahkkon: Badulake-joavku diehtá ahte don háliidat lágidit. Go dat addá dutnje lobi, oainnát dáppe skovi iežat badulake ráhkadeapmái."
+    "wantDone": "Dahkkon: Badulake-joavku diehtá ahte don háliidat lágidit. Go dat addá dutnje lobi, oainnát dáppe skovi iežat badulake ráhkadeapmái.",
+    "bringTitle": "Maid váldit mielde",
+    "bring1": "Biktasat, gápmagat, lassedávvirat dahje eará diŋggat maid it šat geavat, buhtisin ja buori dilis.",
+    "bring2": "Lávka dasa maid válljet.",
+    "bring3": "Ii ruhta: dáppe ii oastojuvvo iige vuvdojuvvo mihkkege.",
+    "bring4": "Jus ii oktage váldde du diŋgga, de sáhtát váldit dan ruovttoluotta dahje guođđit dan skeŋkemii."
   },
   "Nav": {
     "label": "Váldofállu",

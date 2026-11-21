@@ -262,7 +262,12 @@
     "wantTitle": "Vols organitzar-ne un abans?",
     "wantText": "Si encara no hi ha badulakes a prop, demana-ho a l'equip de Badulake i ho valorarà.",
     "wantButton": "Vull organitzar",
-    "wantDone": "Fet: l'equip de Badulake ja sap que vols organitzar. Quan et doni permís, aquí veuràs el formulari per crear el teu badulake."
+    "wantDone": "Fet: l'equip de Badulake ja sap que vols organitzar. Quan et doni permís, aquí veuràs el formulari per crear el teu badulake.",
+    "bringTitle": "Què cal portar",
+    "bring1": "Roba, calçat, complements o altres coses que ja no facis servir, netes i en bon estat.",
+    "bring2": "Una bossa per endur-te el que triïs.",
+    "bring3": "Res de diners: aquí no es compra ni es ven.",
+    "bring4": "Si alguna cosa teva no se l'endu ningú, la pots tornar a endur-te o deixar-la per donar-la."
   },
   "Nav": {
     "label": "Menú principal",

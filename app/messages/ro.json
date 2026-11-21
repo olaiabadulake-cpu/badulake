@@ -262,7 +262,12 @@
     "wantTitle": "Vrei să organizezi unul mai devreme?",
     "wantText": "Dacă încă nu e niciun badulake aproape, cere-i echipei Badulake și va analiza cererea.",
     "wantButton": "Vreau să organizez",
-    "wantDone": "Gata: echipa Badulake știe că vrei să organizezi. Când îți dă permisiunea, aici vei vedea formularul pentru a-ți crea badulake-ul."
+    "wantDone": "Gata: echipa Badulake știe că vrei să organizezi. Când îți dă permisiunea, aici vei vedea formularul pentru a-ți crea badulake-ul.",
+    "bringTitle": "Ce să aduci",
+    "bring1": "Haine, încălțăminte, accesorii sau alte lucruri pe care nu le mai folosești, curate și în stare bună.",
+    "bring2": "O pungă pentru ce alegi.",
+    "bring3": "Fără bani: aici nu se cumpără și nu se vinde nimic.",
+    "bring4": "Dacă nimeni nu ia ceva de-al tău, îl poți lua înapoi sau îl poți lăsa pentru donație."
   },
   "Nav": {
     "label": "Meniu principal",

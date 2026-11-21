@@ -468,3 +468,11 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Probado:** en el Mac contra la copia, la portada en castellano, euskera e inglés (37 y 1); en la real, 0 y no sale. Las funciones corren sin error en la copia.
 - **Por qué:** enseña lo que consigue la comunidad sin pedir nada más a nadie y sin datos personales.
 - **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 15.1)
+
+### D-048 · «Qué llevar» en cada badulake
+- **Fecha:** 21/11/2026
+- **Alternativas:** que cada organizadora escriba su lista (más trabajo y más texto libre); ponerlo solo en «Qué es un badulake».
+- **Decisión** (Tarea 7.1 de [auditoria.md](auditoria.md)): en la ficha de cada badulake publicado y futuro, un desplegable **«Qué llevar»**, igual para todos: cosas que ya no uses, limpias y en buen estado; una bolsa; nada de dinero; y qué pasa con lo que no se lleva nadie (volver a llevárselo o dejarlo para donar, como dice el Modo badulake). Abierto de entrada para quien está apuntada y para la organizadora; cerrado para el resto. 5 textos en las 44 lenguas. Lo prohibido (condiciones de uso, apartado 7) no se repite aquí: sigue pendiente de la Asesoría.
+- **Probado** en el Mac contra la copia (castellano y francés).
+- **Por qué:** es la duda más típica antes de ir, y la lista evita que la gente lleve dinero o cosas en mal estado.
+- **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 7.1)

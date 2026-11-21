@@ -262,7 +262,12 @@
     "wantTitle": "Wil je er eerder een organiseren?",
     "wantText": "Als er bij jou in de buurt nog geen badulakes zijn, vraag het dan aan het Badulake-team; dat bekijkt het.",
     "wantButton": "Ik wil organiseren",
-    "wantDone": "Klaar: het Badulake-team weet dat je wilt organiseren. Als je toestemming krijgt, zie je hier het formulier om je badulake aan te maken."
+    "wantDone": "Klaar: het Badulake-team weet dat je wilt organiseren. Als je toestemming krijgt, zie je hier het formulier om je badulake aan te maken.",
+    "bringTitle": "Wat neem je mee",
+    "bring1": "Kleren, schoenen, accessoires of andere spullen die je niet meer gebruikt, schoon en in goede staat.",
+    "bring2": "Een tas voor wat je uitkiest.",
+    "bring3": "Geen geld: hier wordt niets gekocht of verkocht.",
+    "bring4": "Als niemand iets van jou meeneemt, kun je het weer meenemen of laten liggen om te doneren."
   },
   "Nav": {
     "label": "Hoofdmenu",

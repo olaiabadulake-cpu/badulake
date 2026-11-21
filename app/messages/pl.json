@@ -262,7 +262,12 @@
     "wantTitle": "Chcesz zorganizować jakieś wcześniej?",
     "wantText": "Jeśli w pobliżu nie ma jeszcze żadnych badulake, poproś zespół Badulake, a on to rozważy.",
     "wantButton": "Chcę organizować",
-    "wantDone": "Gotowe: zespół Badulake wie, że chcesz organizować. Gdy da ci zgodę, zobaczysz tutaj formularz do utworzenia własnego badulake."
+    "wantDone": "Gotowe: zespół Badulake wie, że chcesz organizować. Gdy da ci zgodę, zobaczysz tutaj formularz do utworzenia własnego badulake.",
+    "bringTitle": "Co zabrać",
+    "bring1": "Ubrania, buty, dodatki lub inne rzeczy, których już nie używasz – czyste i w dobrym stanie.",
+    "bring2": "Torbę na to, co wybierzesz.",
+    "bring3": "Żadnych pieniędzy: nic się tu nie kupuje ani nie sprzedaje.",
+    "bring4": "Jeśli nikt nie weźmie twojej rzeczy, możesz ją zabrać z powrotem albo zostawić do przekazania."
   },
   "Nav": {
     "label": "Menu główne",

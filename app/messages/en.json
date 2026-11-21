@@ -262,7 +262,12 @@
     "wantTitle": "Want to organise one sooner?",
     "wantText": "If there are no badulakes near you yet, ask the Badulake team and they'll consider it.",
     "wantButton": "I want to organise",
-    "wantDone": "Done: the Badulake team knows you want to organise. Once they give you permission, you'll see the form to create your badulake here."
+    "wantDone": "Done: the Badulake team knows you want to organise. Once they give you permission, you'll see the form to create your badulake here.",
+    "bringTitle": "What to bring",
+    "bring1": "Clothes, shoes, accessories or other things you no longer use, clean and in good condition.",
+    "bring2": "A bag to take home what you choose.",
+    "bring3": "No money: nothing is bought or sold here.",
+    "bring4": "If nobody takes something of yours, you can take it back home or leave it to be donated."
   },
   "Nav": {
     "label": "Main menu",

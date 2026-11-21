@@ -262,7 +262,12 @@
     "wantTitle": "¿Quies organizar ún enantes?",
     "wantText": "Si entá nun hai badulakes cerca, pídí-yoslo al equipu de Badulake y vas valoralo.",
     "wantButton": "Quiero organizar",
-    "wantDone": "Fecho: l'equipu de Badulake yá sabe que quies organizar. Cuando te dea permisu, equí vas ver el formulariu pa crear el to badulake."
+    "wantDone": "Fecho: l'equipu de Badulake yá sabe que quies organizar. Cuando te dea permisu, equí vas ver el formulariu pa crear el to badulake.",
+    "bringTitle": "Qué llevar",
+    "bring1": "Ropa, calzáu, accesorios o otres coses que yá nun uses, llimpies y en bon estáu.",
+    "bring2": "Una bolsa pa llevar lo qu'escueyas.",
+    "bring3": "Nada de dineru: equí nun se compra nin se vende.",
+    "bring4": "Si daqué tuyo nun se lo lleva naide, pues volver llevalo o dexalo pa donar."
   },
   "Nav": {
     "label": "Menú principal",

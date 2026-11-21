@@ -262,7 +262,12 @@
     "wantTitle": "Ar mhaith leat ceann a eagrú roimhe sin?",
     "wantText": "Mura bhfuil badulake ar bith in aice leat fós, iarr ar fhoireann Badulake é agus déanfaidh siad machnamh air.",
     "wantButton": "Ba mhaith liom eagrú",
-    "wantDone": "Déanta: tá a fhios ag foireann Badulake gur mian leat eagrú. Nuair a thabharfaidh siad cead duit, feicfidh tú anseo an fhoirm chun do bhadulake a chruthú."
+    "wantDone": "Déanta: tá a fhios ag foireann Badulake gur mian leat eagrú. Nuair a thabharfaidh siad cead duit, feicfidh tú anseo an fhoirm chun do bhadulake a chruthú.",
+    "bringTitle": "Cad atá le tabhairt leat",
+    "bring1": "Éadaí, bróga, oiriúintí nó rudaí eile nach n-úsáideann tú a thuilleadh, glan agus i riocht maith.",
+    "bring2": "Mála don rud a roghnaíonn tú.",
+    "bring3": "Gan airgead: ní cheannaítear ná ní dhíoltar aon rud anseo.",
+    "bring4": "Mura dtógann duine ar bith rud de do chuid, is féidir leat é a thabhairt abhaile nó é a fhágáil le bronnadh."
   },
   "Nav": {
     "label": "Príomh-roghchlár",

@@ -262,7 +262,12 @@
     "wantTitle": "Vòles n'organizar un abans ?",
     "wantText": "S'i a pas encara de badulake prèp, demanda-o a l'equipa de Badulake e o estudiarà.",
     "wantButton": "Vòli organizar",
-    "wantDone": "Fach : l'equipa de Badulake sap que vòles organizar. Quand te balharà la permission, veiràs aicí lo formulari per crear ton badulake."
+    "wantDone": "Fach : l'equipa de Badulake sap que vòles organizar. Quand te balharà la permission, veiràs aicí lo formulari per crear ton badulake.",
+    "bringTitle": "De qué portar",
+    "bring1": "Vestits, cauçaduras, accessòris o autras causas que utilizas pas pus, netas e en bon estat.",
+    "bring2": "Un sac per emportar çò que causisses.",
+    "bring3": "Pas cap d'argent : aicí se crompa pas ni se vend pas res.",
+    "bring4": "Se degun pren pas una causa tieuna, la pòdes tornar emportar o la daissar per la donar."
   },
   "Nav": {
     "label": "Menut principal",

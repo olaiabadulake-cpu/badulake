@@ -262,7 +262,12 @@
     "wantTitle": "Vòs organizar-ne un abans?",
     "wantText": "Se encara non i a badulakes a prèp, demana-ac ar equip de Badulake e ac valorarà.",
     "wantButton": "Voi organizar",
-    "wantDone": "Hèt: er equip de Badulake ja sap que vòs organizar. Quan te dé permís, aciu veiràs eth formulari entà crear eth tòn badulake."
+    "wantDone": "Hèt: er equip de Badulake ja sap que vòs organizar. Quan te dé permís, aciu veiràs eth formulari entà crear eth tòn badulake.",
+    "bringTitle": "Qué portar",
+    "bring1": "Ròba, sabates, complements o d'autes causes que ja non utilizes, netes e en bon estat.",
+    "bring2": "Ua bossa entà emportar-te çò que causisques.",
+    "bring3": "Arren de sòs: aciu non se crompe ni se ven.",
+    "bring4": "Se arrés non s'emporte quauquarren tòn, pòs tornar-te'n o deishar-lo entà dar-lo."
   },
   "Nav": {
     "label": "Menú principau",

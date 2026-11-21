@@ -262,7 +262,12 @@
     "wantTitle": "Chceš nějaké uspořádat dřív?",
     "wantText": "Pokud ve tvém okolí zatím žádné badulake není, požádej tým Badulake a ten to posoudí.",
     "wantButton": "Chci pořádat",
-    "wantDone": "Hotovo: tým Badulake ví, že chceš pořádat. Až ti dá svolení, uvidíš tady formulář k vytvoření vlastního badulake."
+    "wantDone": "Hotovo: tým Badulake ví, že chceš pořádat. Až ti dá svolení, uvidíš tady formulář k vytvoření vlastního badulake.",
+    "bringTitle": "Co s sebou",
+    "bring1": "Oblečení, boty, doplňky nebo jiné věci, které už nepoužíváš – čisté a v dobrém stavu.",
+    "bring2": "Tašku na to, co si vybereš.",
+    "bring3": "Žádné peníze: nic se tu nekupuje ani neprodává.",
+    "bring4": "Pokud si nějakou tvou věc nikdo nevezme, můžeš si ji vzít zpátky nebo ji nechat na darování."
   },
   "Nav": {
     "label": "Hlavní menu",
