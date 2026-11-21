@@ -251,7 +251,15 @@
     "nearMeHint": "Locația ta e folosită doar acum, pe telefonul tău, și nu se salvează.",
     "nearMeError": "Nu am putut afla unde ești. Scrie orașul sau provincia ta.",
     "searchResults": "Badulake în „{place}”: {count}",
-    "clearSearch": "Vezi toate"
+    "clearSearch": "Vezi toate",
+    "howTitle": "Cum se obține",
+    "how1": "Înscrie-te la un badulake din zona ta.",
+    "how2": "Vino în ziua aceea: cine îl organizează notează cine a venit.",
+    "how3": "După ce se încheie, îl vei putea organiza pe al tău.",
+    "wantTitle": "Vrei să organizezi unul mai devreme?",
+    "wantText": "Dacă încă nu e niciun badulake aproape, cere-i echipei Badulake și va analiza cererea.",
+    "wantButton": "Vreau să organizez",
+    "wantDone": "Gata: echipa Badulake știe că vrei să organizezi. Când îți dă permisiunea, aici vei vedea formularul pentru a-ți crea badulake-ul."
   },
   "Nav": {
     "label": "Meniu principal",

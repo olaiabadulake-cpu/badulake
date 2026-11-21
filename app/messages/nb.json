@@ -251,7 +251,15 @@
     "nearMeHint": "Posisjonen din brukes bare akkurat nå, på mobilen din, og lagres ikke.",
     "nearMeError": "Vi klarte ikke å finne ut hvor du er. Skriv byen eller provinsen din.",
     "searchResults": "Badulakes i «{place}»: {count}",
-    "clearSearch": "Se alle"
+    "clearSearch": "Se alle",
+    "howTitle": "Slik gjør du",
+    "how1": "Meld deg på en badulake i nærheten.",
+    "how2": "Møt opp den dagen: arrangøren noterer hvem som kom.",
+    "how3": "Når den er over, kan du arrangere din egen.",
+    "wantTitle": "Vil du arrangere en før?",
+    "wantText": "Hvis det ikke finnes noen badulakes i nærheten ennå, spør Badulake-teamet, så vurderer de det.",
+    "wantButton": "Jeg vil arrangere",
+    "wantDone": "Ferdig: Badulake-teamet vet at du vil arrangere. Når du får lov, ser du skjemaet for å opprette din badulake her."
   },
   "Nav": {
     "label": "Hovedmeny",

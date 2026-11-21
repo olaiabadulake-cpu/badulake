@@ -251,7 +251,15 @@
     "nearMeHint": "Ta posicion es pas utilizada qu'ara, sus ton telefòn, e es pas enregistrada.",
     "nearMeError": "Avèm pas pogut saber ont siás. Escriu ta vila o ta província.",
     "searchResults": "Badulakes a « {place} » : {count}",
-    "clearSearch": "Los veire totes"
+    "clearSearch": "Los veire totes",
+    "howTitle": "Cossí s'obten",
+    "how1": "Marca-te a un badulake de ton canton.",
+    "how2": "Vai-i aquel jorn : la persona qu'organiza marca qual es vengut.",
+    "how3": "Quand serà acabat, poiràs organizar lo tieu.",
+    "wantTitle": "Vòles n'organizar un abans ?",
+    "wantText": "S'i a pas encara de badulake prèp, demanda-o a l'equipa de Badulake e o estudiarà.",
+    "wantButton": "Vòli organizar",
+    "wantDone": "Fach : l'equipa de Badulake sap que vòles organizar. Quand te balharà la permission, veiràs aicí lo formulari per crear ton badulake."
   },
   "Nav": {
     "label": "Menut principal",

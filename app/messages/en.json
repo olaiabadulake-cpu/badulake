@@ -251,7 +251,15 @@
     "nearMeHint": "Your location is only used right now, on your phone, and isn't saved.",
     "nearMeError": "We couldn't tell where you are. Type your town or province.",
     "searchResults": "Badulakes in “{place}”: {count}",
-    "clearSearch": "See all"
+    "clearSearch": "See all",
+    "howTitle": "How to get there",
+    "how1": "Sign up for a badulake near you.",
+    "how2": "Go on the day: the organiser marks who came.",
+    "how3": "Once it's over, you'll be able to organise your own.",
+    "wantTitle": "Want to organise one sooner?",
+    "wantText": "If there are no badulakes near you yet, ask the Badulake team and they'll consider it.",
+    "wantButton": "I want to organise",
+    "wantDone": "Done: the Badulake team knows you want to organise. Once they give you permission, you'll see the form to create your badulake here."
   },
   "Nav": {
     "label": "Main menu",

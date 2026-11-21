@@ -251,7 +251,15 @@
     "nearMeHint": "A tua localização só é usada neste momento, no teu telemóvel, e não fica guardada.",
     "nearMeError": "Não conseguimos saber onde estás. Escreve a tua cidade ou província.",
     "searchResults": "Badulakes em «{place}»: {count}",
-    "clearSearch": "Ver todos"
+    "clearSearch": "Ver todos",
+    "howTitle": "Como se consegue",
+    "how1": "Inscreve-te num badulake da tua zona.",
+    "how2": "Vai nesse dia: quem o organiza marca quem veio.",
+    "how3": "Quando terminar, já poderás organizar o teu.",
+    "wantTitle": "Queres organizar um antes?",
+    "wantText": "Se ainda não houver badulakes perto, pede à equipa do Badulake, que vai avaliar.",
+    "wantButton": "Quero organizar",
+    "wantDone": "Feito: a equipa do Badulake já sabe que queres organizar. Quando te der autorização, vais ver aqui o formulário para criar o teu badulake."
   },
   "Nav": {
     "label": "Menu principal",

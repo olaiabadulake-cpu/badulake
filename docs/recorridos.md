@@ -68,6 +68,8 @@ Esto aparece en la portada y en su propia página, «Qué es un badulake», enla
 6. Lo encuentro después en la lista de badulakes, marcado como mío.
 7. Si 24 horas antes no somos 5 personas contándome a mí, se cancela solo y me sale el aviso en «Tu cuenta». Si quiero cancelarlo yo, abro «Cancelar este badulake», leo qué pasará (se cancela para todas y se borra la dirección; no se puede deshacer) y pulso «Sí, cancelarlo».
 
+**«Quiero organizar» (Tarea 5.4, D-045):** si todavía no puedo organizar, la pantalla explica cómo se consigue y tiene el botón «Quiero organizar»; el equipo lo ve en `/equipo` → «Quieren organizar» (sin correo) y me da permiso o lo descarta.
+
 **Nota para el equipo (Tarea 5.2):** en `/equipo`, «Permiso para organizar»: escribe el correo de la persona y pulsa «Dar permiso» (o «Quitar permiso»). Dice «Permiso dado», «No hay ninguna cuenta con ese correo» o «Esa persona ya podía organizar». No se guarda el correo ni se muestra quién tiene permiso. El equipo puede organizar siempre.
 
 ### Recorrido F · Mi cuenta y salir

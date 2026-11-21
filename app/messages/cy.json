@@ -251,7 +251,15 @@
     "nearMeHint": "Dim ond nawr y caiff dy leoliad ei ddefnyddio, ar dy ffôn, a dydy e ddim yn cael ei gadw.",
     "nearMeError": "Doedd dim modd gwybod ble rwyt ti. Ysgrifenna dy ddinas neu dy dalaith.",
     "searchResults": "Badulakes yn “{place}”: {count}",
-    "clearSearch": "Gweld y cyfan"
+    "clearSearch": "Gweld y cyfan",
+    "howTitle": "Sut mae ei gael",
+    "how1": "Cofrestra ar gyfer badulake yn dy ardal.",
+    "how2": "Dos ar y diwrnod: mae'r trefnydd yn nodi pwy sydd wedi dod.",
+    "how3": "Pan fydd wedi gorffen, byddi di'n gallu trefnu dy un di.",
+    "wantTitle": "Hoffet ti drefnu un cyn hynny?",
+    "wantText": "Os nad oes badulakes yn agos eto, gofynna i dîm Badulake a byddan nhw'n ystyried y peth.",
+    "wantButton": "Rwyf eisiau trefnu",
+    "wantDone": "Wedi'i wneud: mae tîm Badulake yn gwybod dy fod eisiau trefnu. Pan fyddan nhw'n rhoi caniatâd, byddi di'n gweld yma'r ffurflen i greu dy badulake."
   },
   "Nav": {
     "label": "Prif ddewislen",

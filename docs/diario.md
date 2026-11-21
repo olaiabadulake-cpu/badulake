@@ -185,3 +185,6 @@ Cada entrada indica quién hizo cada cosa: **Claude** (la IA), **OlaIA** (dirige
 **Calendario para todas (tarea 6.4).** Claude da «Añadir al calendario» también a la organizadora y a la lista de espera, quita la dirección del `.ics` (lleva el barrio y el enlace a la ficha) y parte las líneas largas como pide el estándar (D-044). Sin textos nuevos.
 - **Incidente:** al probarlo, Claude ve que en la tarea 6.3 se borró sin querer la línea `matcher` de `proxy.ts`: desde las 01:17 las dos webs se veían sin estilos. Lo arregla al momento (commit f729fcc, publicado a las 01:22) y lo comprueba en las dos webs. Desde ahora comprueba estilos y `/api` tras cada subida.
 - **Comprobado** en el Mac contra la copia con la cuenta inventada de Leire (organizadora, apuntada y ajeno).
+
+**«Quiero organizar» (tarea 5.4).** Claude añade a la pantalla «Todavía no puedes organizar» cómo se consigue y el botón «Quiero organizar», que avisa al equipo; en `/equipo` el equipo ve las peticiones sin correo y da el permiso o las descarta (D-045). `supabase/quiero_organizar.sql` ejecutado en la copia y en la real. 8 textos en las 44 lenguas.
+- **Comprobado:** 7 pruebas en la base de datos de la copia (deshechas) y en la web del Mac con las cuentas inventadas de Unai y del equipo.

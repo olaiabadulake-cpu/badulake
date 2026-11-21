@@ -251,7 +251,15 @@
     "nearMeHint": "Ní úsáidtear do shuíomh ach anois, ar d'fhón, agus ní shábháiltear é.",
     "nearMeError": "Níorbh fhéidir linn a fháil amach cá bhfuil tú. Scríobh do chathair nó do chúige.",
     "searchResults": "Badulakes in “{place}”: {count}",
-    "clearSearch": "Féach ar fad"
+    "clearSearch": "Féach ar fad",
+    "howTitle": "Conas é a fháil",
+    "how1": "Cláraigh do bhadulake in aice leat.",
+    "how2": "Téigh ann an lá sin: marcálann an t-eagraí cé a tháinig.",
+    "how3": "Nuair a bheidh sé thart, beidh tú in ann do cheann féin a eagrú.",
+    "wantTitle": "Ar mhaith leat ceann a eagrú roimhe sin?",
+    "wantText": "Mura bhfuil badulake ar bith in aice leat fós, iarr ar fhoireann Badulake é agus déanfaidh siad machnamh air.",
+    "wantButton": "Ba mhaith liom eagrú",
+    "wantDone": "Déanta: tá a fhios ag foireann Badulake gur mian leat eagrú. Nuair a thabharfaidh siad cead duit, feicfidh tú anseo an fhoirm chun do bhadulake a chruthú."
   },
   "Nav": {
     "label": "Príomh-roghchlár",

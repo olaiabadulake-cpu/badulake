@@ -251,7 +251,15 @@
     "nearMeHint": "Du sajádat geavahuvvo dušše dál, du telefovnnas, iige dat vurkejuvvo.",
     "nearMeError": "Eat sáhttán diehtit gos don leat. Čále iežat gávpoga dahje provinssa.",
     "searchResults": "Badulaket «{place}»: {count}",
-    "clearSearch": "Geahča buot"
+    "clearSearch": "Geahča buot",
+    "howTitle": "Mo dan oažžu",
+    "how1": "Čális iežat badulakii du lahka.",
+    "how2": "Mana dan beaivve: lágideaddji merke geat bohte.",
+    "how3": "Go dat lea nohkan, sáhtát lágidit iežat badulake.",
+    "wantTitle": "Háliidatgo lágidit ovtta ovdal?",
+    "wantText": "Jus du lahka eai vel leat badulaket, jearaš Badulake-joavkkus ja dat árvvoštallá dan.",
+    "wantButton": "Mun háliidan lágidit",
+    "wantDone": "Dahkkon: Badulake-joavku diehtá ahte don háliidat lágidit. Go dat addá dutnje lobi, oainnát dáppe skovi iežat badulake ráhkadeapmái."
   },
   "Nav": {
     "label": "Váldofállu",

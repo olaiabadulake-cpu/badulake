@@ -74,6 +74,16 @@ Ficha hecha el 19/11/2026 (Tarea 9 del plan maestro, decisión D-024). Es el **b
 | **Cuánto tiempo** | Mientras exista la cuenta; se borra con ella (Tarea 21). Se necesita guardarlo porque las inscripciones se borran a los 30 días. |
 | **Aviso para la Asesoría** | Es un dato de comportamiento mínimo (haber asistido). «Haber ido» = estar apuntada a un badulake celebrado sin que la organizadora marcara «No ha venido» (esa marca es un dato del día, que se borra al día siguiente). Los correos que mira el equipo para dar permiso no se guardan. |
 
+### 2.3.2 «Quiero organizar» (Tarea 5.4, D-045)
+
+| | |
+|---|---|
+| **Datos** | Quién lo pide (código de la cuenta) y cuándo (tabla `solicitudes_organizar`). |
+| **Para qué** | Que el equipo pueda dar permiso para organizar a quien aún no ha ido a un badulake. |
+| **Base legal propuesta** | Ejecución del servicio (6.1.b), a petición de la persona. |
+| **Quién lo ve** | Solo el equipo, y **sin correo ni nombre**: desde cuándo y en qué idioma usa la app. |
+| **Cuánto tiempo** | Hasta que el equipo responde, la persona ya puede organizar, borra su cuenta o pasan 6 meses. |
+
 ### 2.4 Inscripciones (apuntarse a un badulake)
 
 | | |

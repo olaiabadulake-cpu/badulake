@@ -199,3 +199,19 @@ export async function reportBadulake(formData: FormData): Promise<void> {
   }
   redirect({ href: `/badulakes/${id}?aviso=${aviso}`, locale });
 }
+
+// «Quiero organizar» (Tarea 5.4, D-045): quien aún no puede organizar se lo pide al equipo. La base de
+// datos guarda solo quién y cuándo; el equipo lo ve sin correo en /equipo.
+export async function wantToOrganize(formData: FormData): Promise<void> {
+  const locale = readLocale(formData);
+  let aviso = "error";
+  // Límite de intentos (D-023): 5 cada hora desde la misma conexión.
+  if (accountsOpen && !(await tooManyAttempts("quiero_organizar", 5, 60))) {
+    const supabase = await createSupabase();
+    const { data, error } = await supabase.rpc("quiero_organizar");
+    if (error) console.error("[quiero organizar]", error.code, error.message);
+    else if (data === "ok" || data === "ya_pedido") aviso = "pedido";
+    else if (data === "ya_puedes") aviso = "";
+  }
+  redirect({ href: `/badulakes/nuevo${aviso ? `?aviso=${aviso}` : ""}`, locale });
+}

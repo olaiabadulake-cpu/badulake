@@ -282,7 +282,15 @@
     "nearMeHint": "Zure kokapena une honetan bakarrik erabiltzen da, zure mugikorrean, eta ez da gordetzen.",
     "nearMeError": "Ezin izan dugu jakin non zauden. Idatzi zure hiria edo probintzia.",
     "searchResults": "Badulakeak «{place}» inguruan: {count}",
-    "clearSearch": "Denak ikusi"
+    "clearSearch": "Denak ikusi",
+    "howTitle": "Nola lortzen da",
+    "how1": "Eman izena zure inguruko badulake batean.",
+    "how2": "Joan egun horretan: antolatzaileak markatzen du nor etorri den.",
+    "how3": "Amaitzen denean, zurea antolatu ahal izango duzu.",
+    "wantTitle": "Lehenago antolatu nahi duzu?",
+    "wantText": "Inguruan oraindik badulakerik ez badago, eskatu Badulakeko taldeari eta aztertuko du.",
+    "wantButton": "Antolatu nahi dut",
+    "wantDone": "Eginda: Badulakeko taldeak badaki antolatu nahi duzula. Baimena ematen dizunean, hemen ikusiko duzu zure badulakea sortzeko formularioa."
   },
   "Nav": {
     "label": "Menu nagusia",
@@ -368,7 +376,9 @@
       "permiso_no_existe": "Ez dago posta elektroniko horrekin konturik.",
       "permiso_ya_tenia": "Pertsona horrek antola zezakeen jada.",
       "permiso_no_tenia": "Pertsona horrek ez zuen taldearen baimenik (badulake batera joan bada, antolatzen jarraituko du).",
-      "error": "Zerbait huts egin du. Saiatu berriro."
+      "error": "Zerbait huts egin du. Saiatu berriro.",
+      "solicitud_dada": "Baimena emanda: pertsona horrek badulakeak antolatu ditzake orain.",
+      "solicitud_descartada": "Eskaera baztertuta."
     },
     "permission": {
       "title": "Antolatzeko baimena",
@@ -388,6 +398,14 @@
       "note": "Zenbakiak bakarrik; ez da ikusten nor den bakoitza. «Aktibo»: azken 30 egunetan sartu den pertsona.",
       "vip": "VIParekin interesatuta",
       "baducoins": "BaduCoinsekin interesatuta"
+    },
+    "requests": {
+      "title": "Antolatu nahi dute",
+      "help": "Oraindik badulake batera joan ez diren eta antolatzeko eskatzen duten pertsonak («Antolatu nahi dut» botoia). Ez da ikusten nor den: noiztik eskatzen duen eta zein hizkuntzatan erabiltzen duen aplikazioa bakarrik.",
+      "empty": "Ez dago eskaerarik.",
+      "item": "Noiztik eskatzen du: {date} · hizkuntza: {lang}",
+      "give": "Baimena eman",
+      "dismiss": "Baztertu"
     }
   },
   "NotFound": {

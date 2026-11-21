@@ -251,7 +251,15 @@
     "nearMeHint": "Dinner Standort wird nur jetzt brüücht, uf dim Handy, un nit gspìchert.",
     "nearMeError": "Mr hàn nit üsefìnde känne, wo dü bìsch. Schrib dinni Stàdt oder Provinz.",
     "searchResults": "badulakes in „{place}“: {count}",
-    "clearSearch": "Àlli àlüege"
+    "clearSearch": "Àlli àlüege",
+    "howTitle": "So geht's",
+    "how1": "Mäld dich bi eme badulake in dinere Nähe à.",
+    "how2": "Kumm àn dem Tàà: wer's organisiert, schribt uf, wer do gsìì isch.",
+    "how3": "Wenn's verbii isch, kànnsch dinner eije organisiere.",
+    "wantTitle": "Witt schun vorhär eins organisiere?",
+    "wantText": "Wenn's in dinere Nähe noch keini badulakes gìtt, frog s'Badulake-Team, es lüegt sich's à.",
+    "wantButton": "Ich will organisiere",
+    "wantDone": "Fertig: S'Badulake-Team weiss, dàss dü organisiere witt. Wenn's dr d'Erlàubnis gìtt, sìehsch do s'Formular fer di badulake."
   },
   "Nav": {
     "label": "Hauptmenü",

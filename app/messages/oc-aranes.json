@@ -251,7 +251,15 @@
     "nearMeHint": "Era tua ubicacion solet s'utilize en aguest moment, en tòn mobil, e non se guarde.",
     "nearMeError": "Non auem pogut saber a on ès. Escriu era tua ciutat o província.",
     "searchResults": "Badulakes en «{place}»: {count}",
-    "clearSearch": "Veder-los toti"
+    "clearSearch": "Veder-los toti",
+    "howTitle": "Coma s'artenh",
+    "how1": "Apunta-te a un badulake dera tua zòna.",
+    "how2": "Vè-i aqueth dia: qui l'organize marque qui a vengut.",
+    "how3": "Quan s'acabe, ja poderàs organizar eth tòn.",
+    "wantTitle": "Vòs organizar-ne un abans?",
+    "wantText": "Se encara non i a badulakes a prèp, demana-ac ar equip de Badulake e ac valorarà.",
+    "wantButton": "Voi organizar",
+    "wantDone": "Hèt: er equip de Badulake ja sap que vòs organizar. Quan te dé permís, aciu veiràs eth formulari entà crear eth tòn badulake."
   },
   "Nav": {
     "label": "Menú principau",

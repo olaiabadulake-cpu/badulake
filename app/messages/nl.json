@@ -251,7 +251,15 @@
     "nearMeHint": "Je locatie wordt alleen nu gebruikt, op je telefoon, en wordt niet opgeslagen.",
     "nearMeError": "We konden niet bepalen waar je bent. Typ je stad of provincie.",
     "searchResults": "Badulakes in ‘{place}’: {count}",
-    "clearSearch": "Alles bekijken"
+    "clearSearch": "Alles bekijken",
+    "howTitle": "Zo werkt het",
+    "how1": "Meld je aan voor een badulake bij jou in de buurt.",
+    "how2": "Ga die dag: wie hem organiseert, houdt bij wie er gekomen is.",
+    "how3": "Als hij afgelopen is, kun je er zelf een organiseren.",
+    "wantTitle": "Wil je er eerder een organiseren?",
+    "wantText": "Als er bij jou in de buurt nog geen badulakes zijn, vraag het dan aan het Badulake-team; dat bekijkt het.",
+    "wantButton": "Ik wil organiseren",
+    "wantDone": "Klaar: het Badulake-team weet dat je wilt organiseren. Als je toestemming krijgt, zie je hier het formulier om je badulake aan te maken."
   },
   "Nav": {
     "label": "Hoofdmenu",

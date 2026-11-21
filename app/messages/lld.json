@@ -251,7 +251,15 @@
     "nearMeHint": "Tüa posiziun vëgn ma adorada śëgn, sun tü telefonin, y ne vëgn nia salvada.",
     "nearMeError": "Ne sun nia stà bugn de savëi olache te es. Scrî tüa cité o provinzia.",
     "searchResults": "Badulakes a «{place}»: {count}",
-    "clearSearch": "Vëire düc"
+    "clearSearch": "Vëire düc",
+    "howTitle": "Co che an l'ciafa",
+    "how1": "Scrí te sö a n badulake dlungia te.",
+    "how2": "Va chël dé: chi che l'organisea segna chi ch'é vegnü.",
+    "how3": "Canche al é finé, podes organisé le tü.",
+    "wantTitle": "Ves-te organisé un denanche?",
+    "wantText": "Sce al n'é ciamó degügn badulake dlungia te, damana al grup de Badulake y al le valutarà.",
+    "wantButton": "I ô organisé",
+    "wantDone": "Fat: le grup de Badulake sá che te ues organisé. Canche al te dá le permis, vëiges chilò le formular por fá tü badulake."
   },
   "Nav": {
     "label": "Menü prinzipal",

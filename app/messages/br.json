@@ -251,7 +251,15 @@
     "nearMeHint": "Ho lec'hiadur n'eo implijet nemet bremañ, war ho pellgomzer, ha n'eo ket enrollet.",
     "nearMeError": "N'hon eus ket gallet gouzout pelec'h emaoc'h. Skrivit ho kêr pe ho proviñs.",
     "searchResults": "Badulakes e «{place}»: {count}",
-    "clearSearch": "Gwelet an holl"
+    "clearSearch": "Gwelet an holl",
+    "howTitle": "Penaos e c'heller",
+    "how1": "En em enskrivit en ur badulake en ho korn-bro.",
+    "how2": "It d'an devezh-se: an aozer a verk piv a zo deuet.",
+    "how3": "Pa vo echu, e c'hallot aozañ ho hini.",
+    "wantTitle": "Fellout a ra deoc'h aozañ unan a-raok?",
+    "wantText": "Ma n'eus badulake ebet tost c'hoazh, goulennit gant skipailh Badulake hag e vo studiet.",
+    "wantButton": "Me a fell din aozañ",
+    "wantDone": "Graet: skipailh Badulake a oar e fell deoc'h aozañ. Pa vo roet an aotre deoc'h, e welot amañ ar furmskrid evit krouiñ ho padulake."
   },
   "Nav": {
     "label": "Lañser pennañ",

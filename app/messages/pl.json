@@ -251,7 +251,15 @@
     "nearMeHint": "Twoja lokalizacja jest używana tylko teraz, w twoim telefonie, i nie jest zapisywana.",
     "nearMeError": "Nie udało się ustalić, gdzie jesteś. Wpisz swoje miasto lub prowincję.",
     "searchResults": "Badulake w miejscu „{place}”: {count}",
-    "clearSearch": "Pokaż wszystkie"
+    "clearSearch": "Pokaż wszystkie",
+    "howTitle": "Jak to zrobić",
+    "how1": "Zapisz się na badulake w swojej okolicy.",
+    "how2": "Przyjdź tego dnia: osoba organizująca zaznacza, kto przyszedł.",
+    "how3": "Gdy się skończy, będziesz mieć możliwość zorganizowania własnego.",
+    "wantTitle": "Chcesz zorganizować jakieś wcześniej?",
+    "wantText": "Jeśli w pobliżu nie ma jeszcze żadnych badulake, poproś zespół Badulake, a on to rozważy.",
+    "wantButton": "Chcę organizować",
+    "wantDone": "Gotowe: zespół Badulake wie, że chcesz organizować. Gdy da ci zgodę, zobaczysz tutaj formularz do utworzenia własnego badulake."
   },
   "Nav": {
     "label": "Menu główne",

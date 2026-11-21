@@ -45,3 +45,19 @@ export async function permissionAction(formData: FormData): Promise<void> {
   }
   redirect({ href: `/equipo?aviso=${aviso}`, locale });
 }
+
+// Responder a una petición de «Quiero organizar» (Tarea 5.4, D-045): dar el permiso o descartarla.
+export async function requestAction(formData: FormData): Promise<void> {
+  const requested = String(formData.get("locale") ?? "");
+  const locale: Locale = Object.hasOwn(languages, requested) ? (requested as Locale) : "es";
+  const id = String(formData.get("id") ?? "");
+  const dar = formData.get("kind") === "dar";
+  let aviso = "error";
+  if (accountsOpen && /^[0-9a-f-]{36}$/.test(id)) {
+    const supabase = await createSupabase();
+    const { data, error } = await supabase.rpc("equipo_resolver_solicitud", { p_id: id, p_dar: dar });
+    if (error) console.error("[equipo]", "solicitud", error.code, error.message);
+    else if (data === "ok") aviso = dar ? "solicitud_dada" : "solicitud_descartada";
+  }
+  redirect({ href: `/equipo?aviso=${aviso}`, locale });
+}

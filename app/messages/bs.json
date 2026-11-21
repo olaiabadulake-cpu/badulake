@@ -251,7 +251,15 @@
     "nearMeHint": "Vaša lokacija koristi se samo u ovom trenutku, na vašem mobitelu, i ne čuva se.",
     "nearMeError": "Nismo mogli saznati gdje ste. Upišite svoj grad ili pokrajinu.",
     "searchResults": "Badulakei u mjestu „{place}“: {count}",
-    "clearSearch": "Prikaži sve"
+    "clearSearch": "Prikaži sve",
+    "howTitle": "Kako se do toga dolazi",
+    "how1": "Prijavite se na badulake u svojoj blizini.",
+    "how2": "Dođite tog dana: osoba koja organizuje označava ko je došao.",
+    "how3": "Kad se završi, moći ćete organizovati svoj.",
+    "wantTitle": "Želite li organizovati prije toga?",
+    "wantText": "Ako u blizini još nema badulakea, zamolite tim Badulakea i razmotrit će to.",
+    "wantButton": "Želim organizovati",
+    "wantDone": "Gotovo: tim Badulakea zna da želite organizovati. Kad vam da dozvolu, ovdje ćete vidjeti obrazac za pravljenje svog badulakea."
   },
   "Nav": {
     "label": "Glavni meni",

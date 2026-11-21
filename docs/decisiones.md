@@ -431,3 +431,15 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
 - **Incidente durante esta tarea:** al tocar `proxy.ts` en la 6.3 (commit 9ef82d6) se borró sin querer su `matcher`, y `proxy.ts` pasó a aplicarse también a `/api` y a `/_next`: las dos webs se vieron **sin estilos unos 5 minutos** (01:17–01:22). Se vio al probar este calendario y se arregló en f729fcc. Desde ahora, tras cada subida se comprueba que los estilos y `/api` responden en las dos webs.
 - **Por qué:** quien organiza y quien espera también necesitan la fecha; y una dirección de casa no debe quedarse en calendarios ajenos.
 - **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 6.4)
+
+### D-045 · «Quiero organizar»: pedírselo al equipo cuando aún no se ha ido a un badulake
+- **Fecha:** 21/11/2026
+- **Alternativas:** que solo se pudiera escribir al equipo por correo (aún no hay correo propio, Tarea 10); enseñar al equipo el correo de quien lo pide.
+- **Decisión** (Tarea 5.4 de [auditoria.md](auditoria.md); `supabase/quiero_organizar.sql`):
+  - Quien choca con «Todavía no puedes organizar un badulake» (D-038) ve ahora **cómo se consigue** (apuntarse a uno, ir ese día, y al terminar ya puede) y un botón **«Quiero organizar»** para pedírselo al equipo («Si aún no hay badulakes cerca…»). Al pulsarlo: «Hecho: el equipo de Badulake ya sabe que quieres organizar…»; si vuelve, la pantalla lo recuerda.
+  - **El equipo** lo ve en `/equipo` → «Quieren organizar», **sin el correo ni el nombre**: solo desde cuándo lo pide y en qué idioma usa la app. Con un botón da el permiso (el mismo que con el correo, D-038) o descarta la petición; en los dos casos la petición se borra.
+  - La tabla `solicitudes_organizar` (persona, fecha) no se lee ni se escribe desde fuera; solo funciones. Se borra con la cuenta, cuando la persona ya puede organizar o a los 6 meses (Supabase Cron, 03:20). Límite: 5 peticiones por hora desde la misma conexión.
+  - Textos: 8 en las 44 lenguas; los del panel del equipo, en castellano y euskera como el resto del panel.
+  - **Probado:** en la base de datos de la copia (Unai pide, repetir dice «ya pedido», Unai no ve las peticiones, el equipo da el permiso y Unai ya puede; deshecho al acabar) y en la web del Mac contra la copia (Unai pide; el equipo lo ve sin correo y lo descarta). Ejecutado en la copia y en la real.
+- **Por qué:** en un barrio nuevo no hay badulakes a los que ir; sin esto, la primera persona no tenía cómo empezar más que conociendo al equipo.
+- **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 5.4)

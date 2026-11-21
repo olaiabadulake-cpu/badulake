@@ -251,7 +251,15 @@
     "nearMeHint": "Tvoje poloha se použije jen teď, v tvém telefonu, a neukládá se.",
     "nearMeError": "Nepodařilo se zjistit, kde jsi. Napiš své město nebo provincii.",
     "searchResults": "Badulake v místě „{place}“: {count}",
-    "clearSearch": "Zobrazit vše"
+    "clearSearch": "Zobrazit vše",
+    "howTitle": "Jak na to",
+    "how1": "Přihlas se na badulake ve svém okolí.",
+    "how2": "Přijď ten den: ten, kdo setkání pořádá, zaznamená, kdo přišel.",
+    "how3": "Až skončí, budeš moct uspořádat vlastní.",
+    "wantTitle": "Chceš nějaké uspořádat dřív?",
+    "wantText": "Pokud ve tvém okolí zatím žádné badulake není, požádej tým Badulake a ten to posoudí.",
+    "wantButton": "Chci pořádat",
+    "wantDone": "Hotovo: tým Badulake ví, že chceš pořádat. Až ti dá svolení, uvidíš tady formulář k vytvoření vlastního badulake."
   },
   "Nav": {
     "label": "Hlavní menu",

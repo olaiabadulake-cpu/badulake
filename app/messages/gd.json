@@ -251,7 +251,15 @@
     "nearMeHint": "Cha chleachdar d' ionad ach an-dràsta, air an fhòn agad, is cha tèid a shàbhaladh.",
     "nearMeError": "Cha b' urrainn dhuinn faighinn a-mach càit a bheil thu. Sgrìobh am baile no an roinn agad.",
     "searchResults": "Badulakes an “{place}”: {count}",
-    "clearSearch": "Seall na h-uile"
+    "clearSearch": "Seall na h-uile",
+    "howTitle": "Mar a gheibh thu e",
+    "how1": "Clàraich airson badulake faisg ort.",
+    "how2": "Rach ann air an latha: comharraichidh an neach-eagrachaidh cò thàinig.",
+    "how3": "Nuair a bhios e seachad, 's urrainn dhut do thè fhèin a chur air dòigh.",
+    "wantTitle": "Am bu toigh leat tè a chur air dòigh nas tràithe?",
+    "wantText": "Mura bheil badulake faisg ort fhathast, iarr air sgioba Badulake is beachdaichidh iad air.",
+    "wantButton": "Tha mi airson tè a chur air dòigh",
+    "wantDone": "Dèanta: tha fios aig sgioba Badulake gu bheil thu airson tè a chur air dòigh. Nuair a bheir iad cead dhut, chì thu an seo am foirm airson do bhadulake a chruthachadh."
   },
   "Nav": {
     "label": "Prìomh chlàr-taice",

@@ -6,7 +6,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { redirect } from "@/i18n/navigation";
 import { accountsOpen, createSupabase, getCurrentUser } from "@/lib/supabase/server";
 import { reportReasons } from "@/lib/report";
-import { permissionAction, teamAction } from "./actions";
+import { permissionAction, requestAction, teamAction } from "./actions";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Team");
@@ -101,10 +101,15 @@ async function Reports({ searchParams }: Pick<PageProps<"/[locale]/equipo">, "se
   const { data, error } = await supabase.rpc("equipo_denuncias");
   if (error) console.error("[equipo]", error.code, error.message);
   const reports = (data ?? []) as Report[];
+  // Peticiones de «Quiero organizar» (Tarea 5.4, D-045): sin correo, solo desde cuándo y el idioma.
+  const { data: reqData, error: reqError } = await supabase.rpc("equipo_solicitudes");
+  if (reqError) console.error("[equipo]", reqError.code, reqError.message);
+  const requests = (reqData ?? []) as { id: string; creada_en: string; idioma: string | null }[];
+  const reqFmt = new Intl.DateTimeFormat("es", { dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Madrid" });
 
   const notices = [
     "ocultar", "mostrar", "suspender", "resolver", "permiso_dado", "permiso_quitado", "permiso_no_existe",
-    "permiso_ya_tenia", "permiso_no_tenia", "error",
+    "permiso_ya_tenia", "permiso_no_tenia", "solicitud_dada", "solicitud_descartada", "error",
   ] as const;
   const notice = notices.find((n) => n === aviso) ?? null;
   const date = new Intl.DateTimeFormat(await teamLang(), {
@@ -134,6 +139,27 @@ async function Reports({ searchParams }: Pick<PageProps<"/[locale]/equipo">, "se
           {t(`notices.${notice}`)}
         </p>
       )}
+      <section aria-labelledby="solicitudes" className="tarjeta gap-3">
+        <h2 id="solicitudes" className="titulo-3">{t("requests.title")}</h2>
+        <p className="ayuda">{t("requests.help")}</p>
+        {requests.length === 0 ? (
+          <p>{t("requests.empty")}</p>
+        ) : (
+          <ul className="flex flex-col gap-3">
+            {requests.map((r) => (
+              <li key={r.id} className="flex flex-col gap-2 border-t border-noche/20 pt-3">
+                <p>{t("requests.item", { date: reqFmt.format(new Date(r.creada_en)), lang: r.idioma ?? "—" })}</p>
+                <form action={requestAction} className="flex flex-wrap gap-3">
+                  <input type="hidden" name="locale" value={locale} />
+                  <input type="hidden" name="id" value={r.id} />
+                  <button type="submit" name="kind" value="dar" className={solid}>{t("requests.give")}</button>
+                  <button type="submit" name="kind" value="descartar" className={outline}>{t("requests.dismiss")}</button>
+                </form>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
       <section aria-labelledby="permiso" className="tarjeta gap-3">
         <h2 id="permiso" className="titulo-3">{t("permission.title")}</h2>
         <p className="ayuda">{t("permission.help")}</p>

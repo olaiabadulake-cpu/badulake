@@ -251,7 +251,15 @@
     "nearMeHint": "Sijaintiasi käytetään vain nyt, puhelimessasi, eikä sitä tallenneta.",
     "nearMeError": "Emme saaneet selville, missä olet. Kirjoita kaupunkisi tai maakuntasi.",
     "searchResults": "Badulaket haulla ”{place}”: {count}",
-    "clearSearch": "Näytä kaikki"
+    "clearSearch": "Näytä kaikki",
+    "howTitle": "Näin se onnistuu",
+    "how1": "Ilmoittaudu lähelläsi olevaan badulakeen.",
+    "how2": "Tule paikalle sinä päivänä: järjestäjä merkitsee, kuka tuli.",
+    "how3": "Kun se on ohi, voit järjestää oman.",
+    "wantTitle": "Haluatko järjestää sellaisen jo aiemmin?",
+    "wantText": "Jos lähelläsi ei vielä ole badulakeja, pyydä Badulake-tiimiltä, niin se harkitsee asiaa.",
+    "wantButton": "Haluan järjestää",
+    "wantDone": "Valmis: Badulake-tiimi tietää, että haluat järjestää. Kun saat luvan, näet täällä lomakkeen oman badulaken luomiseen."
   },
   "Nav": {
     "label": "Päävalikko",

@@ -251,7 +251,15 @@
     "nearMeHint": "Dyn lokaasje wurdt allinnich no brûkt, op dyn telefoan, en wurdt net bewarre.",
     "nearMeError": "Wy koene net útfine wêr'tsto bist. Typ dyn stêd of provinsje.",
     "searchResults": "Badulakes yn ‘{place}’: {count}",
-    "clearSearch": "Alles sjen"
+    "clearSearch": "Alles sjen",
+    "howTitle": "Sa slagget it",
+    "how1": "Jou dy op foar in badulake by dy yn 'e buert.",
+    "how2": "Gean dy dei: wa't it organisearret, hâldt by wa't kommen is.",
+    "how3": "As it ôfrûn is, kinst dyn eigen organisearje.",
+    "wantTitle": "Wolsto earder ien organisearje?",
+    "wantText": "As der noch gjin badulakes by dy yn 'e buert binne, freegje it dan oan it Badulake-team; dat besjocht it.",
+    "wantButton": "Ik wol organisearje",
+    "wantDone": "Klear: it Badulake-team wit dat do organisearje wolst. As it dy tastimming jout, sjochst hjir it formulier om dyn badulake oan te meitsjen."
   },
   "Nav": {
     "label": "Haadmenu",

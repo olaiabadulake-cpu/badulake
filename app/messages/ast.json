@@ -251,7 +251,15 @@
     "nearMeHint": "La to llocalización úsase namás nesti momentu, nel to móvil, y nun se guarda.",
     "nearMeError": "Nun pudimos saber ónde tás. Escribi la to ciudá o provincia.",
     "searchResults": "Badulakes en «{place}»: {count}",
-    "clearSearch": "Ver toos"
+    "clearSearch": "Ver toos",
+    "howTitle": "Cómo se consigue",
+    "how1": "Apúntate a un badulake de la to zona.",
+    "how2": "Vete esi día: quien lu organiza marca quién vieno.",
+    "how3": "Cuando acabe, yá vas poder organizar el tuyu.",
+    "wantTitle": "¿Quies organizar ún enantes?",
+    "wantText": "Si entá nun hai badulakes cerca, pídí-yoslo al equipu de Badulake y vas valoralo.",
+    "wantButton": "Quiero organizar",
+    "wantDone": "Fecho: l'equipu de Badulake yá sabe que quies organizar. Cuando te dea permisu, equí vas ver el formulariu pa crear el to badulake."
   },
   "Nav": {
     "label": "Menú principal",

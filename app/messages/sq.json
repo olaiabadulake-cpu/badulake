@@ -251,7 +251,15 @@
     "nearMeHint": "Vendndodhja juaj përdoret vetëm tani, në telefonin tuaj, dhe nuk ruhet.",
     "nearMeError": "Nuk arritëm ta mësojmë ku jeni. Shkruani qytetin ose krahinën tuaj.",
     "searchResults": "Badulake në «{place}»: {count}",
-    "clearSearch": "Shikoji të gjitha"
+    "clearSearch": "Shikoji të gjitha",
+    "howTitle": "Si arrihet",
+    "how1": "Regjistrohuni në një badulake pranë jush.",
+    "how2": "Shkoni atë ditë: organizatori shënon kush erdhi.",
+    "how3": "Kur të mbarojë, do të mund të organizoni tuajin.",
+    "wantTitle": "Doni të organizoni një më herët?",
+    "wantText": "Nëse ende nuk ka badulake pranë jush, kërkojeni ekipit të Badulake dhe ai do ta shqyrtojë.",
+    "wantButton": "Dua të organizoj",
+    "wantDone": "U bë: ekipi i Badulake e di që doni të organizoni. Kur t'ju japë leje, këtu do të shihni formularin për të krijuar badulake-n tuaj."
   },
   "Nav": {
     "label": "Menuja kryesore",

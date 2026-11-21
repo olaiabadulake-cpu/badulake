@@ -251,7 +251,15 @@
     "nearMeHint": "A helyzetedet csak most, a telefonodon használjuk, és nem mentjük el.",
     "nearMeError": "Nem sikerült megállapítani, hol vagy. Írd be a városodat vagy tartományodat.",
     "searchResults": "Badulakék itt: „{place}”: {count}",
-    "clearSearch": "Összes"
+    "clearSearch": "Összes",
+    "howTitle": "Hogyan lehet",
+    "how1": "Jelentkezz egy közeli badulakéra.",
+    "how2": "Menj el aznap: a szervező feljegyzi, ki jött el.",
+    "how3": "Ha véget ért, már szervezhetsz sajátot.",
+    "wantTitle": "Szeretnél hamarabb szervezni egyet?",
+    "wantText": "Ha a közeledben még nincs badulake, kérd a Badulake csapatától, és mérlegelik.",
+    "wantButton": "Szeretnék szervezni",
+    "wantDone": "Kész: a Badulake csapata tudja, hogy szervezni szeretnél. Ha engedélyt kapsz, itt látod majd az űrlapot a saját badulakéd létrehozásához."
   },
   "Nav": {
     "label": "Főmenü",
