@@ -418,3 +418,16 @@ Registro de decisiones importantes: qué se decidió, qué alternativas había, 
   - **Probado** en el Mac contra la copia con la cuenta inventada de Leire: «sant boi» 2, «CORNELLA» 1, «olmo» 1, provincia Bizkaia 1, Madrid 0; la provincia más cercana, bien en Sant Boi, Bilbao, Getxo, Donostia, Irun, Vitoria, Madrid, Vigo y Palma.
 - **Por qué:** con badulakes en varias ciudades hace falta encontrar los de tu zona; la ubicación es un dato delicado y no se necesita guardarla ni mandarla para esto.
 - **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 6.2)
+
+### D-044 · Calendario para todas, con el enlace a la ficha en vez de la dirección
+- **Fecha:** 21/11/2026
+- **Alternativas:** seguir dándolo solo a las apuntadas y con la dirección escrita (como en D-021).
+- **Decisión** (Tarea 6.4 de [auditoria.md](auditoria.md); `app/src/app/api/badulakes/[id]/calendario/route.ts`):
+  - «Añadir al calendario» sale también para la **organizadora** y para quien está en la **lista de espera** (antes, solo para las apuntadas). Al resto, 404.
+  - El `.ics` **ya no lleva la dirección escrita**: los calendarios se sincronizan con Google, Apple…, se comparten y no se borran solos, y la dirección se borra al día siguiente del badulake (D-024). Lleva el título (el lugar), el barrio como lugar y el **enlace a la ficha** (en la lengua de la persona), donde la dirección solo la ve quien puede verla. Solo badulakes publicados.
+  - Las líneas largas se parten a 75 bytes, como pide el estándar (RFC 5545), sin cortar letras con tilde; antes algunos calendarios podían rechazar el archivo o cortar el texto.
+  - Sin textos nuevos.
+- **Probado** en el Mac contra la copia con la cuenta inventada de Leire: como organizadora y como apuntada, 200 con el enlace, el barrio y sin dirección, líneas partidas; un badulake ajeno, 404.
+- **Incidente durante esta tarea:** al tocar `proxy.ts` en la 6.3 (commit 9ef82d6) se borró sin querer su `matcher`, y `proxy.ts` pasó a aplicarse también a `/api` y a `/_next`: las dos webs se vieron **sin estilos unos 5 minutos** (01:17–01:22). Se vio al probar este calendario y se arregló en f729fcc. Desde ahora, tras cada subida se comprueba que los estilos y `/api` responden en las dos webs.
+- **Por qué:** quien organiza y quien espera también necesitan la fecha; y una dirección de casa no debe quedarse en calendarios ajenos.
+- **Propuso:** Claude (auditoría) · **Decidió:** OlaIA (aprobó la auditoría) · **Hizo:** Claude (Tarea 6.4)

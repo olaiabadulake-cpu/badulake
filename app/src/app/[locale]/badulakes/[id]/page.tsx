@@ -113,6 +113,12 @@ async function Details({
     .some((n) => n === notice);
   const tr = await getTranslations("Report");
   const button = "boton sm:self-start";
+  // Calendario para todas (Tarea 6.4, D-044): organizadora, apuntadas y lista de espera.
+  const calendar = (
+    <a href={`/api/badulakes/${b.id}/calendario?locale=${locale}`} download className="boton-2 sm:self-start">
+      {t("addToCalendar")}
+    </a>
+  );
 
   return (
     <>
@@ -205,6 +211,7 @@ async function Details({
           <button type="submit" className={button}>{t("publish")}</button>
         </form>
       )}
+      {isOrganizer && b.estado === "publicado" && upcoming && calendar}
       {isOrganizer && b.estado === "publicado" && upcoming && (
         <details className="tarjeta">
           <summary className="cursor-pointer font-semibold">{t("cancelSummary")}</summary>
@@ -223,9 +230,7 @@ async function Details({
               {mine?.desde_espera ? t("fromWaitlist") : t("youAreIn")}
             </p>
           )}
-          <a href={`/api/badulakes/${b.id}/calendario`} download className={button}>
-            {t("addToCalendar")}
-          </a>
+          {calendar}
           <form action={leaveBadulake}>
             <input type="hidden" name="locale" value={locale} />
             <input type="hidden" name="id" value={b.id} />
@@ -242,6 +247,7 @@ async function Details({
         <>
           <p role="status" className="aviso">{t("waitingPosition", { position })}</p>
           <p className="ayuda">{t("waitlistExplain")}</p>
+          {upcoming && calendar}
           <form action={leaveWaitlist}>
             <input type="hidden" name="locale" value={locale} />
             <input type="hidden" name="id" value={b.id} />

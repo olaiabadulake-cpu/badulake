@@ -181,3 +181,7 @@ Cada entrada indica quién hizo cada cosa: **Claude** (la IA), **OlaIA** (dirige
 
 **Buscar badulakes por zona (tarea 6.2).** Claude añade a «Próximos badulakes» un buscador por ciudad, pueblo o provincia (sin tildes ni mayúsculas) y «Cerca de mí», que calcula en el propio móvil la provincia más cercana y no manda ni guarda la ubicación (D-043). 7 textos en las 44 lenguas.
 - **Comprobado** en el Mac contra la copia con la cuenta inventada de Leire (búsquedas y provincias) y el cálculo de la provincia en 10 lugares reales; queda el límite de los bordes entre provincias (Eibar sale como Bizkaia).
+
+**Calendario para todas (tarea 6.4).** Claude da «Añadir al calendario» también a la organizadora y a la lista de espera, quita la dirección del `.ics` (lleva el barrio y el enlace a la ficha) y parte las líneas largas como pide el estándar (D-044). Sin textos nuevos.
+- **Incidente:** al probarlo, Claude ve que en la tarea 6.3 se borró sin querer la línea `matcher` de `proxy.ts`: desde las 01:17 las dos webs se veían sin estilos. Lo arregla al momento (commit f729fcc, publicado a las 01:22) y lo comprueba en las dos webs. Desde ahora comprueba estilos y `/api` tras cada subida.
+- **Comprobado** en el Mac contra la copia con la cuenta inventada de Leire (organizadora, apuntada y ajeno).
