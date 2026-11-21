@@ -49,7 +49,7 @@
     "cookiesLink": "Cookies",
     "legalNav": "Legal texts",
     "languageSearch": "Search languages",
-    "languageNone": "No language with that name.",
+    "languageNone": "There is no language with that name.",
     "languageSuggest": "Your phone is set to another language:",
     "languageDismiss": "No, thanks"
   },
@@ -264,22 +264,22 @@
     "searchButton": "Search",
     "nearMe": "Near me",
     "nearMeHint": "Your location is only used right now, on your phone, and isn't saved.",
-    "nearMeError": "We couldn't tell where you are. Type your town or province.",
+    "nearMeError": "We couldn't work out where you are. Type your town or province.",
     "searchResults": "Badulakes in “{place}”: {count}",
     "clearSearch": "See all",
-    "howTitle": "How to get there",
+    "howTitle": "How it works",
     "how1": "Sign up for a badulake near you.",
-    "how2": "Go on the day: the organiser marks who came.",
+    "how2": "Go along on the day: the organiser marks who has turned up.",
     "how3": "Once it's over, you'll be able to organise your own.",
     "wantTitle": "Want to organise one sooner?",
-    "wantText": "If there are no badulakes near you yet, ask the Badulake team and they'll consider it.",
+    "wantText": "If there are no badulakes near you yet, ask the Badulake team and they'll look into it.",
     "wantButton": "I want to organise",
-    "wantDone": "Done: the Badulake team knows you want to organise. Once they give you permission, you'll see the form to create your badulake here.",
+    "wantDone": "Done: the Badulake team now knows you want to organise one. Once they've given you the go-ahead, you'll see the form to create your badulake here.",
     "bringTitle": "What to bring",
     "bring1": "Clothes, shoes, accessories or other things you no longer use, clean and in good condition.",
     "bring2": "A bag to take home what you choose.",
     "bring3": "No money: nothing is bought or sold here.",
-    "bring4": "If nobody takes something of yours, you can take it back home or leave it to be donated."
+    "bring4": "If nobody takes any of your things, you can take them back home or leave them to be donated."
   },
   "Nav": {
     "label": "Main menu",
@@ -425,7 +425,7 @@
     "countsLocked": "The queue is now fixed: the counted items can no longer be changed."
   },
   "Push": {
-    "reminderTitle": "Badulake tomorrow",
+    "reminderTitle": "There's a badulake tomorrow",
     "reminderBody": "{title}. Check what to bring.",
     "waitlistTitle": "You've got a place!",
     "waitlistBody": "You've got a place at {title} from the waiting list.",
